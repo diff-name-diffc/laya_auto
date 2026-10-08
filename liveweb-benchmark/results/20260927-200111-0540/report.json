@@ -1,0 +1,751 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 73301,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T20:09:40+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.4,
+  "mean_duration_ms": 23022,
+  "decision_latency_ms": {
+   "p50": 478.5,
+   "p95": 600.0
+  },
+  "step_outcomes": {
+   "stale": 5,
+   "refused-empty-enter": 2,
+   "executed": 26,
+   "done-rejected": 2
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 4.4
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-6f66fb596e6b6eca",
+   "source": "google",
+   "goal": "First search Google for java tutorial, then search Google for refactoring best practices.",
+   "fingerprint": 73301,
+   "status": "repeat-loop",
+   "verified": false,
+   "success": false,
+   "steps": 16,
+   "total_ms": 70014,
+   "error": "CLICK on the same target repeats without progress; stopping",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['refactoring']]",
+    "checks": {
+     "url": "https://about.google/intl/zh-cn_all/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://about.google/intl/zh-CN_ALL/",
+    "final_title": "关于 Google：我们的产品、技术以及公司信息 - About Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8888,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "java tutorial",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 478.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9063,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 475.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510475875"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8259,
+     "target": "1",
+     "target_label": "About",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 489.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510475875"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8069,
+     "target": "5",
+     "target_label": "动​态速​递",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 361.3,
+     "low_confidence": false,
+     "url": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.9087,
+     "target": "7",
+     "target_label": "即刻探索",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 347.7,
+     "low_confidence": false,
+     "url": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8939,
+     "target": "7",
+     "target_label": "即刻探索",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 381.1,
+     "low_confidence": false,
+     "url": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.9046,
+     "target": "7",
+     "target_label": "即刻探索",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 392.2,
+     "low_confidence": false,
+     "url": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google logo",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.9166,
+     "target": "7",
+     "target_label": "即刻探索",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 473.6,
+     "low_confidence": false,
+     "url": "https://about.google/intl/zh-CN_ALL/"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.9104,
+     "target": "5",
+     "target_label": "动​态速​递",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 483.5,
+     "low_confidence": false,
+     "url": "https://about.google/intl/zh-CN_ALL/"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.9022,
+     "target": "9",
+     "target_label": "技术 全​方位​了解​我们​先进​的 A​I 模型， 探索​它们​的​能力",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: target occluded",
+     "page_changed": false,
+     "latency_ms": 395.3,
+     "low_confidence": false,
+     "url": "https://about.google/intl/zh-CN_ALL/"
+    },
+    {
+     "step": 11,
+     "operation": "CLICK",
+     "confidence": 0.8813,
+     "target": "9",
+     "target_label": "技术 全​方位​了解​我们​先进​的 A​I 模型， 探索​它们​的​能力",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: target occluded",
+     "page_changed": false,
+     "latency_ms": 443.0,
+     "low_confidence": false,
+     "url": "https://about.google/intl/zh-CN_ALL/"
+    },
+    {
+     "step": 11,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google logo",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://about.google/intl/zh-CN_ALL/"
+    },
+    {
+     "step": 12,
+     "operation": "CLICK",
+     "confidence": 0.9214,
+     "target": "5",
+     "target_label": "动​态速​递",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 467.0,
+     "low_confidence": false,
+     "url": "https://about.google/intl/zh-CN_ALL/"
+    },
+    {
+     "step": 13,
+     "operation": "CLICK",
+     "confidence": 0.9217,
+     "target": "5",
+     "target_label": "动​态速​递",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 404.2,
+     "low_confidence": false,
+     "url": "https://about.google/intl/zh-CN_ALL/"
+    },
+    {
+     "step": 14,
+     "operation": "CLICK",
+     "confidence": 0.9229,
+     "target": "5",
+     "target_label": "动​态速​递",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 408.7,
+     "low_confidence": false,
+     "url": "https://about.google/intl/zh-CN_ALL/"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5cbcbd6c10026b44",
+   "source": "google",
+   "goal": "First search Google for elasticsearch best practices, then search Google for python cheat sheet.",
+   "fingerprint": 73301,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 18336,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3delasticsearch%2bbest%2bpractices%26sca_e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Delasticsearch%2Bbest%2Bpractices%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntpiqSLBBGYwF4omsXMkjtOP0ANQA%253A1790510551923%26source%3Dhp%26ei%3D1wW5auj2Nqj4kPIPg-jIyAw%26iflsig%3DABILxe8AAAAAarkT5yJcAd5wJ6Htb85hcdXDCHMgF8Jf%26ved%3D0ahUKEwiovqbL246XAxUoPEQIHQM0EskQ4dUDCDI%26uact%3D5%26oq%3Delasticsearch%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhxlbGFzdGljc2VhcmNoIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjeGlAZWBlwAngAkAEAmAG9AaABvQGqAQMwLjG4AQPIAQD4AQGYAgOgAs8BqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBeieF-k0BcLEkgcFMi4wLjGgB6AGsgcDMi0xuAfIAcIHBTAuMS4yyAcLgAgB%26sclient%3Dgws-wiz%26sei%3D3gW5atjhDtbMkPIPqImIiAM&hl=en&q=EgQm0XtnGN6L5NUGIjCiTiphXtJjcgY03nxwGYbrHEPToN3cr1tTcCmOCR9fJu9cPh2yl6AsDYgUmsHCEqAyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=elasticsearch+best+practices&sca_esv=75b852f910b"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9059,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elasticsearch best practices",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 486.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8735,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 472.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510553395"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8616,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elasticsearch best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 497.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510553395"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8898,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elasticsearch best practices",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 576.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510553395"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510553395"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-80af10ecbb341d03",
+   "source": "google",
+   "goal": "Search Google for retrieval augmented generation best practices and open the results.",
+   "fingerprint": 73301,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 18237,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dretrieval%2baugmented%2bgeneration%2bbes",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dretrieval%2Baugmented%2Bgeneration%2Bbest%2Bpractices%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsXqSdLPspQA0i78K23sgNEmbtefg%253A1790510622649%26source%3Dhp%26ei%3DHga5ariJJuaikPIP94XfkA8%26iflsig%3DABILxe8AAAAAarkULhh7OF_GHzWPCGRzshMsaREw3NZ3%26ved%3D0ahUKEwi4kIPt246XAxVmEUQIHffCF_IQ4dUDCDI%26oq%3Dretrieval%2Baugmented%2Bgeneration%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6Ii1yZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gYmVzdCBwcmFjdGljZXMyBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMggQABiJBRiiBDIFEAAY7wVI5CFQEVgRcAF4AJABAJgB2wGgAdsBqgEDMi0xuAEMyAEA-AEBmAICoALpAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QWvK5Z5l1KWd5IHBTEuMC4xoAe6BbIHAzItMbgH5AHCBwMyLTLIBwiACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKSM5NUGIjCoLStGn-JkIa-ZHrWYfQHsvdvRQ0JLkRKXTjnF9R0Wg-o-XPcj064Y_clIiRKVihgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=retrieval+augmented+generation+best+practices&sc"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7766,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 509.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510623001"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8361,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results page with results for 'retrieval augmented generation best practices'",
+     "page_changed": null,
+     "latency_ms": 600.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510623001"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:30",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510623001"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-0f5394ffadba57ed",
+   "source": "google",
+   "goal": "Search Google for express release notes and open the results.",
+   "fingerprint": 73301,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14683,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dexpress%2brelease%2bnotes%26sca_esv%3d18",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dexpress%2Brelease%2Bnotes%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsBkkrDFPIWN0B0tp4zTbnTV8KGLQ%253A1790510693110%26source%3Dhp%26ei%3DZQa5aoCvBfD8kPIPw9iB-A8%26iflsig%3DABILxe8AAAAAarkUdaZonXTWbZPfq4y050gCxlE8gOCz%26ved%3D0ahUKEwjA9c-O3I6XAxVwPkQIHUNsAP8Q4dUDCDI%26uact%3D5%26oq%3Dexpress%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhVleHByZXNzIHJlbGVhc2Ugbm90ZXMyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIIEAAYFhgeGAoyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOUHUBFYEXABeACQAQCYAeQBoAHkAaoBAzItMbgBA8gBAPgBAZgCAqAC9gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEF4fnXvK7ppIiSBwUxLjAuMaAHpQWyBwMyLTG4B_EBwgcFMi0xLjHIBwyACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOeM5NUGIjCYLWZbZaJvE1zdbOahXEwmXbVGP6VjFxymjy8Cpgrbsm10kX34WutqBbItqtObeVIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=express+release+notes&sca_esv=18a60b01d202c9ee&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.6139,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "express release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 521.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510693451"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9012,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 593.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510693451"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-edf47b0c9de30e57",
+   "source": "google",
+   "goal": "First search Google for next.js cheat sheet, then search Google for async programming performance optimization.",
+   "fingerprint": 73301,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14848,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dnext.js%2bcheat%2bsheet%26sca_esv%3d18a6",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dnext.js%2Bcheat%2Bsheet%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntr6lA7Rqdm_9F-h1hbqSGdHwwhLw%253A1790510759962%26source%3Dhp%26ei%3Dpwa5auX1OOq5kPIP1a6ZmA4%26iflsig%3DABILxe8AAAAAarkUt4UOO551iywPnPog4OSpufZPmd_0%26ved%3D0ahUKEwil5b-u3I6XAxXqHEQIHVVXBuMQ4dUDCDI%26uact%3D5%26oq%3Dnext.js%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhNuZXh0LmpzIGNoZWF0IHNoZWV0MgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjbB1AQWBBwAXgAkAEAmAHKAaABygGqAQMyLTG4AQPIAQD4AQGYAgKgAt4BqAIKwgIKEAAYAxiPARjqApgDBPEFLawWqDcDWjqSBwUxLjAuMaAH8AWyBwMyLTG4B9kBwgcFMi0xLjHIBw6ACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKqN5NUGIjDKZWD8Dpwky_NonPEye3v0I3W8ctBICjGaTdulPrBKbz-yWI9CVElE_xc7clmrcYoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=next.js+cheat+sheet&sca_esv=18a60b01d202c9ee&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8778,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "next.js cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 508.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510760150"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8461,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 587.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510760150"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ec2fdd7e484317b3",
+   "source": "google",
+   "goal": "First search Google for how to debug retrieval augmented generation, then search Google for llama.cpp release notes.",
+   "fingerprint": 73301,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14635,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bretrieval%2baugmented",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bretrieval%2Baugmented%2Bgeneration%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntj1tCU0j_MNV8n2mfaOl3SivfBXQ%253A1790510826974%26source%3Dhp%26ei%3D6ga5asKYOqbOkPIPl8evgQs%26iflsig%3DABILxe8AAAAAarkU-iTz-2ivmS62cJ3zkNlXHhy5zUCv%26ved%3D0ahUKEwjCtbrO3I6XAxUmJ0QIHZfjK7AQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bretrieval%2Baugmented%2Bgeneration%26gs_lp%3DEgdnd3Mtd2l6Iitob3cgdG8gZGVidWcgcmV0cmlldmFsIGF1Z21lbnRlZCBnZW5lcmF0aW9uMgUQIRigAUjyBlARWBFwAXgAkAEAmAHjAaAB4wGqAQMyLTG4AQPIAQD4AQGYAgKgAvMBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBRrVNjuPZLnskgcFMS4wLjGgB_UBsgcDMi0xuAfvAcIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGO2N5NUGIjBUWu6Tk4aFHxIR9E9KJLFeLw5Sq_EzVZGhlpn-k-HhUJmOHF3uE-z21JCFkue5WpIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+retrieval+augmented+generation&sca_"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8782,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug retrieval augmented generation",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 582.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510827151"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8932,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 489.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510827151"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-4f4c6d7109f187f3",
+   "source": "google",
+   "goal": "Search Google for vue interview questions and open the results.",
+   "fingerprint": 73301,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 18485,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvue%2binterview%2bquestions%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvue%2Binterview%2Bquestions%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntB-ZlNYCl66QRXWe2OJ5LMzidE_A%253A1790510893779%26source%3Dhp%26ei%3DLQe5avm0Lu31kPIPqsnjmQk%26iflsig%3DABILxe8AAAAAarkVPdWloDGEeMtF5BWRydBB3uJz6YcX%26ved%3D0ahUKEwi5_6fu3I6XAxXtOkQIHarkOJMQ4dUDCDI%26uact%3D5%26oq%3Dvue%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Ihd2dWUgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjeJFATWBNwAXgAkAEAmAHVAaAB1QGqAQMyLTG4AQPIAQD4AQGYAgKgAucBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBUNidU9omYWNkgcFMS4wLjGgB4gGsgcDMi0xuAfiAcIHBTItMS4xyAcOgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLSO5NUGIjBxMt2N0l-SlD-zwVdZjgt6wMKIV2dFMS2sBKBzzrZhtoXzebju9BXoYte46bM4_scyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vue+interview+questions&sca_esv=18a60b01d202c9ee"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8803,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 517.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510893952"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8471,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results page listing results for vue interview questions",
+     "page_changed": null,
+     "latency_ms": 594.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510893952"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510893952"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8116461d112c66b1",
+   "source": "google",
+   "goal": "First search Google for swift best practices, then search Google for spring boot release notes.",
+   "fingerprint": 73301,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14941,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dswift%2bbest%2bpractices%26sca_esv%3d18a",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dswift%2Bbest%2Bpractices%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuNJPNjTyTEb8aW7k0t_6mAdv2N2A%253A1790510964429%26source%3Dhp%26ei%3DdAe5avi4GK68kPIP_PH_qA8%26iflsig%3DABILxe8AAAAAarkVhPeGiWZKe35S9S6dnnHBJTR-GFLB%26ved%3D0ahUKEwj4wv-P3Y6XAxUuHkQIHfz4H_UQ4dUDCDI%26uact%3D5%26oq%3Dswift%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhRzd2lmdCBiZXN0IHByYWN0aWNlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGBYYHhgKMgYQABgWGB4yBhAAGBYYHkitCFAPWA9wAXgAkAEAmAHQAaAB0AGqAQMyLTG4AQPIAQD4AQGYAgKgAuQBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gKYAwTxBaOvrC__sKogkgcFMS4wLjGgB7oFsgcDMi0xuAffAcIHBTItMS4xyAcNgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPeO5NUGIjAtuaa_6gAO23GxBC3Ia9f980eA-rmudiDHSvkUkAyzvg-sZsNULvnZPSJYSRLtjXkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=swift+best+practices&sca_esv=18a60b01d202c9ee&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8415,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "swift best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 629.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510964617"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8915,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 676.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510964617"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,754 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 28906,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:20:36+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.2,
+  "mean_duration_ms": 27822,
+  "decision_latency_ms": {
+   "p50": 521.9,
+   "p95": 708.2
+  },
+  "step_outcomes": {
+   "stale": 1,
+   "refused-empty-enter": 1,
+   "done-rejected": 4,
+   "executed": 26,
+   "done": 2
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "github": {
+    "n": 1,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 15.0
+   },
+   "google": {
+    "n": 7,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.7
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-a2aa323944444b25",
+   "source": "google",
+   "goal": "First search Google for redis security vulnerabilities, then search Google for how to debug huggingface transformers.",
+   "fingerprint": 28906,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 22835,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=transformers'",
+    "checks": {
+     "url": "https://www.google.com/search?q=how+to+debug+huggingface+transformers&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=appeqnv",
+     "bot_challenge": false,
+     "group0": [
+      "transformers",
+      "huggingface"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=how+to+debug+huggingface+transformers&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnv9D6NmK3ODcEXl7YZZYY4Cc3bdIg%3A1790514735335&source=hp&ei=Lxa5auajE4TUkPIP4qTA4Ag&iflsig=ABILxe8AAAAAarkkP5IMZ8RENK6EYvFBVZLQUCufWKtg&ved=0ahUKEwim942W646XAxUEKkQIHWISEIwQ4dUDCDI&uact=5&oq=how+to+debug+huggingface+transformers&gs_lp=Egdnd3Mtd2l6IiVob3cgdG8gZGVidWcgaHVnZ2luZ2ZhY2UgdHJhbnNmb3JtZXJzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBUisdFATWBNwAXgAkAEAmAHaAaAB2gGqAQMyLTG4AQPIAQD4AQGYAgKgAuEBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBfqtcrL3npAukgcFMS4wLjGgB-oKsgcDMi0xuAfcAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz&sei=Rha5auLHMtbGkPIPoty60As",
+    "final_title": "how to debug huggingface transformers - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9046,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug huggingface transformers",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 502.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8302,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 475.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514736844"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8748,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'how to debug huggingface transformers' (only the Google homepage with an empty search box is shown); Any visible resul",
+     "page_changed": null,
+     "latency_ms": 492.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514736844"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug huggingface transformers",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514736844"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8605,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"how to debug huggingface transformers\"",
+     "page_changed": null,
+     "latency_ms": 632.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514736844"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514736844"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.9763,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 282.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+huggingface+transformers&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnv9D6NmK3ODcEXl7YZZYY4Cc3bdIg%3A1790514735335&source=hp&ei=Lxa5auajE4TUkPIP4qTA4Ag&iflsig=ABILxe8AAAAAarkkP5IMZ8RENK6EYvFBVZLQUCufWKtg&ved=0ahUKEwim942W646XAxUEKkQIHWISEIwQ4dUDCDI&uact=5&oq=how+to+debug+huggingface+transformers&gs_lp=Egdnd3Mtd2l6IiVob3cgdG8gZGVidWcgaHVnZ2luZ2ZhY2UgdHJhbnNmb3JtZXJzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBUisdFATWBNwAXgAkAEAmAHaAaAB2gGqAQMyLTG4AQPIAQD4AQGYAgKgAuEBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBfqtcrL3npAukgcFMS4wLjGgB-oKsgcDMi0xuAfcAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-318ba691fe525eac",
+   "source": "github",
+   "goal": "Search GitHub for 'kafka' repositories and open the search results.",
+   "fingerprint": 28906,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 15,
+   "total_ms": 111526,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'github.com/search'",
+    "checks": {
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=",
+     "bot_challenge": false,
+     "group0": [
+      "kafka"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=kafka&search-overlay-ask-ai=true",
+    "final_title": "Understanding GitHub Code Search syntax - GitHub Docs"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8748,
+     "target": "11",
+     "target_label": "Enter your email",
+     "kind": "fill",
+     "text": "kafka",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 571.8,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8836,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 708.2,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.86,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 1003.6,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8333,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 566.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8731,
+     "target": "6",
+     "target_label": "Search syntax tips",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 452.1,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.9172,
+     "target": "1",
+     "target_label": "Close",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 456.5,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8492,
+     "target": "4",
+     "target_label": "Search or ask Copilot",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 440.5,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.8253,
+     "target": "2",
+     "target_label": "Clear",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 589.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.793,
+     "target": "2",
+     "target_label": "Clear",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 590.3,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.8584,
+     "target": "2",
+     "target_label": "Clear",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 596.6,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 10,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:25",
+     "target_label": "Search or ask Copilot",
+     "kind": "fill",
+     "text": "kafka",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 11,
+     "operation": "DONE",
+     "confidence": 0.8931,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub repository search results for 'kafka' — page shows only a docs search overlay with 'No results found'; No list of kafka repositories visible",
+     "page_changed": null,
+     "latency_ms": 870.7,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=kafka"
+    },
+    {
+     "step": 12,
+     "operation": "DONE",
+     "confidence": 0.9181,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub repository search results for 'kafka' are not shown; page displays a docs search overlay with 'No results found'.",
+     "page_changed": null,
+     "latency_ms": 611.5,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=kafka"
+    },
+    {
+     "step": 12,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=kafka"
+    },
+    {
+     "step": 13,
+     "operation": "DONE",
+     "confidence": 0.8708,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 633.8,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=kafka&search-overlay-ask-ai=true"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3aa5ce8897c0a89d",
+   "source": "google",
+   "goal": "Search Google for swift cheat sheet and open the results.",
+   "fingerprint": 28906,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14631,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dswift%2bcheat%2bsheet%26sca_esv%3d3e3a42",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dswift%2Bcheat%2Bsheet%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvcem9hp3SRr3FYzaItBMKOeAAxjg%253A1790514886115%26source%3Dhp%26ei%3Dxha5aujPBaCikPIPt6PD4AQ%26iflsig%3DABILxe8AAAAAarkk1oXy9Jm32cLuFc1jCw5sF-aenESL%26ved%3D0ahUKEwjoyoDe646XAxUgEUQIHbfREEwQ4dUDCDI%26uact%3D5%26oq%3Dswift%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhFzd2lmdCBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHki_B1AgWCBwAXgAkAEAmAHzAaAB8wGqAQMyLTG4AQPIAQD4AQGYAgKgAvoBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBTFhxuj2CMBTkgcFMS4wLjGgB44FsgcDMi0xuAf1AcIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMit5NUGIjDtv6Zrf8mhyc8gHchLiyKDSEaD-N0IxPtOY6nPrusNCfxi7DN78B8ASZMFQ95n4LwyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=swift+cheat+sheet&sca_esv=3e3a42b854afc954&hl=en"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8637,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "swift cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 481.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8676,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 562.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514887830"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-4cb288ae7756618b",
+   "source": "google",
+   "goal": "First search Google for typescript interview questions, then search Google for svelte migration guide.",
+   "fingerprint": 28906,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14669,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dtypescript%2binterview%2bquestions%26sca",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtypescript%2Binterview%2Bquestions%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntKDynWEeJfih0nRuFMVxux9GcS_A%253A1790514953121%26source%3Dhp%26ei%3DCRe5avulBtvMkPIP1pmK8A0%26iflsig%3DABILxe8AAAAAarklGTlvmW6lcistzFefyiqV6neErbrf%26ved%3D0ahUKEwi7zvr9646XAxVbJkQIHdaMAt4Q4dUDCDI%26uact%3D5%26oq%3Dtypescript%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Ih50eXBlc2NyaXB0IGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMggQABiABBi0BzIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyBRAAGIAEMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHSM8HUA5YDnABeACQAQCYAYYCoAGGAqoBAzItMbgBA8gBAPgBAZgCAqACjAKoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFzYpqcQHSh2aSBwUxLjAuMaAHoAeyBwMyLTG4B4gCwgcFMC4xLjHIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIuu5NUGIjCwp12MjD1zng8j98A6WVfApdqmYPabusHOVHiUzV_Nv-KMoDAHD8HgNpuwDUghgWkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=typescript+interview+questions&sca_esv=3e3a42b85"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9029,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "typescript interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 494.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514953536"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9029,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 598.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514953536"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f6ea7efcd3c60c98",
+   "source": "google",
+   "goal": "Search Google for flask performance optimization and open the results.",
+   "fingerprint": 28906,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14666,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dflask%2bperformance%2boptimization%26sca",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dflask%2Bperformance%2Boptimization%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv-8hCDvbhMSQd0lKrB5Ci7BEdlXg%253A1790515019983%26source%3Dhp%26ei%3DSxe5aoTeOvSfkPIP5Z23kAs%26iflsig%3DABILxe8AAAAAarklW8W1oGxc5NsFKp5hdNFHZHcc1aa4%26ved%3D0ahUKEwjEr-ud7I6XAxX0D0QIHeXODbIQ4dUDCDI%26uact%3D5%26oq%3Dflask%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ih5mbGFzayBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb25InQdQElgScAF4AJABAJgB5wGgAecBqgEDMi0xuAEDyAEA-AEBmAIBoAIFqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwXxBdR7gmDJYELMkgcBMaAHMLIHALgHAMIHAzItMcgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGM6u5NUGIjB9KdClNamAQkylHIAhqqGfoof7-qbvnDa_M8wUwdIbBnLhiow8BdNfqB6WqzYJ6ccyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=flask+performance+optimization&sca_esv=3e3a42b85"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.875,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "flask performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 499.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515020390"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9026,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 541.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515020390"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-768d8efeaf61091f",
+   "source": "google",
+   "goal": "Search Google for llm fine-tuning interview questions and open the results.",
+   "fingerprint": 28906,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14789,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dllm%2bfine-tuning%2binterview%2bquestion",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dllm%2Bfine-tuning%2Binterview%2Bquestions%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntf66bXIJ21Zu_BF3bxwE__5dOfSg%253A1790515086796%26source%3Dhp%26ei%3Djhe5auOqL-TSkPIP9KS50A4%26iflsig%3DABILxe8AAAAAarklnrmMZSxWGSiVYG6qX4VTF4cwQFml%26ved%3D0ahUKEwjjqdm97I6XAxVkKUQIHXRSDuoQ4dUDCDI%26uact%3D5%26oq%3Dllm%2Bfine-tuning%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IiNsbG0gZmluZS10dW5pbmcgaW50ZXJ2aWV3IHF1ZXN0aW9uczIGEAAYFhgeMgUQABjvBTIIEAAYiQUYogQyBRAAGO8FMgUQABjvBUi1B1AOWA5wAXgAkAEAmAH5AaAB-QGqAQMyLTG4AQPIAQD4AQGYAgKgAv8BqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBUEGZ0CXmw9QkgcFMS4wLjGgB40DsgcDMi0xuAf6AcIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJGv5NUGIjATfQKmDdHHa5RA-s2RHr8lxRGPBnF1P-cEtXnLoMfCaSCKcDhFs35KcmJ4SfuwRfIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=llm+fine-tuning+interview+questions&sca_esv=3e3a"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8613,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llm fine-tuning interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 521.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515087050"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8971,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 565.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515087050"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-e11efdd385f4936b",
+   "source": "google",
+   "goal": "Search Google for model quantization interview questions and open the results.",
+   "fingerprint": 28906,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14644,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmodel%2bquantization%2binterview%2bquest",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmodel%2Bquantization%2Binterview%2Bquestions%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntCWltGsoH_vHPvvCpzguInfxlZjg%253A1790515153773%26source%3Dhp%26ei%3D0Re5avKCLuLNkPIP2svFiA4%26iflsig%3DABILxe8AAAAAarkl4a_1aH5x6x7JGJtPvL2J3CGxYv4Y%26ved%3D0ahUKEwiyr9Hd7I6XAxXiJkQIHdplEeEQ4dUDCDI%26uact%3D5%26oq%3Dmodel%2Bquantization%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IiZtb2RlbCBxdWFudGl6YXRpb24gaW50ZXJ2aWV3IHF1ZXN0aW9uczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKsCSPEGUBBYEHABeACQAQCYAYkCoAGJAqoBAzItMbgBA8gBAPgBAZgCAqACkAKoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFruBiSwns-PKSBwUxLjAuMaAHqAWyBwMyLTG4B4wCwgcFMC4xLjHIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNSv5NUGIjBOoey2JhzfJBOw5_tT74Ukj-0T1gGOTzCPskTywKv8ek3zB_CsCphOZ6LWWKSf4LoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=model+quantization+interview+questions&sca_esv=3"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9021,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 491.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515154031"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9017,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 496.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515154031"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-87279657be739c96",
+   "source": "google",
+   "goal": "First search Google for profiling security vulnerabilities, then search Google for mysql best practices.",
+   "fingerprint": 28906,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14819,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dprofiling%2bsecurity%2bvulnerabilities%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dprofiling%2Bsecurity%2Bvulnerabilities%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntSADNT7FdwsX0nwU68BkNZOvb6LQ%253A1790515220586%26source%3Dhp%26ei%3DFBi5avqxIurAkPIPruyL0AI%26iflsig%3DABILxe8AAAAAarkmJNrFA5GV9FiexcVBAPxK58YcZ2mi%26ved%3D0ahUKEwj6i7_97I6XAxVqIEQIHS72AioQ4dUDCDI%26uact%3D5%26oq%3Dprofiling%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IiJwcm9maWxpbmcgc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBUi7B1AOWA5wAXgAkAEAmAHnAaAB5wGqAQMyLTG4AQPIAQD4AQGYAgKgAu0BqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBQUJvrQ1H_K9kgcFMS4wLjGgB_YKsgcDMi0xuAfpAcIHAzAuMsgHA4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJew5NUGIjDQebUOAHA-fn7dPYCLNbmRzTbRM0rkMj6Tm6HNU8sTcpl3lT4c2MSaYP3qYBvEYUoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=profiling+security+vulnerabilities&sca_esv=3e3a4"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8633,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "profiling security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 518.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515220853"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9064,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 571.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515220853"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,368 @@
+{
+ "meta": {
+  "base_url": "http://127.0.0.1:8812",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 71312,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 8.0,
+  "backend": {
+   "ok": true,
+   "variant": "out/laya-browser-v18d-run2",
+   "calls": 131,
+   "tau": 0.0,
+   "escalated": 0,
+   "recent": [
+    {
+     "ms": 636.9,
+     "questions": 3,
+     "options": 14,
+     "tokens": 2968,
+     "passes": 1
+    },
+    {
+     "ms": 310.6,
+     "questions": 3,
+     "options": 14,
+     "tokens": 3042,
+     "passes": 1
+    },
+    {
+     "ms": 218.3,
+     "questions": 2,
+     "options": 15,
+     "tokens": 1983,
+     "passes": 1
+    },
+    {
+     "ms": 220.6,
+     "questions": 2,
+     "options": 36,
+     "tokens": 1693,
+     "passes": 1
+    },
+    {
+     "ms": 223.7,
+     "questions": 3,
+     "options": 13,
+     "tokens": 2508,
+     "passes": 1
+    }
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-28T13:38:00+0800",
+  "n_tasks": 6,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 1,
+  "verified_rate": 0.167,
+  "found_but_not_stopped": 1,
+  "mean_steps": 1.0,
+  "mean_duration_ms": 14166,
+  "decision_latency_ms": {
+   "p50": 238.7,
+   "p95": 309.5
+  },
+  "step_outcomes": {
+   "executed": 4,
+   "refused-empty-enter": 1,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 1,
+  "vlm_rescues": 2,
+  "by_source": {
+   "github": {
+    "n": 5,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 1,
+    "verified_rate": 0.2,
+    "mean_steps": 1.2
+   },
+   "google": {
+    "n": 1,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 0.0
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-c8906f50390e2e23",
+   "source": "github",
+   "goal": "Open the first repository shown in GitHub's trending ruby list.",
+   "fingerprint": 71312,
+   "status": "incomplete",
+   "verified": true,
+   "success": false,
+   "steps": 6,
+   "vlm_rescues": 2,
+   "total_ms": 74779,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://github.com/docusealco/docuseal",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": [
+      "fork",
+      "forks"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://github.com/docusealco/docuseal",
+    "final_title": "GitHub - docusealco/docuseal: Open source DocuSign alternative. Create, fill, an"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.9137,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 238.7,
+     "low_confidence": false,
+     "url": "https://github.com/trending/ruby"
+    },
+    {
+     "step": 2,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.8982,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 159.6,
+     "low_confidence": false,
+     "url": "https://github.com/trending/ruby"
+    },
+    {
+     "step": 3,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.3179,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 305.6,
+     "low_confidence": true,
+     "url": "https://github.com/trending/ruby"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:121",
+     "target_label": "docusealco / docuseal",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending/ruby"
+    },
+    {
+     "step": 4,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7949,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 309.5,
+     "low_confidence": false,
+     "url": "https://github.com/docusealco/docuseal"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:5",
+     "target_label": "Open Source",
+     "kind": "click",
+     "text": null,
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/docusealco/docuseal"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-eb29b7d2344509ff",
+   "source": "google",
+   "goal": "Search Google for rabbitmq release notes and open the results.",
+   "fingerprint": 71312,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2011,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['rabbitmq']]",
+    "checks": {
+     "url": "https://www.google.com/?hl=en&gl=us",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/?hl=en&gl=us",
+    "final_title": "Google"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-9a752709137939fc",
+   "source": "github",
+   "goal": "From GitHub's trending ruby feed, open a repository about vue and view its README.",
+   "fingerprint": 71312,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2019,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending/ruby",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending/ruby",
+    "final_title": "Trending Ruby repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-250a99f2c24f90c4",
+   "source": "github",
+   "goal": "Open the top repository on GitHub trending and read its README.",
+   "fingerprint": 71312,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2140,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-f44708643b193e3c",
+   "source": "github",
+   "goal": "From today's GitHub trending list, open a next.js project and view its details.",
+   "fingerprint": 71312,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2032,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-e2fdcf7d6ab7304f",
+   "source": "github",
+   "goal": "From today's GitHub trending list, open a nginx project and view its details.",
+   "fingerprint": 71312,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2015,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  }
+ ]
+}

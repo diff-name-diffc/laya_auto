@@ -1,0 +1,961 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 41275,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T18:22:09+0800",
+  "n_tasks": 8,
+  "success": 4,
+  "success_rate": 0.5,
+  "verified": 4,
+  "verified_rate": 0.5,
+  "found_but_not_stopped": 0,
+  "mean_steps": 6.0,
+  "mean_duration_ms": 25292,
+  "decision_latency_ms": {
+   "p50": 481.6,
+   "p95": 624.8
+  },
+  "step_outcomes": {
+   "stale": 3,
+   "refused-empty-enter": 2,
+   "executed": 32,
+   "done-rejected": 5,
+   "page changed since the decision (url or marker mismatch)": 1,
+   "done": 5
+  },
+  "low_confidence_steps": 5,
+  "by_source": {
+   "github": {
+    "n": 1,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 10.0
+   },
+   "google": {
+    "n": 7,
+    "success": 4,
+    "success_rate": 0.571,
+    "verified": 4,
+    "verified_rate": 0.571,
+    "mean_steps": 5.4
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-9ac56f173232b08e",
+   "source": "google",
+   "goal": "First search Google for huggingface transformers interview questions, then search Google for model quantization security vulnerabilities.",
+   "fingerprint": 41275,
+   "status": "repeat-loop",
+   "verified": false,
+   "success": false,
+   "steps": 11,
+   "total_ms": 56863,
+   "error": "CLICK on the same target repeats without progress; stopping",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['quantization', 'model']]",
+    "checks": {
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/",
+    "final_title": "Our Approach - How Google Search Works"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8988,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "huggingface transformers interview questions",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 442.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9015,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 472.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504230732"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.865,
+     "target": "18",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 488.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504230732"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.9348,
+     "target": "5",
+     "target_label": "功​能",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 398.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search/howsearchworks/?fg=1"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.9299,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 340.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/features/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.9245,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 327.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/features/"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.9366,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 369.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.9396,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 413.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.9423,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 448.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.945,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 428.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-bd0d7e67b14cc539",
+   "source": "github",
+   "goal": "Search GitHub for 'python' repositories and open the search results.",
+   "fingerprint": 41275,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 10,
+   "total_ms": 51896,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['python']]",
+    "checks": {
+     "url": "https://docs.github.com/en",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://docs.github.com/en",
+    "final_title": "GitHub Docs"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8658,
+     "target": "11",
+     "target_label": "Enter your email",
+     "kind": "fill",
+     "text": "python",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 452.1,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9019,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 428.9,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.7866,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 442.6,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.2691,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 458.7,
+     "low_confidence": true,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8577,
+     "target": "6",
+     "target_label": "Search syntax tips",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 443.4,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.9257,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub search results for 'python' repositories",
+     "page_changed": null,
+     "latency_ms": 508.1,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:3",
+     "target_label": "Github Home",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 7,
+     "operation": "DONE",
+     "confidence": 0.9363,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub search results page listing 'python' repositories; evidence that a 'python' repository search was performed",
+     "page_changed": null,
+     "latency_ms": 434.3,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:3",
+     "target_label": "Github Home",
+     "kind": "click",
+     "text": null,
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.9219,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 464.9,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-da78ec6d50b938ed",
+   "source": "google",
+   "goal": "Search Google for async programming open source alternatives and open the results.",
+   "fingerprint": 41275,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 7,
+   "total_ms": 10832,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=async+programming+open+source+alternatives&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=ap",
+     "bot_challenge": false,
+     "group0": [
+      "programming",
+      "async"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=async+programming+open+source+alternatives&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnvM3FDo8hBhXYHTZrYHnXnTbXdH8Q%3A1790504353434&source=hp&ei=oe24aveMGdrvkPIPhMuBsAI&iflsig=ABILxe8AAAAAarj7sdPKwmVtc3j-ikheiGyXo3GF08uH&ved=0ahUKEwi34dC_xI6XAxXaN0QIHYRlACYQ4dUDCDI&uact=5&oq=async+programming+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Iiphc3luYyBwcm9ncmFtbWluZyBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABSPAgUBtYG3ABeACQAQCYAdkBoAHZAaoBAzItMbgBA8gBAPgBAZgCAqAC3wGoAgrCAgoQABgDGI8BGOoCmAMD8QWF2ohaKJ_owJIHBTEuMC4xoAf-BLIHAzItMbgH3AHCBwMxLjHIBwOACAE&sclient=gws-wiz&sei=q-24auuXH7CP8L0P0tuAcQ",
+    "final_title": "async programming open source alternatives - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9001,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "async programming open source alternatives",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 485.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8866,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 467.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504354792"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8905,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'async programming open source alternatives' are not shown; page is the empty Google homepage search box",
+     "page_changed": null,
+     "latency_ms": 486.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504354792"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "async programming open source alternatives",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504354792"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9055,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'async programming open source alternatives'",
+     "page_changed": null,
+     "latency_ms": 624.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504354792"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504354792"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8662,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 697.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=async+programming+open+source+alternatives&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnvM3FDo8hBhXYHTZrYHnXnTbXdH8Q%3A1790504353434&source=hp&ei=oe24aveMGdrvkPIPhMuBsAI&iflsig=ABILxe8AAAAAarj7sdPKwmVtc3j-ikheiGyXo3GF08uH&ved=0ahUKEwi34dC_xI6XAxXaN0QIHYRlACYQ4dUDCDI&uact=5&oq=async+programming+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Iiphc3luYyBwcm9ncmFtbWluZyBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABSPAgUBtYG3ABeACQAQCYAdkBoAHZAaoBAzItMbgBA8gBAPgBAZgCAqAC3wGoAgrCAgoQABgDGI8BGOoCmAMD8QWF2ohaKJ_owJIHBTEuMC4xoAf-BLIHAzItMbgH3AHCBwMxLjHIBwOACAE&sclient=gws-wiz&sei=q-24auuXH7CP8L0P0tuAcQ"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-71020c29008a61b8",
+   "source": "google",
+   "goal": "Search Google for grafana cheat sheet and open the results.",
+   "fingerprint": 41275,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4418,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=grafana+cheat+sheet&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=appeqns0uscdntrunwqyphnfi",
+     "bot_challenge": false,
+     "group0": [
+      "grafana"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=grafana+cheat+sheet&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQns0uScDntrunwQYphNfi4SyR9Wk7w%3A1790504371630&source=hp&ei=s-24apqEJczQkPIP6dDm-AU&iflsig=ABILxe8AAAAAarj7w2ON53LSSrTM2MDbnNhSps3cUnct&oq=grafana+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhNncmFmYW5hIGNoZWF0IHNoZWV0KgUIABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkj4B1ALWAtwAXgAkAEAmAHhAaAB4QGqAQMyLTG4AQHIAQD4AQGYAgKgAuUBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwLxBcavU78YTu8mkgcFMS4wLjGgB7AEsgcDMi0xuAfjAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz",
+    "final_title": "grafana cheat sheet - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.903,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "grafana cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 565.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504371958"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.5277,
+     "target": "12",
+     "target_label": "grafana cheat sheet",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 596.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504371958"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.5706,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 600.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=grafana+cheat+sheet&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQns0uScDntrunwQYphNfi4SyR9Wk7w%3A1790504371630&source=hp&ei=s-24apqEJczQkPIP6dDm-AU&iflsig=ABILxe8AAAAAarj7w2ON53LSSrTM2MDbnNhSps3cUnct&oq=grafana+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhNncmFmYW5hIGNoZWF0IHNoZWV0KgUIABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkj4B1ALWAtwAXgAkAEAmAHhAaAB4QGqAQMyLTG4AQHIAQD4AQGYAgKgAuUBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwLxBcavU78YTu8mkgcFMS4wLjGgB7AEsgcDMi0xuAfjAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9bb7a0ab3b20bb71",
+   "source": "google",
+   "goal": "Search Google for flask security vulnerabilities and open the results.",
+   "fingerprint": 41275,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 10,
+   "total_ms": 44643,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=flask+security+vulnerabilities&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=appeqnsasjq03k",
+     "bot_challenge": false,
+     "group0": [
+      "flask"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=flask+security+vulnerabilities&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsAsJq03K3ug_139luTfwLs9Ip1Eg%3A1790504383268&source=hp&ei=v-24apjlDqDBkPIPiYufsAE&iflsig=ABILxe8AAAAAarj7z9f3lIYt4hkLc0-x5QEUggw5jd6m&ved=0ahUKEwjYwO3NxI6XAxWgIEQIHYnFBxYQ4dUDCDI&uact=5&oq=flask+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ih5mbGFzayBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FSO8HUA1YDXABeACQAQCYAd4BoAHeAaoBAzItMbgBA8gBAPgBAZgCAqAC4gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDAvEFN8UPL7d06vmSBwUxLjAuMaAHlgSyBwMyLTG4B98BwgcDMC4yyAcDgAgB&sclient=gws-wiz",
+    "final_title": "flask security vulnerabilities - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8945,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "flask security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 489.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504383510"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8998,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 630.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504383510"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9053,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Actual search results are not visible — the results area only shows loading placeholders",
+     "page_changed": null,
+     "latency_ms": 576.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=flask+security+vulnerabilities&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsAsJq03K3ug_139luTfwLs9Ip1Eg%3A1790504383268&source=hp&ei=v-24apjlDqDBkPIPiYufsAE&iflsig=ABILxe8AAAAAarj7z9f3lIYt4hkLc0-x5QEUggw5jd6m&ved=0ahUKEwjYwO3NxI6XAxWgIEQIHYnFBxYQ4dUDCDI&uact=5&oq=flask+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ih5mbGFzayBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FSO8HUA1YDXABeACQAQCYAd4BoAHeAaoBAzItMbgBA8gBAPgBAZgCAqAC4gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDAvEFN8UPL7d06vmSBwUxLjAuMaAHlgSyBwMyLTG4B98BwgcDMC4yyAcDgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "wait",
+     "target_label": "Wait for the page to update",
+     "kind": "wait",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=flask+security+vulnerabilities&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsAsJq03K3ug_139luTfwLs9Ip1Eg%3A1790504383268&source=hp&ei=v-24apjlDqDBkPIPiYufsAE&iflsig=ABILxe8AAAAAarj7z9f3lIYt4hkLc0-x5QEUggw5jd6m&ved=0ahUKEwjYwO3NxI6XAxWgIEQIHYnFBxYQ4dUDCDI&uact=5&oq=flask+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ih5mbGFzayBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FSO8HUA1YDXABeACQAQCYAd4BoAHeAaoBAzItMbgBA8gBAPgBAZgCAqAC4gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDAvEFN8UPL7d06vmSBwUxLjAuMaAHlgSyBwMyLTG4B98BwgcDMC4yyAcDgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.2271,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 606.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=flask+security+vulnerabilities&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsAsJq03K3ug_139luTfwLs9Ip1Eg%3A1790504383268&source=hp&ei=v-24apjlDqDBkPIPiYufsAE&iflsig=ABILxe8AAAAAarj7z9f3lIYt4hkLc0-x5QEUggw5jd6m&ved=0ahUKEwjYwO3NxI6XAxWgIEQIHYnFBxYQ4dUDCDI&uact=5&oq=flask+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ih5mbGFzayBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FSO8HUA1YDXABeACQAQCYAd4BoAHeAaoBAzItMbgBA8gBAPgBAZgCAqAC4gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDAvEFN8UPL7d06vmSBwUxLjAuMaAHlgSyBwMyLTG4B98BwgcDMC4yyAcDgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.2271,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 569.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=flask+security+vulnerabilities&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsAsJq03K3ug_139luTfwLs9Ip1Eg%3A1790504383268&source=hp&ei=v-24apjlDqDBkPIPiYufsAE&iflsig=ABILxe8AAAAAarj7z9f3lIYt4hkLc0-x5QEUggw5jd6m&ved=0ahUKEwjYwO3NxI6XAxWgIEQIHYnFBxYQ4dUDCDI&uact=5&oq=flask+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ih5mbGFzayBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FSO8HUA1YDXABeACQAQCYAd4BoAHeAaoBAzItMbgBA8gBAPgBAZgCAqAC4gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDAvEFN8UPL7d06vmSBwUxLjAuMaAHlgSyBwMyLTG4B98BwgcDMC4yyAcDgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.2271,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 605.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=flask+security+vulnerabilities&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsAsJq03K3ug_139luTfwLs9Ip1Eg%3A1790504383268&source=hp&ei=v-24apjlDqDBkPIPiYufsAE&iflsig=ABILxe8AAAAAarj7z9f3lIYt4hkLc0-x5QEUggw5jd6m&ved=0ahUKEwjYwO3NxI6XAxWgIEQIHYnFBxYQ4dUDCDI&uact=5&oq=flask+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ih5mbGFzayBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FSO8HUA1YDXABeACQAQCYAd4BoAHeAaoBAzItMbgBA8gBAPgBAZgCAqAC4gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDAvEFN8UPL7d06vmSBwUxLjAuMaAHlgSyBwMyLTG4B98BwgcDMC4yyAcDgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=flask+security+vulnerabilities&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsAsJq03K3ug_139luTfwLs9Ip1Eg%3A1790504383268&source=hp&ei=v-24apjlDqDBkPIPiYufsAE&iflsig=ABILxe8AAAAAarj7z9f3lIYt4hkLc0-x5QEUggw5jd6m&ved=0ahUKEwjYwO3NxI6XAxWgIEQIHYnFBxYQ4dUDCDI&uact=5&oq=flask+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ih5mbGFzayBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FSO8HUA1YDXABeACQAQCYAd4BoAHeAaoBAzItMbgBA8gBAPgBAZgCAqAC4gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDAvEFN8UPL7d06vmSBwUxLjAuMaAHlgSyBwMyLTG4B98BwgcDMC4yyAcDgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.2428,
+     "target": "2",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 591.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=flask+security+vulnerabilities&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsAsJq03K3ug_139luTfwLs9Ip1Eg%3A1790504383268&source=hp&ei=v-24apjlDqDBkPIPiYufsAE&iflsig=ABILxe8AAAAAarj7z9f3lIYt4hkLc0-x5QEUggw5jd6m&ved=0ahUKEwjYwO3NxI6XAxWgIEQIHYnFBxYQ4dUDCDI&uact=5&oq=flask+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ih5mbGFzayBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FSO8HUA1YDXABeACQAQCYAd4BoAHeAaoBAzItMbgBA8gBAPgBAZgCAqAC4gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDAvEFN8UPL7d06vmSBwUxLjAuMaAHlgSyBwMyLTG4B98BwgcDMC4yyAcDgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.496,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 593.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=flask+security+vulnerabilities&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsAsJq03K3ug_139luTfwLs9Ip1Eg%3A1790504383268&source=hp&ei=v-24apjlDqDBkPIPiYufsAE&iflsig=ABILxe8AAAAAarj7z9f3lIYt4hkLc0-x5QEUggw5jd6m&ved=0ahUKEwjYwO3NxI6XAxWgIEQIHYnFBxYQ4dUDCDI&uact=5&oq=flask+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ih5mbGFzayBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FSO8HUA1YDXABeACQAQCYAd4BoAHeAaoBAzItMbgBA8gBAPgBAZgCAqAC4gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDAvEFN8UPL7d06vmSBwUxLjAuMaAHlgSyBwMyLTG4B98BwgcDMC4yyAcDgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-278d56df93e623ef",
+   "source": "google",
+   "goal": "Search Google for mongodb tutorial and open the results.",
+   "fingerprint": 41275,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4369,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=mongodb+tutorial&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=appeqnvgb8h4bmoufxzd3vp_nnw7",
+     "bot_challenge": false,
+     "group0": [
+      "mongodb"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=mongodb+tutorial&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnvGB8h4bmOufxZD3vp_NNw7Nxr5AA%3A1790504435041&source=hp&ei=8-24aoyZAYzBkPIP25O3gQU&iflsig=ABILxe8AAAAAarj8A-5ccOFY9IVwMUMNYMz5BatnPgwB&ved=0ahUKEwjM3sXmxI6XAxWMIEQIHdvJLVAQ4dUDCDI&uact=5&oq=mongodb+tutorial&gs_lp=Egdnd3Mtd2l6IhBtb25nb2RiIHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEikB1ALWAtwAXgAkAEAmAHQAaAB0AGqAQMyLTG4AQPIAQD4AQGYAgKgAtUBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwLxBeSZ0nWCjUHekgcFMS4wLjGgB4kFsgcDMi0xuAfSAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz",
+    "final_title": "mongodb tutorial - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7775,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mongodb tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 481.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504435273"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.5452,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 556.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504435273"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8741,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 600.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=mongodb+tutorial&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnvGB8h4bmOufxZD3vp_NNw7Nxr5AA%3A1790504435041&source=hp&ei=8-24aoyZAYzBkPIP25O3gQU&iflsig=ABILxe8AAAAAarj8A-5ccOFY9IVwMUMNYMz5BatnPgwB&ved=0ahUKEwjM3sXmxI6XAxWMIEQIHdvJLVAQ4dUDCDI&uact=5&oq=mongodb+tutorial&gs_lp=Egdnd3Mtd2l6IhBtb25nb2RiIHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEikB1ALWAtwAXgAkAEAmAHQAaAB0AGqAQMyLTG4AQPIAQD4AQGYAgKgAtUBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwLxBeSZ0nWCjUHekgcFMS4wLjGgB4kFsgcDMi0xuAfSAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-12c5017c6eee394a",
+   "source": "google",
+   "goal": "First search Google for vllm open source alternatives, then search Google for react interview questions.",
+   "fingerprint": 41275,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14584,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvllm%2bopen%2bsource%2balternatives%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvllm%2Bopen%2Bsource%2Balternatives%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns7klQXwfj599D3bZq4iHmx9nBaaw%253A1790504446651%26source%3Dhp%26ei%3D_u24aqjPJr7JkPIPsYGZCQ%26iflsig%3DABILxe8AAAAAarj8DpLSDTDd8PftOUVPq1DgD_CpySFc%26ved%3D0ahUKEwioxorsxI6XAxW-JEQIHbFAJgEQ4dUDCDI%26uact%3D5%26oq%3Dvllm%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ih12bGxtIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigAUj7BlAMWAxwAXgAkAEAmAHkAaAB5AGqAQMyLTG4AQPIAQD4AQGYAgKgAukBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwLxBWdnrwA2_glKkgcFMS4wLjGgB6gDsgcDMi0xuAfmAcIHAzEuMcgHAoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIHc49UGIjCAlzYzibuFipuiawlp3is-F3Ff_NmG5sSyKaiy0tNaCzcn3MVxcEu-UMpHqNY7fRkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vllm+open+source+alternatives&sca_esv=ee3892b004"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8956,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vllm open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 497.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504446804"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9031,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 510.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504446804"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-fcc8552be97857a5",
+   "source": "google",
+   "goal": "First search Google for mysql interview questions, then search Google for redis cheat sheet.",
+   "fingerprint": 41275,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14729,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmysql%2binterview%2bquestions%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmysql%2Binterview%2Bquestions%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsuLSlkEp6SJ2Qg4ZVzN1X6ftPe_Q%253A1790504513417%26source%3Dhp%26ei%3DQe64aoKhGN_ZkPIP6-32kQU%26iflsig%3DABILxe8AAAAAarj8UTfVSQa0FuEL0NvXQOwfNgytlHkn%26ved%3D0ahUKEwjCxfWLxY6XAxXfLEQIHeu2PVIQ4dUDCDI%26uact%3D5%26oq%3Dmysql%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhlteXNxbCBpbnRlcnZpZXcgcXVlc3Rpb25zMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0B0jfB1AOWA5wAXgAkAEAmAHUAaAB1AGqAQMyLTG4AQPIAQD4AQGYAgKgAtoBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBSlKn4wTeByTkgcFMS4wLjGgB9YGsgcDMi0xuAfWAcIHAzAuMsgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMTc49UGIjCgNw2ZkfgyqAwbFZuXdpR8d8N2LITille3ys7UZM3EpFptHqrke8ZFV1KN8JWKmcYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mysql+interview+questions&sca_esv=ee3892b004fb5a"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8525,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mysql interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 524.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504513554"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8834,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 613.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504513554"
+    }
+   ]
+  }
+ ]
+}

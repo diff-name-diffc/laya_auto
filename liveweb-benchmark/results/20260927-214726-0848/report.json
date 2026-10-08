@@ -1,0 +1,742 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 38224,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:56:22+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.2,
+  "mean_duration_ms": 20656,
+  "decision_latency_ms": {
+   "p50": 564.4,
+   "p95": 640.3
+  },
+  "step_outcomes": {
+   "executed": 21,
+   "stale": 4,
+   "refused-empty-enter": 2,
+   "done-rejected": 4,
+   "page changed since the decision (url or marker mismatch)": 2,
+   "done": 1
+  },
+  "low_confidence_steps": 2,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 4.2
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-daf3b9fccf87a327",
+   "source": "google",
+   "goal": "Search Google for unit testing release notes and open the results.",
+   "fingerprint": 38224,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14998,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dunit%2btesting%2brelease%2bnotes%26sca_e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dunit%2Btesting%2Brelease%2Bnotes%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns9nJh_IR8eGdFW7dk6Zx3Vm9a2iQ%253A1790516849786%26source%3Dhp%26ei%3DcR65apDwLv_DkPIPtZ7UkQ4%26iflsig%3DABILxe8AAAAAarksgboMIJ5INY6CON2xMOBKqVAUkOC0%26ved%3D0ahUKEwjQ7K2G846XAxX_IUQIHTUPNeIQ4dUDCDI%26uact%3D5%26oq%3Dunit%2Btesting%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6Ihp1bml0IHRlc3RpbmcgcmVsZWFzZSBub3RlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwJI9gZQEFgQcAF4AJABAJgB8QGgAfEBqgEDMi0xuAEDyAEA-AEBmAICoAL5AagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMF8QXBDcpyYW9n8ZIHBTEuMC4xoAfEA7IHAzItMbgH9AHCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz%26sei%3DdB65auHOOuHakPIP4evf4A0&hl=en&q=EgQm0XtnGPW85NUGIjAeDqRBrajFmiVFSaC0zlHPqcvyogb7pLAA8Z1ALbo2GvXkzWIyH6DGCSXWvorCibcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=unit+testing+release+notes&sca_esv=3e3a42b854afc"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8973,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "unit testing release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 505.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516851241"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8908,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 502.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516851241"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-01455f0621c00021",
+   "source": "google",
+   "goal": "First search Google for typescript open source alternatives, then search Google for ci/cd pipelines performance optimization.",
+   "fingerprint": 38224,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 17718,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dtypescript%2bopen%2bsource%2balternative",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtypescript%2Bopen%2Bsource%2Balternatives%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvqbTyrS-O98tPJVaJlufFc3oWT3A%253A1790516917534%26source%3Dhp%26ei%3DtR65aqb5HZDRkPIPjq2I4As%26iflsig%3DABILxe8AAAAAarksxVWDu31cKP9Q4gIx0u3W_tYPvQA1%26ved%3D0ahUKEwjmp9Om846XAxWQKEQIHY4WArwQ4dUDCDI%26uact%3D5%26oq%3Dtypescript%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiN0eXBlc2NyaXB0IG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIwhhQD1gPcAJ4AJABAJgB-QGgAfkBqgEDMi0xuAEDyAEA-AEBmAIDoAKAAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QVF9ZR6KVL_h5IHBTIuMC4xoAflBLIHAzItMbgH-wHCBwUyLjAuMcgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLu95NUGIjBIChPr5Rk0U2IfsaIkOlTJ6SIX14NEC5rlz7CXuhBRZmHWFyBWqM9IJp3HM4sqIXEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=typescript+open+source+alternatives&sca_esv=3e3a"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8994,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "typescript open source alternatives",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 512.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8819,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 498.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516919168"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.4809,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "typescript open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 509.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516919168"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8835,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "typescript open source alternatives",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 579.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516919168"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516919168"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-edc65baf0073e2a2",
+   "source": "google",
+   "goal": "First search Google for grafana tutorial, then search Google for react best practices.",
+   "fingerprint": 38224,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14704,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgrafana%2btutorial%26sca_esv%3d3e3a42b85",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgrafana%2Btutorial%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnssxhbeSokKYku1bvSD6zTuGPoHrw%253A1790516987675%26source%3Dhp%26ei%3D-x65atqFKO7KkPIPlovKuA8%26iflsig%3DABILxe8AAAAAarktC6BQdRzEk8mA-kdw_i0txPQ-6H9D%26ved%3D0ahUKEwia743I846XAxVuJUQIHZaFEvcQ4dUDCDI%26uact%3D5%26oq%3Dgrafana%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhBncmFmYW5hIHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IrQdQD1gPcAF4AJABAJgB8gGgAfIBqgEDMi0xuAEDyAEA-AEBmAICoAL8AagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME8QWIfa1a8p0SXpIHBTEuMC4xoAeRBbIHAzItMbgH9wHCBwMyLTLIBweACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGP695NUGIjB1s8NX5Nh650JiYxOEIxxJ_E6kJrVxZj9GS9iVyNf-lmmNVGRZmVFyCinStrOcF3wyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=grafana+tutorial&sca_esv=3e3a42b854afc954&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9107,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "grafana tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 522.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516988061"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8844,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 562.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516988061"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-fc48410ae33a2fa5",
+   "source": "google",
+   "goal": "First search Google for retrieval augmented generation best practices, then search Google for how to debug profiling.",
+   "fingerprint": 38224,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 54460,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bprofiling%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bprofiling%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvUjzwGb2BetnXEiuQOnJfr3C7TQg%253A1790517054599%26source%3Dhp%26ei%3DPh-5av2NI5nPkPIP2-y0oA8%26iflsig%3DABILxe8AAAAAarktTuBTe-i9aPTAflcofSTzUobkRkSb%26ved%3D0ahUKEwj9pILo846XAxWZJ0QIHVs2DfQQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bprofiling%26gs_lp%3DEgdnd3Mtd2l6IhZob3cgdG8gZGVidWcgcHJvZmlsaW5nMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUiUvgJQ5KACWOSgAnACeACQAQCYAYoCoAGKAqoBAzItMbgBA8gBAPgBAZgCA6ACkgKoAgrCAhMQLhiABBiKBRhDGOcGGOoCGLQCwgITEAAYgAQYigUYQxjnBhjqAhi0ApgDBPEFrwsnVGmfmaSSBwUyLjAuMaAHzgSyBwMyLTG4B4wCwgcFMC4yLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOm-5NUGIjDbYUmFFRw9PFfByBgcoYH5UgXe5fNziKdHCPZvVTrGGXO-eimv6B8E2snRWugxKlwyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+profiling&sca_esv=3e3a42b854afc954&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.618,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 518.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517054994"
+    },
+    {
+     "step": 2,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.2534,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 589.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517054994"
+    },
+    {
+     "step": 3,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.4099,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 581.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517054994"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8557,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for how to debug profiling",
+     "page_changed": null,
+     "latency_ms": 644.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517054994"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug profiling",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517054994"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.873,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'how to debug profiling' — only the query typed in the search box with autocomplete suggestions is shown, no results page",
+     "page_changed": null,
+     "latency_ms": 640.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517054994"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517054994"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-25c27eaa3ecbe6c3",
+   "source": "google",
+   "goal": "Search Google for code review open source alternatives and open the results.",
+   "fingerprint": 38224,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14679,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dcode%2breview%2bopen%2bsource%2balternat",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dcode%2Breview%2Bopen%2Bsource%2Balternatives%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvFqXGAAqtLv0I0opOlYfZNUThpAw%253A1790517161219%26source%3Dhp%26ei%3DqR-5avCZDK26kPIP0sXPmQw%26iflsig%3DABILxe8AAAAAarktuWiLZlYNu-8sB5Ve8lMvfhcfq4Jj%26ved%3D0ahUKEwiwku6a9I6XAxUtHUQIHdLiM8MQ4dUDCDI%26uact%3D5%26oq%3Dcode%2Breview%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiRjb2RlIHJldmlldyBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUi3B1ANWA1wAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAuQBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBexB2f5WbdAgkgcFMS4wLjGgB8YFsgcDMi0xuAfhAcIHAzEuMcgHA4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKu_5NUGIjCrsHx97qJmL7Vo6UfpFtUzqaomZ2pXA0RiQm6chisMwvvR0Y0_i9th4O_H30mi4E4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=code+review+open+source+alternatives&sca_esv=3e3"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.585,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "code review open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 510.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517161509"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8887,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 574.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517161509"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-893e2872b366227b",
+   "source": "google",
+   "goal": "First search Google for refactoring best practices, then search Google for llm fine-tuning best practices.",
+   "fingerprint": 38224,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14753,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drefactoring%2bbest%2bpractices%26sca_esv",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drefactoring%2Bbest%2Bpractices%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvTeObH0avfi_flGvBUnlFGE-24_Q%253A1790517228107%26source%3Dhp%26ei%3D7B-5aqfqA6_ckPIPgP6XsAw%26iflsig%3DABILxe8AAAAAarkt_LmmislvV2lOed7VCDdBasqgLcHi%26ved%3D0ahUKEwinkN-69I6XAxUvLkQIHQD_BcYQ4dUDCDI%26uact%3D5%26oq%3Drefactoring%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhpyZWZhY3RvcmluZyBiZXN0IHByYWN0aWNlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBUjLB1AQWBBwAXgAkAEAmAGMAqABjAKqAQMyLTG4AQPIAQD4AQGYAgKgApMCqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBfuxwNunrGDDkgcFMS4wLjGgB5oFsgcDMi0xuAeOAsIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGO6_5NUGIjDeZ29Vg74_707FzZQwd2KzmcmmHt6rH40kjRDOHzVaw40TXEQxUyFlaYvczgmYH4kyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=refactoring+best+practices&sca_esv=3e3a42b854afc"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9092,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "refactoring best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 507.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517228384"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7454,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 582.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517228384"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8e951e24fb3ba88c",
+   "source": "google",
+   "goal": "Search Google for ruby best practices and open the results.",
+   "fingerprint": 38224,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14735,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3druby%2bbest%2bpractices%26sca_esv%3d3e3a",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Druby%2Bbest%2Bpractices%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntPBYhciCwmzF0FSZDKBzMeCnvkew%253A1790517295044%26source%3Dhp%26ei%3DLyC5auWXAa_ckPIPgP6XsAw%26iflsig%3DABILxe8AAAAAarkuP3pj0uLlpe1sWA6hNrlueNq_A_6D%26ved%3D0ahUKEwil69Xa9I6XAxUvLkQIHQD_BcYQ4dUDCDI%26uact%3D5%26oq%3Druby%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhNydWJ5IGJlc3QgcHJhY3RpY2VzMgUQABiABDIIEAAYFhgeGAoyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FSM0HUA5YDnABeACQAQCYAZgCoAGYAqoBAzItMbgBA8gBAPgBAZgCAqACngKoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDA_EF3NLJi4VTXneSBwUxLjAuMaAHrwSyBwMyLTG4B5oCwgcFMC4xLjHIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLHA5NUGIjAjPTRoA_LZs79OUZte4lsP69fv5HlTqiX3OOYIqIvlXVIzLkX6PD_rHjCViY5J_6YyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=ruby+best+practices&sca_esv=3e3a42b854afc954&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9122,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ruby best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 519.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517295288"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8979,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 596.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517295288"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-e7b11cd77293e25f",
+   "source": "google",
+   "goal": "First search Google for c++ security vulnerabilities, then search Google for design patterns open source alternatives.",
+   "fingerprint": 38224,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 12,
+   "total_ms": 19200,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=patterns'",
+    "checks": {
+     "url": "https://www.google.com/search?q=c%2b%2b+security+vulnerabilities&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=appeqnt3usoz",
+     "bot_challenge": false,
+     "group0": [
+      "design"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=c%2B%2B+security+vulnerabilities&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnt3usOzQNz9PSmAsBELai0MfE_uWw%3A1790517364726&ei=dCC5apvvK7Kuur8P5O6M2Aw&biw=1120&bih=780&oq=c%2B%2B+security+vulnerabilities&gs_lp=Egxnd3Mtd2l6LXNlcnAiHGMrKyBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMqBwgAGB4YsAMyBxAAGB4YsANIqghQAFgAcAF4AJABAJgBAKABAKoBALgBAcgBAJgCAaACAZgDAIgGAZAGAZIHATGgBwCyBwC4BwDCBwExyAcAgAgB&sclient=gws-wiz-serp",
+    "final_title": "c++ security vulnerabilities - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8849,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "c++ security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 527.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517362227"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9042,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 602.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517362227"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.779,
+     "target": "3",
+     "target_label": "Clear",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 564.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=c%2B%2B+security+vulnerabilities&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnvwWD-2S-iiUWJS8JXLGxcMunvgCg%3A1790517361948&source=hp&ei=cSC5aoHrOOSjkPIP1uW34QQ&iflsig=ABILxe8AAAAAarkugSB7oNK4sKZdEuRN9T6oN_sI-KTv&ved=0ahUKEwjB58n69I6XAxXkEUQIHdbyLUwQ4dUDCDI&uact=5&oq=c%2B%2B+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IhxjKysgc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBUjWB1AOWA5wAXgAkAEAmAGPAqABjwKqAQMyLTG4AQPIAQD4AQGYAgKgApUCqAIKwgIdEAAYgAQYigUY1AMY5QIY5wYY6gIYtAIYigMYtwPCAhoQABiABBiKBRi3AxjlAhjnBhjqAhi0AhiKA5gDA_EFnPZ3sB6eyP-SBwUxLjAuMaAH6wKyBwMyLTG4B5ECwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.3434,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for \"design patterns open source alternatives\"",
+     "page_changed": null,
+     "latency_ms": 593.2,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=c%2B%2B+security+vulnerabilities&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnvwWD-2S-iiUWJS8JXLGxcMunvgCg%3A1790517361948&source=hp&ei=cSC5aoHrOOSjkPIP1uW34QQ&iflsig=ABILxe8AAAAAarkugSB7oNK4sKZdEuRN9T6oN_sI-KTv&ved=0ahUKEwjB58n69I6XAxXkEUQIHdbyLUwQ4dUDCDI&uact=5&oq=c%2B%2B+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IhxjKysgc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBUjWB1AOWA5wAXgAkAEAmAGPAqABjwKqAQMyLTG4AQPIAQD4AQGYAgKgApUCqAIKwgIdEAAYgAQYigUY1AMY5QIY5wYY6gIYtAIYigMYtwPCAhoQABiABBiKBRi3AxjlAhjnBhjqAhi0AhiKA5gDA_EFnPZ3sB6eyP-SBwUxLjAuMaAH6wKyBwMyLTG4B5ECwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "design patterns open source alternatives",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=c%2B%2B+security+vulnerabilities&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnvwWD-2S-iiUWJS8JXLGxcMunvgCg%3A1790517361948&source=hp&ei=cSC5aoHrOOSjkPIP1uW34QQ&iflsig=ABILxe8AAAAAarkugSB7oNK4sKZdEuRN9T6oN_sI-KTv&ved=0ahUKEwjB58n69I6XAxXkEUQIHdbyLUwQ4dUDCDI&uact=5&oq=c%2B%2B+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IhxjKysgc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBUjWB1AOWA5wAXgAkAEAmAGPAqABjwKqAQMyLTG4AQPIAQD4AQGYAgKgApUCqAIKwgIdEAAYgAQYigUY1AMY5QIY5wYY6gIYtAIYigMYtwPCAhoQABiABBiKBRi3AxjlAhjnBhjqAhi0AhiKA5gDA_EFnPZ3sB6eyP-SBwUxLjAuMaAH6wKyBwMyLTG4B5ECwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.7955,
+     "target": "2",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 635.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=c%2B%2B+security+vulnerabilities&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnvwWD-2S-iiUWJS8JXLGxcMunvgCg%3A1790517361948&source=hp&ei=cSC5aoHrOOSjkPIP1uW34QQ&iflsig=ABILxe8AAAAAarkugSB7oNK4sKZdEuRN9T6oN_sI-KTv&ved=0ahUKEwjB58n69I6XAxXkEUQIHdbyLUwQ4dUDCDI&uact=5&oq=c%2B%2B+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IhxjKysgc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBUjWB1AOWA5wAXgAkAEAmAGPAqABjwKqAQMyLTG4AQPIAQD4AQGYAgKgApUCqAIKwgIdEAAYgAQYigUY1AMY5QIY5wYY6gIYtAIYigMYtwPCAhoQABiABBiKBRi3AxjlAhjnBhjqAhi0AhiKA5gDA_EFnPZ3sB6eyP-SBwUxLjAuMaAH6wKyBwMyLTG4B5ECwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8268,
+     "target": "7",
+     "target_label": "c++ security vulnerabilities",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 656.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=c%2B%2B+security+vulnerabilities&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnvwWD-2S-iiUWJS8JXLGxcMunvgCg%3A1790517361948&source=hp&ei=cSC5aoHrOOSjkPIP1uW34QQ&iflsig=ABILxe8AAAAAarkugSB7oNK4sKZdEuRN9T6oN_sI-KTv&ved=0ahUKEwjB58n69I6XAxXkEUQIHdbyLUwQ4dUDCDI&uact=5&oq=c%2B%2B+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IhxjKysgc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBUjWB1AOWA5wAXgAkAEAmAGPAqABjwKqAQMyLTG4AQPIAQD4AQGYAgKgApUCqAIKwgIdEAAYgAQYigUY1AMY5QIY5wYY6gIYtAIYigMYtwPCAhoQABiABBiKBRi3AxjlAhjnBhjqAhi0AhiKA5gDA_EFnPZ3sB6eyP-SBwUxLjAuMaAH6wKyBwMyLTG4B5ECwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8129,
+     "target": "2",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 591.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=c%2B%2B+security+vulnerabilities&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnt3usOzQNz9PSmAsBELai0MfE_uWw%3A1790517364726&ei=dCC5apvvK7Kuur8P5O6M2Aw&biw=1120&bih=780&oq=c%2B%2B+security+vulnerabilities&gs_lp=Egxnd3Mtd2l6LXNlcnAiHGMrKyBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMqBwgAGB4YsAMyBxAAGB4YsANIqghQAFgAcAF4AJABAJgBAKABAKoBALgBAcgBAJgCAaACAZgDAIgGAZAGAZIHATGgBwCyBwC4BwDCBwExyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.7934,
+     "target": "2",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 569.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=c%2B%2B+security+vulnerabilities&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnt3usOzQNz9PSmAsBELai0MfE_uWw%3A1790517364726&ei=dCC5apvvK7Kuur8P5O6M2Aw&biw=1120&bih=780&oq=c%2B%2B+security+vulnerabilities&gs_lp=Egxnd3Mtd2l6LXNlcnAiHGMrKyBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMqBwgAGB4YsAMyBxAAGB4YsANIqghQAFgAcAF4AJABAJgBAKABAKoBALgBAcgBAJgCAaACAZgDAIgGAZAGAZIHATGgBwCyBwC4BwDCBwExyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.9027,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"design patterns open source alternatives\"",
+     "page_changed": null,
+     "latency_ms": 565.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=c%2B%2B+security+vulnerabilities&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnt3usOzQNz9PSmAsBELai0MfE_uWw%3A1790517364726&ei=dCC5apvvK7Kuur8P5O6M2Aw&biw=1120&bih=780&oq=c%2B%2B+security+vulnerabilities&gs_lp=Egxnd3Mtd2l6LXNlcnAiHGMrKyBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMqBwgAGB4YsAMyBxAAGB4YsANIqghQAFgAcAF4AJABAJgBAKABAKoBALgBAcgBAJgCAaACAZgDAIgGAZAGAZIHATGgBwCyBwC4BwDCBwExyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 9,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "design patterns open source alternatives",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=c%2B%2B+security+vulnerabilities&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnt3usOzQNz9PSmAsBELai0MfE_uWw%3A1790517364726&ei=dCC5apvvK7Kuur8P5O6M2Aw&biw=1120&bih=780&oq=c%2B%2B+security+vulnerabilities&gs_lp=Egxnd3Mtd2l6LXNlcnAiHGMrKyBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMqBwgAGB4YsAMyBxAAGB4YsANIqghQAFgAcAF4AJABAJgBAKABAKoBALgBAcgBAJgCAaACAZgDAIgGAZAGAZIHATGgBwCyBwC4BwDCBwExyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 10,
+     "operation": "DONE",
+     "confidence": 0.8827,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 598.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=c%2B%2B+security+vulnerabilities&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnt3usOzQNz9PSmAsBELai0MfE_uWw%3A1790517364726&ei=dCC5apvvK7Kuur8P5O6M2Aw&biw=1120&bih=780&oq=c%2B%2B+security+vulnerabilities&gs_lp=Egxnd3Mtd2l6LXNlcnAiHGMrKyBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMqBwgAGB4YsAMyBxAAGB4YsANIqghQAFgAcAF4AJABAJgBAKABAKoBALgBAcgBAJgCAaACAZgDAIgGAZAGAZIHATGgBwCyBwC4BwDCBwExyAcAgAgB&sclient=gws-wiz-serp"
+    }
+   ]
+  }
+ ]
+}

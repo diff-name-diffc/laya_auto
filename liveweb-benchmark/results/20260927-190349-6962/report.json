@@ -1,0 +1,762 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 65064,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:10:05+0800",
+  "n_tasks": 8,
+  "success": 2,
+  "success_rate": 0.25,
+  "verified": 2,
+  "verified_rate": 0.25,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.4,
+  "mean_duration_ms": 17648,
+  "decision_latency_ms": {
+   "p50": 505.8,
+   "p95": 724.1
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 3,
+   "done-rejected": 9,
+   "executed": 17,
+   "done": 3,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 2,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 2,
+    "success_rate": 0.25,
+    "verified": 2,
+    "verified_rate": 0.25,
+    "mean_steps": 4.4
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-335cac06b1167507",
+   "source": "google",
+   "goal": "Search Google for tensorflow security vulnerabilities and open the results.",
+   "fingerprint": 65064,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 22722,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dtensorflow%2bsecurity%2bvulnerabilities%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtensorflow%2Bsecurity%2Bvulnerabilities%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsDQgeihSLlfyglrPnwhAqHxv4ZWQ%253A1790507032672%26source%3Dhp%26ei%3DGPi4aojVJ4qrur8P6OOYQQ%26iflsig%3DABILxe8AAAAAarkGKAIm0-hZL1fQ9THxeP-xvmEIcggY%26ved%3D0ahUKEwiIwZi9zo6XAxWKle4BHegxJggQ4dUDCDI%26oq%3Dtensorflow%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IiN0ZW5zb3JmbG93IHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllczIGEAAYFhgeMgsQABiABBiKBRiGAzIIEAAYiQUYogQyBRAAGO8FMgUQABjvBUj8I1AZWBlwAXgAkAEAmAHUAaAB1AGqAQMyLTG4AQzIAQD4AQGYAgKgAtwBqAIKwgIKEAAYAxiPARjqApgDBPEFY5pyz0JITxySBwUxLjAuMaAHtwKyBwMyLTG4B9gBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz%26sei%3DI_i4aqeUDJOwur8P85bNyQs&hl=en&q=EgQm0XtnGKPw49UGIjDmietf8O4ZzQ7ncE68YBs_DS4jjrzLneDBljM3MUL0l87vmypAOTtCN5tyZf17p3oyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=tensorflow+security+vulnerabilities&sca_esv=54dc"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9048,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow security vulnerabilities",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 543.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8998,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 466.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507034121"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.6827,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search-results page for 'tensorflow security vulnerabilities'; query has not been entered/searched; results are not shown",
+     "page_changed": null,
+     "latency_ms": 488.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507034121"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507034121"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9181,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search-results page listing results for tensorflow security vulnerabilities",
+     "page_changed": null,
+     "latency_ms": 597.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507034121"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:28",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507034121"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-802d0e0fd93ed9b6",
+   "source": "google",
+   "goal": "Search Google for huggingface transformers cheat sheet and open the results.",
+   "fingerprint": 65064,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 7,
+   "total_ms": 12954,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=huggingface+transformers+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnvi",
+     "bot_challenge": false,
+     "group0": [
+      "transformers",
+      "huggingface"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=huggingface+transformers+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvIklp_X1iem9kaByyd0kMqCuRUnA%3A1790507107768&source=hp&ei=Y_i4aqXNLf2L8L0Pgefq8A4&iflsig=ABILxe8AAAAAarkGc2NThoGR00U9hYV7PWHGPlrSHBrk&oq=huggingface+transformers+cheat+sheet&gs_lp=Egdnd3Mtd2l6IiRodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgY2hlYXQgc2hlZXQqBggAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIIEAAYiQUYogQyBRAAGO8FSI8zUBFYEXABeACQAQCYAdABoAHQAaoBAzItMbgBAcgBAPgBAZgCAqAC2AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEF3bLeAmb-owqSBwUxLjAuMaAHjwSyBwMyLTG4B9MBwgcFMC4xLjHIBwWACAE&sclient=gws-wiz",
+    "final_title": "huggingface transformers cheat sheet - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9003,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "huggingface transformers cheat sheet",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 486.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8949,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 469.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507109096"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8985,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'huggingface transformers cheat sheet' (page shows only the empty Google homepage search box)",
+     "page_changed": null,
+     "latency_ms": 488.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507109096"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "huggingface transformers cheat sheet",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507109096"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9055,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results list for 'huggingface transformers cheat sheet' (only the search box with autocomplete suggestions is shown; search has not been execut",
+     "page_changed": null,
+     "latency_ms": 610.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507109096"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:23",
+     "target_label": "huggingface transformers cheat sheet",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507109096"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8959,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 600.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=huggingface+transformers+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvIklp_X1iem9kaByyd0kMqCuRUnA%3A1790507107768&source=hp&ei=Y_i4aqXNLf2L8L0Pgefq8A4&iflsig=ABILxe8AAAAAarkGc2NThoGR00U9hYV7PWHGPlrSHBrk&oq=huggingface+transformers+cheat+sheet&gs_lp=Egdnd3Mtd2l6IiRodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgY2hlYXQgc2hlZXQqBggAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIIEAAYiQUYogQyBRAAGO8FSI8zUBFYEXABeACQAQCYAdABoAHQAaoBAzItMbgBAcgBAPgBAZgCAqAC2AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEF3bLeAmb-owqSBwUxLjAuMaAHjwSyBwMyLTG4B9MBwgcFMC4xLjHIBwWACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b216aac8c2f2dd14",
+   "source": "google",
+   "goal": "Search Google for nginx security vulnerabilities and open the results.",
+   "fingerprint": 65064,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 4,
+   "total_ms": 25371,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=nginx+security+vulnerabilities&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnst8nngi7",
+     "bot_challenge": false,
+     "group0": [
+      "nginx"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=nginx+security+vulnerabilities&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnst8nnGi7NuMLlGi7qm1d6Nf82RTw%3A1790507128119&source=hp&ei=ePi4aoHcBee4kPIPlergSQ&iflsig=ABILxe8AAAAAarkGiGl3FxixLzfDunMt-GNQJSY9LGOw&ved=0ahUKEwiB-Nnqzo6XAxVnHEQIHRU1OAkQ4dUDCDI&uact=5&oq=nginx+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ih5uZ2lueCBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgkQABgWGB4YxwMyCxAAGIAEGIoFGIYDMgUQABjvBUjKrAFQDlgOcAF4AJABAJgB5AGgAeQBqgEDMi0xuAEDyAEA-AEBmAICoALtAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QV-cLAFLBlRs5IHBTEuMC4xoAfYBLIHAzItMbgH6gHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz",
+    "final_title": "nginx security vulnerabilities - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9038,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "nginx security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 508.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507128379"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8892,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Actual search-results page listing results for 'nginx security vulnerabilities' (only the query typed in the search box with autocomplete suggestions ",
+     "page_changed": null,
+     "latency_ms": 575.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507128379"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507128379"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.833,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 610.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=nginx+security+vulnerabilities&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnst8nnGi7NuMLlGi7qm1d6Nf82RTw%3A1790507128119&source=hp&ei=ePi4aoHcBee4kPIPlergSQ&iflsig=ABILxe8AAAAAarkGiGl3FxixLzfDunMt-GNQJSY9LGOw&ved=0ahUKEwiB-Nnqzo6XAxVnHEQIHRU1OAkQ4dUDCDI&uact=5&oq=nginx+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ih5uZ2lueCBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgkQABgWGB4YxwMyCxAAGIAEGIoFGIYDMgUQABjvBUjKrAFQDlgOcAF4AJABAJgB5AGgAeQBqgEDMi0xuAEDyAEA-AEBmAICoALtAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QV-cLAFLBlRs5IHBTEuMC4xoAfYBLIHAzItMbgH6gHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8e1990c84e3494ee",
+   "source": "google",
+   "goal": "First search Google for code review best practices, then search Google for llm fine-tuning open source alternatives.",
+   "fingerprint": 65064,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 14569,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fine-tuning']]",
+    "checks": {
+     "url": "https://www.google.com/search?q=code+review+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqntwn9l3u-6p2p",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/search?q=code+review+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntwN9L3u-6p2PgINKjrPZnF4DUJeA%3A1790507160694&source=hp&ei=mPi4asGKKefJkPIPkYvcCQ&iflsig=ABILxe8AAAAAarkGqBClSTrNCWmvSktKKqqfzNULPa7R&ved=0ahUKEwjBtp76zo6XAxXnJEQIHZEFNwEQ4dUDCDI&uact=5&oq=code+review+best+practices&gs_lp=Egdnd3Mtd2l6Ihpjb2RlIHJldmlldyBiZXN0IHByYWN0aWNlczIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSN8IUA5YDnABeACQAQCYAc0BoAHNAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFS7M2maKiFl2SBwUxLjAuMaAH7wWyBwMyLTG4B9ABwgcFMC4xLjHIBwSACAE&sclient=gws-wiz",
+    "final_title": "code review best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8905,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "code review best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 724.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507160979"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.6667,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 743.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507160979"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.834,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'llm fine-tuning open source alternatives' (page still shows the first query 'code review best practices'); Loaded search results —",
+     "page_changed": null,
+     "latency_ms": 839.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=code+review+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntwN9L3u-6p2PgINKjrPZnF4DUJeA%3A1790507160694&source=hp&ei=mPi4asGKKefJkPIPkYvcCQ&iflsig=ABILxe8AAAAAarkGqBClSTrNCWmvSktKKqqfzNULPa7R&ved=0ahUKEwjBtp76zo6XAxXnJEQIHZEFNwEQ4dUDCDI&uact=5&oq=code+review+best+practices&gs_lp=Egdnd3Mtd2l6Ihpjb2RlIHJldmlldyBiZXN0IHByYWN0aWNlczIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSN8IUA5YDnABeACQAQCYAc0BoAHNAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFS7M2maKiFl2SBwUxLjAuMaAH7wWyBwMyLTG4B9ABwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llm fine-tuning open source alternatives",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=code+review+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntwN9L3u-6p2PgINKjrPZnF4DUJeA%3A1790507160694&source=hp&ei=mPi4asGKKefJkPIPkYvcCQ&iflsig=ABILxe8AAAAAarkGqBClSTrNCWmvSktKKqqfzNULPa7R&ved=0ahUKEwjBtp76zo6XAxXnJEQIHZEFNwEQ4dUDCDI&uact=5&oq=code+review+best+practices&gs_lp=Egdnd3Mtd2l6Ihpjb2RlIHJldmlldyBiZXN0IHByYWN0aWNlczIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSN8IUA5YDnABeACQAQCYAc0BoAHNAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFS7M2maKiFl2SBwUxLjAuMaAH7wWyBwMyLTG4B9ABwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8679,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for llm fine-tuning open source alternatives",
+     "page_changed": null,
+     "latency_ms": 627.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=code+review+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntwN9L3u-6p2PgINKjrPZnF4DUJeA%3A1790507160694&source=hp&ei=mPi4asGKKefJkPIPkYvcCQ&iflsig=ABILxe8AAAAAarkGqBClSTrNCWmvSktKKqqfzNULPa7R&ved=0ahUKEwjBtp76zo6XAxXnJEQIHZEFNwEQ4dUDCDI&uact=5&oq=code+review+best+practices&gs_lp=Egdnd3Mtd2l6Ihpjb2RlIHJldmlldyBiZXN0IHByYWN0aWNlczIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSN8IUA5YDnABeACQAQCYAc0BoAHNAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFS7M2maKiFl2SBwUxLjAuMaAH7wWyBwMyLTG4B9ABwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llm fine-tuning open source alternatives",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=code+review+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntwN9L3u-6p2PgINKjrPZnF4DUJeA%3A1790507160694&source=hp&ei=mPi4asGKKefJkPIPkYvcCQ&iflsig=ABILxe8AAAAAarkGqBClSTrNCWmvSktKKqqfzNULPa7R&ved=0ahUKEwjBtp76zo6XAxXnJEQIHZEFNwEQ4dUDCDI&uact=5&oq=code+review+best+practices&gs_lp=Egdnd3Mtd2l6Ihpjb2RlIHJldmlldyBiZXN0IHByYWN0aWNlczIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSN8IUA5YDnABeACQAQCYAc0BoAHNAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFS7M2maKiFl2SBwUxLjAuMaAH7wWyBwMyLTG4B9ABwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8649,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 594.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=code+review+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntwN9L3u-6p2PgINKjrPZnF4DUJeA%3A1790507160694&source=hp&ei=mPi4asGKKefJkPIPkYvcCQ&iflsig=ABILxe8AAAAAarkGqBClSTrNCWmvSktKKqqfzNULPa7R&ved=0ahUKEwjBtp76zo6XAxXnJEQIHZEFNwEQ4dUDCDI&uact=5&oq=code+review+best+practices&gs_lp=Egdnd3Mtd2l6Ihpjb2RlIHJldmlldyBiZXN0IHByYWN0aWNlczIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSN8IUA5YDnABeACQAQCYAc0BoAHNAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFS7M2maKiFl2SBwUxLjAuMaAH7wWyBwMyLTG4B9ABwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-520670b21731e038",
+   "source": "google",
+   "goal": "First search Google for logging best practices performance optimization, then search Google for kafka cheat sheet.",
+   "fingerprint": 65064,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14575,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlogging%2bbest%2bpractices%2bperformance",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlogging%2Bbest%2Bpractices%2Bperformance%2Boptimization%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnve6DK19WnU3Mjyi2qBniUV-KCz3w%253A1790507182431%26source%3Dhp%26ei%3Drvi4aoicGf2rur8PgdMP%26iflsig%3DABILxe8AAAAAarkGvr6fK6YFn84wuI9wvIkeMnF-xLI9%26ved%3D0ahUKEwiIq82Ez46XAxX9le4BHYHpAwAQ4dUDCDI%26uact%3D5%26oq%3Dlogging%2Bbest%2Bpractices%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ii9sb2dnaW5nIGJlc3QgcHJhY3RpY2VzIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FSJUHUA5YDnABeACQAQCYAd8BoAHfAaoBAzItMbgBA8gBAPgBAZgCAqAC6QGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqApgDBPEF-FEL4_CFQwOSBwUxLjAuMaAH8QWyBwMyLTG4B-UBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLHx49UGIjDelK6TqygAmqbKQv6etUsdlwjkPip-Uvi5zNi4wnVEa67QiV1Qj1koXeSOAmy76soyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=logging+best+practices+performance+optimization&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8945,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "logging best practices performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 512.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507182546"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9132,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 533.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507182546"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b9653211c7c6c068",
+   "source": "google",
+   "goal": "First search Google for concurrency tutorial, then search Google for rabbitmq release notes.",
+   "fingerprint": 65064,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14657,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dconcurrency%2btutorial%26sca_esv%3d54dc7",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dconcurrency%2Btutorial%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuZTuA5dw3ehfqYk7Jvc4qM6_14RA%253A1790507249199%26source%3Dhp%26ei%3D8fi4aqnuCtDJkPIPtbLamQQ%26iflsig%3DABILxe8AAAAAarkHASE3xcUXEW_bH6ntGrxNFKZjy_xG%26ved%3D0ahUKEwjpqrikz46XAxXQJEQIHTWZNkMQ4dUDCDI%26uact%3D5%26oq%3Dconcurrency%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhRjb25jdXJyZW5jeSB0dXRvcmlhbDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkioB1AQWBBwAXgAkAEAmAHYAaAB2AGqAQMyLTG4AQPIAQD4AQGYAgKgAuMBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBRkjuHL1_oFbkgcFMS4wLjGgB-8FsgcDMi0xuAffAcIHAzItMsgHCIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPPx49UGIjAFvDbycHcmOidL-0QG917bQdWwg39qrmKDg-XDH2vtATdpI-Yj7vfBJp-HaUSOv30yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=concurrency+tutorial&sca_esv=54dc793dbd0950c5&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8954,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "concurrency tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 505.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507249325"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9117,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 549.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507249325"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-29afb978b556f4a9",
+   "source": "google",
+   "goal": "Search Google for next.js release notes and open the results.",
+   "fingerprint": 65064,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 18519,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dnext.js%2brelease%2bnotes%26sca_esv%3d54",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dnext.js%2Brelease%2Bnotes%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvxOIuQsXhTwdWs3iAq1gklE_PQ7g%253A1790507316060%26source%3Dhp%26ei%3DNPm4aoi2Aqixur8P99qIkAw%26iflsig%3DABILxe8AAAAAarkHRBTmB7a7ycMpA1yhZItn10WpjtxT%26ved%3D0ahUKEwiIoKnEz46XAxWomO4BHXctAsIQ4dUDCDI%26oq%3Dnext.js%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhVuZXh0LmpzIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDSPgkUA9YD3ABeACQAQCYAdcBoAHXAaoBAzItMbgBDMgBAPgBAZgCAqAC4AGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFQZat13VU9KWSBwUxLjAuMaAHtgWyBwMyLTG4B9wBwgcDMi0yyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLry49UGIjB95YxrEomanD0KK2k6BTlqSAx571lNODBUb_gNWWeucfzwUxFGs_zBplaH9JVY8QoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=next.js+release+notes&sca_esv=54dc793dbd0950c5&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7665,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "next.js release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 490.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507316176"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8673,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'next.js release notes' are not displayed; the page only shows the Google search box with autocomplete suggestions and no executed ",
+     "page_changed": null,
+     "latency_ms": 644.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507316176"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507316176"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-40389dae51a34ff0",
+   "source": "google",
+   "goal": "Search Google for how to debug langchain and open the results.",
+   "fingerprint": 65064,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 4,
+   "total_ms": 17820,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2blangchain%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Blangchain%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnu_s4f3A6YTksSzWIkVVXSZZAXtpw%253A1790507386753%26source%3Dhp%26ei%3Devm4arrlLIzdkPIP1au0mQU%26iflsig%3DABILxe8AAAAAarkHihwRU4p2US8W4E743cumsPKBAGVH%26ved%3D0ahUKEwi6ioTmz46XAxWMLkQIHdUVLVMQ4dUDCDI%26oq%3Dhow%2Bto%2Bdebug%2Blangchain%26gs_lp%3DEgdnd3Mtd2l6IhZob3cgdG8gZGVidWcgbGFuZ2NoYWluMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIEMgUQABjvBUjjG1AQWBBwAXgAkAEAmAHbAaAB2wGqAQMyLTG4AQzIAQD4AQGYAgKgAuUBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBXFtYwmiqlT7kgcFMS4wLjGgB7gDsgcDMi0xuAfgAcIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIDz49UGIjBRIeBiD25iblkF402vqlB1Kak26Hpca48uUTu7_ds2BKSZdNf8Q-wfhWVJIR57TxcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+langchain&sca_esv=54dc793dbd0950c5&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2748,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 495.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507386866"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.3321,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug langchain",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 476.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507386866"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9204,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'how to debug langchain' are not displayed (only the query typed in the search box with autocomplete suggestions; the search has no",
+     "page_changed": null,
+     "latency_ms": 571.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507386866"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:29",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507386866"
+    }
+   ]
+  }
+ ]
+}

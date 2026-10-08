@@ -1,0 +1,755 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 11859,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T18:21:34+0800",
+  "n_tasks": 8,
+  "success": 4,
+  "success_rate": 0.5,
+  "verified": 4,
+  "verified_rate": 0.5,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.2,
+  "mean_duration_ms": 13542,
+  "decision_latency_ms": {
+   "p50": 500.2,
+   "p95": 641.4
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 3,
+   "done-rejected": 7,
+   "executed": 18,
+   "done": 4
+  },
+  "low_confidence_steps": 3,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 4,
+    "success_rate": 0.5,
+    "verified": 4,
+    "verified_rate": 0.5,
+    "mean_steps": 4.2
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-1b8155274d50b20a",
+   "source": "google",
+   "goal": "Search Google for golang best practices and open the results.",
+   "fingerprint": 11859,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 18985,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgolang%2bbest%2bpractices%26sca_esv%3dee",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgolang%2Bbest%2Bpractices%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvM09BQtIemg5juGwNlYeMU7d1GMQ%253A1790504199369%26source%3Dhp%26ei%3DB-24ap2lFbDikPIPsNDZmA8%26iflsig%3DABILxe8AAAAAarj7F234uQqY1KxgnDX0GfjWw_4tIzr2%26oq%3Dgolang%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhVnb2xhbmcgYmVzdCBwcmFjdGljZXMqBQgAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkiiCFAQWBBwAXgAkAEAmAHGAaABxgGqAQMwLjG4AQHIAQD4AQGYAgKgAs4BqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwXxBY1xb2Sr9IkfkgcFMS4wLjGgB-kFsgcDMi0xuAfJAcIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz%26sei%3DDu24avmFF43EkPIPhomIoQ8&hl=en&q=EgQm0XtnGI7a49UGIjAs044j4CFp8P5NjoGITJkW2sxzLkjyvjvb1VfdC8id94kDCYXId5-n9PxLYmjVllsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=golang+best+practices&sca_esv=ee3892b004fb5afd&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.3402,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang best practices",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 479.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9018,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 473.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504200879"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8872,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for \"golang best practices\" is not visible; only the Google homepage/search box is shown",
+     "page_changed": null,
+     "latency_ms": 489.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504200879"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504200879"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.3219,
+     "target": "12",
+     "target_label": "golang best practices",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 625.0,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504200879"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c55dfedf6887ed40",
+   "source": "google",
+   "goal": "Search Google for ci/cd pipelines tutorial and open the results.",
+   "fingerprint": 11859,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 7,
+   "total_ms": 10903,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=ci%2fcd+pipelines+tutorial&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=appeqnuw_z1akg3kgx",
+     "bot_challenge": false,
+     "group0": [
+      "pipelines",
+      "ci/cd"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=ci%2Fcd+pipelines+tutorial&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnuW_z1aKG3KGXCXLP_seXtngdKrzw%3A1790504270711&source=hp&ei=Tu24av2bKuvdkPIPqfT6uA4&iflsig=ABILxe8AAAAAarj7Xg9dEvSytOZPDw0MiHzmfn961V4p&ved=0ahUKEwj9-peYxI6XAxXrLkQIHSm6HucQ4dUDCDI&oq=ci%2Fcd+pipelines+tutorial&gs_lp=Egdnd3Mtd2l6IhhjaS9jZCBwaXBlbGluZXMgdHV0b3JpYWwyCBAAGBYYHhgKMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOkiUA9YD3ABeACQAQCYAb4BoAG-AaoBAzAuMbgBDMgBAPgBAZgCAqACxAGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFW4wS5EU5VuaSBwMxLjGgB5wIsgcDMC4xuAfAAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz",
+    "final_title": "ci/cd pipelines tutorial - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8986,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ci/cd pipelines tutorial",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 471.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8959,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 468.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504272206"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.887,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'ci/cd pipelines tutorial'",
+     "page_changed": null,
+     "latency_ms": 484.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504272206"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ci/cd pipelines tutorial",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504272206"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8915,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'ci/cd pipelines tutorial' are not displayed — the page only shows the Google search box with autocomplete suggestions and no resul",
+     "page_changed": null,
+     "latency_ms": 577.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504272206"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504272206"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8477,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 627.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+tutorial&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnuW_z1aKG3KGXCXLP_seXtngdKrzw%3A1790504270711&source=hp&ei=Tu24av2bKuvdkPIPqfT6uA4&iflsig=ABILxe8AAAAAarj7Xg9dEvSytOZPDw0MiHzmfn961V4p&ved=0ahUKEwj9-peYxI6XAxXrLkQIHSm6HucQ4dUDCDI&oq=ci%2Fcd+pipelines+tutorial&gs_lp=Egdnd3Mtd2l6IhhjaS9jZCBwaXBlbGluZXMgdHV0b3JpYWwyCBAAGBYYHhgKMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOkiUA9YD3ABeACQAQCYAb4BoAG-AaoBAzAuMbgBDMgBAPgBAZgCAqACxAGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFW4wS5EU5VuaSBwMxLjGgB5wIsgcDMC4xuAfAAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8962f4d251ea3599",
+   "source": "google",
+   "goal": "Search Google for mongodb performance optimization and open the results.",
+   "fingerprint": 11859,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 6403,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=mongodb+performance+optimization&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=appeqnv37osy",
+     "bot_challenge": false,
+     "group0": [
+      "mongodb"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=mongodb+performance+optimization&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnv37oSYtH3J4Kshsw4CWeRAVr1kug%3A1790504288984&source=hp&ei=YO24aqjROqi-kPIPjLDHiAE&iflsig=ABILxe8AAAAAarj7cG-GEqPjKoZ4wn6s_JifO-qdLmtc&ved=0ahUKEwiogfOgxI6XAxUoH0QIHQzYEREQ4dUDCDI&uact=5&oq=mongodb+performance+optimization&gs_lp=Egdnd3Mtd2l6IiBtb25nb2RiIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBUioB1AMWAxwAXgAkAEAmAHnAaAB5wGqAQMyLTG4AQPIAQD4AQGYAgKgAusBqAIKwgIREAAY5QYYigMY5wYY6gIYtALCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDAvEF_-WavhlQNdmSBwUxLjAuMaAH_QWyBwMyLTG4B-kBwgcDMC4yyAcDgAgB&sclient=gws-wiz",
+    "final_title": "mongodb performance optimization - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8888,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mongodb performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 482.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504289289"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8984,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 553.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504289289"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8901,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 593.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=mongodb+performance+optimization&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnv37oSYtH3J4Kshsw4CWeRAVr1kug%3A1790504288984&source=hp&ei=YO24aqjROqi-kPIPjLDHiAE&iflsig=ABILxe8AAAAAarj7cG-GEqPjKoZ4wn6s_JifO-qdLmtc&ved=0ahUKEwiogfOgxI6XAxUoH0QIHQzYEREQ4dUDCDI&uact=5&oq=mongodb+performance+optimization&gs_lp=Egdnd3Mtd2l6IiBtb25nb2RiIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBUioB1AMWAxwAXgAkAEAmAHnAaAB5wGqAQMyLTG4AQPIAQD4AQGYAgKgAusBqAIKwgIREAAY5QYYigMY5wYY6gIYtALCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDAvEF_-WavhlQNdmSBwUxLjAuMaAH_QWyBwMyLTG4B-kBwgcDMC4yyAcDgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9f7c8662ea3417fc",
+   "source": "google",
+   "goal": "Search Google for kotlin cheat sheet and open the results.",
+   "fingerprint": 11859,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4806,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=kotlin+cheat+sheet&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=appeqnv-szibawpd-vuojggbvz",
+     "bot_challenge": false,
+     "group0": [
+      "kotlin"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=kotlin+cheat+sheet&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnv-sZIbAwPD-vuOjGgbvZSB1p0bbg%3A1790504302578&source=hp&ei=bu24at6ZIuzAkPIPsL2xkAM&iflsig=ABILxe8AAAAAarj7fihVmbe1Gvb78xy4by2J8nh-6CaC&ved=0ahUKEwjeiLGnxI6XAxVsIEQIHbBeDDIQ4dUDCDI&uact=5&oq=kotlin+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhJrb3RsaW4gY2hlYXQgc2hlZXQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IzAdQDVgNcAF4AJABAJgBzwGgAc8BqgEDMi0xuAEDyAEA-AEBmAICoALWAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QWihynR0fiFqpIHBTEuMC4xoAfIBbIHAzItMbgH0wHCBwMwLjLIBwSACAE&sclient=gws-wiz",
+    "final_title": "kotlin cheat sheet - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8999,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kotlin cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 641.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504302801"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8853,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 587.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504302801"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8945,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 756.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+cheat+sheet&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnv-sZIbAwPD-vuOjGgbvZSB1p0bbg%3A1790504302578&source=hp&ei=bu24at6ZIuzAkPIPsL2xkAM&iflsig=ABILxe8AAAAAarj7fihVmbe1Gvb78xy4by2J8nh-6CaC&ved=0ahUKEwjeiLGnxI6XAxVsIEQIHbBeDDIQ4dUDCDI&uact=5&oq=kotlin+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhJrb3RsaW4gY2hlYXQgc2hlZXQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IzAdQDVgNcAF4AJABAJgBzwGgAc8BqgEDMi0xuAEDyAEA-AEBmAICoALWAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QWihynR0fiFqpIHBTEuMC4xoAfIBbIHAzItMbgH0wHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3a836bd3df99af1a",
+   "source": "google",
+   "goal": "Search Google for ci/cd pipelines migration guide and open the results.",
+   "fingerprint": 11859,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 5,
+   "total_ms": 10391,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=ci%2fcd+pipelines+migration+guide&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=appeqntunes",
+     "bot_challenge": false,
+     "group0": [
+      "pipelines",
+      "ci/cd"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=ci%2Fcd+pipelines+migration+guide&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQntUnEsZhgXvMgNuHht_TELiH6nsWw%3A1790504314535&source=hp&ei=eu24aoLoHquPur8Pg4PukAQ&iflsig=ABILxe8AAAAAarj7iqTYqZ7IX8e2cM4hwgJJ_tckFdhE&ved=0ahUKEwiCjYqtxI6XAxWrh-4BHYOBG0IQ4dUDCDI&uact=5&oq=ci%2Fcd+pipelines+migration+guide&gs_lp=Egdnd3Mtd2l6Ih9jaS9jZCBwaXBlbGluZXMgbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIgwdQDVgNcAF4AJABAJgB2AGgAdgBqgEDMi0xuAEDyAEA-AEBmAICoALeAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCmAMD8QXcdfWfyhC95JIHBTEuMC4xoAfsBLIHAzItMbgH2gHCBwMxLjHIBwOACAE&sclient=gws-wiz",
+    "final_title": "ci/cd pipelines migration guide - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8788,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ci/cd pipelines migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 500.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504314693"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8905,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 524.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504314693"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8912,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results are not visible; page only shows loading placeholders",
+     "page_changed": null,
+     "latency_ms": 567.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+migration+guide&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQntUnEsZhgXvMgNuHht_TELiH6nsWw%3A1790504314535&source=hp&ei=eu24aoLoHquPur8Pg4PukAQ&iflsig=ABILxe8AAAAAarj7iqTYqZ7IX8e2cM4hwgJJ_tckFdhE&ved=0ahUKEwiCjYqtxI6XAxWrh-4BHYOBG0IQ4dUDCDI&uact=5&oq=ci%2Fcd+pipelines+migration+guide&gs_lp=Egdnd3Mtd2l6Ih9jaS9jZCBwaXBlbGluZXMgbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIgwdQDVgNcAF4AJABAJgB2AGgAdgBqgEDMi0xuAEDyAEA-AEBmAICoALeAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCmAMD8QXcdfWfyhC95JIHBTEuMC4xoAfsBLIHAzItMbgH2gHCBwMxLjHIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "wait",
+     "target_label": "Wait for the page to update",
+     "kind": "wait",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+migration+guide&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQntUnEsZhgXvMgNuHht_TELiH6nsWw%3A1790504314535&source=hp&ei=eu24aoLoHquPur8Pg4PukAQ&iflsig=ABILxe8AAAAAarj7iqTYqZ7IX8e2cM4hwgJJ_tckFdhE&ved=0ahUKEwiCjYqtxI6XAxWrh-4BHYOBG0IQ4dUDCDI&uact=5&oq=ci%2Fcd+pipelines+migration+guide&gs_lp=Egdnd3Mtd2l6Ih9jaS9jZCBwaXBlbGluZXMgbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIgwdQDVgNcAF4AJABAJgB2AGgAdgBqgEDMi0xuAEDyAEA-AEBmAICoALeAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCmAMD8QXcdfWfyhC95JIHBTEuMC4xoAfsBLIHAzItMbgH2gHCBwMxLjHIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8973,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 627.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+migration+guide&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQntUnEsZhgXvMgNuHht_TELiH6nsWw%3A1790504314535&source=hp&ei=eu24aoLoHquPur8Pg4PukAQ&iflsig=ABILxe8AAAAAarj7iqTYqZ7IX8e2cM4hwgJJ_tckFdhE&ved=0ahUKEwiCjYqtxI6XAxWrh-4BHYOBG0IQ4dUDCDI&uact=5&oq=ci%2Fcd+pipelines+migration+guide&gs_lp=Egdnd3Mtd2l6Ih9jaS9jZCBwaXBlbGluZXMgbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIgwdQDVgNcAF4AJABAJgB2AGgAdgBqgEDMi0xuAEDyAEA-AEBmAICoALeAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCmAMD8QXcdfWfyhC95JIHBTEuMC4xoAfsBLIHAzItMbgH2gHCBwMxLjHIBwOACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ceb8f6c0d4b3f617",
+   "source": "google",
+   "goal": "Search Google for elixir release notes and open the results.",
+   "fingerprint": 11859,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14997,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3delixir%2brelease%2bnotes%26sca_esv%3dee3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Delixir%2Brelease%2Bnotes%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsn9MNuQoYf-UF8wdFaJkj4ym3FIQ%253A1790504332088%26source%3Dhp%26ei%3DjO24arGeBOXYkPIPncy96AM%26iflsig%3DABILxe8AAAAAarj7nEASCBeh6Yf-1-c4R3DjF9gqThMO%26ved%3D0ahUKEwixlLq1xI6XAxVlLEQIHR1mDz0Q4dUDCDI%26uact%3D5%26oq%3Delixir%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhRlbGl4aXIgcmVsZWFzZSBub3RlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBUi9ClAOWA5wAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuIBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBdJUn-CCJmyVkgcFMS4wLjGgB8cDsgcDMi0xuAfeAcIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGI_b49UGIjBb_NxzZhw8Me_N2Qjv3YtrPqYgX0iC5-2LbBmZnStTLBJtdQ26O7qmE9_XhYS6Ae8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=elixir+release+notes&sca_esv=ee3892b004fb5afd&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8704,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elixir release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 622.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504332251"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9125,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 966.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504332251"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c1380d84f62c939e",
+   "source": "google",
+   "goal": "Search Google for how to debug concurrency and open the results.",
+   "fingerprint": 11859,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 18536,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bconcurrency%26sca_esv",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bconcurrency%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsxLxKVlSuKiZ_gM_0d4SNdVT4crQ%253A1790504399264%26source%3Dhp%26ei%3Dz-24aqz4DvvAkPIPm_7C4Q0%26iflsig%3DABILxe8AAAAAarj735PgJiKhKACtRgvlXXDioPi1RE-k%26ved%3D0ahUKEwjsm77VxI6XAxV7IEQIHRu_MNwQ4dUDCDI%26oq%3Dhow%2Bto%2Bdebug%2Bconcurrency%26gs_lp%3DEgdnd3Mtd2l6Ihhob3cgdG8gZGVidWcgY29uY3VycmVuY3kyBhAAGBYYHjIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBTIFEAAY7wVIjiZQDlgOcAF4AJABAJgB6QGgAekBqgEDMi0xuAEMyAEA-AEBmAICoALuAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QUfdTcmeUMkDJIHBTEuMC4xoAeaA7IHAzItMbgH6gHCBwMwLjLIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNXb49UGIjAujt6dnOzYoFiCNMAZHWM4lsx3sSBP_UyohJXL3iQDh9BepO9tQnx0AGHw-BPLMzkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+concurrency&sca_esv=ee3892b004fb5af"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7662,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug concurrency",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 482.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504399416"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8156,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'how to debug concurrency' are not displayed; Page shows only the Google homepage with autocomplete suggestions, not a results page",
+     "page_changed": null,
+     "latency_ms": 542.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504399416"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:28",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504399416"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-74a858c313c8570a",
+   "source": "google",
+   "goal": "First search Google for how to debug express, then search Google for how to debug pytorch.",
+   "fingerprint": 11859,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 23314,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bpytorch%26sca_esv%3de",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bpytorch%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns67l5I205jK-bR68pWVMjQnkjYhA%253A1790504470010%26source%3Dhp%26ei%3DFe64ara0PLLPkPIPzLvR8Q8%26iflsig%3DABILxe8AAAAAarj8JhAkLNf2c4nsbdXby-SO8zHRtA_v%26ved%3D0ahUKEwj2kpz3xI6XAxWyJ0QIHcxdNP4Q4dUDCDI%26oq%3Dhow%2Bto%2Bdebug%2Bpytorch%26gs_lp%3DEgdnd3Mtd2l6IhRob3cgdG8gZGVidWcgcHl0b3JjaDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkikRlARWOMgcAJ4AJABAJgB2QGgAa0DqgEDMi0yuAEMyAEA-AEBmAIEoAK5A6gCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCwgIIEAAYgAQYtAeYAwTxBRCzZaZZwughkgcFMi4wLjKgB-IHsgcDMi0yuAezA8IHBTAuMy4xyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKHc49UGIjDzvY-M52eE7gW6ddw2mqlzWILHbDOk9VlgRIEZnPXnkQWNzokVGNX8BL4gbJZ_sVgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+pytorch&sca_esv=ee3892b004fb5afd&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8665,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 489.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504470158"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.873,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug express",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 477.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504470158"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.3439,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'how to debug pytorch'; page still shows autocomplete for 'how to debug express' instead of pytorch results",
+     "page_changed": null,
+     "latency_ms": 605.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504470158"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug pytorch",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504470158"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8676,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'how to debug pytorch' (page shows only the homepage search box with autocomplete suggestions, no results listed)",
+     "page_changed": null,
+     "latency_ms": 618.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504470158"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504470158"
+    }
+   ]
+  }
+ ]
+}

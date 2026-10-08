@@ -1,0 +1,639 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 42661,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T22:38:52+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 3.4,
+  "mean_duration_ms": 17278,
+  "decision_latency_ms": {
+   "p50": 562.3,
+   "p95": 636.1
+  },
+  "step_outcomes": {
+   "executed": 22,
+   "stale": 2,
+   "refused-empty-enter": 1,
+   "done-rejected": 1,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 2,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 3.4
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-849e674cb176e90f",
+   "source": "google",
+   "goal": "First search Google for flask release notes, then search Google for code review interview questions.",
+   "fingerprint": 42661,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15049,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dflask%2brelease%2bnotes%26sca_esv%3df913",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dflask%2Brelease%2Bnotes%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsAs9ILn9i8CyPR2tyKqwhoZ_aEsw%253A1790519427020%26source%3Dhp%26ei%3Dgii5ap3nPLPBkPIPvbaDwAc%26iflsig%3DABILxe8AAAAAark2k3AIsSyyOUI1gCQB3E9Au5QvBMUA%26ved%3D0ahUKEwidsKPT_I6XAxWzIEQIHT3bAHgQ4dUDCDI%26uact%3D5%26oq%3Dflask%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhNmbGFzayByZWxlYXNlIG5vdGVzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYiQUYogRIpQdQElgScAF4AJABAJgBjwKgAY8CqgEDMi0xuAEDyAEA-AEBmAICoAKbAqgCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMH8QXSpSWyNEHKY5IHBTEuMC4xoAePA7IHAzItMbgHlALCBwMyLTLIBwmACAE%26sclient%3Dgws-wiz%26sei%3DhSi5asTMO8bPkPIPzIjX6AM&hl=en&q=EgQm0XtnGIbR5NUGIjBrabej_mZ4tNT3ladocpsMekgfUQaOewIxMQiNzlGP0ukghn_XqTnRAHJOVt9VpSIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=flask+release+notes&sca_esv=f9132ac85e259377&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8902,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "flask release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 472.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8998,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 545.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519429133"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3789e1d9d258ca75",
+   "source": "google",
+   "goal": "First search Google for how to debug refactoring, then search Google for angular cheat sheet.",
+   "fingerprint": 42661,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 13,
+   "total_ms": 34678,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dangular%2bcheat%2bsheet%26sca_esv%3df913",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dangular%2Bcheat%2Bsheet%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv_RINChNQCjrf8HAWRi3akJz2A3g%253A1790519504189%26ei%3D0Ci5asqACtjQkPIPo9qjkA8%26biw%3D1120%26bih%3D780%26ved%3D2ahUKEwjKqIn4_I6XAxVYKEQIHSPtCPIQ4dUDegQIBhAN%26oq%3Dangular%2Bcheat%2Bsheet%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiE2FuZ3VsYXIgY2hlYXQgc2hlZXQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOwxUMgpWMgpcAR4AJABAJgB8QGgAfEBqgEDMi0xuAEMyAEA-AEBmAIFoAKAAsICCBAAGO8FGLADwgILEAAYgAQYogQYsAOYAwCIBgGQBgWSBwU0LjAuMaAHywWyBwMyLTG4B_gBwgcFMC40LjHIBwqACAE%26sclient%3Dgws-wiz-serp&hl=en&q=EgQm0XtnGN3R5NUGIjAjTdBwyj4ZnoCraI9JlSRAlEb-T1AxFgUQmtOlWfrnzh9GNFwqT9W-zsCTdL1ApgUyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=angular+cheat+sheet&sca_esv=f9132ac85e259377&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.661,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug refactoring",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 489.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9061,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 472.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519496197"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.843,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug refactoring",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 573.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519496197"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8652,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug refactoring",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 608.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519496197"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519496197"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.2377,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 612.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=how+to+debug+refactoring&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnslzj3loLSH-iLRhzEHf8eN_z9ngQ%3A1790519494576&source=hp&ei=xii5avz5IduLkPIPn5-J-Aw&iflsig=ABILxe8AAAAAark21ruxGPS9T8f6VMz26VKE_COmLde0&ved=0ahUKEwj89L7z_I6XAxXbBUQIHZ9PAs8Q4dUDCDI&uact=5&oq=how+to+debug+refactoring&gs_lp=Egdnd3Mtd2l6Ihhob3cgdG8gZGVidWcgcmVmYWN0b3JpbmcyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSKIzUA9YD3ACeACQAQCYAYYCoAGGAqoBAzItMbgBA8gBAPgBAZgCA6AClAKoAgrCAgoQABgDGI8BGOoCmAME8QWiFKUg_a1zUZIHBTIuMC4xoAf8CbIHAzItMbgHjQLCBwUwLjIuMcgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.2714,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for angular cheat sheet",
+     "page_changed": null,
+     "latency_ms": 591.1,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=how+to+debug+refactoring&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnslzj3loLSH-iLRhzEHf8eN_z9ngQ%3A1790519494576&source=hp&ei=xii5avz5IduLkPIPn5-J-Aw&iflsig=ABILxe8AAAAAark21ruxGPS9T8f6VMz26VKE_COmLde0&ved=0ahUKEwj89L7z_I6XAxXbBUQIHZ9PAs8Q4dUDCDI&uact=5&oq=how+to+debug+refactoring&gs_lp=Egdnd3Mtd2l6Ihhob3cgdG8gZGVidWcgcmVmYWN0b3JpbmcyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSKIzUA9YD3ACeACQAQCYAYYCoAGGAqoBAzItMbgBA8gBAPgBAZgCA6AClAKoAgrCAgoQABgDGI8BGOoCmAME8QWiFKUg_a1zUZIHBTIuMC4xoAf8CbIHAzItMbgHjQLCBwUwLjIuMcgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular cheat sheet",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+refactoring&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnslzj3loLSH-iLRhzEHf8eN_z9ngQ%3A1790519494576&source=hp&ei=xii5avz5IduLkPIPn5-J-Aw&iflsig=ABILxe8AAAAAark21ruxGPS9T8f6VMz26VKE_COmLde0&ved=0ahUKEwj89L7z_I6XAxXbBUQIHZ9PAs8Q4dUDCDI&uact=5&oq=how+to+debug+refactoring&gs_lp=Egdnd3Mtd2l6Ihhob3cgdG8gZGVidWcgcmVmYWN0b3JpbmcyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSKIzUA9YD3ACeACQAQCYAYYCoAGGAqoBAzItMbgBA8gBAPgBAZgCA6AClAKoAgrCAgoQABgDGI8BGOoCmAME8QWiFKUg_a1zUZIHBTIuMC4xoAf8CbIHAzItMbgHjQLCBwUwLjIuMcgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8066,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug refactoring",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 622.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+refactoring&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnslzj3loLSH-iLRhzEHf8eN_z9ngQ%3A1790519494576&source=hp&ei=xii5avz5IduLkPIPn5-J-Aw&iflsig=ABILxe8AAAAAark21ruxGPS9T8f6VMz26VKE_COmLde0&ved=0ahUKEwj89L7z_I6XAxXbBUQIHZ9PAs8Q4dUDCDI&uact=5&oq=how+to+debug+refactoring&gs_lp=Egdnd3Mtd2l6Ihhob3cgdG8gZGVidWcgcmVmYWN0b3JpbmcyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSKIzUA9YD3ACeACQAQCYAYYCoAGGAqoBAzItMbgBA8gBAPgBAZgCA6AClAKoAgrCAgoQABgDGI8BGOoCmAME8QWiFKUg_a1zUZIHBTIuMC4xoAf8CbIHAzItMbgHjQLCBwUwLjIuMcgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.4753,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug refactoring",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 589.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+refactoring&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnslzj3loLSH-iLRhzEHf8eN_z9ngQ%3A1790519494576&source=hp&ei=xii5avz5IduLkPIPn5-J-Aw&iflsig=ABILxe8AAAAAark21ruxGPS9T8f6VMz26VKE_COmLde0&ved=0ahUKEwj89L7z_I6XAxXbBUQIHZ9PAs8Q4dUDCDI&uact=5&oq=how+to+debug+refactoring&gs_lp=Egdnd3Mtd2l6Ihhob3cgdG8gZGVidWcgcmVmYWN0b3JpbmcyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSKIzUA9YD3ACeACQAQCYAYYCoAGGAqoBAzItMbgBA8gBAPgBAZgCA6AClAKoAgrCAgoQABgDGI8BGOoCmAME8QWiFKUg_a1zUZIHBTIuMC4xoAf8CbIHAzItMbgHjQLCBwUwLjIuMcgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.4753,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug refactoring",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 591.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+refactoring&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnslzj3loLSH-iLRhzEHf8eN_z9ngQ%3A1790519494576&source=hp&ei=xii5avz5IduLkPIPn5-J-Aw&iflsig=ABILxe8AAAAAark21ruxGPS9T8f6VMz26VKE_COmLde0&ved=0ahUKEwj89L7z_I6XAxXbBUQIHZ9PAs8Q4dUDCDI&uact=5&oq=how+to+debug+refactoring&gs_lp=Egdnd3Mtd2l6Ihhob3cgdG8gZGVidWcgcmVmYWN0b3JpbmcyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSKIzUA9YD3ACeACQAQCYAYYCoAGGAqoBAzItMbgBA8gBAPgBAZgCA6AClAKoAgrCAgoQABgDGI8BGOoCmAME8QWiFKUg_a1zUZIHBTIuMC4xoAf8CbIHAzItMbgHjQLCBwUwLjIuMcgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular cheat sheet",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+refactoring&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnslzj3loLSH-iLRhzEHf8eN_z9ngQ%3A1790519494576&source=hp&ei=xii5avz5IduLkPIPn5-J-Aw&iflsig=ABILxe8AAAAAark21ruxGPS9T8f6VMz26VKE_COmLde0&ved=0ahUKEwj89L7z_I6XAxXbBUQIHZ9PAs8Q4dUDCDI&uact=5&oq=how+to+debug+refactoring&gs_lp=Egdnd3Mtd2l6Ihhob3cgdG8gZGVidWcgcmVmYWN0b3JpbmcyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSKIzUA9YD3ACeACQAQCYAYYCoAGGAqoBAzItMbgBA8gBAPgBAZgCA6AClAKoAgrCAgoQABgDGI8BGOoCmAME8QWiFKUg_a1zUZIHBTIuMC4xoAf8CbIHAzItMbgHjQLCBwUwLjIuMcgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.8535,
+     "target": "4",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 636.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+refactoring&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnslzj3loLSH-iLRhzEHf8eN_z9ngQ%3A1790519494576&source=hp&ei=xii5avz5IduLkPIPn5-J-Aw&iflsig=ABILxe8AAAAAark21ruxGPS9T8f6VMz26VKE_COmLde0&ved=0ahUKEwj89L7z_I6XAxXbBUQIHZ9PAs8Q4dUDCDI&uact=5&oq=how+to+debug+refactoring&gs_lp=Egdnd3Mtd2l6Ihhob3cgdG8gZGVidWcgcmVmYWN0b3JpbmcyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSKIzUA9YD3ACeACQAQCYAYYCoAGGAqoBAzItMbgBA8gBAPgBAZgCA6AClAKoAgrCAgoQABgDGI8BGOoCmAME8QWiFKUg_a1zUZIHBTIuMC4xoAf8CbIHAzItMbgHjQLCBwUwLjIuMcgHB4AIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-432370fc0a872c57",
+   "source": "google",
+   "goal": "First search Google for react best practices, then search Google for postgresql tutorial.",
+   "fingerprint": 42661,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14612,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dreact%2bbest%2bpractices%26sca_esv%3df91",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dreact%2Bbest%2Bpractices%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntaqi57wfJhzIZliTYlxpZlLik0sQ%253A1790519581688%26source%3Dhp%26ei%3DHSm5aqe3KO6mkPIP6dDH-As%26iflsig%3DABILxe8AAAAAark3LVw7TBeTakfjVZZNC6ks0HZekTni%26ved%3D0ahUKEwjnuYOd_Y6XAxVuE0QIHWnoEb8Q4dUDCDI%26uact%3D5%26oq%3Dreact%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhRyZWFjdCBiZXN0IHByYWN0aWNlczIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIzAdQDlgOcAF4AJABAJgBjgKgAY4CqgEDMi0xuAEDyAEA-AEBmAICoAKXAqgCCsICExAAGIAEGIoFGEMY5wYY6gIYtAKYAwTxBVJwz5-DeyLnkgcFMS4wLjGgB6MFsgcDMi0xuAeTAsIHAzItMsgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKDS5NUGIjBsWDE_RFZb8iBIGcFMusODt-dZX31wiKwQPOqan5I6yJsL0FbE0SOXfF8uVP6RshIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=react+best+practices&sca_esv=f9132ac85e259377&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8833,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "react best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 488.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519581984"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8895,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 582.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519581984"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c22c712f7df3b906",
+   "source": "google",
+   "goal": "Search Google for vector embeddings interview questions and open the results.",
+   "fingerprint": 42661,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14589,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvector%2bembeddings%2binterview%2bquesti",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvector%2Bembeddings%2Binterview%2Bquestions%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntIRcfV1BGU2EhhLCaY81W1YKZqKQ%253A1790519648542%26source%3Dhp%26ei%3DYCm5apPzH7LPkPIPzLvR8Q8%26iflsig%3DABILxe8AAAAAark3cJk48B7KcELvJoMkSYMuof4ZcOO2%26ved%3D0ahUKEwiTo_S8_Y6XAxWyJ0QIHcxdNP4Q4dUDCDI%26uact%3D5%26oq%3Dvector%2Bembeddings%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IiV2ZWN0b3IgZW1iZWRkaW5ncyBpbnRlcnZpZXcgcXVlc3Rpb25zMgYQABgWGB4yCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIESIwHUA5YDnABeACQAQCYAaYCoAGmAqoBAzItMbgBA8gBAPgBAZgCAqACrgKoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEC4YAxiPARjqApgDA_EFyl3tcIBJR76SBwUxLjAuMaAHmgOyBwMyLTG4B6sCwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOPS5NUGIjD_g5OgyZFnFAzzdPHsu6CyIU6tcAbk_doWbI_zRp-3q-luZ8vIKbmAN0myUve65tcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vector+embeddings+interview+questions&sca_esv=f9"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8955,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vector embeddings interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 512.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519648985"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8867,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 522.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519648985"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-46d090d2ec917922",
+   "source": "google",
+   "goal": "First search Google for python interview questions, then search Google for logging best practices migration guide.",
+   "fingerprint": 42661,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14962,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpython%2binterview%2bquestions%26sca_esv",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpython%2Binterview%2Bquestions%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnveapW6ZGELxhRuDuScXk518MmtqQ%253A1790519715389%26source%3Dhp%26ei%3Doym5au6XFvzZkPIP4pm2wQs%26iflsig%3DABILxe8AAAAAark3s6CohikBHEJgH7cefOzuQlKpJxJw%26oq%3Dpython%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhpweXRob24gaW50ZXJ2aWV3IHF1ZXN0aW9ucyoNCAAYgAQYigUYQxixAzINEAAYgAQYigUYQxixAzIKEAAYgAQYigUYQzINEAAYgAQYigUYQxi0BzIKEAAYgAQYigUYQzIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0B0iyCVAOWA5wAXgAkAEAmAGiAqABogKqAQMyLTG4AQHIAQD4AQGYAgKgAqgCqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBYPK2xk4zbGQkgcFMS4wLjGgB4QHsgcDMi0xuAekAsIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKbT5NUGIjBUDLxKFGT0XMgPz8FRBSoWuMpAefxemKD8CrIn7EkEz9fm2Z_g-LwF1xVRYoLDBEgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=python+interview+questions&sca_esv=f9132ac85e259"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.898,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "python interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 489.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519715819"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.3852,
+     "target": "12",
+     "target_label": "python interview questions",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 780.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519715819"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-77acaa6fe2d8efcc",
+   "source": "google",
+   "goal": "First search Google for kafka migration guide, then search Google for how to debug unit testing.",
+   "fingerprint": 42661,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14861,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bunit%2btesting%26sca_",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bunit%2Btesting%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntgOeUUTqAj6SpLPkLqM07TAu2asQ%253A1790519782572%26source%3Dhp%26ei%3D5im5asTGIcmWkPIP___b8QE%26iflsig%3DABILxe8AAAAAark39qXyUPQfNW0G7030kj8Lt_cMOsbm%26ved%3D0ahUKEwjE0ej8_Y6XAxVJC0QIHf__Nh4Q4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bunit%2Btesting%26gs_lp%3DEgdnd3Mtd2l6Ihlob3cgdG8gZGVidWcgdW5pdCB0ZXN0aW5nMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IxgdQDlgOcAF4AJABAJgBmgKgAZoCqgEDMi0xuAEDyAEA-AEBmAICoAKjAqgCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAhYQABiABBiKBRhDGLQHGOcGGOoCGLQCmAME8QUQsARdHpwoQJIHBTEuMC4xoAfoBrIHAzItMbgHngLCBwUwLjEuMcgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOnT5NUGIjAs36zwDFa0-YuHN71P8es5D1VCJc9W0agHI9adckUXYz0_ZXt0qB-BvOv_AuEfPkcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+unit+testing&sca_esv=f9132ac85e2593"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8971,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug unit testing",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 503.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519782987"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8947,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 579.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519782987"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-2fee9dad04589a40",
+   "source": "google",
+   "goal": "First search Google for model quantization release notes, then search Google for how to debug zig.",
+   "fingerprint": 42661,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14657,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bzig%26sca_esv%3df9132",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bzig%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsvJv0clmRzKBQStVp7Myj3nBbOQw%253A1790519849655%26source%3Dhp%26ei%3DKSq5atqkJorukPIPloWo4Aw%26iflsig%3DABILxe8AAAAAark4OV8FJ0H8lf1BhulFViZ7tW7nF87L%26ved%3D0ahUKEwia3eac_o6XAxUKN0QIHZYCCswQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bzig%26gs_lp%3DEgdnd3Mtd2l6IhBob3cgdG8gZGVidWcgemlnMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBUjdB1AQWBBwAXgAkAEAmAGdAqABnQKqAQMyLTG4AQPIAQD4AQGYAgKgAqYCqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBXEDf71j6G8QkgcFMS4wLjGgB7gEsgcDMi0xuAehAsIHAzItMsgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKzU5NUGIjAOprTc172tXmYnRvBZ3ivRrGNkpZZHn5m8jxPXza0lvRQErc_m7PVFrTRWqtYOeasyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+zig&sca_esv=f9132ac85e259377&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8907,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug zig",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 504.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519849911"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8892,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 601.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519849911"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f278a9d4cc4f21f0",
+   "source": "google",
+   "goal": "Search Google for python cheat sheet and open the results.",
+   "fingerprint": 42661,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14818,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpython%2bcheat%2bsheet%26sca_esv%3df9132",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpython%2Bcheat%2Bsheet%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnslR72wxF803TNn6YUX0fQlUihGPA%253A1790519916482%26source%3Dhp%26ei%3DbCq5apmCHL7NvMcPqbmCuAM%26iflsig%3DABILxe8AAAAAark4fE7hS1XHctwdowE6dcFlpwhk-HHM%26ved%3D0ahUKEwiZ6NW8_o6XAxW-Ju8CHamcADcQ4dUDCDI%26uact%3D5%26oq%3Dpython%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhJweXRob24gY2hlYXQgc2hlZXQyCBAAGIAEGLEDMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMggQABiABBi0BzIIEAAYgAQYtAcyBRAAGIAEMggQABiABBi0BzIFEAAYgAQyCBAAGIAEGLQHSMoHUBFYEXABeACQAQCYAZECoAGRAqoBAzItMbgBA8gBAPgBAZgCAqACmwKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBfEF8lR-uPgzmxGSBwUxLjAuMaAH1QWyBwMyLTG4B5YCwgcDMi0yyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGO_U5NUGIjAd8jgNLQOnr0ARcN-_GrXkSeKFrdz7grPGyCMkx1PUFCSKRFASCXXCHdPaqkIlGG4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=python+cheat+sheet&sca_esv=f9132ac85e259377&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8714,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "python cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 562.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519916731"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.874,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 581.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519916731"
+    }
+   ]
+  }
+ ]
+}

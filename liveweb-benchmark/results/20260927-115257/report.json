@@ -1,0 +1,1855 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 30899,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 8.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T11:58:11+0800",
+  "n_tasks": 20,
+  "success": 10,
+  "success_rate": 0.5,
+  "verified": 10,
+  "verified_rate": 0.5,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.3,
+  "mean_duration_ms": 6409,
+  "decision_latency_ms": {
+   "p50": 524.1,
+   "p95": 664.2
+  },
+  "step_outcomes": {
+   "executed": 47,
+   "done": 15,
+   "refused-empty-enter": 13,
+   "done-rejected": 10,
+   "stale": 1
+  },
+  "low_confidence_steps": 5,
+  "by_source": {
+   "github": {
+    "n": 8,
+    "success": 3,
+    "success_rate": 0.375,
+    "verified": 3,
+    "verified_rate": 0.375,
+    "mean_steps": 4.8
+   },
+   "google": {
+    "n": 12,
+    "success": 7,
+    "success_rate": 0.583,
+    "verified": 7,
+    "verified_rate": 0.583,
+    "mean_steps": 4.0
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "google-ai-openai",
+   "source": "google",
+   "goal": "Search Google for the latest OpenAI news and open the results.",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 6072,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=openai+latest+news&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=appeqntggaqm__ui_ungqgzaj4",
+     "bot_challenge": false,
+     "group0": [
+      "openai"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=openai+latest+news&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQntggAQM__ui_ungQgzAJ4qlRUFPwQ%3A1790481181075&source=hp&ei=HZO4ao6IA5DQkPIP3c2U6AM&iflsig=ABILxe8AAAAAarihLe_G1_syQPyaS2rt5yTKuO-ZyOim&oq=OpenAI+latest+news&gs_lp=Egdnd3Mtd2l6IhJPcGVuQUkgbGF0ZXN0IG5ld3MqCwgAGIAEGLEDGIMBMgsQABiABBixAxiDATIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjnB1AbWBtwAXgAkAEAmAHHAaABxwGqAQMwLjG4AQHIAQD4AQGYAgKgAtEBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwfxBT3BPaww3jzikgcFMS4wLjGgB4YFsgcDMi0xuAfJAcIHBTAuMS4xyAcHgAgB&sclient=gws-wiz&sei=H5O4auC8OK7IkPIP-Yf8yA8",
+    "final_title": "openai latest news - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8384,
+     "target": "7",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "OpenAI latest news",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 452.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.819,
+     "target": "8",
+     "target_label": "openai latest news",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 574.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8845,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 620.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=openai+latest+news&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQntggAQM__ui_ungQgzAJ4qlRUFPwQ%3A1790481181075&source=hp&ei=HZO4ao6IA5DQkPIP3c2U6AM&iflsig=ABILxe8AAAAAarihLe_G1_syQPyaS2rt5yTKuO-ZyOim&oq=OpenAI+latest+news&gs_lp=Egdnd3Mtd2l6IhJPcGVuQUkgbGF0ZXN0IG5ld3MqCwgAGIAEGLEDGIMBMgsQABiABBixAxiDATIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjnB1AbWBtwAXgAkAEAmAHHAaABxwGqAQMwLjG4AQHIAQD4AQGYAgKgAtEBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwfxBT3BPaww3jzikgcFMS4wLjGgB4YFsgcDMi0xuAfJAcIHBTAuMS4xyAcHgAgB&sclient=gws-wiz&sei=H5O4auC8OK7IkPIP-Yf8yA8"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-anthropic",
+   "source": "google",
+   "goal": "Search Google for recent Anthropic Claude announcements and open the results.",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 13749,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=anthropic+claude+news&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=appeqntcxackrs83s7qhize",
+     "bot_challenge": false,
+     "group0": [
+      "anthropic",
+      "claude"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=Anthropic+Claude+news&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQntcxACKrS83s7Qhizef9pVLLAiCpw%3A1790481196554&source=hp&ei=LJO4apHNIKPDkPIP6qKxoQg&iflsig=ABILxe8AAAAAarihPOiTncRab_J6_UsSusij4Y6LsONa&ved=0ahUKEwiRk8md7o2XAxWjIUQIHWpRLIQQ4dUDCA4&uact=5&oq=Anthropic+Claude+news&gs_lp=Egdnd3Mtd2l6IhVBbnRocm9waWMgQ2xhdWRlIG5ld3MyCxAAGIAEGIoFGJECMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IoAdQDlgOcAF4AJABAJgB2AGgAdgBqgEDMi0xuAEDyAEA-AEBmAICoALeAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QWWGn1dK6j6TpIHBTEuMC4xoAfMBbIHAzItMbgH2QHCBwUwLjEuMcgHBIAIAQ&sclient=gws-wiz",
+    "final_title": "Anthropic Claude news - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8992,
+     "target": "7",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "Anthropic Claude news",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 445.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8936,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 549.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8552,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 574.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=Anthropic+Claude+news&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQntcxACKrS83s7Qhizef9pVLLAiCpw%3A1790481196554&source=hp&ei=LJO4apHNIKPDkPIP6qKxoQg&iflsig=ABILxe8AAAAAarihPOiTncRab_J6_UsSusij4Y6LsONa&ved=0ahUKEwiRk8md7o2XAxWjIUQIHWpRLIQQ4dUDCA4&uact=5&oq=Anthropic+Claude+news&gs_lp=Egdnd3Mtd2l6IhVBbnRocm9waWMgQ2xhdWRlIG5ld3MyCxAAGIAEGIoFGJECMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IoAdQDlgOcAF4AJABAJgB2AGgAdgBqgEDMi0xuAEDyAEA-AEBmAICoALeAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QWWGn1dK6j6TpIHBTEuMC4xoAfMBbIHAzItMbgH2QHCBwUwLjEuMcgHBIAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-deepmind",
+   "source": "google",
+   "goal": "Search Google for Google DeepMind news and open the results.",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4322,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=google+deepmind+news&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=appeqnt0wqo-xo_cyas_v9c2",
+     "bot_challenge": false,
+     "group0": [
+      "deepmind"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=Google+DeepMind+news&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQnt0wqO-xo_cYaS_v9c29EAMm_JUYw%3A1790481219705&source=hp&ei=Q5O4at7yKaefkPIPx_Tn6Qc&iflsig=ABILxe8AAAAAarihU3S2ctyPURHShHaG59rZow7cUBRY&ved=0ahUKEwieoM6o7o2XAxWnD0QIHUf6OX0Q4dUDCA4&uact=5&oq=Google+DeepMind+news&gs_lp=Egdnd3Mtd2l6IhRHb29nbGUgRGVlcE1pbmQgbmV3czILEAAYgAQYigUYkQIyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDSJEHUA5YDnABeACQAQCYAeIBoAHiAaoBAzItMbgBA8gBAPgBAZgCAqAC6gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBfEFbohYuyU6kE2SBwUxLjAuMaAHvQayBwMyLTG4B-UBwgcFMC4xLjHIBwWACAE&sclient=gws-wiz",
+    "final_title": "Google DeepMind news - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.879,
+     "target": "7",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "Google DeepMind news",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 447.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8999,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 533.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9009,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 571.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=Google+DeepMind+news&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQnt0wqO-xo_cYaS_v9c29EAMm_JUYw%3A1790481219705&source=hp&ei=Q5O4at7yKaefkPIPx_Tn6Qc&iflsig=ABILxe8AAAAAarihU3S2ctyPURHShHaG59rZow7cUBRY&ved=0ahUKEwieoM6o7o2XAxWnD0QIHUf6OX0Q4dUDCA4&uact=5&oq=Google+DeepMind+news&gs_lp=Egdnd3Mtd2l6IhRHb29nbGUgRGVlcE1pbmQgbmV3czILEAAYgAQYigUYkQIyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDSJEHUA5YDnABeACQAQCYAeIBoAHiAaoBAzItMbgBA8gBAPgBAZgCAqAC6gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBfEFbohYuyU6kE2SBwUxLjAuMaAHvQayBwMyLTG4B-UBwgcFMC4xLjHIBwWACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-llm",
+   "source": "google",
+   "goal": "Search Google for the latest large language model news and open the results.",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 5866,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=large+language+models+latest+news&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=appeqnsyyyg",
+     "bot_challenge": false,
+     "group0": [
+      "language model",
+      "llm"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=large+language+models+latest+news&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQnsYYygjQZx2faxjs1L_kQd_k3lHTQ%3A1790481233261&source=hp&ei=UZO4asPfDp3IkPIP6MaH6Ac&iflsig=ABILxe8AAAAAarihYQzT9zOcBhWXXzNY-YBWsTOHuTJY&oq=large+language+model+news&gs_lp=Egdnd3Mtd2l6IhlsYXJnZSBsYW5ndWFnZSBtb2RlbCBuZXdzKgYIARgWGB4yCxAAGIAEGIoFGJECMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wVIxwdQDlgOcAF4AJABAJgB4QGgAeEBqgEDMi0xuAEByAEA-AEBmAICoALnAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFOOR7KU9kxHeSBwUxLjAuMaAHpgeyBwMyLTG4B-MBwgcDMC4yyAcEgAgB&sclient=gws-wiz",
+    "final_title": "large language models latest news - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8405,
+     "target": "7",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "large language model news",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 459.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.8606,
+     "target": "9",
+     "target_label": "large language models latest news",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 550.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9006,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 609.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=large+language+models+latest+news&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQnsYYygjQZx2faxjs1L_kQd_k3lHTQ%3A1790481233261&source=hp&ei=UZO4asPfDp3IkPIP6MaH6Ac&iflsig=ABILxe8AAAAAarihYQzT9zOcBhWXXzNY-YBWsTOHuTJY&oq=large+language+model+news&gs_lp=Egdnd3Mtd2l6IhlsYXJnZSBsYW5ndWFnZSBtb2RlbCBuZXdzKgYIARgWGB4yCxAAGIAEGIoFGJECMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wVIxwdQDlgOcAF4AJABAJgB4QGgAeEBqgEDMi0xuAEByAEA-AEBmAICoALnAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFOOR7KU9kxHeSBwUxLjAuMaAHpgeyBwMyLTG4B-MBwgcDMC4yyAcEgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-agents",
+   "source": "google",
+   "goal": "Search Google for AI agent frameworks and open the results.",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4311,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=ai+agent+frameworks&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=appeqnvha_2_nofkrk7mdfin1",
+     "bot_challenge": false,
+     "group0": [
+      "agent"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=AI+agent+frameworks&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQnvha_2_nofkRK7mDfin1_tt03cmFQ%3A1790481248311&source=hp&ei=YJO4apbiEevdkPIPqfT6uA4&iflsig=ABILxe8AAAAAarihcC1z3IANAvv_rus4VGzLtS2n5sqM&ved=0ahUKEwiWkqC27o2XAxXrLkQIHSm6HucQ4dUDCA4&uact=5&oq=AI+agent+frameworks&gs_lp=Egdnd3Mtd2l6IhNBSSBhZ2VudCBmcmFtZXdvcmtzMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I-gZQDVgNcAF4AJABAJgB1wGgAdcBqgEDMi0xuAEDyAEA-AEBmAICoALcAagCCsICChAAGAMYjwEY6gKYAwPxBcspeQTVM93MkgcFMS4wLjGgB7AFsgcDMi0xuAfZAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz",
+    "final_title": "AI agent frameworks - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7041,
+     "target": "7",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "AI agent frameworks",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 452.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9117,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 509.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.2692,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 574.4,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=AI+agent+frameworks&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQnvha_2_nofkRK7mDfin1_tt03cmFQ%3A1790481248311&source=hp&ei=YJO4apbiEevdkPIPqfT6uA4&iflsig=ABILxe8AAAAAarihcC1z3IANAvv_rus4VGzLtS2n5sqM&ved=0ahUKEwiWkqC27o2XAxXrLkQIHSm6HucQ4dUDCA4&uact=5&oq=AI+agent+frameworks&gs_lp=Egdnd3Mtd2l6IhNBSSBhZ2VudCBmcmFtZXdvcmtzMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I-gZQDVgNcAF4AJABAJgB1wGgAdcBqgEDMi0xuAEDyAEA-AEBmAICoALcAagCCsICChAAGAMYjwEY6gKYAwPxBcspeQTVM93MkgcFMS4wLjGgB7AFsgcDMi0xuAfZAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-papers",
+   "source": "google",
+   "goal": "Search Google for recent AI research papers and open the results.",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 6893,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['arxiv', 'paper']]",
+    "checks": {
+     "url": "https://www.google.com/?hl=en&gl=us",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/?hl=en&gl=us",
+    "final_title": "Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.842,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 452.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.854,
+     "target": "7",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 444.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8651,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search for recent AI research papers has not been performed, Search results for recent AI research papers are not displayed, No results have be",
+     "page_changed": null,
+     "latency_ms": 664.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9044,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search for recent AI research papers, search results listing recent AI research papers",
+     "page_changed": null,
+     "latency_ms": 693.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.9095,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 613.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-zh",
+   "source": "google",
+   "goal": "在 Google 上搜索最新的中国大模型资讯并查看搜索结果。",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 6085,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'google.com/search'",
+    "checks": {
+     "url": "https://www.google.com/?hl=en&gl=us",
+     "bot_challenge": false,
+     "group0": [
+      "大模型"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/?hl=en&gl=us",
+    "final_title": "Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7084,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 456.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8775,
+     "target": "7",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "中国大模型 最新资讯",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 442.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9034,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search has not been executed — only the Google homepage with a typed query and autocomplete suggestions is shown, No search-results page listing the l",
+     "page_changed": null,
+     "latency_ms": 595.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8955,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing 搜索结果页面（当前仅显示 Google 首页及搜索建议，未显示最新中国大模型资讯的搜索结果）",
+     "page_changed": null,
+     "latency_ms": 571.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8545,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 600.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-opensource",
+   "source": "google",
+   "goal": "Search Google for open source AI model releases and open the results.",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4019,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=open+source+ai+models+release&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=appeqntzfvnkzvm",
+     "bot_challenge": false,
+     "group0": [
+      "open source"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=open+source+AI+models+release&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQntzfvnkZVM2CifzG6yPAnm0BZ6l5A%3A1790481293096&source=hp&ei=jZO4asLRBLn3kPIP28uZkQo&iflsig=ABILxe8AAAAAarihnS56ZMZaxtA1MG2JjzO4QjeVkUXJ&ved=0ahUKEwiCzM3L7o2XAxW5O0QIHdtlJqIQ4dUDCA4&uact=5&oq=open+source+AI+models+release&gs_lp=Egdnd3Mtd2l6Ih1vcGVuIHNvdXJjZSBBSSBtb2RlbHMgcmVsZWFzZTIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGBYYHhgKMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGA0jXB1ANWA1wAXgAkAEAmAHhAaAB4QGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBS40z1057P_bkgcFMS4wLjGgB4AKsgcDMi0xuAfjAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz",
+    "final_title": "open source AI models release - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8728,
+     "target": "7",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "open source AI models release",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 462.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8834,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 607.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8961,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 615.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=open+source+AI+models+release&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQntzfvnkZVM2CifzG6yPAnm0BZ6l5A%3A1790481293096&source=hp&ei=jZO4asLRBLn3kPIP28uZkQo&iflsig=ABILxe8AAAAAarihnS56ZMZaxtA1MG2JjzO4QjeVkUXJ&ved=0ahUKEwiCzM3L7o2XAxW5O0QIHdtlJqIQ4dUDCA4&uact=5&oq=open+source+AI+models+release&gs_lp=Egdnd3Mtd2l6Ih1vcGVuIHNvdXJjZSBBSSBtb2RlbHMgcmVsZWFzZTIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGBYYHhgKMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGA0jXB1ANWA1wAXgAkAEAmAHhAaAB4QGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBS40z1057P_bkgcFMS4wLjGgB4AKsgcDMi0xuAfjAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "github-trending-view",
+   "source": "github",
+   "goal": "Open GitHub's trending page and review today's trending repositories.",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 2,
+   "total_ms": 4397,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "trending",
+      "stars today",
+      "built by"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9293,
+     "target": "14",
+     "target_label": "Trending",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 469.1,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.9387,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 476.8,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    }
+   ]
+  },
+  {
+   "task_id": "github-trending-ai-repo",
+   "source": "github",
+   "goal": "From GitHub trending, open a repository about AI, LLMs, or machine learning, and view its README.",
+   "fingerprint": 30899,
+   "status": "repeat-loop",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 3745,
+   "error": "same operation+target repeated 3x; stopping",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9384,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 531.7,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.871,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 471.5,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.9143,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 455.9,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    }
+   ]
+  },
+  {
+   "task_id": "github-search-llm",
+   "source": "github",
+   "goal": "Search GitHub for 'LLM agent' repositories and open the search results.",
+   "fingerprint": 30899,
+   "status": "repeat-loop",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 6372,
+   "error": "same operation+target repeated 3x; stopping",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['llm']]",
+    "checks": {
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=What+can+Copilot+cloud+agent+do+in+my+repository%3F&search-overlay-ask-ai=true",
+    "final_title": "Understanding GitHub Code Search syntax - GitHub Docs"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.8596,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 491.5,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9007,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 480.6,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.4823,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 442.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8232,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 467.3,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8451,
+     "target": "6",
+     "target_label": "Search syntax tips",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 471.3,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.927,
+     "target": "6",
+     "target_label": "Search or ask Copilot",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 470.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8485,
+     "target": "6",
+     "target_label": "What can Copilot cloud agent do in my repository?",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 600.3,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    }
+   ]
+  },
+  {
+   "task_id": "github-trending-first-repo",
+   "source": "github",
+   "goal": "Open the first repository in GitHub's trending list and view its details page.",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 6986,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9166,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 475.3,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.8625,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 439.3,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9153,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Repository details page for the first trending repo (paperclipai/paperclip) is not open; only the trending list page is shown",
+     "page_changed": null,
+     "latency_ms": 449.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9402,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing first repository (paperclipai/paperclip) details page not opened/viewed",
+     "page_changed": null,
+     "latency_ms": 465.9,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.9441,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 524.1,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    }
+   ]
+  },
+  {
+   "task_id": "google-news-tab",
+   "source": "google",
+   "goal": "Search Google for OpenAI news and switch to the News results tab.",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 10066,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'tbm=nws'",
+    "checks": {
+     "url": "https://www.google.com/search?q=openai+news&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=appeqnv3idu7ppw5ob6ug_geovevetabl",
+     "bot_challenge": false,
+     "group0": [
+      "openai"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=OpenAI+news&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQnv3iDu7ppw5Ob6Ug_GEOVEVeTAblA%3A1790481366828&source=hp&ei=1pO4aqrBMaLHkPIPvK7aiQ0&iflsig=ABILxe8AAAAAarih5oPv5ILH3Nn5igvJVoTbzu6HLW_x&ved=0ahUKEwiqhOLu7o2XAxWiI0QIHTyXNtEQ4dUDCA4&uact=5&oq=OpenAI+news&gs_lp=Egdnd3Mtd2l6IgtPcGVuQUkgbmV3czIREAAYgAQYigUYkQIYsQMYgwEyCxAAGIAEGIoFGJECMgsQABiABBixAxiDATIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIkQdQG1gbcAF4AJABAJgB3gGgAd4BqgEDMi0xuAEDyAEA-AEBmAICoALlAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QXbbaQTTep6WZIHBTEuMC4xoAfTBLIHAzItMbgH4QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz",
+    "final_title": "OpenAI news - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8635,
+     "target": "7",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "OpenAI news",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 503.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9059,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 517.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8905,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing News results tab not selected — the 'All' tab is still active; page shows general 'All' results (Top stories) rather than the News tab view",
+     "page_changed": null,
+     "latency_ms": 553.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=OpenAI+news&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQnv3iDu7ppw5Ob6Ug_GEOVEVeTAblA%3A1790481366828&source=hp&ei=1pO4aqrBMaLHkPIPvK7aiQ0&iflsig=ABILxe8AAAAAarih5oPv5ILH3Nn5igvJVoTbzu6HLW_x&ved=0ahUKEwiqhOLu7o2XAxWiI0QIHTyXNtEQ4dUDCA4&uact=5&oq=OpenAI+news&gs_lp=Egdnd3Mtd2l6IgtPcGVuQUkgbmV3czIREAAYgAQYigUYkQIYsQMYgwEyCxAAGIAEGIoFGJECMgsQABiABBixAxiDATIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIkQdQG1gbcAF4AJABAJgB3gGgAd4BqgEDMi0xuAEDyAEA-AEBmAICoALlAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QXbbaQTTep6WZIHBTEuMC4xoAfTBLIHAzItMbgH4QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8881,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing News results tab not selected/active",
+     "page_changed": null,
+     "latency_ms": 671.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=OpenAI+news&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQnv3iDu7ppw5Ob6Ug_GEOVEVeTAblA%3A1790481366828&source=hp&ei=1pO4aqrBMaLHkPIPvK7aiQ0&iflsig=ABILxe8AAAAAarih5oPv5ILH3Nn5igvJVoTbzu6HLW_x&ved=0ahUKEwiqhOLu7o2XAxWiI0QIHTyXNtEQ4dUDCA4&uact=5&oq=OpenAI+news&gs_lp=Egdnd3Mtd2l6IgtPcGVuQUkgbmV3czIREAAYgAQYigUYkQIYsQMYgwEyCxAAGIAEGIoFGJECMgsQABiABBixAxiDATIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIkQdQG1gbcAF4AJABAJgB3gGgAd4BqgEDMi0xuAEDyAEA-AEBmAICoALlAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QXbbaQTTep6WZIHBTEuMC4xoAfTBLIHAzItMbgH4QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8667,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 611.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=OpenAI+news&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQnv3iDu7ppw5Ob6Ug_GEOVEVeTAblA%3A1790481366828&source=hp&ei=1pO4aqrBMaLHkPIPvK7aiQ0&iflsig=ABILxe8AAAAAarih5oPv5ILH3Nn5igvJVoTbzu6HLW_x&ved=0ahUKEwiqhOLu7o2XAxWiI0QIHTyXNtEQ4dUDCA4&uact=5&oq=OpenAI+news&gs_lp=Egdnd3Mtd2l6IgtPcGVuQUkgbmV3czIREAAYgAQYigUYkQIYsQMYgwEyCxAAGIAEGIoFGJECMgsQABiABBixAxiDATIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIkQdQG1gbcAF4AJABAJgB3gGgAd4BqgEDMi0xuAEDyAEA-AEBmAICoALlAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QXbbaQTTep6WZIHBTEuMC4xoAfTBLIHAzItMbgH4QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "google-images-tab",
+   "source": "google",
+   "goal": "Search Google for 'transformer architecture' and view the Images results.",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 8519,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'tbm=isch'",
+    "checks": {
+     "url": "https://www.google.com/search?q=transformer+architecture&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=appeqnv-n152q1junl5o",
+     "bot_challenge": false,
+     "group0": [
+      "transformer"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=transformer+architecture&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQnv-n152Q1jUNl5OcWgiTAWrYW-nog%3A1790481386121&source=hp&ei=6pO4avWuBv3DkPIP64ueqAw&iflsig=ABILxe8AAAAAarih-lTAxiantfn0wP8zQ-jFLDeBPlMI&ved=0ahUKEwj1y_v37o2XAxX9IUQIHeuFB8UQ4dUDCA4&uact=5&oq=transformer+architecture&gs_lp=Egdnd3Mtd2l6Ihh0cmFuc2Zvcm1lciBhcmNoaXRlY3R1cmUyCBAAGIAEGLEDMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESKYHUARYBHABeACQAQCYAdoBoAHaAaoBAzItMbgBA8gBAPgBAZgCAaAC3QGoAgCYAwDxBe1bm2tts2wEkgcDMi0xoAfjBbIHAzItMbgH3QHCBwMwLjHIBwGACAE&sclient=gws-wiz",
+    "final_title": "transformer architecture - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.902,
+     "target": "7",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "transformer architecture",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 452.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9103,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 566.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.5668,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Images results not displayed — the page is on the 'All' (web) tab; the 'Images' tab has not been opened",
+     "page_changed": null,
+     "latency_ms": 636.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=transformer+architecture&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQnv-n152Q1jUNl5OcWgiTAWrYW-nog%3A1790481386121&source=hp&ei=6pO4avWuBv3DkPIP64ueqAw&iflsig=ABILxe8AAAAAarih-lTAxiantfn0wP8zQ-jFLDeBPlMI&ved=0ahUKEwj1y_v37o2XAxX9IUQIHeuFB8UQ4dUDCA4&uact=5&oq=transformer+architecture&gs_lp=Egdnd3Mtd2l6Ihh0cmFuc2Zvcm1lciBhcmNoaXRlY3R1cmUyCBAAGIAEGLEDMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESKYHUARYBHABeACQAQCYAdoBoAHaAaoBAzItMbgBA8gBAPgBAZgCAaAC3QGoAgCYAwDxBe1bm2tts2wEkgcDMi0xoAfjBbIHAzItMbgH3QHCBwMwLjHIBwGACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.5668,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Images results are not displayed; the page is showing the All/Web results tab, not the Images tab",
+     "page_changed": null,
+     "latency_ms": 612.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=transformer+architecture&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQnv-n152Q1jUNl5OcWgiTAWrYW-nog%3A1790481386121&source=hp&ei=6pO4avWuBv3DkPIP64ueqAw&iflsig=ABILxe8AAAAAarih-lTAxiantfn0wP8zQ-jFLDeBPlMI&ved=0ahUKEwj1y_v37o2XAxX9IUQIHeuFB8UQ4dUDCA4&uact=5&oq=transformer+architecture&gs_lp=Egdnd3Mtd2l6Ihh0cmFuc2Zvcm1lciBhcmNoaXRlY3R1cmUyCBAAGIAEGLEDMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESKYHUARYBHABeACQAQCYAdoBoAHaAaoBAzItMbgBA8gBAPgBAZgCAaAC3QGoAgCYAwDxBe1bm2tts2wEkgcDMi0xoAfjBbIHAzItMbgH3QHCBwMwLjHIBwGACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.5668,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 664.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=transformer+architecture&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQnv-n152Q1jUNl5OcWgiTAWrYW-nog%3A1790481386121&source=hp&ei=6pO4avWuBv3DkPIP64ueqAw&iflsig=ABILxe8AAAAAarih-lTAxiantfn0wP8zQ-jFLDeBPlMI&ved=0ahUKEwj1y_v37o2XAxX9IUQIHeuFB8UQ4dUDCA4&uact=5&oq=transformer+architecture&gs_lp=Egdnd3Mtd2l6Ihh0cmFuc2Zvcm1lciBhcmNoaXRlY3R1cmUyCBAAGIAEGLEDMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESKYHUARYBHABeACQAQCYAdoBoAHaAaoBAzItMbgBA8gBAPgBAZgCAaAC3QGoAgCYAwDxBe1bm2tts2wEkgcDMi0xoAfjBbIHAzItMbgH3QHCBwMwLjHIBwGACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "google-page2",
+   "source": "google",
+   "goal": "Search Google for 'large language model' and open the second page of results.",
+   "fingerprint": 30899,
+   "status": "repeat-loop",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 4299,
+   "error": "same operation+target repeated 3x; stopping",
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'start=10'",
+    "checks": {
+     "url": "https://www.google.com/search?q=large+language+model&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=appeqns2wda-kpkzbem52rri",
+     "bot_challenge": false,
+     "group0": [
+      "language model"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=large+language+model&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQns2Wda-kPKzbEm52RrIb3UUg9Se-w%3A1790481403876&source=hp&ei=-5O4aoyeNP_NkPIP_7bMqQk&iflsig=ABILxe8AAAAAariiC71xQ5176b9i25Xjz_qAQ8KFRBNZ&ved=0ahUKEwjMh7eA742XAxX_JkQIHX8bM5UQ4dUDCA4&uact=5&oq=large+language+model&gs_lp=Egdnd3Mtd2l6IhRsYXJnZSBsYW5ndWFnZSBtb2RlbDINEAAYgAQYigUYQxixAzIIEAAYgAQYtAcyERAAGIAEGIoFGLEDGIMBGLQHMggQABiABBi0BzIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABEitB1AOWA5wAXgAkAEAmAHLAaABywGqAQMyLTG4AQPIAQD4AQGYAgKgAtABqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwLxBTECoSpdQsQFkgcFMS4wLjGgB74HsgcDMi0xuAfNAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz",
+    "final_title": "large language model - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.902,
+     "target": "7",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "large language model",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 561.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7406,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 559.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.8379,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 576.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=large+language+model&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQns2Wda-kPKzbEm52RrIb3UUg9Se-w%3A1790481403876&source=hp&ei=-5O4aoyeNP_NkPIP_7bMqQk&iflsig=ABILxe8AAAAAariiC71xQ5176b9i25Xjz_qAQ8KFRBNZ&ved=0ahUKEwjMh7eA742XAxX_JkQIHX8bM5UQ4dUDCA4&uact=5&oq=large+language+model&gs_lp=Egdnd3Mtd2l6IhRsYXJnZSBsYW5ndWFnZSBtb2RlbDINEAAYgAQYigUYQxixAzIIEAAYgAQYtAcyERAAGIAEGIoFGLEDGIMBGLQHMggQABiABBi0BzIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABEitB1AOWA5wAXgAkAEAmAHLAaABywGqAQMyLTG4AQPIAQD4AQGYAgKgAtABqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwLxBTECoSpdQsQFkgcFMS4wLjGgB74HsgcDMi0xuAfNAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.9026,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 434.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=large+language+model&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQns2Wda-kPKzbEm52RrIb3UUg9Se-w%3A1790481403876&source=hp&ei=-5O4aoyeNP_NkPIP_7bMqQk&iflsig=ABILxe8AAAAAariiC71xQ5176b9i25Xjz_qAQ8KFRBNZ&ved=0ahUKEwjMh7eA742XAxX_JkQIHX8bM5UQ4dUDCA4&uact=5&oq=large+language+model&gs_lp=Egdnd3Mtd2l6IhRsYXJnZSBsYW5ndWFnZSBtb2RlbDINEAAYgAQYigUYQxixAzIIEAAYgAQYtAcyERAAGIAEGIoFGLEDGIMBGLQHMggQABiABBi0BzIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABEitB1AOWA5wAXgAkAEAmAHLAaABywGqAQMyLTG4AQPIAQD4AQGYAgKgAtABqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwLxBTECoSpdQsQFkgcFMS4wLjGgB74HsgcDMi0xuAfNAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.855,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 600.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=large+language+model&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQns2Wda-kPKzbEm52RrIb3UUg9Se-w%3A1790481403876&source=hp&ei=-5O4aoyeNP_NkPIP_7bMqQk&iflsig=ABILxe8AAAAAariiC71xQ5176b9i25Xjz_qAQ8KFRBNZ&ved=0ahUKEwjMh7eA742XAxX_JkQIHX8bM5UQ4dUDCA4&uact=5&oq=large+language+model&gs_lp=Egdnd3Mtd2l6IhRsYXJnZSBsYW5ndWFnZSBtb2RlbDINEAAYgAQYigUYQxixAzIIEAAYgAQYtAcyERAAGIAEGIoFGLEDGIMBGLQHMggQABiABBi0BzIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABEitB1AOWA5wAXgAkAEAmAHLAaABywGqAQMyLTG4AQPIAQD4AQGYAgKgAtABqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwLxBTECoSpdQsQFkgcFMS4wLjGgB74HsgcDMi0xuAfNAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "google-wikipedia",
+   "source": "google",
+   "goal": "Search Google for the Wikipedia article on the Python programming language and open it.",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 5,
+   "total_ms": 8811,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://en.wikipedia.org/wiki/python_(programming_language)",
+     "bot_challenge": false,
+     "group0": [
+      "python"
+     ],
+     "group1": [
+      "programming"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+    "final_title": "Python (programming language) - Wikipedia"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9064,
+     "target": "7",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "Python programming language wikipedia",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 448.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.6148,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 545.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.7569,
+     "target": "17",
+     "target_label": "Python (programming language) Wikipedia https://en.wikipedia.org › wiki › Python_(programming...",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 582.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=Python+programming+language+wikipedia&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQnvgEjiFaXx7iAF5wH6vvTm8Yrj8dg%3A1790481417370&source=hp&ei=CZS4avnKFd_LkPIP1Yvf6Q8&iflsig=ABILxe8AAAAAariiGUEKvUnhfUuK0K9iSlfhZHGX4VFr&ved=0ahUKEwi58-6G742XAxXfJUQIHdXFN_0Q4dUDCA4&uact=5&oq=Python+programming+language+wikipedia&gs_lp=Egdnd3Mtd2l6IiVQeXRob24gcHJvZ3JhbW1pbmcgbGFuZ3VhZ2Ugd2lraXBlZGlhMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMggQABiABBiiBDIFEAAY7wVInAdQD1gPcAF4AJABAJgB5AGgAeQBqgEDMi0xuAEDyAEA-AEBmAICoALtAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAhkQLhiABBiKBRhDGOcGGMcBGNEDGOoCGLQCwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBUPBFzA7F0X9kgcFMS4wLjGgB4EGsgcDMi0xuAfoAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.7767,
+     "target": "18",
+     "target_label": "Python (programming language) Wikipedia https://en.wikipedia.org › wiki › Python_(programming...",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 583.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=Python+programming+language+wikipedia&sca_esv=775c2f54cc2f2562&hl=en&gl=us&sxsrf=APpeQnvgEjiFaXx7iAF5wH6vvTm8Yrj8dg%3A1790481417370&source=hp&ei=CZS4avnKFd_LkPIP1Yvf6Q8&iflsig=ABILxe8AAAAAariiGUEKvUnhfUuK0K9iSlfhZHGX4VFr&ved=0ahUKEwi58-6G742XAxXfJUQIHdXFN_0Q4dUDCA4&uact=5&oq=Python+programming+language+wikipedia&gs_lp=Egdnd3Mtd2l6IiVQeXRob24gcHJvZ3JhbW1pbmcgbGFuZ3VhZ2Ugd2lraXBlZGlhMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMggQABiABBiiBDIFEAAY7wVInAdQD1gPcAF4AJABAJgB5AGgAeQBqgEDMi0xuAEDyAEA-AEBmAICoALtAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAhkQLhiABBiKBRhDGOcGGMcBGNEDGOoCGLQCwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBUPBFzA7F0X9kgcFMS4wLjGgB4EGsgcDMi0xuAfoAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8568,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 664.2,
+     "low_confidence": false,
+     "url": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+    }
+   ]
+  },
+  {
+   "task_id": "github-trending-python",
+   "source": "github",
+   "goal": "On GitHub trending, show only the Python language repositories.",
+   "fingerprint": 30899,
+   "status": "repeat-loop",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 4867,
+   "error": "same operation+target repeated 3x; stopping",
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'github.com/trending/python'",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "python"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9388,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 526.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.919,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 475.4,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.9228,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 432.1,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    }
+   ]
+  },
+  {
+   "task_id": "github-topic-llm",
+   "source": "github",
+   "goal": "Open GitHub's LLM topic page and review the listed repositories.",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 2,
+   "total_ms": 5766,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://github.com/topics/llm",
+     "bot_challenge": false,
+     "group0": [
+      "llm",
+      "large language model"
+     ],
+     "group1": [
+      "star",
+      "stars"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://github.com/topics/llm",
+    "final_title": "llm · GitHub Topics · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9327,
+     "target": "32",
+     "target_label": "llm",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 514.0,
+     "low_confidence": false,
+     "url": "https://github.com/topics/llm"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.936,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 473.9,
+     "low_confidence": false,
+     "url": "https://github.com/topics/llm"
+    }
+   ]
+  },
+  {
+   "task_id": "github-open-pytorch",
+   "source": "github",
+   "goal": "Open the PyTorch repository on GitHub and view its page.",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 2,
+   "total_ms": 3807,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://github.com/pytorch/pytorch",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": [
+      "fork",
+      "forks"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://github.com/pytorch/pytorch",
+    "final_title": "GitHub - pytorch/pytorch: Tensors and Dynamic neural networks in Python with str"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.8526,
+     "target": "2",
+     "target_label": "Platform",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 616.1,
+     "low_confidence": false,
+     "url": "https://github.com/pytorch/pytorch"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.9216,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 444.0,
+     "low_confidence": false,
+     "url": "https://github.com/pytorch/pytorch"
+    }
+   ]
+  },
+  {
+   "task_id": "github-search-first",
+   "source": "github",
+   "goal": "Search GitHub for 'llm' and open the first repository in the results.",
+   "fingerprint": 30899,
+   "status": "repeat-loop",
+   "verified": false,
+   "success": false,
+   "steps": 14,
+   "total_ms": 9220,
+   "error": "same operation+target repeated 3x; stopping",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/",
+    "final_title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8364,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 498.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8828,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 441.1,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8228,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 456.8,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.4246,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 459.5,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7382,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 469.5,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2731,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 488.8,
+     "low_confidence": true,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 7,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.291,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 516.4,
+     "low_confidence": true,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 8,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.794,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 538.9,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 9,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7673,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 551.2,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 10,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2165,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 568.1,
+     "low_confidence": true,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 11,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.234,
+     "target": "1",
+     "target_label": "Search or jump to",
+     "kind": "fill",
+     "text": "llm",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 590.1,
+     "low_confidence": true,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 12,
+     "operation": "CLICK",
+     "confidence": 0.8918,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 536.7,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 13,
+     "operation": "CLICK",
+     "confidence": 0.8911,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 532.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 14,
+     "operation": "CLICK",
+     "confidence": 0.8137,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 521.1,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    }
+   ]
+  }
+ ]
+}

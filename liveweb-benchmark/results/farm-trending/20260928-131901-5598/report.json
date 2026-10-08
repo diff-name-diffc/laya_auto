@@ -1,0 +1,650 @@
+{
+ "meta": {
+  "base_url": "http://127.0.0.1:8812",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 10541,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 8.0,
+  "backend": {
+   "ok": true,
+   "variant": "out/laya-browser-v18d-run2",
+   "calls": 150,
+   "tau": 0.0,
+   "escalated": 0,
+   "recent": [
+    {
+     "ms": 230.6,
+     "questions": 3,
+     "options": 39,
+     "tokens": 3072,
+     "passes": 1
+    },
+    {
+     "ms": 253.2,
+     "questions": 3,
+     "options": 28,
+     "tokens": 3072,
+     "passes": 1
+    },
+    {
+     "ms": 227.5,
+     "questions": 3,
+     "options": 35,
+     "tokens": 3072,
+     "passes": 1
+    },
+    {
+     "ms": 226.7,
+     "questions": 3,
+     "options": 35,
+     "tokens": 3072,
+     "passes": 1
+    },
+    {
+     "ms": 246.7,
+     "questions": 3,
+     "options": 28,
+     "tokens": 3072,
+     "passes": 1
+    }
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-28T13:22:50+0800",
+  "n_tasks": 6,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 1,
+  "verified_rate": 0.167,
+  "found_but_not_stopped": 1,
+  "mean_steps": 4.3,
+  "mean_duration_ms": 21715,
+  "decision_latency_ms": {
+   "p50": 191.5,
+   "p95": 310.0
+  },
+  "step_outcomes": {
+   "executed": 16,
+   "stale": 2,
+   "refused-empty-enter": 4,
+   "page changed since the decision (url or marker mismatch)": 2,
+   "done-rejected": 1,
+   "done": 1
+  },
+  "low_confidence_steps": 3,
+  "vlm_rescues": 5,
+  "by_source": {
+   "github": {
+    "n": 5,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 1,
+    "verified_rate": 0.2,
+    "mean_steps": 4.8
+   },
+   "google": {
+    "n": 1,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.0
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-3c01a3c70781f9e3",
+   "source": "google",
+   "goal": "First search Google for logging best practices interview questions, then search Google for design patterns open source alternatives.",
+   "fingerprint": 10541,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "vlm_rescues": 0,
+   "total_ms": 14193,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlogging%2bbest%2bpractices%2binterview%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlogging%2Bbest%2Bpractices%2Binterview%2Bquestions%26sca_esv%3D0187de462875193d%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntXIIRNEVija57lloVuIUm7d8t-ig%253A1790572744616%26source%3Dhp%26ei%3DyPi5at74I6Gsur8P_qLd2A8%26iflsig%3DABILxe8AAAAAaroG2GYmisS-0HipYVJUumk555Lk_CMG%26ved%3D0ahUKEwje_Iqjw5CXAxUhlu4BHX5RF_sQ4dUDCB8%26uact%3D5%26oq%3Dlogging%2Bbest%2Bpractices%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Iipsb2dnaW5nIGJlc3QgcHJhY3RpY2VzIGludGVydmlldyBxdWVzdGlvbnMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAkjYBFAfWB9wAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAu0BqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwfxBTFumPk3oaV_kgcFMS4wLjGgB-QFsgcDMi0xuAfmAcIHAzItMsgHCYAIAQ%26sclient%3Dgws-wiz%26sei%3Dyvi5atz0NM-vur8P99y3oAE&hl=en&q=EgQm0XtnGMvx59UGIjD1ZlLiRWJJ4F0Q2jhnOt0NJSDkNR7ypiqWZfYz5uE7drUOdfTdydB-B4lVbBbc_RcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=logging+best+practices+interview+questions&sca_e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9265,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "logging best practices interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 211.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9304,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 191.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-61d1a782b44d10f2",
+   "source": "github",
+   "goal": "Open the first repository shown in GitHub's trending go list.",
+   "fingerprint": 10541,
+   "status": "repeat-loop",
+   "verified": true,
+   "success": false,
+   "steps": 15,
+   "vlm_rescues": 2,
+   "total_ms": 94575,
+   "error": "SCROLL_DOWN on the same target repeats without progress; stopping",
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://github.com/kubernetes/kubernetes/tree/master/logo",
+     "bot_challenge": false,
+     "group0": [
+      "star"
+     ],
+     "group1": [
+      "fork"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://github.com/kubernetes/kubernetes/tree/master/logo",
+    "final_title": "kubernetes/logo at master · kubernetes/kubernetes · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.3724,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 194.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending/go"
+    },
+    {
+     "step": 2,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.8884,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 163.2,
+     "low_confidence": false,
+     "url": "https://github.com/trending/go"
+    },
+    {
+     "step": 3,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.8996,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 161.3,
+     "low_confidence": false,
+     "url": "https://github.com/trending/go"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:113",
+     "target_label": "kubernetes / kubernetes",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending/go"
+    },
+    {
+     "step": 4,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.4283,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 269.0,
+     "low_confidence": false,
+     "url": "https://github.com/kubernetes/kubernetes"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.3556,
+     "target": "8",
+     "target_label": "logo, (Directory)",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 296.0,
+     "low_confidence": false,
+     "url": "https://github.com/kubernetes/kubernetes"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.3556,
+     "target": "8",
+     "target_label": "logo, (Directory)",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 310.0,
+     "low_confidence": false,
+     "url": "https://github.com/kubernetes/kubernetes"
+    },
+    {
+     "step": 7,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2846,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 219.2,
+     "low_confidence": true,
+     "url": "https://github.com/kubernetes/kubernetes/tree/master/logo"
+    },
+    {
+     "step": 8,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2846,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 217.6,
+     "low_confidence": true,
+     "url": "https://github.com/kubernetes/kubernetes/tree/master/logo"
+    },
+    {
+     "step": 9,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:119",
+     "target_label": "Go to file",
+     "kind": "fill",
+     "text": "trending go",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/kubernetes/kubernetes/tree/master/logo"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.2061,
+     "target": "3",
+     "target_label": "Search this repository ( forward slash )",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 261.4,
+     "low_confidence": true,
+     "url": "https://github.com/kubernetes/kubernetes/tree/master/logo"
+    },
+    {
+     "step": 11,
+     "operation": "CLICK",
+     "confidence": 0.9108,
+     "target": "1",
+     "target_label": "Explore CI/CD",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 162.3,
+     "low_confidence": false,
+     "url": "https://github.com/kubernetes/kubernetes/tree/master/logo"
+    },
+    {
+     "step": 12,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.9251,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 150.9,
+     "low_confidence": false,
+     "url": "https://github.com/kubernetes/kubernetes/tree/master/logo"
+    },
+    {
+     "step": 13,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.92,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 161.8,
+     "low_confidence": false,
+     "url": "https://github.com/kubernetes/kubernetes/tree/master/logo"
+    },
+    {
+     "step": 14,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.8018,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 167.1,
+     "low_confidence": false,
+     "url": "https://github.com/kubernetes/kubernetes/tree/master/logo"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-022194f32796c77f",
+   "source": "github",
+   "goal": "Open a next.js repository from GitHub trending and check its README.",
+   "fingerprint": 10541,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 8,
+   "vlm_rescues": 3,
+   "total_ms": 14523,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/paperclipai/paperclip?tab=readme-ov-file",
+     "bot_challenge": false,
+     "group0": [
+      "star"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/paperclipai/paperclip?tab=readme-ov-file",
+    "final_title": "GitHub - paperclipai/paperclip: The open-source app everyone uses to manage agen"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9246,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 188.9,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.931,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing A Next.js repository opened from GitHub trending; The repository README content displayed",
+     "page_changed": null,
+     "latency_ms": 206.3,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:23",
+     "target_label": "paperclipai / paperclip",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8644,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 264.9,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:42",
+     "target_label": "Readme",
+     "kind": "click",
+     "text": null,
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7623,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 405.0,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:42",
+     "target_label": "Readme",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 7,
+     "operation": "DONE",
+     "confidence": 0.8355,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 190.4,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip?tab=readme-ov-file"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-662559bde8c3a14d",
+   "source": "github",
+   "goal": "From today's GitHub trending list, open a scala project and view its details.",
+   "fingerprint": 10541,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 1,
+   "vlm_rescues": 0,
+   "total_ms": 2952,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9429,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 191.9,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-12fa07c74634bdd7",
+   "source": "github",
+   "goal": "Browse GitHub trending and open one repository about fastapi.",
+   "fingerprint": 10541,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2022,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-1fd281eada2e5058",
+   "source": "github",
+   "goal": "Open the first repository shown in GitHub's trending swift list.",
+   "fingerprint": 10541,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2022,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending/swift",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending/swift",
+    "final_title": "Trending Swift repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  }
+ ]
+}

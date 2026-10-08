@@ -1,0 +1,753 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 65403,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:02:27+0800",
+  "n_tasks": 8,
+  "success": 3,
+  "success_rate": 0.375,
+  "verified": 3,
+  "verified_rate": 0.375,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.2,
+  "mean_duration_ms": 14045,
+  "decision_latency_ms": {
+   "p50": 512.1,
+   "p95": 734.4
+  },
+  "step_outcomes": {
+   "stale": 3,
+   "refused-empty-enter": 3,
+   "done-rejected": 5,
+   "executed": 19,
+   "done": 4
+  },
+  "low_confidence_steps": 2,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 3,
+    "success_rate": 0.375,
+    "verified": 3,
+    "verified_rate": 0.375,
+    "mean_steps": 4.2
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-91c3b56d5596b1f4",
+   "source": "google",
+   "goal": "Search Google for mysql migration guide and open the results.",
+   "fingerprint": 65403,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 22488,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmysql%2bmigration%2bguide%26sca_esv%3d54",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmysql%2Bmigration%2Bguide%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntcpw3HrWowP5Qr0qK0LUYHhcLf7g%253A1790506648848%26source%3Dhp%26ei%3DmPa4aqrHMuPOkPIPz-DkoA4%26iflsig%3DABILxe8AAAAAarkEqCZaTR5CWM8hTqN7I1KgJYztejTJ%26ved%3D0ahUKEwiq85WGzY6XAxVjJ0QIHU8wGeQQ4dUDCDI%26oq%3Dmysql%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhVteXNxbCBtaWdyYXRpb24gZ3VpZGUyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIEMggQABiJBRiiBEjyIVAUWBRwAXgAkAEAmAHgAaAB4AGqAQMyLTG4AQzIAQD4AQGYAgKgAusBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBZ78TzA6bxrvkgcFMS4wLjGgB98EsgcDMi0xuAfnAcIHAzItMsgHB4AIAQ%26sclient%3Dgws-wiz%26sei%3Do_a4aojNDoTCkPIP7vL1QQ&hl=en&q=EgQm0XtnGKPt49UGIjBXuWo8tHmtR8gvjGZqnHL0oiAfHjGLicHt3NlSy4aWXgNQ43iwNpHM4HdVA-IlGSMyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mysql+migration+guide&sca_esv=54dc793dbd0950c5&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8925,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mysql migration guide",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 481.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8945,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 473.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506650208"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.898,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page listing results for 'mysql migration guide' (page shows only the empty Google homepage search box)",
+     "page_changed": null,
+     "latency_ms": 495.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506650208"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mysql migration guide",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506650208"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9128,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'mysql migration guide' are not displayed; only the Google homepage with autocomplete suggestions is shown",
+     "page_changed": null,
+     "latency_ms": 734.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506650208"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:32",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506650208"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-77114f8b33f5b595",
+   "source": "google",
+   "goal": "First search Google for rabbitmq migration guide, then search Google for how to debug golang.",
+   "fingerprint": 65403,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 10,
+   "total_ms": 27925,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=golang'",
+    "checks": {
+     "url": "https://www.google.com/search?q=how+to+debug+golang&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnvt1xi_t5tof6iqmydsx",
+     "bot_challenge": false,
+     "group0": [
+      "golang"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=how+to+debug+golang&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvT1xI_T5tOF6iqMydSxE5eIBRLug%3A1790506723728&source=hp&ei=4_a4ar-nK-POkPIPu4XusAI&iflsig=ABILxe8AAAAAarkE83UWD-Jp5ZcHhT7viimgq5sSRelQ&ved=0ahUKEwj_pPCpzY6XAxVjJ0QIHbuCGyYQ4dUDCDI&oq=how+to+debug+golang&gs_lp=Egdnd3Mtd2l6IhNob3cgdG8gZGVidWcgZ29sYW5nMggQABiABBi0BzIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSO6-AVAOWLNdcAV4AJABAJgB1QGgAZkDqgEFMC4xLjG4AQzIAQD4AQGYAgegArEDqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gLCAggQABiJBRiiBMICBRAAGO8FwgIIEAAYgAQYogSYAwTxBbo0ndePwmIikgcFNS4wLjKgB7wIsgcDMi0yuAemA8IHBTAuNC4zyAcQgAgB&sclient=gws-wiz",
+    "final_title": "how to debug golang - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8636,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug golang",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 559.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8853,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 473.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506725135"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8347,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug golang",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 502.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506725135"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8895,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug golang",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 606.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506725135"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rabbitmq migration guide",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506725135"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8838,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for how to debug golang",
+     "page_changed": null,
+     "latency_ms": 631.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506725135"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug golang",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506725135"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.3609,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'how to debug golang'",
+     "page_changed": null,
+     "latency_ms": 623.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506725135"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506725135"
+    },
+    {
+     "step": 7,
+     "operation": "DONE",
+     "confidence": 0.8453,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 772.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+golang&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvT1xI_T5tOF6iqMydSxE5eIBRLug%3A1790506723728&source=hp&ei=4_a4ar-nK-POkPIPu4XusAI&iflsig=ABILxe8AAAAAarkE83UWD-Jp5ZcHhT7viimgq5sSRelQ&ved=0ahUKEwj_pPCpzY6XAxVjJ0QIHbuCGyYQ4dUDCDI&oq=how+to+debug+golang&gs_lp=Egdnd3Mtd2l6IhNob3cgdG8gZGVidWcgZ29sYW5nMggQABiABBi0BzIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSO6-AVAOWLNdcAV4AJABAJgB1QGgAZkDqgEFMC4xLjG4AQzIAQD4AQGYAgegArEDqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gLCAggQABiJBRiiBMICBRAAGO8FwgIIEAAYgAQYogSYAwTxBbo0ndePwmIikgcFNS4wLjKgB7wIsgcDMi0yuAemA8IHBTAuNC4zyAcQgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8ff9d96fd38c94ed",
+   "source": "google",
+   "goal": "Search Google for next.js migration guide and open the results.",
+   "fingerprint": 65403,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 5,
+   "total_ms": 8349,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=next.js+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnsmugfbg1jdzjlfv",
+     "bot_challenge": false,
+     "group0": [
+      "next.js"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=next.js+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsmuGfBG1jdZJLfvvhfGQADg2D6bg%3A1790506759039&source=hp&ei=B_e4auKXAYzfkPIP0MOOwQ4&iflsig=ABILxe8AAAAAarkFFx3zg6ejV6LwnkQ4MArT_dY5LZFR&ved=0ahUKEwiit9u6zY6XAxWML0QIHdChI-gQ4dUDCDI&uact=5&oq=next.js+migration+guide&gs_lp=Egdnd3Mtd2l6IhduZXh0LmpzIG1pZ3JhdGlvbiBndWlkZTIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgNI_CBQDFgMcAF4AJABAJgB4QGgAeEBqgEDMi0xuAEDyAEA-AEBmAICoALqAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QWdTzRkOPj755IHBTEuMC4xoAe8BbIHAzItMbgH5wHCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz",
+    "final_title": "next.js migration guide - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8622,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "next.js migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 436.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506759293"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8756,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'next.js migration guide' are not displayed; only the Google homepage/autocomplete suggestions are visible",
+     "page_changed": null,
+     "latency_ms": 603.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506759293"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506759293"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.2549,
+     "target": "2",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 544.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=next.js+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsmuGfBG1jdZJLfvvhfGQADg2D6bg%3A1790506759039&source=hp&ei=B_e4auKXAYzfkPIP0MOOwQ4&iflsig=ABILxe8AAAAAarkFFx3zg6ejV6LwnkQ4MArT_dY5LZFR&ved=0ahUKEwiit9u6zY6XAxWML0QIHdChI-gQ4dUDCDI&uact=5&oq=next.js+migration+guide&gs_lp=Egdnd3Mtd2l6IhduZXh0LmpzIG1pZ3JhdGlvbiBndWlkZTIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgNI_CBQDFgMcAF4AJABAJgB4QGgAeEBqgEDMi0xuAEDyAEA-AEBmAICoALqAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QWdTzRkOPj755IHBTEuMC4xoAe8BbIHAzItMbgH5wHCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.2697,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 917.1,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=next.js+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsmuGfBG1jdZJLfvvhfGQADg2D6bg%3A1790506759039&source=hp&ei=B_e4auKXAYzfkPIP0MOOwQ4&iflsig=ABILxe8AAAAAarkFFx3zg6ejV6LwnkQ4MArT_dY5LZFR&ved=0ahUKEwiit9u6zY6XAxWML0QIHdChI-gQ4dUDCDI&uact=5&oq=next.js+migration+guide&gs_lp=Egdnd3Mtd2l6IhduZXh0LmpzIG1pZ3JhdGlvbiBndWlkZTIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgNI_CBQDFgMcAF4AJABAJgB4QGgAeEBqgEDMi0xuAEDyAEA-AEBmAICoALqAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QWdTzRkOPj755IHBTEuMC4xoAe8BbIHAzItMbgH5wHCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-395c77cb24368565",
+   "source": "google",
+   "goal": "Search Google for python tutorial and open the results.",
+   "fingerprint": 65403,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4261,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=python+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnvser_kkk-4bxirnmkh0hqdx",
+     "bot_challenge": false,
+     "group0": [
+      "python"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=python+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvseR_KKk-4bXirnMKh0HqdXegf5Q%3A1790506774601&source=hp&ei=Fve4api4I_PekPIP5fVG&iflsig=ABILxe8AAAAAarkFJu3L4WZVaQ42Zr69ZL60oj4d171Y&ved=0ahUKEwiYm5HCzY6XAxVzL0QIHeW6EQAQ4dUDCDI&uact=5&oq=python+tutorial&gs_lp=Egdnd3Mtd2l6Ig9weXRob24gdHV0b3JpYWwyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESOQHUAxYDHABeACQAQCYAdIBoAHSAaoBAzItMbgBA8gBAPgBAZgCAqAC2wGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDA_EFlu-tSiKVyTGSBwUxLjAuMaAHkwWyBwMyLTG4B9gBwgcFMC4xLjHIBwaACAE&sclient=gws-wiz",
+    "final_title": "python tutorial - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.5236,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "python tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 484.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506774834"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9048,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 608.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506774834"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8819,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 608.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=python+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvseR_KKk-4bXirnMKh0HqdXegf5Q%3A1790506774601&source=hp&ei=Fve4api4I_PekPIP5fVG&iflsig=ABILxe8AAAAAarkFJu3L4WZVaQ42Zr69ZL60oj4d171Y&ved=0ahUKEwiYm5HCzY6XAxVzL0QIHeW6EQAQ4dUDCDI&uact=5&oq=python+tutorial&gs_lp=Egdnd3Mtd2l6Ig9weXRob24gdHV0b3JpYWwyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESOQHUAxYDHABeACQAQCYAdIBoAHSAaoBAzItMbgBA8gBAPgBAZgCAqAC2wGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDA_EFlu-tSiKVyTGSBwUxLjAuMaAHkwWyBwMyLTG4B9gBwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8bdb15efd3a32042",
+   "source": "google",
+   "goal": "Search Google for vllm open source alternatives and open the results.",
+   "fingerprint": 65403,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 5004,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=vllm+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnsdtwdolo2",
+     "bot_challenge": false,
+     "group0": [
+      "vllm"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=vllm+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsDTWDOlO2L-Bs539Df7a4lFS-YcA%3A1790506786043&source=hp&ei=Ive4aoGyAY_KkPIP-cTXgQg&iflsig=ABILxe8AAAAAarkFMukNMI3Mqrzz0MMIXOxuS-pfUz5H&ved=0ahUKEwiBy8vHzY6XAxUPJUQIHXniNYAQ4dUDCDI&uact=5&oq=vllm+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih12bGxtIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABSJcHUAxYDHABeACQAQCYAesBoAHrAaoBAzItMbgBA8gBAPgBAZgCAqAC9wGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIREAAY5QYYigMY5wYY6gIYtAKYAwLxBfmHI0eZjbELkgcFMS4wLjGgB50FsgcDMi0xuAf0AcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz",
+    "final_title": "vllm open source alternatives - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8832,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vllm open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 512.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506786166"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8939,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 534.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506786166"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8644,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 589.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vllm+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsDTWDOlO2L-Bs539Df7a4lFS-YcA%3A1790506786043&source=hp&ei=Ive4aoGyAY_KkPIP-cTXgQg&iflsig=ABILxe8AAAAAarkFMukNMI3Mqrzz0MMIXOxuS-pfUz5H&ved=0ahUKEwiBy8vHzY6XAxUPJUQIHXniNYAQ4dUDCDI&uact=5&oq=vllm+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih12bGxtIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABSJcHUAxYDHABeACQAQCYAesBoAHrAaoBAzItMbgBA8gBAPgBAZgCAqAC9wGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIREAAY5QYYigMY5wYY6gIYtAKYAwLxBfmHI0eZjbELkgcFMS4wLjGgB50FsgcDMi0xuAf0AcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-38b59f30c1c0501e",
+   "source": "google",
+   "goal": "First search Google for how to debug c++, then search Google for zig best practices.",
+   "fingerprint": 65403,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 15283,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bc%252b%252b%26sca_esv",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bc%252B%252B%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsbgyxq6a17u4d69gIh-EXNEanYaQ%253A1790506798186%26source%3Dhp%26ei%3DLve4avqlCp29kPIP3qvTqA8%26iflsig%3DABILxe8AAAAAarkFPrVzFQapN6-0hWljqYCOABzdANYz%26oq%3Dhow%2Bto%2Bdebug%2Bc%252B%252B%26gs_lp%3DEgdnd3Mtd2l6IhBob3cgdG8gZGVidWcgYysrKgUIAhiABDIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSPUHUAtYC3ABeACQAQCYAdYBoAHWAaoBAzItMbgBAcgBAPgBAZgCAqAC3wGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDAvEFLtWAk2aDXPKSBwUxLjAuMaAHtQWyBwMyLTG4B9wBwgcFMC4xLjHIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLHu49UGIjCRAnJ1t3yotWXaTazIRkwCnDn1gGwNB56JfXJhl7TIFQiKMWwN2PrJQL5MbJMvbNUyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+c%2B%2B&sca_esv=54dc793dbd0950c5&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.3616,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 436.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506798313"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.858,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug c++",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 476.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506798313"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.7863,
+     "target": "14",
+     "target_label": "how to debug c++",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 584.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506798313"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-da0928d928b167ee",
+   "source": "google",
+   "goal": "Search Google for ruby security vulnerabilities and open the results.",
+   "fingerprint": 65403,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14546,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3druby%2bsecurity%2bvulnerabilities%26sca_",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Druby%2Bsecurity%2Bvulnerabilities%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvnOu7fO8lwLUMX9Ze6xIEgXZISHQ%253A1790506865655%26source%3Dhp%26ei%3Dcfe4apDLJcaxkPIPhp_QkQo%26iflsig%3DABILxe8AAAAAarkFgVBa_61jeH8Nk12_BYsQsMMdYhov%26ved%3D0ahUKEwjQx8XtzY6XAxXGGEQIHYYPNKIQ4dUDCDI%26uact%3D5%26oq%3Druby%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6Ih1ydWJ5IHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllczIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMggQABiABBiiBEieB1AMWAxwAXgAkAEAmAHiAaAB4gGqAQMyLTG4AQPIAQD4AQGYAgKgAugBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwLxBVvjeOPDI-zmkgcFMS4wLjGgB5YDsgcDMi0xuAflAcIHAzAuMsgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPTu49UGIjDY6pEpYWNgOMREVniqwTG-XvHFdjMrsC2Ehvs9lVExQPVa07p6EyHjqAq50mFmdgEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=ruby+security+vulnerabilities&sca_esv=54dc793dbd"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9044,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ruby security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 482.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506865778"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9001,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 542.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506865778"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a9ac13efbe14c4c4",
+   "source": "google",
+   "goal": "Search Google for refactoring tutorial and open the results.",
+   "fingerprint": 65403,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14503,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drefactoring%2btutorial%26sca_esv%3d54dc7",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drefactoring%2Btutorial%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnurLtOJZvptPk3eut1CCulpMBya4g%253A1790506932337%26source%3Dhp%26ei%3DtPe4auSxE97xkPIPwNaOiAw%26iflsig%3DABILxe8AAAAAarkFxJTLt174x23b28aW_q6mkXN9UQpU%26ved%3D0ahUKEwjk26yNzo6XAxXeOEQIHUCrA8EQ4dUDCDI%26uact%3D5%26oq%3Drefactoring%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhRyZWZhY3RvcmluZyB0dXRvcmlhbDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyBRAAGO8FMgUQABjvBUi1B1ALWAtwAXgAkAEAmAHjAaAB4wGqAQMyLTG4AQPIAQD4AQGYAgKgAuwBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwLxBetu3CmWphq7kgcFMS4wLjGgB-8EsgcDMi0xuAfpAcIHBTAuMS4xyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLbv49UGIjBSbe_e62sky0lxPh_FTR6CugIC_dnJLx5e-e9NgMne0zp3SDbzKVLv6OC-bG7neGgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=refactoring+tutorial&sca_esv=54dc793dbd0950c5&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8988,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "refactoring tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 459.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506932451"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8971,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 554.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506932451"
+    }
+   ]
+  }
+ ]
+}

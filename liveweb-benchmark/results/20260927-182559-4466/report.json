@@ -1,0 +1,964 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 12415,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T18:33:23+0800",
+  "n_tasks": 8,
+  "success": 1,
+  "success_rate": 0.125,
+  "verified": 1,
+  "verified_rate": 0.125,
+  "found_but_not_stopped": 0,
+  "mean_steps": 6.1,
+  "mean_duration_ms": 20466,
+  "decision_latency_ms": {
+   "p50": 573.0,
+   "p95": 874.0
+  },
+  "step_outcomes": {
+   "stale": 6,
+   "refused-empty-enter": 4,
+   "done-rejected": 7,
+   "executed": 28,
+   "done": 2,
+   "page changed since the decision (url or marker mismatch)": 2
+  },
+  "low_confidence_steps": 7,
+  "by_source": {
+   "github": {
+    "n": 1,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 13.0
+   },
+   "google": {
+    "n": 7,
+    "success": 1,
+    "success_rate": 0.143,
+    "verified": 1,
+    "verified_rate": 0.143,
+    "mean_steps": 5.1
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-e12b2a25d69b8039",
+   "source": "google",
+   "goal": "Search Google for rust cheat sheet and open the results.",
+   "fingerprint": 12415,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 23586,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drust%2bcheat%2bsheet%26sca_esv%3dee3892b",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drust%2Bcheat%2Bsheet%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnu7V6beC2_ZD19l7WemvR2pQxY-bQ%253A1790504762450%26source%3Dhp%26ei%3DOu-4aoSUGuzIkPIPoqbAwAg%26iflsig%3DABILxe8AAAAAarj9Sgcp_uglXO4ewa7T-6V3NqMPPEBs%26ved%3D0ahUKEwiEmdWCxo6XAxVsJEQIHSITEIgQ4dUDCDI%26uact%3D5%26oq%3Drust%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhBydXN0IGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSL8tUA9YD3ABeACQAQCYAcMBoAHDAaoBAzAuMbABALgBA8gBAPgBAZgCAqACygGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFZ8bbxlkxsjSSBwMxLjGgB4cFsgcDMC4xuAfFAcIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz%26sei%3DRe-4aovHNc_IkPIP97GUyA4&hl=en&q=EgQm0XtnGMbe49UGIjD-rGzg9VAr4tHJI2GfSTeB1zh089xfRCs2XglZVaoYD4Tbs9hLqpUty4xMNRsbEEUyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=rust+cheat+sheet&sca_esv=ee3892b004fb5afd&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.913,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rust cheat sheet",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 547.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8959,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 510.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504763767"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8771,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"rust cheat sheet\"",
+     "page_changed": null,
+     "latency_ms": 563.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504763767"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rust cheat sheet",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504763767"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.777,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for rust cheat sheet",
+     "page_changed": null,
+     "latency_ms": 659.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504763767"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504763767"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-2ecd2705c8e70c96",
+   "source": "google",
+   "goal": "Search Google for grafana release notes and open the results.",
+   "fingerprint": 12415,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 9,
+   "total_ms": 14517,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=grafana+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=appeqnsehhjf9yflgexzmk_",
+     "bot_challenge": false,
+     "group0": [
+      "grafana"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=grafana+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsEhHJf9YFlGExZmK_-9S75qdhiSg%3A1790504849758&ei=ke-4aqbxLfSiur8PrtmB-Ac&biw=1120&bih=780&ved=2ahUKEwjm_aasxo6XAxV0ke4BHa5sAH8Q4dUDegQIBhAN&oq=grafana+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiFWdyYWZhbmEgcmVsZWFzZSBub3Rlc0gAUABYAHAAeACQAQCYAQCgAQCqAQCwAQC4AQzIAQCYAgCgAgCYAwDiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGKSBwCgBwCyBwC4BwDCBwDIBwCACAE&sclient=gws-wiz-serp",
+    "final_title": "grafana release notes - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9007,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "grafana release notes",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 526.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8959,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 494.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504839920"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9086,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'grafana release notes'; no query entered; page is the Google homepage with only a search box",
+     "page_changed": null,
+     "latency_ms": 582.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504839920"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "grafana release notes",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504839920"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9178,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search-results page listing results for 'grafana release notes' (only the query and autocomplete suggestions are shown)",
+     "page_changed": null,
+     "latency_ms": 752.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504839920"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:35",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504839920"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.2241,
+     "target": "24",
+     "target_label": "About this result",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 698.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=grafana+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnuztxvGEiEfzdpJLNcgEcT20608Cg%3A1790504838421&source=hp&ei=hu-4atO6GODukPIPlpyn6Qk&iflsig=ABILxe8AAAAAarj9losXCkkyBnOOERrjYjG62iKdsUnT&ved=0ahUKEwjTlfKmxo6XAxVgN0QIHRbOKZ0Q4dUDCDI&oq=grafana+release+notes&gs_lp=Egdnd3Mtd2l6IhVncmFmYW5hIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOQpUBBYEHABeACQAQCYAcUBoAHFAaoBAzAuMbABALgBDMgBAPgBAZgCAqACzwGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBeIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFU8DGsVrIX0CSBwUxLjAuMaAHqwWyBwMyLTG4B8oBwgcDMi0yyAcHgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.2241,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 1252.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=grafana+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnuztxvGEiEfzdpJLNcgEcT20608Cg%3A1790504838421&source=hp&ei=hu-4atO6GODukPIPlpyn6Qk&iflsig=ABILxe8AAAAAarj9losXCkkyBnOOERrjYjG62iKdsUnT&ved=0ahUKEwjTlfKmxo6XAxVgN0QIHRbOKZ0Q4dUDCDI&oq=grafana+release+notes&gs_lp=Egdnd3Mtd2l6IhVncmFmYW5hIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOQpUBBYEHABeACQAQCYAcUBoAHFAaoBAzAuMbABALgBDMgBAPgBAZgCAqACzwGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBeIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFU8DGsVrIX0CSBwUxLjAuMaAHqwWyBwMyLTG4B8oBwgcDMi0yyAcHgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "DONE",
+     "confidence": 0.8794,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 573.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=grafana+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsEhHJf9YFlGExZmK_-9S75qdhiSg%3A1790504849758&ei=ke-4aqbxLfSiur8PrtmB-Ac&biw=1120&bih=780&ved=2ahUKEwjm_aasxo6XAxV0ke4BHa5sAH8Q4dUDegQIBhAN&oq=grafana+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiFWdyYWZhbmEgcmVsZWFzZSBub3Rlc0gAUABYAHAAeACQAQCYAQCgAQCqAQCwAQC4AQzIAQCYAgCgAgCYAwDiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGKSBwCgBwCyBwC4BwDCBwDIBwCACAE&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b1655506cfcae502",
+   "source": "google",
+   "goal": "First search Google for scala release notes, then search Google for ruby performance optimization.",
+   "fingerprint": 12415,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 12,
+   "total_ms": 31121,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dscala%2brelease%2bnotes%26sca_esv%3dee38",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dscala%2Brelease%2Bnotes%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26biw%3D1120%26bih%3D780%26sxsrf%3DAPpeQntn8X8sXm_Ii9YLr7r_aihRwskkug%253A1790504873534%26ei%3Dqe-4aqGfILjTkPIPjevtsAg%26ved%3D2ahUKEwjhl9K3xo6XAxW4KUQIHY11G4YQ4dUDegQIBhAN%26oq%3Dscala%2Brelease%2Bnotes%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiE3NjYWxhIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAsAEAuAEMyAEAmAIAoAIAmAMA4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBikgcAoAcAsgcAuAcAwgcAyAcAgAgB%26sclient%3Dgws-wiz-serp&hl=en&q=EgQm0XtnGK_f49UGIjDF49IHOzfBOVaz_KsLCs0J40wajkBxRrDbr1BS1_jd106gt4HOxvXLgv_y852S0vkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8958,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "scala release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 500.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504860581"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9081,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 579.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504860581"
+    },
+    {
+     "step": 3,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2271,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 570.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnveMMUPzXGXk1UgNq2G9Ib1qCZqCQ%3A1790504860323&source=hp&ei=nO-4ary9EsLDkPIPkMn1uA0&iflsig=ABILxe8AAAAAarj9rIx2WreohOEyfgGFHp52UWLcF9sN&ved=0ahUKEwi8-6qxxo6XAxXCIUQIHZBkHdcQ4dUDCDI&uact=5&oq=scala+release+notes&gs_lp=Egdnd3Mtd2l6IhNzY2FsYSByZWxlYXNlIG5vdGVzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBRAAGO8FMgUQABjvBUjEB1APWA9wAXgAkAEAmAHcAaAB3AGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAuMBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXECtmaRk1ESJIHBTEuMC4xoAeJBLIHAzItMbgH3wHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.2036,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 574.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnveMMUPzXGXk1UgNq2G9Ib1qCZqCQ%3A1790504860323&source=hp&ei=nO-4ary9EsLDkPIPkMn1uA0&iflsig=ABILxe8AAAAAarj9rIx2WreohOEyfgGFHp52UWLcF9sN&ved=0ahUKEwi8-6qxxo6XAxXCIUQIHZBkHdcQ4dUDCDI&uact=5&oq=scala+release+notes&gs_lp=Egdnd3Mtd2l6IhNzY2FsYSByZWxlYXNlIG5vdGVzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBRAAGO8FMgUQABjvBUjEB1APWA9wAXgAkAEAmAHcAaAB3AGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAuMBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXECtmaRk1ESJIHBTEuMC4xoAeJBLIHAzItMbgH3wHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8375,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 871.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnveMMUPzXGXk1UgNq2G9Ib1qCZqCQ%3A1790504860323&source=hp&ei=nO-4ary9EsLDkPIPkMn1uA0&iflsig=ABILxe8AAAAAarj9rIx2WreohOEyfgGFHp52UWLcF9sN&ved=0ahUKEwi8-6qxxo6XAxXCIUQIHZBkHdcQ4dUDCDI&uact=5&oq=scala+release+notes&gs_lp=Egdnd3Mtd2l6IhNzY2FsYSByZWxlYXNlIG5vdGVzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBRAAGO8FMgUQABjvBUjEB1APWA9wAXgAkAEAmAHcAaAB3AGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAuMBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXECtmaRk1ESJIHBTEuMC4xoAeJBLIHAzItMbgH3wHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8375,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 874.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnveMMUPzXGXk1UgNq2G9Ib1qCZqCQ%3A1790504860323&source=hp&ei=nO-4ary9EsLDkPIPkMn1uA0&iflsig=ABILxe8AAAAAarj9rIx2WreohOEyfgGFHp52UWLcF9sN&ved=0ahUKEwi8-6qxxo6XAxXCIUQIHZBkHdcQ4dUDCDI&uact=5&oq=scala+release+notes&gs_lp=Egdnd3Mtd2l6IhNzY2FsYSByZWxlYXNlIG5vdGVzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBRAAGO8FMgUQABjvBUjEB1APWA9wAXgAkAEAmAHcAaAB3AGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAuMBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXECtmaRk1ESJIHBTEuMC4xoAeJBLIHAzItMbgH3wHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ruby performance optimization",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsUjfkMcxrYFizAo0WwHSLE2-yupA%3A1790504863010&ei=n--4au0hkbG6vw_L465B&biw=1120&bih=780&ved=2ahUKEwit7c-yxo6XAxWRmO4BHcuxKwgQ4dUDegQIBhAN&oq=scala+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3NjYWxhIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAsAEAuAEMyAEAmAIAoAIAmAMA4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBikgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8335,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 583.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsUjfkMcxrYFizAo0WwHSLE2-yupA%3A1790504863010&ei=n--4au0hkbG6vw_L465B&biw=1120&bih=780&ved=2ahUKEwit7c-yxo6XAxWRmO4BHcuxKwgQ4dUDegQIBhAN&oq=scala+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3NjYWxhIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAsAEAuAEMyAEAmAIAoAIAmAMA4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBikgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.2764,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 574.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQntEPZbbrBNOFN_iXVC5jW2zK7kzHQ%3A1790504866872&ei=ou-4atjyNNegur8Pn5-OqA0&ved=2ahUKEwjYy7u0xo6XAxVXkO4BHZ-PA9UQ4dUDegQIBhAN&oq=scala+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3NjYWxhIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAsAEAuAEMyAEAmAIAoAIAmAMA4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBikgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.3197,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 600.4,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnvx0OehncUF-SDVC6Ri0StI5Io99A%3A1790504870639&ei=pu-4aqbXJv6T8L0PotqluQ8&ved=2ahUKEwimwqG2xo6XAxX-CbwBHSJtKfcQ4dUDegQIBhAN&oq=scala+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3NjYWxhIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAsAEAuAEMyAEAmAIAoAIAmAMA4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBikgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 9,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ruby performance optimization",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQntFsiQBEBn4kD8fqqbZOF6Fhd4xyg%3A1790504872069&ei=qO-4arvsA6i-kPIPjLDHiAE&ved=2ahUKEwi74Pi2xo6XAxUoH0QIHQzYEREQ4dUDegQIBhAN&oq=scala+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3NjYWxhIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAsAEAuAEMyAEAmAIAoAIAmAMA4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBikgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.8443,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 576.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQntFsiQBEBn4kD8fqqbZOF6Fhd4xyg%3A1790504872069&ei=qO-4arvsA6i-kPIPjLDHiAE&ved=2ahUKEwi74Pi2xo6XAxUoH0QIHQzYEREQ4dUDegQIBhAN&oq=scala+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3NjYWxhIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAsAEAuAEMyAEAmAIAoAIAmAMA4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBikgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-276cce85a7cdd54e",
+   "source": "google",
+   "goal": "First search Google for fastapi performance optimization, then search Google for svelte best practices.",
+   "fingerprint": 12415,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14680,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dfastapi%2bperformance%2boptimization%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dfastapi%2Bperformance%2Boptimization%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuNn9El83GNzreGnSL7l32N8chi6g%253A1790504943647%26source%3Dhp%26ei%3D7--4aqOkJqnHkPIPuYGvwA0%26iflsig%3DABILxe8AAAAAarj9_8wAdLB82IcMSXtu_jJcFehBjIM4%26ved%3D0ahUKEwjj14jZxo6XAxWpI0QIHbnAC9gQ4dUDCDI%26uact%3D5%26oq%3Dfastapi%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiBmYXN0YXBpIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCBAAGIkFGKIEMgUQABjvBTIFEAAY7wUyBRAAGO8FSP4HUA9YD3ABeACQAQCYAd0BoAHdAaoBAzItMbABALgBA8gBAPgBAZgCAqAC6gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBeIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFXKbmsEMBLhqSBwUxLjAuMaAHhgayBwMyLTG4B-UBwgcDMi0yyAcIgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPLf49UGIjBIyLisB-pMNdU2iQUswMXpYf_VwZVXxqu1a5-lVpT61Z51AHAnxzg04Sr3L9wRFl4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=fastapi+performance+optimization&sca_esv=ee3892b"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8849,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "fastapi performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 566.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504943904"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8859,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 626.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504943904"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-bc3f28ebc34271af",
+   "source": "github",
+   "goal": "Search GitHub for 'mongodb' repositories and open the search results.",
+   "fingerprint": 12415,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 13,
+   "total_ms": 30080,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'github.com/search'",
+    "checks": {
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=",
+     "bot_challenge": false,
+     "group0": [
+      "mongodb"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=mongodb&search-overlay-ask-ai=true",
+    "final_title": "Understanding GitHub Code Search syntax - GitHub Docs"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8549,
+     "target": "11",
+     "target_label": "Enter your email",
+     "kind": "fill",
+     "text": "mongodb",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 469.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8929,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 418.3,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.3018,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 755.2,
+     "low_confidence": true,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8737,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 467.1,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8687,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 880.7,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8706,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 655.5,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8788,
+     "target": "6",
+     "target_label": "Search syntax tips",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 667.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.9156,
+     "target": "6",
+     "target_label": "Search or ask Copilot",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 487.1,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.8154,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub search results page listing 'mongodb' repositories; evidence that a search for 'mongodb' repositories was performed",
+     "page_changed": null,
+     "latency_ms": 613.2,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 9,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:25",
+     "target_label": "Search or ask Copilot",
+     "kind": "fill",
+     "text": "mongodb",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 10,
+     "operation": "DONE",
+     "confidence": 0.9166,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub repository search results for 'mongodb'; search results page (currently a GitHub Docs search overlay only)",
+     "page_changed": null,
+     "latency_ms": 629.9,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=mongodb"
+    },
+    {
+     "step": 10,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=mongodb"
+    },
+    {
+     "step": 11,
+     "operation": "DONE",
+     "confidence": 0.9215,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 610.5,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=mongodb&search-overlay-ask-ai=true"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f5bafeea9c652ae1",
+   "source": "google",
+   "goal": "Search Google for terraform release notes and open the results.",
+   "fingerprint": 12415,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 20259,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dterraform%2brelease%2bnotes%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dterraform%2Brelease%2Bnotes%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuWXq7tLQnXX5hKmzaDP_P3NrhL1Q%253A1790505048630%26source%3Dhp%26ei%3DWPC4apKVJfzEkPIPiZ_ciQI%26iflsig%3DABILxe8AAAAAarj-aPX8nNg9dRdI4zpB754Rnw-In7XS%26ved%3D0ahUKEwiSoZCLx46XAxV8IkQIHYkPNyEQ4dUDCDI%26uact%3D5%26oq%3Dterraform%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6Ihd0ZXJyYWZvcm0gcmVsZWFzZSBub3RlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IgzNQGFgYcAF4AJABAJgB0AGgAdABqgEDMi0xsAEAuAEDyAEA-AEBmAICoALcAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXA94UxeVviu5IHBTEuMC4xoAfLBbIHAzItMbgH1wHCBwMyLTLIBwiACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGODg49UGIjDMQnnmUg5RSwNTAP3tId4ArIkXrjQ7ztak2roH0m87T06Quk6KRbqfMrcw5Y6wIFgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=terraform+release+notes&sca_esv=ee3892b004fb5afd"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9072,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "terraform release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 587.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505048777"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.7022,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'terraform release notes' are not shown; page only shows the query and autocomplete suggestions",
+     "page_changed": null,
+     "latency_ms": 679.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505048777"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505048777"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-883e9a27063ed32b",
+   "source": "google",
+   "goal": "First search Google for swift open source alternatives, then search Google for rust migration guide.",
+   "fingerprint": 12415,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14660,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dswift%2bopen%2bsource%2balternatives%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dswift%2Bopen%2Bsource%2Balternatives%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuBCeeGS2uh9yWU_JLLMX2DZswRgA%253A1790505121068%26source%3Dhp%26ei%3DofC4asmHA-bDkPIPhorx0A4%26iflsig%3DABILxe8AAAAAarj-sUtTlN-VQHM3Vl7NsgyaLYgsm2tc%26ved%3D0ahUKEwiJ3NWtx46XAxXmIUQIHQZFHOoQ4dUDCDI%26uact%3D5%26oq%3Dswift%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ih5zd2lmdCBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMyBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBUjtB1AMWAxwAXgAkAEAmAHeAaAB3gGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAukBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWTZo_0X65lP5IHBTEuMC4xoAfLBbIHAzItMbgH5gHCBwUwLjEuMcgHB4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKPh49UGIjC8aK0N7QgGdrlRQX8bZGxMHLHHNqDiIXEEYHXND8AHxC8QAtW43nD7Y_D3Gd0R_MsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=swift+open+source+alternatives&sca_esv=ee3892b00"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8925,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "swift open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 511.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505121218"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9014,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 609.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505121218"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-62e09f560ddcf9b6",
+   "source": "google",
+   "goal": "First search Google for code review cheat sheet, then search Google for zig release notes.",
+   "fingerprint": 12415,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14827,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dcode%2breview%2bcheat%2bsheet%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dcode%2Breview%2Bcheat%2Bsheet%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnul3SMVMa2dVkPjHJ3nKIAywqMDHg%253A1790505187937%26source%3Dhp%26ei%3D4_C4aqX2N9zCkPIPnaDKqQ4%26iflsig%3DABILxe8AAAAAarj-85l5NkAGqFlyDDaQYWO-POnpdk9V%26ved%3D0ahUKEwjl88bNx46XAxVcIUQIHR2QMuUQ4dUDCDI%26uact%3D5%26oq%3Dcode%2Breview%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6Ihdjb2RlIHJldmlldyBjaGVhdCBzaGVldDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCBAAGIkFGKIEMgUQABjvBTIFEAAY7wVItwdQDFgMcAF4AJABAJgB4QGgAeEBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALqAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QVEbYA5tgmlNZIHBTEuMC4xoAfbBbIHAzItMbgH5wHCBwUwLjEuMcgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGObh49UGIjCRJIjKfHgZhyJSX7BIJklJQiCGq_AqpMTDhyPH6mxKggaA4Z0Mq0ND1fuGj_H9t74yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=code+review+cheat+sheet&sca_esv=ee3892b004fb5afd"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8888,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "code review cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 539.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505188189"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8808,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 560.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505188189"
+    }
+   ]
+  }
+ ]
+}

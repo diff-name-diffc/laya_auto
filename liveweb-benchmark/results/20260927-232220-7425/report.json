@@ -1,0 +1,525 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 30125,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T23:30:38+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.4,
+  "mean_duration_ms": 15991,
+  "decision_latency_ms": {
+   "p50": 498.0,
+   "p95": 681.6
+  },
+  "step_outcomes": {
+   "executed": 16,
+   "done-rejected": 2,
+   "refused-empty-enter": 1
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.4
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-e757f50e1768f498",
+   "source": "google",
+   "goal": "Search Google for terraform performance optimization and open the results.",
+   "fingerprint": 30125,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14877,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dterraform%2bperformance%2boptimization%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dterraform%2Bperformance%2Boptimization%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsIy3pvkgwlEAL8-1Wq9S05D_V5kQ%253A1790522543879%26source%3Dhp%26ei%3DrzS5asCPNMzBkPIP9t7TmQ8%26iflsig%3DABILxe8AAAAAarlCvy37clFD1NqG8pd2zOhsN-VazNCv%26ved%3D0ahUKEwiAo8GhiI-XAxXMIEQIHXbvNPMQ4dUDCDI%26uact%3D5%26oq%3Dterraform%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiJ0ZXJyYWZvcm0gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgUQIRigATIFECEYnwUyBRAhGJ8FSNkGUBBYEHABeACQAQCYAYQCoAGEAqoBAzItMbgBA8gBAPgBAZgCAqACkQKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBvEFEGXwlcwIznCSBwUxLjAuMaAHiwOyBwMyLTG4B4oCwgcFMC4xLjHIBweACAE%26sclient%3Dgws-wiz%26sei%3DsjS5as_mLPrRkPIPhZ2JgQI&hl=en&q=EgQm0XtnGLPp5NUGIjCbUcHgR6L0vcPu1HQLRFrgmrmhbcmpBCBMSUMZABINGvmSZzdF3atgKttZ9m6-MLAyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=terraform+performance+optimization&sca_esv=7c867"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8981,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "terraform performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 497.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8947,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 471.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522545495"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-528060093a981458",
+   "source": "google",
+   "goal": "First search Google for logging best practices performance optimization, then search Google for nginx interview questions.",
+   "fingerprint": 30125,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14686,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlogging%2bbest%2bpractices%2bperformance",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlogging%2Bbest%2Bpractices%2Bperformance%2Boptimization%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvGiDjpqB1nlCvymQOKD0d4eDwTgg%253A1790522611207%26source%3Dhp%26ei%3D8zS5avCfC6vIkPIPmp_rqA0%26iflsig%3DABILxe8AAAAAarlDA-emukOrW26EOvivMdEpBhfd5_c_%26ved%3D0ahUKEwiw5c7BiI-XAxUrJEQIHZrPGtUQ4dUDCDI%26uact%3D5%26oq%3Dlogging%2Bbest%2Bpractices%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ii9sb2dnaW5nIGJlc3QgcHJhY3RpY2VzIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FSIgHUBZYFnABeACQAQCYAdgBoAHYAaoBAzItMbgBA8gBAPgBAZgCAqAC4AGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBfEFNx8-aRFcJZaSBwUxLjAuMaAH9QWyBwMyLTG4B9sBwgcFMS4wLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPbp5NUGIjCy7U0kYPg6CzUqXpOZWyoR0T4QYv2BNavVvDa6Wea7uZ9RdtZxqOLM1uGKWz41lAQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=logging+best+practices+performance+optimization&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8949,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "logging best practices performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 495.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9091,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 506.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522613045"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-937479ac4dfbb1f6",
+   "source": "google",
+   "goal": "First search Google for elasticsearch release notes, then search Google for fastapi release notes.",
+   "fingerprint": 30125,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14731,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3delasticsearch%2brelease%2bnotes%26sca_es",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Delasticsearch%2Brelease%2Bnotes%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnulT7mhRkShkCyvGi2vkz2jdEbKJw%253A1790522678350%26source%3Dhp%26ei%3DNjW5ateRFJfdkPIPxKrn2QU%26iflsig%3DABILxe8AAAAAarlDRqcT1GGkNBm3iEgelny1tUbjNywM%26ved%3D0ahUKEwjXhNHhiI-XAxWXLkQIHUTVOVsQ4dUDCDI%26uact%3D5%26oq%3Delasticsearch%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhtlbGFzdGljc2VhcmNoIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGBYYHhgKMgYQABgWGB4yBhAAGBYYHki6B1AMWAxwAXgAkAEAmAGlAqABpQKqAQMyLTG4AQPIAQD4AQGYAgKgAq0CqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBevjj195F5S6kgcFMS4wLjGgB-8FsgcDMi0xuAeqAsIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLnq5NUGIjAjLOqJz5tcAdmXjgUiA-O5zjefGWjV801XumCVuem3aLWqWXu5jCO1vBiPvD9CBWwyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=elasticsearch+release+notes&sca_esv=7c8679995c55"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8949,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elasticsearch release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 496.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522678730"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8958,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 573.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522678730"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9e495ea871ac8d1c",
+   "source": "google",
+   "goal": "First search Google for kotlin tutorial, then search Google for llama.cpp security vulnerabilities.",
+   "fingerprint": 30125,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15059,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dkotlin%2btutorial%26sca_esv%3d7c8679995c",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dkotlin%2Btutorial%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsO4MqfwAohBqQyOuHYrFahryvUYQ%253A1790522745318%26source%3Dhp%26ei%3DeTW5aqLmEcfLkPIPuub68A4%26iflsig%3DABILxe8AAAAAarlDiU8DX0cUOxU7ZEVKBqCDZm0jTLVM%26ved%3D0ahUKEwjihsiBiY-XAxXHJUQIHTqzHu4Q4dUDCDI%26uact%3D5%26oq%3Dkotlin%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig9rb3RsaW4gdHV0b3JpYWwyBRAAGIAEMgsQLhj6BhjyBhiPBzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyCxAAGIAEGIoFGIYDSKQIUA1YDXABeACQAQCYAZ8CoAGfAqoBAzItMbgBA8gBAPgBAZgCAqACqAKoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBedAJe0DCiDukgcFMS4wLjGgB9YGsgcDMi0xuAelAsIHBTAuMS4xyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPzq5NUGIjCbCR0WRquPM8wSz9smSiUgJ5fb0ULkyntQLFEy9IA_OeXwGwyBxkPdsI_dcVEIp2YyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=kotlin+tutorial&sca_esv=7c8679995c553972&hl=en&g"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8907,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kotlin tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 824.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522745651"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8634,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 681.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522745651"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8f60d0c4f20f4556",
+   "source": "google",
+   "goal": "First search Google for typescript release notes, then search Google for async programming open source alternatives.",
+   "fingerprint": 30125,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14698,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dtypescript%2brelease%2bnotes%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtypescript%2Brelease%2Bnotes%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsmft86ANzXEwutl58WaqJo5SgDyw%253A1790522812560%26source%3Dhp%26ei%3DvDW5arq9IJ2tur8Pw9LQyQ8%26iflsig%3DABILxe8AAAAAarlDzHOIalZ2ho6DgsDYMjS_J1O64YlS%26ved%3D0ahUKEwi6i9ChiY-XAxWdlu4BHUMpNPkQ4dUDCDI%26uact%3D5%26oq%3Dtypescript%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6Ihh0eXBlc2NyaXB0IHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSPcHUA1YDXABeACQAQCYAf4BoAH-AaoBAzItMbgBA8gBAPgBAZgCAqAChwKoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIZEC4YgAQYigUYQxjnBhjHARjRAxjqAhi0ApgDA_EF05hP09CMKf-SBwUxLjAuMaAHwwWyBwMyLTG4B4QCwgcDMi0yyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGL_r5NUGIjD-7s4rpYP-xl7vIqSnYr0lLscx27_wujCn2Y3gkMbHVHN84CEPCuZy31h1LN80sEQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=typescript+release+notes&sca_esv=7c8679995c55397"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8805,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "typescript release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 533.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522812755"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.898,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 628.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522812755"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a9b941f63c923890",
+   "source": "google",
+   "goal": "Search Google for how to debug prometheus and open the results.",
+   "fingerprint": 30125,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 18158,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bprometheus%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bprometheus%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvUzJlE6UdWa9NIxB2Zu9QmH-FhXA%253A1790522879452%26source%3Dhp%26ei%3D_zW5aqbFGbaO8L0PiIT24As%26iflsig%3DABILxe8AAAAAarlED5e1Z917QpsbvdX7H_EmM36w-PX8%26ved%3D0ahUKEwjmwMLBiY-XAxU2B7wBHQiCHbwQ4dUDCDI%26oq%3Dhow%2Bto%2Bdebug%2Bprometheus%26gs_lp%3DEgdnd3Mtd2l6Ihdob3cgdG8gZGVidWcgcHJvbWV0aGV1czIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMggQABiJBRiiBEivIlAPWA9wAXgAkAEAmAHoAaAB6AGqAQMyLTG4AQzIAQD4AQGYAgKgAu0BqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwPxBQwtP_YM2rxkkgcFMS4wLjGgB-ECsgcDMi0xuAfqAcIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIXs5NUGIjAbq9-YYLNfMOg7zoufqL6AV701sI2Y6Emxr6Zfj2KjLeClp-ARt4OvDUgeNuIfGnoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+prometheus&sca_esv=7c8679995c553972"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2787,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug prometheus",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 493.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522879573"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.5132,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing actual search results listing for 'how to debug prometheus' (page only shows the query typed in the search box with autocomplete suggestions, and the ",
+     "page_changed": null,
+     "latency_ms": 538.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522879573"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:28",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522879573"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9207325d8498d6c7",
+   "source": "google",
+   "goal": "First search Google for flask open source alternatives, then search Google for retrieval augmented generation cheat sheet.",
+   "fingerprint": 30125,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14516,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dflask%2bopen%2bsource%2balternatives%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dflask%2Bopen%2Bsource%2Balternatives%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntHm5MzlsZyNTWt8uhg6nxyJXy86w%253A1790522949769%26source%3Dhp%26ei%3DRTa5atW6LbfNkPIP-r7WGA%26iflsig%3DABILxe8AAAAAarlEVRce9SRH_r4HFOeGJQn9UfOAed-H%26ved%3D0ahUKEwiV8YbjiY-XAxW3JkQIHXqfFQMQ4dUDCDI%26uact%3D5%26oq%3Dflask%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ih5mbGFzayBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABSO4GUA5YDnABeACQAQCYAYsCoAGLAqoBAzItMbgBA8gBAPgBAZgCAqAClgKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFoOqPvAvl_PqSBwUxLjAuMaAHvgSyBwMyLTG4B5ICwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMjs5NUGIjA0M6r3Jce-iHrUOq5elz7E5nGW7c18dnzHc_P6GxUvzfe_rHSSOv_XRXOU5E53CP0yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=flask+open+source+alternatives&sca_esv=7c8679995"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8911,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "flask open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 498.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522949933"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9027,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 491.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522949933"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f3a33bdfb0d02f21",
+   "source": "google",
+   "goal": "First search Google for how to debug python, then search Google for fastapi release notes.",
+   "fingerprint": 30125,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 4,
+   "total_ms": 21207,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bpython%26sca_esv%3d7c",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bpython%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvHC7kxWHpjXtw-8vYYssoAcqaFuA%253A1790523016476%26source%3Dhp%26ei%3DiDa5ar6QG5fNkPIPjZiSuA4%26iflsig%3DABILxe8AAAAAarlEmA81Wbe2V4t3-L7HKMyKyaE7xy5k%26ved%3D0ahUKEwi-9O2Cio-XAxWXJkQIHQ2MBOcQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bpython%26gs_lp%3DEgdnd3Mtd2l6IhNob3cgdG8gZGVidWcgcHl0aG9uMggQABiABBi0BzIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0B0jaNVANWA1wAXgAkAEAmAGbAqABmwKqAQMyLTG4AQPIAQD4AQGYAgKgAqACqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBdG4Z9P7XYPykgcFMS4wLjGgB-sFsgcDMi0xuAedAsIHAzAuMsgHA4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJHt5NUGIjCfYNbAu_dMTuHw9ntMtjxAL6rfSl5j1_QskO0-zY39lyn4mlzZs2l0Y-1DevxuhGgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+python&sca_esv=7c8679995c553972&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.5915,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 492.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790523016621"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8826,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug python",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 528.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790523016621"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8221,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'fastapi release notes'",
+     "page_changed": null,
+     "latency_ms": 585.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790523016621"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790523016621"
+    }
+   ]
+  }
+ ]
+}

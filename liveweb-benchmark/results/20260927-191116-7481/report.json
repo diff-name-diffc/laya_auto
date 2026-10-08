@@ -1,0 +1,775 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 83944,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:18:00+0800",
+  "n_tasks": 8,
+  "success": 2,
+  "success_rate": 0.25,
+  "verified": 2,
+  "verified_rate": 0.25,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.5,
+  "mean_duration_ms": 15518,
+  "decision_latency_ms": {
+   "p50": 566.5,
+   "p95": 810.5
+  },
+  "step_outcomes": {
+   "stale": 7,
+   "refused-empty-enter": 2,
+   "done-rejected": 4,
+   "executed": 20,
+   "done": 2,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 2,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 2,
+    "success_rate": 0.25,
+    "verified": 2,
+    "verified_rate": 0.25,
+    "mean_steps": 4.5
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-3050997548dc6036",
+   "source": "google",
+   "goal": "Search Google for laravel migration guide and open the results.",
+   "fingerprint": 83944,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 22457,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlaravel%2bmigration%2bguide%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlaravel%2Bmigration%2Bguide%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnshwn0FTFqsRsS0imnD4BPKOtmFRw%253A1790507479392%26source%3Dhp%26ei%3D1_m4aorfFpiiur8P5OmrsAg%26iflsig%3DABILxe8AAAAAarkH5yptVfTxoaAVswG0094pGtOTI3MT%26ved%3D0ahUKEwjKppqS0I6XAxUYke4BHeT0CoYQ4dUDCDI%26oq%3Dlaravel%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhdsYXJhdmVsIG1pZ3JhdGlvbiBndWlkZTIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IlSdQEVgRcAF4AJABAJgBwQGgAcEBqgEDMC4xuAEMyAEA-AEBmAICoALJAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME8QXz1BC_ZJdmF5IHAzEuMaAHkgeyBwMwLjG4B8QBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz%26sei%3D4fm4aoyfNKbOkPIPl8evgQs&hl=en&q=EgQm0XtnGOLz49UGIjBGdm2om6Ef4BAsms_xZ5or0sopjp_Skke3Ji8wNpjrdDxKXdkr7HdMwQThxTYp1xYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=laravel+migration+guide&sca_esv=54dc793dbd0950c5"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.5633,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "laravel migration guide",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 489.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8947,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 473.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507480674"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9027,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"laravel migration guide\"",
+     "page_changed": null,
+     "latency_ms": 492.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507480674"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "laravel migration guide",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507480674"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8572,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results listing for laravel migration guide",
+     "page_changed": null,
+     "latency_ms": 673.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507480674"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507480674"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-55a1a495b131f894",
+   "source": "google",
+   "goal": "Search Google for huggingface transformers migration guide and open the results.",
+   "fingerprint": 83944,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 8,
+   "total_ms": 13359,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=huggingface+transformers+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appe",
+     "bot_challenge": false,
+     "group0": [
+      "transformers",
+      "huggingface"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=huggingface+transformers+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvhScfEQmxTMeEg-T3OpdATPOI8ag%3A1790507554225&source=hp&ei=Ivq4auyHDP6ckPIPgdiQiAs&iflsig=ABILxe8AAAAAarkIMpFMfsoYg-EKBuZnX4de8K2Smjw4&ved=0ahUKEwjsoPG10I6XAxV-DkQIHQEsBLEQ4dUDCDI&uact=5&oq=huggingface+transformers+migration+guide&gs_lp=Egdnd3Mtd2l6IihodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIyTFQEFgQcAF4AJABAJgB4gGgAeIBqgEDMi0xuAEDyAEA-AEBmAICoALuAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QXE9mxDRhhdMJIHBTEuMC4xoAenBbIHAzItMbgH6QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz",
+    "final_title": "huggingface transformers migration guide - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8834,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "huggingface transformers migration guide",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 493.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8971,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 478.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507555538"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9058,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'huggingface transformers migration guide'",
+     "page_changed": null,
+     "latency_ms": 509.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507555538"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "huggingface transformers migration guide",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507555538"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9199,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search-results page listing results for 'huggingface transformers migration guide' (only the query typed in the search box with autocomplete suggestio",
+     "page_changed": null,
+     "latency_ms": 611.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507555538"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507555538"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.7918,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 597.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=huggingface+transformers+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvhScfEQmxTMeEg-T3OpdATPOI8ag%3A1790507554225&source=hp&ei=Ivq4auyHDP6ckPIPgdiQiAs&iflsig=ABILxe8AAAAAarkIMpFMfsoYg-EKBuZnX4de8K2Smjw4&ved=0ahUKEwjsoPG10I6XAxV-DkQIHQEsBLEQ4dUDCDI&uact=5&oq=huggingface+transformers+migration+guide&gs_lp=Egdnd3Mtd2l6IihodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIyTFQEFgQcAF4AJABAJgB4gGgAeIBqgEDMi0xuAEDyAEA-AEBmAICoALuAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QXE9mxDRhhdMJIHBTEuMC4xoAenBbIHAzItMbgH6QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.8992,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 568.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=huggingface+transformers+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvhScfEQmxTMeEg-T3OpdATPOI8ag%3A1790507554225&source=hp&ei=Ivq4auyHDP6ckPIPgdiQiAs&iflsig=ABILxe8AAAAAarkIMpFMfsoYg-EKBuZnX4de8K2Smjw4&ved=0ahUKEwjsoPG10I6XAxV-DkQIHQEsBLEQ4dUDCDI&uact=5&oq=huggingface+transformers+migration+guide&gs_lp=Egdnd3Mtd2l6IihodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIyTFQEFgQcAF4AJABAJgB4gGgAeIBqgEDMi0xuAEDyAEA-AEBmAICoALuAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QXE9mxDRhhdMJIHBTEuMC4xoAenBbIHAzItMbgH6QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d2ddaf9377c2339a",
+   "source": "google",
+   "goal": "Search Google for golang open source alternatives and open the results.",
+   "fingerprint": 83944,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4944,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=golang+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqntaks-dd",
+     "bot_challenge": false,
+     "group0": [
+      "golang"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=golang+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntaKS-dDKD0El-Md1KLTaVTiZdsAQ%3A1790507574951&source=hp&ei=Nvq4avPJOOvYkPIP0fHXwAM&iflsig=ABILxe8AAAAAarkIRsBAey5BLL3oeqYsGn1vf4AShQ7Q&ved=0ahUKEwjzvOK_0I6XAxVrLEQIHdH4FTgQ4dUDCDI&uact=5&oq=golang+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih9nb2xhbmcgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUjdCFAOWA5wAXgAkAEAmAHdAaAB3QGqAQMyLTG4AQPIAQD4AQGYAgKgAucBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBePh8t7TaEh6kgcFMS4wLjGgB90EsgcDMi0xuAfjAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz",
+    "final_title": "golang open source alternatives - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8379,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 491.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507575201"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8704,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 729.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507575201"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8938,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 528.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntaKS-dDKD0El-Md1KLTaVTiZdsAQ%3A1790507574951&source=hp&ei=Nvq4avPJOOvYkPIP0fHXwAM&iflsig=ABILxe8AAAAAarkIRsBAey5BLL3oeqYsGn1vf4AShQ7Q&ved=0ahUKEwjzvOK_0I6XAxVrLEQIHdH4FTgQ4dUDCDI&uact=5&oq=golang+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih9nb2xhbmcgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUjdCFAOWA5wAXgAkAEAmAHdAaAB3QGqAQMyLTG4AQPIAQD4AQGYAgKgAucBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBePh8t7TaEh6kgcFMS4wLjGgB90EsgcDMi0xuAfjAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-e15eb2f7de4f896f",
+   "source": "google",
+   "goal": "First search Google for ruby interview questions, then search Google for rust best practices.",
+   "fingerprint": 83944,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 11,
+   "total_ms": 24438,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3druby%2binterview%2bquestions%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Druby%2Binterview%2Bquestions%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26biw%3D1120%26bih%3D780%26sxsrf%3DAPpeQntZazsCOeDqb5_dhtSdZzZVui6jPw%253A1790507594303%26ei%3DSvq4av6XEorCkPIP0K71kAY%26ved%3D2ahUKEwj-5IDJ0I6XAxUKIUQIHVBXHWIQ4dUDegQIBhAN%26oq%3Druby%2Binterview%2Bquestions%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiGHJ1YnkgaW50ZXJ2aWV3IHF1ZXN0aW9uc0gAUABYAHAAeACQAQCYAQCgAQCqAQC4AQzIAQCYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwCACAE%26sclient%3Dgws-wiz-serp&hl=en&q=EgQm0XtnGM_049UGIjBv5WdpOtCRTlGsNVU139t9CyJen00EzsE2rdy_XO_uWeBHUWF78t2qNEKm4nEdmSEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=ruby+interview+questions&sca_esv=54dc793dbd0950c"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9071,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ruby interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 504.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507587289"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8405,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 810.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507587289"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8203,
+     "target": "17",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 855.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ruby+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuv3aF4wNmff9m1SL73Gmi0hsuBCw%3A1790507587099&source=hp&ei=Q_q4avTqBMmjkPIP54ffqQ0&iflsig=ABILxe8AAAAAarkIUxS9XWVW80gW2xZoXPWeRWem09mn&ved=0ahUKEwi0mMjF0I6XAxXJEUQIHefDN9UQ4dUDCDI&uact=5&oq=ruby+interview+questions&gs_lp=Egdnd3Mtd2l6IhhydWJ5IGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IpglQD1gPcAF4AJABAJgB1gGgAdYBqgEDMi0xuAEDyAEA-AEBmAICoALcAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QW1snpZG0P7UJIHBTEuMC4xoAf3BbIHAzItMbgH2AHCBwUwLjEuMcgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.7478,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 970.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ruby+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuv3aF4wNmff9m1SL73Gmi0hsuBCw%3A1790507587099&source=hp&ei=Q_q4avTqBMmjkPIP54ffqQ0&iflsig=ABILxe8AAAAAarkIUxS9XWVW80gW2xZoXPWeRWem09mn&ved=0ahUKEwi0mMjF0I6XAxXJEUQIHefDN9UQ4dUDCDI&uact=5&oq=ruby+interview+questions&gs_lp=Egdnd3Mtd2l6IhhydWJ5IGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IpglQD1gPcAF4AJABAJgB1gGgAdYBqgEDMi0xuAEDyAEA-AEBmAICoALcAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QW1snpZG0P7UJIHBTEuMC4xoAf3BbIHAzItMbgH2AHCBwUwLjEuMcgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.3387,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 572.4,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=ruby+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuv3aF4wNmff9m1SL73Gmi0hsuBCw%3A1790507587099&source=hp&ei=Q_q4avTqBMmjkPIP54ffqQ0&iflsig=ABILxe8AAAAAarkIUxS9XWVW80gW2xZoXPWeRWem09mn&ved=0ahUKEwi0mMjF0I6XAxXJEUQIHefDN9UQ4dUDCDI&uact=5&oq=ruby+interview+questions&gs_lp=Egdnd3Mtd2l6IhhydWJ5IGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IpglQD1gPcAF4AJABAJgB1gGgAdYBqgEDMi0xuAEDyAEA-AEBmAICoALcAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QW1snpZG0P7UJIHBTEuMC4xoAf3BbIHAzItMbgH2AHCBwUwLjEuMcgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.7693,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 564.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ruby+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuv3aF4wNmff9m1SL73Gmi0hsuBCw%3A1790507587099&source=hp&ei=Q_q4avTqBMmjkPIP54ffqQ0&iflsig=ABILxe8AAAAAarkIUxS9XWVW80gW2xZoXPWeRWem09mn&ved=0ahUKEwi0mMjF0I6XAxXJEUQIHefDN9UQ4dUDCDI&uact=5&oq=ruby+interview+questions&gs_lp=Egdnd3Mtd2l6IhhydWJ5IGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IpglQD1gPcAF4AJABAJgB1gGgAdYBqgEDMi0xuAEDyAEA-AEBmAICoALcAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QW1snpZG0P7UJIHBTEuMC4xoAf3BbIHAzItMbgH2AHCBwUwLjEuMcgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.7693,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 580.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ruby+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuv3aF4wNmff9m1SL73Gmi0hsuBCw%3A1790507587099&source=hp&ei=Q_q4avTqBMmjkPIP54ffqQ0&iflsig=ABILxe8AAAAAarkIUxS9XWVW80gW2xZoXPWeRWem09mn&ved=0ahUKEwi0mMjF0I6XAxXJEUQIHefDN9UQ4dUDCDI&uact=5&oq=ruby+interview+questions&gs_lp=Egdnd3Mtd2l6IhhydWJ5IGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IpglQD1gPcAF4AJABAJgB1gGgAdYBqgEDMi0xuAEDyAEA-AEBmAICoALcAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QW1snpZG0P7UJIHBTEuMC4xoAf3BbIHAzItMbgH2AHCBwUwLjEuMcgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rust best practices",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ruby+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsZGr0caFQeb1izofDaRK64n_HXiA%3A1790507589975&ei=Rfq4asKTO6rYkPIPqvyVoAg&biw=1120&bih=780&ved=2ahUKEwiCyvjG0I6XAxUqLEQIHSp-BYQQ4dUDegQIBhAN&oq=ruby+interview+questions&gs_lp=Egxnd3Mtd2l6LXNlcnAiGHJ1YnkgaW50ZXJ2aWV3IHF1ZXN0aW9uc0gAUABYAHAAeACQAQCYAQCgAQCqAQC4AQzIAQCYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwCACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 8,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.2696,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 566.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=ruby+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsZGr0caFQeb1izofDaRK64n_HXiA%3A1790507589975&ei=Rfq4asKTO6rYkPIPqvyVoAg&biw=1120&bih=780&ved=2ahUKEwiCyvjG0I6XAxUqLEQIHSp-BYQQ4dUDegQIBhAN&oq=ruby+interview+questions&gs_lp=Egxnd3Mtd2l6LXNlcnAiGHJ1YnkgaW50ZXJ2aWV3IHF1ZXN0aW9uc0gAUABYAHAAeACQAQCYAQCgAQCqAQC4AQzIAQCYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwCACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.8046,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 668.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ruby+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsZGr0caFQeb1izofDaRK64n_HXiA%3A1790507589975&ei=Rfq4asKTO6rYkPIPqvyVoAg&biw=1120&bih=780&ved=2ahUKEwiCyvjG0I6XAxUqLEQIHSp-BYQQ4dUDegQIBhAN&oq=ruby+interview+questions&gs_lp=Egxnd3Mtd2l6LXNlcnAiGHJ1YnkgaW50ZXJ2aWV3IHF1ZXN0aW9uc0gAUABYAHAAeACQAQCYAQCgAQCqAQC4AQzIAQCYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwCACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.8459,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 582.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ruby+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsZGr0caFQeb1izofDaRK64n_HXiA%3A1790507589975&ei=Rfq4asKTO6rYkPIPqvyVoAg&biw=1120&bih=780&ved=2ahUKEwiCyvjG0I6XAxUqLEQIHSp-BYQQ4dUDegQIBhAN&oq=ruby+interview+questions&gs_lp=Egxnd3Mtd2l6LXNlcnAiGHJ1YnkgaW50ZXJ2aWV3IHF1ZXN0aW9uc0gAUABYAHAAeACQAQCYAQCgAQCqAQC4AQzIAQCYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwCACAE&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9b00613a9229e5bf",
+   "source": "google",
+   "goal": "First search Google for prometheus tutorial, then search Google for unit testing open source alternatives.",
+   "fingerprint": 83944,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14681,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dprometheus%2btutorial%26sca_esv%3d54dc79",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dprometheus%2Btutorial%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvoKlrSeTsqHO6SHG6qJaXR_gnihQ%253A1790507663687%26source%3Dhp%26ei%3Dj_q4arzeKP-ckPIPoMCjsAc%26iflsig%3DABILxe8AAAAAarkIn9v09O6LpmOUwOnsjC2TT8oIPMrz%26ved%3D0ahUKEwj84Yrq0I6XAxV_DkQIHSDgCHYQ4dUDCDI%26uact%3D5%26oq%3Dprometheus%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhNwcm9tZXRoZXVzIHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IugdQEFgQcAF4AJABAJgB0wGgAdMBqgEDMi0xuAEDyAEA-AEBmAICoALdAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFi0nQUBR93buSBwUxLjAuMaAHzAWyBwMyLTG4B9kBwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJL149UGIjAWGhpS9P3lZKNFdWxpcZ3VxYzZ9sT6fL3H5km0CZwjZikxfZT8PulpfgO5SxricR8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=prometheus+tutorial&sca_esv=54dc793dbd0950c5&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9085,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "prometheus tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 584.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507663797"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8809,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 566.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507663797"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d205916b94069652",
+   "source": "google",
+   "goal": "First search Google for express interview questions, then search Google for postgresql best practices.",
+   "fingerprint": 83944,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14743,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dexpress%2binterview%2bquestions%26sca_es",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dexpress%2Binterview%2Bquestions%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntoZOpapmuA4wGJn7tZjpKXbUAhQQ%253A1790507730579%26source%3Dhp%26ei%3D0vq4aum9IcqfkPIPlZWZ2Aw%26iflsig%3DABILxe8AAAAAarkI4sWvIY0M6qVK6htm1M977CCM_OQl%26ved%3D0ahUKEwjp7vyJ0Y6XAxXKD0QIHZVKBssQ4dUDCDI%26uact%3D5%26oq%3Dexpress%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhtleHByZXNzIGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IzQdQElgScAF4AJABAJgBzAGgAcwBqgEDMi0xuAEDyAEA-AEBmAICoALXAagCCsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtALCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwXxBYs9eVIy336DkgcFMS4wLjGgB4wGsgcDMi0xuAfSAcIHAzItMsgHB4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNX149UGIjAwT-J13cPx68nhnflOYtF9bAFYbfukj8PG6PRU0klKzsLzbLAf6QyDeIVvCnx8tkYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=express+interview+questions&sca_esv=54dc793dbd09"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8753,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "express interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 490.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507730694"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9034,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 582.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507730694"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-1b55d6d2b691e47e",
+   "source": "google",
+   "goal": "First search Google for how to debug kafka, then search Google for swift cheat sheet.",
+   "fingerprint": 83944,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14813,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bkafka%26sca_esv%3d54d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bkafka%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsa8omC5qp3bbkrGPSUXa8BfuJ6uA%253A1790507797538%26source%3Dhp%26ei%3DFfu4asrUH7bDkPIP1MPYkQs%26iflsig%3DABILxe8AAAAAarkJJRlPG1nHprZCNi9t3itnexsudc0y%26ved%3D0ahUKEwiKs_Sp0Y6XAxW2IUQIHdQhNrIQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bkafka%26gs_lp%3DEgdnd3Mtd2l6IhJob3cgdG8gZGVidWcga2Fma2EyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIFEAAY7wUyBRAAGO8FMgUQABjvBTIIEAAYiQUYogRI6gdQD1gPcAF4AJABAJgB5wGgAecBqgEDMi0xuAEDyAEA-AEBmAICoALxAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtAKYAwTxBZEdGMjIQTTnkgcFMS4wLjGgB_cFsgcDMi0xuAftAcIHAzItMsgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJj249UGIjCbB1buKfRlNqmZHjQQufIlx8JQ3tacALSzwJlF-4r_cHqUHQiOZqci2VMetzT2egIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+kafka&sca_esv=54dc793dbd0950c5&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8565,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug kafka",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 540.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507797636"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8642,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 614.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507797636"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a39ffa65663726df",
+   "source": "google",
+   "goal": "Search Google for langchain release notes and open the results.",
+   "fingerprint": 83944,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14707,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlangchain%2brelease%2bnotes%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlangchain%2Brelease%2Bnotes%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntvqzXl-lyogz5xJ-6H_u-RWhdB8g%253A1790507864484%26source%3Dhp%26ei%3DWPu4aonLHJSiur8PjI2_-Ao%26iflsig%3DABILxe8AAAAAarkJaCzr-FmS3O7ND2Nn0lRD_lw4irmT%26ved%3D0ahUKEwiJ1-rJ0Y6XAxUUke4BHYzGD68Q4dUDCDI%26uact%3D5%26oq%3Dlangchain%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhdsYW5nY2hhaW4gcmVsZWFzZSBub3RlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyBRAAGO8FSM4HUBFYEXABeACQAQCYAd4BoAHeAaoBAzItMbgBA8gBAPgBAZgCAqAC6QGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBfEFsyVKiPNsQeGSBwUxLjAuMaAHwAWyBwMyLTG4B-QBwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNv249UGIjDjojNOmdpisVbJSBw8FlLH0_7p95XFMr802TXPPMfuEiwSffQLcFhGnr1MwJsOgpsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=langchain+release+notes&sca_esv=54dc793dbd0950c5"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8875,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 502.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507864593"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8865,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 583.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507864593"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,934 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 71055,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:31:25+0800",
+  "n_tasks": 8,
+  "success": 1,
+  "success_rate": 0.125,
+  "verified": 1,
+  "verified_rate": 0.125,
+  "found_but_not_stopped": 0,
+  "mean_steps": 5.9,
+  "mean_duration_ms": 16859,
+  "decision_latency_ms": {
+   "p50": 590.1,
+   "p95": 708.5
+  },
+  "step_outcomes": {
+   "stale": 6,
+   "done-rejected": 3,
+   "executed": 33,
+   "refused-empty-enter": 1,
+   "done": 3,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 11,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 1,
+    "success_rate": 0.125,
+    "verified": 1,
+    "verified_rate": 0.125,
+    "mean_steps": 5.9
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-49183aeb45abb216",
+   "source": "google",
+   "goal": "First search Google for logging best practices migration guide, then search Google for how to debug vllm.",
+   "fingerprint": 71055,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 30516,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bvllm%26sca_esv%3d18a6",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bvllm%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnu9RNRibGqrCbvKggiPcuxwZNzHwg%253A1790508319371%26source%3Dhp%26ei%3DH_24ao22FfegkPIP7-basAI%26iflsig%3DABILxe8AAAAAarkLL2vVQOSpHfqowX0bMTvkMGkuHKUU%26oq%3Dhow%2Bto%2Bdebug%2Bvllm%26gs_lp%3DEgdnd3Mtd2l6IhFob3cgdG8gZGVidWcgdmxsbSoGCAAYFhgeMgYQABgWGB4yCBAAGIAEGKIEMgUQABjvBTIFEAAY7wVIly1QDliCJXABeACQAQCYAfQBoAGSBaoBAzItM7gBAcgBAPgBAZgCA6AC1gOoAgrCAgoQABgDGI8BGOoCwgIFECEYoAGYAwTxBd_T18FNWBrdkgcFMS4wLjKgB9ELsgcDMi0yuAfRA8IHBTAuMi4xyAcHgAgB%26sclient%3Dgws-wiz%26sei%3DMf24aom6L76_kPIPsKXSsA8&hl=en&q=EgQm0XtnGLL649UGIjAFgrKmpks05pHGnaR-DGwR8tyAlbrodHTYmI8Qqyi-bqTuK-ZgjzS5-NZZUNw-snQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+vllm&sca_esv=18a60b01d202c9ee&hl=en"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8081,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug vllm",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 485.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8272,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for how to debug vllm",
+     "page_changed": null,
+     "latency_ms": 477.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508320670"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "logging best practices migration guide",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508320670"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.7797,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'how to debug vllm'",
+     "page_changed": null,
+     "latency_ms": 564.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508320670"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug vllm",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508320670"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.884,
+     "target": "12",
+     "target_label": "how to debug vllm",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 627.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508320670"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-20dec75efdb570a5",
+   "source": "google",
+   "goal": "First search Google for pytorch performance optimization, then search Google for how to debug model quantization.",
+   "fingerprint": 71055,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 6122,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=quantization'",
+    "checks": {
+     "url": "https://www.google.com/search?q=how+to+debug+model+quantization+in+pytorch&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=ap",
+     "bot_challenge": false,
+     "group0": [
+      "quantization",
+      "model"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=how+to+debug+model+quantization+in+pytorch&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuRpmTrKCANpu3zQ5dCfc2Lesahug%3A1790508402245&source=hp&ei=cv24aqrUDfzKkPIP_u2b4Q4&iflsig=ABILxe8AAAAAarkLgp6DiXU7NGZ1Cv9VgYpBDK4tOdd9&oq=how+to+debug+model+quantization&gs_lp=Egdnd3Mtd2l6Ih9ob3cgdG8gZGVidWcgbW9kZWwgcXVhbnRpemF0aW9uKgUIABigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVIigpQD1gPcAF4AJABAJgB2wGgAdsBqgEDMi0xuAEByAEA-AEBmAICoALmAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QWBwfER0IHMlZIHBTEuMC4xoAfZCbIHAzItMbgH4wHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz",
+    "final_title": "how to debug model quantization in pytorch - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.894,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug model quantization",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 601.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8916,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 496.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508403576"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8939,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug model quantization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 692.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508403576"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8527,
+     "target": "12",
+     "target_label": "how to debug model quantization in pytorch",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 867.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508403576"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8815,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 583.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+model+quantization+in+pytorch&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuRpmTrKCANpu3zQ5dCfc2Lesahug%3A1790508402245&source=hp&ei=cv24aqrUDfzKkPIP_u2b4Q4&iflsig=ABILxe8AAAAAarkLgp6DiXU7NGZ1Cv9VgYpBDK4tOdd9&oq=how+to+debug+model+quantization&gs_lp=Egdnd3Mtd2l6Ih9ob3cgdG8gZGVidWcgbW9kZWwgcXVhbnRpemF0aW9uKgUIABigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVIigpQD1gPcAF4AJABAJgB2wGgAdsBqgEDMi0xuAEByAEA-AEBmAICoALmAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QWBwfER0IHMlZIHBTEuMC4xoAfZCbIHAzItMbgH4wHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-05304a0ba48723b0",
+   "source": "google",
+   "goal": "First search Google for swift performance optimization, then search Google for unit testing best practices.",
+   "fingerprint": 71055,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 9,
+   "total_ms": 15899,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=testing'",
+    "checks": {
+     "url": "https://www.google.com/search?q=unit+testing+best+practices&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=appeqnsdj_ubzgfmq",
+     "bot_challenge": false,
+     "group0": [
+      "testing",
+      "unit"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=unit+testing+best+practices&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnsdJ_ubZgfMQtckY2Qnte8285nqhg%3A1790508418478&ei=gv24apzjHImO8L0Px5ebwQc&biw=1120&bih=780&ved=2ahUKEwicrIDS046XAxUJB7wBHcfLJngQ4dUDegQIBhAN&oq=unit+testing+best+practices&gs_lp=Egxnd3Mtd2l6LXNlcnAiG3VuaXQgdGVzdGluZyBiZXN0IHByYWN0aWNlczIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjsCFALWAtwAXgAkAEAmAHLAaABywGqAQMyLTG4AQzIAQD4AQGYAgKgAs8BwgIHEAAYHhiwA8ICDhAAGIAEGIoFGIYDGLADwgIIEAAY7wUYsAPCAgsQABiJBRiiBBiwA5gDAIgGAZAGBpIHBTEuMC4xoAfUBrIHAzItMbgHzQHCBwMwLjLIBwOACAE&sclient=gws-wiz-serp",
+    "final_title": "unit testing best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.4049,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "swift performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 479.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508416045"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9059,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 631.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508416045"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.3129,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'unit testing best practices' (page still shows results for 'swift performance optimization')",
+     "page_changed": null,
+     "latency_ms": 594.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=swift+performance+optimization&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvA6lhu-jhICW0M5r4V0OQiBG7f3A%3A1790508415741&source=hp&ei=f_24atmILJDRkPIPjq2I4As&iflsig=ABILxe8AAAAAarkLj0SPxJoCixX6yicUzZ01pu2X0l3S&ved=0ahUKEwiZxNjQ046XAxWQKEQIHY4WArwQ4dUDCDI&uact=5&oq=swift+performance+optimization&gs_lp=Egdnd3Mtd2l6Ih5zd2lmdCBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIIEAAYgAQYogRI8QdQDlgOcAF4AJABAJgB3AGgAdwBqgEDMi0xuAEDyAEA-AEBmAICoALgAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QXLrTqBaJuqk5IHBTEuMC4xoAf_A7IHAzItMbgH3QHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "unit testing best practices",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=swift+performance+optimization&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvA6lhu-jhICW0M5r4V0OQiBG7f3A%3A1790508415741&source=hp&ei=f_24atmILJDRkPIPjq2I4As&iflsig=ABILxe8AAAAAarkLj0SPxJoCixX6yicUzZ01pu2X0l3S&ved=0ahUKEwiZxNjQ046XAxWQKEQIHY4WArwQ4dUDCDI&uact=5&oq=swift+performance+optimization&gs_lp=Egdnd3Mtd2l6Ih5zd2lmdCBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIIEAAYgAQYogRI8QdQDlgOcAF4AJABAJgB3AGgAdwBqgEDMi0xuAEDyAEA-AEBmAICoALgAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QXLrTqBaJuqk5IHBTEuMC4xoAf_A7IHAzItMbgH3QHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2492,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 603.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=swift+performance+optimization&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvA6lhu-jhICW0M5r4V0OQiBG7f3A%3A1790508415741&source=hp&ei=f_24atmILJDRkPIPjq2I4As&iflsig=ABILxe8AAAAAarkLj0SPxJoCixX6yicUzZ01pu2X0l3S&ved=0ahUKEwiZxNjQ046XAxWQKEQIHY4WArwQ4dUDCDI&uact=5&oq=swift+performance+optimization&gs_lp=Egdnd3Mtd2l6Ih5zd2lmdCBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIIEAAYgAQYogRI8QdQDlgOcAF4AJABAJgB3AGgAdwBqgEDMi0xuAEDyAEA-AEBmAICoALgAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QXLrTqBaJuqk5IHBTEuMC4xoAf_A7IHAzItMbgH3QHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2492,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 682.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=swift+performance+optimization&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvA6lhu-jhICW0M5r4V0OQiBG7f3A%3A1790508415741&source=hp&ei=f_24atmILJDRkPIPjq2I4As&iflsig=ABILxe8AAAAAarkLj0SPxJoCixX6yicUzZ01pu2X0l3S&ved=0ahUKEwiZxNjQ046XAxWQKEQIHY4WArwQ4dUDCDI&uact=5&oq=swift+performance+optimization&gs_lp=Egdnd3Mtd2l6Ih5zd2lmdCBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIIEAAYgAQYogRI8QdQDlgOcAF4AJABAJgB3AGgAdwBqgEDMi0xuAEDyAEA-AEBmAICoALgAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QXLrTqBaJuqk5IHBTEuMC4xoAf_A7IHAzItMbgH3QHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "unit testing best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=swift+performance+optimization&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvA6lhu-jhICW0M5r4V0OQiBG7f3A%3A1790508415741&source=hp&ei=f_24atmILJDRkPIPjq2I4As&iflsig=ABILxe8AAAAAarkLj0SPxJoCixX6yicUzZ01pu2X0l3S&ved=0ahUKEwiZxNjQ046XAxWQKEQIHY4WArwQ4dUDCDI&uact=5&oq=swift+performance+optimization&gs_lp=Egdnd3Mtd2l6Ih5zd2lmdCBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIIEAAYgAQYogRI8QdQDlgOcAF4AJABAJgB3AGgAdwBqgEDMi0xuAEDyAEA-AEBmAICoALgAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QXLrTqBaJuqk5IHBTEuMC4xoAf_A7IHAzItMbgH3QHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.6723,
+     "target": "4",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 708.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=swift+performance+optimization&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvA6lhu-jhICW0M5r4V0OQiBG7f3A%3A1790508415741&source=hp&ei=f_24atmILJDRkPIPjq2I4As&iflsig=ABILxe8AAAAAarkLj0SPxJoCixX6yicUzZ01pu2X0l3S&ved=0ahUKEwiZxNjQ046XAxWQKEQIHY4WArwQ4dUDCDI&uact=5&oq=swift+performance+optimization&gs_lp=Egdnd3Mtd2l6Ih5zd2lmdCBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIIEAAYgAQYogRI8QdQDlgOcAF4AJABAJgB3AGgAdwBqgEDMi0xuAEDyAEA-AEBmAICoALgAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QXLrTqBaJuqk5IHBTEuMC4xoAf_A7IHAzItMbgH3QHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "DONE",
+     "confidence": 0.9134,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 882.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=unit+testing+best+practices&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnsdJ_ubZgfMQtckY2Qnte8285nqhg%3A1790508418478&ei=gv24apzjHImO8L0Px5ebwQc&biw=1120&bih=780&ved=2ahUKEwicrIDS046XAxUJB7wBHcfLJngQ4dUDegQIBhAN&oq=unit+testing+best+practices&gs_lp=Egxnd3Mtd2l6LXNlcnAiG3VuaXQgdGVzdGluZyBiZXN0IHByYWN0aWNlczIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjsCFALWAtwAXgAkAEAmAHLAaABywGqAQMyLTG4AQzIAQD4AQGYAgKgAs8BwgIHEAAYHhiwA8ICDhAAGIAEGIoFGIYDGLADwgIIEAAY7wUYsAPCAgsQABiJBRiiBBiwA5gDAIgGAZAGBpIHBTEuMC4xoAfUBrIHAzItMbgHzQHCBwMwLjLIBwOACAE&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b0c3ae02bbeecbaa",
+   "source": "google",
+   "goal": "First search Google for tensorflow tutorial, then search Google for svelte migration guide.",
+   "fingerprint": 71055,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 19,
+   "total_ms": 23614,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=svelte+migration+guide&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf=appeq",
+     "bot_challenge": false,
+     "group0": [
+      "svelte"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=svelte+migration+guide&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQntmACwVOazxJzz7iMvrpfgLIIk6dw%3A1790508452279&ei=pP24apjTEObDkPIPhorx0A4&oq=svelte+migration+guide&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnN2ZWx0ZSBtaWdyYXRpb24gZ3VpZGUqBggAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBRAAGO8FMgUQABjvBUjxNFCRLFiRLHADeAGQAQCYAeABoAHgAaoBAzItMbgBAcgBAPgBAZgCBKAC7AHCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA5gDAIgGAZAGDJIHBTMuMC4xoAevA7IHAzItMbgH5QHCBwUwLjMuMcgHCYAIAQ&sclient=gws-wiz-serp",
+    "final_title": "svelte migration guide - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8753,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 492.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508439011"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9056,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 555.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508439011"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.6983,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow tutorial",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 595.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=tensorflow+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQns8zaFaoP3fJqee-0tjQPNOS4DSuA%3A1790508438860&source=hp&ei=lv24aoSqM8Wqur8P4ZW9kAU&iflsig=ABILxe8AAAAAarkLprmFaIWskr9xQkEzEVOylzRwVgNI&ved=0ahUKEwiEzdvb046XAxVFle4BHeFKD1IQ4dUDCDI&uact=5&oq=tensorflow+tutorial&gs_lp=Egdnd3Mtd2l6IhN0ZW5zb3JmbG93IHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkirB1ANWA1wAXgAkAEAmAHQAaAB0AGqAQMyLTG4AQPIAQD4AQGYAgKgAtYBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwPxBdNl8d4ZL0AkkgcFMS4wLjGgB7sFsgcDMi0xuAfTAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.3653,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 568.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=tensorflow+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQns8zaFaoP3fJqee-0tjQPNOS4DSuA%3A1790508438860&source=hp&ei=lv24aoSqM8Wqur8P4ZW9kAU&iflsig=ABILxe8AAAAAarkLprmFaIWskr9xQkEzEVOylzRwVgNI&ved=0ahUKEwiEzdvb046XAxVFle4BHeFKD1IQ4dUDCDI&uact=5&oq=tensorflow+tutorial&gs_lp=Egdnd3Mtd2l6IhN0ZW5zb3JmbG93IHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkirB1ANWA1wAXgAkAEAmAHQAaAB0AGqAQMyLTG4AQPIAQD4AQGYAgKgAtYBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwPxBdNl8d4ZL0AkkgcFMS4wLjGgB7sFsgcDMi0xuAfTAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.221,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 595.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=tensorflow+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQns8zaFaoP3fJqee-0tjQPNOS4DSuA%3A1790508438860&source=hp&ei=lv24aoSqM8Wqur8P4ZW9kAU&iflsig=ABILxe8AAAAAarkLprmFaIWskr9xQkEzEVOylzRwVgNI&ved=0ahUKEwiEzdvb046XAxVFle4BHeFKD1IQ4dUDCDI&uact=5&oq=tensorflow+tutorial&gs_lp=Egdnd3Mtd2l6IhN0ZW5zb3JmbG93IHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkirB1ANWA1wAXgAkAEAmAHQAaAB0AGqAQMyLTG4AQPIAQD4AQGYAgKgAtYBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwPxBdNl8d4ZL0AkkgcFMS4wLjGgB7sFsgcDMi0xuAfTAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.3163,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow tutorial",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 592.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=tensorflow+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQns8OukjzwzyWOqQZqGc9-2Vf8kTnw%3A1790508441526&ei=mf24aq7WH-rNkPIPmIfloA4&biw=1120&bih=780&ved=2ahUKEwjuhv_c046XAxXqJkQIHZhDGeQQ4dUDegQIBhAN&uact=5&oq=tensorflow+tutorial&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3RlbnNvcmZsb3cgdHV0b3JpYWwyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsANI2QdQAFgAcAF4AZABAJgBAKABAKoBALgBA8gBAJgCAaACAZgDAIgGAZAGDJIHATGgBwCyBwC4BwDCBwMwLjHIBwGACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 7,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2663,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 631.1,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=tensorflow+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQns8OukjzwzyWOqQZqGc9-2Vf8kTnw%3A1790508441526&ei=mf24aq7WH-rNkPIPmIfloA4&biw=1120&bih=780&ved=2ahUKEwjuhv_c046XAxXqJkQIHZhDGeQQ4dUDegQIBhAN&uact=5&oq=tensorflow+tutorial&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3RlbnNvcmZsb3cgdHV0b3JpYWwyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsANI2QdQAFgAcAF4AZABAJgBAKABAKoBALgBA8gBAJgCAaACAZgDAIgGAZAGDJIHATGgBwCyBwC4BwDCBwMwLjHIBwGACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.3927,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 609.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=tensorflow+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQns8OukjzwzyWOqQZqGc9-2Vf8kTnw%3A1790508441526&ei=mf24aq7WH-rNkPIPmIfloA4&biw=1120&bih=780&ved=2ahUKEwjuhv_c046XAxXqJkQIHZhDGeQQ4dUDegQIBhAN&uact=5&oq=tensorflow+tutorial&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3RlbnNvcmZsb3cgdHV0b3JpYWwyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsANI2QdQAFgAcAF4AZABAJgBAKABAKoBALgBA8gBAJgCAaACAZgDAIgGAZAGDJIHATGgBwCyBwC4BwDCBwMwLjHIBwGACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 9,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2638,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 638.1,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=tensorflow+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnth8iWZeL2R1YuAtGeX0vX4BIXggQ%3A1790508444201&ei=nP24au3oC-PLkPIP_-SpgQ0&ved=2ahUKEwjtpqLe046XAxXjJUQIHX9yKtAQ4dUDegQIBhAN&oq=tensorflow+tutorial&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3RlbnNvcmZsb3cgdHV0b3JpYWwyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsANIowhQAFgAcAF4AZABAJgBAKABAKoBALgBDMgBAJgCAaACApgDAIgGAZAGDJIHATGgBwCyBwC4BwDCBwMwLjHIBwGACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 10,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2328,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 676.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=tensorflow+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnth8iWZeL2R1YuAtGeX0vX4BIXggQ%3A1790508444201&ei=nP24au3oC-PLkPIP_-SpgQ0&ved=2ahUKEwjtpqLe046XAxXjJUQIHX9yKtAQ4dUDegQIBhAN&oq=tensorflow+tutorial&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3RlbnNvcmZsb3cgdHV0b3JpYWwyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsANIowhQAFgAcAF4AZABAJgBAKABAKoBALgBDMgBAJgCAaACApgDAIgGAZAGDJIHATGgBwCyBwC4BwDCBwMwLjHIBwGACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 11,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2207,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow tutorial",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 596.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=tensorflow+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQns_qu2DwHE3v8pSoaIrJMUhqDu13A%3A1790508446979&ei=nv24auOsO4amkPIPr9C2uAY&ved=2ahUKEwjj88vf046XAxUGE0QIHS-oDWcQ4dUDegQIBhAN&uact=5&oq=tensorflow+tutorial&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3RlbnNvcmZsb3cgdHV0b3JpYWwyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsANIrQhQAFgAcAF4AZABAJgBAKABAKoBALgBA8gBAJgCAaACApgDAIgGAZAGDJIHATGgBwCyBwC4BwDCBwMwLjHIBwGACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 12,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.6045,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 590.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=tensorflow+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQns_qu2DwHE3v8pSoaIrJMUhqDu13A%3A1790508446979&ei=nv24auOsO4amkPIPr9C2uAY&ved=2ahUKEwjj88vf046XAxUGE0QIHS-oDWcQ4dUDegQIBhAN&uact=5&oq=tensorflow+tutorial&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3RlbnNvcmZsb3cgdHV0b3JpYWwyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsANIrQhQAFgAcAF4AZABAJgBAKABAKoBALgBA8gBAJgCAaACApgDAIgGAZAGDJIHATGgBwCyBwC4BwDCBwMwLjHIBwGACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 13,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2308,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 593.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=tensorflow+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQns_qu2DwHE3v8pSoaIrJMUhqDu13A%3A1790508446979&ei=nv24auOsO4amkPIPr9C2uAY&ved=2ahUKEwjj88vf046XAxUGE0QIHS-oDWcQ4dUDegQIBhAN&uact=5&oq=tensorflow+tutorial&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3RlbnNvcmZsb3cgdHV0b3JpYWwyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsANIrQhQAFgAcAF4AZABAJgBAKABAKoBALgBA8gBAJgCAaACApgDAIgGAZAGDJIHATGgBwCyBwC4BwDCBwMwLjHIBwGACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 14,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7631,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow tutorial",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 641.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=tensorflow+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnvL6r3W7BtkB67FVITcp3612sxgGA%3A1790508449597&ei=of24arWKJP2P8L0P2_7oGQ&ved=2ahUKEwj13uvg046XAxX9B7wBHVs_OgMQ4dUDegQIBhAN&uact=5&oq=tensorflow+tutorial&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3RlbnNvcmZsb3cgdHV0b3JpYWwyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsANI3AdQAFgAcAF4AZABAJgBAKABAKoBALgBA8gBAJgCAaACApgDAIgGAZAGDJIHATGgBwCyBwC4BwDCBwMwLjHIBwGACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 15,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.4718,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 594.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=tensorflow+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnvL6r3W7BtkB67FVITcp3612sxgGA%3A1790508449597&ei=of24arWKJP2P8L0P2_7oGQ&ved=2ahUKEwj13uvg046XAxX9B7wBHVs_OgMQ4dUDegQIBhAN&uact=5&oq=tensorflow+tutorial&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3RlbnNvcmZsb3cgdHV0b3JpYWwyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsANI3AdQAFgAcAF4AZABAJgBAKABAKoBALgBA8gBAJgCAaACApgDAIgGAZAGDJIHATGgBwCyBwC4BwDCBwMwLjHIBwGACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 16,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8118,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow tutorial",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 590.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=tensorflow+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnvL6r3W7BtkB67FVITcp3612sxgGA%3A1790508449597&ei=of24arWKJP2P8L0P2_7oGQ&ved=2ahUKEwj13uvg046XAxX9B7wBHVs_OgMQ4dUDegQIBhAN&uact=5&oq=tensorflow+tutorial&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3RlbnNvcmZsb3cgdHV0b3JpYWwyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsANI3AdQAFgAcAF4AZABAJgBAKABAKoBALgBA8gBAJgCAaACApgDAIgGAZAGDJIHATGgBwCyBwC4BwDCBwMwLjHIBwGACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 16,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "svelte migration guide",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=tensorflow+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnvL6r3W7BtkB67FVITcp3612sxgGA%3A1790508449597&ei=of24arWKJP2P8L0P2_7oGQ&ved=2ahUKEwj13uvg046XAxX9B7wBHVs_OgMQ4dUDegQIBhAN&uact=5&oq=tensorflow+tutorial&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3RlbnNvcmZsb3cgdHV0b3JpYWwyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsANI3AdQAFgAcAF4AZABAJgBAKABAKoBALgBA8gBAJgCAaACApgDAIgGAZAGDJIHATGgBwCyBwC4BwDCBwMwLjHIBwGACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 17,
+     "operation": "CLICK",
+     "confidence": 0.2554,
+     "target": "5",
+     "target_label": "svelte migration guide",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 683.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=tensorflow+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnvL6r3W7BtkB67FVITcp3612sxgGA%3A1790508449597&ei=of24arWKJP2P8L0P2_7oGQ&ved=2ahUKEwj13uvg046XAxX9B7wBHVs_OgMQ4dUDegQIBhAN&uact=5&oq=tensorflow+tutorial&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3RlbnNvcmZsb3cgdHV0b3JpYWwyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsAMyDRAAGIAEGIoFGEMYsANI3AdQAFgAcAF4AZABAJgBAKABAKoBALgBA8gBAJgCAaACApgDAIgGAZAGDJIHATGgBwCyBwC4BwDCBwMwLjHIBwGACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 18,
+     "operation": "DONE",
+     "confidence": 0.6999,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 602.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=svelte+migration+guide&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQntmACwVOazxJzz7iMvrpfgLIIk6dw%3A1790508452279&ei=pP24apjTEObDkPIPhorx0A4&oq=svelte+migration+guide&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnN2ZWx0ZSBtaWdyYXRpb24gZ3VpZGUqBggAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBRAAGO8FMgUQABjvBUjxNFCRLFiRLHADeAGQAQCYAeABoAHgAaoBAzItMbgBAcgBAPgBAZgCBKAC7AHCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA5gDAIgGAZAGDJIHBTMuMC4xoAevA7IHAzItMbgH5QHCBwUwLjMuMcgHCYAIAQ&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3987257774d580f3",
+   "source": "google",
+   "goal": "First search Google for kafka best practices, then search Google for elasticsearch performance optimization.",
+   "fingerprint": 71055,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14605,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dkafka%2bbest%2bpractices%26sca_esv%3d18a",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dkafka%2Bbest%2Bpractices%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuGNUKtax879Tw5bF5WRl0xsWj30w%253A1790508469680%26source%3Dhp%26ei%3Dtf24auyaKPqtur8Pz6ifOQ%26iflsig%3DABILxe8AAAAAarkLxfnSL0DNQcnJc6hciN5UL09Dt6ya%26ved%3D0ahUKEwisybTq046XAxX6lu4BHU_UJwcQ4dUDCDI%26uact%3D5%26oq%3Dkafka%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhRrYWZrYSBiZXN0IHByYWN0aWNlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IywdQDlgOcAF4AJABAJgBzgGgAc4BqgEDMi0xuAEDyAEA-AEBmAICoALWAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QVblSby_JHd8pIHBTEuMC4xoAfOBbIHAzItMbgH0gHCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLj749UGIjCzeHiWeve1i9UqfrJYW2yFq08MWsJX6yEOQ8CLbP-CqygDce5ss5vhi0DJyohMQPMyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=kafka+best+practices&sca_esv=18a60b01d202c9ee&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9065,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kafka best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 477.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508469848"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8693,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 585.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508469848"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8f9c5224a2978f5e",
+   "source": "google",
+   "goal": "First search Google for model quantization interview questions, then search Google for kafka interview questions.",
+   "fingerprint": 71055,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14699,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmodel%2bquantization%2binterview%2bquest",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmodel%2Bquantization%2Binterview%2Bquestions%2Bkafka%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnswZJj344yMz9iDQAwsQYhpgxUUOw%253A1790508536490%26source%3Dhp%26ei%3D-P24auDXHPjKkPIPiPen6Qw%26iflsig%3DABILxe8AAAAAarkMCIctqI6d4tLSWQt3Zgl5NB3cKagS%26oq%3Dmodel%2Bquantization%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IiZtb2RlbCBxdWFudGl6YXRpb24gaW50ZXJ2aWV3IHF1ZXN0aW9ucyoFCAEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKsCSPcGUA1YDXABeACQAQCYAeABoAHgAaoBAzItMbgBAcgBAPgBAZgCAqAC6QGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDA_EFAfJB-LfCRTGSBwUxLjAuMaAHrwSyBwMyLTG4B-UBwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPv749UGIjA-X4ui5_wcD4SJcd9QNgH9JXddMKRq3qS4b72Ww2InDDA--CJUIHjFxhyWb_I_-PEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=model+quantization+interview+questions+kafka&sca"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9102,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 515.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508536736"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.8528,
+     "target": "13",
+     "target_label": "model quantization interview questions kafka",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 469.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508536736"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-7693bbc71381bda7",
+   "source": "google",
+   "goal": "First search Google for kafka tutorial, then search Google for tensorflow security vulnerabilities.",
+   "fingerprint": 71055,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14775,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dkafka%2btutorial%26sca_esv%3d18a60b01d20",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dkafka%2Btutorial%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnswr9YX8ylTBb_MPYqe6GNbCPgqRg%253A1790508603359%26source%3Dhp%26ei%3DO_64av-XFO_UkPIPw8X7-AI%26iflsig%3DABILxe8AAAAAarkMS0xGyCVmEyre7BiK-v5AY9oQSoS_%26ved%3D0ahUKEwi_oZOq1I6XAxVvKkQIHcPiHi8Q4dUDCDI%26uact%3D5%26oq%3Dkafka%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig5rYWZrYSB0dXRvcmlhbDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgARItwdQDVgNcAF4AJABAJgB6QGgAekBqgEDMi0xuAEDyAEA-AEBmAICoALyAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QVVXeo8sV_ZKZIHBTEuMC4xoAf4BLIHAzItMbgH7QHCBwMyLTLIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGL3849UGIjBMv4Mnwc5LfSG7fs1Iknfu-J6t5Ip2vAEC-TGRRnarEOo-r4_XbkZ3Jt6O8U2r0aIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=kafka+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9037,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kafka tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 494.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508603500"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8438,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 569.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508603500"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c17e96687f2e5542",
+   "source": "google",
+   "goal": "First search Google for spring boot security vulnerabilities, then search Google for kubernetes interview questions.",
+   "fingerprint": 71055,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14641,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dspring%2bboot%2bsecurity%2bvulnerabiliti",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dspring%2Bboot%2Bsecurity%2Bvulnerabilities%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntltzBvlGg7lWnEtIvYs_vrRAb8eQ%253A1790508670303%26source%3Dhp%26ei%3Dfv64avHeEMiikPIPkOep0QY%26iflsig%3DABILxe8AAAAAarkMjkMKR_F_W1PIKO_QXopjF85Na6Fz%26ved%3D0ahUKEwjxlYnK1I6XAxVIEUQIHZBzKmoQ4dUDCDI%26uact%3D5%26oq%3Dspring%2Bboot%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IiRzcHJpbmcgYm9vdCBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGBYYHhgKMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FMggQABiJBRiiBEi7B1ANWA1wAXgAkAEAmAGNAqABjQKqAQMyLTG4AQPIAQD4AQGYAgKgApQCqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBTSgRkCv5-ZpkgcFMS4wLjGgB6sGsgcDMi0xuAeQAsIHAzAuMsgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGID949UGIjDVVws9Vh-79A98BQeq50UPF-ixLjzB__VBpFmXo7VkWHzUQ2JJcQa8KkQ49NZqFycyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=spring+boot+security+vulnerabilities&sca_esv=18a"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8936,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "spring boot security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 516.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508670463"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9075,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 568.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508670463"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,554 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 30899,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": true
+  },
+  "done_gate": null,
+  "max_steps": 25,
+  "delay": 4.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T11:45:31+0800",
+  "n_tasks": 6,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 3.8,
+  "mean_duration_ms": 3134,
+  "decision_latency_ms": {
+   "p50": 458.8,
+   "p95": 579.3
+  },
+  "step_outcomes": {
+   "executed": 20,
+   "done": 3
+  },
+  "low_confidence_steps": 2,
+  "by_source": {
+   "github": {
+    "n": 3,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 5.3
+   },
+   "google": {
+    "n": 3,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.3
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "google-ai-openai",
+   "source": "google",
+   "goal": "Search Google for the latest OpenAI news and open the results.",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 1298,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['openai']]",
+    "checks": {
+     "url": "https://www.google.com/?hl=en&gl=us",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/?hl=en&gl=us",
+    "final_title": "Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.877,
+     "target": "2",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 386.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8941,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 458.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "google-news-tab",
+   "source": "google",
+   "goal": "Search Google for OpenAI news and switch to the News results tab.",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 2144,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['openai']]",
+    "checks": {
+     "url": "https://www.google.com/?hl=en&gl=us",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/?hl=en&gl=us",
+    "final_title": "Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.8365,
+     "target": "2",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 374.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8872,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 459.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.7999,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 472.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-papers",
+   "source": "google",
+   "goal": "Search Google for recent AI research papers and open the results.",
+   "fingerprint": 30899,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 1204,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['arxiv', 'paper']]",
+    "checks": {
+     "url": "https://www.google.com/?hl=en&gl=us",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/?hl=en&gl=us",
+    "final_title": "Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.8222,
+     "target": "5",
+     "target_label": "AI Mode",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 383.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.9016,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 395.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "github-trending-first-repo",
+   "source": "github",
+   "goal": "Open the first repository in GitHub's trending list and view its details page.",
+   "fingerprint": 30899,
+   "status": "repeat-loop",
+   "verified": false,
+   "success": false,
+   "steps": 4,
+   "total_ms": 2591,
+   "error": "same operation+target repeated 3x; stopping",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9183,
+     "target": "3",
+     "target_label": "Date range: Today",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 469.6,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.8945,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 360.6,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.9274,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 252.2,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 4,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.6485,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 390.3,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    }
+   ]
+  },
+  {
+   "task_id": "github-trending-python",
+   "source": "github",
+   "goal": "On GitHub trending, show only the Python language repositories.",
+   "fingerprint": 30899,
+   "status": "repeat-loop",
+   "verified": false,
+   "success": false,
+   "steps": 8,
+   "total_ms": 7932,
+   "error": "same operation+target repeated 3x; stopping",
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'github.com/trending/python'",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "python"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9387,
+     "target": "1",
+     "target_label": "Spoken Language: Any",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 566.4,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.8312,
+     "target": "2",
+     "target_label": "Open Type or choose a spoken language",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 558.1,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8214,
+     "target": "2",
+     "target_label": "Open Type or choose a spoken language",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 541.8,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8352,
+     "target": "1",
+     "target_label": "Spoken Language: Any",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 568.9,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.9196,
+     "target": "1",
+     "target_label": "Spoken Language: Any",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 486.4,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8592,
+     "target": "2",
+     "target_label": "Open Type or choose a spoken language",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 579.1,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8587,
+     "target": "2",
+     "target_label": "Open Type or choose a spoken language",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 579.3,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.8643,
+     "target": "2",
+     "target_label": "Open Type or choose a spoken language",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 721.4,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    }
+   ]
+  },
+  {
+   "task_id": "github-search-first",
+   "source": "github",
+   "goal": "Search GitHub for 'llm' and open the first repository in the results.",
+   "fingerprint": 30899,
+   "status": "no-progress",
+   "verified": false,
+   "success": false,
+   "steps": 4,
+   "total_ms": 3635,
+   "error": "page unchanged across 4 steps; stopping",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/",
+    "final_title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.877,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 379.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2858,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 411.5,
+     "low_confidence": true,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.5674,
+     "target": "1",
+     "target_label": "Open Enter your email",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 407.6,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.263,
+     "target": "1",
+     "target_label": "Open Enter your email",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 392.9,
+     "low_confidence": true,
+     "url": "https://github.com/"
+    }
+   ]
+  }
+ ]
+}

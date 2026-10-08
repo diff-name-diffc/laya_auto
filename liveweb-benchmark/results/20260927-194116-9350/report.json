@@ -1,0 +1,682 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 87602,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:48:56+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 3.8,
+  "mean_duration_ms": 16957,
+  "decision_latency_ms": {
+   "p50": 518.2,
+   "p95": 692.5
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 3,
+   "done-rejected": 6,
+   "executed": 18,
+   "done": 1
+  },
+  "low_confidence_steps": 2,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 3.8
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-9ff2d9af244ae8de",
+   "source": "google",
+   "goal": "Search Google for flask open source alternatives and open the results.",
+   "fingerprint": 87602,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 21862,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dflask%2bopen%2bsource%2balternatives%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dflask%2Bopen%2Bsource%2Balternatives%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnssDjywoSPhiFGfpVx1PZsZIOtd5g%253A1790509279401%26source%3Dhp%26ei%3D3wC5aqG4F97ekPIP9N-HmA0%26iflsig%3DABILxe8AAAAAarkO7yYEkSd3P-yR4ojqtOJ9-6Ja6Ek0%26ved%3D0ahUKEwjho8Ls1o6XAxVeL0QIHfTvAdMQ4dUDCDI%26uact%3D5%26oq%3Dflask%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ih5mbGFzayBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMyBRAhGKABMgUQIRigATIFECEYoAFIvhxQGlgacAF4AJABAJgB0wGgAdMBqgEDMi0xuAEDyAEA-AEBmAICoALbAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME8QXdkMxhLWRRtJIHBTEuMC4xoAexA7IHAzItMbgH1gHCBwUxLjAuMcgHBIAIAQ%26sclient%3Dgws-wiz%26sei%3D6QC5avHNCMLNkPIPzq2JiAM&hl=en&q=EgQm0XtnGOmB5NUGIjCnPg9gJbRJ0iUt2wEtE_7N9Q7mqEZjCLnkZyaQgvOX7PNdfY_1lzBwSObjvB-W2WYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=flask+open+source+alternatives&sca_esv=18a60b01d"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8992,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "flask open source alternatives",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 666.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8852,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 595.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509280887"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9042,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search query 'flask open source alternatives' not entered; Search results page listing results for 'flask open source alternatives' not displayed",
+     "page_changed": null,
+     "latency_ms": 490.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509280887"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "flask open source alternatives",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509280887"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9134,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for 'flask open source alternatives' (only the query typed in the search box with autocomplete suggestions is visible; no results ",
+     "page_changed": null,
+     "latency_ms": 632.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509280887"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509280887"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-39e976b48b85b51c",
+   "source": "google",
+   "goal": "First search Google for how to debug code review, then search Google for scala best practices.",
+   "fingerprint": 87602,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 8,
+   "total_ms": 15840,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['scala']]",
+    "checks": {
+     "url": "https://www.google.com/intl/zh-cn_all/search/howsearchworks/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/",
+    "final_title": "Google 搜索 - 什么是 Google 搜索及其运作方式"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8726,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug code review",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 500.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8793,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 491.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509355088"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8404,
+     "target": "18",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 605.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509355088"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8777,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'scala best practices'; search results listing for scala best practices (page shown is the 'How Google Search works' ov",
+     "page_changed": null,
+     "latency_ms": 402.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search/howsearchworks/?fg=1"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search/howsearchworks/?fg=1"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.9322,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for scala best practices",
+     "page_changed": null,
+     "latency_ms": 438.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.9381,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 522.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-6475de4f090edae6",
+   "source": "google",
+   "goal": "First search Google for tensorflow best practices, then search Google for java tutorial.",
+   "fingerprint": 87602,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14597,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dtensorflow%2bbest%2bpractices%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtensorflow%2Bbest%2Bpractices%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvxy-lD9-PwRdTVk3RkOv-dwVH0Jg%253A1790509376939%26source%3Dhp%26ei%3DQAG5ao-qN5_BkPIPyd3JiAw%26iflsig%3DABILxe8AAAAAarkPUNLSdLHhs55rZbrIHWl3qo9Nt5sE%26ved%3D0ahUKEwiPyoKb146XAxWfIEQIHcluEsEQ4dUDCDI%26uact%3D5%26oq%3Dtensorflow%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6Ihl0ZW5zb3JmbG93IGJlc3QgcHJhY3RpY2VzMgYQABgWGB4yBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSJcHUBFYEXABeACQAQCYAdcBoAHXAaoBAzItMbgBA8gBAPgBAZgCAqAC3gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBfEFLwjdLqc5JyOSBwUxLjAuMaAH2wKyBwMyLTG4B9kBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMOC5NUGIjCUV8hoB9f_hmqSOPrHU7exi2td02-1ASvfNJ7RDqxi-AOTWzOa7Jyyc-lIzHbiZtsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=tensorflow+best+practices&sca_esv=18a60b01d202c9"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.899,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 497.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509377276"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9076,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 528.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509377276"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5b6e25a17ee4768a",
+   "source": "google",
+   "goal": "Search Google for how to debug svelte and open the results.",
+   "fingerprint": 87602,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 24479,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bsvelte%26sca_esv%3d18",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bsvelte%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt_byGna--BGpRncA6dyIXyOnZnEA%253A1790509443764%26source%3Dhp%26ei%3DgwG5auPGLcST8L0P1fTi4Qw%26iflsig%3DABILxe8AAAAAarkPk7qeIj8Ct9zz_RIJoL8aEpxoyrB5%26ved%3D0ahUKEwijlPK6146XAxXECbwBHVW6OMwQ4dUDCDI%26oq%3Dhow%2Bto%2Bdebug%2Bsvelte%26gs_lp%3DEgdnd3Mtd2l6IhNob3cgdG8gZGVidWcgc3ZlbHRlMggQABiABBi0BzIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wVI51RQ7ypY7ypwAngAkAEAmAHlAaAB5QGqAQMyLTG4AQzIAQD4AQGYAgOgAu0BqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBbtMJZJTfgtNkgcFMi4wLjGgB7QDsgcDMi0xuAfnAcIHBTAuMi4xyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJCD5NUGIjCh7-MlQxmxfnAWy7Ak-OeTxcJtI8xF5FTDc--9rGSOhdwVuUu0mHdyGjaLFcnrCJ4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+svelte&sca_esv=18a60b01d202c9ee&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.2826,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 514.7,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509444025"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8632,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 592.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509444025"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.308,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"how to debug svelte\"",
+     "page_changed": null,
+     "latency_ms": 881.1,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509444025"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug svelte",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509444025"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.893,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"how to debug svelte\" are not displayed",
+     "page_changed": null,
+     "latency_ms": 641.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509444025"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:32",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509444025"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-2b665e6c92bd4316",
+   "source": "google",
+   "goal": "First search Google for how to debug laravel, then search Google for c++ performance optimization.",
+   "fingerprint": 87602,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14684,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2blaravel%26sca_esv%3d1",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Blaravel%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvJ2gtm2ekx5f3vR0PNywbcgn6yjQ%253A1790509520411%26source%3Dhp%26ei%3D0AG5au_3F5zOkPIPwcHo8Qg%26iflsig%3DABILxe8AAAAAarkP4BhnijGKnu8TIJVYox1EN_djGkBV%26ved%3D0ahUKEwjvn7jf146XAxUcJ0QIHcEgOo4Q4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Blaravel%26gs_lp%3DEgdnd3Mtd2l6IhRob3cgdG8gZGVidWcgbGFyYXZlbDIFEAAYgAQyCBAAGIAEGLQHMgYQABgWGB4yBhAAGBYYHjIIEAAYFhgeGAoyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSNEHUA9YD3ABeACQAQCYAdABoAHQAaoBAzItMbgBA8gBAPgBAZgCAqAC2wGoAgrCAgoQABgDGI8BGOoCmAME8QXvQK0ZA4SD4pIHBTEuMC4xoAf8BbIHAzItMbgH1gHCBwMyLTLIBweACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNOD5NUGIjC8NGHxH67RpAEidVxFkN-V9FByMFGoZ0HPofZ6lkyNk1RtCft3fd9p5w8aWOAEF1kyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+laravel&sca_esv=18a60b01d202c9ee&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.858,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug laravel",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 494.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509520584"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8084,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 581.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509520584"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3aba1f2f72a1789c",
+   "source": "google",
+   "goal": "Search Google for model quantization tutorial and open the results.",
+   "fingerprint": 87602,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14643,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmodel%2bquantization%2btutorial%26sca_es",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmodel%2Bquantization%2Btutorial%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvMCj1ZG4IL0UFzf7dsS5GWyKvcbA%253A1790509587542%26source%3Dhp%26ei%3DEwK5ao3EH8rIkPIPwJjpoAU%26iflsig%3DABILxe8AAAAAarkQI-aJop52Yjgd-xTSLHZISaFhexC7%26ved%3D0ahUKEwjNmbn_146XAxVKJEQIHUBMGlQQ4dUDCDI%26uact%3D5%26oq%3Dmodel%2Bquantization%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ihttb2RlbCBxdWFudGl6YXRpb24gdHV0b3JpYWwyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FSL4HUBBYEHABeACQAQCYAdgBoAHYAaoBAzItMbgBA8gBAPgBAZgCAqAC4QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFhhtP3OB8VHuSBwUxLjAuMaAH9wOyBwMyLTG4B90BwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJaE5NUGIjAKhmUMWbscjYrLHUWaWqAQ5m0cBzl_q6aJ7WfT5Ww_QPRBcqB86kFIDK43kPdue1MyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=model+quantization+tutorial&sca_esv=18a60b01d202"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9013,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 485.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509587724"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9051,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 567.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509587724"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-36cd5c6b9c88db55",
+   "source": "google",
+   "goal": "First search Google for django release notes, then search Google for golang performance optimization.",
+   "fingerprint": 87602,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14794,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddjango%2brelease%2bnotes%26sca_esv%3d18a",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddjango%2Brelease%2Bnotes%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns-7C0_8XxBWcazhh4HwPtpsP0GKg%253A1790509654343%26source%3Dhp%26ei%3DVgK5apDhE-XwkPIPp_igyQs%26iflsig%3DABILxe8AAAAAarkQZu3pO-BVIb-tHTD-6wNLEIx-7zsr%26ved%3D0ahUKEwiQ5Kaf2I6XAxVlOEQIHSc8KLkQ4dUDCDI%26uact%3D5%26oq%3Ddjango%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhRkamFuZ28gcmVsZWFzZSBub3RlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IpAhQD1gPcAF4AJABAJgBzQGgAc0BqgEDMi0xuAEDyAEA-AEBmAICoALVAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QVG1cPZy7RxVJIHBTEuMC4xoAeUBbIHAzItMbgH0QHCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNmE5NUGIjDBlvGAJR8p54wP3Dm0kg9xEGw8wV6FfKkChiCRms_K7iZNlZkeZ_79Xjje_K0-IMMyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=django+release+notes&sca_esv=18a60b01d202c9ee&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8882,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 518.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509654507"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9005,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 681.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509654507"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9f0a75788e29659a",
+   "source": "google",
+   "goal": "First search Google for laravel migration guide, then search Google for tensorflow release notes.",
+   "fingerprint": 87602,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14755,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlaravel%2bmigration%2bguide%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlaravel%2Bmigration%2Bguide%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsbXZjigY6fI7R4MYzbUgNsVmYeMA%253A1790509721273%26source%3Dhp%26ei%3DmQK5aoayD5HCkPIP1tDVgAc%26iflsig%3DABILxe8AAAAAarkQqYujAlEh7APOEYISnTfXpdYHPC3v%26ved%3D0ahUKEwjG4pu_2I6XAxURIUQIHVZoFXAQ4dUDCDI%26uact%3D5%26oq%3Dlaravel%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhdsYXJhdmVsIG1pZ3JhdGlvbiBndWlkZTIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IuwhQDlgOcAF4AJABAJgB0wGgAdMBqgEDMi0xuAEDyAEA-AEBmAICoALaAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFKoKfhV7-WJCSBwUxLjAuMaAHkgeyBwMyLTG4B9YBwgcDMC4yyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJyF5NUGIjCWjLhVY0qh9rzYnv04DpTP8tbN_57XNNLCizbCPW9oygSesTtFIOdFLOJIiGzt7WQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=laravel+migration+guide&sca_esv=18a60b01d202c9ee"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7887,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "laravel migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 521.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509721609"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8627,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 692.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509721609"
+    }
+   ]
+  }
+ ]
+}

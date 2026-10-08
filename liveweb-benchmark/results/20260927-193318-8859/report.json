@@ -1,0 +1,1019 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 73389,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:36:51+0800",
+  "n_tasks": 8,
+  "success": 6,
+  "success_rate": 0.75,
+  "verified": 6,
+  "verified_rate": 0.75,
+  "found_but_not_stopped": 0,
+  "mean_steps": 6.5,
+  "mean_duration_ms": 19853,
+  "decision_latency_ms": {
+   "p50": 576.6,
+   "p95": 778.9
+  },
+  "step_outcomes": {
+   "stale": 4,
+   "refused-empty-enter": 2,
+   "done-rejected": 9,
+   "executed": 29,
+   "done": 8
+  },
+  "low_confidence_steps": 5,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 6,
+    "success_rate": 0.75,
+    "verified": 6,
+    "verified_rate": 0.75,
+    "mean_steps": 6.5
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-d3f0c090c07fe16d",
+   "source": "google",
+   "goal": "Search Google for grafana security vulnerabilities and open the results.",
+   "fingerprint": 73389,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 7,
+   "total_ms": 22532,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=grafana+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=appeqntqve1y",
+     "bot_challenge": false,
+     "group0": [
+      "grafana"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=grafana+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQntqve1yMvRMM2Eo5wZ7Ps3sRbLuZA%3A1790508801215&source=hp&ei=Af-4aoPnC8ClkPIPs5Gd6Q8&iflsig=ABILxe8AAAAAarkNEcOJdGbxqUDET1R4YSXKy-l501mf&ved=0ahUKEwjD67-I1Y6XAxXAEkQIHbNIJ_0Q4dUDCDI&oq=grafana+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IiBncmFmYW5hIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyBRAAGO8FMggQABiABBiiBDIIEAAYgAQYogQyBRAAGO8FSOIeUBVYFXABeACQAQCYAdABoAHQAaoBAzItMbABALgBDMgBAPgBAZgCAqAC2AGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEF_eDcB1oL6GOSBwUxLjAuMaAH3AOyBwMyLTG4B9QBwgcFMC4xLjHIBwWACAE&sclient=gws-wiz",
+    "final_title": "grafana security vulnerabilities - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8912,
+     "target": "11",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "grafana security vulnerabilities",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 527.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8883,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 546.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508802595"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9156,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for grafana security vulnerabilities",
+     "page_changed": null,
+     "latency_ms": 535.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508802595"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:11",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "grafana security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508802595"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9137,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page listing results for 'grafana security vulnerabilities' (only the search box with autocomplete suggestions is shown; results",
+     "page_changed": null,
+     "latency_ms": 1029.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508802595"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:36",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508802595"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8607,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 705.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=grafana+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQntqve1yMvRMM2Eo5wZ7Ps3sRbLuZA%3A1790508801215&source=hp&ei=Af-4aoPnC8ClkPIPs5Gd6Q8&iflsig=ABILxe8AAAAAarkNEcOJdGbxqUDET1R4YSXKy-l501mf&ved=0ahUKEwjD67-I1Y6XAxXAEkQIHbNIJ_0Q4dUDCDI&oq=grafana+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IiBncmFmYW5hIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyBRAAGO8FMggQABiABBiiBDIIEAAYgAQYogQyBRAAGO8FSOIeUBVYFXABeACQAQCYAdABoAHQAaoBAzItMbABALgBDMgBAPgBAZgCAqAC2AGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEF_eDcB1oL6GOSBwUxLjAuMaAH3AOyBwMyLTG4B9QBwgcFMC4xLjHIBwWACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-1621c24b3bfc8c63",
+   "source": "google",
+   "goal": "First search Google for angular security vulnerabilities, then search Google for grafana migration guide.",
+   "fingerprint": 73389,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 11,
+   "total_ms": 15909,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=grafana+migration+guide&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=appeqnuhi19qywzct5h9o",
+     "bot_challenge": false,
+     "group0": [
+      "grafana"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=grafana+migration+guide&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuHI19QYWZCt5H9o1ykn7Cyh8sKzg%3A1790508838735&ei=Jv-4atq7LNXSkPIP0sTOgAw&biw=1120&bih=780&oq=grafana+migration+guide&gs_lp=Egxnd3Mtd2l6LXNlcnAiF2dyYWZhbmEgbWlncmF0aW9uIGd1aWRlKgUIABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIESN8YUL0QWL0QcAJ4AZABAJgB5wGgAecBqgEDMi0xsAEAuAEByAEA-AEBmAIDoALxAcICChAAGEcY1gQYsAOYAwDiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGKIBgGQBgiSBwUyLjAuMaAH9QKyBwMyLTG4B-wBwgcFMC4yLjHIBweACAE&sclient=gws-wiz-serp",
+    "final_title": "grafana migration guide - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9074,
+     "target": "14",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular security vulnerabilities",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 525.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8927,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 528.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508832531"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8787,
+     "target": "14",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 533.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508832531"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8729,
+     "target": "14",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 595.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508832531"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:29",
+     "target_label": "angular security vulnerabilities",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508832531"
+    },
+    {
+     "step": 5,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8232,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular security vulnerabilities",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 637.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=angular+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuswAv7Xj7ngUg0d-qfnjVZTdnz4g%3A1790508831120&source=hp&ei=H_-4ar_GBbjDkPIPos-A0Q8&iflsig=ABILxe8AAAAAarkNL-021IXljCVtcP-Sbhp7FkHZWjJi&oq=angular+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IiBhbmd1bGFyIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllcyoFCAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSPEjUA9YD3ACeACQAQCYAc8BoAHPAaoBAzItMbABALgBAcgBAPgBAZgCA6AC2wGoAgrCAh0QABiABBiKBRjUAxjlAhjnBhjqAhi0AhiKAxi3A8ICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXfXu2WPQ-2k5IHBTIuMC4xoAeFBrIHAzItMbgH1QHCBwUwLjEuMsgHCYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8566,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular security vulnerabilities",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 589.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=angular+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuswAv7Xj7ngUg0d-qfnjVZTdnz4g%3A1790508831120&source=hp&ei=H_-4ar_GBbjDkPIPos-A0Q8&iflsig=ABILxe8AAAAAarkNL-021IXljCVtcP-Sbhp7FkHZWjJi&oq=angular+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IiBhbmd1bGFyIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllcyoFCAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSPEjUA9YD3ACeACQAQCYAc8BoAHPAaoBAzItMbABALgBAcgBAPgBAZgCA6AC2wGoAgrCAh0QABiABBiKBRjUAxjlAhjnBhjqAhi0AhiKAxi3A8ICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXfXu2WPQ-2k5IHBTIuMC4xoAeFBrIHAzItMbgH1QHCBwUwLjEuMsgHCYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8306,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 593.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=angular+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuswAv7Xj7ngUg0d-qfnjVZTdnz4g%3A1790508831120&source=hp&ei=H_-4ar_GBbjDkPIPos-A0Q8&iflsig=ABILxe8AAAAAarkNL-021IXljCVtcP-Sbhp7FkHZWjJi&oq=angular+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IiBhbmd1bGFyIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllcyoFCAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSPEjUA9YD3ACeACQAQCYAc8BoAHPAaoBAzItMbABALgBAcgBAPgBAZgCA6AC2wGoAgrCAh0QABiABBiKBRjUAxjlAhjnBhjqAhi0AhiKAxi3A8ICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXfXu2WPQ-2k5IHBTIuMC4xoAeFBrIHAzItMbgH1QHCBwUwLjEuMsgHCYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "grafana migration guide",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=angular+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuswAv7Xj7ngUg0d-qfnjVZTdnz4g%3A1790508831120&source=hp&ei=H_-4ar_GBbjDkPIPos-A0Q8&iflsig=ABILxe8AAAAAarkNL-021IXljCVtcP-Sbhp7FkHZWjJi&oq=angular+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IiBhbmd1bGFyIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllcyoFCAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSPEjUA9YD3ACeACQAQCYAc8BoAHPAaoBAzItMbABALgBAcgBAPgBAZgCA6AC2wGoAgrCAh0QABiABBiKBRjUAxjlAhjnBhjqAhi0AhiKAxi3A8ICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXfXu2WPQ-2k5IHBTIuMC4xoAeFBrIHAzItMbgH1QHCBwUwLjEuMsgHCYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.8095,
+     "target": "5",
+     "target_label": "grafana migration guide",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 629.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=angular+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuswAv7Xj7ngUg0d-qfnjVZTdnz4g%3A1790508831120&source=hp&ei=H_-4ar_GBbjDkPIPos-A0Q8&iflsig=ABILxe8AAAAAarkNL-021IXljCVtcP-Sbhp7FkHZWjJi&oq=angular+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IiBhbmd1bGFyIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllcyoFCAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSPEjUA9YD3ACeACQAQCYAc8BoAHPAaoBAzItMbABALgBAcgBAPgBAZgCA6AC2wGoAgrCAh0QABiABBiKBRjUAxjlAhjnBhjqAhi0AhiKAxi3A8ICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXfXu2WPQ-2k5IHBTIuMC4xoAeFBrIHAzItMbgH1QHCBwUwLjEuMsgHCYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.8469,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 624.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=grafana+migration+guide&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuHI19QYWZCt5H9o1ykn7Cyh8sKzg%3A1790508838735&ei=Jv-4atq7LNXSkPIP0sTOgAw&biw=1120&bih=780&oq=grafana+migration+guide&gs_lp=Egxnd3Mtd2l6LXNlcnAiF2dyYWZhbmEgbWlncmF0aW9uIGd1aWRlKgUIABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIESN8YUL0QWL0QcAJ4AZABAJgB5wGgAecBqgEDMi0xsAEAuAEByAEA-AEBmAIDoALxAcICChAAGEcY1gQYsAOYAwDiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGKIBgGQBgiSBwUyLjAuMaAH9QKyBwMyLTG4B-wBwgcFMC4yLjHIBweACAE&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-7767cb56c8ca7432",
+   "source": "google",
+   "goal": "Search Google for rust security vulnerabilities and open the results.",
+   "fingerprint": 73389,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 5,
+   "total_ms": 10050,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=rust+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=appeqnswcy6evjm",
+     "bot_challenge": false,
+     "group0": [
+      "rust"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=rust+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnsWCY6eVJMAXQ10wp2NOfZE5muHsw%3A1790508854411&source=hp&ei=Nv-4auDbF-vYkPIPl-i8oAg&iflsig=ABILxe8AAAAAarkNRpxFJOePbP6QpfwQCCcxgnPojuww&ved=0ahUKEwjgzu6h1Y6XAxVrLEQIHRc0D4QQ4dUDCDI&uact=5&oq=rust+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ih1ydXN0IHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllczIFEAAYgAQyBhAAGBYYHjIFEAAY7wUyBRAAGO8FSJcHUAxYDHABeACQAQCYAeEBoAHhAaoBAzItMbABALgBA8gBAPgBAZgCAqAC6AGoAgrCAh0QABiABBiKBRjUAxjlAhjnBhjqAhi0AhiKAxi3A5gDA-IDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFoCZGvo4LMRSSBwUxLjAuMaAHigKyBwMyLTG4B-QBwgcDMC4yyAcEgAgB&sclient=gws-wiz",
+    "final_title": "rust security vulnerabilities - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9041,
+     "target": "14",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rust security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 489.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508854565"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9065,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 535.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508854565"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8953,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results not loaded/visible; page shows loading placeholders",
+     "page_changed": null,
+     "latency_ms": 577.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=rust+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnsWCY6eVJMAXQ10wp2NOfZE5muHsw%3A1790508854411&source=hp&ei=Nv-4auDbF-vYkPIPl-i8oAg&iflsig=ABILxe8AAAAAarkNRpxFJOePbP6QpfwQCCcxgnPojuww&ved=0ahUKEwjgzu6h1Y6XAxVrLEQIHRc0D4QQ4dUDCDI&uact=5&oq=rust+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ih1ydXN0IHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllczIFEAAYgAQyBhAAGBYYHjIFEAAY7wUyBRAAGO8FSJcHUAxYDHABeACQAQCYAeEBoAHhAaoBAzItMbABALgBA8gBAPgBAZgCAqAC6AGoAgrCAh0QABiABBiKBRjUAxjlAhjnBhjqAhi0AhiKAxi3A5gDA-IDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFoCZGvo4LMRSSBwUxLjAuMaAHigKyBwMyLTG4B-QBwgcDMC4yyAcEgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "wait",
+     "target_label": "Wait for the page to update",
+     "kind": "wait",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=rust+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnsWCY6eVJMAXQ10wp2NOfZE5muHsw%3A1790508854411&source=hp&ei=Nv-4auDbF-vYkPIPl-i8oAg&iflsig=ABILxe8AAAAAarkNRpxFJOePbP6QpfwQCCcxgnPojuww&ved=0ahUKEwjgzu6h1Y6XAxVrLEQIHRc0D4QQ4dUDCDI&uact=5&oq=rust+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ih1ydXN0IHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllczIFEAAYgAQyBhAAGBYYHjIFEAAY7wUyBRAAGO8FSJcHUAxYDHABeACQAQCYAeEBoAHhAaoBAzItMbABALgBA8gBAPgBAZgCAqAC6AGoAgrCAh0QABiABBiKBRjUAxjlAhjnBhjqAhi0AhiKAxi3A5gDA-IDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFoCZGvo4LMRSSBwUxLjAuMaAHigKyBwMyLTG4B-QBwgcDMC4yyAcEgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.3137,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 778.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=rust+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnsWCY6eVJMAXQ10wp2NOfZE5muHsw%3A1790508854411&source=hp&ei=Nv-4auDbF-vYkPIPl-i8oAg&iflsig=ABILxe8AAAAAarkNRpxFJOePbP6QpfwQCCcxgnPojuww&ved=0ahUKEwjgzu6h1Y6XAxVrLEQIHRc0D4QQ4dUDCDI&uact=5&oq=rust+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ih1ydXN0IHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllczIFEAAYgAQyBhAAGBYYHjIFEAAY7wUyBRAAGO8FSJcHUAxYDHABeACQAQCYAeEBoAHhAaoBAzItMbABALgBA8gBAPgBAZgCAqAC6AGoAgrCAh0QABiABBiKBRjUAxjlAhjnBhjqAhi0AhiKAxi3A5gDA-IDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFoCZGvo4LMRSSBwUxLjAuMaAHigKyBwMyLTG4B-QBwgcDMC4yyAcEgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-eebeba67ce824e4b",
+   "source": "google",
+   "goal": "First search Google for laravel interview questions, then search Google for how to debug rabbitmq.",
+   "fingerprint": 73389,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 11592,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=rabbitmq'",
+    "checks": {
+     "url": "https://www.google.com/search?q=how+to+debug+rabbitmq&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=appeqnuw81tnhjat-jnliyf",
+     "bot_challenge": false,
+     "group0": [
+      "rabbitmq"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=how+to+debug+rabbitmq&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuw81TnhJat-JnLIyfv20nRr24NzA%3A1790508871663&source=hp&ei=R_-4arm4J5fdkPIPxKrn2QU&iflsig=ABILxe8AAAAAarkNV_VCNhQM9nqSwyULS84504INYqzS&ved=0ahUKEwj594uq1Y6XAxWXLkQIHUTVOVsQ4dUDCDI&uact=5&oq=how+to+debug+rabbitmq&gs_lp=Egdnd3Mtd2l6IhVob3cgdG8gZGVidWcgcmFiYml0bXEyBhAAGBYYHjIGEAAYFhgeMggQABiJBRiiBDIFEAAY7wVIqwdQD1gPcAF4AJABAJgB5QGgAeUBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALuAagCCsICHRAAGIAEGIoFGNQDGOUCGOcGGOoCGLQCGIoDGLcDwgIaEAAYgAQYigUYtwMY5QIY5wYY6gIYtAIYigPCAgoQABgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QUQsm2vmxF1y5IHBTEuMC4xoAePArIHAzItMbgH6QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz",
+    "final_title": "how to debug rabbitmq - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9024,
+     "target": "14",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug rabbitmq",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 545.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508871814"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.4974,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 553.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508871814"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8575,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Actual search results list for 'how to debug rabbitmq' — page shows only loading placeholder skeletons, no result links/snippets are visible yet",
+     "page_changed": null,
+     "latency_ms": 937.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+rabbitmq&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuw81TnhJat-JnLIyfv20nRr24NzA%3A1790508871663&source=hp&ei=R_-4arm4J5fdkPIPxKrn2QU&iflsig=ABILxe8AAAAAarkNV_VCNhQM9nqSwyULS84504INYqzS&ved=0ahUKEwj594uq1Y6XAxWXLkQIHUTVOVsQ4dUDCDI&uact=5&oq=how+to+debug+rabbitmq&gs_lp=Egdnd3Mtd2l6IhVob3cgdG8gZGVidWcgcmFiYml0bXEyBhAAGBYYHjIGEAAYFhgeMggQABiJBRiiBDIFEAAY7wVIqwdQD1gPcAF4AJABAJgB5QGgAeUBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALuAagCCsICHRAAGIAEGIoFGNQDGOUCGOcGGOoCGLQCGIoDGLcDwgIaEAAYgAQYigUYtwMY5QIY5wYY6gIYtAIYigPCAgoQABgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QUQsm2vmxF1y5IHBTEuMC4xoAePArIHAzItMbgH6QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "wait",
+     "target_label": "Wait for the page to update",
+     "kind": "wait",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+rabbitmq&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuw81TnhJat-JnLIyfv20nRr24NzA%3A1790508871663&source=hp&ei=R_-4arm4J5fdkPIPxKrn2QU&iflsig=ABILxe8AAAAAarkNV_VCNhQM9nqSwyULS84504INYqzS&ved=0ahUKEwj594uq1Y6XAxWXLkQIHUTVOVsQ4dUDCDI&uact=5&oq=how+to+debug+rabbitmq&gs_lp=Egdnd3Mtd2l6IhVob3cgdG8gZGVidWcgcmFiYml0bXEyBhAAGBYYHjIGEAAYFhgeMggQABiJBRiiBDIFEAAY7wVIqwdQD1gPcAF4AJABAJgB5QGgAeUBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALuAagCCsICHRAAGIAEGIoFGNQDGOUCGOcGGOoCGLQCGIoDGLcDwgIaEAAYgAQYigUYtwMY5QIY5wYY6gIYtAIYigPCAgoQABgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QUQsm2vmxF1y5IHBTEuMC4xoAePArIHAzItMbgH6QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.2453,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 624.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=how+to+debug+rabbitmq&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuw81TnhJat-JnLIyfv20nRr24NzA%3A1790508871663&source=hp&ei=R_-4arm4J5fdkPIPxKrn2QU&iflsig=ABILxe8AAAAAarkNV_VCNhQM9nqSwyULS84504INYqzS&ved=0ahUKEwj594uq1Y6XAxWXLkQIHUTVOVsQ4dUDCDI&uact=5&oq=how+to+debug+rabbitmq&gs_lp=Egdnd3Mtd2l6IhVob3cgdG8gZGVidWcgcmFiYml0bXEyBhAAGBYYHjIGEAAYFhgeMggQABiJBRiiBDIFEAAY7wVIqwdQD1gPcAF4AJABAJgB5QGgAeUBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALuAagCCsICHRAAGIAEGIoFGNQDGOUCGOcGGOoCGLQCGIoDGLcDwgIaEAAYgAQYigUYtwMY5QIY5wYY6gIYtAIYigPCAgoQABgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QUQsm2vmxF1y5IHBTEuMC4xoAePArIHAzItMbgH6QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-db44c1c9fd216f25",
+   "source": "google",
+   "goal": "Search Google for ruby open source alternatives and open the results.",
+   "fingerprint": 73389,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 6,
+   "total_ms": 16080,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=ruby+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=appeqnu9zc66qdx",
+     "bot_challenge": false,
+     "group0": [
+      "ruby"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=ruby+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnu9zc66qdXfBv--M-eVXzt_t4cnoA%3A1790508893356&ei=Xf-4asKyFZPHkPIPitmV4A4&biw=1120&bih=780&ved=2ahUKEwiC1bi01Y6XAxWTI0QIHYpsBewQ4dUDegQIBhAN&oq=ruby+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiHXJ1Ynkgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzSABQAFgAcAB4AZABAJgBAKABAKoBALABALgBDMgBAJgCAKACAJgDAOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYpIHAKAHALIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp",
+    "final_title": "ruby open source alternatives - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9125,
+     "target": "14",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ruby open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 544.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508890780"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.901,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 713.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508890780"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8961,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing visible search result listings",
+     "page_changed": null,
+     "latency_ms": 672.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ruby+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQntwJPU2Qa4b88bEaIZsWbtuYwwXdQ%3A1790508890460&source=hp&ei=Wv-4aoTxGvqhkPIPs8PTyA8&iflsig=ABILxe8AAAAAarkNai79gY9nVzHJZKGHBAxZymSScOr8&ved=0ahUKEwiEhoez1Y6XAxX6EEQIHbPhFPkQ4dUDCDI&uact=5&oq=ruby+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih1ydWJ5IG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVIzAhQDVgNcAF4AJABAJgB4gGgAeIBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALpAagCCsICHRAAGIAEGIoFGNQDGOUCGOcGGOoCGLQCGIoDGLcDmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXf-sY2W1ePPZIHBTEuMC4xoAf4BrIHAzItMbgH5QHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ruby+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQntwJPU2Qa4b88bEaIZsWbtuYwwXdQ%3A1790508890460&source=hp&ei=Wv-4aoTxGvqhkPIPs8PTyA8&iflsig=ABILxe8AAAAAarkNai79gY9nVzHJZKGHBAxZymSScOr8&ved=0ahUKEwiEhoez1Y6XAxX6EEQIHbPhFPkQ4dUDCDI&uact=5&oq=ruby+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih1ydWJ5IG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVIzAhQDVgNcAF4AJABAJgB4gGgAeIBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALpAagCCsICHRAAGIAEGIoFGNQDGOUCGOcGGOoCGLQCGIoDGLcDmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXf-sY2W1ePPZIHBTEuMC4xoAf4BrIHAzItMbgH5QHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.3135,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 623.4,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=ruby+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQntwJPU2Qa4b88bEaIZsWbtuYwwXdQ%3A1790508890460&source=hp&ei=Wv-4aoTxGvqhkPIPs8PTyA8&iflsig=ABILxe8AAAAAarkNai79gY9nVzHJZKGHBAxZymSScOr8&ved=0ahUKEwiEhoez1Y6XAxX6EEQIHbPhFPkQ4dUDCDI&uact=5&oq=ruby+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih1ydWJ5IG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVIzAhQDVgNcAF4AJABAJgB4gGgAeIBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALpAagCCsICHRAAGIAEGIoFGNQDGOUCGOcGGOoCGLQCGIoDGLcDmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXf-sY2W1ePPZIHBTEuMC4xoAf4BrIHAzItMbgH5QHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.9028,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 609.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ruby+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnu9zc66qdXfBv--M-eVXzt_t4cnoA%3A1790508893356&ei=Xf-4asKyFZPHkPIPitmV4A4&biw=1120&bih=780&ved=2ahUKEwiC1bi01Y6XAxWTI0QIHYpsBewQ4dUDegQIBhAN&oq=ruby+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiHXJ1Ynkgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzSABQAFgAcAB4AZABAJgBAKABAKoBALABALgBDMgBAJgCAKACAJgDAOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYpIHAKAHALIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b2c7898d99471e1d",
+   "source": "google",
+   "goal": "Search Google for retrieval augmented generation security vulnerabilities and open the results.",
+   "fingerprint": 73389,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 4,
+   "total_ms": 50470,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&g",
+     "bot_challenge": false,
+     "group0": [
+      "generation",
+      "retrieval"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=retrieval+augmented+generation+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvk_GN7T_yv6YfyHbmDBTfJqlHYGQ%3A1790508913754&source=hp&ei=cf-4avzdLI6O8L0PlaCUqA0&iflsig=ABILxe8AAAAAarkNgYOW6V86V3Ky9Hi4bWqrxpdq3nay&ved=0ahUKEwi82pS-1Y6XAxUOB7wBHRUQBdUQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IjdyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgUQIRigATIFECEYoAEyBRAhGKABSNoHUA5YDnABeACQAQCYAeEBoAHhAaoBAzItMbABALgBA8gBAPgBAZgCAqAC7AGoAgrCAh0QABiABBiKBRjUAxjlAhjnBhjqAhi0AhiKAxi3A8ICChAAGAMYjwEY6gKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBXMJepP-xtIXkgcFMS4wLjGgB7AEsgcDMi0xuAfoAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz",
+    "final_title": "retrieval augmented generation security vulnerabilities - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8908,
+     "target": "14",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 542.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508913910"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8859,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 598.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508913910"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8854,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results listing for the query",
+     "page_changed": null,
+     "latency_ms": 646.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvk_GN7T_yv6YfyHbmDBTfJqlHYGQ%3A1790508913754&source=hp&ei=cf-4avzdLI6O8L0PlaCUqA0&iflsig=ABILxe8AAAAAarkNgYOW6V86V3Ky9Hi4bWqrxpdq3nay&ved=0ahUKEwi82pS-1Y6XAxUOB7wBHRUQBdUQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IjdyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgUQIRigATIFECEYoAEyBRAhGKABSNoHUA5YDnABeACQAQCYAeEBoAHhAaoBAzItMbABALgBA8gBAPgBAZgCAqAC7AGoAgrCAh0QABiABBiKBRjUAxjlAhjnBhjqAhi0AhiKAxi3A8ICChAAGAMYjwEY6gKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBXMJepP-xtIXkgcFMS4wLjGgB7AEsgcDMi0xuAfoAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8911,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 1111.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvk_GN7T_yv6YfyHbmDBTfJqlHYGQ%3A1790508913754&source=hp&ei=cf-4avzdLI6O8L0PlaCUqA0&iflsig=ABILxe8AAAAAarkNgYOW6V86V3Ky9Hi4bWqrxpdq3nay&ved=0ahUKEwi82pS-1Y6XAxUOB7wBHRUQBdUQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IjdyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgUQIRigATIFECEYoAEyBRAhGKABSNoHUA5YDnABeACQAQCYAeEBoAHhAaoBAzItMbABALgBA8gBAPgBAZgCAqAC7AGoAgrCAh0QABiABBiKBRjUAxjlAhjnBhjqAhi0AhiKAxi3A8ICChAAGAMYjwEY6gKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBXMJepP-xtIXkgcFMS4wLjGgB7AEsgcDMi0xuAfoAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-258352d7a3e8e080",
+   "source": "google",
+   "goal": "First search Google for redis cheat sheet, then search Google for zig security vulnerabilities.",
+   "fingerprint": 73389,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 9,
+   "total_ms": 17458,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=zig+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf",
+     "bot_challenge": false,
+     "group0": [
+      "zig"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=zig+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnsgaWNESbW2iK2D2ifxbBs9Ol_ddQ%3A1790508977437&ei=sf-4aumlGry8kPIPzKPTmQQ&ved=2ahUKEwipwsTc1Y6XAxU8HkQIHczRNEMQ4dUDegQIBhAN&oq=zig+security+vulnerabilities&gs_lp=Egxnd3Mtd2l6LXNlcnAiHHppZyBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwVI-AhQDFgMcAF4AZABAJgB4QGgAeEBqgEDMi0xsAEAuAEMyAEA-AEBmAICoAL0AcICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADmAMA4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBiiAYBkAYJkgcFMS4wLjGgB_4FsgcDMi0xuAfxAcIHBzAuMS4wLjHIBwqACAE&sclient=gws-wiz-serp",
+    "final_title": "zig security vulnerabilities - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9056,
+     "target": "14",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 555.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508971583"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8811,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 628.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508971583"
+    },
+    {
+     "step": 3,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.3171,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 576.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=redis+cheat+sheet&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvmzK-2WQvgBcYmzWNPXEJB4m0ZOQ%3A1790508971436&source=hp&ei=q_-4ar6lGZXIkPIPmK304AQ&iflsig=ABILxe8AAAAAarkNu9mfxrGbcTP6ra1gU2ZRN-i_F5_D&ved=0ahUKEwj-ptXZ1Y6XAxUVJEQIHZgWHUwQ4dUDCDI&uact=5&oq=redis+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhFyZWRpcyBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkj1B1AOWA5wAXgAkAEAmAHQAaAB0AGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAtoBqAIKwgIdEAAYgAQYigUY1AMY5QIY5wYY6gIYtAIYigMYtwPCAhoQABiABBiKBRi3AxjlAhjnBhjqAhi0AhiKA8ICChAAGAMYjwEY6gKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBQeRTPWfd4cGkgcFMS4wLjGgB7EFsgcDMi0xuAfWAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.7717,
+     "target": "19",
+     "target_label": "Redis Cheat Sheet",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 588.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=redis+cheat+sheet&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvmzK-2WQvgBcYmzWNPXEJB4m0ZOQ%3A1790508971436&source=hp&ei=q_-4ar6lGZXIkPIPmK304AQ&iflsig=ABILxe8AAAAAarkNu9mfxrGbcTP6ra1gU2ZRN-i_F5_D&ved=0ahUKEwj-ptXZ1Y6XAxUVJEQIHZgWHUwQ4dUDCDI&uact=5&oq=redis+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhFyZWRpcyBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkj1B1AOWA5wAXgAkAEAmAHQAaAB0AGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAtoBqAIKwgIdEAAYgAQYigUY1AMY5QIY5wYY6gIYtAIYigMYtwPCAhoQABiABBiKBRi3AxjlAhjnBhjqAhi0AhiKA8ICChAAGAMYjwEY6gKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBQeRTPWfd4cGkgcFMS4wLjGgB7EFsgcDMi0xuAfWAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.7717,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 621.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=redis+cheat+sheet&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvmzK-2WQvgBcYmzWNPXEJB4m0ZOQ%3A1790508971436&source=hp&ei=q_-4ar6lGZXIkPIPmK304AQ&iflsig=ABILxe8AAAAAarkNu9mfxrGbcTP6ra1gU2ZRN-i_F5_D&ved=0ahUKEwj-ptXZ1Y6XAxUVJEQIHZgWHUwQ4dUDCDI&uact=5&oq=redis+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhFyZWRpcyBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkj1B1AOWA5wAXgAkAEAmAHQAaAB0AGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAtoBqAIKwgIdEAAYgAQYigUY1AMY5QIY5wYY6gIYtAIYigMYtwPCAhoQABiABBiKBRi3AxjlAhjnBhjqAhi0AhiKA8ICChAAGAMYjwEY6gKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBQeRTPWfd4cGkgcFMS4wLjGgB7EFsgcDMi0xuAfWAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.8559,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for zig security vulnerabilities",
+     "page_changed": null,
+     "latency_ms": 608.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=redis+cheat+sheet&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvyjzRY6GMowuPO9edDRJ9qDz7MFw%3A1790508974249&ei=rv-4atvhDsDGkPIPjcbw0Ak&biw=1120&bih=780&ved=2ahUKEwjb8IHb1Y6XAxVAI0QIHQ0jHJoQ4dUDegQIBhAN&oq=redis+cheat+sheet&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXJlZGlzIGNoZWF0IHNoZWV0SABQAFgAcAB4AZABAJgBAKABAKoBALABALgBDMgBAJgCAKACAJgDAOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYpIHAKAHALIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "zig security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=redis+cheat+sheet&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvyjzRY6GMowuPO9edDRJ9qDz7MFw%3A1790508974249&ei=rv-4atvhDsDGkPIPjcbw0Ak&biw=1120&bih=780&ved=2ahUKEwjb8IHb1Y6XAxVAI0QIHQ0jHJoQ4dUDegQIBhAN&oq=redis+cheat+sheet&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXJlZGlzIGNoZWF0IHNoZWV0SABQAFgAcAB4AZABAJgBAKABAKoBALABALgBDMgBAJgCAKACAJgDAOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYpIHAKAHALIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8031,
+     "target": "4",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 697.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=redis+cheat+sheet&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvyjzRY6GMowuPO9edDRJ9qDz7MFw%3A1790508974249&ei=rv-4atvhDsDGkPIPjcbw0Ak&biw=1120&bih=780&ved=2ahUKEwjb8IHb1Y6XAxVAI0QIHQ0jHJoQ4dUDegQIBhAN&oq=redis+cheat+sheet&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXJlZGlzIGNoZWF0IHNoZWV0SABQAFgAcAB4AZABAJgBAKABAKoBALABALgBDMgBAJgCAKACAJgDAOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYpIHAKAHALIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.9012,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 621.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=zig+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnsgaWNESbW2iK2D2ifxbBs9Ol_ddQ%3A1790508977437&ei=sf-4aumlGry8kPIPzKPTmQQ&ved=2ahUKEwipwsTc1Y6XAxU8HkQIHczRNEMQ4dUDegQIBhAN&oq=zig+security+vulnerabilities&gs_lp=Egxnd3Mtd2l6LXNlcnAiHHppZyBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwVI-AhQDFgMcAF4AZABAJgB4QGgAeEBqgEDMi0xsAEAuAEMyAEA-AEBmAICoAL0AcICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADmAMA4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBiiAYBkAYJkgcFMS4wLjGgB_4FsgcDMi0xuAfxAcIHBzAuMS4wLjHIBwqACAE&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-89a4a6bbc19967a5",
+   "source": "google",
+   "goal": "Search Google for how to debug tensorflow and open the results.",
+   "fingerprint": 73389,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 14737,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['tensorflow']]",
+    "checks": {
+     "url": "https://www.google.com/intl/zh-cn_all/search/howsearchworks/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/",
+    "final_title": "Google 搜索 - 什么是 Google 搜索及其运作方式"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.268,
+     "target": "24",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 548.4,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508996277"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.5657,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'how to debug tensorflow'",
+     "page_changed": null,
+     "latency_ms": 368.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search/howsearchworks/?fg=1"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search/howsearchworks/?fg=1"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9392,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results listing for 'how to debug tensorflow'; Search query 'how to debug tensorflow' entered/visible",
+     "page_changed": null,
+     "latency_ms": 399.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9329,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 415.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    }
+   ]
+  }
+ ]
+}

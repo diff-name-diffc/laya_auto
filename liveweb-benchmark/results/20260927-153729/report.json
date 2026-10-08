@@ -1,0 +1,1438 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 51874,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T15:42:49+0800",
+  "n_tasks": 12,
+  "success": 8,
+  "success_rate": 0.667,
+  "verified": 8,
+  "verified_rate": 0.667,
+  "found_but_not_stopped": 0,
+  "mean_steps": 6.2,
+  "mean_duration_ms": 15812,
+  "decision_latency_ms": {
+   "p50": 574.9,
+   "p95": 634.1
+  },
+  "step_outcomes": {
+   "executed": 48,
+   "stale": 5,
+   "refused-empty-enter": 1,
+   "done-rejected": 6,
+   "page changed since the decision (url or marker mismatch)": 3,
+   "done": 11
+  },
+  "low_confidence_steps": 7,
+  "by_source": {
+   "google": {
+    "n": 12,
+    "success": 8,
+    "success_rate": 0.667,
+    "verified": 8,
+    "verified_rate": 0.667,
+    "mean_steps": 6.2
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-ede91bc4d9dae188",
+   "source": "google",
+   "goal": "Search Google for kubernetes cheat sheet and open the results.",
+   "fingerprint": 51874,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14852,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dkubernetes%2bcheat%2bsheet%26sca_esv%3d5",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dkubernetes%2Bcheat%2Bsheet%26sca_esv%3D5e1010fa43cff023%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntK67Vt22kF6DmUmlXd_cfeMiIskw%253A1790494652787%26source%3Dhp%26ei%3DvMe4avjbLvC_kPIPqZbliA4%26iflsig%3DABILxe8AAAAAarjVzHauvsBFm0G09CeYfStZM2CX9DSQ%26ved%3D0ahUKEwj4qYCuoI6XAxXwH0QIHSlLGeEQ4dUDCDI%26uact%3D5%26oq%3Dkubernetes%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhZrdWJlcm5ldGVzIGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I6wdQIVghcAF4AJABAJgByAGgAcgBqgEDMi0xuAEDyAEA-AEBmAICoALRAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMH8QU2iMnlQme6KZIHBTEuMC4xoAfqBbIHAzItMbgHygHCBwUwLjEuMcgHBoAIAQ%26sclient%3Dgws-wiz%26sei%3Dv8e4av74KP3DkPIP64ueqAw&hl=en&q=EgQm0XtnGL-P49UGIjBaz9qe0shquRCwwMz4yFfwGyKzrXg8tluTv0ibEiEOUt_jveLxeko-jeSQy200AmIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=kubernetes+cheat+sheet&sca_esv=5e1010fa43cff023&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8979,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kubernetes cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 488.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8749,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 604.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494654470"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-2bb7fb0a11e16b7b",
+   "source": "google",
+   "goal": "First search Google for vector embeddings best practices, then search Google for kubernetes release notes.",
+   "fingerprint": 51874,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 14,
+   "total_ms": 26239,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=kubernetes+release+notes&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=appeqnthp_2qqij7wx9t",
+     "bot_challenge": false,
+     "group0": [
+      "kubernetes"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=kubernetes+release+notes&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntHp_2QqIj7WX9t142zVT-E3ir4VA%3A1790494729355&ei=Cci4aoWoFcnzkPIPt5fEiQw&biw=1120&bih=780&uact=5&oq=kubernetes+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiGGt1YmVybmV0ZXMgcmVsZWFzZSBub3RlczIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSNwHUAtYC3ABeACQAQCYAdIBoAHSAaoBAzItMbgBA8gBAPgBAZgCAqAC2AHCAggQABjvBRiwA8ICCxAAGIAEGKIEGLADmAMAiAYBkAYFkgcFMS4wLjGgB9EFsgcDMi0xuAfWAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz-serp",
+    "final_title": "kubernetes release notes - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8835,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vector embeddings best practices",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 493.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8832,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 494.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494721367"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8111,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vector embeddings best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 509.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494721367"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8752,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vector embeddings best practices",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 591.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494721367"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:30",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494721367"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8171,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for kubernetes release notes",
+     "page_changed": null,
+     "latency_ms": 627.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+best+practices&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntHt2eO6LcsTFQu4lUHAOodC6eiGA%3A1790494720036&source=hp&ei=AMi4apxy7MCQ8g-wvbGQAw&iflsig=ABILxe8AAAAAarjWEPseQ3X0vNrAR0c9W4DP_pI2b2RL&ved=0ahUKEwic8ojOoI6XAxVsIEQIHbBeDDIQ4dUDCDI&oq=vector+embeddings+best+practices&gs_lp=Egdnd3Mtd2l6IiB2ZWN0b3IgZW1iZWRkaW5ncyBiZXN0IHByYWN0aWNlczIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSI8yUA5YDnACeACQAQCYAdgBoAHYAaoBAzItMbgBDMgBAPgBAZgCA6AC3wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFzj-CTSC92iqSBwUyLjAuMaAH2gSyBwMyLTG4B9oBwgcFMS4xLjHIBwWACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kubernetes release notes",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+best+practices&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntHt2eO6LcsTFQu4lUHAOodC6eiGA%3A1790494720036&source=hp&ei=AMi4apxy7MCQ8g-wvbGQAw&iflsig=ABILxe8AAAAAarjWEPseQ3X0vNrAR0c9W4DP_pI2b2RL&ved=0ahUKEwic8ojOoI6XAxVsIEQIHbBeDDIQ4dUDCDI&oq=vector+embeddings+best+practices&gs_lp=Egdnd3Mtd2l6IiB2ZWN0b3IgZW1iZWRkaW5ncyBiZXN0IHByYWN0aWNlczIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSI8yUA5YDnACeACQAQCYAdgBoAHYAaoBAzItMbgBDMgBAPgBAZgCA6AC3wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFzj-CTSC92iqSBwUyLjAuMaAH2gSyBwMyLTG4B9oBwgcFMS4xLjHIBwWACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8506,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 623.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+best+practices&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntHt2eO6LcsTFQu4lUHAOodC6eiGA%3A1790494720036&source=hp&ei=AMi4apxy7MCQ8g-wvbGQAw&iflsig=ABILxe8AAAAAarjWEPseQ3X0vNrAR0c9W4DP_pI2b2RL&ved=0ahUKEwic8ojOoI6XAxVsIEQIHbBeDDIQ4dUDCDI&oq=vector+embeddings+best+practices&gs_lp=Egdnd3Mtd2l6IiB2ZWN0b3IgZW1iZWRkaW5ncyBiZXN0IHByYWN0aWNlczIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSI8yUA5YDnACeACQAQCYAdgBoAHYAaoBAzItMbgBDMgBAPgBAZgCA6AC3wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFzj-CTSC92iqSBwUyLjAuMaAH2gSyBwMyLTG4B9oBwgcFMS4xLjHIBwWACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8506,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 591.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+best+practices&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntHt2eO6LcsTFQu4lUHAOodC6eiGA%3A1790494720036&source=hp&ei=AMi4apxy7MCQ8g-wvbGQAw&iflsig=ABILxe8AAAAAarjWEPseQ3X0vNrAR0c9W4DP_pI2b2RL&ved=0ahUKEwic8ojOoI6XAxVsIEQIHbBeDDIQ4dUDCDI&oq=vector+embeddings+best+practices&gs_lp=Egdnd3Mtd2l6IiB2ZWN0b3IgZW1iZWRkaW5ncyBiZXN0IHByYWN0aWNlczIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSI8yUA5YDnACeACQAQCYAdgBoAHYAaoBAzItMbgBDMgBAPgBAZgCA6AC3wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFzj-CTSC92iqSBwUyLjAuMaAH2gSyBwMyLTG4B9oBwgcFMS4xLjHIBwWACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8506,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 617.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+best+practices&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntHt2eO6LcsTFQu4lUHAOodC6eiGA%3A1790494720036&source=hp&ei=AMi4apxy7MCQ8g-wvbGQAw&iflsig=ABILxe8AAAAAarjWEPseQ3X0vNrAR0c9W4DP_pI2b2RL&ved=0ahUKEwic8ojOoI6XAxVsIEQIHbBeDDIQ4dUDCDI&oq=vector+embeddings+best+practices&gs_lp=Egdnd3Mtd2l6IiB2ZWN0b3IgZW1iZWRkaW5ncyBiZXN0IHByYWN0aWNlczIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSI8yUA5YDnACeACQAQCYAdgBoAHYAaoBAzItMbgBDMgBAPgBAZgCA6AC3wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFzj-CTSC92iqSBwUyLjAuMaAH2gSyBwMyLTG4B9oBwgcFMS4xLjHIBwWACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kubernetes release notes",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+best+practices&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntHt2eO6LcsTFQu4lUHAOodC6eiGA%3A1790494720036&source=hp&ei=AMi4apxy7MCQ8g-wvbGQAw&iflsig=ABILxe8AAAAAarjWEPseQ3X0vNrAR0c9W4DP_pI2b2RL&ved=0ahUKEwic8ojOoI6XAxVsIEQIHbBeDDIQ4dUDCDI&oq=vector+embeddings+best+practices&gs_lp=Egdnd3Mtd2l6IiB2ZWN0b3IgZW1iZWRkaW5ncyBiZXN0IHByYWN0aWNlczIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSI8yUA5YDnACeACQAQCYAdgBoAHYAaoBAzItMbgBDMgBAPgBAZgCA6AC3wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFzj-CTSC92iqSBwUyLjAuMaAH2gSyBwMyLTG4B9oBwgcFMS4xLjHIBwWACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.6133,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 612.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+best+practices&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntHt2eO6LcsTFQu4lUHAOodC6eiGA%3A1790494720036&source=hp&ei=AMi4apxy7MCQ8g-wvbGQAw&iflsig=ABILxe8AAAAAarjWEPseQ3X0vNrAR0c9W4DP_pI2b2RL&ved=0ahUKEwic8ojOoI6XAxVsIEQIHbBeDDIQ4dUDCDI&oq=vector+embeddings+best+practices&gs_lp=Egdnd3Mtd2l6IiB2ZWN0b3IgZW1iZWRkaW5ncyBiZXN0IHByYWN0aWNlczIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSI8yUA5YDnACeACQAQCYAdgBoAHYAaoBAzItMbgBDMgBAPgBAZgCA6AC3wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFzj-CTSC92iqSBwUyLjAuMaAH2gSyBwMyLTG4B9oBwgcFMS4xLjHIBwWACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.6359,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 608.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kubernetes+release+notes&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntHp_2QqIj7WX9t142zVT-E3ir4VA%3A1790494729355&ei=Cci4aoWoFcnzkPIPt5fEiQw&biw=1120&bih=780&uact=5&oq=kubernetes+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiGGt1YmVybmV0ZXMgcmVsZWFzZSBub3RlczIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSNwHUAtYC3ABeACQAQCYAdIBoAHSAaoBAzItMbgBA8gBAPgBAZgCAqAC2AHCAggQABjvBRiwA8ICCxAAGIAEGKIEGLADmAMAiAYBkAYFkgcFMS4wLjGgB9EFsgcDMi0xuAfWAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 11,
+     "operation": "DONE",
+     "confidence": 0.7058,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 589.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kubernetes+release+notes&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntHp_2QqIj7WX9t142zVT-E3ir4VA%3A1790494729355&ei=Cci4aoWoFcnzkPIPt5fEiQw&biw=1120&bih=780&uact=5&oq=kubernetes+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiGGt1YmVybmV0ZXMgcmVsZWFzZSBub3RlczIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSNwHUAtYC3ABeACQAQCYAdIBoAHSAaoBAzItMbgBA8gBAPgBAZgCAqAC2AHCAggQABjvBRiwA8ICCxAAGIAEGKIEGLADmAMAiAYBkAYFkgcFMS4wLjGgB9EFsgcDMi0xuAfWAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c23e0485d08710dd",
+   "source": "google",
+   "goal": "First search Google for llm fine-tuning tutorial, then search Google for retrieval augmented generation best practices.",
+   "fingerprint": 51874,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 10,
+   "total_ms": 22200,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=generation'",
+    "checks": {
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+best+practices&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf",
+     "bot_challenge": false,
+     "group0": [
+      "generation",
+      "retrieval"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=retrieval+augmented+generation+best+practices&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnvDEUF7zMlty90D3Nh_3OdeplLZFA%3A1790494756337&ei=JMi4auOXFI-sur8Pw8CL-Q8&biw=1120&bih=780&oq=retrieval+augmented+generation+best+practices&gs_lp=Egxnd3Mtd2l6LXNlcnAiLXJldHJpZXZhbCBhdWdtZW50ZWQgZ2VuZXJhdGlvbiBiZXN0IHByYWN0aWNlcyoGCAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyCBAAGIkFGKIESIkIUA5YDnABeACQAQCYAesBoAHrAaoBAzItMbgBAcgBAPgBAZgCAqAC8AHCAgkQABgHGB4YsAPCAgcQABgeGLADwgIJEAAYCBgeGLADwgIIEAAY7wUYsAPCAgsQABiABBiiBBiwA5gDAIgGAZAGB5IHBTEuMC4xoAeqBbIHAzItMbgH7QHCBwMwLjLIBwOACAE&sclient=gws-wiz-serp",
+    "final_title": "retrieval augmented generation best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8638,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llm fine-tuning tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 485.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494753838"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8759,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 582.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494753838"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.317,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google results page for 'retrieval augmented generation best practices' (page currently shows results for 'llm fine-tuning tutorial')",
+     "page_changed": null,
+     "latency_ms": 570.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=llm+fine-tuning+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnszpQa3j4gH126GUjzioJS-FjlAeQ%3A1790494753677&source=hp&ei=Ici4aoT-J-LPkPIPjPjXkQw&iflsig=ABILxe8AAAAAarjWMTj5WZEoDp4BmKL2OmsxI4CjuLBV&ved=0ahUKEwjEko7eoI6XAxXiJ0QIHQz8NcIQ4dUDCDI&uact=5&oq=llm+fine-tuning+tutorial&gs_lp=Egdnd3Mtd2l6IhhsbG0gZmluZS10dW5pbmcgdHV0b3JpYWwyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMggQABiABBiiBEi-B1APWA9wAXgAkAEAmAHmAaAB5gGqAQMyLTG4AQPIAQD4AQGYAgKgAu0BqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QW9ZwtsDMwJ6JIHBTEuMC4xoAfTBrIHAzItMbgH6QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation best practices",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=llm+fine-tuning+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnszpQa3j4gH126GUjzioJS-FjlAeQ%3A1790494753677&source=hp&ei=Ici4aoT-J-LPkPIPjPjXkQw&iflsig=ABILxe8AAAAAarjWMTj5WZEoDp4BmKL2OmsxI4CjuLBV&ved=0ahUKEwjEko7eoI6XAxXiJ0QIHQz8NcIQ4dUDCDI&uact=5&oq=llm+fine-tuning+tutorial&gs_lp=Egdnd3Mtd2l6IhhsbG0gZmluZS10dW5pbmcgdHV0b3JpYWwyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMggQABiABBiiBEi-B1APWA9wAXgAkAEAmAHmAaAB5gGqAQMyLTG4AQPIAQD4AQGYAgKgAu0BqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QW9ZwtsDMwJ6JIHBTEuMC4xoAfTBrIHAzItMbgH6QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.7601,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 603.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=llm+fine-tuning+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnszpQa3j4gH126GUjzioJS-FjlAeQ%3A1790494753677&source=hp&ei=Ici4aoT-J-LPkPIPjPjXkQw&iflsig=ABILxe8AAAAAarjWMTj5WZEoDp4BmKL2OmsxI4CjuLBV&ved=0ahUKEwjEko7eoI6XAxXiJ0QIHQz8NcIQ4dUDCDI&uact=5&oq=llm+fine-tuning+tutorial&gs_lp=Egdnd3Mtd2l6IhhsbG0gZmluZS10dW5pbmcgdHV0b3JpYWwyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMggQABiABBiiBEi-B1APWA9wAXgAkAEAmAHmAaAB5gGqAQMyLTG4AQPIAQD4AQGYAgKgAu0BqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QW9ZwtsDMwJ6JIHBTEuMC4xoAfTBrIHAzItMbgH6QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.7601,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 569.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=llm+fine-tuning+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnszpQa3j4gH126GUjzioJS-FjlAeQ%3A1790494753677&source=hp&ei=Ici4aoT-J-LPkPIPjPjXkQw&iflsig=ABILxe8AAAAAarjWMTj5WZEoDp4BmKL2OmsxI4CjuLBV&ved=0ahUKEwjEko7eoI6XAxXiJ0QIHQz8NcIQ4dUDCDI&uact=5&oq=llm+fine-tuning+tutorial&gs_lp=Egdnd3Mtd2l6IhhsbG0gZmluZS10dW5pbmcgdHV0b3JpYWwyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMggQABiABBiiBEi-B1APWA9wAXgAkAEAmAHmAaAB5gGqAQMyLTG4AQPIAQD4AQGYAgKgAu0BqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QW9ZwtsDMwJ6JIHBTEuMC4xoAfTBrIHAzItMbgH6QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.7601,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 580.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=llm+fine-tuning+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnszpQa3j4gH126GUjzioJS-FjlAeQ%3A1790494753677&source=hp&ei=Ici4aoT-J-LPkPIPjPjXkQw&iflsig=ABILxe8AAAAAarjWMTj5WZEoDp4BmKL2OmsxI4CjuLBV&ved=0ahUKEwjEko7eoI6XAxXiJ0QIHQz8NcIQ4dUDCDI&uact=5&oq=llm+fine-tuning+tutorial&gs_lp=Egdnd3Mtd2l6IhhsbG0gZmluZS10dW5pbmcgdHV0b3JpYWwyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMggQABiABBiiBEi-B1APWA9wAXgAkAEAmAHmAaAB5gGqAQMyLTG4AQPIAQD4AQGYAgKgAu0BqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QW9ZwtsDMwJ6JIHBTEuMC4xoAfTBrIHAzItMbgH6QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=llm+fine-tuning+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnszpQa3j4gH126GUjzioJS-FjlAeQ%3A1790494753677&source=hp&ei=Ici4aoT-J-LPkPIPjPjXkQw&iflsig=ABILxe8AAAAAarjWMTj5WZEoDp4BmKL2OmsxI4CjuLBV&ved=0ahUKEwjEko7eoI6XAxXiJ0QIHQz8NcIQ4dUDCDI&uact=5&oq=llm+fine-tuning+tutorial&gs_lp=Egdnd3Mtd2l6IhhsbG0gZmluZS10dW5pbmcgdHV0b3JpYWwyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMggQABiABBiiBEi-B1APWA9wAXgAkAEAmAHmAaAB5gGqAQMyLTG4AQPIAQD4AQGYAgKgAu0BqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QW9ZwtsDMwJ6JIHBTEuMC4xoAfTBrIHAzItMbgH6QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8279,
+     "target": "6",
+     "target_label": "retrieval augmented generation best practices",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 603.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=llm+fine-tuning+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnszpQa3j4gH126GUjzioJS-FjlAeQ%3A1790494753677&source=hp&ei=Ici4aoT-J-LPkPIPjPjXkQw&iflsig=ABILxe8AAAAAarjWMTj5WZEoDp4BmKL2OmsxI4CjuLBV&ved=0ahUKEwjEko7eoI6XAxXiJ0QIHQz8NcIQ4dUDCDI&uact=5&oq=llm+fine-tuning+tutorial&gs_lp=Egdnd3Mtd2l6IhhsbG0gZmluZS10dW5pbmcgdHV0b3JpYWwyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMggQABiABBiiBEi-B1APWA9wAXgAkAEAmAHmAaAB5gGqAQMyLTG4AQPIAQD4AQGYAgKgAu0BqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QW9ZwtsDMwJ6JIHBTEuMC4xoAfTBrIHAzItMbgH6QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.9006,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 615.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+best+practices&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnvDEUF7zMlty90D3Nh_3OdeplLZFA%3A1790494756337&ei=JMi4auOXFI-sur8Pw8CL-Q8&biw=1120&bih=780&oq=retrieval+augmented+generation+best+practices&gs_lp=Egxnd3Mtd2l6LXNlcnAiLXJldHJpZXZhbCBhdWdtZW50ZWQgZ2VuZXJhdGlvbiBiZXN0IHByYWN0aWNlcyoGCAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyCBAAGIkFGKIESIkIUA5YDnABeACQAQCYAesBoAHrAaoBAzItMbgBAcgBAPgBAZgCAqAC8AHCAgkQABgHGB4YsAPCAgcQABgeGLADwgIJEAAYCBgeGLADwgIIEAAY7wUYsAPCAgsQABiABBiiBBiwA5gDAIgGAZAGB5IHBTEuMC4xoAeqBbIHAzItMbgH7QHCBwMwLjLIBwOACAE&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-19d3c85811dc58bf",
+   "source": "google",
+   "goal": "Search Google for go documentation and open the official site.",
+   "fingerprint": 51874,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 27665,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['golang']]",
+    "checks": {
+     "url": "https://about.google/intl/zh-cn_all/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://about.google/intl/zh-CN_ALL/",
+    "final_title": "关于 Google：我们的产品、技术以及公司信息 - About Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.4029,
+     "target": "1",
+     "target_label": "About",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 482.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494783266"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.9099,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing official Go documentation site",
+     "page_changed": null,
+     "latency_ms": 343.7,
+     "low_confidence": false,
+     "url": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google logo",
+     "kind": "click",
+     "text": null,
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9424,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Official Go documentation site (go.dev) is not open — page shows Google's About page instead; No evidence of search for 'go documentation' or its resu",
+     "page_changed": null,
+     "latency_ms": 450.4,
+     "low_confidence": false,
+     "url": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google logo",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9143,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 378.9,
+     "low_confidence": false,
+     "url": "https://about.google/intl/zh-CN_ALL/"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b58dd11bc0fd199a",
+   "source": "google",
+   "goal": "Search Google for llama.cpp interview questions and open the results.",
+   "fingerprint": 51874,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4558,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=llama.cpp+interview+questions&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=appeqntip2vjmmt",
+     "bot_challenge": false,
+     "group0": [
+      "llama.cpp"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=llama.cpp+interview+questions&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntiP2VJMmtFenplw1Tk7c2h3VFOWQ%3A1790494817972&source=hp&ei=Yci4at-ZOpqqur8Pp6PT8Ak&iflsig=ABILxe8AAAAAarjWcVTFT7On_AzM2DR2MBI4YAc-MAOL&ved=0ahUKEwifzuL8oI6XAxUale4BHafRFJ4Q4dUDCDI&uact=5&oq=llama.cpp+interview+questions&gs_lp=Egdnd3Mtd2l6Ih1sbGFtYS5jcHAgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKsCSIYHUBtYG3ABeACQAQCYAeMBoAHjAaoBAzItMbgBA8gBAPgBAZgCAqAC6wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFZ05BaKU_avGSBwUxLjAuMaAH6QSyBwMyLTG4B-YBwgcFMS4wLjHIBwSACAE&sclient=gws-wiz",
+    "final_title": "llama.cpp interview questions - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8955,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llama.cpp interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 502.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494818146"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9028,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 508.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494818146"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8786,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 579.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=llama.cpp+interview+questions&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntiP2VJMmtFenplw1Tk7c2h3VFOWQ%3A1790494817972&source=hp&ei=Yci4at-ZOpqqur8Pp6PT8Ak&iflsig=ABILxe8AAAAAarjWcVTFT7On_AzM2DR2MBI4YAc-MAOL&ved=0ahUKEwifzuL8oI6XAxUale4BHafRFJ4Q4dUDCDI&uact=5&oq=llama.cpp+interview+questions&gs_lp=Egdnd3Mtd2l6Ih1sbGFtYS5jcHAgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKsCSIYHUBtYG3ABeACQAQCYAeMBoAHjAaoBAzItMbgBA8gBAPgBAZgCAqAC6wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFZ05BaKU_avGSBwUxLjAuMaAH6QSyBwMyLTG4B-YBwgcFMS4wLjHIBwSACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-328c819befa484e2",
+   "source": "google",
+   "goal": "First search Google for laravel release notes, then search Google for how to debug vector embeddings.",
+   "fingerprint": 51874,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 4983,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=embeddings'",
+    "checks": {
+     "url": "https://www.google.com/search?q=how+to+debug+vector+embeddings&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=appeqntgiz5b1w",
+     "bot_challenge": false,
+     "group0": [
+      "embeddings",
+      "vector"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=how+to+debug+vector+embeddings&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntGiZ5b1wMUqWd5iI3ryTkQcYkPkQ%3A1790494829753&source=hp&ei=bci4arG7LPC_kPIPqZbliA4&iflsig=ABILxe8AAAAAarjWfca89dSmevguXUzUFippyYIwjIuW&ved=0ahUKEwjxpbGCoY6XAxXwH0QIHSlLGeEQ4dUDCDI&uact=5&oq=how+to+debug+vector+embeddings&gs_lp=Egdnd3Mtd2l6Ih5ob3cgdG8gZGVidWcgdmVjdG9yIGVtYmVkZGluZ3MyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSK0HUAxYDHABeACQAQCYAdwBoAHcAaoBAzItMbgBA8gBAPgBAZgCAqAC4AGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDAvEFrtT7CJGZUReSBwUxLjAuMaAH2AiyBwMyLTG4B94BwgcDMS4xyAcCgAgB&sclient=gws-wiz",
+    "final_title": "how to debug vector embeddings - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7324,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug vector embeddings",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 503.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494830060"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9153,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 564.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494830060"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8717,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 574.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+vector+embeddings&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntGiZ5b1wMUqWd5iI3ryTkQcYkPkQ%3A1790494829753&source=hp&ei=bci4arG7LPC_kPIPqZbliA4&iflsig=ABILxe8AAAAAarjWfca89dSmevguXUzUFippyYIwjIuW&ved=0ahUKEwjxpbGCoY6XAxXwH0QIHSlLGeEQ4dUDCDI&uact=5&oq=how+to+debug+vector+embeddings&gs_lp=Egdnd3Mtd2l6Ih5ob3cgdG8gZGVidWcgdmVjdG9yIGVtYmVkZGluZ3MyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSK0HUAxYDHABeACQAQCYAdwBoAHcAaoBAzItMbgBA8gBAPgBAZgCAqAC4AGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDAvEFrtT7CJGZUReSBwUxLjAuMaAH2AiyBwMyLTG4B94BwgcDMS4xyAcCgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8ff1cb4610808eb7",
+   "source": "google",
+   "goal": "Search Google for elixir interview questions and open the results.",
+   "fingerprint": 51874,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 3759,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=elixir+interview+questions&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=appeqnswzpytlb8szv",
+     "bot_challenge": false,
+     "group0": [
+      "elixir"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=elixir+interview+questions&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnswzPYtlb8SZVuNBJqR_40ZUp4cTw%3A1790494841968&source=hp&ei=eci4aq30ObPfkPIPyfDJwQc&iflsig=ABILxe8AAAAAarjWiRKBeOXVfZc5n7ySUr1-rXk2_6NQ&ved=0ahUKEwjtlJuIoY6XAxWzL0QIHUl4MngQ4dUDCDI&uact=5&oq=elixir+interview+questions&gs_lp=Egdnd3Mtd2l6IhplbGl4aXIgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wVIkgdQD1gPcAF4AJABAJgB3AGgAdwBqgEDMi0xuAEDyAEA-AEBmAICoALhAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMC8QVQzilrO2jaDZIHBTEuMC4xoAehA7IHAzItMbgH3gHCBwMxLjHIBwOACAE&sclient=gws-wiz",
+    "final_title": "elixir interview questions - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8988,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elixir interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 489.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494843014"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 537.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494843014"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8485,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 581.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=elixir+interview+questions&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnswzPYtlb8SZVuNBJqR_40ZUp4cTw%3A1790494841968&source=hp&ei=eci4aq30ObPfkPIPyfDJwQc&iflsig=ABILxe8AAAAAarjWiRKBeOXVfZc5n7ySUr1-rXk2_6NQ&ved=0ahUKEwjtlJuIoY6XAxWzL0QIHUl4MngQ4dUDCDI&uact=5&oq=elixir+interview+questions&gs_lp=Egdnd3Mtd2l6IhplbGl4aXIgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wVIkgdQD1gPcAF4AJABAJgB3AGgAdwBqgEDMi0xuAEDyAEA-AEBmAICoALhAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMC8QVQzilrO2jaDZIHBTEuMC4xoAehA7IHAzItMbgH3gHCBwMxLjHIBwOACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-93ad175dc724614f",
+   "source": "google",
+   "goal": "First search Google for kafka tutorial, then search Google for refactoring security vulnerabilities.",
+   "fingerprint": 51874,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 13,
+   "total_ms": 22079,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=refactoring+security+vulnerabilities+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf",
+     "bot_challenge": false,
+     "group0": [
+      "refactoring"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=refactoring+security+vulnerabilities+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnudrgQRpVWMrEDj3HoM4fMD5EHK9w%3A1790494856316&ei=iMi4asr3EsrHkPIPhfu0AQ&biw=1120&bih=780&oq=refactoring+security+vulnerabilities&gs_lp=Egxnd3Mtd2l6LXNlcnAiJHJlZmFjdG9yaW5nIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllcyoFCAAYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABSNlcUNRPWNRPcAV4AZABAJgBpAOgAaQDqgEDNC0xuAEByAEA-AEBmAIGoAK0A8ICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADmAMAiAYBkAYMkgcFNS40LTGgB_QEsgcDNC0xuAenA8IHAzEuNcgHCoAIAQ&sclient=gws-wiz-serp",
+    "final_title": "refactoring security vulnerabilities tutorial - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9029,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kafka tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 489.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494853868"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8479,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 575.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494853868"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.6061,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 574.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kafka+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnumvZ8Zrwur0OZkJ-NTwYQPdhxOCw%3A1790494853702&source=hp&ei=hci4asfEKdmwkPIP64Sa0QY&iflsig=ABILxe8AAAAAarjWlQXx6fYKNZQ2tUriK6xPTM8WQxgd&ved=0ahUKEwiHm-eNoY6XAxVZGEQIHWuCJmoQ4dUDCDI&uact=5&oq=kafka+tutorial&gs_lp=Egdnd3Mtd2l6Ig5rYWZrYSB0dXRvcmlhbDILEAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMgsQABiABBiKBRiRAjIFEAAYgAQyCxAAGIAEGIoFGJECMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgARIuwdQDVgNcAF4AJABAJgB1AGgAdQBqgEDMi0xuAEDyAEA-AEBmAICoALZAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QWHfUmTTmszz5IHBTEuMC4xoAeXBbIHAzItMbgH1gHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.2664,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 583.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=kafka+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnumvZ8Zrwur0OZkJ-NTwYQPdhxOCw%3A1790494853702&source=hp&ei=hci4asfEKdmwkPIP64Sa0QY&iflsig=ABILxe8AAAAAarjWlQXx6fYKNZQ2tUriK6xPTM8WQxgd&ved=0ahUKEwiHm-eNoY6XAxVZGEQIHWuCJmoQ4dUDCDI&uact=5&oq=kafka+tutorial&gs_lp=Egdnd3Mtd2l6Ig5rYWZrYSB0dXRvcmlhbDILEAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMgsQABiABBiKBRiRAjIFEAAYgAQyCxAAGIAEGIoFGJECMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgARIuwdQDVgNcAF4AJABAJgB1AGgAdQBqgEDMi0xuAEDyAEA-AEBmAICoALZAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QWHfUmTTmszz5IHBTEuMC4xoAeXBbIHAzItMbgH1gHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2485,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 596.4,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=kafka+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnumvZ8Zrwur0OZkJ-NTwYQPdhxOCw%3A1790494853702&source=hp&ei=hci4asfEKdmwkPIP64Sa0QY&iflsig=ABILxe8AAAAAarjWlQXx6fYKNZQ2tUriK6xPTM8WQxgd&ved=0ahUKEwiHm-eNoY6XAxVZGEQIHWuCJmoQ4dUDCDI&uact=5&oq=kafka+tutorial&gs_lp=Egdnd3Mtd2l6Ig5rYWZrYSB0dXRvcmlhbDILEAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMgsQABiABBiKBRiRAjIFEAAYgAQyCxAAGIAEGIoFGJECMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgARIuwdQDVgNcAF4AJABAJgB1AGgAdQBqgEDMi0xuAEDyAEA-AEBmAICoALZAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QWHfUmTTmszz5IHBTEuMC4xoAeXBbIHAzItMbgH1gHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.783,
+     "target": "2",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 651.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kafka+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnumvZ8Zrwur0OZkJ-NTwYQPdhxOCw%3A1790494853702&source=hp&ei=hci4asfEKdmwkPIP64Sa0QY&iflsig=ABILxe8AAAAAarjWlQXx6fYKNZQ2tUriK6xPTM8WQxgd&ved=0ahUKEwiHm-eNoY6XAxVZGEQIHWuCJmoQ4dUDCDI&uact=5&oq=kafka+tutorial&gs_lp=Egdnd3Mtd2l6Ig5rYWZrYSB0dXRvcmlhbDILEAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMgsQABiABBiKBRiRAjIFEAAYgAQyCxAAGIAEGIoFGJECMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgARIuwdQDVgNcAF4AJABAJgB1AGgAdQBqgEDMi0xuAEDyAEA-AEBmAICoALZAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QWHfUmTTmszz5IHBTEuMC4xoAeXBbIHAzItMbgH1gHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.7603,
+     "target": "3",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 591.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kafka+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnumvZ8Zrwur0OZkJ-NTwYQPdhxOCw%3A1790494853702&source=hp&ei=hci4asfEKdmwkPIP64Sa0QY&iflsig=ABILxe8AAAAAarjWlQXx6fYKNZQ2tUriK6xPTM8WQxgd&ved=0ahUKEwiHm-eNoY6XAxVZGEQIHWuCJmoQ4dUDCDI&uact=5&oq=kafka+tutorial&gs_lp=Egdnd3Mtd2l6Ig5rYWZrYSB0dXRvcmlhbDILEAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMgsQABiABBiKBRiRAjIFEAAYgAQyCxAAGIAEGIoFGJECMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgARIuwdQDVgNcAF4AJABAJgB1AGgAdQBqgEDMi0xuAEDyAEA-AEBmAICoALZAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QWHfUmTTmszz5IHBTEuMC4xoAeXBbIHAzItMbgH1gHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.2147,
+     "target": "3",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 600.0,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=kafka+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnumvZ8Zrwur0OZkJ-NTwYQPdhxOCw%3A1790494853702&source=hp&ei=hci4asfEKdmwkPIP64Sa0QY&iflsig=ABILxe8AAAAAarjWlQXx6fYKNZQ2tUriK6xPTM8WQxgd&ved=0ahUKEwiHm-eNoY6XAxVZGEQIHWuCJmoQ4dUDCDI&uact=5&oq=kafka+tutorial&gs_lp=Egdnd3Mtd2l6Ig5rYWZrYSB0dXRvcmlhbDILEAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMgsQABiABBiKBRiRAjIFEAAYgAQyCxAAGIAEGIoFGJECMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgARIuwdQDVgNcAF4AJABAJgB1AGgAdQBqgEDMi0xuAEDyAEA-AEBmAICoALZAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QWHfUmTTmszz5IHBTEuMC4xoAeXBbIHAzItMbgH1gHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.2147,
+     "target": "3",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 612.7,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=kafka+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnumvZ8Zrwur0OZkJ-NTwYQPdhxOCw%3A1790494853702&source=hp&ei=hci4asfEKdmwkPIP64Sa0QY&iflsig=ABILxe8AAAAAarjWlQXx6fYKNZQ2tUriK6xPTM8WQxgd&ved=0ahUKEwiHm-eNoY6XAxVZGEQIHWuCJmoQ4dUDCDI&uact=5&oq=kafka+tutorial&gs_lp=Egdnd3Mtd2l6Ig5rYWZrYSB0dXRvcmlhbDILEAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMgsQABiABBiKBRiRAjIFEAAYgAQyCxAAGIAEGIoFGJECMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgARIuwdQDVgNcAF4AJABAJgB1AGgAdQBqgEDMi0xuAEDyAEA-AEBmAICoALZAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QWHfUmTTmszz5IHBTEuMC4xoAeXBbIHAzItMbgH1gHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "refactoring security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kafka+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnumvZ8Zrwur0OZkJ-NTwYQPdhxOCw%3A1790494853702&source=hp&ei=hci4asfEKdmwkPIP64Sa0QY&iflsig=ABILxe8AAAAAarjWlQXx6fYKNZQ2tUriK6xPTM8WQxgd&ved=0ahUKEwiHm-eNoY6XAxVZGEQIHWuCJmoQ4dUDCDI&uact=5&oq=kafka+tutorial&gs_lp=Egdnd3Mtd2l6Ig5rYWZrYSB0dXRvcmlhbDILEAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMgsQABiABBiKBRiRAjIFEAAYgAQyCxAAGIAEGIoFGJECMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgARIuwdQDVgNcAF4AJABAJgB1AGgAdQBqgEDMi0xuAEDyAEA-AEBmAICoALZAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QWHfUmTTmszz5IHBTEuMC4xoAeXBbIHAzItMbgH1gHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.2322,
+     "target": "3",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 634.1,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=kafka+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnumvZ8Zrwur0OZkJ-NTwYQPdhxOCw%3A1790494853702&source=hp&ei=hci4asfEKdmwkPIP64Sa0QY&iflsig=ABILxe8AAAAAarjWlQXx6fYKNZQ2tUriK6xPTM8WQxgd&ved=0ahUKEwiHm-eNoY6XAxVZGEQIHWuCJmoQ4dUDCDI&uact=5&oq=kafka+tutorial&gs_lp=Egdnd3Mtd2l6Ig5rYWZrYSB0dXRvcmlhbDILEAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMgsQABiABBiKBRiRAjIFEAAYgAQyCxAAGIAEGIoFGJECMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgARIuwdQDVgNcAF4AJABAJgB1AGgAdQBqgEDMi0xuAEDyAEA-AEBmAICoALZAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QWHfUmTTmszz5IHBTEuMC4xoAeXBbIHAzItMbgH1gHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 11,
+     "operation": "CLICK",
+     "confidence": 0.4632,
+     "target": "6",
+     "target_label": "refactoring security vulnerabilities tutorial",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 598.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kafka+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnumvZ8Zrwur0OZkJ-NTwYQPdhxOCw%3A1790494853702&source=hp&ei=hci4asfEKdmwkPIP64Sa0QY&iflsig=ABILxe8AAAAAarjWlQXx6fYKNZQ2tUriK6xPTM8WQxgd&ved=0ahUKEwiHm-eNoY6XAxVZGEQIHWuCJmoQ4dUDCDI&uact=5&oq=kafka+tutorial&gs_lp=Egdnd3Mtd2l6Ig5rYWZrYSB0dXRvcmlhbDILEAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMgsQABiABBiKBRiRAjIFEAAYgAQyCxAAGIAEGIoFGJECMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgARIuwdQDVgNcAF4AJABAJgB1AGgAdQBqgEDMi0xuAEDyAEA-AEBmAICoALZAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QWHfUmTTmszz5IHBTEuMC4xoAeXBbIHAzItMbgH1gHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 12,
+     "operation": "DONE",
+     "confidence": 0.8862,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 639.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=refactoring+security+vulnerabilities+tutorial&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnudrgQRpVWMrEDj3HoM4fMD5EHK9w%3A1790494856316&ei=iMi4asr3EsrHkPIPhfu0AQ&biw=1120&bih=780&oq=refactoring+security+vulnerabilities&gs_lp=Egxnd3Mtd2l6LXNlcnAiJHJlZmFjdG9yaW5nIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllcyoFCAAYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABSNlcUNRPWNRPcAV4AZABAJgBpAOgAaQDqgEDNC0xuAEByAEA-AEBmAIGoAK0A8ICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADmAMAiAYBkAYMkgcFNS40LTGgB_QEsgcDNC0xuAenA8IHAzEuNcgHCoAIAQ&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5ce62e8e5f8bef91",
+   "source": "google",
+   "goal": "Search Google for kubernetes documentation and open the official site.",
+   "fingerprint": 51874,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 10,
+   "total_ms": 44272,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://kubernetes.io/docs/home/",
+     "bot_challenge": false,
+     "group0": [
+      "kubernetes"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://kubernetes.io/docs/home/",
+    "final_title": "Kubernetes Documentation | Kubernetes"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8936,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kubernetes documentation",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 479.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494883143"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.898,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 539.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494883143"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.5993,
+     "target": "18",
+     "target_label": "About this result",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 584.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kubernetes+documentation&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntrzjPZsqHd4T-ZmyBfqNg8tSyE7g%3A1790494882973&source=hp&ei=osi4atCTOveT8L0P5NrzkAo&iflsig=ABILxe8AAAAAarjWsh-7K7OcOvkpPX-OUrEUMZGAiNuy&ved=0ahUKEwjQ7OGboY6XAxX3CbwBHWTtHKIQ4dUDCDI&uact=5&oq=kubernetes+documentation&gs_lp=Egdnd3Mtd2l6IhhrdWJlcm5ldGVzIGRvY3VtZW50YXRpb24yCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESJQHUA5YDnABeACQAQCYAdoBoAHaAaoBAzItMbgBA8gBAPgBAZgCAqAC4QGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFbZI96t05sB-SBwUxLjAuMaAHxgWyBwMyLTG4B90BwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8808,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing official Kubernetes site is not open; page is still Google search results",
+     "page_changed": null,
+     "latency_ms": 597.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kubernetes+documentation&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntrzjPZsqHd4T-ZmyBfqNg8tSyE7g%3A1790494882973&source=hp&ei=osi4atCTOveT8L0P5NrzkAo&iflsig=ABILxe8AAAAAarjWsh-7K7OcOvkpPX-OUrEUMZGAiNuy&ved=0ahUKEwjQ7OGboY6XAxX3CbwBHWTtHKIQ4dUDCDI&uact=5&oq=kubernetes+documentation&gs_lp=Egdnd3Mtd2l6IhhrdWJlcm5ldGVzIGRvY3VtZW50YXRpb24yCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESJQHUA5YDnABeACQAQCYAdoBoAHaAaoBAzItMbgBA8gBAPgBAZgCAqAC4QGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFbZI96t05sB-SBwUxLjAuMaAHxgWyBwMyLTG4B90BwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:17",
+     "target_label": "Kubernetes Documentation Kubernetes https://kubernetes.io › docs",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kubernetes+documentation&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntrzjPZsqHd4T-ZmyBfqNg8tSyE7g%3A1790494882973&source=hp&ei=osi4atCTOveT8L0P5NrzkAo&iflsig=ABILxe8AAAAAarjWsh-7K7OcOvkpPX-OUrEUMZGAiNuy&ved=0ahUKEwjQ7OGboY6XAxX3CbwBHWTtHKIQ4dUDCDI&uact=5&oq=kubernetes+documentation&gs_lp=Egdnd3Mtd2l6IhhrdWJlcm5ldGVzIGRvY3VtZW50YXRpb24yCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESJQHUA5YDnABeACQAQCYAdoBoAHaAaoBAzItMbgBA8gBAPgBAZgCAqAC4QGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFbZI96t05sB-SBwUxLjAuMaAHxgWyBwMyLTG4B90BwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8499,
+     "target": "12",
+     "target_label": "Open Search this site",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 611.1,
+     "low_confidence": false,
+     "url": "https://kubernetes.io/docs/home/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8348,
+     "target": "12",
+     "target_label": "Open Search this site",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 608.7,
+     "low_confidence": false,
+     "url": "https://kubernetes.io/docs/home/"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8403,
+     "target": "12",
+     "target_label": "Open Search this site",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 614.2,
+     "low_confidence": false,
+     "url": "https://kubernetes.io/docs/home/"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:12",
+     "target_label": "Search this site",
+     "kind": "fill",
+     "text": "kubernetes documentation",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://kubernetes.io/docs/home/"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.3124,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 644.1,
+     "low_confidence": true,
+     "url": "https://kubernetes.io/docs/home/"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-52d5f1f1bf5628fc",
+   "source": "google",
+   "goal": "Search Google for how to debug laravel and open the results.",
+   "fingerprint": 51874,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 4,
+   "total_ms": 8904,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=how+to+debug+laravel&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=appeqnuisod5algbk2eeja_l",
+     "bot_challenge": false,
+     "group0": [
+      "laravel"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=how+to+debug+laravel&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnuIsOD5aLgBK2EEja_l44RUEDNXhg%3A1790494934496&source=hp&ei=1si4aunyHIzfkPIP0MOOwQ4&iflsig=ABILxe8AAAAAarjW5nHx4rjszwLUlFY40imIgWgu1i5n&ved=0ahUKEwjptaq0oY6XAxWML0QIHdChI-gQ4dUDCDI&oq=how+to+debug+laravel&gs_lp=Egdnd3Mtd2l6IhRob3cgdG8gZGVidWcgbGFyYXZlbDIFEAAYgAQyCBAAGIAEGLQHMgYQABgWGB4yBhAAGBYYHjIIEAAYFhgeGAoyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSIErUBlYGXABeACQAQCYAdYBoAHWAaoBAzItMbgBDMgBAPgBAZgCAqAC3gGoAgrCAhEQLhjlBhiKAxjnBhjqAhi0AsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QWBgF4TRTbmuJIHBTEuMC4xoAf8BbIHAzItMbgH2QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz",
+    "final_title": "how to debug laravel - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8377,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug laravel",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 497.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494934672"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.9085,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'how to debug laravel'",
+     "page_changed": null,
+     "latency_ms": 597.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494934672"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494934672"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8759,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 599.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+laravel&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnuIsOD5aLgBK2EEja_l44RUEDNXhg%3A1790494934496&source=hp&ei=1si4aunyHIzfkPIP0MOOwQ4&iflsig=ABILxe8AAAAAarjW5nHx4rjszwLUlFY40imIgWgu1i5n&ved=0ahUKEwjptaq0oY6XAxWML0QIHdChI-gQ4dUDCDI&oq=how+to+debug+laravel&gs_lp=Egdnd3Mtd2l6IhRob3cgdG8gZGVidWcgbGFyYXZlbDIFEAAYgAQyCBAAGIAEGLQHMgYQABgWGB4yBhAAGBYYHjIIEAAYFhgeGAoyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSIErUBlYGXABeACQAQCYAdYBoAHWAaoBAzItMbgBDMgBAPgBAZgCAqAC3gGoAgrCAhEQLhjlBhiKAxjnBhjqAhi0AsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QWBgF4TRTbmuJIHBTEuMC4xoAf8BbIHAzItMbgH2QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-0cd5b6edf3f24ddd",
+   "source": "google",
+   "goal": "Search Google for kubernetes performance optimization and open the results.",
+   "fingerprint": 51874,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 5225,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=kubernetes+performance+optimization&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=appeqnuxh",
+     "bot_challenge": false,
+     "group0": [
+      "kubernetes"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=kubernetes+performance+optimization&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnuXh7zoko5Piap-awWbtc_Q2XhuVg%3A1790494950629&source=hp&ei=5si4av-VJej3kPIP48DekQg&iflsig=ABILxe8AAAAAarjW9kpu86jsMcW71VLHruTY0QVKhHn3&ved=0ahUKEwj_oIO8oY6XAxXoO0QIHWOgN4IQ4dUDCDI&uact=5&oq=kubernetes+performance+optimization&gs_lp=Egdnd3Mtd2l6IiNrdWJlcm5ldGVzIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUiPCFAMWAxwAXgAkAEAmAHhAaAB4QGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwLxBTehaW5zeEwUkgcFMS4wLjGgB7cEsgcDMi0xuAfjAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz",
+    "final_title": "kubernetes performance optimization - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8838,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kubernetes performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 490.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494950811"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9117,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 653.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494950811"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8954,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 570.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kubernetes+performance+optimization&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQnuXh7zoko5Piap-awWbtc_Q2XhuVg%3A1790494950629&source=hp&ei=5si4av-VJej3kPIP48DekQg&iflsig=ABILxe8AAAAAarjW9kpu86jsMcW71VLHruTY0QVKhHn3&ved=0ahUKEwj_oIO8oY6XAxXoO0QIHWOgN4IQ4dUDCDI&uact=5&oq=kubernetes+performance+optimization&gs_lp=Egdnd3Mtd2l6IiNrdWJlcm5ldGVzIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUiPCFAMWAxwAXgAkAEAmAHhAaAB4QGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwLxBTehaW5zeEwUkgcFMS4wLjGgB7cEsgcDMi0xuAfjAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-105bf26a1c7e178f",
+   "source": "google",
+   "goal": "Search Google for spring boot best practices and open the results.",
+   "fingerprint": 51874,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 5014,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=spring+boot+best+practices&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=appeqntmubjulz8fwn",
+     "bot_challenge": false,
+     "group0": [
+      "spring",
+      "boot"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=spring+boot+best+practices&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntMUBjUlz8FWNKTuF5Fj7ccIZWeWg%3A1790494963103&source=hp&ei=88i4avWJBcPvkPIPoZmqgQI&iflsig=ABILxe8AAAAAarjXAxawLBnuXikvZgCeyVF5bUDoUKy0&ved=0ahUKEwi1z_zBoY6XAxXDN0QIHaGMKiAQ4dUDCDI&uact=5&oq=spring+boot+best+practices&gs_lp=Egdnd3Mtd2l6IhpzcHJpbmcgYm9vdCBiZXN0IHByYWN0aWNlczIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkivB1ANWA1wAXgAkAEAmAHPAaABzwGqAQMyLTG4AQPIAQD4AQGYAgKgAtQBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBRLqCTc57f0RkgcFMS4wLjGgB5QGsgcDMi0xuAfRAcIHBTEuMC4xyAcDgAgB&sclient=gws-wiz",
+    "final_title": "spring boot best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.561,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "spring boot best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 511.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494963280"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.6842,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 567.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790494963280"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9028,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 576.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=spring+boot+best+practices&sca_esv=5e1010fa43cff023&hl=en&gl=us&sxsrf=APpeQntMUBjUlz8FWNKTuF5Fj7ccIZWeWg%3A1790494963103&source=hp&ei=88i4avWJBcPvkPIPoZmqgQI&iflsig=ABILxe8AAAAAarjXAxawLBnuXikvZgCeyVF5bUDoUKy0&ved=0ahUKEwi1z_zBoY6XAxXDN0QIHaGMKiAQ4dUDCDI&uact=5&oq=spring+boot+best+practices&gs_lp=Egdnd3Mtd2l6IhpzcHJpbmcgYm9vdCBiZXN0IHByYWN0aWNlczIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkivB1ANWA1wAXgAkAEAmAHPAaABzwGqAQMyLTG4AQPIAQD4AQGYAgKgAtQBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBRLqCTc57f0RkgcFMS4wLjGgB5QGsgcDMi0xuAfRAcIHBTEuMC4xyAcDgAgB&sclient=gws-wiz"
+    }
+   ]
+  }
+ ]
+}

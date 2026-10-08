@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.DS_Store
+
+# benchmark data (large, downloadable)
+benchmark/data/
+benchmark/results/
+
+# e2e artifacts
+e2e/shots/

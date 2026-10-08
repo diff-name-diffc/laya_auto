@@ -1,0 +1,569 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 96622,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T22:39:27+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.8,
+  "mean_duration_ms": 17917,
+  "decision_latency_ms": {
+   "p50": 520.1,
+   "p95": 772.9
+  },
+  "step_outcomes": {
+   "stale": 1,
+   "refused-empty-enter": 1,
+   "done-rejected": 3,
+   "page changed since the decision (url or marker mismatch)": 1,
+   "executed": 16
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.8
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-78c56820e1097379",
+   "source": "google",
+   "goal": "First search Google for c++ migration guide, then search Google for how to debug rust.",
+   "fingerprint": 96622,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 33927,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2brust%26sca_esv%3df913",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Brust%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuYqu2nGNNnmajw7m2TiyksFyS68Q%253A1790519456704%26source%3Dhp%26ei%3DoCi5ar24KZO-kPIPoJTXoQI%26iflsig%3DABILxe8AAAAAark2sDKdpJL-b32G5jEVrmQN8dnRvFa4%26oq%3Dhow%2Bto%2Bdebug%2Brust%26gs_lp%3DEgdnd3Mtd2l6IhFob3cgdG8gZGVidWcgcnVzdCoFCAIYgAQyCBAAGIAEGLQHMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkijCFAPWA9wAXgAkAEAmAHwAaAB8AGqAQMyLTG4AQHIAQD4AQGYAgKgAvsBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBRdyrtDIrL66kgcFMS4wLjGgB5gFsgcDMi0xuAf2AcIHAzItMsgHBoAIAQ%26sclient%3Dgws-wiz%26sei%3Dtii5ara_F4TAkPIPvdGUuQw&hl=en&q=EgQm0XtnGLbR5NUGIjBDlrbqJ0jlKJlQB-Yx_IGO7Ouwx6dh_wvPYcOKqRPiYZxOFF1_MPPwMA7BqDCCOfkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+rust&sca_esv=f9132ac85e259377&hl=en"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8974,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug rust",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 821.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.866,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 450.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8422,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for \"how to debug rust\"",
+     "page_changed": null,
+     "latency_ms": 772.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "c++ migration guide",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8993,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"how to debug rust\" are not visible on the page",
+     "page_changed": null,
+     "latency_ms": 577.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519459205"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug rust",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519459205"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8631,
+     "target": "14",
+     "target_label": "how to debug rust",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 617.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519459205"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d54995e1365982e9",
+   "source": "google",
+   "goal": "Search Google for mysql best practices and open the results.",
+   "fingerprint": 96622,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14805,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmysql%2bbest%2bpractices%26sca_esv%3df91",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmysql%2Bbest%2Bpractices%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt9WtbNu7hhuaj7pXIJj8eqDSRtww%253A1790519543140%26source%3Dhp%26ei%3D9yi5aqz4Bqm-kPIPp8rNSQ%26iflsig%3DABILxe8AAAAAark3BxxhsKOT61ZZG4-OPbbVuRQdPwPt%26ved%3D0ahUKEwjsz9KK_Y6XAxUpH0QIHSdlMwkQ4dUDCDI%26uact%3D5%26oq%3Dmysql%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhRteXNxbCBiZXN0IHByYWN0aWNlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMggQABgWGB4YCkjlCFAUWBRwAXgAkAEAmAHyAaAB8gGqAQMyLTG4AQPIAQD4AQGYAgKgAvsBqAIKwgIKEAAYAxiPARjqApgDBPEFC6TvQAt_vUKSBwUxLjAuMaAHzwWyBwMyLTG4B_YBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPrR5NUGIjAzc8YoG3W-ta7g9EibYe0W0eXwt2rdj_4kK7fGyTEKmi_ZJbOUEuaNJCl45ndIm-IyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mysql+best+practices&sca_esv=f9132ac85e259377&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8766,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mysql best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 508.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8923,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 727.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519545014"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-84029f2eef8aa4de",
+   "source": "google",
+   "goal": "First search Google for mongodb open source alternatives, then search Google for design patterns best practices.",
+   "fingerprint": 96622,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14661,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmongodb%2bopen%2bsource%2balternatives%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmongodb%2Bopen%2Bsource%2Balternatives%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsIIBFAeqAYKKRmaVPXEqR1uIzKQw%253A1790519610427%26source%3Dhp%26ei%3DOim5arTxGOTKvMcPwP_XoAc%26iflsig%3DABILxe8AAAAAark3SryQUnUQ8HtjsLDHvrX0kTgi58M9%26ved%3D0ahUKEwi09t2q_Y6XAxVkJe8CHcD_FXQQ4dUDCDI%26uact%3D5%26oq%3Dmongodb%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiBtb25nb2RiIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDSLoHUA5YDnABeACQAQCYAZICoAGSAqoBAzItMbgBA8gBAPgBAZgCAqACmgKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFpbGpIB0ZsNmSBwUxLjAuMaAHxQOyBwMyLTG4B5cCwgcDMC4yyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGL3S5NUGIjA1CpqK4JbHU6FT6-iQxQht7zE9WptVvOK-Yt4ThPyXhPMpXNpd5htxv8TkmkDtguEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mongodb+open+source+alternatives&sca_esv=f9132ac"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8768,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mongodb open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 496.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519610875"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8593,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 560.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519610875"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-209605d07ed2542a",
+   "source": "google",
+   "goal": "Search Google for python open source alternatives and open the results.",
+   "fingerprint": 96622,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14703,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpython%2bopen%2bsource%2balternatives%26",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpython%2Bopen%2Bsource%2Balternatives%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnszkK0cTiN7-rOK5NLmoCvfp2WBZg%253A1790519677339%26source%3Dhp%26ei%3DfSm5aui6E72ekPIPlaz1uAI%26iflsig%3DABILxe8AAAAAark3jXkdXWU0pBzcseeEa_YK67Qknhzn%26ved%3D0ahUKEwio7dHK_Y6XAxU9D0QIHRVWHScQ4dUDCDI%26uact%3D5%26oq%3Dpython%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ih9weXRob24gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBUjFB1ALWAtwAXgAkAEAmAGpAqABqQKqAQMyLTG4AQPIAQD4AQGYAgKgAq8CqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBe2lsmBpRO5kkgcFMS4zLTGgB8UKsgcDMy0xuAesAsIHAzEuMcgHAoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGP_S5NUGIjDesFY-x5TH2U86T27wC2F-00Sgb6nl24zcIXgfkLykUtIs1qVaVZpvNFPjG1ha5kIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=python+open+source+alternatives&sca_esv=f9132ac8"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.888,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "python open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 457.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519677726"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9014,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 589.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519677726"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-eb8596a43ecebdc5",
+   "source": "google",
+   "goal": "First search Google for svelte release notes, then search Google for how to debug pytorch.",
+   "fingerprint": 96622,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14646,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bpytorch%26sca_esv%3df",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bpytorch%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuZ_nzYQb6M_drxaPC3WVnPK48cWQ%253A1790519744512%26source%3Dhp%26ei%3DwCm5avv8Hfmsur8Pvu7XqAI%26iflsig%3DABILxe8AAAAAark30J-kJuWU-Ay1-6pPXRuAz4ltnvPq%26ved%3D0ahUKEwj73NXq_Y6XAxV5lu4BHT73FSUQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bpytorch%26gs_lp%3DEgdnd3Mtd2l6IhRob3cgdG8gZGVidWcgcHl0b3JjaDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkiOB1ANWA1wAXgAkAEAmAGrAqABqwKqAQMyLTG4AQPIAQD4AQGYAgKgArICqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBSmYuumuqbEEkgcFMS4zLTGgB88BsgcDMy0xuAevAsIHAzAuMsgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMPT5NUGIjAlehFNXXrV0_PmWZdIReRgZjQ9LsIkhMgp7SDc7MpOlmfX0xy3KiDUWQLsELP9S5cyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+pytorch&sca_esv=f9132ac85e259377&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8897,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug pytorch",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 503.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519744823"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8947,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 520.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519744823"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-bdbf497f97da764d",
+   "source": "google",
+   "goal": "Search Google for how to debug typescript and open the results.",
+   "fingerprint": 96622,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 21285,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2btypescript%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Btypescript%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvOH09nlQzu_y_UW2oTXwKJigKBHQ%253A1790519811395%26source%3Dhp%26ei%3DAyq5at2nFcbbkPIPjo3DkAI%26iflsig%3DABILxe8AAAAAark4E3jyT6yIVlnD6F4oU58Ml17IUeck%26ved%3D0ahUKEwidtcaK_o6XAxXGLUQIHY7GECIQ4dUDCDI%26oq%3Dhow%2Bto%2Bdebug%2Btypescript%26gs_lp%3DEgdnd3Mtd2l6Ihdob3cgdG8gZGVidWcgdHlwZXNjcmlwdDIIEAAYgAQYtAcyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkj1OlAMWAxwAXgAkAEAmAHrAaAB6wGqAQMyLTG4AQzIAQD4AQGYAgKgAvMBqAIKwgIKEAAYAxiPARjqApgDAvEF87ZiEgewkkqSBwUxLjAuMaAHlAayBwMyLTG4B_ABwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIzU5NUGIjBghCpB5aZFS-HmGSlJdfh75gcNaMej1ybCPic-gIpJYk74XtZ11y6Yn0HqwnVxmykyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+typescript&sca_esv=f9132ac85e259377"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2857,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug typescript",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 491.0,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519811701"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8959,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for 'how to debug typescript' is not displayed; Search appears only as autocomplete suggestions in the search box, not submitted r",
+     "page_changed": null,
+     "latency_ms": 606.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519811701"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519811701"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c3405f6f1281eb31",
+   "source": "google",
+   "goal": "Search Google for vector embeddings open source alternatives and open the results.",
+   "fingerprint": 96622,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14704,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvector%2bembeddings%2bopen%2bsource%2bal",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvector%2Bembeddings%2Bopen%2Bsource%2Balternatives%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv4EhFfh9iTQI2NxXmfKHhDu1lrOQ%253A1790519884892%26source%3Dhp%26ei%3DTCq5auOlNZmgkPIPgYr5uA4%26iflsig%3DABILxe8AAAAAark4XKuqqmwfcF3SyjV7y8owjndBQ5rs%26ved%3D0ahUKEwjj-82t_o6XAxUZEEQIHQFFHucQ4dUDCDI%26uact%3D5%26oq%3Dvector%2Bembeddings%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Iip2ZWN0b3IgZW1iZWRkaW5ncyBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBUiPB1AMWAxwAXgAkAEAmAGZAqABmQKqAQMyLTG4AQPIAQD4AQGYAgKgAp4CqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBdGpJDpd-kltkgcFMS4wLjGgB-kFsgcDMi0xuAecAsIHAzEuMcgHA4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGM_U5NUGIjCGnPQmcEAE1JmF0-NUEnAIAOhgYpPvdXeiDUX93ER6Zu6Rd29vb20VRZBsPslXTNAyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vector+embeddings+open+source+alternatives&sca_e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8915,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vector embeddings open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 493.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519885144"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8885,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 524.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519885144"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d9b32c490503d6f5",
+   "source": "google",
+   "goal": "Search Google for angular open source alternatives and open the results.",
+   "fingerprint": 96622,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14602,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dangular%2bopen%2bsource%2balternatives%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dangular%2Bopen%2Bsource%2Balternatives%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsEKBHvHnoT-ZaPNbnfvnDGDGoFyg%253A1790519951782%26source%3Dhp%26ei%3Djyq5aqTSLqGuur8PyJfikAE%26iflsig%3DABILxe8AAAAAark4nxP9n9Akp5juqfEd4I-u_Z4l2nPg%26ved%3D0ahUKEwjk1cDN_o6XAxUhl-4BHciLGBIQ4dUDCDI%26uact%3D5%26oq%3Dangular%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiBhbmd1bGFyIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVI3wdQDlgOcAF4AJABAJgBoQKgAaECqgEDMi0xuAEDyAEA-AEBmAICoAKrAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QVdUaOeLFg6YpIHBTEuMC4xoAeoC7IHAzItMbgHqALCBwMwLjLIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJLV5NUGIjD8VfkqBNEXWW3MTjoTXlrQBj091nvMbfTKaWtbiYHzZnd_er8HHVMd39UebKbQ68gyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=angular+open+source+alternatives&sca_esv=f9132ac"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8983,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 484.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519952044"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8883,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 608.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519952044"
+    }
+   ]
+  }
+ ]
+}

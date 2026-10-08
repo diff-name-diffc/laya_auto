@@ -1,0 +1,582 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 73072,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T22:29:57+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.9,
+  "mean_duration_ms": 16258,
+  "decision_latency_ms": {
+   "p50": 526.3,
+   "p95": 681.1
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 1,
+   "executed": 18,
+   "done-rejected": 2
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.9
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-7678d4812b438f56",
+   "source": "google",
+   "goal": "Search Google for angular performance optimization and open the results.",
+   "fingerprint": 73072,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 23805,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dangular%2bperformance%2boptimization%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dangular%2Bperformance%2Boptimization%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnucNqDRtQseh23xh2D4jNi7G0xrCQ%253A1790518900737%26source%3Dhp%26ei%3DdCa5av7lK6WK8L0Pkffn0AM%26iflsig%3DABILxe8AAAAAark0hKYC3doe5x1g2gG9w_JQTAfNVo0a%26ved%3D0ahUKEwj-76nY-o6XAxUlBbwBHZH7GToQ4dUDCDI%26oq%3Dangular%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiBhbmd1bGFyIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDSNNEUN4fWN4fcAJ4AJABAJgB9AGgAfQBqgEDMi0xuAEMyAEA-AEBmAIDoAL8AagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME8QWFByEqLRUjTZIHBTIuMC4xoAe2BrIHAzItMbgH9gHCBwUwLjIuMcgHBoAIAQ%26sclient%3Dgws-wiz%26sei%3DgCa5aqCtH4bGkPIPqsvd-QI&hl=en&q=EgQm0XtnGIDN5NUGIjDNFB3nwBbai0ay0yYr3YYmxGUVgjQbYNAOooP-t7N7nhzInn4RpMrbl5hPNsGvic0yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=angular+performance+optimization&sca_esv=f9132ac"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8825,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular performance optimization",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 479.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.902,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 473.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518902394"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8553,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 492.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518902394"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8832,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for angular performance optimization",
+     "page_changed": null,
+     "latency_ms": 582.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518902394"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular performance optimization",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518902394"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.9186,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'angular performance optimization' (only autocomplete suggestions are shown; the search has not been executed)",
+     "page_changed": null,
+     "latency_ms": 599.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518902394"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:32",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518902394"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a6d2b2095f74dbda",
+   "source": "google",
+   "goal": "First search Google for rabbitmq best practices, then search Google for how to debug golang.",
+   "fingerprint": 73072,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 4,
+   "total_ms": 16734,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bgolang%26sca_esv%3df9",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bgolang%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntWCpZHNC8S97TnKQj75KhFZhrbnA%253A1790518977019%26source%3Dhp%26ei%3DwCa5asjcPKDKkPIPv6OtiQ0%26iflsig%3DABILxe8AAAAAark00XRMOvuOUepN_KKwI6NMG-Cee16o%26oq%3Dhow%2Bto%2Bdebug%2Bgolang%26gs_lp%3DEgdnd3Mtd2l6IhNob3cgdG8gZGVidWcgZ29sYW5nKgUIARiABDIIEAAYgAQYtAcyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkiCFlASWBJwAngAkAEAmAHqAaAB6gGqAQMyLTG4AQHIAQD4AQGYAgOgAvMBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBRN4pEu2nnAfkgcFMi4wLjGgB7cFsgcDMi0xuAfsAcIHBTAuMi4xyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMXN5NUGIjBtC5WV6vEvFl97eK_4wMNrv1Xisd9F6PpXFRm25IrF3X7AS3X24aVKnXyuNO6IF9cyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+golang&sca_esv=f9132ac85e259377&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8959,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug golang",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 521.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8856,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "stale: URL changed since the decision",
+     "page_changed": true,
+     "latency_ms": 601.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8436,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug golang",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 784.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518979173"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.4713,
+     "target": "13",
+     "target_label": "how to debug golang",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 585.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518979173"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9cfdf4f445238e41",
+   "source": "google",
+   "goal": "First search Google for next.js security vulnerabilities, then search Google for profiling migration guide.",
+   "fingerprint": 73072,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14846,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dnext.js%2bsecurity%2bvulnerabilities%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dnext.js%2Bsecurity%2Bvulnerabilities%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuAoqawNRPbbtANYNJjeZQ-vCK02w%253A1790519046210%26source%3Dhp%26ei%3DBie5ap3OC8S_kPIP37aS2QM%26iflsig%3DABILxe8AAAAAark1Fogvm7LR0wrzHqJoSgn0fN_zT1_V%26ved%3D0ahUKEwid6did-46XAxXEH0QIHV-bJDsQ4dUDCDI%26uact%3D5%26oq%3Dnext.js%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IiBuZXh0LmpzIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllczIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDSOMHUA5YDnABeACQAQCYAZ8CoAGfAqoBAzItMbgBA8gBAPgBAZgCAqACqQKoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDA_EFl_Yvotxp1zCSBwUxLjAuMaAHzAayBwMyLTG4B6UCwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGInO5NUGIjCHaW0NsOj_xyw028-8zOivo-NiHqnVm4jA0NBPhDgh7GoF1ZJrmvjJyH-dfGHEjRcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=next.js+security+vulnerabilities&sca_esv=f9132ac"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8448,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "next.js security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 517.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519046680"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8868,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 605.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519046680"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b12c49f28447700b",
+   "source": "google",
+   "goal": "First search Google for angular release notes, then search Google for profiling security vulnerabilities.",
+   "fingerprint": 73072,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15103,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dangular%2brelease%2bnotes%26sca_esv%3df9",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dangular%2Brelease%2Bnotes%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns0j76RHlxSmef8mq5rzH-aWC_Syg%253A1790519113295%26source%3Dhp%26ei%3DSSe5atrvENiuur8P9sGAmQc%26iflsig%3DABILxe8AAAAAark1WSAcal8fQaWSBk6XjCqY7SWmewYA%26oq%3Dangular%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhVhbmd1bGFyIHJlbGVhc2Ugbm90ZXMqBQgAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHki1CFAKWApwAXgAkAEAmAGTAqABkwKqAQMyLTG4AQHIAQD4AQGYAgKgApcCqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBYhCZybO1p7nkgcFMS4wLjGgB5QFsgcDMi0xuAeVAsIHAzAuMsgHA4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMzO5NUGIjCV2706C_L1KGqqwGQVDI7YssNZHaJFyD918GYatGWBo5C6h-mK4XYrnkJhl-JpBVwyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=angular+release+notes&sca_esv=f9132ac85e259377&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8853,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 681.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519113589"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.8488,
+     "target": "12",
+     "target_label": "angular release notes",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 671.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519113589"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-924f6cc3b94019ef",
+   "source": "google",
+   "goal": "First search Google for how to debug rabbitmq, then search Google for how to debug express.",
+   "fingerprint": 73072,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14992,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2brabbitmq%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Brabbitmq%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuxmPE9y0cX3c-Mvl1Rf5tVxd-FIg%253A1790519180530%26source%3Dhp%26ei%3DjCe5asXdHvXHkPIPupSreA%26iflsig%3DABILxe8AAAAAark1nNThGQr7F-u7ZJA4ftvhFvd6ad1q%26oq%3Dhow%2Bto%2Bdebug%2Brabbitmq%26gs_lp%3DEgdnd3Mtd2l6IhVob3cgdG8gZGVidWcgcmFiYml0bXEqBggAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGIkFGKIEMgUQABjvBUi4B1AMWAxwAXgAkAEAmAGiAqABogKqAQMyLTG4AQHIAQD4AQGYAgKgAqoCqAIKwgIKEAAYAxiPARjqApgDA_EFfM2Cx-wJugaSBwUxLjAuMaAHswKyBwMyLTG4B6cCwgcDMC4yyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGI_P5NUGIjDaDakl2PXG7J4XUlWbr8N_ucP1I7oT3z8k0UfWDLAirX1Rhannet2t3kTtFGYvgQIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+rabbitmq&sca_esv=f9132ac85e259377&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8564,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug rabbitmq",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 506.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519180849"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.8651,
+     "target": "12",
+     "target_label": "how to debug rabbitmq",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 525.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519180849"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-4621f653957834f3",
+   "source": "google",
+   "goal": "First search Google for angular interview questions, then search Google for kafka release notes.",
+   "fingerprint": 73072,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14727,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dangular%2binterview%2bquestions%26sca_es",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dangular%2Binterview%2Bquestions%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv1jjVLG8G7eRB70j6pHzaeNuxYRw%253A1790519247743%26source%3Dhp%26ei%3Dzye5atnXK_-Our8PpvXouQ8%26iflsig%3DABILxe8AAAAAark135lJSVu9X2dm2vR94YNfxnP3gVLY%26ved%3D0ahUKEwiZ--T9-46XAxV_h-4BHaY6OvcQ4dUDCDI%26uact%3D5%26oq%3Dangular%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Ihthbmd1bGFyIGludGVydmlldyBxdWVzdGlvbnMyCBAAGIAEGLQHMggQABiABBixAzIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABDIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHSN0HUA9YD3ABeACQAQCYAZsCoAGbAqoBAzItMbgBA8gBAPgBAZgCAqACpQKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EF9neUsto6gT6SBwUxLjAuMaAHnweyBwMyLTG4B6ECwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNLP5NUGIjCTaT7u5M7NTnsZIQuz1xpsrHGcGgaMeSKUg1qdMi6O3S0crK2ZY3hGxkC4lM2C28UyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=angular+interview+questions&sca_esv=f9132ac85e25"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8958,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 496.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519248058"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8992,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 601.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519248058"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b66e49a3215a1b77",
+   "source": "google",
+   "goal": "Search Google for grafana performance optimization and open the results.",
+   "fingerprint": 73072,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14923,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgrafana%2bperformance%2boptimization%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgrafana%2Bperformance%2Boptimization%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsBEIiSeiJb5ERFZGadCpTZvgq7VA%253A1790519314679%26source%3Dhp%26ei%3DEii5as7nJ_zFkPIPx6Gc4AI%26iflsig%3DABILxe8AAAAAark2IosOMlZ8yna0WFLfwkUUwApaUAa8%26ved%3D0ahUKEwjOuNqd_I6XAxX8IkQIHccQBywQ4dUDCDI%26uact%3D5%26oq%3Dgrafana%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiBncmFmYW5hIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyCBAAGIkFGKIEMggQABiJBRiiBDIFEAAY7wVInQdQDVgNcAF4AJABAJgBtwKgAbcCqgEDMy0xuAEDyAEA-AEBmAICoAK_AqgCCsICFhAAGIAEGIoFGEMYtAcY5wYY6gIYtALCAhMQABiABBiKBRhDGOcGGOoCGLQCmAMD8QUqPeTlMkZ525IHBTEuMy0xoAeEA7IHAzMtMbgHvALCBwUwLjEuMcgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJXQ5NUGIjDKyWFM7GmKRX8yhqWSntEbcMZRUVJtebWrj0mRMgbeSOSygNg59ufvzzPlWZAGrOAyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=grafana+performance+optimization&sca_esv=7c86799"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8892,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "grafana performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 505.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519315152"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9109,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 540.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519315152"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d3aa3330becc2c67",
+   "source": "google",
+   "goal": "First search Google for how to debug fastapi, then search Google for how to debug zig.",
+   "fingerprint": 73072,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14934,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bfastapi%26sca_esv%3df",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bfastapi%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnu2XbIw5JIqNChAj7sfxMRzVxuzpQ%253A1790519381980%26source%3Dhp%26ei%3DVSi5auzMOuvvkPIP2s3x2Ag%26iflsig%3DABILxe8AAAAAark2ZWVG_KgGEOB9-fDQ7zL-7Mfr2OxH%26ved%3D0ahUKEwisy-a9_I6XAxXrN0QIHdpmHIsQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bfastapi%26gs_lp%3DEgdnd3Mtd2l6IhRob3cgdG8gZGVidWcgZmFzdGFwaTIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSMoHUA5YDnABeACQAQCYAbECoAGxAqoBAzMtMbgBA8gBAPgBAZgCAqACugKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFk3kavkaZexqSBwUxLjMtMaAHjwayBwMzLTG4B7cCwgcFMC4xLjHIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNjQ5NUGIjBgycEoDlpLGu4_9KAmeRz1sSgHog3VKwuwN77snZGS-5Fkes_MrY4bUVEHI55eiQgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+fastapi&sca_esv=f9132ac85e259377&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8753,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug fastapi",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 526.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519382299"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.5184,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 589.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519382299"
+    }
+   ]
+  }
+ ]
+}

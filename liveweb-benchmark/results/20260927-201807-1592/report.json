@@ -1,0 +1,723 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 99591,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T20:24:57+0800",
+  "n_tasks": 8,
+  "success": 1,
+  "success_rate": 0.125,
+  "verified": 1,
+  "verified_rate": 0.125,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.0,
+  "mean_duration_ms": 16139,
+  "decision_latency_ms": {
+   "p50": 479.0,
+   "p95": 599.4
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 2,
+   "executed": 21,
+   "done-rejected": 5,
+   "done": 2
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "github": {
+    "n": 1,
+    "success": 1,
+    "success_rate": 1.0,
+    "verified": 1,
+    "verified_rate": 1.0,
+    "mean_steps": 8.0
+   },
+   "google": {
+    "n": 7,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 3.4
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-1793c5a15b0f3b7d",
+   "source": "google",
+   "goal": "First search Google for mongodb migration guide, then search Google for tensorflow cheat sheet.",
+   "fingerprint": 99591,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 18152,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmongodb%2bmigration%2bguide%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmongodb%2Bmigration%2Bguide%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv1UqpmyguvlCl7bozZBtm8d0d6DA%253A1790511491011%26source%3Dhp%26ei%3Dggm5auvaPMLDkPIPkMn1uA0%26iflsig%3DABILxe8AAAAAarkXk-uhd0pSAfF1a-f-YQtn58Djj_w0%26ved%3D0ahUKEwjro4yL346XAxXCIUQIHZBkHdcQ4dUDCDI%26uact%3D5%26oq%3Dmongodb%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6Ihdtb25nb2RiIG1pZ3JhdGlvbiBndWlkZTIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSNQYUA9YD3ACeACQAQCYAdABoAHQAaoBAzItMbgBA8gBAPgBAZgCA6AC2gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFEwdFPWpL1P2SBwUyLjAuMaAHqwSyBwMyLTG4B9UBwgcFMS4xLjHIBweACAE%26sclient%3Dgws-wiz%26sei%3DiQm5apdki8-Q8g_66sfhBA&hl=en&q=EgQm0XtnGImT5NUGIjDWRo7uyI5NLsuXRw1ngQ84TBPOJxexS3PomBsw_q6DjHTv564dSA45rigYEohfBBgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mongodb+migration+guide&sca_esv=18a60b01d202c9ee"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8755,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mongodb migration guide",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 483.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8677,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 458.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511492370"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8696,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mongodb migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 490.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511492370"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8818,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mongodb migration guide",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 599.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511492370"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511492370"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a32bb86c022a8467",
+   "source": "google",
+   "goal": "First search Google for how to debug retrieval augmented generation, then search Google for express security vulnerabilities.",
+   "fingerprint": 99591,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 8,
+   "total_ms": 18815,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['express']]",
+    "checks": {
+     "url": "https://www.google.com/intl/zh-cn_all/search/howsearchworks/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/",
+    "final_title": "Google 搜索 - 什么是 Google 搜索及其运作方式"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.3437,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug retrieval augmented generation",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 493.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8758,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 472.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511562915"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.857,
+     "target": "18",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 539.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511562915"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8786,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for express security vulnerabilities",
+     "page_changed": null,
+     "latency_ms": 394.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search/howsearchworks/?fg=1"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search/howsearchworks/?fg=1"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.9219,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'express security vulnerabilities'; search results listing for express security vulnerabilities",
+     "page_changed": null,
+     "latency_ms": 430.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.9205,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 441.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-936bffcbf38ffd18",
+   "source": "google",
+   "goal": "Search Google for vector embeddings best practices and open the results.",
+   "fingerprint": 99591,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14934,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvector%2bembeddings%2bbest%2bpractices%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvector%2Bembeddings%2Bbest%2Bpractices%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuW8RfV1OYYkxcu2vZ6EbLG66L3Fw%253A1790511587751%26source%3Dhp%26ei%3D4wm5avicLImO8L0Px5ebwQc%26iflsig%3DABILxe8AAAAAarkX83jFWSKbCjd4s9UkDGkekeXgR7hE%26ved%3D0ahUKEwi4mpy5346XAxUJB7wBHcfLJngQ4dUDCDI%26uact%3D5%26oq%3Dvector%2Bembeddings%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IiB2ZWN0b3IgZW1iZWRkaW5ncyBiZXN0IHByYWN0aWNlczIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSMEIUBBYEHABeACQAQCYAdoBoAHaAaoBAzItMbgBA8gBAPgBAZgCAqAC5gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFRWphwV25hrCSBwUxLjAuMaAH2gSyBwMyLTG4B-EBwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOaT5NUGIjDihGwyejtNJQdg9ZWJ2SeGvB9T8J8M97P9Esm19aadJgOKxtSrc5C39OruWVGLjkAyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vector+embeddings+best+practices&sca_esv=75b852f"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.871,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vector embeddings best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 537.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511588077"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8998,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 690.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511588077"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-7bdec8ce11a7d427",
+   "source": "google",
+   "goal": "First search Google for mysql performance optimization, then search Google for terraform tutorial.",
+   "fingerprint": 99591,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14568,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmysql%2bperformance%2boptimization%26sca",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmysql%2Bperformance%2Boptimization%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnu3fADJPTfUnl_Kupfo2oQfiNGGzw%253A1790511654897%26source%3Dhp%26ei%3DJgq5avyKNavIkPIPmp_rqA0%26iflsig%3DABILxe8AAAAAarkYNoVYnzhwc_g0ntHEQafkRZEpoEuQ%26ved%3D0ahUKEwj8tZ7Z346XAxUrJEQIHZrPGtUQ4dUDCDI%26uact%3D5%26oq%3Dmysql%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ih5teXNxbCBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSKUHUA1YDXABeACQAQCYAdkBoAHZAaoBAzItMbgBA8gBAPgBAZgCAqAC3wGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFnhYPlOITeUCSBwUxLjAuMaAH8AWyBwMyLTG4B9sBwgcFMC4xLjHIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKmU5NUGIjAoDe4kxMgL9gaDNjFC5FmpuLJ6XiUvtBUAi3vkGkbLx206XeBmGNUwCSWf2mopw3kyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mysql+performance+optimization&sca_esv=75b852f91"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8906,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mysql performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 484.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511655148"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.911,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 550.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511655148"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a84d8117c2a41f7f",
+   "source": "github",
+   "goal": "Search GitHub for 'retrieval augmented generation' repositories and open the search results.",
+   "fingerprint": 99591,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 8,
+   "total_ms": 13953,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://github.com/search?q=retrieval+augmented+generation&type=repositories",
+     "bot_challenge": false,
+     "group0": [
+      "generation",
+      "retrieval"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://github.com/search?q=retrieval+augmented+generation&type=repositories",
+    "final_title": "Repository search results · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.5872,
+     "target": "11",
+     "target_label": "Enter your email",
+     "kind": "fill",
+     "text": "retrieval augmented generation",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 455.8,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8872,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 438.8,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8867,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 448.8,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8367,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page listing repositories for 'retrieval augmented generation'; Query not entered in the GitHub search box (the quick-search dropdown s",
+     "page_changed": null,
+     "latency_ms": 445.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:14",
+     "target_label": "Search or jump to",
+     "kind": "fill",
+     "text": "retrieval augmented generation",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8883,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'retrieval augmented generation' repositories are not visible; only the search box with the query is shown.",
+     "page_changed": null,
+     "latency_ms": 479.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.9284,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 437.8,
+     "low_confidence": false,
+     "url": "https://github.com/search?q=retrieval+augmented+generation&type=repositories"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ce242cd16ca14547",
+   "source": "google",
+   "goal": "Search Google for terraform tutorial and open the results.",
+   "fingerprint": 99591,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 19440,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dterraform%2btutorial%26sca_esv%3d75b852f",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dterraform%2Btutorial%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsDjgT85QpUKoHbUkVoXfcIwnYNpg%253A1790511743562%26source%3Dhp%26ei%3Dfwq5aqmPIZC7ur8Ps6y7CA%26iflsig%3DABILxe8AAAAAarkYj6i3Zu3Im7qfF-zVVbVtuUmgz_5J%26ved%3D0ahUKEwjpysKD4I6XAxWQne4BHTPWDgEQ4dUDCDI%26oq%3Dterraform%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhJ0ZXJyYWZvcm0gdHV0b3JpYWwyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESKYsUBVYFXABeACQAQCYAc4BoAHOAaoBAzItMbgBDMgBAPgBAZgCAqAC2QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFbNpEBL5wTPaSBwUxLjAuMaAHjAWyBwMyLTG4B9QBwgcDMi0yyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIaV5NUGIjA0c6Gu93g2SwzxAjqhaBP5vqo9T3ZO1dt_C7-3cr3kSNX0i6bjLFE5naCworte8IMyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=terraform+tutorial&sca_esv=75b852f910b8e50f&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9018,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "terraform tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 494.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511743759"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.88,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing actual search results for \"terraform tutorial\"",
+     "page_changed": null,
+     "latency_ms": 580.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511743759"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511743759"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5e2bc04722c65df6",
+   "source": "google",
+   "goal": "Search Google for model quantization best practices and open the results.",
+   "fingerprint": 99591,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14574,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmodel%2bquantization%2bbest%2bpractices%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmodel%2Bquantization%2Bbest%2Bpractices%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnu2gWM1cKFcK70OupAFEeJ5ajeUSQ%253A1790511815208%26source%3Dhp%26ei%3Dxwq5au-WC_DFkPIPraX8uA0%26iflsig%3DABILxe8AAAAAarkY1zykjBH1hRfRLLyoSbIe9XKVHQMi%26ved%3D0ahUKEwivltel4I6XAxXwIkQIHa0SH9cQ4dUDCDI%26uact%3D5%26oq%3Dmodel%2Bquantization%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IiFtb2RlbCBxdWFudGl6YXRpb24gYmVzdCBwcmFjdGljZXMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKsCMgUQIRirAkj2BlAMWAxwAXgAkAEAmAHoAaAB6AGqAQMyLTG4AQPIAQD4AQGYAgKgAvIBqAIKwgIZEC4YgAQYigUYQxjnBhjHARjRAxjqAhi0AsICExAAGIAEGIoFGEMY5wYY6gIYtAKYAwLxBUfAIIrciYAHkgcFMS4wLjGgB4IFsgcDMi0xuAfvAcIHAzAuMsgHA4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMmV5NUGIjDER0qr-3fnkdofSm0FgdzcKWDhcqVIm9oty2ETQ4--LB8viczkLqWjgcqho5YK0cYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=model+quantization+best+practices&sca_esv=75b852"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8687,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 629.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511815392"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9064,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 498.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511815392"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ab16cf9d47469063",
+   "source": "google",
+   "goal": "First search Google for how to debug swift, then search Google for unit testing migration guide.",
+   "fingerprint": 99591,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14678,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bswift%26sca_esv%3d75b",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bswift%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnu2ZxlGDyCNJIlqsZeOJpvFESaxGw%253A1790511881998%26source%3Dhp%26ei%3DCQu5apLRO6GQvMcP7bXD0Ao%26iflsig%3DABILxe8AAAAAarkZGQqZIx3hswo1q1EKCUQEWp4pRT89%26ved%3D0ahUKEwjS-cPF4I6XAxUhCO8CHe3aEKoQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bswift%26gs_lp%3DEgdnd3Mtd2l6IhJob3cgdG8gZGVidWcgc3dpZnQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMgUQABjvBUjEB1ALWAtwAXgAkAEAmAHhAaAB4QGqAQMyLTG4AQPIAQD4AQGYAgKgAukBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBV9XDDYu4b6SkgcFMS4wLjGgB6YFsgcDMi0xuAfmAcIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIyW5NUGIjD5X_ci5CUQJqfcNVcpxnhjyeZN8zAFe8qbZasG10Crzv18jVojXehepTsjrKSxD8MyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+swift&sca_esv=75b852f910b8e50f&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.416,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug swift",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 510.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511882174"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8942,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 578.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511882174"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,834 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 39803,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:11:01+0800",
+  "n_tasks": 8,
+  "success": 3,
+  "success_rate": 0.375,
+  "verified": 3,
+  "verified_rate": 0.375,
+  "found_but_not_stopped": 0,
+  "mean_steps": 5.0,
+  "mean_duration_ms": 17120,
+  "decision_latency_ms": {
+   "p50": 562.1,
+   "p95": 651.5
+  },
+  "step_outcomes": {
+   "stale": 4,
+   "done-rejected": 6,
+   "executed": 25,
+   "refused-empty-enter": 1,
+   "done": 3,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 4,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 3,
+    "success_rate": 0.375,
+    "verified": 3,
+    "verified_rate": 0.375,
+    "mean_steps": 5.0
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-98aa0daffa718472",
+   "source": "google",
+   "goal": "First search Google for kafka tutorial, then search Google for how to debug llama.cpp.",
+   "fingerprint": 39803,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 24261,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bllama%2bcpp%26sca_esv",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bllama%2Bcpp%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsx0iY5l0utd5ZmEe6PzicHjDz-MQ%253A1790507047568%26source%3Dhp%26ei%3DJ_i4apK3IeL2kPIP05C2sQ4%26iflsig%3DABILxe8AAAAAarkGN72DHY1ZTn3ETqu_vfiMiUvQ-3pT%26oq%3Dhow%2Bto%2Bdebug%2Bllama.cpp%26gs_lp%3DEgdnd3Mtd2l6IhZob3cgdG8gZGVidWcgbGxhbWEuY3BwKgUIBRifBTIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVIkSpQGliTInACeACQAQCYAeUBoAGeA6oBBTAuMS4xuAEByAEA-AEBmAIEoAKtA6gCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCwgIFEAAYgATCAggQABiABBi0B5gDBPEFsGcAlqkR7qGSBwUyLjEuMaAHqg-yBwUwLjEuMbgHpwPCBwUwLjMuMcgHB4AIAQ%26sclient%3Dgws-wiz%26sei%3DM_i4aviTIvzZkPIP4pm2wQs&hl=en&q=EgQm0XtnGLPw49UGIjCG89QsJBNmuFLyR6CQceJZN6ZWlr8GJeVE2zrFnKN6J7aH_mF9eljI_nTxF_pc3XgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+llama+cpp&sca_esv=54dc793dbd0950c5&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8973,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug llama.cpp",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 478.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.543,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search-results page listing results for 'how to debug llama.cpp'",
+     "page_changed": null,
+     "latency_ms": 477.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507048923"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kafka tutorial",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507048923"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9163,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'how to debug llama.cpp' (page still shows 'kafka tutorial' search/suggestions)",
+     "page_changed": null,
+     "latency_ms": 633.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507048923"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug llama.cpp",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507048923"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.3681,
+     "target": "17",
+     "target_label": "how to debug llama cpp",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 601.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507048923"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-7b94687ddd9233b9",
+   "source": "google",
+   "goal": "Search Google for scala interview questions and open the results.",
+   "fingerprint": 39803,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 8,
+   "total_ms": 15715,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=scala+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnslrlpr-ziajbl",
+     "bot_challenge": false,
+     "group0": [
+      "scala"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=scala+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnslRlPR-ziajblFWal6o6rVuxotPA%3A1790507124205&source=hp&ei=dPi4avT-Comqur8P2PCssQs&iflsig=ABILxe8AAAAAarkGhABzbGx0wXR3B3etuA3iqeBMrDch&ved=0ahUKEwj0iOvozo6XAxUJle4BHVg4K7YQ4dUDCDI&uact=5&oq=scala+interview+questions&gs_lp=Egdnd3Mtd2l6IhlzY2FsYSBpbnRlcnZpZXcgcXVlc3Rpb25zMgUQABiABDIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSJJSUA5YDnABeACQAQCYAcYBoAHGAaoBAzAuMbgBA8gBAPgBAZgCAqACzAGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEF0Na4JQupT6WSBwUxLjAuMaAHxwayBwMyLTG4B8gBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz",
+    "final_title": "scala interview questions - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9086,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "scala interview questions",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 482.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8971,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 466.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507125546"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8935,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for \"scala interview questions\" (page shows the empty Google homepage search box, no query entered and no results listed)",
+     "page_changed": null,
+     "latency_ms": 490.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507125546"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "scala interview questions",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507125546"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8429,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page listing results for 'scala interview questions'",
+     "page_changed": null,
+     "latency_ms": 869.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507125546"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507125546"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.2734,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 739.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=scala+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnslRlPR-ziajblFWal6o6rVuxotPA%3A1790507124205&source=hp&ei=dPi4avT-Comqur8P2PCssQs&iflsig=ABILxe8AAAAAarkGhABzbGx0wXR3B3etuA3iqeBMrDch&ved=0ahUKEwj0iOvozo6XAxUJle4BHVg4K7YQ4dUDCDI&uact=5&oq=scala+interview+questions&gs_lp=Egdnd3Mtd2l6IhlzY2FsYSBpbnRlcnZpZXcgcXVlc3Rpb25zMgUQABiABDIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSJJSUA5YDnABeACQAQCYAcYBoAHGAaoBAzAuMbgBA8gBAPgBAZgCAqACzAGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEF0Na4JQupT6WSBwUxLjAuMaAHxwayBwMyLTG4B8gBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.8895,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 565.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=scala+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnslRlPR-ziajblFWal6o6rVuxotPA%3A1790507124205&source=hp&ei=dPi4avT-Comqur8P2PCssQs&iflsig=ABILxe8AAAAAarkGhABzbGx0wXR3B3etuA3iqeBMrDch&ved=0ahUKEwj0iOvozo6XAxUJle4BHVg4K7YQ4dUDCDI&uact=5&oq=scala+interview+questions&gs_lp=Egdnd3Mtd2l6IhlzY2FsYSBpbnRlcnZpZXcgcXVlc3Rpb25zMgUQABiABDIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSJJSUA5YDnABeACQAQCYAcYBoAHGAaoBAzAuMbgBA8gBAPgBAZgCAqACzAGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEF0Na4JQupT6WSBwUxLjAuMaAHxwayBwMyLTG4B8gBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-fcc645c7ec152856",
+   "source": "google",
+   "goal": "Search Google for postgresql cheat sheet and open the results.",
+   "fingerprint": 39803,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 6080,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=postgresql+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqntkuo_cnrei9fskqo",
+     "bot_challenge": false,
+     "group0": [
+      "postgresql"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=postgresql+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntKuo_cNreI9fskQovE-HQYEzmKTg%3A1790507147309&source=hp&ei=i_i4av3XEZe6kPIPo_WroQw&iflsig=ABILxe8AAAAAarkGm7pDixITnQ7AfX3V05CzqIKOsQ_t&ved=0ahUKEwi9ye3zzo6XAxUXHUQIHaP6KsQQ4dUDCDI&uact=5&oq=postgresql+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhZwb3N0Z3Jlc3FsIGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IqwdQDlgOcAF4AJABAJgB0QGgAdEBqgEDMi0xuAEDyAEA-AEBmAICoALXAagCCsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtALCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIWEAAYgAQYigUYQxi0BxjnBhjqAhi0ApgDA_EFCLwo6K6zyICSBwUxLjAuMaAH3gWyBwMyLTG4B9MBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz",
+    "final_title": "postgresql cheat sheet - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8992,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 491.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507147569"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8499,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 560.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507147569"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8899,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 571.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=postgresql+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntKuo_cNreI9fskQovE-HQYEzmKTg%3A1790507147309&source=hp&ei=i_i4av3XEZe6kPIPo_WroQw&iflsig=ABILxe8AAAAAarkGm7pDixITnQ7AfX3V05CzqIKOsQ_t&ved=0ahUKEwi9ye3zzo6XAxUXHUQIHaP6KsQQ4dUDCDI&uact=5&oq=postgresql+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhZwb3N0Z3Jlc3FsIGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IqwdQDlgOcAF4AJABAJgB0QGgAdEBqgEDMi0xuAEDyAEA-AEBmAICoALXAagCCsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtALCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIWEAAYgAQYigUYQxi0BxjnBhjqAhi0ApgDA_EFCLwo6K6zyICSBwUxLjAuMaAH3gWyBwMyLTG4B9MBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-39eb678b1dda6e59",
+   "source": "google",
+   "goal": "First search Google for vector embeddings cheat sheet, then search Google for golang best practices.",
+   "fingerprint": 39803,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 30743,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgolang%2bbest%2bpractices%26sca_esv%3d54",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgolang%2Bbest%2Bpractices%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnscPPuNgM_EnfWS5OWd40DZVdwqlg%253A1790507163302%26ei%3Dm_i4auWKEtGgkPIPrru_oQ8%26biw%3D1120%26bih%3D780%26oq%3Dgolang%2Bbest%2Bpractices%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiFWdvbGFuZyBiZXN0IHByYWN0aWNlcyoFCAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSKEIUA1YDXABeACQAQCYAdABoAHQAaoBAzItMbgBAcgBAPgBAZgCAqAC2wHCAg4QABiABBiKBRiGAxiwA8ICCxAAGIkFGKIEGLADwgIIEAAY7wUYsAPCAgsQABiABBiiBBiwA5gDAIgGAZAGBpIHBTEuMC4xoAfpBbIHAzItMbgH1wHCBwUwLjEuMcgHCIAIAQ%26sclient%3Dgws-wiz-serp&hl=en&q=EgQm0XtnGKvx49UGIjDYCx1Uz9h-L4qi_g0_U45cR962jHad4w4HWtej3iVbtIQ6QquoCsjvmC6C1WJkUgQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=golang+best+practices&sca_esv=54dc793dbd0950c5&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8829,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vector embeddings cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 462.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507160852"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9036,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 651.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507160852"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8305,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'golang best practices' (page still shows results for 'vector embeddings cheat sheet')",
+     "page_changed": null,
+     "latency_ms": 529.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnv-r3HX04VUzUzdxSDtQYNPboi5vQ%3A1790507160582&source=hp&ei=mPi4apSTItDJkPIPtbLamQQ&iflsig=ABILxe8AAAAAarkGqOjh1YJ_8kVZFZeoO9YBk4y9vAmP&ved=0ahUKEwiUv5f6zo6XAxXQJEQIHTWZNkMQ4dUDCDI&uact=5&oq=vector+embeddings+cheat+sheet&gs_lp=Egdnd3Mtd2l6Ih12ZWN0b3IgZW1iZWRkaW5ncyBjaGVhdCBzaGVldDIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAjIFECEYqwJIiQhQDVgNcAF4AJABAJgB3wGgAd8BqgEDMi0xuAEDyAEA-AEBmAICoALmAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtAKYAwTxBXp8Te1PvXg9kgcFMS4wLjGgB9cGsgcDMi0xuAfiAcIHBTEuMC4xyAcEgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang best practices",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnv-r3HX04VUzUzdxSDtQYNPboi5vQ%3A1790507160582&source=hp&ei=mPi4apSTItDJkPIPtbLamQQ&iflsig=ABILxe8AAAAAarkGqOjh1YJ_8kVZFZeoO9YBk4y9vAmP&ved=0ahUKEwiUv5f6zo6XAxXQJEQIHTWZNkMQ4dUDCDI&uact=5&oq=vector+embeddings+cheat+sheet&gs_lp=Egdnd3Mtd2l6Ih12ZWN0b3IgZW1iZWRkaW5ncyBjaGVhdCBzaGVldDIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAjIFECEYqwJIiQhQDVgNcAF4AJABAJgB3wGgAd8BqgEDMi0xuAEDyAEA-AEBmAICoALmAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtAKYAwTxBXp8Te1PvXg9kgcFMS4wLjGgB9cGsgcDMi0xuAfiAcIHBTEuMC4xyAcEgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8288,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for golang best practices",
+     "page_changed": null,
+     "latency_ms": 591.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnv-r3HX04VUzUzdxSDtQYNPboi5vQ%3A1790507160582&source=hp&ei=mPi4apSTItDJkPIPtbLamQQ&iflsig=ABILxe8AAAAAarkGqOjh1YJ_8kVZFZeoO9YBk4y9vAmP&ved=0ahUKEwiUv5f6zo6XAxXQJEQIHTWZNkMQ4dUDCDI&uact=5&oq=vector+embeddings+cheat+sheet&gs_lp=Egdnd3Mtd2l6Ih12ZWN0b3IgZW1iZWRkaW5ncyBjaGVhdCBzaGVldDIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAjIFECEYqwJIiQhQDVgNcAF4AJABAJgB3wGgAd8BqgEDMi0xuAEDyAEA-AEBmAICoALmAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtAKYAwTxBXp8Te1PvXg9kgcFMS4wLjGgB9cGsgcDMi0xuAfiAcIHBTEuMC4xyAcEgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnv-r3HX04VUzUzdxSDtQYNPboi5vQ%3A1790507160582&source=hp&ei=mPi4apSTItDJkPIPtbLamQQ&iflsig=ABILxe8AAAAAarkGqOjh1YJ_8kVZFZeoO9YBk4y9vAmP&ved=0ahUKEwiUv5f6zo6XAxXQJEQIHTWZNkMQ4dUDCDI&uact=5&oq=vector+embeddings+cheat+sheet&gs_lp=Egdnd3Mtd2l6Ih12ZWN0b3IgZW1iZWRkaW5ncyBjaGVhdCBzaGVldDIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAjIFECEYqwJIiQhQDVgNcAF4AJABAJgB3wGgAd8BqgEDMi0xuAEDyAEA-AEBmAICoALmAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtAKYAwTxBXp8Te1PvXg9kgcFMS4wLjGgB9cGsgcDMi0xuAfiAcIHBTEuMC4xyAcEgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8021,
+     "target": "6",
+     "target_label": "golang best practices",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 617.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnv-r3HX04VUzUzdxSDtQYNPboi5vQ%3A1790507160582&source=hp&ei=mPi4apSTItDJkPIPtbLamQQ&iflsig=ABILxe8AAAAAarkGqOjh1YJ_8kVZFZeoO9YBk4y9vAmP&ved=0ahUKEwiUv5f6zo6XAxXQJEQIHTWZNkMQ4dUDCDI&uact=5&oq=vector+embeddings+cheat+sheet&gs_lp=Egdnd3Mtd2l6Ih12ZWN0b3IgZW1iZWRkaW5ncyBjaGVhdCBzaGVldDIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAjIFECEYqwJIiQhQDVgNcAF4AJABAJgB3wGgAd8BqgEDMi0xuAEDyAEA-AEBmAICoALmAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtAKYAwTxBXp8Te1PvXg9kgcFMS4wLjGgB9cGsgcDMi0xuAfiAcIHBTEuMC4xyAcEgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5435e9fcd39969da",
+   "source": "google",
+   "goal": "First search Google for tensorflow open source alternatives, then search Google for mongodb performance optimization.",
+   "fingerprint": 39803,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14791,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dtensorflow%2bopen%2bsource%2balternative",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtensorflow%2Bopen%2Bsource%2Balternatives%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnu181jewANLZDxHgLuEc0D4yykWOw%253A1790507243516%26source%3Dhp%26ei%3D6_i4asunHqyjur8P1M2agAg%26iflsig%3DABILxe8AAAAAarkG-1gbSjvg8c6AfIo1Sp6uk7KZNoMz%26ved%3D0ahUKEwiLyd2hz46XAxWske4BHdSmBoAQ4dUDCDI%26uact%3D5%26oq%3Dtensorflow%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiN0ZW5zb3JmbG93IG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBTIIEAAYgAQYogQyCBAAGIAEGKIESIMIUBFYEXABeACQAQCYAeQBoAHkAaoBAzItMbgBA8gBAPgBAZgCAqAC7gGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBY_s70SihBL1kgcFMS4wLjGgB-UDsgcDMi0xuAfpAcIHAzItMsgHB4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGO7x49UGIjCze5j8coBKv0uPWMi63zDJF5Bh6fV-m3JnP5u7VSueOUP7gqmPIEbmPYu2SGPjBXkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=tensorflow+open+source+alternatives&sca_esv=54dc"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8865,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 502.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507243632"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9105,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 634.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507243632"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-079268740cc5a4a2",
+   "source": "google",
+   "goal": "First search Google for rabbitmq open source alternatives, then search Google for elasticsearch performance optimization.",
+   "fingerprint": 39803,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14650,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drabbitmq%2bopen%2bsource%2balternatives%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drabbitmq%2Bopen%2Bsource%2Balternatives%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv36v8lZOBtCJFto00Nm64ALKexhg%253A1790507310508%26source%3Dhp%26ei%3DLvm4aqTeHYrekPIP2-iM4Qg%26iflsig%3DABILxe8AAAAAarkHPrDp6mV922Gh4YPiKmWw4DCG04q7%26ved%3D0ahUKEwikrdbBz46XAxUKL0QIHVs0I4wQ4dUDCDI%26uact%3D5%26oq%3Drabbitmq%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiFyYWJiaXRtcSBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIEMgUQABjvBUjGB1AQWBBwAXgAkAEAmAHfAaAB3wGqAQMyLTG4AQPIAQD4AQGYAgKgAukBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBTo147IRHnQKkgcFMS4wLjGgB_0DsgcDMi0xuAfkAcIHAzItMsgHB4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLHy49UGIjChOkUW8r0e75k1qsM4CV1kK3tls1sDc1g4WmaDKfXMcMTZqDLGNV1je1nhbjJ2Wq4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=rabbitmq+open+source+alternatives&sca_esv=54dc79"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9051,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rabbitmq open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 504.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507310623"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.6164,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 571.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507310623"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-50221aeca1cfaadc",
+   "source": "google",
+   "goal": "First search Google for typescript tutorial, then search Google for huggingface transformers cheat sheet.",
+   "fingerprint": 39803,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14641,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dtypescript%2btutorial%26sca_esv%3d54dc79",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtypescript%2Btutorial%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsKLumJpiiaP0PKARSNEPakJWxdkg%253A1790507377368%26source%3Dhp%26ei%3Dcfm4arewFd7MkPIPsdqxIQ%26iflsig%3DABILxe8AAAAAarkHgVMWedhKcLXCRz1MwwHqCDWqxLqx%26ved%3D0ahUKEwj3rMfhz46XAxVeJkQIHTFtLAQQ4dUDCDI%26uact%3D5%26oq%3Dtypescript%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhN0eXBlc2NyaXB0IHR1dG9yaWFsMgsQABiABBixAxiDATIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMggQABiABBi0B0i1B1AQWBBwAXgAkAEAmAHNAaABzQGqAQMyLTG4AQPIAQD4AQGYAgKgAtcBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBcIEaj3eZ1wBkgcFMS4wLjGgB9sFsgcDMi0xuAfSAcIHAzItMsgHB4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPTy49UGIjDTtr4oRsnxoHqD9wME8q44U55JVTk92h8cyo1RnKGIq-nZQghV2ozfe6LSBsI06ykyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=typescript+tutorial&sca_esv=54dc793dbd0950c5&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8965,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "typescript tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 557.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507377477"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9079,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 562.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507377477"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-fe804f28a06c1677",
+   "source": "google",
+   "goal": "First search Google for prometheus best practices, then search Google for pytorch best practices.",
+   "fingerprint": 39803,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 10,
+   "total_ms": 16078,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=pytorch+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnseml2dgdp7mteo0y",
+     "bot_challenge": false,
+     "group0": [
+      "pytorch"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=pytorch+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsEMl2DGDp7mTeo0Y_4TrSjCrBhkQ%3A1790507446889&ei=tvm4avj7NYTCkPIP7vL1QQ&biw=1120&bih=780&oq=pytorch+best+practices&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnB5dG9yY2ggYmVzdCBwcmFjdGljZXMqBQgAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wVI4kxQx0RYx0RwBXgBkAEAmAHkAaAB5AGqAQMyLTG4AQHIAQD4AQGYAgagAvYBwgIKEAAYRxjWBBiwA5gDAIgGAZAGCJIHBTUuMC4xoAfNBbIHAzItMbgH6gHCBwUwLjUuMcgHDYAIAQ&sclient=gws-wiz-serp",
+    "final_title": "pytorch best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9068,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "prometheus best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 495.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507444287"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8842,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 574.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507444287"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8459,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "prometheus best practices",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 596.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=prometheus+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt4RKSwJHVtRj90Kf_niUvVN_h3Yg%3A1790507444171&source=hp&ei=tPm4avijCe3DkPIPqJOTqQk&iflsig=ABILxe8AAAAAarkHxLyYzRyvzcefTpF43r3UIZmrVsEa&ved=0ahUKEwj4zbSB0I6XAxXtIUQIHajJJJUQ4dUDCDI&uact=5&oq=prometheus+best+practices&gs_lp=Egdnd3Mtd2l6Ihlwcm9tZXRoZXVzIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjEB1AOWA5wAXgAkAEAmAHRAaAB0QGqAQMyLTG4AQPIAQD4AQGYAgKgAtwBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBQDNDmNZxe2ekgcFMS4wLjGgB_8FsgcDMi0xuAfXAcIHAzItMsgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7179,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "prometheus best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 570.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=prometheus+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt4RKSwJHVtRj90Kf_niUvVN_h3Yg%3A1790507444171&source=hp&ei=tPm4avijCe3DkPIPqJOTqQk&iflsig=ABILxe8AAAAAarkHxLyYzRyvzcefTpF43r3UIZmrVsEa&ved=0ahUKEwj4zbSB0I6XAxXtIUQIHajJJJUQ4dUDCDI&uact=5&oq=prometheus+best+practices&gs_lp=Egdnd3Mtd2l6Ihlwcm9tZXRoZXVzIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjEB1AOWA5wAXgAkAEAmAHRAaAB0QGqAQMyLTG4AQPIAQD4AQGYAgKgAtwBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBQDNDmNZxe2ekgcFMS4wLjGgB_8FsgcDMi0xuAfXAcIHAzItMsgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.291,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "prometheus best practices",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 573.2,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=prometheus+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt4RKSwJHVtRj90Kf_niUvVN_h3Yg%3A1790507444171&source=hp&ei=tPm4avijCe3DkPIPqJOTqQk&iflsig=ABILxe8AAAAAarkHxLyYzRyvzcefTpF43r3UIZmrVsEa&ved=0ahUKEwj4zbSB0I6XAxXtIUQIHajJJJUQ4dUDCDI&uact=5&oq=prometheus+best+practices&gs_lp=Egdnd3Mtd2l6Ihlwcm9tZXRoZXVzIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjEB1AOWA5wAXgAkAEAmAHRAaAB0QGqAQMyLTG4AQPIAQD4AQGYAgKgAtwBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBQDNDmNZxe2ekgcFMS4wLjGgB_8FsgcDMi0xuAfXAcIHAzItMsgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.291,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "prometheus best practices",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 618.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=prometheus+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt4RKSwJHVtRj90Kf_niUvVN_h3Yg%3A1790507444171&source=hp&ei=tPm4avijCe3DkPIPqJOTqQk&iflsig=ABILxe8AAAAAarkHxLyYzRyvzcefTpF43r3UIZmrVsEa&ved=0ahUKEwj4zbSB0I6XAxXtIUQIHajJJJUQ4dUDCDI&uact=5&oq=prometheus+best+practices&gs_lp=Egdnd3Mtd2l6Ihlwcm9tZXRoZXVzIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjEB1AOWA5wAXgAkAEAmAHRAaAB0QGqAQMyLTG4AQPIAQD4AQGYAgKgAtwBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBQDNDmNZxe2ekgcFMS4wLjGgB_8FsgcDMi0xuAfXAcIHAzItMsgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.291,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "prometheus best practices",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 592.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=prometheus+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt4RKSwJHVtRj90Kf_niUvVN_h3Yg%3A1790507444171&source=hp&ei=tPm4avijCe3DkPIPqJOTqQk&iflsig=ABILxe8AAAAAarkHxLyYzRyvzcefTpF43r3UIZmrVsEa&ved=0ahUKEwj4zbSB0I6XAxXtIUQIHajJJJUQ4dUDCDI&uact=5&oq=prometheus+best+practices&gs_lp=Egdnd3Mtd2l6Ihlwcm9tZXRoZXVzIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjEB1AOWA5wAXgAkAEAmAHRAaAB0QGqAQMyLTG4AQPIAQD4AQGYAgKgAtwBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBQDNDmNZxe2ekgcFMS4wLjGgB_8FsgcDMi0xuAfXAcIHAzItMsgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "pytorch best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=prometheus+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt4RKSwJHVtRj90Kf_niUvVN_h3Yg%3A1790507444171&source=hp&ei=tPm4avijCe3DkPIPqJOTqQk&iflsig=ABILxe8AAAAAarkHxLyYzRyvzcefTpF43r3UIZmrVsEa&ved=0ahUKEwj4zbSB0I6XAxXtIUQIHajJJJUQ4dUDCDI&uact=5&oq=prometheus+best+practices&gs_lp=Egdnd3Mtd2l6Ihlwcm9tZXRoZXVzIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjEB1AOWA5wAXgAkAEAmAHRAaAB0QGqAQMyLTG4AQPIAQD4AQGYAgKgAtwBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBQDNDmNZxe2ekgcFMS4wLjGgB_8FsgcDMi0xuAfXAcIHAzItMsgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.8108,
+     "target": "6",
+     "target_label": "pytorch best practices",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 615.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=prometheus+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt4RKSwJHVtRj90Kf_niUvVN_h3Yg%3A1790507444171&source=hp&ei=tPm4avijCe3DkPIPqJOTqQk&iflsig=ABILxe8AAAAAarkHxLyYzRyvzcefTpF43r3UIZmrVsEa&ved=0ahUKEwj4zbSB0I6XAxXtIUQIHajJJJUQ4dUDCDI&uact=5&oq=prometheus+best+practices&gs_lp=Egdnd3Mtd2l6Ihlwcm9tZXRoZXVzIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjEB1AOWA5wAXgAkAEAmAHRAaAB0QGqAQMyLTG4AQPIAQD4AQGYAgKgAtwBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBQDNDmNZxe2ekgcFMS4wLjGgB_8FsgcDMi0xuAfXAcIHAzItMsgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.8984,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 606.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=pytorch+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsEMl2DGDp7mTeo0Y_4TrSjCrBhkQ%3A1790507446889&ei=tvm4avj7NYTCkPIP7vL1QQ&biw=1120&bih=780&oq=pytorch+best+practices&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnB5dG9yY2ggYmVzdCBwcmFjdGljZXMqBQgAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wVI4kxQx0RYx0RwBXgBkAEAmAHkAaAB5AGqAQMyLTG4AQHIAQD4AQGYAgagAvYBwgIKEAAYRxjWBBiwA5gDAIgGAZAGCJIHBTUuMC4xoAfNBbIHAzItMbgH6gHCBwUwLjUuMcgHDYAIAQ&sclient=gws-wiz-serp"
+    }
+   ]
+  }
+ ]
+}

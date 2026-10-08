@@ -1,0 +1,693 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 54386,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T18:42:21+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 3.9,
+  "mean_duration_ms": 17316,
+  "decision_latency_ms": {
+   "p50": 528.9,
+   "p95": 656.3
+  },
+  "step_outcomes": {
+   "stale": 4,
+   "refused-empty-enter": 2,
+   "executed": 25
+  },
+  "low_confidence_steps": 3,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 3.9
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-dae2f6f8c47f2486",
+   "source": "google",
+   "goal": "First search Google for async programming interview questions, then search Google for python performance optimization.",
+   "fingerprint": 54386,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 4,
+   "total_ms": 16182,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpython%2basync%2bprogramming%2binterview",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpython%2Basync%2Bprogramming%2Binterview%2Bquestions%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns7yShCoT1RR8ZMaokX0qGPTls_ZA%253A1790505236560%26source%3Dhp%26ei%3DFPG4aonsIKrNkPIPypOT2QQ%26iflsig%3DABILxe8AAAAAarj_JKIS3lqwfzMjPsq3ATsDeKvH9OGT%26oq%3Dasync%2Bprogramming%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IiVhc3luYyBwcm9ncmFtbWluZyBpbnRlcnZpZXcgcXVlc3Rpb25zKgYIAhgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FSJ0IUBZYFnABeACQAQCYAdkBoAHZAaoBAzItMbgBAcgBAPgBAZgCAqAC5QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFQj5JtPbCChOSBwUxLjAuMaAH5QeyBwMyLTG4B-ABwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz%26sei%3DGPG4avrVH97ckPIP-sSaQQ&hl=en&q=EgQm0XtnGJji49UGIjCdF6yvtNXczgrwVxcZVmU6KjOEiC30ccAd9cKbuWolTU6nAs7i4VR-zlX5R7Ru34AyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=python+async+programming+interview+questions&sca"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8987,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "async programming interview questions",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 490.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9048,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 476.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505237920"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8744,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "async programming interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 495.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505237920"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8821,
+     "target": "14",
+     "target_label": "python async programming interview questions",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 593.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505237920"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-de74e0d58fc24e14",
+   "source": "google",
+   "goal": "First search Google for golang interview questions, then search Google for zig performance optimization.",
+   "fingerprint": 54386,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 15,
+   "total_ms": 34462,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgolang%2binterview%2bquestions%26sca_esv",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgolang%2Binterview%2Bquestions%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26biw%3D1120%26bih%3D780%26sxsrf%3DAPpeQntEn22uv4aLdss2fCPuCT_C0xCYiA%253A1790505320933%26ei%3DaPG4aqbOOITBkPIPgan26Ak%26ved%3D2ahUKEwimov2MyI6XAxWEIEQIHYGUHZ0Q4dUDegQIBhAN%26oq%3Dgolang%2Binterview%2Bquestions%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiGmdvbGFuZyBpbnRlcnZpZXcgcXVlc3Rpb25zMgsQABiABBiKBRiRAjIIEAAYgAQYtAcyCxAAGIAEGIoFGJECMgUQABiABDILEAAYgAQYigUYkQIyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0B0jDCFAKWApwAXgAkAEAmAHTAaAB0wGqAQMyLTG4AQzIAQD4AQGYAgKgAt8BwgINEAAYgAQYigUYQxiwA5gDAIgGAZAGCpIHBTEuMC4xoAfqBrIHAzItMbgH3AHCBwUwLjEuMcgHB4AIAQ%26sclient%3Dgws-wiz-serp&hl=en&q=EgQm0XtnGO_i49UGIjDWP_ihe00yun3Q89aWnQ213TCeYSuTKTHlnohBmcxgim8Gk-HRkKvSV24NH_qPoPgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=golang+interview+questions&sca_esv=ee3892b004fb5"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8979,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang interview questions",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 489.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8965,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 490.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505306491"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.832,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 513.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505306491"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8608,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang interview questions",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 597.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505306491"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505306491"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.2634,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 623.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=golang+interview+questions&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnt8UAas6ZVsVGdfZOSuATpiHx8XOQ%3A1790505305140&source=hp&ei=WfG4aqiAB6rNkPIPypOT2QQ&iflsig=ABILxe8AAAAAarj_abRdMS_ig0VBvYNpkHlprs_jWZ8V&ved=0ahUKEwjokLiFyI6XAxWqJkQIHcrJJEsQ4dUDCDI&uact=5&oq=golang+interview+questions&gs_lp=Egdnd3Mtd2l6Ihpnb2xhbmcgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyCBAAGIAEGLQHMgUQABiABDIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIFEAAYgARI9RhQDFgMcAJ4AJABAJgBuQGgAbkBqgEDMC4xuAEDyAEA-AEBmAIDoALAAagCCsICChAAGAMYjwEY6gKYAwPxBYyOdJR3360zkgcDMi4xoAfSBrIHAzAuMbgHuwHCBwMxLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.813,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 587.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang+interview+questions&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnt8UAas6ZVsVGdfZOSuATpiHx8XOQ%3A1790505305140&source=hp&ei=WfG4aqiAB6rNkPIPypOT2QQ&iflsig=ABILxe8AAAAAarj_abRdMS_ig0VBvYNpkHlprs_jWZ8V&ved=0ahUKEwjokLiFyI6XAxWqJkQIHcrJJEsQ4dUDCDI&uact=5&oq=golang+interview+questions&gs_lp=Egdnd3Mtd2l6Ihpnb2xhbmcgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyCBAAGIAEGLQHMgUQABiABDIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIFEAAYgARI9RhQDFgMcAJ4AJABAJgBuQGgAbkBqgEDMC4xuAEDyAEA-AEBmAIDoALAAagCCsICChAAGAMYjwEY6gKYAwPxBYyOdJR3360zkgcDMi4xoAfSBrIHAzAuMbgHuwHCBwMxLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.385,
+     "target": "11",
+     "target_label": "golang",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 644.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang+interview+questions&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnt8UAas6ZVsVGdfZOSuATpiHx8XOQ%3A1790505305140&source=hp&ei=WfG4aqiAB6rNkPIPypOT2QQ&iflsig=ABILxe8AAAAAarj_abRdMS_ig0VBvYNpkHlprs_jWZ8V&ved=0ahUKEwjokLiFyI6XAxWqJkQIHcrJJEsQ4dUDCDI&uact=5&oq=golang+interview+questions&gs_lp=Egdnd3Mtd2l6Ihpnb2xhbmcgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyCBAAGIAEGLQHMgUQABiABDIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIFEAAYgARI9RhQDFgMcAJ4AJABAJgBuQGgAbkBqgEDMC4xuAEDyAEA-AEBmAIDoALAAagCCsICChAAGAMYjwEY6gKYAwPxBYyOdJR3360zkgcDMi4xoAfSBrIHAzAuMbgHuwHCBwMxLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.3811,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 597.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang+interview+questions&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnt8UAas6ZVsVGdfZOSuATpiHx8XOQ%3A1790505305140&source=hp&ei=WfG4aqiAB6rNkPIPypOT2QQ&iflsig=ABILxe8AAAAAarj_abRdMS_ig0VBvYNpkHlprs_jWZ8V&ved=0ahUKEwjokLiFyI6XAxWqJkQIHcrJJEsQ4dUDCDI&uact=5&oq=golang+interview+questions&gs_lp=Egdnd3Mtd2l6Ihpnb2xhbmcgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyCBAAGIAEGLQHMgUQABiABDIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIFEAAYgARI9RhQDFgMcAJ4AJABAJgBuQGgAbkBqgEDMC4xuAEDyAEA-AEBmAIDoALAAagCCsICChAAGAMYjwEY6gKYAwPxBYyOdJR3360zkgcDMi4xoAfSBrIHAzAuMbgHuwHCBwMxLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.8078,
+     "target": "11",
+     "target_label": "golang",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 590.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang+interview+questions&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnt8UAas6ZVsVGdfZOSuATpiHx8XOQ%3A1790505305140&source=hp&ei=WfG4aqiAB6rNkPIPypOT2QQ&iflsig=ABILxe8AAAAAarj_abRdMS_ig0VBvYNpkHlprs_jWZ8V&ved=0ahUKEwjokLiFyI6XAxWqJkQIHcrJJEsQ4dUDCDI&uact=5&oq=golang+interview+questions&gs_lp=Egdnd3Mtd2l6Ihpnb2xhbmcgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyCBAAGIAEGLQHMgUQABiABDIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIFEAAYgARI9RhQDFgMcAJ4AJABAJgBuQGgAbkBqgEDMC4xuAEDyAEA-AEBmAIDoALAAagCCsICChAAGAMYjwEY6gKYAwPxBYyOdJR3360zkgcDMi4xoAfSBrIHAzAuMbgHuwHCBwMxLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.5219,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 859.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsuw7oNKv5fNvh638w4C10sYwaC6w%3A1790505311255&ei=X_G4avqXD8Gjur8PxrD7iAs&biw=1120&bih=780&oq=golang+interview+questions&gs_lp=Egxnd3Mtd2l6LXNlcnAiGmdvbGFuZyBpbnRlcnZpZXcgcXVlc3Rpb25zKg0IBBiABBiKBRhDGLADMg0QABiABBiKBRhDGLADMg0QABiABBiKBRhDGLADMg0QABiABBiKBRhDGLADMg0QABiABBiKBRhDGLADMg0QABiABBiKBRhDGLADMg0QABiABBiKBRhDGLADMhMQLhiABBiKBRhDGMcBGNEDGLADMg0QABiABBiKBRhDGLADMg0QABiABBiKBRhDGLADMg0QABiABBiKBRhDGLADSKcVUABYAHACeACQAQCYAQCgAQCqAQC4AQHIAQCYAgKgAgWYAwCIBgGQBgqSBwEyoAcAsgcAuAcAwgcDMC4yyAcEgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 11,
+     "operation": "CLICK",
+     "confidence": 0.7837,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 570.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang&sca_esv=ee3892b004fb5afd&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQntGm5uUnnhuP8IQjRSey42YOnuozg%3A1790505315727&ei=Y_G4armGLN7LkPIPj_Tk4QI&ved=2ahUKEwj5w7-KyI6XAxXeJUQIHQ86OSwQ4dUDegQIBhAN&oq=golang&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmdvbGFuZ0gAUABYAHAAeACQAQCYAQCgAQCqAQC4AQzIAQCYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwCACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 12,
+     "operation": "CLICK",
+     "confidence": 0.7958,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 644.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang&sca_esv=ee3892b004fb5afd&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQntF2HGVuJsU_voc64HfALd-oABqMQ%3A1790505317641&ei=ZfG4atngJoHAkPIP8eTUqA0&ved=2ahUKEwiZp7SLyI6XAxUBIEQIHXEyFdUQ4dUDegQIBhAN&oq=golang&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmdvbGFuZ0gAUABYAHAAeACQAQCYAQCgAQCqAQC4AQzIAQCYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwCACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 12,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang interview questions",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang&sca_esv=ee3892b004fb5afd&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQntmtjjbA030cRSAV1pwAmX-6L3iQw%3A1790505319364&ei=Z_G4apPvFZSP8L0Pu_af-A8&ved=2ahUKEwjTvp2MyI6XAxWUB7wBHTv7B_8Q4dUDegQIBhAN&oq=golang&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmdvbGFuZ0gAUABYAHAAeACQAQCYAQCgAQCqAQC4AQzIAQCYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwCACAE&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 13,
+     "operation": "CLICK",
+     "confidence": 0.2522,
+     "target": "4",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 656.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=golang&sca_esv=ee3892b004fb5afd&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQntmtjjbA030cRSAV1pwAmX-6L3iQw%3A1790505319364&ei=Z_G4apPvFZSP8L0Pu_af-A8&ved=2ahUKEwjTvp2MyI6XAxWUB7wBHTv7B_8Q4dUDegQIBhAN&oq=golang&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmdvbGFuZ0gAUABYAHAAeACQAQCYAQCgAQCqAQC4AQzIAQCYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwCACAE&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a3e0e13bb96185b5",
+   "source": "google",
+   "goal": "Search Google for memory leak debugging release notes and open the results.",
+   "fingerprint": 54386,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14607,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmemory%2bleak%2bdebugging%2brelease%2bno",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmemory%2Bleak%2Bdebugging%2Brelease%2Bnotes%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnthwIgvp_DSQugB_W2qZWmOddIICQ%253A1790505391996%26source%3Dhp%26ei%3Dr_G4aq_GO_jmkPIP2qjKuAk%26iflsig%3DABILxe8AAAAAarj_vx-QZ0ov8Jo7gQ15uSbyGaXsfgxT%26ved%3D0ahUKEwjv2e2uyI6XAxV4M0QIHVqUEpcQ4dUDCDI%26uact%3D5%26oq%3Dmemory%2Bleak%2Bdebugging%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IiNtZW1vcnkgbGVhayBkZWJ1Z2dpbmcgcmVsZWFzZSBub3RlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwJIgAdQD1gPcAF4AJABAJgB5AGgAeQBqgEDMi0xuAEDyAEA-AEBmAICoALsAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAhkQLhiABBiKBRhDGOcGGMcBGNEDGOoCGLQCmAME8QUElH2hymdCrZIHBTEuMC4xoAf8A7IHAzItMbgH5wHCBwUxLjAuMcgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLLj49UGIjBGHLv0GBSo3w_Ggx9xDBu978JXGg2znOs75SxIESDBjrAh1GkXeBH5nZEl4cj4kUYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=memory+leak+debugging+release+notes&sca_esv=54dc"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2863,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "memory leak debugging release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 515.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505392141"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.896,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 507.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505392141"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-cf26d45e7b924cb4",
+   "source": "google",
+   "goal": "Search Google for svelte open source alternatives and open the results.",
+   "fingerprint": 54386,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14702,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dsvelte%2bopen%2bsource%2balternatives%26",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsvelte%2Bopen%2Bsource%2Balternatives%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvKf03Urh2Dn0CAsyeqUDiBS67dtg%253A1790505458813%26source%3Dhp%26ei%3D8vG4ap2lMNbQkPIPzbP0mAs%26iflsig%3DABILxe8AAAAAarkAAnLlDBWi_EbS9cAmmMcfnAKwKwrY%26ved%3D0ahUKEwid5tvOyI6XAxVWKEQIHc0ZHbMQ4dUDCDI%26uact%3D5%26oq%3Dsvelte%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ih9zdmVsdGUgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIlQdQEFgQcAF4AJABAJgB6AGgAegBqgEDMi0xuAEDyAEA-AEBmAICoAL1AagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME8QXSj0ugy_-5HZIHBTEuMC4xoAepBbIHAzItMbgH8AHCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPXj49UGIjCmo3T0QSBu_EAFDbQWfKeTTQNcgWNp-CQq-HU9MZo9O4l3-Jr70e1AEoLOIlW7rSkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=svelte+open+source+alternatives&sca_esv=54dc793d"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8981,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "svelte open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 557.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505459095"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8788,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 528.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505459095"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-40ebc5c64a56960b",
+   "source": "google",
+   "goal": "Search Google for refactoring open source alternatives and open the results.",
+   "fingerprint": 54386,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14548,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drefactoring%2bopen%2bsource%2balternativ",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drefactoring%2Bopen%2Bsource%2Balternatives%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntyvD6POR21IudZza3xjt-ZghfIJQ%253A1790505525716%26source%3Dhp%26ei%3DNfK4arvSKuzGkPIPnfrcUA%26iflsig%3DABILxe8AAAAAarkARbGr692L3-PUwI0tNP9P0HSxmHov%26ved%3D0ahUKEwj7wM_uyI6XAxVsI0QIHR09FwoQ4dUDCDI%26uact%3D5%26oq%3Drefactoring%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiRyZWZhY3RvcmluZyBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMyBRAhGKABMgUQIRigATIFECEYoAFIxgZQD1gPcAF4AJABAJgB3wGgAd8BqgEDMi0xuAEDyAEA-AEBmAICoALqAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QXXzUAApght4JIHBTEuMC4xoAfNA7IHAzItMbgH5gHCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLjk49UGIjAGwFPZU7SN7zZOmc0JLE2RQM0OWu7g_LHbFWqnh4HS-wnwEFuEeLTAwgqyHLNDcO0yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=refactoring+open+source+alternatives&sca_esv=54d"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9008,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "refactoring open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 462.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505525978"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8714,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 453.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505525978"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b7270bf063b83d1d",
+   "source": "google",
+   "goal": "First search Google for laravel release notes, then search Google for react cheat sheet.",
+   "fingerprint": 54386,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14648,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlaravel%2brelease%2bnotes%26sca_esv%3d54",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlaravel%2Brelease%2Bnotes%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv-10JnBuNWB8pkjAlzNev0HoGb9w%253A1790505592425%26source%3Dhp%26ei%3DePK4ar3zF5DRkPIPjq2I4As%26iflsig%3DABILxe8AAAAAarkAiMAOF0NIKCAQVhxRSMYrmwR_Qdfz%26ved%3D0ahUKEwi9j7aOyY6XAxWQKEQIHY4WArwQ4dUDCDI%26uact%3D5%26oq%3Dlaravel%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhVsYXJhdmVsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSM8HUBJYEnABeACQAQCYAdcBoAHXAaoBAzItMbgBA8gBAPgBAZgCAqAC4gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBfEFgpS_umvdOS-SBwUxLjAuMaAHmwWyBwMyLTG4B90BwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPvk49UGIjBJE3jF05Zgnv1DJcbjW5ePaDoGE22Pkm4pDp8zMD3T6hpmpaC6JMHMCXeOLbpGS4MyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=laravel+release+notes&sca_esv=54dc793dbd0950c5&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8947,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "laravel release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 528.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505592654"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.891,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 581.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505592654"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-53bd0dd3030788b7",
+   "source": "google",
+   "goal": "First search Google for how to debug vue, then search Google for scala migration guide.",
+   "fingerprint": 54386,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14639,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bvue%26sca_esv%3d54dc7",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bvue%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsDacl9E9CGbsWaowogVEeb9OoQZQ%253A1790505659334%26source%3Dhp%26ei%3Du_K4auGWE7jJkPIP67nqiAc%26iflsig%3DABILxe8AAAAAarkAy3Qc2aBUKRde-_E-WUFwYvxGxu-U%26ved%3D0ahUKEwih4KquyY6XAxW4JEQIHeucGnEQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bvue%26gs_lp%3DEgdnd3Mtd2l6IhBob3cgdG8gZGVidWcgdnVlMggQABiABBi0BzIIEAAYgAQYtAcyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSPYHUBBYEHABeACQAQCYAdABoAHQAaoBAzItMbgBA8gBAPgBAZgCAqAC2gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFDoEuAR-YgQeSBwUxLjAuMaAHwAWyBwMyLTG4B9YBwgcDMi0yyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGL7l49UGIjDACt6B_P0Tw-E97pgiN73N3NLF85UDf9cmr_qbg0Tjjh1ZicviCwejS7laD3fSCmIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+vue&sca_esv=54dc793dbd0950c5&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8699,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug vue",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 493.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505659470"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8919,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 626.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505659470"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5784a66197507015",
+   "source": "google",
+   "goal": "First search Google for vue open source alternatives, then search Google for flask release notes.",
+   "fingerprint": 54386,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14738,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvue%2bopen%2bsource%2balternatives%26sca",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvue%2Bopen%2Bsource%2Balternatives%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt-tA4sb-ANKyQT4Yu6XFbP5tYLMw%253A1790505726131%26source%3Dhp%26ei%3D_vK4asXkBsrFkPIP9dez6Ak%26iflsig%3DABILxe8AAAAAarkBDk0GyGllyaumm_QyNgq4p5ZuhZiB%26ved%3D0ahUKEwjF25fOyY6XAxXKIkQIHfXrDJ0Q4dUDCDI%26uact%3D5%26oq%3Dvue%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ihx2dWUgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIhQdQEFgQcAF4AJABAJgB4wGgAeMBqgEDMi0xuAEDyAEA-AEBmAICoALuAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QVqX3zvdlHQMpIHBTEuMC4xoAeoBbIHAzItMbgH6QHCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIDm49UGIjDT3CXOjQN0z0bxtUc6v-YlUGYW2uOg8c0_6Qxz_FiI1fbqU4rJMcB9QIZlORqTAJoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vue+open+source+alternatives&sca_esv=54dc793dbd0"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8455,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 575.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505726264"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9059,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 507.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505726264"
+    }
+   ]
+  }
+ ]
+}

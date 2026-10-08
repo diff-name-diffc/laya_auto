@@ -1,0 +1,819 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 26485,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:59:50+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.9,
+  "mean_duration_ms": 27208,
+  "decision_latency_ms": {
+   "p50": 511.7,
+   "p95": 632.4
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 3,
+   "executed": 27,
+   "done-rejected": 6,
+   "done": 1
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "github": {
+    "n": 1,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 15.0
+   },
+   "google": {
+    "n": 7,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 3.4
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-54f935439e39af32",
+   "source": "google",
+   "goal": "First search Google for django tutorial, then search Google for llama.cpp cheat sheet.",
+   "fingerprint": 26485,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 17985,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddjango%2btutorial%26sca_esv%3d18a60b01d2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddjango%2Btutorial%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt-07MxGcSuNP0QeRC2BzNXxWlUlQ%253A1790509850297%26source%3Dhp%26ei%3DGgO5ar6PEafAkPIPkZS80Qw%26iflsig%3DABILxe8AAAAAarkRKmN1LRarDvsl4lMnB6SbZuK5Sg7y%26ved%3D0ahUKEwi-hN_82I6XAxUnIEQIHREKL8oQ4dUDCDI%26uact%3D5%26oq%3Ddjango%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig9kamFuZ28gdHV0b3JpYWwyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyCBAAGIAEGLQHMgUQABiABDIFEAAYgAQyBRAAGIAESIgWUBBYEHACeACQAQCYAboBoAG6AaoBAzAuMbgBA8gBAPgBAZgCA6ACxAGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEF_yWNaU_-JwSSBwMyLjGgB4EFsgcDMC4xuAe9AcIHBTAuMi4xyAcGgAgB%26sclient%3Dgws-wiz%26sei%3DIAO5ao-LBLaqur8Pm7Gs-Ag&hl=en&q=EgQm0XtnGKCG5NUGIjBHpHqmd8bqLYI0tDUfcZaygBQohxALaHM4DbXv6ipouFTWHXGNa_OYUgznNpmPinoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=django+tutorial&sca_esv=18a60b01d202c9ee&hl=en&g"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9082,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django tutorial",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 504.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8925,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 509.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509851640"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8954,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 506.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509851640"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8974,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django tutorial",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 591.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509851640"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509851640"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-860a882ff42f991f",
+   "source": "google",
+   "goal": "Search Google for async programming performance optimization and open the results.",
+   "fingerprint": 26485,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 22003,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dasync%2bprogramming%2bperformance%2bopti",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dasync%2Bprogramming%2Bperformance%2Boptimization%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnucMO6DFmU7TJMra9Wyu-tT28VDNg%253A1790509920657%26source%3Dhp%26ei%3DYAO5avTMJu6uur8PsPahwAo%26iflsig%3DABILxe8AAAAAarkRcKPV_3P7ASFVOQTnnEpCLwaHBJJa%26ved%3D0ahUKEwj0_KSe2Y6XAxVul-4BHTB7CKgQ4dUDCDI%26oq%3Dasync%2Bprogramming%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Iiphc3luYyBwcm9ncmFtbWluZyBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMggQABiJBRiiBDIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wVIsyNQEFgQcAF4AJABAJgB2QGgAdkBqgEDMi0xuAEMyAEA-AEBmAICoALiAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME8QX9vLIgNVhXi5IHBTEuMC4xoAeoBbIHAzItMbgH3gHCBwUwLjEuMcgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOqG5NUGIjBiu4pClaAIcBx3i_HMGXyDF4ElE7rRLlrRjseEZhr3DCzh3FSsK4IcRJahBj41MLQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=async+programming+performance+optimization&sca_e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8918,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "async programming performance optimization",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 500.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8439,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 497.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509922036"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8921,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for \"async programming performance optimization\" (page shows the empty Google homepage with a blank search box, no query or result",
+     "page_changed": null,
+     "latency_ms": 508.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509922036"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "async programming performance optimization",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509922036"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8993,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for async programming performance optimization",
+     "page_changed": null,
+     "latency_ms": 601.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509922036"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509922036"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-6d28be153a7eb9e8",
+   "source": "github",
+   "goal": "Search GitHub for 'tensorflow' repositories and open the search results.",
+   "fingerprint": 26485,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 15,
+   "total_ms": 89570,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'github.com/search'",
+    "checks": {
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=",
+     "bot_challenge": false,
+     "group0": [
+      "tensorflow"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=tensorflow+repositories&search-overlay-ask-ai=true",
+    "final_title": "Understanding GitHub Code Search syntax - GitHub Docs"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.5543,
+     "target": "11",
+     "target_label": "Enter your email",
+     "kind": "fill",
+     "text": "tensorflow",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 472.1,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9002,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 428.9,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8323,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 450.4,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.7756,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 466.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.852,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 488.7,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8845,
+     "target": "6",
+     "target_label": "Search syntax tips",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 527.8,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.9119,
+     "target": "6",
+     "target_label": "Search or ask Copilot",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 554.4,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.8532,
+     "target": "1",
+     "target_label": "Open Search or ask Copilot",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 698.7,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.852,
+     "target": "1",
+     "target_label": "Open Search or ask Copilot",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 582.5,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.8599,
+     "target": "1",
+     "target_label": "Open Search or ask Copilot",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 630.3,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 10,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:25",
+     "target_label": "Search or ask Copilot",
+     "kind": "fill",
+     "text": "tensorflow repositories",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 11,
+     "operation": "DONE",
+     "confidence": 0.9065,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub repository search results listing 'tensorflow' repositories — page only shows the GitHub Docs help-site search overlay with documentation sugge",
+     "page_changed": null,
+     "latency_ms": 610.1,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=tensorflow+repositories"
+    },
+    {
+     "step": 11,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=tensorflow+repositories"
+    },
+    {
+     "step": 12,
+     "operation": "DONE",
+     "confidence": 0.911,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub repository search results for 'tensorflow'; The search shown is a GitHub Docs documentation search, not a GitHub repository search; No list of ",
+     "page_changed": null,
+     "latency_ms": 632.4,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=tensorflow+repositories&search-overlay-ask-ai=true"
+    },
+    {
+     "step": 13,
+     "operation": "DONE",
+     "confidence": 0.9061,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 668.7,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=tensorflow+repositories&search-overlay-ask-ai=true"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5d4dd5517f6acc90",
+   "source": "google",
+   "goal": "First search Google for next.js tutorial, then search Google for ci/cd pipelines open source alternatives.",
+   "fingerprint": 26485,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14676,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dnext.js%2btutorial%26sca_esv%3d18a60b01d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dnext.js%2Btutorial%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt2CCwKHQ_LJUyn6lzYuttWOot-pA%253A1790510092611%26source%3Dhp%26ei%3DDAS5avGSJOfDkPIPoaHP8A0%26iflsig%3DABILxe8AAAAAarkSHEPB9SbkG0WfG95LOJswyfkzcjto%26ved%3D0ahUKEwjxyKTw2Y6XAxXnIUQIHaHQE94Q4dUDCDI%26uact%3D5%26oq%3Dnext.js%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhBuZXh0LmpzIHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSO8HUCBYIHABeACQAQCYAcsBoAHLAaoBAzItMbgBA8gBAPgBAZgCAqAC1QGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFbrTOqSm3XxiSBwUxLjAuMaAHpgayBwMyLTG4B9EBwgcDMi0yyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGI-I5NUGIjCVLHqiVSKRpqPsBq5a26ZrgTKiPk_jeO-NCPVT-cKyjLQ0fC7-t8KrFLAlWeGLJfkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=next.js+tutorial&sca_esv=18a60b01d202c9ee&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8888,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "next.js tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 542.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510092802"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8941,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 607.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510092802"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-6e2f3659fcaa1b62",
+   "source": "google",
+   "goal": "Search Google for java tutorial and open the results.",
+   "fingerprint": 26485,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14756,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3djava%2btutorial%26sca_esv%3d18a60b01d202",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Djava%2Btutorial%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsWUqTruQphP7pgy1Skt_48h1N5Cg%253A1790510159499%26source%3Dhp%26ei%3DTwS5apeqHeHPkPIPup-x8AY%26iflsig%3DABILxe8AAAAAarkSX5ojdEYa2M2sRIqRAdP8cIAfyEec%26ved%3D0ahUKEwjXjZeQ2o6XAxXhJ0QIHbpPDG4Q4dUDCDI%26uact%3D5%26oq%3Djava%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig1qYXZhIHR1dG9yaWFsMhAQABiABBiKBRhDGLEDGIMBMgoQABiABBiKBRhDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARItAdQEFgQcAF4AJABAJgBzAGgAcwBqgEDMi0xuAEDyAEA-AEBmAICoALVAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QWxSQyrH2yOzJIHBTEuMC4xoAf4BLIHAzItMbgH0AHCBwUwLjEuMcgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNKI5NUGIjDwABXGOhb7JkacBf0SBy7qEjACMh1XA4cFTYtNLdIJ3TEy6NfxhzxO1oevj0zYIqUyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=java+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9069,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "java tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 516.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510159885"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.5357,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 562.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510159885"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-93c842ef38fe703c",
+   "source": "google",
+   "goal": "Search Google for how to debug ruby and open the results.",
+   "fingerprint": 26485,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 21543,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bruby%26sca_esv%3d18a6",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bruby%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntk6RTV7DZAUysGb4NXBMS8WnV2nA%253A1790510226476%26source%3Dhp%26ei%3DkgS5aqDmG6PbkPIPmMqhyAs%26iflsig%3DABILxe8AAAAAarkSooIugJE7lAEhEk4m6CVs1_CABOCn%26ved%3D0ahUKEwig946w2o6XAxWjLUQIHRhlCLkQ4dUDCDI%26oq%3Dhow%2Bto%2Bdebug%2Bruby%26gs_lp%3DEgdnd3Mtd2l6IhFob3cgdG8gZGVidWcgcnVieTIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMggQABiJBRiiBDIIEAAYiQUYogRIvT1QDlgOcAF4AJABAJgB3wGgAd8BqgEDMi0xuAEMyAEA-AEBmAICoALmAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtAKYAwTxBQ3I61nD3wqfkgcFMS4wLjGgB58DsgcDMi0xuAfiAcIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJyJ5NUGIjBnsM8LwpQkApVbm8Yza0xaZHyjA4REKEtl_w-Jn4MzwZr2iibvSmaD7rJJIQez__kyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+ruby&sca_esv=18a60b01d202c9ee&hl=en"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2577,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug ruby",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 561.7,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510226702"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.869,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'how to debug ruby'",
+     "page_changed": null,
+     "latency_ms": 551.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510226702"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:31",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510226702"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-eef02e404f967f36",
+   "source": "google",
+   "goal": "Search Google for ci/cd pipelines security vulnerabilities and open the results.",
+   "fingerprint": 26485,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14574,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dci%252fcd%2bpipelines%2bsecurity%2bvulne",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dci%252Fcd%2Bpipelines%2Bsecurity%2Bvulnerabilities%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnu7Nl2xD8drrKoFNH49D9f8hqNnGQ%253A1790510300183%26source%3Dhp%26ei%3D3AS5aof2CY6qur8P4Z7DuQc%26iflsig%3DABILxe8AAAAAarkS7GgVePJVjriq_eY-Pb9300H9oV2D%26ved%3D0ahUKEwiH1KHT2o6XAxUOle4BHWHPMHcQ4dUDCDI%26uact%3D5%26oq%3Dci%252Fcd%2Bpipelines%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IihjaS9jZCBwaXBlbGluZXMgc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIpAdQD1gPcAF4AJABAJgB8AGgAfABqgEDMi0xuAEDyAEA-AEBmAICoAL-AagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QXzprLoZkOD5ZIHBTEuMC4xoAefBrIHAzItMbgH-gHCBwMyLTLIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGN6J5NUGIjCCI_BxK5wXr9AzM6tnlTejqk5a10tfLXNz31K9NGC-Fbya6tNffyQNEb9TzsgxK2cyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=ci%2Fcd+pipelines+security+vulnerabilities&sca_e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.899,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ci/cd pipelines security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 511.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510300353"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8961,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 536.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510300353"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-1a433ddac6fe5a1e",
+   "source": "google",
+   "goal": "First search Google for express best practices, then search Google for huggingface transformers best practices.",
+   "fingerprint": 26485,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 4,
+   "total_ms": 22555,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dexpress%2bbest%2bpractices%26sca_esv%3d1",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dexpress%2Bbest%2Bpractices%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsnQIwO2ZhIZzVLpPunvPa5yiie4A%253A1790510366928%26source%3Dhp%26ei%3DHgW5apqnN4HAkPIP8eTUqA0%26iflsig%3DABILxe8AAAAAarkTLk1NCbfJYui6ruqGAPYvxyGN6R3e%26ved%3D0ahUKEwiarovz2o6XAxUBIEQIHXEyFdUQ4dUDCDI%26oq%3Dexpress%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhZleHByZXNzIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjTQFAMWAxwAXgAkAEAmAHPAaABzwGqAQMyLTG4AQzIAQD4AQGYAgKgAtcBqAIKwgIKEAAYAxiPARjqApgDA_EFgH5iwLXFQo2SBwUxLjAuMaAH_gWyBwMyLTG4B9QBwgcDMC4yyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKmK5NUGIjBgARUXnMaiE5NDKzDXiAYUVeJnqXxaDb6GcVfFYpiGCp4Zdf5SDQZURK0RZG7GUYAyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=express+best+practices&sca_esv=18a60b01d202c9ee&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.847,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 483.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510367096"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.3751,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "express best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 519.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510367096"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9005,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for huggingface transformers best practices",
+     "page_changed": null,
+     "latency_ms": 558.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510367096"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:35",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510367096"
+    }
+   ]
+  }
+ ]
+}

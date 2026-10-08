@@ -1,0 +1,807 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 61503,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T18:39:33+0800",
+  "n_tasks": 8,
+  "success": 2,
+  "success_rate": 0.25,
+  "verified": 2,
+  "verified_rate": 0.25,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.8,
+  "mean_duration_ms": 15017,
+  "decision_latency_ms": {
+   "p50": 568.9,
+   "p95": 654.0
+  },
+  "step_outcomes": {
+   "stale": 5,
+   "refused-empty-enter": 2,
+   "executed": 25,
+   "done-rejected": 3,
+   "done": 3
+  },
+  "low_confidence_steps": 4,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 2,
+    "success_rate": 0.25,
+    "verified": 2,
+    "verified_rate": 0.25,
+    "mean_steps": 4.8
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-6761251e39bbd897",
+   "source": "google",
+   "goal": "First search Google for kafka best practices, then search Google for java cheat sheet.",
+   "fingerprint": 61503,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 21864,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dkafka%2bbest%2bpractices%26sca_esv%3dee3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dkafka%2Bbest%2Bpractices%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuVSr6zccpJ7HLm6vyrU61KAC3Q_Q%253A1790505221714%26source%3Dhp%26ei%3DBfG4aoHDKq7nkPIPgMi5oAM%26iflsig%3DABILxe8AAAAAarj_FYK4fyAi4freNRRd47DImPPZcIGY%26ved%3D0ahUKEwjB2dTdx46XAxWuM0QIHQBkDjQQ4dUDCDI%26uact%3D5%26oq%3Dkafka%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhRrYWZrYSBiZXN0IHByYWN0aWNlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I5jVQzQhYzQhwBHgAkAEAmAG7AaABuwGqAQMwLjG4AQPIAQD4AQGYAgWgAswBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBTAfnQUK113qkgcDNC4xoAfOBbIHAzAuMbgHwQHCBwUwLjMuMsgHC4AIAQ%26sclient%3Dgws-wiz%26sei%3DD_G4av2wH_rRkPIPhZ2JgQI&hl=en&q=EgQm0XtnGI_i49UGIjAW4BTgAk2gGgNwMa_nVGevT3vtSNrc89sCWNnCfNtFlDPHCLXyZfYhymgPIBIpI-UyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=kafka+best+practices&sca_esv=ee3892b004fb5afd&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9016,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kafka best practices",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 484.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8841,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 494.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505223049"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8379,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 495.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505223049"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8556,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kafka best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 643.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505223049"
+    },
+    {
+     "step": 5,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8672,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kafka best practices",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 638.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505223049"
+    },
+    {
+     "step": 6,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.885,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kafka best practices",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 654.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505223049"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505223049"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-7a9ca5f880daafd9",
+   "source": "google",
+   "goal": "Search Google for langchain open source alternatives and open the results.",
+   "fingerprint": 61503,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 7,
+   "total_ms": 11122,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=langchain+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqntk4i",
+     "bot_challenge": false,
+     "group0": [
+      "langchain"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=langchain+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntK4i0AzrO4YBDnIzv0R7MGrcTDvg%3A1790505295967&source=hp&ei=T_G4aprVOdTJkPIPk7uI2AQ&iflsig=ABILxe8AAAAAarj_Xzl_Uj3oZ-PL_mDnNsSMoOAlSbTG&ved=0ahUKEwjauIiByI6XAxXUJEQIHZMdAksQ4dUDCDI&oq=langchain+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiJsYW5nY2hhaW4gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIAEGKIESKImUA1YDXABeACQAQCYAdYBoAHWAaoBAzItMbgBDMgBAPgBAZgCAqAC4QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFmiLbPsIpiDWSBwUxLjAuMaAH7gSyBwMyLTG4B90BwgcDMi0yyAcHgAgB&sclient=gws-wiz",
+    "final_title": "langchain open source alternatives - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9009,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain open source alternatives",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 479.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8919,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 478.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505297327"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8595,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'langchain open source alternatives'",
+     "page_changed": null,
+     "latency_ms": 525.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505297327"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain open source alternatives",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505297327"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9123,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results listing for 'langchain open source alternatives'",
+     "page_changed": null,
+     "latency_ms": 594.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505297327"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:31",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505297327"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8461,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 568.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=langchain+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntK4i0AzrO4YBDnIzv0R7MGrcTDvg%3A1790505295967&source=hp&ei=T_G4aprVOdTJkPIPk7uI2AQ&iflsig=ABILxe8AAAAAarj_Xzl_Uj3oZ-PL_mDnNsSMoOAlSbTG&ved=0ahUKEwjauIiByI6XAxXUJEQIHZMdAksQ4dUDCDI&oq=langchain+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiJsYW5nY2hhaW4gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIAEGKIESKImUA1YDXABeACQAQCYAdYBoAHWAaoBAzItMbgBDMgBAPgBAZgCAqAC4QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFmiLbPsIpiDWSBwUxLjAuMaAH7gSyBwMyLTG4B90BwgcDMi0yyAcHgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-fe21fe06ab8760d8",
+   "source": "google",
+   "goal": "Search Google for unit testing interview questions and open the results.",
+   "fingerprint": 61503,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 5,
+   "total_ms": 8911,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=unit+testing+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnvdzfao",
+     "bot_challenge": false,
+     "group0": [
+      "testing",
+      "unit"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=unit+testing+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvdZfaoiC8aXCFb7YcGf4hRfwzw8Q%3A1790505314484&source=hp&ei=YvG4aoWRHJvVkPIPk7GAyQg&iflsig=ABILxe8AAAAAarj_ctG-gxdmDThqz2cEqSzqF06MnYzn&ved=0ahUKEwiFyvKJyI6XAxWbKkQIHZMYIIkQ4dUDCDI&uact=5&oq=unit+testing+interview+questions&gs_lp=Egdnd3Mtd2l6IiB1bml0IHRlc3RpbmcgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjMB1AKWApwAXgAkAEAmAHSAaAB0gGqAQMyLTG4AQPIAQD4AQGYAgKgAtYBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBfbj1Wu2ItDRkgcFMS4wLjGgB4kHsgcDMi0xuAfUAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz",
+    "final_title": "unit testing interview questions - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9057,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "unit testing interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 458.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505314739"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8911,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 598.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505314739"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9048,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'unit testing interview questions' are not visibly loaded/listed; page still shows loading placeholders/skeleton.",
+     "page_changed": null,
+     "latency_ms": 544.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=unit+testing+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvdZfaoiC8aXCFb7YcGf4hRfwzw8Q%3A1790505314484&source=hp&ei=YvG4aoWRHJvVkPIPk7GAyQg&iflsig=ABILxe8AAAAAarj_ctG-gxdmDThqz2cEqSzqF06MnYzn&ved=0ahUKEwiFyvKJyI6XAxWbKkQIHZMYIIkQ4dUDCDI&uact=5&oq=unit+testing+interview+questions&gs_lp=Egdnd3Mtd2l6IiB1bml0IHRlc3RpbmcgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjMB1AKWApwAXgAkAEAmAHSAaAB0gGqAQMyLTG4AQPIAQD4AQGYAgKgAtYBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBfbj1Wu2ItDRkgcFMS4wLjGgB4kHsgcDMi0xuAfUAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "wait",
+     "target_label": "Wait for the page to update",
+     "kind": "wait",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=unit+testing+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvdZfaoiC8aXCFb7YcGf4hRfwzw8Q%3A1790505314484&source=hp&ei=YvG4aoWRHJvVkPIPk7GAyQg&iflsig=ABILxe8AAAAAarj_ctG-gxdmDThqz2cEqSzqF06MnYzn&ved=0ahUKEwiFyvKJyI6XAxWbKkQIHZMYIIkQ4dUDCDI&uact=5&oq=unit+testing+interview+questions&gs_lp=Egdnd3Mtd2l6IiB1bml0IHRlc3RpbmcgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjMB1AKWApwAXgAkAEAmAHSAaAB0gGqAQMyLTG4AQPIAQD4AQGYAgKgAtYBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBfbj1Wu2ItDRkgcFMS4wLjGgB4kHsgcDMi0xuAfUAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.721,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 602.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=unit+testing+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvdZfaoiC8aXCFb7YcGf4hRfwzw8Q%3A1790505314484&source=hp&ei=YvG4aoWRHJvVkPIPk7GAyQg&iflsig=ABILxe8AAAAAarj_ctG-gxdmDThqz2cEqSzqF06MnYzn&ved=0ahUKEwiFyvKJyI6XAxWbKkQIHZMYIIkQ4dUDCDI&uact=5&oq=unit+testing+interview+questions&gs_lp=Egdnd3Mtd2l6IiB1bml0IHRlc3RpbmcgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjMB1AKWApwAXgAkAEAmAHSAaAB0gGqAQMyLTG4AQPIAQD4AQGYAgKgAtYBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBfbj1Wu2ItDRkgcFMS4wLjGgB4kHsgcDMi0xuAfUAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f4a8012c2f154f54",
+   "source": "google",
+   "goal": "First search Google for scala release notes, then search Google for memory leak debugging migration guide.",
+   "fingerprint": 61503,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 11,
+   "total_ms": 19688,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=debugging'",
+    "checks": {
+     "url": "https://www.google.com/search?q=memory+leak+debugging+migration+guide+scala&sca_esv=ee3892b004fb5afd&hl=en&gl=us&biw=112",
+     "bot_challenge": false,
+     "group0": [
+      "debugging",
+      "memory"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=memory+leak+debugging+migration+guide+scala&sca_esv=ee3892b004fb5afd&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnu7ApEjck9wg22c1LyoynW2DD1F3g%3A1790505335778&ei=d_G4auWOL9HPkPIPk5OI0AQ&oq=memory+leak+debugging+migration+guide&gs_lp=Egxnd3Mtd2l6LXNlcnAiJW1lbW9yeSBsZWFrIGRlYnVnZ2luZyBtaWdyYXRpb24gZ3VpZGUqBQgAGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUizPVDUNFjUNHADeACQAQCYAeUBoAHlAaoBAzItMbgBAcgBAPgBAZgCBKAC9wHCAggQABiABBiwA8ICCRAAGAgYHhiwA8ICCBAAGO8FGLADmAMAiAYBkAYIkgcFMy4wLjGgB54EsgcDMi0xuAfvAcIHBTAuMy4xyAcJgAgB&sclient=gws-wiz-serp",
+    "final_title": "memory leak debugging migration guide scala - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8906,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "scala release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 637.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505330856"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8953,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 654.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505330856"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.254,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 583.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnswqCwzSWbYj-8PGoZ2lkEHJiHRWg%3A1790505330575&source=hp&ei=cvG4ao-PIvH9kPIP8NGv2Qk&iflsig=ABILxe8AAAAAarj_gn94d1__9zvflaUAw_DqwohCfxaM&ved=0ahUKEwiPkMmRyI6XAxXxPkQIHfDoK5sQ4dUDCDI&uact=5&oq=scala+release+notes&gs_lp=Egdnd3Mtd2l6IhNzY2FsYSByZWxlYXNlIG5vdGVzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wVImQhQDVgNcAF4AJABAJgB4QGgAeEBqgEDMi0xuAEDyAEA-AEBmAICoALtAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFo9veAQDmjiySBwUxLjAuMaAH0gSyBwMyLTG4B-kBwgcDMi0yyAcIgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2391,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "scala release notes",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 572.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnswqCwzSWbYj-8PGoZ2lkEHJiHRWg%3A1790505330575&source=hp&ei=cvG4ao-PIvH9kPIP8NGv2Qk&iflsig=ABILxe8AAAAAarj_gn94d1__9zvflaUAw_DqwohCfxaM&ved=0ahUKEwiPkMmRyI6XAxXxPkQIHfDoK5sQ4dUDCDI&uact=5&oq=scala+release+notes&gs_lp=Egdnd3Mtd2l6IhNzY2FsYSByZWxlYXNlIG5vdGVzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wVImQhQDVgNcAF4AJABAJgB4QGgAeEBqgEDMi0xuAEDyAEA-AEBmAICoALtAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFo9veAQDmjiySBwUxLjAuMaAH0gSyBwMyLTG4B-kBwgcDMi0yyAcIgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.7955,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 592.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnswqCwzSWbYj-8PGoZ2lkEHJiHRWg%3A1790505330575&source=hp&ei=cvG4ao-PIvH9kPIP8NGv2Qk&iflsig=ABILxe8AAAAAarj_gn94d1__9zvflaUAw_DqwohCfxaM&ved=0ahUKEwiPkMmRyI6XAxXxPkQIHfDoK5sQ4dUDCDI&uact=5&oq=scala+release+notes&gs_lp=Egdnd3Mtd2l6IhNzY2FsYSByZWxlYXNlIG5vdGVzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wVImQhQDVgNcAF4AJABAJgB4QGgAeEBqgEDMi0xuAEDyAEA-AEBmAICoALtAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFo9veAQDmjiySBwUxLjAuMaAH0gSyBwMyLTG4B-kBwgcDMi0yyAcIgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8614,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "scala release notes",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 654.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnuzB7ullp9gg-W85aIHQLsstosKXA%3A1790505333509&ei=dfG4atXeHv2vur8P06qMkAo&biw=1120&bih=780&ved=2ahUKEwiV7fySyI6XAxX9l-4BHVMVA6IQ4dUDegQIBhAN&oq=scala+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3NjYWxhIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 7,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8384,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "scala release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 593.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnuzB7ullp9gg-W85aIHQLsstosKXA%3A1790505333509&ei=dfG4atXeHv2vur8P06qMkAo&biw=1120&bih=780&ved=2ahUKEwiV7fySyI6XAxX9l-4BHVMVA6IQ4dUDegQIBhAN&oq=scala+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3NjYWxhIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 8,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.3461,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "scala release notes",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 586.4,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnuzB7ullp9gg-W85aIHQLsstosKXA%3A1790505333509&ei=dfG4atXeHv2vur8P06qMkAo&biw=1120&bih=780&ved=2ahUKEwiV7fySyI6XAxX9l-4BHVMVA6IQ4dUDegQIBhAN&oq=scala+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3NjYWxhIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 8,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "memory leak debugging migration guide",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnuzB7ullp9gg-W85aIHQLsstosKXA%3A1790505333509&ei=dfG4atXeHv2vur8P06qMkAo&biw=1120&bih=780&ved=2ahUKEwiV7fySyI6XAxX9l-4BHVMVA6IQ4dUDegQIBhAN&oq=scala+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3NjYWxhIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.2349,
+     "target": "5",
+     "target_label": "memory leak debugging migration guide scala",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 681.2,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnuzB7ullp9gg-W85aIHQLsstosKXA%3A1790505333509&ei=dfG4atXeHv2vur8P06qMkAo&biw=1120&bih=780&ved=2ahUKEwiV7fySyI6XAxX9l-4BHVMVA6IQ4dUDegQIBhAN&oq=scala+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3NjYWxhIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 10,
+     "operation": "DONE",
+     "confidence": 0.8578,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 624.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=memory+leak+debugging+migration+guide+scala&sca_esv=ee3892b004fb5afd&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnu7ApEjck9wg22c1LyoynW2DD1F3g%3A1790505335778&ei=d_G4auWOL9HPkPIPk5OI0AQ&oq=memory+leak+debugging+migration+guide&gs_lp=Egxnd3Mtd2l6LXNlcnAiJW1lbW9yeSBsZWFrIGRlYnVnZ2luZyBtaWdyYXRpb24gZ3VpZGUqBQgAGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUizPVDUNFjUNHADeACQAQCYAeUBoAHlAaoBAzItMbgBAcgBAPgBAZgCBKAC9wHCAggQABiABBiwA8ICCRAAGAgYHhiwA8ICCBAAGO8FGLADmAMAiAYBkAYIkgcFMy4wLjGgB54EsgcDMi0xuAfvAcIHBTAuMy4xyAcJgAgB&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-18ba54904541c08d",
+   "source": "google",
+   "goal": "Search Google for vue tutorial and open the results.",
+   "fingerprint": 61503,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14636,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvue%2btutorial%26sca_esv%3d54dc793dbd095",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvue%2Btutorial%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt5XacLniCCbbQ0wPHEB44GJYXxqQ%253A1790505357457%26source%3Dhp%26ei%3DjfG4apzjGobGkPIPqsvd-QI%26iflsig%3DABILxe8AAAAAarj_nXMVRmKcdUx6M6766rCuMY7iqUXO%26ved%3D0ahUKEwjc3bGeyI6XAxUGI0QIHaplNy8Q4dUDCDI%26uact%3D5%26oq%3Dvue%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Igx2dWUgdHV0b3JpYWwyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkiXB1ANWA1wAXgAkAEAmAH8AaAB_AGqAQMyLTG4AQPIAQD4AQGYAgKgAoMCqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBaOD4TfLXxKdkgcFMS4wLjGgB_IEsgcDMi0xuAf_AcIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJDj49UGIjCYTunCxa_vJ_fIca9aXJlVkFxHR20gpURb6mgzDTvsaim3GZMmIGoW1Z09y1zzcZQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vue+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=u"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8337,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 493.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505357622"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9012,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 542.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505357622"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ecffba535e70b32c",
+   "source": "google",
+   "goal": "First search Google for nginx tutorial, then search Google for mongodb performance optimization.",
+   "fingerprint": 61503,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14631,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dnginx%2btutorial%26sca_esv%3d54dc793dbd0",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dnginx%2Btutorial%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntH_MA3q2VKhG8iye1-traaeF1ZAw%253A1790505424308%26source%3Dhp%26ei%3D0PG4asS3Ea6N8L0PquDasAE%26iflsig%3DABILxe8AAAAAarj_4EBOWJN-aS9a9aPWY0-jedpcynOq%26ved%3D0ahUKEwjE36G-yI6XAxWuBrwBHSqwFhYQ4dUDCDI%26uact%3D5%26oq%3Dnginx%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig5uZ2lueCB0dXRvcmlhbDIKEAAYgAQYigUYQzIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHki7B1APWA9wAXgAkAEAmAHPAaABzwGqAQMyLTG4AQPIAQD4AQGYAgKgAtYBqAIKwgIZEC4YgAQYigUYQxjnBhjHARjRAxjqAhi0AsICExAAGIAEGIoFGEMY5wYY6gIYtAKYAwTxBdsfytLJ3Z60kgcFMS4wLjGgB4cFsgcDMi0xuAfSAcIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNPj49UGIjA3rSMWkO0k8JN2ZK0N5978slgp1VKml32hJ1OzGjmgB10r3Gh9PewKbr1ahH5ioQwyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=nginx+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8929,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "nginx tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 565.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505424446"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8902,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 571.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505424446"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-53d9fbdf03d99242",
+   "source": "google",
+   "goal": "Search Google for zig release notes and open the results.",
+   "fingerprint": 61503,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14819,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dzig%2brelease%2bnotes%26sca_esv%3d54dc79",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dzig%2Brelease%2Bnotes%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntUNX2RJyeYxLDqjDOgODPu41SbNQ%253A1790505491141%26source%3Dhp%26ei%3DE_K4auq3B_DdkPIPysnymAs%26iflsig%3DABILxe8AAAAAarkAI_i4FNO1V-5UT7v6LK0ieGaRQgdN%26ved%3D0ahUKEwiqjZHeyI6XAxXwLkQIHcqkHLMQ4dUDCDI%26uact%3D5%26oq%3Dzig%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhF6aWcgcmVsZWFzZSBub3RlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I-wdQDVgNcAF4AJABAJgB0QGgAdEBqgEDMi0xuAEDyAEA-AEBmAICoALaAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtAKYAwTxBeJVFvAQKErYkgcFMS4wLjGgB_sEsgcDMi0xuAfWAcIHAzItMsgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJXk49UGIjBir7mSDQXTkPh1sGdovzBTY4oO-unzhHzVEvgvEsX9gMdZxbpqBIuOWNTDUtJlq_8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=zig+release+notes&sca_esv=54dc793dbd0950c5&hl=en"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8781,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "zig release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 457.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505491276"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8967,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 631.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505491276"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-bff1dfcbda1bee61",
+   "source": "google",
+   "goal": "Search Google for redis migration guide and open the results.",
+   "fingerprint": 61503,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14468,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dredis%2bmigration%2bguide%26sca_esv%3d54",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dredis%2Bmigration%2Bguide%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvt0mgzmFmV0en-oAn3tkjorszPPw%253A1790505558105%26source%3Dhp%26ei%3DVvK4aquOBY6qur8P4Z7DuQc%26iflsig%3DABILxe8AAAAAarkAZiUxP1DLtlSjqOi_4KjPannk2nDi%26ved%3D0ahUKEwirkYj-yI6XAxUOle4BHWHPMHcQ4dUDCDI%26uact%3D5%26oq%3Dredis%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhVyZWRpcyBtaWdyYXRpb24gZ3VpZGUyBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIFEAAY7wUyCBAAGIkFGKIEMggQABiJBRiiBEigB1AQWBBwAXgAkAEAmAHZAaAB2QGqAQMyLTG4AQPIAQD4AQGYAgKgAuMBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBRATg3Nh5zJ5kgcFMS4wLjGgB_sCsgcDMi0xuAfeAcIHAzItMsgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNjk49UGIjCZvs141NQGl9TRW5sqcVOoNKfoVCWPNIKsv-mTPuW_jn-Dsv7Rk2Biju7WHJlyrkYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=redis+migration+guide&sca_esv=54dc793dbd0950c5&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8954,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 479.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505558242"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9084,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 538.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505558242"
+    }
+   ]
+  }
+ ]
+}

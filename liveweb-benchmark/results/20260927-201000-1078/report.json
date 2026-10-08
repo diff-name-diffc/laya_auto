@@ -1,0 +1,631 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 82743,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T20:17:52+0800",
+  "n_tasks": 8,
+  "success": 1,
+  "success_rate": 0.125,
+  "verified": 1,
+  "verified_rate": 0.125,
+  "found_but_not_stopped": 0,
+  "mean_steps": 3.2,
+  "mean_duration_ms": 18468,
+  "decision_latency_ms": {
+   "p50": 514.5,
+   "p95": 786.5
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 2,
+   "executed": 18,
+   "done-rejected": 2,
+   "done": 2
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 1,
+    "success_rate": 0.125,
+    "verified": 1,
+    "verified_rate": 0.125,
+    "mean_steps": 3.2
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-668f8c43a5daed30",
+   "source": "google",
+   "goal": "First search Google for llama.cpp tutorial, then search Google for concurrency open source alternatives.",
+   "fingerprint": 82743,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 19599,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dllama.cpp%2btutorial%26sca_esv%3d18a60b0",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dllama.cpp%2Btutorial%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsI1yIxNHK2waOGDUmOD1NfVpyI7Q%253A1790511003208%26source%3Dhp%26ei%3Dmwe5aq6_C__DkPIPtZ7UkQ4%26iflsig%3DABILxe8AAAAAarkVqxA2n4JR8t3iKeajPuW0lfHMZidY%26oq%3Dllama.cpp%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhJsbGFtYS5jcHAgdHV0b3JpYWwqBQgAGIAEMgUQABiABDIGEAAYFhgeMggQABgWGB4YCjIGEAAYFhgeMggQABgWGB4YCjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMggQABgWGB4YCkiJJVCVHViVHXAEeACQAQCYAcUBoAHFAaoBAzAuMbgBAcgBAPgBAZgCBaAC0wGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDA_EFwU6O0kxhHEOSBwU0LjAuMaAH4QWyBwMyLTG4B8oBwgcFMC40LjHIBwqACAE%26sclient%3Dgws-wiz%26sei%3Doge5aqfJNqnmkPIP48qV2Qg&hl=en&q=EgQm0XtnGKOP5NUGIjCjlGW3QcZunkpQE0f5vIxjwu9rolhj8ixztA2mg3fUW_IUXkjWLthQrv_DcgivPn0yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=llama.cpp+tutorial&sca_esv=18a60b01d202c9ee&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9022,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llama.cpp tutorial",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 483.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8885,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 474.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511004753"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8595,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 504.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511004753"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.3119,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 584.2,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511004753"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8024,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 590.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511004753"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llama.cpp tutorial",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511004753"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8478,
+     "target": "12",
+     "target_label": "llama.cpp tutorial",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 608.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511004753"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-de1cb35a7218bcb9",
+   "source": "google",
+   "goal": "Search Google for logging best practices cheat sheet and open the results.",
+   "fingerprint": 82743,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 50858,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['logging']]",
+    "checks": {
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511076566",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/?hl=en&gl=us&zx=1790511076566",
+    "final_title": "Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8843,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "logging best practices cheat sheet",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 468.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8851,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 476.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511076566"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8965,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for 'logging best practices cheat sheet' (only the empty Google homepage search box is shown)",
+     "page_changed": null,
+     "latency_ms": 486.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511076566"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "logging best practices cheat sheet",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511076566"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9094,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page listing results for \"logging best practices cheat sheet\"",
+     "page_changed": null,
+     "latency_ms": 595.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511076566"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.9142,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 786.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511076566"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-7a49e0a54672f4ce",
+   "source": "google",
+   "goal": "First search Google for memory leak debugging interview questions, then search Google for terraform release notes.",
+   "fingerprint": 82743,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14503,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmemory%2bleak%2bdebugging%2binterview%2b",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmemory%2Bleak%2Bdebugging%2Binterview%2Bquestions%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt2Z2xz5FiTvu18Cpq6Ck43p9KZNQ%253A1790511133457%26source%3Dhp%26ei%3DHQi5aqDPGrHJkPIP6a62iQI%26iflsig%3DABILxe8AAAAAarkWLcrCBP6CCuXq3Ihgbt6T2-BYEJ04%26ved%3D0ahUKEwjg0czg3Y6XAxWxJEQIHWmXLSEQ4dUDCDI%26uact%3D5%26oq%3Dmemory%2Bleak%2Bdebugging%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IiltZW1vcnkgbGVhayBkZWJ1Z2dpbmcgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwIyBRAhGKsCSPcGUAtYC3ABeACQAQCYAdQBoAHUAaoBAzItMbgBA8gBAPgBAZgCAqAC3gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDAvEFpaugjojg5k6SBwUxLjAuMaAHvwWyBwMyLTG4B9sBwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKCQ5NUGIjAjsaIJBHL2_ZTUgBWuRTJKioq7P6HD0YIEUTMhQH76B1VuWnoCU476WJHU1emV8noyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=memory+leak+debugging+interview+questions&sca_es"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8542,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "memory leak debugging interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 501.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511133755"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9177,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 502.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511133755"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-79325271236a2bae",
+   "source": "google",
+   "goal": "Search Google for design patterns interview questions and open the results.",
+   "fingerprint": 82743,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14872,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddesign%2bpatterns%2binterview%2bquestion",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddesign%2Bpatterns%2Binterview%2Bquestions%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntSsWfjg7w_MIVg8o8aSR4MxRWJ0w%253A1790511200156%26source%3Dhp%26ei%3DYAi5avKLCKvEkPIPxrK10Qs%26iflsig%3DABILxe8AAAAAarkWcKOiPvu_uJaPP8XjWihQcUArlEzk%26ved%3D0ahUKEwjyu7OA3o6XAxUrIkQIHUZZLboQ4dUDCDI%26uact%3D5%26oq%3Ddesign%2Bpatterns%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IiNkZXNpZ24gcGF0dGVybnMgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABDIIEAAYgAQYtAcyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I2QdQDlgOcAF4AJABAJgB1wGgAdcBqgEDMi0xuAEDyAEA-AEBmAICoALiAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QXydEyhshhyQJIHBTEuMC4xoAe0B7IHAzItMbgH3QHCBwMyLTLIBwiACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOKQ5NUGIjDEEMAFqWz_yxo_YmtYLkS57ZFQqmqm4-ZroJNI61X0WYwhsvsp6QNDB30KkwayhSoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=design+patterns+interview+questions&sca_esv=18a6"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.871,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "design patterns interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 650.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511200414"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8951,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 597.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511200414"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c04c17743b673a29",
+   "source": "google",
+   "goal": "First search Google for vllm security vulnerabilities, then search Google for rust tutorial.",
+   "fingerprint": 82743,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14549,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvllm%2bsecurity%2bvulnerabilities%26sca_",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvllm%2Bsecurity%2Bvulnerabilities%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuV6Ch0TEAX_WzbF-Mz31oVzfpjOQ%253A1790511267168%26source%3Dhp%26ei%3Dowi5apObCaGQvMcP7bXD0Ao%26iflsig%3DABILxe8AAAAAarkWsx7qMPFGq0VPsDTasiHiO2bK-a-4%26ved%3D0ahUKEwjT-K2g3o6XAxUhCO8CHe3aEKoQ4dUDCDI%26uact%3D5%26oq%3Dvllm%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6Ih12bGxtIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIESP0HUAxYDHABeACQAQCYAd0BoAHdAaoBAzItMbgBA8gBAPgBAZgCAqAC5AGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCmAMC8QVauj1dKE8PdZIHBTEuMC4xoAeeBbIHAzItMbgH4gHCBwMwLjLIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKWR5NUGIjAkry8p-bMTaPtc2ws5FBHopukP4UhHWsqT7IryGopjvbUvCaRVKGA2GzwFuFVhn08yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vllm+security+vulnerabilities&sca_esv=18a60b01d2"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8937,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vllm security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 498.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511267350"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8982,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 643.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511267350"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9a5d9a22a4af74c2",
+   "source": "google",
+   "goal": "First search Google for profiling security vulnerabilities, then search Google for langchain cheat sheet.",
+   "fingerprint": 82743,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14459,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dprofiling%2bsecurity%2bvulnerabilities%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dprofiling%2Bsecurity%2Bvulnerabilities%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuF9ly2i4n-KzUqfS6IPLF0VjAHgw%253A1790511333866%26source%3Dhp%26ei%3D5Qi5aq2uM5jBkPIPpseQ-A0%26iflsig%3DABILxe8AAAAAarkW9Y0Axjh8UULgnB2QSV0PwPcHUA3e%26ved%3D0ahUKEwjttJTA3o6XAxWYIEQIHaYjBN8Q4dUDCDI%26uact%3D5%26oq%3Dprofiling%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IiJwcm9maWxpbmcgc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSIYHUA1YDXABeACQAQCYAeIBoAHiAaoBAzItMbgBA8gBAPgBAZgCAqAC6wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDAvEF_ES4jwou9lKSBwUxLjAuMaAHrwayBwMyLTG4B-kBwgcDMC4yyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOiR5NUGIjB-64QJUTsBruRNVcBQdK8x3odBa8O6cS0_mhTn18shUGdoLihB3BWYz49dOl37UbEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=profiling+security+vulnerabilities&sca_esv=18a60"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8718,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "profiling security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 496.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511334048"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9136,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 514.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511334048"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-fd33393388d7ed7f",
+   "source": "google",
+   "goal": "First search Google for postgresql tutorial, then search Google for svelte migration guide.",
+   "fingerprint": 82743,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14895,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpostgresql%2btutorial%26sca_esv%3d18a60b",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpostgresql%2Btutorial%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuHaE5RNVD5J6Ru1V-dzWK4C7570w%253A1790511400479%26source%3Dhp%26ei%3DKAm5aoK_G726ur8P7suNEQ%26iflsig%3DABILxe8AAAAAarkXOJoLSfvkmcAF63kGC5o7ahHX6Uf5%26ved%3D0ahUKEwiC8_Xf3o6XAxU9ne4BHe5lIwIQ4dUDCDI%26uact%3D5%26oq%3Dpostgresql%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhNwb3N0Z3Jlc3FsIHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEioCFANWA1wAXgAkAEAmAHVAaAB1QGqAQMyLTG4AQPIAQD4AQGYAgKgAtwBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBTC2lqhTaB4EkgcFMS4wLjGgB50FsgcDMi0xuAfaAcIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKuS5NUGIjDh88dDAqUdmOi4h3SVfssqBCCS5qjjb7l3uY0TDQatLnZ6Fy5pQvHRXB4GGegdqKEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=postgresql+tutorial&sca_esv=18a60b01d202c9ee&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8827,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 787.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511400657"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9046,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 680.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511400657"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f85e30776f24b88f",
+   "source": "google",
+   "goal": "Search Google for retrieval augmented generation migration guide and open the results.",
+   "fingerprint": 82743,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4013,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+migration+guide&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsr",
+     "bot_challenge": false,
+     "group0": [
+      "generation",
+      "retrieval"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=retrieval+augmented+generation+migration+guide&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQns34ULG-QagWfC593U1hO7NsYJPjg%3A1790511467510&source=hp&ei=awm5avGBHs2ckPIPrq3ZuQ0&iflsig=ABILxe8AAAAAarkXezUgMZl5fV5AZhK0w_bpG-TSX6O7&ved=0ahUKEwix4_H_3o6XAxVNDkQIHa5WNtcQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+migration+guide&gs_lp=Egdnd3Mtd2l6Ii5yZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFI9QZQClgKcAF4AJABAJgB6wGgAesBqgEDMi0xuAEDyAEA-AEBmAICoAL1AagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMC8QW9wqXDF0PJCpIHBTEuMC4xoAfhBbIHAzItMbgH8wHCBwMwLjLIBwOACAE&sclient=gws-wiz",
+    "final_title": "retrieval augmented generation migration guide - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8869,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 518.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511467683"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8967,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 501.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511467683"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8555,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 672.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+migration+guide&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQns34ULG-QagWfC593U1hO7NsYJPjg%3A1790511467510&source=hp&ei=awm5avGBHs2ckPIPrq3ZuQ0&iflsig=ABILxe8AAAAAarkXezUgMZl5fV5AZhK0w_bpG-TSX6O7&ved=0ahUKEwix4_H_3o6XAxVNDkQIHa5WNtcQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+migration+guide&gs_lp=Egdnd3Mtd2l6Ii5yZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFI9QZQClgKcAF4AJABAJgB6wGgAesBqgEDMi0xuAEDyAEA-AEBmAICoAL1AagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMC8QW9wqXDF0PJCpIHBTEuMC4xoAfhBbIHAzItMbgH8wHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    }
+   ]
+  }
+ ]
+}

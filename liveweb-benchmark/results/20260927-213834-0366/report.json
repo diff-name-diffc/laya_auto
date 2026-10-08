@@ -1,0 +1,476 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 96739,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:46:50+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.0,
+  "mean_duration_ms": 15968,
+  "decision_latency_ms": {
+   "p50": 552.4,
+   "p95": 703.2
+  },
+  "step_outcomes": {
+   "executed": 14,
+   "done-rejected": 2
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.0
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-ce202ef00a048684",
+   "source": "google",
+   "goal": "First search Google for python migration guide, then search Google for spring boot tutorial.",
+   "fingerprint": 96739,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15093,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpython%2bmigration%2bguide%26sca_esv%3d3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpython%2Bmigration%2Bguide%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuV3oovllmPuqBiNkOpceLS1EfwXA%253A1790516317165%26source%3Dhp%26ei%3DXRy5aoHvCP3GkPIPxYqboQ4%26iflsig%3DABILxe8AAAAAarkqbVr0pO8wwGEbP-lvkHMKOGZur153%26ved%3D0ahUKEwjBkbGI8Y6XAxV9I0QIHUXFJuQQ4dUDCDI%26uact%3D5%26oq%3Dpython%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhZweXRob24gbWlncmF0aW9uIGd1aWRlMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGIAEGKIEMggQABiABBiiBDIFEAAY7wVI1AhQIFggcAF4AJABAJgB9gGgAfYBqgEDMi0xuAEDyAEA-AEBmAICoAKDAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMJ8QX_c_cY_ofuZ5IHBTEuMC4xoAetBbIHAzItMbgH-gHCBwcwLjEuMC4xyAcKgAgB%26sclient%3Dgws-wiz%26sei%3DYBy5atPuEo7QkPIPwJ7wuQo&hl=en&q=EgQm0XtnGOC45NUGIjDGSuIOiWltm-x8MdcYRQRsNfnslz1GaGLYwtK16_AicSIYvyl2rCJF2QvROo6hIiMyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=python+migration+guide&sca_esv=3e3a42b854afc954&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9089,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "python migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 561.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9003,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 703.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516319091"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-56dcb6f82fad5ada",
+   "source": "google",
+   "goal": "Search Google for angular security vulnerabilities and open the results.",
+   "fingerprint": 96739,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 32956,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dangular%2bsecurity%2bvulnerabilities%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dangular%2Bsecurity%2Bvulnerabilities%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntepOxRldiYTGIuLXxOByGmo6x7pQ%253A1790516384703%26source%3Dhp%26ei%3DoBy5arvlKZPOkPIPvZmn2As%26iflsig%3DABILxe8AAAAAarkqsPa4oFhO-qf-UUxrFt5rilE9Q1QD%26ved%3D0ahUKEwi7tcuo8Y6XAxUTJ0QIHb3MCbsQ4dUDCDI%26oq%3Dangular%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IiBhbmd1bGFyIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I2pQBUBpYGnABeACQAQCYAfABoAHwAaoBAzItMbgBDMgBAPgBAZgCAqAC-AGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBfEFIh9Rj1YAPQOSBwUxLjAuMaAHhQayBwMyLTG4B_IBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLW55NUGIjDE2BvZ07TsLM9-QwTfcBqxqV84vjdupuKTgmkMO_YWO-Sn2r8QO02vpDxHum2FfxEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=angular+security+vulnerabilities&sca_esv=3e3a42b"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8931,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 503.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.7249,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results listing for 'angular security vulnerabilities' (only autocomplete suggestions are shown; search not submitted)",
+     "page_changed": null,
+     "latency_ms": 560.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516386680"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:35",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516386680"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-e3e9b9d6ce6e1ac0",
+   "source": "google",
+   "goal": "First search Google for memory leak debugging migration guide, then search Google for kafka cheat sheet.",
+   "fingerprint": 96739,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14556,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmemory%2bleak%2bdebugging%2bmigration%2b",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmemory%2Bleak%2Bdebugging%2Bmigration%2Bguide%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsZpLf3f5XiPN6jDMOfh7QQeVNATg%253A1790516470135%26source%3Dhp%26ei%3D9hy5av_hBtnQkPIPqOmO8Qk%26iflsig%3DABILxe8AAAAAarkrBvW2-8dGDAiDz7a1y6mcScqQwt5G%26ved%3D0ahUKEwj_tKnR8Y6XAxVZKEQIHai0I54Q4dUDCDI%26uact%3D5%26oq%3Dmemory%2Bleak%2Bdebugging%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IiVtZW1vcnkgbGVhayBkZWJ1Z2dpbmcgbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUjrBlAPWA9wAXgAkAEAmAGqAqABqgKqAQMyLTG4AQPIAQD4AQGYAgKgArECqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBTd9j0RKdWuOkgcFMS4zLTGgB6YEsgcDMy0xuAetAsIHAzEuMcgHA4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPi55NUGIjAzjBHqKLI0It9_5xU1LzkDWeYHo0dxQrweM1_wUPzDfdbsAunE5hh8QJf9Nl7ZmBwyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=memory+leak+debugging+migration+guide&sca_esv=3e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8933,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "memory leak debugging migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 507.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516470612"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9083,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 492.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516470612"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-52ed1276b0b65e0c",
+   "source": "google",
+   "goal": "First search Google for elixir open source alternatives, then search Google for vue open source alternatives.",
+   "fingerprint": 96739,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14823,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3delixir%2bopen%2bsource%2balternatives%26",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Delixir%2Bopen%2Bsource%2Balternatives%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuCZ69AOmGblJnGx-Ul9GK8r_3gBA%253A1790516536929%26source%3Dhp%26ei%3DOB25asvAN8ylkPIP0NniiQM%26iflsig%3DABILxe8AAAAAarkrSFk0IRz0xhJBQlopVskJPVoHIqSu%26ved%3D0ahUKEwjLvJbx8Y6XAxXMEkQIHdCsODEQ4dUDCDI%26uact%3D5%26oq%3Delixir%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ih9lbGl4aXIgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUj-BlARWBFwAXgAkAEAmAH9AaAB_QGqAQMyLTG4AQPIAQD4AQGYAgKgAoYCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwPxBfZ-YmARz5sGkgcFMS4wLjGgB94EsgcDMi0xuAeCAsIHAzAuMsgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLu65NUGIjDVqUYWR1L1kz0_J9hHRpjmpAy1BMGj1t1QbeMWhSkfDNBsyWvKeQWqAKckGzVW4oMyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=elixir+open+source+alternatives&sca_esv=3e3a42b8"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8983,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elixir open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 524.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516537325"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9096,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 509.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516537325"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3c6e1472ecd1ffd3",
+   "source": "google",
+   "goal": "Search Google for python security vulnerabilities and open the results.",
+   "fingerprint": 96739,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 20422,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpython%2bsecurity%2bvulnerabilities%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpython%2Bsecurity%2Bvulnerabilities%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntWs4YBC5CoZZRydnXyoDZU8nOkYg%253A1790516603932%26source%3Dhp%26ei%3Dex25auK5N6OYkPIPi4zo4Qo%26iflsig%3DABILxe8AAAAAarkrix_jnP-sDeykkV0VXXnrHIzvuR-1%26ved%3D0ahUKEwii44-R8o6XAxUjDEQIHQsGOqwQ4dUDCDI%26oq%3Dpython%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6Ih9weXRob24gc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkikNFARWBFwAXgAkAEAmAGXAqABlwKqAQMyLTG4AQzIAQD4AQGYAgKgAqECqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBYbqNzP0SvpWkgcFMS4wLjGgB54GsgcDMi0xuAeeAsIHBTAuMS4xyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIS75NUGIjBZWwXj3WOpa4L1KLc3ZhE5kKpZVhRkn4KuufybKHVMg5JZZyFqMcWqudSHrEPVLecyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=python+security+vulnerabilities&sca_esv=3e3a42b8"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9067,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "python security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 569.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516604326"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.808,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Actual Google search results for \"python security vulnerabilities\" (page shows only the search box with autocomplete suggestions, not a results listin",
+     "page_changed": null,
+     "latency_ms": 565.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516604326"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:35",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516604326"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-6367c56eaa59796b",
+   "source": "google",
+   "goal": "First search Google for vllm open source alternatives, then search Google for kotlin cheat sheet.",
+   "fingerprint": 96739,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14855,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvllm%2bopen%2bsource%2balternatives%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvllm%2Bopen%2Bsource%2Balternatives%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsznO5TYhKbLL6ez261v7nZdK4biQ%253A1790516676560%26source%3Dhp%26ei%3DxB25atCHIdO9kPIPpKmd2Qw%26iflsig%3DABILxe8AAAAAarkr1DqCPOQ7KFv2MRBnT5644WQOXVqm%26ved%3D0ahUKEwjQ-eCz8o6XAxXTHkQIHaRUJ8sQ4dUDCDI%26uact%3D5%26oq%3Dvllm%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ih12bGxtIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFI_wZQEVgRcAF4AJABAJgBsAKgAbACqgEDMy0xuAEDyAEA-AEBmAICoAK2AqgCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QXRtN3UCYVDWJIHBTEuMy0xoAefBLIHAzMtMbgHswLCBwMxLjHIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMe75NUGIjAbVptJmcr1LbEPwj7ufCJ76FsPa7CcbYnGB5CFmN136gaAFkrFDOo-rQc3Y_UwK1syAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vllm+open+source+alternatives&sca_esv=3e3a42b854"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9024,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vllm open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 797.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516676877"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8918,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 511.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516676877"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-fba84d0a2e4b7a6a",
+   "source": "google",
+   "goal": "First search Google for vllm open source alternatives, then search Google for how to debug zig.",
+   "fingerprint": 96739,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15038,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bzig%26sca_esv%3d3e3a4",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bzig%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnubMDwikgZCZMVzLZFdSd78YkpwJg%253A1790516743633%26source%3Dhp%26ei%3DBx65au3LJe6uur8PsPahwAo%26iflsig%3DABILxe8AAAAAarksFy9g5DETRRuZBVNBYEJIkd6n6boS%26oq%3Dhow%2Bto%2Bdebug%2Bzig%26gs_lp%3DEgdnd3Mtd2l6IhBob3cgdG8gZGVidWcgemlnKgYIABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMggQABiJBRiiBEjKB1AOWA5wAXgAkAEAmAGYAqABmAKqAQMyLTG4AQHIAQD4AQGYAgKgAp0CqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBbfjGleaYkAlkgcFMS4wLjGgB6MDsgcDMi0xuAeaAsIHAzAuMsgHA4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIq85NUGIjCjrSOeHE374FPr3pDD6t7pTwgwLMEVh6-xvYlkjt-L2mzrs6ivxbhpUbwJTqxTbAwyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+zig&sca_esv=3e3a42b854afc954&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8899,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug zig",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 642.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516743927"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.2992,
+     "target": "12",
+     "target_label": "how to debug zig",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 552.4,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516743927"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f398fc80b3121732",
+   "source": "google",
+   "goal": "First search Google for react open source alternatives, then search Google for how to debug logging best practices.",
+   "fingerprint": 96739,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "total_ms": 0,
+   "error": "TargetClosedError: Page.goto: Target page, context or browser has been closed",
+   "verification": {
+    "passed": false,
+    "reason": "harness error",
+    "checks": {}
+   },
+   "trajectory": []
+  }
+ ]
+}

@@ -1,0 +1,789 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 84528,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T18:56:55+0800",
+  "n_tasks": 8,
+  "success": 2,
+  "success_rate": 0.25,
+  "verified": 2,
+  "verified_rate": 0.25,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.6,
+  "mean_duration_ms": 19679,
+  "decision_latency_ms": {
+   "p50": 568.3,
+   "p95": 653.4
+  },
+  "step_outcomes": {
+   "executed": 25,
+   "refused-empty-enter": 1,
+   "stale": 3,
+   "done-rejected": 4,
+   "done": 3,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 2,
+    "success_rate": 0.25,
+    "verified": 2,
+    "verified_rate": 0.25,
+    "mean_steps": 4.6
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-eb4e9c4bfcd99020",
+   "source": "google",
+   "goal": "Search Google for unit testing migration guide and open the results.",
+   "fingerprint": 84528,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15090,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dunit%2btesting%2bmigration%2bguide%26sca",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dunit%2Btesting%2Bmigration%2Bguide%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvnsrzcAYiK_JaYnVML8C0XuKlPUg%253A1790506225747%26source%3Dhp%26ei%3D8fS4as6qLM_HkPIP5vKAsAE%26iflsig%3DABILxe8AAAAAarkDAWdQkeDkq_jDCx52zfb2mMeV4YWa%26ved%3D0ahUKEwiO57W8y46XAxXPI0QIHWY5ABYQ4dUDCDI%26uact%3D5%26oq%3Dunit%2Btesting%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6Ihx1bml0IHRlc3RpbmcgbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIlAdQEVgRcAF4AJABAJgBygGgAcoBqgEDMi0xuAEDyAEA-AEBmAICoALUAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMG8QU5CB0ld2aL7JIHBTEuMC4xoAfXBLIHAzItMbgHzQHCBwUwLjEuMcgHBoAIAQ%26sclient%3Dgws-wiz%26sei%3D9PS4aqixJNmwkPIP64Sa0QY&hl=en&q=EgQm0XtnGPTp49UGIjDiciYO-KZLFnMrdk0lBiGAvX_j4-ukCQHVKb9fRcpaRNw23uxwynI0WlXAUfdvo0cyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=unit+testing+migration+guide&sca_esv=54dc793dbd0"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8941,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "unit testing migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 484.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9008,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 517.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506227265"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-31eda903496de357",
+   "source": "google",
+   "goal": "First search Google for how to debug mongodb, then search Google for angular open source alternatives.",
+   "fingerprint": 84528,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 8,
+   "total_ms": 12549,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=angular+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnukeje4",
+     "bot_challenge": false,
+     "group0": [
+      "angular"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=angular+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnukeJE472kVNxf9IDa7T1c-6_2ieA%3A1790506293232&source=hp&ei=NfW4aoTlDKzAkPIPour2yAk&iflsig=ABILxe8AAAAAarkDRVBUoxdCqZjEkGbLqhhxiWCYqK1l&ved=0ahUKEwjE08zcy46XAxUsIEQIHSK1HZkQ4dUDCDI&uact=5&oq=angular+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiBhbmd1bGFyIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVItilQD1gPcAF4AJABAJgB6AGgAegBqgEDMi0xuAEDyAEA-AEBmAICoALzAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QVQtCkoBDQPWJIHBTEuMC4xoAfKCrIHAzItMbgH7wHCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz",
+    "final_title": "angular open source alternatives - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.5788,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 507.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8835,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug mongodb",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 473.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.6984,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for angular open source alternatives",
+     "page_changed": null,
+     "latency_ms": 491.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506294790"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular open source alternatives",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506294790"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9024,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for 'angular open source alternatives' (only the query typed in the search box with autocomplete suggestions is visible; no result",
+     "page_changed": null,
+     "latency_ms": 630.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506294790"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506294790"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.2401,
+     "target": "3",
+     "target_label": "Clear",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 631.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=angular+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnukeJE472kVNxf9IDa7T1c-6_2ieA%3A1790506293232&source=hp&ei=NfW4aoTlDKzAkPIPour2yAk&iflsig=ABILxe8AAAAAarkDRVBUoxdCqZjEkGbLqhhxiWCYqK1l&ved=0ahUKEwjE08zcy46XAxUsIEQIHSK1HZkQ4dUDCDI&uact=5&oq=angular+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiBhbmd1bGFyIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVItilQD1gPcAF4AJABAJgB6AGgAegBqgEDMi0xuAEDyAEA-AEBmAICoALzAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QVQtCkoBDQPWJIHBTEuMC4xoAfKCrIHAzItMbgH7wHCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.8584,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 587.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=angular+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnukeJE472kVNxf9IDa7T1c-6_2ieA%3A1790506293232&source=hp&ei=NfW4aoTlDKzAkPIPour2yAk&iflsig=ABILxe8AAAAAarkDRVBUoxdCqZjEkGbLqhhxiWCYqK1l&ved=0ahUKEwjE08zcy46XAxUsIEQIHSK1HZkQ4dUDCDI&uact=5&oq=angular+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiBhbmd1bGFyIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVItilQD1gPcAF4AJABAJgB6AGgAegBqgEDMi0xuAEDyAEA-AEBmAICoALzAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QVQtCkoBDQPWJIHBTEuMC4xoAfKCrIHAzItMbgH7wHCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3f35c14e80a8b5a9",
+   "source": "google",
+   "goal": "First search Google for retrieval augmented generation tutorial, then search Google for fastapi interview questions.",
+   "fingerprint": 84528,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 9,
+   "total_ms": 12434,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=fastapi+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnt2gvzb4_jec",
+     "bot_challenge": false,
+     "group0": [
+      "fastapi"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=fastapi+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt2gVzb4_JEcswxCIucPAcrjyJzoA%3A1790506315887&ei=S_W4aqjoNeTSkPIP9KS50A4&biw=1120&bih=780&oq=fastapi+interview+questions&gs_lp=Egxnd3Mtd2l6LXNlcnAiG2Zhc3RhcGkgaW50ZXJ2aWV3IHF1ZXN0aW9ucyoFCAAYgAQyBRAAGIAEMggQABiABBi0BzIFEAAYgAQyBRAAGIAEMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESLQIUBBYEHABeAGQAQCYAdMBoAHTAaoBAzItMbgBAcgBAPgBAZgCAqAC2wHCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA5gDAIgGAZAGCZIHBTEuMC4xoAeZBrIHAzItMbgH2AHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz-serp",
+    "final_title": "fastapi interview questions - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8811,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 490.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506313444"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8824,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 593.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506313444"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.7001,
+     "target": "10",
+     "target_label": "A Beginner's Guide to Retrieval Augmented Generation SingleStore https://www.singlestore.com › Blog › Product",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 680.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntKt-CchYH-HJ3oPquz4zI00gVNRA%3A1790506313164&source=hp&ei=SfW4ap7ECIXHkPIPgrHSgQE&iflsig=ABILxe8AAAAAarkDWapMrkUHqH9rT76YtkRgdToWhh7h&ved=0ahUKEwjejI3my46XAxWFI0QIHYKYNBAQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+tutorial&gs_lp=Egdnd3Mtd2l6IidyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gdHV0b3JpYWwyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wVI0AdQDVgNcAF4AJABAJgB7QGgAe0BqgEDMi0xuAEDyAEA-AEBmAICoAL0AagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QW49JCTOXr8SpIHBTEuMC4xoAfzBLIHAzItMbgH8AHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8069,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 571.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntKt-CchYH-HJ3oPquz4zI00gVNRA%3A1790506313164&source=hp&ei=SfW4ap7ECIXHkPIPgrHSgQE&iflsig=ABILxe8AAAAAarkDWapMrkUHqH9rT76YtkRgdToWhh7h&ved=0ahUKEwjejI3my46XAxWFI0QIHYKYNBAQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+tutorial&gs_lp=Egdnd3Mtd2l6IidyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gdHV0b3JpYWwyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wVI0AdQDVgNcAF4AJABAJgB7QGgAe0BqgEDMi0xuAEDyAEA-AEBmAICoAL0AagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QW49JCTOXr8SpIHBTEuMC4xoAfzBLIHAzItMbgH8AHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.865,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 590.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntKt-CchYH-HJ3oPquz4zI00gVNRA%3A1790506313164&source=hp&ei=SfW4ap7ECIXHkPIPgrHSgQE&iflsig=ABILxe8AAAAAarkDWapMrkUHqH9rT76YtkRgdToWhh7h&ved=0ahUKEwjejI3my46XAxWFI0QIHYKYNBAQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+tutorial&gs_lp=Egdnd3Mtd2l6IidyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gdHV0b3JpYWwyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wVI0AdQDVgNcAF4AJABAJgB7QGgAe0BqgEDMi0xuAEDyAEA-AEBmAICoAL0AagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QW49JCTOXr8SpIHBTEuMC4xoAfzBLIHAzItMbgH8AHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8069,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 592.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntKt-CchYH-HJ3oPquz4zI00gVNRA%3A1790506313164&source=hp&ei=SfW4ap7ECIXHkPIPgrHSgQE&iflsig=ABILxe8AAAAAarkDWapMrkUHqH9rT76YtkRgdToWhh7h&ved=0ahUKEwjejI3my46XAxWFI0QIHYKYNBAQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+tutorial&gs_lp=Egdnd3Mtd2l6IidyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gdHV0b3JpYWwyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wVI0AdQDVgNcAF4AJABAJgB7QGgAe0BqgEDMi0xuAEDyAEA-AEBmAICoAL0AagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QW49JCTOXr8SpIHBTEuMC4xoAfzBLIHAzItMbgH8AHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "fastapi interview questions",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntKt-CchYH-HJ3oPquz4zI00gVNRA%3A1790506313164&source=hp&ei=SfW4ap7ECIXHkPIPgrHSgQE&iflsig=ABILxe8AAAAAarkDWapMrkUHqH9rT76YtkRgdToWhh7h&ved=0ahUKEwjejI3my46XAxWFI0QIHYKYNBAQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+tutorial&gs_lp=Egdnd3Mtd2l6IidyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gdHV0b3JpYWwyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wVI0AdQDVgNcAF4AJABAJgB7QGgAe0BqgEDMi0xuAEDyAEA-AEBmAICoAL0AagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QW49JCTOXr8SpIHBTEuMC4xoAfzBLIHAzItMbgH8AHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8453,
+     "target": "6",
+     "target_label": "fastapi interview questions",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 622.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntKt-CchYH-HJ3oPquz4zI00gVNRA%3A1790506313164&source=hp&ei=SfW4ap7ECIXHkPIPgrHSgQE&iflsig=ABILxe8AAAAAarkDWapMrkUHqH9rT76YtkRgdToWhh7h&ved=0ahUKEwjejI3my46XAxWFI0QIHYKYNBAQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+tutorial&gs_lp=Egdnd3Mtd2l6IidyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gdHV0b3JpYWwyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wVI0AdQDVgNcAF4AJABAJgB7QGgAe0BqgEDMi0xuAEDyAEA-AEBmAICoAL0AagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QW49JCTOXr8SpIHBTEuMC4xoAfzBLIHAzItMbgH8AHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.8299,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 653.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=fastapi+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt2gVzb4_JEcswxCIucPAcrjyJzoA%3A1790506315887&ei=S_W4aqjoNeTSkPIP9KS50A4&biw=1120&bih=780&oq=fastapi+interview+questions&gs_lp=Egxnd3Mtd2l6LXNlcnAiG2Zhc3RhcGkgaW50ZXJ2aWV3IHF1ZXN0aW9ucyoFCAAYgAQyBRAAGIAEMggQABiABBi0BzIFEAAYgAQyBRAAGIAEMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESLQIUBBYEHABeAGQAQCYAdMBoAHTAaoBAzItMbgBAcgBAPgBAZgCAqAC2wHCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA5gDAIgGAZAGCZIHBTEuMC4xoAeZBrIHAzItMbgH2AHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b17a77740b368285",
+   "source": "google",
+   "goal": "First search Google for kotlin interview questions, then search Google for code review best practices.",
+   "fingerprint": 84528,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 10,
+   "total_ms": 57950,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['review', 'code']]",
+    "checks": {
+     "url": "https://www.baeldung.com/kotlin/interview-questions",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.baeldung.com/kotlin/interview-questions",
+    "final_title": "Kotlin Interview Questions | Baeldung on Kotlin"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9074,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kotlin interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 518.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506333029"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.8276,
+     "target": "12",
+     "target_label": "kotlin interview questions",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 580.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506333029"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8271,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for code review best practices",
+     "page_changed": null,
+     "latency_ms": 622.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt0z_McFHrfYSic_QwMrIV2KxygLw%3A1790506332827&source=hp&ei=XPW4aoacMZC5kPIP0871sA4&iflsig=ABILxe8AAAAAarkDbAgPgtaD72oszXsR4b3ibSvjocSW&oq=kotlin+interview+questions&gs_lp=Egdnd3Mtd2l6Ihprb3RsaW4gaW50ZXJ2aWV3IHF1ZXN0aW9ucyoLCAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMg0QABiABBiKBRhDGLQHMgsQABiABBiKBRiRAjIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCxAAGIAEGIoFGJECMgUQABiABDIFEAAYgARI8QdQDFgMcAF4AJABAJgB2wGgAdsBqgEDMi0xuAEByAEA-AEBmAICoALjAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMC8QVKqW4dWBHAjJIHBTEuMC4xoAfpBrIHAzItMbgH4AHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "code review best practices",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt0z_McFHrfYSic_QwMrIV2KxygLw%3A1790506332827&source=hp&ei=XPW4aoacMZC5kPIP0871sA4&iflsig=ABILxe8AAAAAarkDbAgPgtaD72oszXsR4b3ibSvjocSW&oq=kotlin+interview+questions&gs_lp=Egdnd3Mtd2l6Ihprb3RsaW4gaW50ZXJ2aWV3IHF1ZXN0aW9ucyoLCAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMg0QABiABBiKBRhDGLQHMgsQABiABBiKBRiRAjIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCxAAGIAEGIoFGJECMgUQABiABDIFEAAYgARI8QdQDFgMcAF4AJABAJgB2wGgAdsBqgEDMi0xuAEByAEA-AEBmAICoALjAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMC8QVKqW4dWBHAjJIHBTEuMC4xoAfpBrIHAzItMbgH4AHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8334,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 613.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt0z_McFHrfYSic_QwMrIV2KxygLw%3A1790506332827&source=hp&ei=XPW4aoacMZC5kPIP0871sA4&iflsig=ABILxe8AAAAAarkDbAgPgtaD72oszXsR4b3ibSvjocSW&oq=kotlin+interview+questions&gs_lp=Egdnd3Mtd2l6Ihprb3RsaW4gaW50ZXJ2aWV3IHF1ZXN0aW9ucyoLCAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMg0QABiABBiKBRhDGLQHMgsQABiABBiKBRiRAjIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCxAAGIAEGIoFGJECMgUQABiABDIFEAAYgARI8QdQDFgMcAF4AJABAJgB2wGgAdsBqgEDMi0xuAEByAEA-AEBmAICoALjAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMC8QVKqW4dWBHAjJIHBTEuMC4xoAfpBrIHAzItMbgH4AHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8334,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 592.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt0z_McFHrfYSic_QwMrIV2KxygLw%3A1790506332827&source=hp&ei=XPW4aoacMZC5kPIP0871sA4&iflsig=ABILxe8AAAAAarkDbAgPgtaD72oszXsR4b3ibSvjocSW&oq=kotlin+interview+questions&gs_lp=Egdnd3Mtd2l6Ihprb3RsaW4gaW50ZXJ2aWV3IHF1ZXN0aW9ucyoLCAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMg0QABiABBiKBRhDGLQHMgsQABiABBiKBRiRAjIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCxAAGIAEGIoFGJECMgUQABiABDIFEAAYgARI8QdQDFgMcAF4AJABAJgB2wGgAdsBqgEDMi0xuAEByAEA-AEBmAICoALjAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMC8QVKqW4dWBHAjJIHBTEuMC4xoAfpBrIHAzItMbgH4AHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.6612,
+     "target": "19",
+     "target_label": "Kotlin Interview Questions Baeldung https://www.baeldung.com › Home › Kotlin",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 592.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt0z_McFHrfYSic_QwMrIV2KxygLw%3A1790506332827&source=hp&ei=XPW4aoacMZC5kPIP0871sA4&iflsig=ABILxe8AAAAAarkDbAgPgtaD72oszXsR4b3ibSvjocSW&oq=kotlin+interview+questions&gs_lp=Egdnd3Mtd2l6Ihprb3RsaW4gaW50ZXJ2aWV3IHF1ZXN0aW9ucyoLCAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMg0QABiABBiKBRhDGLQHMgsQABiABBiKBRiRAjIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCxAAGIAEGIoFGJECMgUQABiABDIFEAAYgARI8QdQDFgMcAF4AJABAJgB2wGgAdsBqgEDMi0xuAEByAEA-AEBmAICoALjAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMC8QVKqW4dWBHAjJIHBTEuMC4xoAfpBrIHAzItMbgH4AHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.9166,
+     "target": "5",
+     "target_label": "search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 370.7,
+     "low_confidence": false,
+     "url": "https://www.baeldung.com/kotlin/interview-questions"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.9056,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for code review best practices",
+     "page_changed": null,
+     "latency_ms": 361.8,
+     "low_confidence": false,
+     "url": "https://www.baeldung.com/kotlin/interview-questions"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.9289,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 407.7,
+     "low_confidence": false,
+     "url": "https://www.baeldung.com/kotlin/interview-questions"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a741451e2fb5b7e1",
+   "source": "google",
+   "goal": "First search Google for spring boot best practices, then search Google for memory leak debugging migration guide.",
+   "fingerprint": 84528,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14671,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dspring%2bboot%2bbest%2bpractices%26sca_e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dspring%2Bboot%2Bbest%2Bpractices%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntLcKwDZ-uzKb2FdLpeIY8tO_eDjA%253A1790506398503%26source%3Dhp%26ei%3DnvW4atSxHdvDkPIP8bPKoAs%26iflsig%3DABILxe8AAAAAarkDrjXOgToG6G2ozih-e_cGLWBieTK8%26ved%3D0ahUKEwjU-OWOzI6XAxXbIUQIHfGZErQQ4dUDCDI%26uact%3D5%26oq%3Dspring%2Bboot%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhpzcHJpbmcgYm9vdCBiZXN0IHByYWN0aWNlczILEAAYgAQYigUYkQIyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjfB1AbWBtwAXgAkAEAmAHWAaAB1gGqAQMyLTG4AQPIAQD4AQGYAgKgAtwBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBezySVLVxzwFkgcFMS4wLjGgB5wGsgcDMi0xuAfYAcIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKHr49UGIjAA_BmqguYvrIRY_hjl1x83cnAQcNg_r3Z765lOte3B9W71oMihhO1WwnzTvDWYqIwyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=spring+boot+best+practices&sca_esv=54dc793dbd095"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8641,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "spring boot best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 568.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506399083"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8112,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 595.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506399083"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5f38fb6d1d6e9b94",
+   "source": "google",
+   "goal": "First search Google for how to debug scala, then search Google for llm fine-tuning migration guide.",
+   "fingerprint": 84528,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14796,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bscala%26sca_esv%3d54d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bscala%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnukoxTl-KwtpH1IC3wtfIiS_2K3_g%253A1790506465674%26source%3Dhp%26ei%3D4fW4asbyJ-vvkPIP2s3x2Ag%26iflsig%3DABILxe8AAAAAarkD8QFszJ0UBhLGHeTR7RpCONp8NsX_%26ved%3D0ahUKEwiG5-muzI6XAxXrN0QIHdpmHIsQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bscala%26gs_lp%3DEgdnd3Mtd2l6IhJob3cgdG8gZGVidWcgc2NhbGEyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIIEAAYiQUYogQyBRAAGO8FMgUQABjvBUjHCFAOWA5wAXgAkAEAmAHgAaAB4AGqAQMyLTG4AQPIAQD4AQGYAgKgAukBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBWmfbc8jcBdJkgcFMS4wLjGgB4YEsgcDMi0xuAflAcIHAzItMsgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOTr49UGIjC4N0pw6wcT5LJZYodL5do-BZRy99W8FMyadnAVFWatngQJVrc_NwLW7vVGM5SMuHYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+scala&sca_esv=54dc793dbd0950c5&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.4231,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug scala",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 506.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506466041"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8805,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 699.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506466041"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-12a31c5819a7f347",
+   "source": "google",
+   "goal": "Search Google for docker migration guide and open the results.",
+   "fingerprint": 84528,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14906,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddocker%2bmigration%2bguide%26sca_esv%3d5",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddocker%2Bmigration%2Bguide%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsCjp1axGpMy6UaJN5lCLP_L9jWJw%253A1790506532781%26source%3Dhp%26ei%3DJPa4auy8LufJkPIPkYvcCQ%26iflsig%3DABILxe8AAAAAarkENMagLRrbtDN4ttKbxeSUOXuUgvBO%26ved%3D0ahUKEwjs3unOzI6XAxXnJEQIHZEFNwEQ4dUDCDI%26uact%3D5%26oq%3Ddocker%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhZkb2NrZXIgbWlncmF0aW9uIGd1aWRlMgYQABgWGB4yBRAAGO8FMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIESPgHUA5YDnABeACQAQCYAfABoAHwAaoBAzItMbgBA8gBAPgBAZgCAqAC-QGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFGSPtaAkqtDOSBwUxLjAuMaAH4AKyBwMyLTG4B_QBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKfs49UGIjC3HAOTN-sQkmTjdYrnfTdrXt4DOXXncQeK4uKt4ShvlnL7i4vHBh-wrewiONUiSpEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=docker+migration+guide&sca_esv=54dc793dbd0950c5&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8747,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "docker migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 520.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506532906"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.898,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 621.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506532906"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-1e18d62f8ae3eb77",
+   "source": "google",
+   "goal": "First search Google for mysql tutorial, then search Google for flask best practices.",
+   "fingerprint": 84528,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15036,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmysql%2btutorial%26sca_esv%3d54dc793dbd0",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmysql%2Btutorial%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsaZSxMgPeS2y3IT7cBNPSCALk6WQ%253A1790506599850%26source%3Dhp%26ei%3DZ_a4auDMMv2rur8PgdMP%26iflsig%3DABILxe8AAAAAarkEd9IE6e82Lh_if2tK_9j146ZFij-p%26ved%3D0ahUKEwignOfuzI6XAxX9le4BHYHpAwAQ4dUDCDI%26uact%3D5%26oq%3Dmysql%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig5teXNxbCB0dXRvcmlhbDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARItAdQDFgMcAF4AJABAJgB1wGgAdcBqgEDMi0xuAEDyAEA-AEBmAICoALjAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QUtVBW0-cU7IJIHBTEuMC4xoAf_BLIHAzItMbgH3wHCBwMyLTLIBweACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOrs49UGIjC1so7XKcgXp8oIhlEaQgXj4MCDBmaP9JNG1BXP5nnwI-MmiWoIvOyKhY9Wu9iZ2DYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mysql+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8998,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mysql tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 498.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506599977"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8691,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 550.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506599977"
+    }
+   ]
+  }
+ ]
+}

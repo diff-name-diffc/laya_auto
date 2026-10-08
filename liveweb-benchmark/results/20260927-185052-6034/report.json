@@ -1,0 +1,941 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 98901,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T18:56:37+0800",
+  "n_tasks": 8,
+  "success": 3,
+  "success_rate": 0.375,
+  "verified": 3,
+  "verified_rate": 0.375,
+  "found_but_not_stopped": 0,
+  "mean_steps": 5.9,
+  "mean_duration_ms": 19247,
+  "decision_latency_ms": {
+   "p50": 502.4,
+   "p95": 655.3
+  },
+  "step_outcomes": {
+   "refused-empty-enter": 3,
+   "executed": 27,
+   "done-rejected": 10,
+   "done": 4,
+   "stale": 2,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "github": {
+    "n": 2,
+    "success": 1,
+    "success_rate": 0.5,
+    "verified": 1,
+    "verified_rate": 0.5,
+    "mean_steps": 9.0
+   },
+   "google": {
+    "n": 6,
+    "success": 2,
+    "success_rate": 0.333,
+    "verified": 2,
+    "verified_rate": 0.333,
+    "mean_steps": 4.8
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-0ed0477f8221c733",
+   "source": "github",
+   "goal": "Search GitHub for 'logging best practices' repositories and open the search results.",
+   "fingerprint": 98901,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 10,
+   "total_ms": 15437,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['logging']]",
+    "checks": {
+     "url": "https://github.com/features/actions",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://github.com/features/actions",
+    "final_title": "GitHub Actions · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7972,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 448.8,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.6191,
+     "target": "11",
+     "target_label": "Enter your email",
+     "kind": "fill",
+     "text": "logging best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 439.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8598,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 511.3,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.4038,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 446.9,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.829,
+     "target": "2",
+     "target_label": "Explore GitHub Actions",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 568.4,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.6816,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub search results page for 'logging best practices' repositories",
+     "page_changed": null,
+     "latency_ms": 439.6,
+     "low_confidence": false,
+     "url": "https://github.com/features/actions"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/features/actions"
+    },
+    {
+     "step": 7,
+     "operation": "DONE",
+     "confidence": 0.8988,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'logging best practices' repositories; page is GitHub Actions feature page, not a search-results page",
+     "page_changed": null,
+     "latency_ms": 586.4,
+     "low_confidence": false,
+     "url": "https://github.com/features/actions"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:22",
+     "target_label": "Search or jump to",
+     "kind": "fill",
+     "text": "logging best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/features/actions"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.8566,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 558.3,
+     "low_confidence": false,
+     "url": "https://github.com/features/actions"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-1f190ede0b6dcc85",
+   "source": "google",
+   "goal": "Search Google for model quantization migration guide and open the results.",
+   "fingerprint": 98901,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 47619,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmodel%2bquantization%2bmigration%2bguide",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmodel%2Bquantization%2Bmigration%2Bguide%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsqbAGwkPmp-miynQNXb0C6QKK_QQ%253A1790506279480%26source%3Dhp%26ei%3DJ_W4auqMHJPVkPIPlsjekAc%26iflsig%3DABILxe8AAAAAarkDNyK14G3xB_mxgsd9TAZgrQxPgVZ0%26ved%3D0ahUKEwiqvIXWy46XAxWTKkQIHRakF3IQ4dUDCDI%26uact%3D5%26oq%3Dmodel%2Bquantization%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IiJtb2RlbCBxdWFudGl6YXRpb24gbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFI--IBUBlYGXABeACQAQCYAdUBoAHVAaoBAzItMbgBA8gBAPgBAZgCAqAC3wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFNO70OSwsxPySBwUxLjAuMaAH-wSyBwMyLTG4B9sBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz%26sei%3DSvW4auHAObaqur8Pm7Gs-Ag&hl=en&q=EgQm0XtnGMvq49UGIjCe2QrhCbWdApKrQO19pr2dkBLoZ_ZfhtKC1T41fKH8pdZfnUawvp5jPwHmGcxjylIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=model+quantization+migration+guide&sca_esv=54dc7"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.904,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization migration guide",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 500.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8972,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 502.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506280797"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8754,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search query not entered; Google results for \"model quantization migration guide\" are not displayed",
+     "page_changed": null,
+     "latency_ms": 517.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506280797"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization migration guide",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506280797"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9085,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'model quantization migration guide'; results page open/displayed",
+     "page_changed": null,
+     "latency_ms": 616.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506280797"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506280797"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-bb5a1a0c01b0822b",
+   "source": "github",
+   "goal": "Search GitHub for 'refactoring' repositories and open the search results.",
+   "fingerprint": 98901,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 8,
+   "total_ms": 12802,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://github.com/search?q=refactoring&type=repositories",
+     "bot_challenge": false,
+     "group0": [
+      "refactoring"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://github.com/search?q=refactoring&type=repositories",
+    "final_title": "Repository search results · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8513,
+     "target": "11",
+     "target_label": "Enter your email",
+     "kind": "fill",
+     "text": "refactoring",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 435.3,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8961,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 453.4,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.5249,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 457.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.5429,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page listing repositories for 'refactoring'; No search results displayed; only a homepage with quick-search dropdown and 'refactoring' ",
+     "page_changed": null,
+     "latency_ms": 900.5,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:14",
+     "target_label": "Search or jump to",
+     "kind": "fill",
+     "text": "refactoring",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8846,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page listing repositories for 'refactoring' (only the search box with the query typed is visible; results have not been opened/shown)",
+     "page_changed": null,
+     "latency_ms": 472.4,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.9213,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 410.8,
+     "low_confidence": false,
+     "url": "https://github.com/search?q=refactoring&type=repositories"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-48748e25a81e5864",
+   "source": "google",
+   "goal": "Search Google for logging best practices best practices and open the results.",
+   "fingerprint": 98901,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 7,
+   "total_ms": 9759,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=logging+best+practices+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqns",
+     "bot_challenge": false,
+     "group0": [
+      "logging"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=logging+best+practices+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQns9h6dTTumHYQOH-yzRsFno7BIMjA%3A1790506399855&source=hp&ei=n_W4aqvAMtPGkPIP9Yu3kQ4&iflsig=ABILxe8AAAAAarkDr6R51mhgM0xr5NMRI7ZJwYutoyRT&ved=0ahUKEwjri7iPzI6XAxVTI0QIHfXFLeIQ4dUDCDI&uact=5&oq=logging+best+practices+best+practices&gs_lp=Egdnd3Mtd2l6IiVsb2dnaW5nIGJlc3QgcHJhY3RpY2VzIGJlc3QgcHJhY3RpY2VzMgUQIRigATIFECEYqwIyBRAhGKsCSMwdUBlYGXABeACQAQCYAeABoAHgAaoBAzItMbgBA8gBAPgBAZgCAqAC5wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFUUcQefBHS1GSBwUxLjAuMaAHmAOyBwMyLTG4B-MBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz",
+    "final_title": "logging best practices best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.8477,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 693.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.3613,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 472.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506401179"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.3042,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results page for 'logging best practices best practices'",
+     "page_changed": null,
+     "latency_ms": 519.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506401179"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "logging best practices best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506401179"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8878,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page listing results for 'logging best practices best practices' (only the Google homepage with the query typed and autocomplete sugges",
+     "page_changed": null,
+     "latency_ms": 528.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506401179"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506401179"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8754,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 649.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=logging+best+practices+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQns9h6dTTumHYQOH-yzRsFno7BIMjA%3A1790506399855&source=hp&ei=n_W4aqvAMtPGkPIP9Yu3kQ4&iflsig=ABILxe8AAAAAarkDr6R51mhgM0xr5NMRI7ZJwYutoyRT&ved=0ahUKEwjri7iPzI6XAxVTI0QIHfXFLeIQ4dUDCDI&uact=5&oq=logging+best+practices+best+practices&gs_lp=Egdnd3Mtd2l6IiVsb2dnaW5nIGJlc3QgcHJhY3RpY2VzIGJlc3QgcHJhY3RpY2VzMgUQIRigATIFECEYqwIyBRAhGKsCSMwdUBlYGXABeACQAQCYAeABoAHgAaoBAzItMbgBA8gBAPgBAZgCAqAC5wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFUUcQefBHS1GSBwUxLjAuMaAHmAOyBwMyLTG4B-MBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-0d7a5ce46dee9d24",
+   "source": "google",
+   "goal": "First search Google for mongodb migration guide, then search Google for java open source alternatives.",
+   "fingerprint": 98901,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 9,
+   "total_ms": 19923,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=java+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqntjhbknezc",
+     "bot_challenge": false,
+     "group0": [
+      "java"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=java+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntJhBknEZcxSv6sPGQt5L7osyW99A%3A1790506419921&ei=s_W4arHvN_6T8L0PotqluQ8&biw=1120&bih=780&oq=java+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiHWphdmEgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzKgYIABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wVIswhQC1gLcAF4AJABAJgB4gGgAeIBqgEDMi0xuAEByAEA-AEBmAICoALrAcICBxAAGB4YsAPCAgkQABgIGB4YsAPCAg4QABiABBiKBRiGAxiwA8ICCBAAGO8FGLADmAMAiAYBkAYHkgcFMS4wLjGgB6gDsgcDMi0xuAfpAcIHBTAuMS4xyAcGgAgB&sclient=gws-wiz-serp",
+    "final_title": "java open source alternatives - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8751,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mongodb migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 638.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506417330"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8884,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 608.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506417330"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.7646,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for java open source alternatives",
+     "page_changed": null,
+     "latency_ms": 578.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=mongodb+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuRSqumNz12gNQXmQ8n22vLBP96Yg%3A1790506417060&source=hp&ei=sfW4aoy5AtbRkPIPxNrw0QU&iflsig=ABILxe8AAAAAarkDwVrd-bJ_nwh8j7CaU4q4MWC9lxPi&ved=0ahUKEwjM1dKXzI6XAxXWKEQIHUQtPFoQ4dUDCDI&uact=5&oq=mongodb+migration+guide&gs_lp=Egdnd3Mtd2l6Ihdtb25nb2RiIG1pZ3JhdGlvbiBndWlkZTIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FMgUQABjvBUjfB1ALWAtwAXgAkAEAmAHgAaAB4AGqAQMyLTG4AQPIAQD4AQGYAgKgAuUBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBS1cQlydeCW7kgcFMS4wLjGgB_EEsgcDMi0xuAfjAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "java open source alternatives",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=mongodb+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuRSqumNz12gNQXmQ8n22vLBP96Yg%3A1790506417060&source=hp&ei=sfW4aoy5AtbRkPIPxNrw0QU&iflsig=ABILxe8AAAAAarkDwVrd-bJ_nwh8j7CaU4q4MWC9lxPi&ved=0ahUKEwjM1dKXzI6XAxXWKEQIHUQtPFoQ4dUDCDI&uact=5&oq=mongodb+migration+guide&gs_lp=Egdnd3Mtd2l6Ihdtb25nb2RiIG1pZ3JhdGlvbiBndWlkZTIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FMgUQABjvBUjfB1ALWAtwAXgAkAEAmAHgAaAB4AGqAQMyLTG4AQPIAQD4AQGYAgKgAuUBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBS1cQlydeCW7kgcFMS4wLjGgB_EEsgcDMi0xuAfjAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7544,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 655.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=mongodb+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuRSqumNz12gNQXmQ8n22vLBP96Yg%3A1790506417060&source=hp&ei=sfW4aoy5AtbRkPIPxNrw0QU&iflsig=ABILxe8AAAAAarkDwVrd-bJ_nwh8j7CaU4q4MWC9lxPi&ved=0ahUKEwjM1dKXzI6XAxXWKEQIHUQtPFoQ4dUDCDI&uact=5&oq=mongodb+migration+guide&gs_lp=Egdnd3Mtd2l6Ihdtb25nb2RiIG1pZ3JhdGlvbiBndWlkZTIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FMgUQABjvBUjfB1ALWAtwAXgAkAEAmAHgAaAB4AGqAQMyLTG4AQPIAQD4AQGYAgKgAuUBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBS1cQlydeCW7kgcFMS4wLjGgB_EEsgcDMi0xuAfjAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7544,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 626.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=mongodb+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuRSqumNz12gNQXmQ8n22vLBP96Yg%3A1790506417060&source=hp&ei=sfW4aoy5AtbRkPIPxNrw0QU&iflsig=ABILxe8AAAAAarkDwVrd-bJ_nwh8j7CaU4q4MWC9lxPi&ved=0ahUKEwjM1dKXzI6XAxXWKEQIHUQtPFoQ4dUDCDI&uact=5&oq=mongodb+migration+guide&gs_lp=Egdnd3Mtd2l6Ihdtb25nb2RiIG1pZ3JhdGlvbiBndWlkZTIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FMgUQABjvBUjfB1ALWAtwAXgAkAEAmAHgAaAB4AGqAQMyLTG4AQPIAQD4AQGYAgKgAuUBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBS1cQlydeCW7kgcFMS4wLjGgB_EEsgcDMi0xuAfjAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "java open source alternatives",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=mongodb+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuRSqumNz12gNQXmQ8n22vLBP96Yg%3A1790506417060&source=hp&ei=sfW4aoy5AtbRkPIPxNrw0QU&iflsig=ABILxe8AAAAAarkDwVrd-bJ_nwh8j7CaU4q4MWC9lxPi&ved=0ahUKEwjM1dKXzI6XAxXWKEQIHUQtPFoQ4dUDCDI&uact=5&oq=mongodb+migration+guide&gs_lp=Egdnd3Mtd2l6Ihdtb25nb2RiIG1pZ3JhdGlvbiBndWlkZTIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FMgUQABjvBUjfB1ALWAtwAXgAkAEAmAHgAaAB4AGqAQMyLTG4AQPIAQD4AQGYAgKgAuUBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBS1cQlydeCW7kgcFMS4wLjGgB_EEsgcDMi0xuAfjAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8322,
+     "target": "5",
+     "target_label": "java open source alternatives",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 633.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=mongodb+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuRSqumNz12gNQXmQ8n22vLBP96Yg%3A1790506417060&source=hp&ei=sfW4aoy5AtbRkPIPxNrw0QU&iflsig=ABILxe8AAAAAarkDwVrd-bJ_nwh8j7CaU4q4MWC9lxPi&ved=0ahUKEwjM1dKXzI6XAxXWKEQIHUQtPFoQ4dUDCDI&uact=5&oq=mongodb+migration+guide&gs_lp=Egdnd3Mtd2l6Ihdtb25nb2RiIG1pZ3JhdGlvbiBndWlkZTIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FMgUQABjvBUjfB1ALWAtwAXgAkAEAmAHgAaAB4AGqAQMyLTG4AQPIAQD4AQGYAgKgAuUBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBS1cQlydeCW7kgcFMS4wLjGgB_EEsgcDMi0xuAfjAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "DONE",
+     "confidence": 0.8826,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 618.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=java+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntJhBknEZcxSv6sPGQt5L7osyW99A%3A1790506419921&ei=s_W4arHvN_6T8L0PotqluQ8&biw=1120&bih=780&oq=java+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiHWphdmEgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzKgYIABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wVIswhQC1gLcAF4AJABAJgB4gGgAeIBqgEDMi0xuAEByAEA-AEBmAICoALrAcICBxAAGB4YsAPCAgkQABgIGB4YsAPCAg4QABiABBiKBRiGAxiwA8ICCBAAGO8FGLADmAMAiAYBkAYHkgcFMS4wLjGgB6gDsgcDMi0xuAfpAcIHBTAuMS4xyAcGgAgB&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-938701444e018d1d",
+   "source": "google",
+   "goal": "Search Google for refactoring release notes and open the results.",
+   "fingerprint": 98901,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14600,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drefactoring%2brelease%2bnotes%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drefactoring%2Brelease%2Bnotes%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuYWr1u_ZpIhDm0YhTEffdDTAYI5A%253A1790506444214%26source%3Dhp%26ei%3DzPW4avPTC7GP8L0PjPLsEA%26iflsig%3DABILxe8AAAAAarkD3AHO2HTY3qCB-CtSOD6cfo0FPrzs%26ved%3D0ahUKEwjz6cukzI6XAxWxB7wBHQw5GwIQ4dUDCDI%26uact%3D5%26oq%3Drefactoring%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhlyZWZhY3RvcmluZyByZWxlYXNlIG5vdGVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwJInQdQEFgQcAF4AJABAJgB6AGgAegBqgEDMi0xuAEDyAEA-AEBmAICoAL0AagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QWGerZTGHiStZIHBTEuMC4xoAfKBLIHAzItMbgH7wHCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGM7r49UGIjDOCzboT2S8vMPV5QfwWSaxBZoJUmpDcEEgnDOzECnruI6WGznqI5cuMb-62H8Cm2wyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=refactoring+release+notes&sca_esv=54dc793dbd0950"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8895,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "refactoring release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 484.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506444335"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8945,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 530.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506444335"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-0768438bc026bc54",
+   "source": "google",
+   "goal": "First search Google for mysql tutorial, then search Google for langchain tutorial.",
+   "fingerprint": 98901,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14591,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmysql%2btutorial%26sca_esv%3d54dc793dbd0",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmysql%2Btutorial%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuQGiXthuHhUWwVVAE1H-JrId64IA%253A1790506511030%26source%3Dhp%26ei%3DD_a4ar9Mmo7wvQ-UjUc%26iflsig%3DABILxe8AAAAAarkEH59FsSNBd5dEdesZ-MuQaWwhb9yn%26ved%3D0ahUKEwj_j7rEzI6XAxUaB7wBHZTGEQAQ4dUDCDI%26uact%3D5%26oq%3Dmysql%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig5teXNxbCB0dXRvcmlhbDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIxQdQEFgQcAF4AJABAJgB2QGgAdkBqgEDMi0xuAEDyAEA-AEBmAICoALjAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME8QUnBvLUDvR9rZIHBTEuMC4xoAf_BLIHAzItMbgH3gHCBwMyLTLIBweACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJHs49UGIjAwcnec5dnGlqqqNJq-JNHRlOLS2AC0hrYBf_eYPGTQlqwIm_X6hu1stEvd02lXHTcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mysql+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.892,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mysql tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 519.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506511150"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8961,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 569.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506511150"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d5470d30aa2b6040",
+   "source": "google",
+   "goal": "Search Google for retrieval augmented generation tutorial and open the results.",
+   "fingerprint": 98901,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 19245,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dretrieval%2baugmented%2bgeneration%2btut",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dretrieval%2Baugmented%2Bgeneration%2Btutorial%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsP640zY0h431Gaa40Cl-2nuPOiOw%253A1790506577840%26source%3Dhp%26ei%3DUfa4as_8MeaikPIPl5ng4As%26iflsig%3DABILxe8AAAAAarkEYYfwBXpHHWrPTkp1XCB6B_fwHzAS%26ved%3D0ahUKEwiP6afkzI6XAxVmEUQIHZcMGLwQ4dUDCDI%26uact%3D5%26oq%3Dretrieval%2Baugmented%2Bgeneration%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IidyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gdHV0b3JpYWwyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBUibKlANWA1wAXgAkAEAmAHbAaAB2wGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0ApgDA_EFLfY1aAyWnD2SBwUxLjAuMaAHjQayBwMyLTG4B-IBwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNjs49UGIjASOvQvw8AJYxeVjJS7BBl3ABmoYwn_GqfNll3n78EOb6U00ByGobyk-GZeVhBrLhQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=retrieval+augmented+generation+tutorial&sca_esv="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8718,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 520.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506578075"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8853,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search-results page listing results for 'retrieval augmented generation tutorial'",
+     "page_changed": null,
+     "latency_ms": 579.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506578075"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506578075"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,596 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 30514,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T20:44:55+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 3.0,
+  "mean_duration_ms": 16419,
+  "decision_latency_ms": {
+   "p50": 500.0,
+   "p95": 630.5
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 2,
+   "executed": 17,
+   "done-rejected": 3
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 3.0
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-0aa5df5fb84bb700",
+   "source": "google",
+   "goal": "First search Google for django interview questions, then search Google for tensorflow performance optimization.",
+   "fingerprint": 30514,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 17198,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddjango%2binterview%2bquestions%26sca_esv",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddjango%2Binterview%2Bquestions%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnu42O6h94Fhbc10zzLRGrTfqnP3lA%253A1790512597032%26source%3Dhp%26ei%3D1Q25autKh4_wvQ-lsavBBg%26iflsig%3DABILxe8AAAAAarkb5RkTn7-z5NMYL8_t9aEU_LB3W8qG%26oq%3Ddjango%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhpkamFuZ28gaW50ZXJ2aWV3IHF1ZXN0aW9ucyoFCAAYgAQyBRAAGIAEMgUQABiABDIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIIEAAYgAQYtAcyBRAAGIAESL0QUKMIWKMIcAJ4AJABAJgBugGgAboBqgEDMC4xuAEByAEA-AEBmAIDoALJAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME8QXv_1oK_LF-vpIHAzIuMaAHwgayBwMwLjG4B8EBwgcFMC4xLjLIBwmACAE%26sclient%3Dgws-wiz%26sei%3D2g25asDNCevdkPIPqfT6uA4&hl=en&q=EgQm0XtnGNqb5NUGIjBl2c20i2fyRyHKZThq1-xGVtAng983FomqNxu2PCf57SyKZ17jCaNRiELh90LeUjEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=django+interview+questions&sca_esv=75b852f910b8e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9005,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django interview questions",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 568.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8978,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 500.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512598464"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.7711,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 498.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512598464"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2962,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 604.1,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512598464"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.6703,
+     "target": "12",
+     "target_label": "django interview questions",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 630.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512598464"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-fdc3547502309271",
+   "source": "google",
+   "goal": "Search Google for fastapi migration guide and open the results.",
+   "fingerprint": 30514,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 22405,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dfastapi%2bmigration%2bguide%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dfastapi%2Bmigration%2Bguide%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntUEfacJww4KQgl9PT_k9bRJKTCXw%253A1790512666609%26source%3Dhp%26ei%3DGg65aoncI_Cxur8PsJ6uiAo%26iflsig%3DABILxe8AAAAAarkcKvRSpl7JtoEe9ZO6HT67D9GhJAPJ%26ved%3D0ahUKEwiJ0dS7446XAxXwmO4BHTCPC6EQ4dUDCDI%26oq%3Dfastapi%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhdmYXN0YXBpIG1pZ3JhdGlvbiBndWlkZTIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMggQABiABBiiBDIFEAAY7wUyBRAAGO8FMggQABiABBiiBEi0J1ANWA1wAXgAkAEAmAHWAaAB1gGqAQMyLTG4AQzIAQD4AQGYAgKgAuIBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBSU3DGqb17YZkgcFMS4wLjGgB4sGsgcDMi0xuAfeAcIHAzItMsgHB4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKWc5NUGIjD7SCRVbIjHsrhUn-1EfxoM5icxpp7MIEBH7I_Y6qPRIzEETqH_BLPAFQNKC1T7K6kyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=fastapi+migration+guide&sca_esv=75b852f910b8e50f"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8643,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "fastapi migration guide",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 466.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9022,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 470.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512668013"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8935,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for fastapi migration guide",
+     "page_changed": null,
+     "latency_ms": 492.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512668013"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "fastapi migration guide",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512668013"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9102,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'fastapi migration guide' are not visible; only the search box and autocomplete suggestions are shown",
+     "page_changed": null,
+     "latency_ms": 615.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512668013"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512668013"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d64f476922ad4a37",
+   "source": "google",
+   "goal": "First search Google for kubernetes performance optimization, then search Google for vllm interview questions.",
+   "fingerprint": 30514,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14634,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dkubernetes%2bperformance%2boptimization%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dkubernetes%2Bperformance%2Boptimization%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnu0jpt9-W8euBT03JkpcYEQFXiikw%253A1790512741404%26source%3Dhp%26ei%3DZQ65asPrFpDdkPIPkYSQgA0%26iflsig%3DABILxe8AAAAAarkcdeq_ftNbWyHZWpyqBwkC5go7OS6T%26ved%3D0ahUKEwiDsqnf446XAxWQLkQIHRECBNAQ4dUDCDI%26uact%3D5%26oq%3Dkubernetes%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiNrdWJlcm5ldGVzIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUjEB1AMWAxwAXgAkAEAmAHgAaAB4AGqAQMyLTG4AQPIAQD4AQGYAgKgAusBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBWVd0q0jQCkjkgcFMS4wLjGgB7cEsgcDMi0xuAfoAcIHBTAuMS4xyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOic5NUGIjDia-KEkZ7meOFAPqHsUVPdUcH-imi3EKuyeCYLgluqJKLokMb68UVL04eH0KyiDFYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=kubernetes+performance+optimization&sca_esv=75b8"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8973,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kubernetes performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 505.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512741767"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9118,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 568.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512741767"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-88bd6cf4fa3a1ff4",
+   "source": "google",
+   "goal": "Search Google for kubernetes interview questions and open the results.",
+   "fingerprint": 30514,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14687,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dkubernetes%2binterview%2bquestions%26sca",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dkubernetes%2Binterview%2Bquestions%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnulXURwep4RIzMh0WRTy5wSmRft1A%253A1790512808269%26source%3Dhp%26ei%3DqA65asaZD-3bkPIPu_Sr-Aw%26iflsig%3DABILxe8AAAAAarkcuLE9XSQ7uzB5WduWaIl0ZaBIP1er%26ved%3D0ahUKEwjGjZv_446XAxXtLUQIHTv6Cs8Q4dUDCDI%26uact%3D5%26oq%3Dkubernetes%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Ih5rdWJlcm5ldGVzIGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMgsQLhj7BhjyBhiPBzIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABDIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIFEAAYgAQyCBAAGIAEGLQHSMwHUA1YDXABeACQAQCYAf0BoAH9AaoBAzItMbgBA8gBAPgBAZgCAqAChwKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDAvEFAQyqNlEQ8_6SBwUxLjAuMaAHtQiyBwMyLTG4B4QCwgcFMC4xLjHIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKqd5NUGIjA538OhKpjfBnCQsfcR4B4aOhKpP8TmVGLSMIa0Qx2pqestftIB3Joa35r2feRonWAyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=kubernetes+interview+questions&sca_esv=75b852f91"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9071,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kubernetes interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 486.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512808570"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.891,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 576.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512808570"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ea91fcc0f9527270",
+   "source": "google",
+   "goal": "First search Google for mongodb best practices, then search Google for rust cheat sheet.",
+   "fingerprint": 30514,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14752,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmongodb%2bbest%2bpractices%26sca_esv%3d7",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmongodb%2Bbest%2Bpractices%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntR8obM9AtqnGGe3S5tJGTY5NYMUg%253A1790512875127%26source%3Dhp%26ei%3D6w65aszJBu3DkPIPqJOTqQk%26iflsig%3DABILxe8AAAAAarkc-8w_aGV7S5XNn5kYj39Y8N3TlNEO%26ved%3D0ahUKEwiM64uf5I6XAxXtIUQIHajJJJUQ4dUDCDI%26uact%3D5%26oq%3Dmongodb%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhZtb25nb2RiIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjOB1ALWAtwAXgAkAEAmAHhAaAB4QGqAQMyLTG4AQPIAQD4AQGYAgKgAusBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0ApgDAvEFWk-xurSzBKKSBwUxLjAuMaAH3AWyBwMyLTG4B-gBwgcFMC4xLjHIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGO2d5NUGIjB0BWb-9OUfRdQX5_eSTuvQ5sEA6VAj6dSpQ8UB0Uhq8F_smnHpodyacU4twoq6MtIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mongodb+best+practices&sca_esv=75b852f910b8e50f&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.884,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mongodb best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 485.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512875345"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9094,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 583.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512875345"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-453716b934d16a64",
+   "source": "google",
+   "goal": "First search Google for fastapi cheat sheet, then search Google for how to debug django.",
+   "fingerprint": 30514,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14735,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bdjango%26sca_esv%3d75",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bdjango%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvtdr-o1mkfJopXg6R2BX9VWr_8gA%253A1790512942071%26source%3Dhp%26ei%3DLg-5apvMAbjJkPIP67nqiAc%26iflsig%3DABILxe8AAAAAarkdPvJ6X32lpJIZ6sHw8U6C6uLcoeV-%26ved%3D0ahUKEwibm4C_5I6XAxW4JEQIHeucGnEQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bdjango%26gs_lp%3DEgdnd3Mtd2l6IhNob3cgdG8gZGVidWcgZGphbmdvMggQABiABBi0BzIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSPMHUAxYDHABeACQAQCYAekBoAHpAaoBAzItMbgBA8gBAPgBAZgCAqAC8gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFvrA5yslnw0KSBwUxLjAuMaAH7QWyBwMyLTG4B-8BwgcFMC4xLjHIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLCe5NUGIjCpCX1fB7OEGnx9FcHH0SSnG9VtEbObtR3qSVVDtmMVfKMt8cngS4dT3bM8w5-HA8IyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+django&sca_esv=75b852f910b8e50f&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8665,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug django",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 490.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512942291"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8823,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 617.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512942291"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-e37d7c4350b13ca9",
+   "source": "google",
+   "goal": "First search Google for swift open source alternatives, then search Google for elixir best practices.",
+   "fingerprint": 30514,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14763,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dswift%2bopen%2bsource%2balternatives%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dswift%2Bopen%2Bsource%2Balternatives%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntT2u3N6bmKMPWTedNuKY0mKo1i_Q%253A1790513008981%26source%3Dhp%26ei%3DcA-5ao_2OZzmkPIPsfmDyQ8%26iflsig%3DABILxe8AAAAAarkdgBIX2CZ7dlm5kV-uHQD6gBanjH5c%26ved%3D0ahUKEwiP7vTe5I6XAxUcM0QIHbH8IPkQ4dUDCDI%26uact%3D5%26oq%3Dswift%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ih5zd2lmdCBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMyBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBUirCFAMWAxwAXgAkAEAmAH1AaAB9QGqAQMyLTG4AQPIAQD4AQGYAgKgAv8BqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBYTtx7CKCbwUkgcFMS4wLjGgB-gFsgcDMi0xuAf8AcIHBTAuMS4xyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPOe5NUGIjD3AfQuNOvU1K26PN7WuIhgFZ4Yu7bUYtO5LZ_lK0rsGrEcqycA9fAYoviaRpwiOw4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=swift+open+source+alternatives&sca_esv=75b852f91"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.878,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "swift open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 493.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513009305"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8929,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 672.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513009305"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a7a81b08db280676",
+   "source": "google",
+   "goal": "Search Google for how to debug mongodb and open the results.",
+   "fingerprint": 30514,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 18181,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bmongodb%26sca_esv%3d7",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bmongodb%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv9_uORNK-Aw7AIlYFyzJDCqY8Nyg%253A1790513076026%26source%3Dhp%26ei%3DtA-5auEIkN2Q8g-RhJCADQ%26iflsig%3DABILxe8AAAAAarkdxIK3YqZ1fsYdbdcEDX-P3ipdigCl%26ved%3D0ahUKEwjhsvH-5I6XAxWQLkQIHRECBNAQ4dUDCDI%26oq%3Dhow%2Bto%2Bdebug%2Bmongodb%26gs_lp%3DEgdnd3Mtd2l6IhRob3cgdG8gZGVidWcgbW9uZ29kYjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FMggQABiJBRiiBEiVI1ALWAtwAXgAkAEAmAHfAaAB3wGqAQMyLTG4AQzIAQD4AQGYAgKgAugBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBVbly1o8S0KzkgcFMS4wLjGgB5EEsgcDMi0xuAfmAcIHBTAuMS4xyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLqf5NUGIjCQkI41ak8x7piRYjSKaPQEh_4YLyAHUNYGfk6rFXfJOFIKl-_uwhHFUB6WutsuHhMyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+mongodb&sca_esv=75b852f910b8e50f&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8548,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug mongodb",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 489.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513076237"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8898,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"how to debug mongodb\" are not shown",
+     "page_changed": null,
+     "latency_ms": 564.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513076237"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:30",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513076237"
+    }
+   ]
+  }
+ ]
+}

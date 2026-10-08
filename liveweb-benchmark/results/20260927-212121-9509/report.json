@@ -1,0 +1,554 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 88807,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:29:40+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.6,
+  "mean_duration_ms": 16075,
+  "decision_latency_ms": {
+   "p50": 494.4,
+   "p95": 654.3
+  },
+  "step_outcomes": {
+   "executed": 17,
+   "stale": 1,
+   "refused-empty-enter": 1,
+   "done-rejected": 2
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.6
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-baa64b2c631f6051",
+   "source": "google",
+   "goal": "First search Google for next.js performance optimization, then search Google for c++ migration guide.",
+   "fingerprint": 88807,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14964,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dnext.js%2bperformance%2boptimization%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dnext.js%2Bperformance%2Boptimization%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnufz_FI8BW6pV4WE0Mm3U7kqn8EMw%253A1790515285075%26source%3Dhp%26ei%3DVRi5aoCnA4mqur8P2PCssQs%26iflsig%3DABILxe8AAAAAarkmZe-JcF1R6i96cZPeatCvJF0QyK_3%26ved%3D0ahUKEwjApZ-c7Y6XAxUJle4BHVg4K7YQ4dUDCDI%26uact%3D5%26oq%3Dnext.js%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiBuZXh0LmpzIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBTIIEAAYiQUYogRIlQhQE1gTcAF4AJABAJgB5gGgAeYBqgEDMi0xuAEDyAEA-AEBmAICoALwAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMH8QUwum2OnsHc45IHBTEuMC4xoAeiBbIHAzItMbgH6QHCBwUwLjEuMcgHCIAIAQ%26sclient%3Dgws-wiz%26sei%3DWBi5aq61B-HPkPIPup-x8AY&hl=en&q=EgQm0XtnGNiw5NUGIjDvROHUo7vF-xrmohGz7Ah-eYOPpuhtYhg6f6iPt-E11GZxI7XY0PhvSIQlzJpksZIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=next.js+performance+optimization&sca_esv=3e3a42b"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8962,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "next.js performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 507.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9135,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 654.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515287051"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-0c11b9dfcc707747",
+   "source": "google",
+   "goal": "Search Google for redis interview questions and open the results.",
+   "fingerprint": 88807,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 25487,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dredis%2binterview%2bquestions%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dredis%2Binterview%2Bquestions%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv1RqFePTCu8aW69srFqUGfJh1ygA%253A1790515352499%26source%3Dhp%26ei%3DmBi5aujMHMiikPIPkOep0QY%26iflsig%3DABILxe8AAAAAarkmqPfvvALwsvm7XeEJ_dWeIarN9LLr%26ved%3D0ahUKEwjo-LG87Y6XAxVIEUQIHZBzKmoQ4dUDCDI%26oq%3Dredis%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhlyZWRpcyBpbnRlcnZpZXcgcXVlc3Rpb25zMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IzlRQ2CFY2CFwAngAkAEAmAHBAaABwQGqAQMwLjG4AQzIAQD4AQGYAgOgAsoBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBYBTr5RG8JrJkgcDMi4xoAewBrIHAzAuMbgHxAHCBwUwLjIuMcgHB4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKax5NUGIjD4CFY8le6ZYQcby9iapvCyStc_jT2__44DGOhBpNmYvapD3vzs-CUOiIENrHcDNFwyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=redis+interview+questions&sca_esv=3e3a42b854afc9"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.905,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis interview questions",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 477.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9009,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 474.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515354053"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8368,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 484.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515354053"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.5041,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for redis interview questions",
+     "page_changed": null,
+     "latency_ms": 588.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515354053"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis interview questions",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515354053"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.9263,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'redis interview questions'",
+     "page_changed": null,
+     "latency_ms": 604.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515354053"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515354053"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f4c4fff5ae79e88d",
+   "source": "google",
+   "goal": "Search Google for grafana open source alternatives and open the results.",
+   "fingerprint": 88807,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14635,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgrafana%2bopen%2bsource%2balternatives%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgrafana%2Bopen%2Bsource%2Balternatives%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt9OtkAOj29DkKo_z2WReyqT14QNw%253A1790515430393%26source%3Dhp%26ei%3D5hi5avjJFriWkPIP_6X9qAg%26iflsig%3DABILxe8AAAAAarkm9hTSteTQHiKmdP0s1dGhbRGhBXTb%26ved%3D0ahUKEwj41MTh7Y6XAxU4C0QIHf9SH4UQ4dUDCDI%26uact%3D5%26oq%3Dgrafana%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiBncmFmYW5hIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzIIEAAYiQUYogQyBRAAGO8FMgUQABjvBUjGB1AMWAxwAXgAkAEAmAHlAaAB5QGqAQMyLTG4AQPIAQD4AQGYAgKgAusBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0ApgDA_EFZqYs0YfafW-SBwUxLjAuMaAHvwSyBwMyLTG4B-gBwgcDMC4yyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOmx5NUGIjAHvmDcuP5oMufpk9zdBft-QoG4COIBxdYybdFR9hDTHnC4-6Xc8RdBxD0FYrMja2UyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=grafana+open+source+alternatives&sca_esv=3e3a42b"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8982,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "grafana open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 492.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515430803"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9058,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 590.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515430803"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-55bdc4be6a2eb573",
+   "source": "google",
+   "goal": "Search Google for retrieval augmented generation open source alternatives and open the results.",
+   "fingerprint": 88807,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14553,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dretrieval%2baugmented%2bgeneration%2bope",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dretrieval%2Baugmented%2Bgeneration%2Bopen%2Bsource%2Balternatives%2Breddit%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvu1VQbRcr7yPKNT4MLfon7dkyHdg%253A1790515497252%26source%3Dhp%26ei%3DKRm5asCaDqPbkPIPmMqhyAs%26iflsig%3DABILxe8AAAAAarknOTShpQdfedjMuMrmm6yGV8rUV-s2%26oq%3Dretrieval%2Baugmented%2Bgeneration%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IjdyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzKgUIARigATIFECEYoAEyBRAhGKABSPQGUA9YD3ABeACQAQCYAYoCoAGKAqoBAzItMbgBAcgBAPgBAZgCAqACkQKoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDAvEFetqnvwsdjY6SBwUxLjAuMaAHnwOyBwMyLTG4B48CwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKuy5NUGIjD_5FtNCrrb8IXE8HeeIcl6Q3QzdMTb-lqYfkwFo4DehWQh6lO8cZCsPdM3WAFlGjYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=retrieval+augmented+generation+open+source+alter"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8667,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 478.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515497527"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.472,
+     "target": "11",
+     "target_label": "retrieval augmented generation open source alternatives reddit",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 460.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515497527"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9a16187b14f41ac7",
+   "source": "google",
+   "goal": "First search Google for llm fine-tuning tutorial, then search Google for svelte best practices.",
+   "fingerprint": 88807,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14742,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dllm%2bfine-tuning%2btutorial%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dllm%2Bfine-tuning%2Btutorial%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntnTeNsbc_KuXbLUB9ItzpedkYvkw%253A1790515563954%26source%3Dhp%26ei%3Daxm5aqKLOcG6kPIPxtLXwAk%26iflsig%3DABILxe8AAAAAarkne1ihoc-XuZk_EBJYMBg4VtLZUxXO%26ved%3D0ahUKEwji7Jyh7o6XAxVBHUQIHUbpFZgQ4dUDCDI%26uact%3D5%26oq%3Dllm%2Bfine-tuning%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhhsbG0gZmluZS10dW5pbmcgdHV0b3JpYWwyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMgUQABjvBUjzB1APWA9wAXgAkAEAmAGLAqABiwKqAQMyLTG4AQPIAQD4AQGYAgKgApACqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBQslwbd4wvhokgcFMS4wLjGgB80GsgcDMi0xuAeNAsIHAzAuMsgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGO6y5NUGIjD63JZ-thwW6dCRlLSGdUeMHHT8EvRRMpUu1x_fO0C6VYDjWVBdw0ncnWyhmFC4tOAyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=llm+fine-tuning+tutorial&sca_esv=3e3a42b854afc95"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8819,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llm fine-tuning tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 494.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515564186"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8987,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 627.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515564186"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5a140825d3de3ad3",
+   "source": "google",
+   "goal": "Search Google for tensorflow tutorial and open the results.",
+   "fingerprint": 88807,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14590,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dtensorflow%2btutorial%26sca_esv%3d3e3a42",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtensorflow%2Btutorial%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsJD9FCG--zuZ0MmfEGfJiTx9mXSQ%253A1790515630852%26source%3Dhp%26ei%3Drhm5auHlMom_kPIPpfOSkQ8%26iflsig%3DABILxe8AAAAAarknvrdUN-rVeJqqRWHmPFb1EmxgBCrw%26ved%3D0ahUKEwjh9I_B7o6XAxWJH0QIHaW5JPIQ4dUDCDI%26uact%3D5%26oq%3Dtensorflow%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhN0ZW5zb3JmbG93IHR1dG9yaWFsMgoQABiABBiKBRhDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSNYHUA5YDnABeACQAQCYAe8BoAHvAaoBAzItMbgBA8gBAPgBAZgCAqAC8wGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDAvEF4a-pYgcYumOSBwUxLjAuMaAHwgWyBwMyLTG4B_EBwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLGz5NUGIjAkbnMj-pDBWYnmlgklguS8WOhNZs9iEgJHTYi1OvdAggHuQi2XWgAp_mJwFOl4gl4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=tensorflow+tutorial&sca_esv=3e3a42b854afc954&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8768,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 484.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515631079"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8694,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 596.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515631079"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-211f5934a14ef380",
+   "source": "google",
+   "goal": "First search Google for how to debug laravel, then search Google for rabbitmq tutorial.",
+   "fingerprint": 88807,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14797,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2blaravel%26sca_esv%3d3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Blaravel%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvfTO5-cL9V9v50T4XFfUfFGesYAQ%253A1790515697600%26source%3Dhp%26ei%3D8Rm5avC-I6TLkPIPu9OScA%26iflsig%3DABILxe8AAAAAarkoAUfSKAuB7Eid07uHsnlUywzvEnAq%26ved%3D0ahUKEwiw-_ng7o6XAxWkJUQIHbupBA4Q4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Blaravel%26gs_lp%3DEgdnd3Mtd2l6IhRob3cgdG8gZGVidWcgbGFyYXZlbDIFEAAYgAQyCBAAGIAEGLQHMgYQABgWGB4yBhAAGBYYHjIIEAAYFhgeGAoyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOQHUAxYDHABeACQAQCYAYUCoAGFAqoBAzItMbgBA8gBAPgBAZgCAqACigKoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIZEC4YgAQYigUYQxjnBhjHARjRAxjqAhi0ApgDAvEFTMTgaItUJvCSBwUxLjAuMaAH_AWyBwMyLTG4B4cCwgcDMC4yyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPSz5NUGIjB_NMgWDCVEOOaGLWj6cjdjNrNxLW1TxAVRjm5gGYfPWvvtkAKKK3zXheig1ZdycagyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+laravel&sca_esv=3e3a42b854afc954&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.4828,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug laravel",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 478.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515697855"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8831,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 617.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515697855"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-365290aa610b4aaf",
+   "source": "google",
+   "goal": "First search Google for express open source alternatives, then search Google for redis performance optimization.",
+   "fingerprint": 88807,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14832,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dexpress%2bopen%2bsource%2balternatives%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dexpress%2Bopen%2Bsource%2Balternatives%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv522ufqBg1nqyrSt2eIvnOWr945A%253A1790515764585%26source%3Dhp%26ei%3DNBq5auiWIprBkPIP6LGC6Q0%26iflsig%3DABILxe8AAAAAarkoRMQ8LLmdlglLVJuM1PL_tj05-has%26ved%3D0ahUKEwjogPKA746XAxWaIEQIHeiYIN0Q4dUDCDI%26uact%3D5%26oq%3Dexpress%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiBleHByZXNzIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIIEAAYiQUYogQyBRAAGO8FMgUQABjvBTIIEAAYiQUYogRIkQhQDlgOcAF4AJABAJgB-QGgAfkBqgEDMi0xuAEDyAEA-AEBmAICoAL-AagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QUn0mkSCvhso5IHBTEuMC4xoAfeBbIHAzItMbgH-wHCBwMwLjLIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLe05NUGIjBCLVf7-hfITe4fnFKPUB7yX5n6kgW0PrbPyomrmlh7i2_9xvg81N4EyIt3pjelt10yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=express+open+source+alternatives&sca_esv=3e3a42b"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8564,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "express open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 515.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515764852"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8939,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 655.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515764852"
+    }
+   ]
+  }
+ ]
+}

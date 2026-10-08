@@ -1,0 +1,390 @@
+{
+ "meta": {
+  "base_url": "http://127.0.0.1:8812",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 49753,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 8.0,
+  "backend": {
+   "ok": true,
+   "variant": "out/laya-browser-v18d-run2",
+   "calls": 582,
+   "tau": 0.0,
+   "escalated": 0,
+   "recent": [
+    {
+     "ms": 244.6,
+     "questions": 3,
+     "options": 11,
+     "tokens": 3072,
+     "passes": 1
+    },
+    {
+     "ms": 242.4,
+     "questions": 3,
+     "options": 11,
+     "tokens": 3072,
+     "passes": 1
+    },
+    {
+     "ms": 273.4,
+     "questions": 3,
+     "options": 11,
+     "tokens": 3072,
+     "passes": 1
+    },
+    {
+     "ms": 245.4,
+     "questions": 3,
+     "options": 11,
+     "tokens": 3072,
+     "passes": 1
+    },
+    {
+     "ms": 244.2,
+     "questions": 3,
+     "options": 11,
+     "tokens": 3072,
+     "passes": 1
+    }
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-28T11:22:21+0800",
+  "n_tasks": 6,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 1.3,
+  "mean_duration_ms": 10813,
+  "decision_latency_ms": {
+   "p50": 211.4,
+   "p95": 494.9
+  },
+  "step_outcomes": {
+   "executed": 5,
+   "done-rejected": 1,
+   "refused-empty-enter": 1,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 0,
+  "vlm_rescues": 3,
+  "by_source": {
+   "github": {
+    "n": 5,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 1.6
+   },
+   "google": {
+    "n": 1,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 0.0
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-84850bbef646a3ca",
+   "source": "github",
+   "goal": "Open a kafka repository from GitHub trending and check its README.",
+   "fingerprint": 49753,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 8,
+   "vlm_rescues": 3,
+   "total_ms": 54979,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/",
+    "final_title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9406,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 494.9,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.923,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing a Kafka repository listed in the GitHub trending results; the opened Kafka repository's README",
+     "page_changed": null,
+     "latency_ms": 216.3,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.6576,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 211.4,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.9235,
+     "target": "47",
+     "target_label": "GitHub Homepage",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 169.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7865,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 277.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:5",
+     "target_label": "Open Source",
+     "kind": "click",
+     "text": null,
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:5",
+     "target_label": "Open Source",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-18d8e2a92820a49c",
+   "source": "github",
+   "goal": "Open a typescript repository from GitHub trending and check its README.",
+   "fingerprint": 49753,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2018,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-4c8fc6d75d579316",
+   "source": "google",
+   "goal": "Search Google for concurrency tutorial and open the results.",
+   "fingerprint": 49753,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2012,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['concurrency']]",
+    "checks": {
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790565704275",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/?hl=en&gl=us&zx=1790565704275",
+    "final_title": "Google"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-d3675484d6543cf0",
+   "source": "github",
+   "goal": "From GitHub trending, open a repository related to java and view its README.",
+   "fingerprint": 49753,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2034,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-4effb5fedaac9697",
+   "source": "github",
+   "goal": "Browse GitHub trending and open one repository about docker.",
+   "fingerprint": 49753,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2016,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-48cee79a60f77ef6",
+   "source": "github",
+   "goal": "Open a ci/cd pipelines repository from GitHub trending and check its README.",
+   "fingerprint": 49753,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 1821,
+   "error": "initial observe failed: Page.evaluate: Target page, context or browser has been closed final observe: Page.evaluate: Target page, context or browser has been closed",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['star', 'stars'], ['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": ""
+   },
+   "trajectory": []
+  }
+ ]
+}

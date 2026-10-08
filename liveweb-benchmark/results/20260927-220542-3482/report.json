@@ -1,0 +1,567 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 17174,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T22:11:52+0800",
+  "n_tasks": 8,
+  "success": 2,
+  "success_rate": 0.25,
+  "verified": 2,
+  "verified_rate": 0.25,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.6,
+  "mean_duration_ms": 11309,
+  "decision_latency_ms": {
+   "p50": 517.3,
+   "p95": 607.1
+  },
+  "step_outcomes": {
+   "executed": 16,
+   "refused-empty-enter": 1,
+   "done-rejected": 1,
+   "done": 3
+  },
+  "low_confidence_steps": 2,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 2,
+    "success_rate": 0.25,
+    "verified": 2,
+    "verified_rate": 0.25,
+    "mean_steps": 2.6
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-eb88b870bb1eaace",
+   "source": "google",
+   "goal": "First search Google for profiling release notes, then search Google for vector embeddings best practices.",
+   "fingerprint": 17174,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14818,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dprofiling%2brelease%2bnotes%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dprofiling%2Brelease%2Bnotes%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuzFHUqYu6ohFjpj1oAMquzB1f_FA%253A1790517945017%26source%3Dhp%26ei%3DuCK5avHBPKyO8L0ProXtEA%26iflsig%3DABILxe8AAAAAarkwyWl429AbRfL0r6uHNddSfKe9V46v%26ved%3D0ahUKEwjx_cyQ946XAxUsB7wBHa5CGwIQ4dUDCDI%26uact%3D5%26oq%3Dprofiling%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6Ihdwcm9maWxpbmcgcmVsZWFzZSBub3RlczIFECEYoAEyBRAhGKsCSMUGUBBYEHABeACQAQCYAeQBoAHkAaoBAzItMbgBA8gBAPgBAZgCAqAC7AGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBfEFvBRj60VoVdGSBwUxLjAuMaAH6AGyBwMyLTG4B-YBwgcFMS4wLjHIBwWACAE%26sclient%3Dgws-wiz%26sei%3DuyK5apXBMcjQkPIP3riX0Qw&hl=en&q=EgQm0XtnGLzF5NUGIjDw-n9HaG6SErL9t2qyp4V4tDDZC9wz8Lpe6NdDiQLjVshvp8ndirEKvHB5h3VWbgEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=profiling+release+notes&sca_esv=f9132ac85e259377"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8793,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "profiling release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 480.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9058,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 454.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517946752"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-6f02373584f501c1",
+   "source": "google",
+   "goal": "Search Google for scala tutorial and open the results.",
+   "fingerprint": 17174,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14720,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dscala%2btutorial%26sca_esv%3df9132ac85e2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dscala%2Btutorial%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntfutpedXlSLzXS8R1PAwP73hiL5g%253A1790518012279%26source%3Dhp%26ei%3D_CK5avXhD7LPkPIPzLvR8Q8%26iflsig%3DABILxe8AAAAAarkxDCRcsLcwP4cSfBO_LpKe-0XbdZKm%26ved%3D0ahUKEwj1z9aw946XAxWyJ0QIHcxdNP4Q4dUDCDI%26uact%3D5%26oq%3Dscala%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig5zY2FsYSB0dXRvcmlhbDIFEAAYgAQyCxAuGPsGGPIGGI8HMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeSM4HUCZYJnABeACQAQCYAfABoAHwAaoBAzItMbgBA8gBAPgBAZgCAqAC-wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEF9Z780xXoohuSBwUxLjAuMaAH7QayBwMyLTG4B_YBwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGP_F5NUGIjCssNBdi2yXD5FgE1oRrBYE9JOO5NwUdtdcsMokc0Ii2Krr3yrk4i0QxDy6SFJW770yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=scala+tutorial&sca_esv=f9132ac85e259377&hl=en&gl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8983,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "scala tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 489.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.518,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 567.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518014017"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f306ddb5eb481dad",
+   "source": "google",
+   "goal": "Search Google for django security vulnerabilities and open the results.",
+   "fingerprint": 17174,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14717,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddjango%2bsecurity%2bvulnerabilities%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddjango%2Bsecurity%2Bvulnerabilities%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnunFGm_lIJZBj9kLdKW2n578Bqvjg%253A1790518079453%26source%3Dhp%26ei%3DPyO5atKvGpm9kPIPorTAoAw%26iflsig%3DABILxe8AAAAAarkxT0QpX1WZXA5u7Lnj9QBYRGp1xcja%26ved%3D0ahUKEwiSy9rQ946XAxWZHkQIHSIaEMQQ4dUDCDI%26uact%3D5%26oq%3Ddjango%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6Ih9kamFuZ28gc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yCBAAGIkFGKIEMgUQABjvBTIIEAAYgAQYogRIngdQElgScAF4AJABAJgBrwKgAa8CqgEDMy0xuAEDyAEA-AEBmAICoAK4AqgCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAhkQLhiABBiKBRhDGOcGGMcBGNEDGOoCGLQCmAME8QXv0OG7HUHe5JIHBTEuMy0xoAeWA7IHAzMtMbgHtALCBwUwLjEuMcgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMLG5NUGIjDbA458ZeDkeeNc5-4jIRCm4r7_e_fA1Hk0MbCJHtSuxuAHEWVwDCUU_bj0GpFAwToyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=django+security+vulnerabilities&sca_esv=f9132ac8"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9021,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 467.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518080117"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9117,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 538.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518080117"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8494b7a598c93ec2",
+   "source": "google",
+   "goal": "First search Google for how to debug design patterns, then search Google for langchain migration guide.",
+   "fingerprint": 17174,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14630,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bdesign%2bpatterns%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bdesign%2Bpatterns%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuHmyjjt7kqBx5hxE5CsBfFTGfXKw%253A1790518146621%26source%3Dhp%26ei%3DgiO5av-sJPe5kPIP49bY4As%26iflsig%3DABILxe8AAAAAarkxkpPvHF1dtkNKWLmkgqWMC6tFbGNw%26ved%3D0ahUKEwj_9d3w946XAxX3HEQIHWMrFrwQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bdesign%2Bpatterns%26gs_lp%3DEgdnd3Mtd2l6Ihxob3cgdG8gZGVidWcgZGVzaWduIHBhdHRlcm5zMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAjIFECEYqwIyBRAhGKsCSIoHUBJYEnABeACQAQCYAfMBoAHzAaoBAzItMbgBA8gBAPgBAZgCAqAC-gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EF2YGByK2XL7KSBwUxLjAuMaAH6QWyBwMyLTG4B_cBwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIXH5NUGIjAObo2-nfI6THGsqI0cxWkWh8ILkldb6Qb-7bwNpJmOYumCRC4KFI02ppJgGjF2_XkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+design+patterns&sca_esv=f9132ac85e2"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8693,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug design patterns",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 459.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518147160"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9091,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 517.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518147160"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-34caef74d7c9f8a3",
+   "source": "google",
+   "goal": "First search Google for angular best practices, then search Google for redis interview questions.",
+   "fingerprint": 17174,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14667,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dangular%2bbest%2bpractices%26sca_esv%3df",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dangular%2Bbest%2Bpractices%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns8N-2-Bk9qWwD1Dz11vAZnnGAhPQ%253A1790518213598%26source%3Dhp%26ei%3DxSO5ap-BI6afkPIP-_3x4Ag%26iflsig%3DABILxe8AAAAAarkx1ecYUQ3nl1k_OtSDYQcADFX5ZXMW%26ved%3D0ahUKEwjf99WQ-I6XAxWmD0QIHft-HIwQ4dUDCDI%26uact%3D5%26oq%3Dangular%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhZhbmd1bGFyIGJlc3QgcHJhY3RpY2VzMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeSLgHUAxYDHABeACQAQCYAaYCoAGmAqoBAzItMbgBA8gBAPgBAZgCAqACqwKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFte6pidzq8Y2SBwUxLjAuMaAH0QWyBwMyLTG4B6gCwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMjH5NUGIjAgSwnPwWCG9lmuKgqE12j9BICyHKMSsASrblOMd3Y75EYf0TYU1pRJ85vN2coIJisyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=angular+best+practices&sca_esv=f9132ac85e259377&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9034,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 551.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518213966"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8707,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 565.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518213966"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d742227f9b3a33a5",
+   "source": "google",
+   "goal": "Search Google for logging best practices performance optimization and open the results.",
+   "fingerprint": 17174,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 5,
+   "total_ms": 8137,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=logging+best+practices+performance+optimization&sca_esv=f9132ac85e259377&hl=en&gl=us&sxs",
+     "bot_challenge": false,
+     "group0": [
+      "logging"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=logging+best+practices+performance+optimization&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnvQHQOpFdUJOTzmaVvUqO7sfxiPxQ%3A1790518280494&source=hp&ei=CCS5aoD8HPP1kPIPn7-DgQw&iflsig=ABILxe8AAAAAarkyGBx5xzVOuj3xrDun5krTcVlzQ09c&ved=0ahUKEwiAoMmw-I6XAxXzOkQIHZ_fIMAQ4dUDCDI&uact=5&oq=logging+best+practices+performance+optimization&gs_lp=Egdnd3Mtd2l6Ii9sb2dnaW5nIGJlc3QgcHJhY3RpY2VzIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIFECEYoAEyBRAhGKABMgUQIRifBUiZIlARWBFwAXgAkAEAmAGaAqABmgKqAQMyLTG4AQPIAQD4AQGYAgKgAqYCqAIKwgIZEC4YgAQYigUYQxjnBhjHARjRAxjqAhi0AsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBfEF0kL-mcCqtDSSBwUxLjAuMaAH2AOyBwMyLTG4B6ACwgcFMC4xLjHIBwWACAE&sclient=gws-wiz",
+    "final_title": "logging best practices performance optimization - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.3076,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 494.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518280781"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2648,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "logging best practices performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 496.2,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518280781"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9123,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'logging best practices performance optimization'",
+     "page_changed": null,
+     "latency_ms": 524.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518280781"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518280781"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8754,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 607.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=logging+best+practices+performance+optimization&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnvQHQOpFdUJOTzmaVvUqO7sfxiPxQ%3A1790518280494&source=hp&ei=CCS5aoD8HPP1kPIPn7-DgQw&iflsig=ABILxe8AAAAAarkyGBx5xzVOuj3xrDun5krTcVlzQ09c&ved=0ahUKEwiAoMmw-I6XAxXzOkQIHZ_fIMAQ4dUDCDI&uact=5&oq=logging+best+practices+performance+optimization&gs_lp=Egdnd3Mtd2l6Ii9sb2dnaW5nIGJlc3QgcHJhY3RpY2VzIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIFECEYoAEyBRAhGKABMgUQIRifBUiZIlARWBFwAXgAkAEAmAGaAqABmgKqAQMyLTG4AQPIAQD4AQGYAgKgAqYCqAIKwgIZEC4YgAQYigUYQxjnBhjHARjRAxjqAhi0AsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBfEF0kL-mcCqtDSSBwUxLjAuMaAH2AOyBwMyLTG4B6ACwgcFMC4xLjHIBwWACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-be22026c79fdb9a6",
+   "source": "google",
+   "goal": "First search Google for ruby open source alternatives, then search Google for how to debug pytorch.",
+   "fingerprint": 17174,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 4249,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=pytorch'",
+    "checks": {
+     "url": "https://www.google.com/search?q=how+to+debug+pytorch&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=appeqnvujk_qnujgfggpvlqt",
+     "bot_challenge": false,
+     "group0": [
+      "pytorch"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=how+to+debug+pytorch&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnvujK_qnUJgFgGpVLQtcmL9gS24Kg%3A1790518295891&source=hp&ei=FyS5arOrNPeikPIP7uXPiAg&iflsig=ABILxe8AAAAAarkyJ9atAvj7sRGHYjwwzAjDfxOu96vk&ved=0ahUKEwjzkvS3-I6XAxV3EUQIHe7yE4EQ4dUDCDI&uact=5&oq=how+to+debug+pytorch&gs_lp=Egdnd3Mtd2l6IhRob3cgdG8gZGVidWcgcHl0b3JjaDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjeB1ANWA1wAXgAkAEAmAGZAqABmQKqAQMyLTG4AQPIAQD4AQGYAgKgAqACqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBWrOgSNaIkTekgcFMS4wLjGgB88BsgcDMi0xuAecAsIHAzAuMsgHBIAIAQ&sclient=gws-wiz",
+    "final_title": "how to debug pytorch - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8974,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug pytorch",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 484.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518296201"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9058,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 604.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518296201"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8441,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 594.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+pytorch&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnvujK_qnUJgFgGpVLQtcmL9gS24Kg%3A1790518295891&source=hp&ei=FyS5arOrNPeikPIP7uXPiAg&iflsig=ABILxe8AAAAAarkyJ9atAvj7sRGHYjwwzAjDfxOu96vk&ved=0ahUKEwjzkvS3-I6XAxV3EUQIHe7yE4EQ4dUDCDI&uact=5&oq=how+to+debug+pytorch&gs_lp=Egdnd3Mtd2l6IhRob3cgdG8gZGVidWcgcHl0b3JjaDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjeB1ANWA1wAXgAkAEAmAGZAqABmQKqAQMyLTG4AQPIAQD4AQGYAgKgAqACqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBWrOgSNaIkTekgcFMS4wLjGgB88BsgcDMi0xuAecAsIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-0120fc9d9c3e335a",
+   "source": "google",
+   "goal": "Search Google for huggingface transformers best practices and open the results.",
+   "fingerprint": 17174,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4533,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=huggingface+transformers+best+practices&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=appeq",
+     "bot_challenge": false,
+     "group0": [
+      "transformers",
+      "huggingface"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=huggingface+transformers+best+practices&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnuZlq-BlJ7iQumrf-l7EsYe0yhP0Q%3A1790518307397&source=hp&ei=IyS5avqTF6WO8L0P77nv6Ag&iflsig=ABILxe8AAAAAarkyMzPoQVnmrUh63Y9BMVUwx1G_vZI2&ved=0ahUKEwi6sbO9-I6XAxUlB7wBHe_cG40Q4dUDCDI&uact=5&oq=huggingface+transformers+best+practices&gs_lp=Egdnd3Mtd2l6IidodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgYmVzdCBwcmFjdGljZXMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAjIFECEYqwJIkwdQDVgNcAF4AJABAJgBowKgAaMCqgEDMi0xuAEDyAEA-AEBmAICoAKtAqgCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QUunlLX7Onyf5IHBTEuMC4xoAesBrIHAzItMbgHqgLCBwMwLjLIBwSACAE&sclient=gws-wiz",
+    "final_title": "huggingface transformers best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8821,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "huggingface transformers best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 483.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518307616"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8997,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 537.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518307616"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8972,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 619.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=huggingface+transformers+best+practices&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnuZlq-BlJ7iQumrf-l7EsYe0yhP0Q%3A1790518307397&source=hp&ei=IyS5avqTF6WO8L0P77nv6Ag&iflsig=ABILxe8AAAAAarkyMzPoQVnmrUh63Y9BMVUwx1G_vZI2&ved=0ahUKEwi6sbO9-I6XAxUlB7wBHe_cG40Q4dUDCDI&uact=5&oq=huggingface+transformers+best+practices&gs_lp=Egdnd3Mtd2l6IidodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgYmVzdCBwcmFjdGljZXMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAjIFECEYqwJIkwdQDVgNcAF4AJABAJgBowKgAaMCqgEDMi0xuAEDyAEA-AEBmAICoAKtAqgCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QUunlLX7Onyf5IHBTEuMC4xoAesBrIHAzItMbgHqgLCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    }
+   ]
+  }
+ ]
+}

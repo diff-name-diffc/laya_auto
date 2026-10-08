@@ -1,0 +1,981 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 25251,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:01:23+0800",
+  "n_tasks": 8,
+  "success": 4,
+  "success_rate": 0.5,
+  "verified": 4,
+  "verified_rate": 0.5,
+  "found_but_not_stopped": 0,
+  "mean_steps": 6.1,
+  "mean_duration_ms": 19038,
+  "decision_latency_ms": {
+   "p50": 540.0,
+   "p95": 666.6
+  },
+  "step_outcomes": {
+   "executed": 27,
+   "done-rejected": 8,
+   "done": 7,
+   "stale": 2,
+   "refused-empty-enter": 3,
+   "page changed since the decision (url or marker mismatch)": 2
+  },
+  "low_confidence_steps": 3,
+  "by_source": {
+   "github": {
+    "n": 1,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 12.0
+   },
+   "google": {
+    "n": 7,
+    "success": 4,
+    "success_rate": 0.571,
+    "verified": 4,
+    "verified_rate": 0.571,
+    "mean_steps": 5.3
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-3166a55615c9333d",
+   "source": "github",
+   "goal": "Search GitHub for 'rabbitmq' repositories and open the search results.",
+   "fingerprint": 25251,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 12,
+   "total_ms": 61780,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'github.com/search'",
+    "checks": {
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=",
+     "bot_challenge": false,
+     "group0": [
+      "rabbitmq"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=rabbitmq",
+    "final_title": "Understanding GitHub Code Search syntax - GitHub Docs"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8513,
+     "target": "11",
+     "target_label": "Enter your email",
+     "kind": "fill",
+     "text": "rabbitmq",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 966.5,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8898,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 456.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8358,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 463.3,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8189,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 540.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8627,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 474.6,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8868,
+     "target": "6",
+     "target_label": "Search syntax tips",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 467.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.9294,
+     "target": "6",
+     "target_label": "Search or ask Copilot",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 462.1,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.8597,
+     "target": "2",
+     "target_label": "Clear",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 638.3,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.8129,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub repository search results for 'rabbitmq' are not visible; The page shows docs.github.com documentation with a 'Search or ask Copilot' overlay, ",
+     "page_changed": null,
+     "latency_ms": 580.5,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 9,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:25",
+     "target_label": "Search or ask Copilot",
+     "kind": "fill",
+     "text": "rabbitmq",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 10,
+     "operation": "DONE",
+     "confidence": 0.9027,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub repository search results for 'rabbitmq' (page shows GitHub Docs search overlay with documentation results, not repo results)",
+     "page_changed": null,
+     "latency_ms": 627.5,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=rabbitmq"
+    },
+    {
+     "step": 11,
+     "operation": "DONE",
+     "confidence": 0.9073,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 637.2,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=rabbitmq"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-949eacb8ae3e5518",
+   "source": "google",
+   "goal": "First search Google for rabbitmq interview questions, then search Google for c++ migration guide.",
+   "fingerprint": 25251,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 20797,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drabbitmq%2binterview%2bquestions%26sca_e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drabbitmq%2Binterview%2Bquestions%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnur2qqecLV0wa4dH5P5GSZd1hOCEw%253A1790506703820%26source%3Dhp%26ei%3Dz_a4ar6FMavIkPIPmp_rqA0%26iflsig%3DABILxe8AAAAAarkE39T48PNq_V7n5mpGDUA3PzggKmG8%26ved%3D0ahUKEwj-qLGgzY6XAxUrJEQIHZrPGtUQ4dUDCCA%26uact%3D5%26oq%3Drabbitmq%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhxyYWJiaXRtcSBpbnRlcnZpZXcgcXVlc3Rpb25zMgUQABiABDIFEAAYgAQyCBAAGIAEGLQHMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSLcuUBdYF3ACeACQAQCYAb0BoAG9AaoBAzAuMbgBA8gBAPgBAZgCA6ACygGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEF89br6WKmmqqSBwMyLjGgB7oGsgcDMC4xuAfDAcIHBTAuMS4yyAcJgAgB%26sclient%3Dgws-wiz%26sei%3D2Pa4avPNJuHPkPIPiNLFqAg&hl=en&q=EgQm0XtnGNjt49UGIjB78f4Ce8gMzoUDi05RuqwagkzmB5Julm4iO21mkU6dNBQoiWag35whxSvdt7us-0cyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=rabbitmq+interview+questions&sca_esv=54dc793dbd0"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8951,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rabbitmq interview questions",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 495.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8773,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 468.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506705161"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.3038,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rabbitmq interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 485.2,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506705161"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8658,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rabbitmq interview questions",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 612.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506705161"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506705161"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8e72bbf5663dc7f4",
+   "source": "google",
+   "goal": "First search Google for unit testing performance optimization, then search Google for typescript interview questions.",
+   "fingerprint": 25251,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 7,
+   "total_ms": 27608,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=typescript+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqntssnbnya",
+     "bot_challenge": false,
+     "group0": [
+      "typescript"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=typescript+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntssnbNYAuvuQyvavXgPcTVMfkdDQ%3A1790506777001&source=hp&ei=GPe4aqa6Opv7kPIP1Oa-oAc&iflsig=ABILxe8AAAAAarkFKfTH2xKccX-DGwzqHDV3_wTQZ_o6&ved=0ahUKEwimpqLDzY6XAxWbPUQIHVSzD3QQ4dUDCCA&uact=5&oq=typescript+interview+questions&gs_lp=Egdnd3Mtd2l6Ih50eXBlc2NyaXB0IGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMggQABiABBi0BzIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyBRAAGIAEMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHSJdBUA1YDXABeACQAQCYAboBoAG6AaoBAzAuMbgBA8gBAPgBAZgCAqACwAGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDA_EFa0ZCRjcsSc-SBwMxLjGgB6AHsgcDMC4xuAe8AcIHAzAuMsgHBIAIAQ&sclient=gws-wiz",
+    "final_title": "typescript interview questions - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8957,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "unit testing performance optimization",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 432.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9059,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 455.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506778341"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8502,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for \"typescript interview questions\"",
+     "page_changed": null,
+     "latency_ms": 473.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506778341"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "typescript interview questions",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506778341"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9038,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'typescript interview questions'",
+     "page_changed": null,
+     "latency_ms": 634.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506778341"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506778341"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8642,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 620.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=typescript+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntssnbNYAuvuQyvavXgPcTVMfkdDQ%3A1790506777001&source=hp&ei=GPe4aqa6Opv7kPIP1Oa-oAc&iflsig=ABILxe8AAAAAarkFKfTH2xKccX-DGwzqHDV3_wTQZ_o6&ved=0ahUKEwimpqLDzY6XAxWbPUQIHVSzD3QQ4dUDCCA&uact=5&oq=typescript+interview+questions&gs_lp=Egdnd3Mtd2l6Ih50eXBlc2NyaXB0IGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMggQABiABBi0BzIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyBRAAGIAEMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHSJdBUA1YDXABeACQAQCYAboBoAG6AaoBAzAuMbgBA8gBAPgBAZgCAqACwAGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDA_EFa0ZCRjcsSc-SBwMxLjGgB6AHsgcDMC4xuAe8AcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f19b302e26c6e946",
+   "source": "google",
+   "goal": "Search Google for how to debug fastapi and open the results.",
+   "fingerprint": 25251,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 7,
+   "total_ms": 11352,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=how+to+debug+fastapi&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnuy50gjqrarjwqzfrxq",
+     "bot_challenge": false,
+     "group0": [
+      "fastapi"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=how+to+debug+fastapi&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuY50GJQrarJWqzFRXqrunVJKVoRA%3A1790506811988&source=hp&ei=O_e4aq-WO-rNkPIPmIfloA4&iflsig=ABILxe8AAAAAarkFS5EJdGhCMdI4k2-DIg2yRX-qu7sr&ved=0ahUKEwjvn_vTzY6XAxXqJkQIHZhDGeQQ4dUDCCA&oq=how+to+debug+fastapi&gs_lp=Egdnd3Mtd2l6IhRob3cgdG8gZGVidWcgZmFzdGFwaTIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSPRHUOklWOklcAJ4AJABAJgB1gGgAdYBqgEDMi0xuAEMyAEA-AEBmAIDoALlAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QU_d0bnweAi9pIHBTIuMC4xoAePBrIHAzItMbgH3gHCBwUwLjEuMsgHCYAIAQ&sclient=gws-wiz",
+    "final_title": "how to debug fastapi - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.3695,
+     "target": "8",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 479.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506812216"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8056,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 666.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506812216"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.777,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'how to debug fastapi'; the query 'how to debug fastapi' has not been searched",
+     "page_changed": null,
+     "latency_ms": 577.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506812216"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug fastapi",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506812216"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8757,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'how to debug fastapi' (only the query and autocomplete suggestions are shown; the search has not been executed)",
+     "page_changed": null,
+     "latency_ms": 645.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506812216"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:31",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506812216"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8796,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 621.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+fastapi&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuY50GJQrarJWqzFRXqrunVJKVoRA%3A1790506811988&source=hp&ei=O_e4aq-WO-rNkPIPmIfloA4&iflsig=ABILxe8AAAAAarkFS5EJdGhCMdI4k2-DIg2yRX-qu7sr&ved=0ahUKEwjvn_vTzY6XAxXqJkQIHZhDGeQQ4dUDCCA&oq=how+to+debug+fastapi&gs_lp=Egdnd3Mtd2l6IhRob3cgdG8gZGVidWcgZmFzdGFwaTIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSPRHUOklWOklcAJ4AJABAJgB1gGgAdYBqgEDMi0xuAEMyAEA-AEBmAIDoALlAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QU_d0bnweAi9pIHBTIuMC4xoAePBrIHAzItMbgH3gHCBwUwLjEuMsgHCYAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-dea80662fdd89894",
+   "source": "google",
+   "goal": "First search Google for rust migration guide, then search Google for how to debug svelte.",
+   "fingerprint": 25251,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 3954,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=svelte'",
+    "checks": {
+     "url": "https://www.google.com/search?q=how+to+debug+svelte&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnsaketsd8vagwb1ytwj4",
+     "bot_challenge": false,
+     "group0": [
+      "svelte"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=how+to+debug+svelte&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsaKETSd8vAGWb1ytWJ4WLfEwDfaQ%3A1790506830549&source=hp&ei=Tve4atywII3ZkPIPzfu-mAI&iflsig=ABILxe8AAAAAarkFXiWxVju4glMiG3HOYR3u8nb2hbVV&ved=0ahUKEwjcj-jczY6XAxWNLEQIHc29DyMQ4dUDCCA&uact=5&oq=how+to+debug+svelte&gs_lp=Egdnd3Mtd2l6IhNob3cgdG8gZGVidWcgc3ZlbHRlMggQABiABBi0BzIGEAAYFhgeMgYQABgWGB4yBRAAGO8FSKAHUA1YDXABeACQAQCYAeMBoAHjAaoBAzItMbgBA8gBAPgBAZgCAqAC6wGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFaaG_fQ28DsiSBwUxLjAuMaAHlAKyBwMyLTG4B-YBwgcFMC4xLjHIBwWACAE&sclient=gws-wiz",
+    "final_title": "how to debug svelte - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8658,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug svelte",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 498.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506830881"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9066,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 533.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506830881"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8658,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 571.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+svelte&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsaKETSd8vAGWb1ytWJ4WLfEwDfaQ%3A1790506830549&source=hp&ei=Tve4atywII3ZkPIPzfu-mAI&iflsig=ABILxe8AAAAAarkFXiWxVju4glMiG3HOYR3u8nb2hbVV&ved=0ahUKEwjcj-jczY6XAxWNLEQIHc29DyMQ4dUDCCA&uact=5&oq=how+to+debug+svelte&gs_lp=Egdnd3Mtd2l6IhNob3cgdG8gZGVidWcgc3ZlbHRlMggQABiABBi0BzIGEAAYFhgeMgYQABgWGB4yBRAAGO8FSKAHUA1YDXABeACQAQCYAeMBoAHjAaoBAzItMbgBA8gBAPgBAZgCAqAC6wGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFaaG_fQ28DsiSBwUxLjAuMaAHlAKyBwMyLTG4B-YBwgcFMC4xLjHIBwWACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d9e96e957546c7e7",
+   "source": "google",
+   "goal": "First search Google for rabbitmq release notes, then search Google for docker security vulnerabilities.",
+   "fingerprint": 25251,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 8,
+   "total_ms": 17644,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['docker']]",
+    "checks": {
+     "url": "https://www.google.com/search?q=rabbitmq+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnsbk1ovf3ftgbhah-",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/search?q=rabbitmq+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsbk1ovF3FtgbhaH-2EmUdDiyjZQg%3A1790506844577&ei=XPe4apnzIq_YkPIPodSHwQU&biw=1120&bih=780&ved=2ahUKEwiZkcHjzY6XAxUvLEQIHSHqIVgQ4dUDegQIBhAM&oq=rabbitmq+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnJhYmJpdG1xIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp",
+    "final_title": "rabbitmq release notes - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8651,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rabbitmq release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 593.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506841840"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.907,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 635.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506841840"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.3378,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for docker security vulnerabilities",
+     "page_changed": null,
+     "latency_ms": 639.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=rabbitmq+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnukBtHJoXqQV3xoA1AcFipB3z5bbQ%3A1790506841708&source=hp&ei=Wfe4apaOKsnHkPIPm5_AIQ&iflsig=ABILxe8AAAAAarkFab6CDt_W644w-dwKfffb9agSLIOu&ved=0ahUKEwjWnpHizY6XAxXJI0QIHZsPMAQQ4dUDCCA&uact=5&oq=rabbitmq+release+notes&gs_lp=Egdnd3Mtd2l6IhZyYWJiaXRtcSByZWxlYXNlIG5vdGVzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkj_B1ANWA1wAXgAkAEAmAHTAaAB0wGqAQMyLTG4AQPIAQD4AQGYAgKgAt4BqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBQ-W2Kr6P1L9kgcFMS4wLjGgB6gFsgcDMi0xuAfaAcIHAzItMsgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "docker security vulnerabilities",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=rabbitmq+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnukBtHJoXqQV3xoA1AcFipB3z5bbQ%3A1790506841708&source=hp&ei=Wfe4apaOKsnHkPIPm5_AIQ&iflsig=ABILxe8AAAAAarkFab6CDt_W644w-dwKfffb9agSLIOu&ved=0ahUKEwjWnpHizY6XAxXJI0QIHZsPMAQQ4dUDCCA&uact=5&oq=rabbitmq+release+notes&gs_lp=Egdnd3Mtd2l6IhZyYWJiaXRtcSByZWxlYXNlIG5vdGVzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkj_B1ANWA1wAXgAkAEAmAHTAaAB0wGqAQMyLTG4AQPIAQD4AQGYAgKgAt4BqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBQ-W2Kr6P1L9kgcFMS4wLjGgB6gFsgcDMi0xuAfaAcIHAzItMsgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8453,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 625.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=rabbitmq+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnukBtHJoXqQV3xoA1AcFipB3z5bbQ%3A1790506841708&source=hp&ei=Wfe4apaOKsnHkPIPm5_AIQ&iflsig=ABILxe8AAAAAarkFab6CDt_W644w-dwKfffb9agSLIOu&ved=0ahUKEwjWnpHizY6XAxXJI0QIHZsPMAQQ4dUDCCA&uact=5&oq=rabbitmq+release+notes&gs_lp=Egdnd3Mtd2l6IhZyYWJiaXRtcSByZWxlYXNlIG5vdGVzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkj_B1ANWA1wAXgAkAEAmAHTAaAB0wGqAQMyLTG4AQPIAQD4AQGYAgKgAt4BqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBQ-W2Kr6P1L9kgcFMS4wLjGgB6gFsgcDMi0xuAfaAcIHAzItMsgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8888,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for 'docker security vulnerabilities' (page currently shows results for 'rabbitmq release notes')",
+     "page_changed": null,
+     "latency_ms": 601.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=rabbitmq+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsbk1ovF3FtgbhaH-2EmUdDiyjZQg%3A1790506844577&ei=XPe4apnzIq_YkPIPodSHwQU&biw=1120&bih=780&ved=2ahUKEwiZkcHjzY6XAxUvLEQIHSHqIVgQ4dUDegQIBhAM&oq=rabbitmq+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnJhYmJpdG1xIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "docker security vulnerabilities",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=rabbitmq+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsbk1ovF3FtgbhaH-2EmUdDiyjZQg%3A1790506844577&ei=XPe4apnzIq_YkPIPodSHwQU&biw=1120&bih=780&ved=2ahUKEwiZkcHjzY6XAxUvLEQIHSHqIVgQ4dUDegQIBhAM&oq=rabbitmq+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnJhYmJpdG1xIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.8779,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 607.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=rabbitmq+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsbk1ovF3FtgbhaH-2EmUdDiyjZQg%3A1790506844577&ei=XPe4apnzIq_YkPIPodSHwQU&biw=1120&bih=780&ved=2ahUKEwiZkcHjzY6XAxUvLEQIHSHqIVgQ4dUDegQIBhAM&oq=rabbitmq+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnJhYmJpdG1xIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-617025dd0b7ba27b",
+   "source": "google",
+   "goal": "Search Google for terraform best practices and open the results.",
+   "fingerprint": 25251,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4376,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=terraform+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnvb4aggov0tkyvs",
+     "bot_challenge": false,
+     "group0": [
+      "terraform"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=terraform+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvb4AGGoV0TKyVsmH3RDJsZTNKvhA%3A1790506866565&source=hp&ei=cve4ap-LIcXgkPIP_5SxuAI&iflsig=ABILxe8AAAAAarkFgreYhw5URM00dvf8lMGdVDaCnpMW&ved=0ahUKEwifjP7tzY6XAxVFMEQIHX9KDCcQ4dUDCCA&uact=5&oq=terraform+best+practices&gs_lp=Egdnd3Mtd2l6Ihh0ZXJyYWZvcm0gYmVzdCBwcmFjdGljZXMyBRAAGIAEMggQABiABBi0BzIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSKYHUA1YDXABeACQAQCYAdMBoAHTAaoBAzItMbgBA8gBAPgBAZgCAqAC2QGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFaz8kH8V3EDaSBwUxLjAuMaAHnAayBwMyLTG4B9UBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz",
+    "final_title": "terraform best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8889,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "terraform best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 837.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506866677"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8807,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 558.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506866677"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.872,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 650.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=terraform+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvb4AGGoV0TKyVsmH3RDJsZTNKvhA%3A1790506866565&source=hp&ei=cve4ap-LIcXgkPIP_5SxuAI&iflsig=ABILxe8AAAAAarkFgreYhw5URM00dvf8lMGdVDaCnpMW&ved=0ahUKEwifjP7tzY6XAxVFMEQIHX9KDCcQ4dUDCCA&uact=5&oq=terraform+best+practices&gs_lp=Egdnd3Mtd2l6Ihh0ZXJyYWZvcm0gYmVzdCBwcmFjdGljZXMyBRAAGIAEMggQABiABBi0BzIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSKYHUA1YDXABeACQAQCYAdMBoAHTAaoBAzItMbgBA8gBAPgBAZgCAqAC2QGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFaz8kH8V3EDaSBwUxLjAuMaAHnAayBwMyLTG4B9UBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9b27edd73a9193e5",
+   "source": "google",
+   "goal": "Search Google for redis tutorial and open the results.",
+   "fingerprint": 25251,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 4,
+   "total_ms": 4792,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=redis+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnt4n4oiback5pepimlkpad9yy",
+     "bot_challenge": false,
+     "group0": [
+      "redis"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=redis+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt4N4OibACk5PEPIMLkpAD9yYMlmQ%3A1790506878128&source=hp&ei=fve4as6jBvuM8L0Pw-yBsQs&iflsig=ABILxe8AAAAAarkFjlrb0WOZ9KhNfdcovRimjWHo3_6p&ved=0ahUKEwjO2r_zzY6XAxV7BrwBHUN2ILYQ4dUDCCA&uact=5&oq=redis+tutorial&gs_lp=Egdnd3Mtd2l6Ig5yZWRpcyB0dXRvcmlhbDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIlgdQDVgNcAF4AJABAJgB0AGgAdABqgEDMi0xuAEDyAEA-AEBmAICoALdAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QXCbLNmTg_yu5IHBTEuMC4xoAfTBLIHAzItMbgH2QHCBwMyLTLIBwmACAE&sclient=gws-wiz",
+    "final_title": "redis tutorial - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8892,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 471.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506878266"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9117,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 524.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506878266"
+    },
+    {
+     "step": 3,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2318,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 600.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=redis+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt4N4OibACk5PEPIMLkpAD9yYMlmQ%3A1790506878128&source=hp&ei=fve4as6jBvuM8L0Pw-yBsQs&iflsig=ABILxe8AAAAAarkFjlrb0WOZ9KhNfdcovRimjWHo3_6p&ved=0ahUKEwjO2r_zzY6XAxV7BrwBHUN2ILYQ4dUDCCA&uact=5&oq=redis+tutorial&gs_lp=Egdnd3Mtd2l6Ig5yZWRpcyB0dXRvcmlhbDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIlgdQDVgNcAF4AJABAJgB0AGgAdABqgEDMi0xuAEDyAEA-AEBmAICoALdAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QXCbLNmTg_yu5IHBTEuMC4xoAfTBLIHAzItMbgH2QHCBwMyLTLIBwmACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8571,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 595.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=redis+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt4N4OibACk5PEPIMLkpAD9yYMlmQ%3A1790506878128&source=hp&ei=fve4as6jBvuM8L0Pw-yBsQs&iflsig=ABILxe8AAAAAarkFjlrb0WOZ9KhNfdcovRimjWHo3_6p&ved=0ahUKEwjO2r_zzY6XAxV7BrwBHUN2ILYQ4dUDCCA&uact=5&oq=redis+tutorial&gs_lp=Egdnd3Mtd2l6Ig5yZWRpcyB0dXRvcmlhbDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIlgdQDVgNcAF4AJABAJgB0AGgAdABqgEDMi0xuAEDyAEA-AEBmAICoALdAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QXCbLNmTg_yu5IHBTEuMC4xoAfTBLIHAzItMbgH2QHCBwMyLTLIBwmACAE&sclient=gws-wiz"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,943 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 32014,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T18:32:07+0800",
+  "n_tasks": 8,
+  "success": 2,
+  "success_rate": 0.25,
+  "verified": 2,
+  "verified_rate": 0.25,
+  "found_but_not_stopped": 0,
+  "mean_steps": 6.0,
+  "mean_duration_ms": 18465,
+  "decision_latency_ms": {
+   "p50": 543.2,
+   "p95": 823.4
+  },
+  "step_outcomes": {
+   "stale": 5,
+   "refused-empty-enter": 2,
+   "executed": 32,
+   "done-rejected": 4,
+   "done": 3,
+   "page changed since the decision (url or marker mismatch)": 2
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 2,
+    "success_rate": 0.25,
+    "verified": 2,
+    "verified_rate": 0.25,
+    "mean_steps": 6.0
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-eccd9f362bc507a4",
+   "source": "google",
+   "goal": "First search Google for redis migration guide, then search Google for spring boot cheat sheet.",
+   "fingerprint": 32014,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 11,
+   "total_ms": 24046,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dredis%2bmigration%2bguide%26sca_esv%3dee",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dredis%2Bmigration%2Bguide%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsnNaGvdLxCnj9c9E5L-wQYbbmxsA%253A1790504747731%26source%3Dhp%26ei%3DK--4avOlK8-vur8P99y3oAE%26iflsig%3DABILxe8AAAAAarj9O_dOaNMQ518yNFEJpaOHKzvM7Ulo%26oq%3Dredis%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhVyZWRpcyBtaWdyYXRpb24gZ3VpZGUqBggAGBYYHjIGEAAYFhgeMgYQABgWGB4yBRAAGO8FMgUQABjvBTIIEAAYiQUYogQyCBAAGIkFGKIESI8tUOYkWOYkcAR4AJABAJgB1AGgAdQBqgEDMi0xuAEByAEA-AEBmAIFoALjAagCCsICChAAGAMYjwEY6gKYAwTxBWycFIthCNSEkgcFNC4wLjGgB_sCsgcDMi0xuAfZAcIHBTAuMy4yyAcKgAgB%26sclient%3Dgws-wiz%26sei%3DN--4apyyIITAkPIP4JaYiQU&hl=en&q=EgQm0XtnGLfe49UGIjBdIFORAxPRO-M8yPjBP2HZMnvRMxf413QpQ92TBk1dqgBy9iX3Y-V9hG8jeNqpNXkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=redis+migration+guide&sca_esv=ee3892b004fb5afd&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8943,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis migration guide",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 514.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9071,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 512.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504749088"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8545,
+     "target": "5",
+     "target_label": "Google apps",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 536.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504749088"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8304,
+     "target": "7",
+     "target_label": "Close",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 520.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504749088"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8823,
+     "target": "5",
+     "target_label": "Google apps",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 511.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504749088"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8822,
+     "target": "5",
+     "target_label": "Google apps",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 549.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504749088"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8767,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 561.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504749088"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.8621,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 675.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504749088"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.8639,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 592.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504749088"
+    },
+    {
+     "step": 9,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis migration guide",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504749088"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.8803,
+     "target": "12",
+     "target_label": "redis migration guide",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 648.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504749088"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a54bef7bf2d9a56a",
+   "source": "google",
+   "goal": "First search Google for django security vulnerabilities, then search Google for logging best practices tutorial.",
+   "fingerprint": 32014,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 9,
+   "total_ms": 17830,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['logging']]",
+    "checks": {
+     "url": "https://www.google.com/intl/zh-cn_all/search/howsearchworks/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/",
+    "final_title": "Google 搜索 - 什么是 Google 搜索及其运作方式"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.906,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django security vulnerabilities",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 505.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9015,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 480.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504825517"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8582,
+     "target": "18",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 522.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504825517"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.9051,
+     "target": "3",
+     "target_label": "我们​的​做法",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 421.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search/howsearchworks/?fg=1"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.9028,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'logging best practices tutorial'; Results list showing logging tutorial links",
+     "page_changed": null,
+     "latency_ms": 476.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.9328,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for logging best practices tutorial",
+     "page_changed": null,
+     "latency_ms": 460.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    },
+    {
+     "step": 7,
+     "operation": "DONE",
+     "confidence": 0.5745,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 565.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8e7a7715d2b3caf6",
+   "source": "google",
+   "goal": "Search Google for elasticsearch open source alternatives and open the results.",
+   "fingerprint": 32014,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4922,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=elasticsearch+open+source+alternatives&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=appeqn",
+     "bot_challenge": false,
+     "group0": [
+      "elasticsearch"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=elasticsearch+open+source+alternatives&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsuWBkQAfBpr6kKpkJFB6Rgk2rzCA%3A1790504849397&source=hp&ei=ke-4auz6FvHNkPIP2dW0iAY&iflsig=ABILxe8AAAAAarj9oRnd2rbZKNhfRCcjYmNTawBN7_k7&ved=0ahUKEwish5Csxo6XAxXxJkQIHdkqDWEQ4dUDCDI&uact=5&oq=elasticsearch+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiZlbGFzdGljc2VhcmNoIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIGEAAYFhgeMgUQABjvBTIFEAAY7wVIxQlQDVgNcAF4AJABAJgB1QGgAdUBqgEDMi0xuAEDyAEA-AEBmAICoALbAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QVWHYevElQWUZIHBTEuMC4xoAf8AbIHAzItMbgH1wHCBwMwLjLIBwOACAE&sclient=gws-wiz",
+    "final_title": "elasticsearch open source alternatives - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9046,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elasticsearch open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 494.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504849706"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8611,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 843.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504849706"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8985,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 573.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=elasticsearch+open+source+alternatives&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsuWBkQAfBpr6kKpkJFB6Rgk2rzCA%3A1790504849397&source=hp&ei=ke-4auz6FvHNkPIP2dW0iAY&iflsig=ABILxe8AAAAAarj9oRnd2rbZKNhfRCcjYmNTawBN7_k7&ved=0ahUKEwish5Csxo6XAxXxJkQIHdkqDWEQ4dUDCDI&uact=5&oq=elasticsearch+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiZlbGFzdGljc2VhcmNoIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIGEAAYFhgeMgUQABjvBTIFEAAY7wVIxQlQDVgNcAF4AJABAJgB1QGgAdUBqgEDMi0xuAEDyAEA-AEBmAICoALbAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QVWHYevElQWUZIHBTEuMC4xoAf8AbIHAzItMbgH1wHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-fafe13eb2e4f5786",
+   "source": "google",
+   "goal": "First search Google for vector embeddings interview questions, then search Google for fastapi performance optimization.",
+   "fingerprint": 32014,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 17,
+   "total_ms": 42144,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=fastapi+performance+optimization&sca_esv=ee3892b004fb5afd&hl=en&gl=us&biw=1120&bih=780&s",
+     "bot_challenge": false,
+     "group0": [
+      "fastapi"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=fastapi+performance+optimization&sca_esv=ee3892b004fb5afd&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnuk3oqjOhMxnw5OzU4xF9m5RKFvMw%3A1790504876708&ei=rO-4apDxKsnakPIPhP3SyAw&uact=5&oq=fastapi+performance+optimization&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGZhc3RhcGkgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADSJhtUABYAHAEeAGQAQCYAQCgAQCqAQC4AQPIAQCYAgSgAgeYAwCIBgGQBgiSBwE0oAcAsgcAuAcAwgcDMC40yAcFgAgB&sclient=gws-wiz-serp",
+    "final_title": "fastapi performance optimization - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8804,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vector embeddings interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 675.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504861739"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9086,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 699.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504861739"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8202,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 594.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+interview+questions&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsOCX44Jf8dl-Mjdl5xDutkkKRwTw%3A1790504861539&source=hp&ei=ne-4aurdH-_BkPIPuJ6QuQo&iflsig=ABILxe8AAAAAarj9rWLkqv_mZDBHhOnl5_S5ZyZN5mUR&ved=0ahUKEwiqoPWxxo6XAxXvIEQIHTgPJKcQ4dUDCDI&uact=5&oq=vector+embeddings+interview+questions&gs_lp=Egdnd3Mtd2l6IiV2ZWN0b3IgZW1iZWRkaW5ncyBpbnRlcnZpZXcgcXVlc3Rpb25zMgYQABgWGB4yCxAAGIAEGIoFGIYDMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBUi7CFANWA1wAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAuMBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBc3OYTTmLuWdkgcFMS4wLjGgB9gDsgcDMi0xuAfgAcIHAzEuMcgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.3408,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'fastapi performance optimization'",
+     "page_changed": null,
+     "latency_ms": 823.4,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=vector+embeddings+interview+questions&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsOCX44Jf8dl-Mjdl5xDutkkKRwTw%3A1790504861539&source=hp&ei=ne-4aurdH-_BkPIPuJ6QuQo&iflsig=ABILxe8AAAAAarj9rWLkqv_mZDBHhOnl5_S5ZyZN5mUR&ved=0ahUKEwiqoPWxxo6XAxXvIEQIHTgPJKcQ4dUDCDI&uact=5&oq=vector+embeddings+interview+questions&gs_lp=Egdnd3Mtd2l6IiV2ZWN0b3IgZW1iZWRkaW5ncyBpbnRlcnZpZXcgcXVlc3Rpb25zMgYQABgWGB4yCxAAGIAEGIoFGIYDMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBUi7CFANWA1wAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAuMBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBc3OYTTmLuWdkgcFMS4wLjGgB9gDsgcDMi0xuAfgAcIHAzEuMcgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "fastapi performance optimization",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+interview+questions&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsOCX44Jf8dl-Mjdl5xDutkkKRwTw%3A1790504861539&source=hp&ei=ne-4aurdH-_BkPIPuJ6QuQo&iflsig=ABILxe8AAAAAarj9rWLkqv_mZDBHhOnl5_S5ZyZN5mUR&ved=0ahUKEwiqoPWxxo6XAxXvIEQIHTgPJKcQ4dUDCDI&uact=5&oq=vector+embeddings+interview+questions&gs_lp=Egdnd3Mtd2l6IiV2ZWN0b3IgZW1iZWRkaW5ncyBpbnRlcnZpZXcgcXVlc3Rpb25zMgYQABgWGB4yCxAAGIAEGIoFGIYDMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBUi7CFANWA1wAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAuMBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBc3OYTTmLuWdkgcFMS4wLjGgB9gDsgcDMi0xuAfgAcIHAzEuMcgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8426,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 652.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+interview+questions&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsOCX44Jf8dl-Mjdl5xDutkkKRwTw%3A1790504861539&source=hp&ei=ne-4aurdH-_BkPIPuJ6QuQo&iflsig=ABILxe8AAAAAarj9rWLkqv_mZDBHhOnl5_S5ZyZN5mUR&ved=0ahUKEwiqoPWxxo6XAxXvIEQIHTgPJKcQ4dUDCDI&uact=5&oq=vector+embeddings+interview+questions&gs_lp=Egdnd3Mtd2l6IiV2ZWN0b3IgZW1iZWRkaW5ncyBpbnRlcnZpZXcgcXVlc3Rpb25zMgYQABgWGB4yCxAAGIAEGIoFGIYDMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBUi7CFANWA1wAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAuMBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBc3OYTTmLuWdkgcFMS4wLjGgB9gDsgcDMi0xuAfgAcIHAzEuMcgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.871,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 997.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+interview+questions&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsOCX44Jf8dl-Mjdl5xDutkkKRwTw%3A1790504861539&source=hp&ei=ne-4aurdH-_BkPIPuJ6QuQo&iflsig=ABILxe8AAAAAarj9rWLkqv_mZDBHhOnl5_S5ZyZN5mUR&ved=0ahUKEwiqoPWxxo6XAxXvIEQIHTgPJKcQ4dUDCDI&uact=5&oq=vector+embeddings+interview+questions&gs_lp=Egdnd3Mtd2l6IiV2ZWN0b3IgZW1iZWRkaW5ncyBpbnRlcnZpZXcgcXVlc3Rpb25zMgYQABgWGB4yCxAAGIAEGIoFGIYDMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBUi7CFANWA1wAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAuMBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBc3OYTTmLuWdkgcFMS4wLjGgB9gDsgcDMi0xuAfgAcIHAzEuMcgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "fastapi performance optimization",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+interview+questions&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsOCX44Jf8dl-Mjdl5xDutkkKRwTw%3A1790504861539&source=hp&ei=ne-4aurdH-_BkPIPuJ6QuQo&iflsig=ABILxe8AAAAAarj9rWLkqv_mZDBHhOnl5_S5ZyZN5mUR&ved=0ahUKEwiqoPWxxo6XAxXvIEQIHTgPJKcQ4dUDCDI&uact=5&oq=vector+embeddings+interview+questions&gs_lp=Egdnd3Mtd2l6IiV2ZWN0b3IgZW1iZWRkaW5ncyBpbnRlcnZpZXcgcXVlc3Rpb25zMgYQABgWGB4yCxAAGIAEGIoFGIYDMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBUi7CFANWA1wAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAuMBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBc3OYTTmLuWdkgcFMS4wLjGgB9gDsgcDMi0xuAfgAcIHAzEuMcgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8283,
+     "target": "6",
+     "target_label": "fastapi performance optimization",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 555.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vector+embeddings+interview+questions&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQnsOCX44Jf8dl-Mjdl5xDutkkKRwTw%3A1790504861539&source=hp&ei=ne-4aurdH-_BkPIPuJ6QuQo&iflsig=ABILxe8AAAAAarj9rWLkqv_mZDBHhOnl5_S5ZyZN5mUR&ved=0ahUKEwiqoPWxxo6XAxXvIEQIHTgPJKcQ4dUDCDI&uact=5&oq=vector+embeddings+interview+questions&gs_lp=Egdnd3Mtd2l6IiV2ZWN0b3IgZW1iZWRkaW5ncyBpbnRlcnZpZXcgcXVlc3Rpb25zMgYQABgWGB4yCxAAGIAEGIoFGIYDMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBUi7CFANWA1wAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAuMBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBc3OYTTmLuWdkgcFMS4wLjGgB9gDsgcDMi0xuAfgAcIHAzEuMcgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.8806,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing actual search results for fastapi performance optimization",
+     "page_changed": null,
+     "latency_ms": 603.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=fastapi+performance+optimization&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQntKPlRI01fGVNSR4kR4vJ062Y-Eng%3A1790504864473&ei=oO-4atu-HLjJkPIP67nqiAc&biw=1120&bih=780&oq=fastapi+performance+optimization&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGZhc3RhcGkgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uKgUIABiABDIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCBAAGIkFGKIEMgUQABjvBTIFEAAY7wUyBRAAGO8FSNcHUApYCnABeAGQAQCYAeEBoAHhAaoBAzItMbgBAcgBAPgBAZgCAqAC5gHCAgoQABhHGNYEGLADmAMAiAYBkAYCkgcFMS4wLjGgB4YGsgcDMi0xuAfkAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 8,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vector embeddings interview questions",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=fastapi+performance+optimization&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQntKPlRI01fGVNSR4kR4vJ062Y-Eng%3A1790504864473&ei=oO-4atu-HLjJkPIP67nqiAc&biw=1120&bih=780&oq=fastapi+performance+optimization&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGZhc3RhcGkgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uKgUIABiABDIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCBAAGIkFGKIEMgUQABjvBTIFEAAY7wUyBRAAGO8FSNcHUApYCnABeAGQAQCYAeEBoAHhAaoBAzItMbgBAcgBAPgBAZgCAqAC5gHCAgoQABhHGNYEGLADmAMAiAYBkAYCkgcFMS4wLjGgB4YGsgcDMi0xuAfkAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 9,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8113,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "fastapi performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 600.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=fastapi+performance+optimization&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQntKPlRI01fGVNSR4kR4vJ062Y-Eng%3A1790504864473&ei=oO-4atu-HLjJkPIP67nqiAc&biw=1120&bih=780&oq=fastapi+performance+optimization&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGZhc3RhcGkgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uKgUIABiABDIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCBAAGIkFGKIEMgUQABjvBTIFEAAY7wUyBRAAGO8FSNcHUApYCnABeAGQAQCYAeEBoAHhAaoBAzItMbgBAcgBAPgBAZgCAqAC5gHCAgoQABhHGNYEGLADmAMAiAYBkAYCkgcFMS4wLjGgB4YGsgcDMi0xuAfkAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 10,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8534,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "fastapi performance optimization",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 574.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=fastapi+performance+optimization&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQntKPlRI01fGVNSR4kR4vJ062Y-Eng%3A1790504864473&ei=oO-4atu-HLjJkPIP67nqiAc&biw=1120&bih=780&oq=fastapi+performance+optimization&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGZhc3RhcGkgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uKgUIABiABDIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCBAAGIkFGKIEMgUQABjvBTIFEAAY7wUyBRAAGO8FSNcHUApYCnABeAGQAQCYAeEBoAHhAaoBAzItMbgBAcgBAPgBAZgCAqAC5gHCAgoQABhHGNYEGLADmAMAiAYBkAYCkgcFMS4wLjGgB4YGsgcDMi0xuAfkAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 11,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8534,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "fastapi performance optimization",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 633.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=fastapi+performance+optimization&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQntKPlRI01fGVNSR4kR4vJ062Y-Eng%3A1790504864473&ei=oO-4atu-HLjJkPIP67nqiAc&biw=1120&bih=780&oq=fastapi+performance+optimization&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGZhc3RhcGkgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uKgUIABiABDIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCBAAGIkFGKIEMgUQABjvBTIFEAAY7wUyBRAAGO8FSNcHUApYCnABeAGQAQCYAeEBoAHhAaoBAzItMbgBAcgBAPgBAZgCAqAC5gHCAgoQABhHGNYEGLADmAMAiAYBkAYCkgcFMS4wLjGgB4YGsgcDMi0xuAfkAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 12,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8534,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "fastapi performance optimization",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 576.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=fastapi+performance+optimization&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQntKPlRI01fGVNSR4kR4vJ062Y-Eng%3A1790504864473&ei=oO-4atu-HLjJkPIP67nqiAc&biw=1120&bih=780&oq=fastapi+performance+optimization&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGZhc3RhcGkgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uKgUIABiABDIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCBAAGIkFGKIEMgUQABjvBTIFEAAY7wUyBRAAGO8FSNcHUApYCnABeAGQAQCYAeEBoAHhAaoBAzItMbgBAcgBAPgBAZgCAqAC5gHCAgoQABhHGNYEGLADmAMAiAYBkAYCkgcFMS4wLjGgB4YGsgcDMi0xuAfkAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 12,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=fastapi+performance+optimization&sca_esv=ee3892b004fb5afd&hl=en&gl=us&sxsrf=APpeQntKPlRI01fGVNSR4kR4vJ062Y-Eng%3A1790504864473&ei=oO-4atu-HLjJkPIP67nqiAc&biw=1120&bih=780&oq=fastapi+performance+optimization&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGZhc3RhcGkgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uKgUIABiABDIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCBAAGIkFGKIEMgUQABjvBTIFEAAY7wUyBRAAGO8FSNcHUApYCnABeAGQAQCYAeEBoAHhAaoBAzItMbgBAcgBAPgBAZgCAqAC5gHCAgoQABhHGNYEGLADmAMAiAYBkAYCkgcFMS4wLjGgB4YGsgcDMi0xuAfkAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 13,
+     "operation": "DONE",
+     "confidence": 0.8431,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 613.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=fastapi+performance+optimization&sca_esv=ee3892b004fb5afd&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnuk3oqjOhMxnw5OzU4xF9m5RKFvMw%3A1790504876708&ei=rO-4apDxKsnakPIPhP3SyAw&uact=5&oq=fastapi+performance+optimization&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGZhc3RhcGkgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADSJhtUABYAHAEeAGQAQCYAQCgAQCqAQC4AQPIAQCYAgSgAgeYAwCIBgGQBgiSBwE0oAcAsgcAuAcAwgcDMC40yAcFgAgB&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-6f4a07e2f4568d06",
+   "source": "google",
+   "goal": "First search Google for prometheus open source alternatives, then search Google for kafka tutorial.",
+   "fingerprint": 32014,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14712,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dprometheus%2bopen%2bsource%2balternative",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dprometheus%2Bopen%2Bsource%2Balternatives%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnte_UzThfpsBwAaivGGYHk6IHK1lw%253A1790504910821%26source%3Dhp%26ei%3Dzu-4asX0MMXJkPIPmoOryAg%26iflsig%3DABILxe8AAAAAarj93lqHLm7lvyKHjbjw2T_J0CothHWC%26ved%3D0ahUKEwjFk7XJxo6XAxXFJEQIHZrBCokQ4dUDCDI%26uact%3D5%26oq%3Dprometheus%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiNwcm9tZXRoZXVzIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBUiYB1ALWAtwAXgAkAEAmAHfAaAB3wGqAQMyLTG4AQPIAQD4AQGYAgKgAuUBqAIKwgIREAAY5QYYigMY5wYY6gIYtALCAgoQABgDGI8BGOoCmAMD8QXMEAHF0grlfZIHBTEuMC4xoAeJA7IHAzItMbgH4QHCBwMwLjLIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNHf49UGIjACRRlrY7iP5_pms_QzFmpuNL71o5AUATotOJAw_Oyc5zTh1N4UZJxEIGvxqQd9dh4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=prometheus+open+source+alternatives&sca_esv=ee38"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.907,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "prometheus open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 493.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504910967"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.88,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 543.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504910967"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-39db37521e3c9ea5",
+   "source": "google",
+   "goal": "First search Google for mysql tutorial, then search Google for grafana tutorial.",
+   "fingerprint": 32014,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14610,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmysql%2btutorial%26sca_esv%3dee3892b004f",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmysql%2Btutorial%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntb_T3nXdd9diYbyXozU5HRyHh6pg%253A1790504977736%26source%3Dhp%26ei%3DEfC4aq23K4zbkPIPn5TW-AE%26iflsig%3DABILxe8AAAAAarj-Id893dzvGBLtg_hxhmmVpz5ER-on%26ved%3D0ahUKEwjtg6npxo6XAxWMLUQIHR-KFR8Q4dUDCDI%26uact%3D5%26oq%3Dmysql%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig5teXNxbCB0dXRvcmlhbDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARItwdQDVgNcAF4AJABAJgB0QGgAdEBqgEDMi0xuAEDyAEA-AEBmAICoALcAagCCsICERAAGOUGGIoDGOcGGOoCGLQCwgIKEAAYAxiPARjqApgDBPEFpkMn3BBMj2GSBwUxLjAuMaAH_wSyBwMyLTG4B9cBwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJTg49UGIjCHe6ZpEsbqsEDZpSEMfRgecgpgyOtt3H6y7IsWlamlxYuOr7PvOT3NQQxXaG0bnsgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mysql+tutorial&sca_esv=ee3892b004fb5afd&hl=en&gl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8984,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mysql tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 444.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504977884"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8953,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 559.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790504977884"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-652c0c3c71f80295",
+   "source": "google",
+   "goal": "Search Google for pytorch cheat sheet and open the results.",
+   "fingerprint": 32014,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14766,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpytorch%2bcheat%2bsheet%26sca_esv%3dee38",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpytorch%2Bcheat%2Bsheet%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntpa643m_4RBvEeYG0AG5BkKAeGbQ%253A1790505044558%26source%3Dhp%26ei%3DVPC4avWuIJDCkPIPj72N8Ak%26iflsig%3DABILxe8AAAAAarj-ZMSOgZcUCHjn68crU6BsADhYrIRq%26ved%3D0ahUKEwj1qJeJx46XAxUQIUQIHY9eA54Q4dUDCDI%26uact%3D5%26oq%3Dpytorch%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhNweXRvcmNoIGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOAHUA1YDXABeACQAQCYAdQBoAHUAaoBAzItMbgBA8gBAPgBAZgCAqAC4AGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCmAME8QVexxbV2rUpm5IHBTEuMC4xoAevBbIHAzItMbgH2wHCBwMyLTLIBweACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNfg49UGIjB69w_YxFXtqqP4SCSf-iWJS9KDlSZssCv_DD3JfboZaK3R4XwOf-DhMsjjpFA-Z8cyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=pytorch+cheat+sheet&sca_esv=ee3892b004fb5afd&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8955,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "pytorch cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 495.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505044770"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8281,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 600.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505044770"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-cb3b3efcb4aab508",
+   "source": "google",
+   "goal": "First search Google for llama.cpp open source alternatives, then search Google for pytorch migration guide.",
+   "fingerprint": 32014,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14689,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dllama.cpp%2bopen%2bsource%2balternatives",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dllama.cpp%2Bopen%2Bsource%2Balternatives%26sca_esv%3Dee3892b004fb5afd%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntCn7JUYMRuhYCF4kPWpKOOzwO8HQ%253A1790505111489%26source%3Dhp%26ei%3Dl_C4aqfQHM-KkPIPga_TmA0%26iflsig%3DABILxe8AAAAAarj-p42pBUgPbxhxelsvIK49hEtc9u9w%26ved%3D0ahUKEwjn94ypx46XAxVPBUQIHYHXFNMQ4dUDCDI%26uact%3D5%26oq%3Dllama.cpp%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiJsbGFtYS5jcHAgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUilB1AOWA5wAXgAkAEAmAHlAaAB5QGqAQMyLTG4AQPIAQD4AQGYAgKgAvIBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtAKYAwTxBQAz2m6POga3kgcFMS4wLjGgB8oEsgcDMi0xuAftAcIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJrh49UGIjDczuRPzy30AJvCyxp-XlcqqFcTh6qESFqf33USZOwYtYKrCFXicCA3PC8DGV3AfXMyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=llama.cpp+open+source+alternatives&sca_esv=ee389"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8988,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llama.cpp open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 506.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505111645"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8885,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 537.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505111645"
+    }
+   ]
+  }
+ ]
+}

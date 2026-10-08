@@ -1,0 +1,582 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 65047,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T20:35:55+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.9,
+  "mean_duration_ms": 15983,
+  "decision_latency_ms": {
+   "p50": 537.2,
+   "p95": 622.3
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 2,
+   "done-rejected": 2,
+   "executed": 17
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.9
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-122462e82d46f719",
+   "source": "google",
+   "goal": "Search Google for django performance optimization and open the results.",
+   "fingerprint": 65047,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 22987,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddjango%2bperformance%2boptimization%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddjango%2Bperformance%2Boptimization%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt3Z0Mz0e4hqXHhbzYpKEeX6lEX5w%253A1790512061187%26source%3Dhp%26ei%3DvQu5apWkCtykkPIPz-zW0Qs%26iflsig%3DABILxe8AAAAAarkZzVflkaji0cyvI13k47VG7hThP6Yr%26ved%3D0ahUKEwjV9vya4Y6XAxVcEkQIHU-2NboQ4dUDCDI%26oq%3Ddjango%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ih9kamFuZ28gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgUQABiABDIGEAAYFhgeMgUQABjvBTIIEAAYiQUYogQyCBAAGIAEGKIESOEiUBVYFXABeACQAQCYAc0BoAHNAaoBAzItMbgBDMgBAPgBAZgCAqAC1gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEF9QOrTzbAgj2SBwUxLjAuMaAHzAKyBwMyLTG4B9IBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz%26sei%3Dxwu5apboMdjakPIP-6e4uA0&hl=en&q=EgQm0XtnGMiX5NUGIjAUsQwASqiLYDQbCUQb_CnttAmoyzpB9LHQ2AdQ3D3gND1-grL6ViGV6rEJ4dx64ZQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=django+performance+optimization&sca_esv=75b852f9"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9033,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django performance optimization",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 492.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8947,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 517.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512062756"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8941,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'django performance optimization'",
+     "page_changed": null,
+     "latency_ms": 535.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512062756"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django performance optimization",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512062756"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9146,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for django performance optimization",
+     "page_changed": null,
+     "latency_ms": 610.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512062756"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:30",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512062756"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c90fd3e59e404bc7",
+   "source": "google",
+   "goal": "First search Google for logging best practices cheat sheet, then search Google for llm fine-tuning cheat sheet.",
+   "fingerprint": 65047,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 16647,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dwarcraft%2bforever%26sca_esv%3d75b852f91",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dwarcraft%2Bforever%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt37o5nz7RxCnjqAEQt-j6k-Lkd5A%253A1790512136568%26source%3Dhp%26ei%3DCAy5atKhIYrAkPIPv-LdwQs%26iflsig%3DABILxe8AAAAAarkaGPvLuZ0gOEdDYXBLNcPb8wtzw7eV%26gs_ss%3D1%26oq%3D%26gs_lp%3DEgdnd3Mtd2l6IgAqCggAGAMYjwEY6gIyChAAGAMYjwEY6gIyChAuGAMYjwEY6gIyChAAGAMYjwEY6gIyChAuGAMYjwEY6gIyChAuGAMYjwEY6gIyChAAGAMYjwEY6gIyChAAGAMYjwEY6gIyChAAGAMYjwEY6gIyChAAGAMYjwEY6gIyChAAGAMYjwEY6gJIzg5QAFgAcAF4AJABAJgBAKABAKoBALgBAcgBAJgCAaACBKgCCpgDBPEFBPghZAPWxyySBwExoAcAsgcAuAcAwgcDMi0xyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGI2Y5NUGIjBgFjjmdNL7Q-bhZJsHgJr6xJ4urH9YNB52Zm3w_WvXcu7kZckwo3giS0RjnzLVplUyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=warcraft+forever&sca_esv=75b852f910b8e50f&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.5005,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "logging best practices cheat sheet",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 546.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.6739,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 517.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512138152"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8288,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 542.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512138152"
+    },
+    {
+     "step": 4,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.6445,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 622.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512138152"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.7947,
+     "target": "8",
+     "target_label": "warcraft forever",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 587.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512138152"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-570cc5997d9aab82",
+   "source": "google",
+   "goal": "First search Google for mongodb performance optimization, then search Google for kubernetes interview questions.",
+   "fingerprint": 65047,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14807,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmongodb%2bperformance%2boptimization%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmongodb%2Bperformance%2Boptimization%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnte5QXdYQFgLrVqIuzjwr7Kb1YFrA%253A1790512205607%26source%3Dhp%26ei%3DTQy5at3II67IkPIP-Yf8yA8%26iflsig%3DABILxe8AAAAAarkaXexYf72f-eIrQIX2YfFvycF0X3_J%26ved%3D0ahUKEwido-vf4Y6XAxUuJEQIHfkDH_kQ4dUDCDI%26uact%3D5%26oq%3Dmongodb%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiBtb25nb2RiIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBUjWB1AOWA5wAXgAkAEAmAHgAaAB4AGqAQMyLTG4AQPIAQD4AQGYAgKgAusBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBcDeX0F9sOiPkgcFMS4wLjGgB_0FsgcDMi0xuAfnAcIHAzItMsgHB4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNCY5NUGIjDBz4JlV4wMnSNMTbojPR_pS6LLRhdF9u0WqXjuRVJgAzWMuVchIX5KwrDwZDi1x7IyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mongodb+performance+optimization&sca_esv=75b852f"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9048,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mongodb performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 554.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512205954"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.905,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 590.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512205954"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d4cb99cd8ed9192c",
+   "source": "google",
+   "goal": "Search Google for zig best practices and open the results.",
+   "fingerprint": 65047,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14730,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dzig%2bbest%2bpractices%26sca_esv%3d75b85",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dzig%2Bbest%2Bpractices%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuimKenVI2W-Qiitsr16endu7d_lQ%253A1790512272625%26source%3Dhp%26ei%3DkAy5aqSFJfKxur8P7Lii-QY%26iflsig%3DABILxe8AAAAAarkaoI4BpcaCYrFE2-e4DouBf6JczsJH%26ved%3D0ahUKEwikjeb_4Y6XAxXymO4BHWycKG8Q4dUDCDI%26uact%3D5%26oq%3Dzig%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhJ6aWcgYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBRAAGO8FMgUQABjvBTIFEAAY7wVIpAdQDlgOcAF4AJABAJgB2wGgAdsBqgEDMi0xuAEDyAEA-AEBmAICoALmAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME8QWm-eCWQ9As1JIHBTEuMC4xoAexArIHAzItMbgH4QHCBwMyLTLIBweACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJOZ5NUGIjCOcOqCgQWZRWH9bH_7zCOz4l0PuFFAe0GUoaNn-3QpuLXolqGOOQ2Wq21OJQMrpCgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=zig+best+practices&sca_esv=75b852f910b8e50f&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8211,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "zig best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 510.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512272917"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8977,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 536.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512272917"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-518df1c557f60d7f",
+   "source": "google",
+   "goal": "First search Google for elixir tutorial, then search Google for flask cheat sheet.",
+   "fingerprint": 65047,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14535,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3delixir%2btutorial%26sca_esv%3d75b852f910",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Delixir%2Btutorial%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt_DB_22I3jhiB1jQ9GKOMtOBrxow%253A1790512339512%26source%3Dhp%26ei%3D0wy5arPSHdfekPIPhfWxwQ4%26iflsig%3DABILxe8AAAAAarka42cTfx7OzSL-yUXWQS9IurPQGnNh%26ved%3D0ahUKEwjzh9if4o6XAxVXL0QIHYV6LOgQ4dUDCDI%26uact%3D5%26oq%3Delixir%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig9lbGl4aXIgdHV0b3JpYWwyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSK4HUA1YDXABeACQAQCYAc0BoAHNAaoBAzItMbgBA8gBAPgBAZgCAqAC2AGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDA_EFvGVLoDQXc2CSBwUxLjAuMaAHggWyBwMyLTG4B9QBwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNaZ5NUGIjAFBeeI3JvReOroknWbVaZeFJ9ZpwHtcqUbgma_XBnyKCkNSiMOzlKUoihRHnxsD6wyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=elixir+tutorial&sca_esv=75b852f910b8e50f&hl=en&g"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9072,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elixir tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 507.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512339726"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8731,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 546.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512339726"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-fe5ec44c725c2da1",
+   "source": "google",
+   "goal": "First search Google for elixir open source alternatives, then search Google for kotlin interview questions.",
+   "fingerprint": 65047,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14583,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3delixir%2bopen%2bsource%2balternatives%26",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Delixir%2Bopen%2Bsource%2Balternatives%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsexfSK4p8kywJtzqpQ1W-G5gafMg%253A1790512406217%26source%3Dhp%26ei%3DFg25au_-C9zBkPIPoPqCkQ4%26iflsig%3DABILxe8AAAAAarkbJqj3eSxKuUvBbfAJSNILCBcywzkl%26ved%3D0ahUKEwjv4b-_4o6XAxXcIEQIHSC9IOIQ4dUDCDI%26uact%3D5%26oq%3Delixir%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ih9lbGl4aXIgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIhQdQC1gLcAF4AJABAJgB4wGgAeMBqgEDMi0xuAEDyAEA-AEBmAICoALoAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCmAMD8QWAd7aaDLsGq5IHBTEuMC4xoAevBbIHAzItMbgH5QHCBwMxLjHIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJia5NUGIjC9KmkwogvqgQqiwwLQ3deJmajimpEJTqIWv7ohLkh_zerLSYWuoC7-V1KP1JFxBHcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=elixir+open+source+alternatives&sca_esv=75b852f9"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9014,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elixir open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 537.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512406435"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9051,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 513.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512406435"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-4b12a13db98570d3",
+   "source": "google",
+   "goal": "First search Google for how to debug postgresql, then search Google for kafka security vulnerabilities.",
+   "fingerprint": 65047,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14627,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bpostgresql%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bpostgresql%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnucmOFxobnJTlkG0bgPHQjH46FT8Q%253A1790512472976%26source%3Dhp%26ei%3DWA25aq6KOrmwur8PgargWA%26iflsig%3DABILxe8AAAAAarkbaBA1lkGIsiA6xYDTZKXMeWMCp7fE%26ved%3D0ahUKEwiulqrf4o6XAxU5mO4BHQEVGAsQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bpostgresql%26gs_lp%3DEgdnd3Mtd2l6Ihdob3cgdG8gZGVidWcgcG9zdGdyZXNxbDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FSNMHUA9YD3ABeACQAQCYAesBoAHrAaoBAzItMbgBA8gBAPgBAZgCAqAC9gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEF7VSsqFeSgkmSBwUxLjAuMaAHrAayBwMyLTG4B_IBwgcDMi0yyAcIgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNua5NUGIjCvkyoXs13vnY-LlVVVy5pfx9lTrrlZDr_64qddkTK6lF4Rn6KeoiaihmbvIPvdEaEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+postgresql&sca_esv=75b852f910b8e50f"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8977,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug postgresql",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 521.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512473199"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.571,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 584.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512473199"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-cd0d338124159ced",
+   "source": "google",
+   "goal": "First search Google for how to debug retrieval augmented generation, then search Google for vue cheat sheet.",
+   "fingerprint": 65047,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14948,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bretrieval%2baugmented",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bretrieval%2Baugmented%2Bgeneration%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvYtVWPbJwdBV_SaUhHWBt31yGXPg%253A1790512539768%26source%3Dhp%26ei%3Dmw25apvOLYm_kPIPpfOSkQ8%26iflsig%3DABILxe8AAAAAarkbqwMkp_QlEbXyAziCwm6MP9XdCVzY%26ved%3D0ahUKEwjbh5f_4o6XAxWJH0QIHaW5JPIQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bretrieval%2Baugmented%2Bgeneration%26gs_lp%3DEgdnd3Mtd2l6Iitob3cgdG8gZGVidWcgcmV0cmlldmFsIGF1Z21lbnRlZCBnZW5lcmF0aW9uMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUj5B1AQWBBwAXgAkAEAmAHkAaAB5AGqAQMyLTG4AQPIAQD4AQGYAgKgAvIBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBSveBnwTIZ8GkgcFMS4wLjGgB_0EsgcDMi0xuAfuAcIHAzItMsgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJ6b5NUGIjDmoVduz_wo1Hvbk45y-JxGcL4GHvKP8ukbDCbrOaYvztZEb7I0E9QrDteJueIa9PIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+retrieval+augmented+generation&sca_"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.837,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug retrieval augmented generation",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 541.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512539997"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8749,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 625.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512539997"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,539 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 33488,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T22:05:11+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.5,
+  "mean_duration_ms": 16142,
+  "decision_latency_ms": {
+   "p50": 543.9,
+   "p95": 589.2
+  },
+  "step_outcomes": {
+   "executed": 18,
+   "done-rejected": 1,
+   "refused-empty-enter": 1
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.5
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-7e8ffc802165a0ef",
+   "source": "google",
+   "goal": "First search Google for spring boot release notes, then search Google for llm fine-tuning migration guide.",
+   "fingerprint": 33488,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15082,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dspring%2bboot%2brelease%2bnotes%26sca_es",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dspring%2Bboot%2Brelease%2Bnotes%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvJBa0T84Fq7pc6G9QwKfGv-YsCdw%253A1790517415676%26source%3Dhp%26ei%3DpyC5atPdJ5HCkPIP1tDVgAc%26iflsig%3DABILxe8AAAAAarkut9tdNzYtedUd32MU8iVdsCedG0t2%26ved%3D0ahUKEwiTzZiU9Y6XAxURIUQIHVZoFXAQ4dUDCDI%26uact%3D5%26oq%3Dspring%2Bboot%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhlzcHJpbmcgYm9vdCByZWxlYXNlIG5vdGVzMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSMAHUBFYEXABeACQAQCYAeEBoAHhAaoBAzItMbgBA8gBAPgBAZgCAqAC6QGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBvEFlwEdE2IjbsySBwUxLjAuMaAH3wWyBwMyLTG4B-MBwgcFMC4xLjHIBweACAE%26sclient%3Dgws-wiz%26sei%3DqiC5aoK8JubDkPIPhorx0A4&hl=en&q=EgQm0XtnGKrB5NUGIjAgqkNNzK1wp6BRjP2wnYT4YpxdcaWh27F-Ht_3d5mSEWyVgNXX8CtuYHVpTkiibzoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=spring+boot+release+notes&sca_esv=f9132ac85e2593"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8922,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "spring boot release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 490.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8998,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 577.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517417662"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-e872bf24f37c6fa7",
+   "source": "google",
+   "goal": "First search Google for vllm best practices, then search Google for spring boot security vulnerabilities.",
+   "fingerprint": 33488,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14601,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvllm%2bbest%2bpractices%26sca_esv%3df913",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvllm%2Bbest%2Bpractices%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsEtbwrgk3xRBV3U5CSe8AVx-pW8A%253A1790517483232%26source%3Dhp%26ei%3D6yC5avu_DN_QkPIP-Lzo6AQ%26iflsig%3DABILxe8AAAAAarku--QXNYp-iT2Y5YHd7QGG-1jxoK_x%26ved%3D0ahUKEwi74bO09Y6XAxVfKEQIHXgeGk0Q4dUDCDI%26uact%3D5%26oq%3Dvllm%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhN2bGxtIGJlc3QgcHJhY3RpY2VzMgUQABiABDILEAAYgAQYigUYhgMyBRAAGO8FMggQABiABBiiBDIFEAAY7wVInAdQFFgUcAF4AJABAJgB7wGgAe8BqgEDMi0xuAEDyAEA-AEBmAICoAL2AagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QUjIFkhR_6DKZIHBTEuMC4xoAevArIHAzItMbgH8QHCBwUxLjAuMcgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGO7B5NUGIjCAUCwIMyG850wsM_Au9C5zTcOXFZESIAeDP2WI-4zUfaLEaRBF3K3EyW9ZJmZ1HvcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vllm+best+practices&sca_esv=f9132ac85e259377&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8944,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vllm best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 449.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9042,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 541.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517485117"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3f61c1b1292cb790",
+   "source": "google",
+   "goal": "Search Google for golang cheat sheet and open the results.",
+   "fingerprint": 33488,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 19617,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgolang%2bcheat%2bsheet%26sca_esv%3df9132",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgolang%2Bcheat%2Bsheet%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntbfsEN4e_jncwMjHjHaFHwOldW0g%253A1790517550288%26source%3Dhp%26ei%3DLiG5auW7D6afkPIP-_3x4Ag%26iflsig%3DABILxe8AAAAAarkvPt5o6Mm_kxNlVhuXPaC1Rk-3yskI%26ved%3D0ahUKEwjlirDU9Y6XAxWmD0QIHft-HIwQ4dUDCDI%26oq%3Dgolang%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhJnb2xhbmcgY2hlYXQgc2hlZXQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I9SxQDVgNcAF4AJABAJgBmQKgAZkCqgEDMi0xuAEMyAEA-AEBmAICoAKeAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QUNhO27XwRB0JIHBTEuMC4xoAerBbIHAzItMbgHmwLCBwMwLjLIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLXC5NUGIjBS5MJvCetY4kzT8ewi0XVkRGjKgVZhDAUr3weroeEBM0lMl0ccWDnDF-AFUV1mTvIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=golang+cheat+sheet&sca_esv=f9132ac85e259377&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8844,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 579.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517550718"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8454,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for golang cheat sheet",
+     "page_changed": null,
+     "latency_ms": 569.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517550718"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517550718"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-26cff67cf400acc2",
+   "source": "google",
+   "goal": "First search Google for how to debug kubernetes, then search Google for fastapi cheat sheet.",
+   "fingerprint": 33488,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 20962,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bkubernetes%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bkubernetes%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntAPA9BoP2afR_sfyVuCs9Bh1K0Pw%253A1790517622130%26source%3Dhp%26ei%3DdiG5atncBtmsur8Pu9jl6As%26iflsig%3DABILxe8AAAAAarkvhgk70coCTNFvAk_6XqF4PLqaJr6J%26ved%3D0ahUKEwjZ79H29Y6XAxVZlu4BHTtsGb0Q4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bkubernetes%26gs_lp%3DEgdnd3Mtd2l6Ihdob3cgdG8gZGVidWcga3ViZXJuZXRlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I-DNQDFgMcAN4AJABAJgBlQKgAZUCqgEDMi0xuAEDyAEA-AEBmAIEoAKgAqgCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDAvEFtUIQ1Hd5DXSSBwUzLjAuMaAH_wWyBwMyLTG4B5sCwgcFMC4zLjHIBwiACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGP7C5NUGIjCShLjjNw8TB69fXQvIK3Vaq6uNusYabGDZNtYVpN11xU7qQPikWrFmyk6bQPB3xJIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+kubernetes&sca_esv=f9132ac85e259377"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.655,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 503.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517622493"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8814,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug kubernetes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 485.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517622493"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.4809,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug kubernetes",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 589.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517622493"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.891,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug kubernetes",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 564.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517622493"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517622493"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5d00bdc9f4f6b029",
+   "source": "google",
+   "goal": "First search Google for typescript open source alternatives, then search Google for how to debug docker.",
+   "fingerprint": 33488,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14736,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bdocker%26sca_esv%3df9",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bdocker%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsLRaBxmDaV3fQBFdzS6rn6DyZXdA%253A1790517695265%26source%3Dhp%26ei%3DvyG5arKDD7Sgur8PgqOecA%26iflsig%3DABILxe8AAAAAarkvzxXrI6OlSmhfhInn1Z6AsADkEn7l%26ved%3D0ahUKEwjy3sGZ9o6XAxU0kO4BHYKRBw4Q4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bdocker%26gs_lp%3DEgdnd3Mtd2l6IhNob3cgdG8gZGVidWcgZG9ja2VyMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I2AdQDlgOcAF4AJABAJgBnAKgAZwCqgEDMi0xuAEDyAEA-AEBmAICoAKiAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QX7u36O8fNU1JIHBTEuMC4xoAfWBbIHAzItMbgHngLCBwMwLjLIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMLD5NUGIjAZhRaeMLkyQUeag_80xx_AB0si33JUWMKKmC59ltJu_4g_SH0dqytxzjADX5p059cyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+docker&sca_esv=f9132ac85e259377&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8947,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug docker",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 543.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517695601"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8202,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 601.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517695601"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-02cee09ec67a44b8",
+   "source": "google",
+   "goal": "First search Google for swift best practices, then search Google for langchain open source alternatives.",
+   "fingerprint": 33488,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14721,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dswift%2bbest%2bpractices%26sca_esv%3df91",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dswift%2Bbest%2Bpractices%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsARab0LKIRHVXcAXdywXvsnsBWUQ%253A1790517762248%26source%3Dhp%26ei%3DAiK5atOTDbPakPIP__2RiQM%26iflsig%3DABILxe8AAAAAarkwEgOCIckCHQLMijo1fM0E7Fi4KQ0A%26ved%3D0ahUKEwjTnLm59o6XAxUzLUQIHf9-JDEQ4dUDCDI%26uact%3D5%26oq%3Dswift%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhRzd2lmdCBiZXN0IHByYWN0aWNlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGBYYHhgKMgYQABgWGB4yBhAAGBYYHki7B1AOWA5wAXgAkAEAmAGZAqABmQKqAQMyLTG4AQPIAQD4AQGYAgKgAqECqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwPxBQ4fSssxVMIokgcFMS4wLjGgB7oFsgcDMi0xuAeeAsIHAzItMsgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGITE5NUGIjCdcBVSzoNFgk3BMosCkFKJgJDCjHeAOyL0pmZ815ecD3xXbq9WXH9zle9mo5ZUFX0yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=swift+best+practices&sca_esv=f9132ac85e259377&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8394,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "swift best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 494.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517762549"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8882,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 567.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517762549"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ea2f9d0c2f9735ca",
+   "source": "google",
+   "goal": "Search Google for memory leak debugging cheat sheet and open the results.",
+   "fingerprint": 33488,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14721,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmemory%2bleak%2bdebugging%2bcheat%2bshee",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmemory%2Bleak%2Bdebugging%2Bcheat%2Bsheet%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsYRaMEDLK9a_lzUu1z8GLTIHe0bQ%253A1790517829173%26source%3Dhp%26ei%3DRSK5auStCfrHkPIP1vbI-AY%26iflsig%3DABILxe8AAAAAarkwVf8qGjBzTcDQJnFguaPZFXCBPZvd%26ved%3D0ahUKEwik5K7Z9o6XAxX6I0QIHVY7Em8Q4dUDCDI%26uact%3D5%26oq%3Dmemory%2Bleak%2Bdebugging%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IiFtZW1vcnkgbGVhayBkZWJ1Z2dpbmcgY2hlYXQgc2hlZXQyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAjIFECEYqwJIqQdQDlgOcAF4AJABAJgBjQKgAY0CqgEDMi0xuAEDyAEA-AEBmAICoAKYAqgCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QXe-ymEjjU8LJIHBTEuMC4xoAfxBbIHAzItMbgHlALCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMfE5NUGIjAHZr2RKU9WieGiEoXwHSyp6OA7ItSYwH_jAPKkRYSBDljEJmOfPZWNOvSeAbMz9HsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=memory+leak+debugging+cheat+sheet&sca_esv=f9132a"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8897,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "memory leak debugging cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 491.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517829484"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8878,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 548.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517829484"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c320c665f9ecd57f",
+   "source": "google",
+   "goal": "First search Google for langchain security vulnerabilities, then search Google for rust performance optimization.",
+   "fingerprint": 33488,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14693,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlangchain%2bsecurity%2bvulnerabilities%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlangchain%2Bsecurity%2Bvulnerabilities%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntBqp9uckPXDhb9N28ts_T_XTuoYA%253A1790517896116%26source%3Dhp%26ei%3DiCK5apHyBYjHkPIP3s7UsAE%26iflsig%3DABILxe8AAAAAarkwmAnGKf55ZgP7HTC3JmcwOwo7jH2J%26ved%3D0ahUKEwiR1qT59o6XAxWII0QIHV4nFRYQ4dUDCDI%26uact%3D5%26oq%3Dlangchain%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IiJsYW5nY2hhaW4gc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgUQABiABDIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCBAAGIAEGKIESK4HUA5YDnABeACQAQCYAacCoAGnAqoBAzItMbgBA8gBAPgBAZgCAqACsAKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFQlqGdE8MhRmSBwUxLjMtMaAH-wKyBwMzLTG4B60CwgcDMi0yyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIrF5NUGIjC4A7TfIh5ka6H6uXxDFKBSjbJrF39ttcMJL2p9rxl92tJMSCiX415zftrYZIBnSDQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=langchain+security+vulnerabilities&sca_esv=f9132"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8899,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 491.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517896427"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8696,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 557.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517896427"
+    }
+   ]
+  }
+ ]
+}

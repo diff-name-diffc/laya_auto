@@ -1,0 +1,705 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 72890,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:55:31+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 3.9,
+  "mean_duration_ms": 17980,
+  "decision_latency_ms": {
+   "p50": 482.7,
+   "p95": 654.5
+  },
+  "step_outcomes": {
+   "refused-empty-enter": 3,
+   "stale": 2,
+   "done-rejected": 5,
+   "executed": 19,
+   "page changed since the decision (url or marker mismatch)": 1,
+   "done": 1
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "github": {
+    "n": 1,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 12.0
+   },
+   "google": {
+    "n": 7,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.7
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-30857e051c8a15c7",
+   "source": "google",
+   "goal": "First search Google for how to debug express, then search Google for vue best practices.",
+   "fingerprint": 72890,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 29116,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvue%2bbest%2bpractices%26sca_esv%3d3e3a4",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvue%2Bbest%2Bpractices%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvPVkFIwaOYfQPGlTgbvfRQHFsIvw%253A1790516865063%26source%3Dhp%26ei%3DgR65avzXAvSuur8P5uyY-AM%26iflsig%3DABILxe8AAAAAarkskQxgVKaxW6NHA04zUNOl8BLMHkrp%26ved%3D0ahUKEwi8nNKN846XAxV0l-4BHWY2Bj8Q4dUDCCE%26uact%3D5%26oq%3Dvue%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhJ2dWUgYmVzdCBwcmFjdGljZXMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IoCdQDVgNcAF4AJABAJgB4wGgAeMBqgEDMi0xuAEDyAEA-AEBmAICoALpAagCCsICChAAGAMYjwEY6gKYAwPxBXq0HWmYn4BakgcFMS4wLjGgB54FsgcDMi0xuAflAcIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz%26sei%3DkR65aoarMaTdkPIP8LqvmAw&hl=en&q=EgQm0XtnGJK95NUGIjB7KkGkJefrEjFqRoN6vbGUKhZTARfggDLXHamXw_7K_2LDp71BOQjq2q9APn-OQ7syAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vue+best+practices&sca_esv=3e3a42b854afc954&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.4769,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 477.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.7939,
+     "target": "17",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 632.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9046,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'vue best practices' (page shows only the Google homepage search box, no results)",
+     "page_changed": null,
+     "latency_ms": 482.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516866808"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516866808"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9002,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for vue best practices",
+     "page_changed": null,
+     "latency_ms": 654.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516866808"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516866808"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-6bcaa9ad8d001df9",
+   "source": "google",
+   "goal": "First search Google for logging best practices security vulnerabilities, then search Google for vllm tutorial.",
+   "fingerprint": 72890,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14583,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlogging%2bbest%2bpractices%2bsecurity%2b",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlogging%2Bbest%2Bpractices%2Bsecurity%2Bvulnerabilities%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntHSGcmhoZXHE7xKjKvLCp95kCGmQ%253A1790516946591%26source%3Dhp%26ei%3D0h65aszdIt7xkPIPwNaOiAw%26iflsig%3DABILxe8AAAAAarks4ufxRqkgTHw0-WfFxueF_57Lb4XU%26ved%3D0ahUKEwjMjsK0846XAxXeOEQIHUCrA8EQ4dUDCCE%26uact%3D5%26oq%3Dlogging%2Bbest%2Bpractices%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6Ii9sb2dnaW5nIGJlc3QgcHJhY3RpY2VzIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllczIFECEYoAEyBRAhGKABSMsGUBJYEnABeACQAQCYAfsBoAH7AaoBAzItMbgBA8gBAPgBAZgCAqACgwKoAgrCAgoQABgDGI8BGOoCmAMF8QX4jRest691OJIHBTEuMC4xoAf0ArIHAzItMbgH_gHCBwUxLjAuMcgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNW95NUGIjC5e5uyQG1FJrqYdpcdhIMoxa60RLRfcxEezoanWvFd7JJf7Vo_sCN0KQ49F7ZhunQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=logging+best+practices+security+vulnerabilities&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8486,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "logging best practices security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 490.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8937,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 464.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516948200"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-4ac33b9bce327cab",
+   "source": "google",
+   "goal": "First search Google for java security vulnerabilities, then search Google for how to debug kafka.",
+   "fingerprint": 72890,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14638,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bkafka%26sca_esv%3d3e3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bkafka%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvIAyZekiFBMEfAapeOQWAdhVoXBA%253A1790517013573%26source%3Dhp%26ei%3DFR-5aozNIYLMkPIP8Pb3cA%26iflsig%3DABILxe8AAAAAarktJS_Hbqx0XoNykd1mhLTNuNALYzFL%26ved%3D0ahUKEwjMq7rU846XAxUCJkQIHXD7HQ4Q4dUDCCE%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bkafka%26gs_lp%3DEgdnd3Mtd2l6IhJob3cgdG8gZGVidWcga2Fma2EyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMggQABiJBRiiBDIFEAAY7wVItAdQDFgMcAF4AJABAJgB9gGgAfYBqgEDMi0xuAEDyAEA-AEBmAICoAL6AagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QWOlFAj3H-2IpIHBTEuMC4xoAf7BbIHAzItMbgH-AHCBwMwLjLIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJi-5NUGIjDP8aUpE2UI7jr4TVowva2e76CXwDUUhPt4mZOHECS6ZDhC3cIsWjsc3jktIwGzzYYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+kafka&sca_esv=3e3a42b854afc954&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8732,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug kafka",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 486.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517013982"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8373,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 569.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517013982"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-e2d21344a18e936f",
+   "source": "github",
+   "goal": "Search GitHub for 'postgresql' repositories and open the search results.",
+   "fingerprint": 72890,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 12,
+   "total_ms": 23049,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['postgresql']]",
+    "checks": {
+     "url": "https://docs.github.com/en",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://docs.github.com/en",
+    "final_title": "GitHub Docs"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8719,
+     "target": "11",
+     "target_label": "Enter your email",
+     "kind": "fill",
+     "text": "postgresql",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 430.1,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8983,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 562.1,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8577,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 451.7,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8724,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 471.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8667,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 490.9,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8733,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 471.2,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8789,
+     "target": "6",
+     "target_label": "Search syntax tips",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 490.3,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.9011,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub repository search results for 'postgresql'",
+     "page_changed": null,
+     "latency_ms": 479.2,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 8,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:3",
+     "target_label": "Github Home",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.9455,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub search results page listing 'postgresql' repositories; evidence the 'postgresql' repository search was executed (query/results not visible; pag",
+     "page_changed": null,
+     "latency_ms": 457.7,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 9,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:3",
+     "target_label": "Github Home",
+     "kind": "click",
+     "text": null,
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 10,
+     "operation": "DONE",
+     "confidence": 0.9213,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 432.5,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c64d2ace10c29907",
+   "source": "google",
+   "goal": "First search Google for vllm cheat sheet, then search Google for golang interview questions.",
+   "fingerprint": 72890,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14720,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvllm%2bcheat%2bsheet%26sca_esv%3d3e3a42b",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvllm%2Bcheat%2Bsheet%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvKI7osWCKg1lRWQAIpRoAQlPjfZQ%253A1790517111491%26source%3Dhp%26ei%3Ddx-5aqq6HOK_kPIPj6iY6A0%26iflsig%3DABILxe8AAAAAarkth1Lk9QV07lIpJspRfLt81C0C6CiY%26ved%3D0ahUKEwjq0ZKD9I6XAxXiH0QIHQ8UBt0Q4dUDCCE%26uact%3D5%26oq%3Dvllm%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhB2bGxtIGNoZWF0IHNoZWV0MgUQABiABDIIEAAYFhgeGAoyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIAEGKIEMgUQABjvBUitB1AhWCFwAXgAkAEAmAGCAqABggKqAQMyLTG4AQPIAQD4AQGYAgKgAogCqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBTp6ruFkmf0KkgcFMS4wLjGgB7sDsgcDMi0xuAeEAsIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPq-5NUGIjAVW8sOwNLvBbdYzLZoDGWZvf7E23aBlxQrCbXUtzfWQomo4lqAJyjE_y5gdCxVC30yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vllm+cheat+sheet&sca_esv=3e3a42b854afc954&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8913,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vllm cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 486.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517111756"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8987,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 546.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517111756"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b260d8befb8a5db1",
+   "source": "google",
+   "goal": "First search Google for how to debug spring boot, then search Google for python security vulnerabilities.",
+   "fingerprint": 72890,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14784,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bspring%2bboot%26sca_e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bspring%2Bboot%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsDYMIpdSaKqB2k_iKyRogGw2OAbg%253A1790517178429%26source%3Dhp%26ei%3Duh-5arXeGLzekPIPmo68qAg%26iflsig%3DABILxe8AAAAAarktyvuZTMmfKNs7vsVYtvAiQmzG5kOo%26ved%3D0ahUKEwi1o4ij9I6XAxU8L0QIHRoHD4UQ4dUDCCE%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bspring%2Bboot%26gs_lp%3DEgdnd3Mtd2l6Ihhob3cgdG8gZGVidWcgc3ByaW5nIGJvb3QyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSMAHUA5YDnABeACQAQCYAeUCoAHlAqoBAzMtMbgBA8gBAPgBAZgCAqAC7AKoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFL0ag9bVz2sOSBwUxLjMtMaAH_AayBwMzLTG4B-gCwgcFMC4xLjHIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGL2_5NUGIjDeKp5LRxcL74Dh05Yw52EYYBwLMW2JeAL838nONoZ-4W-xvcrh4sQQ0seIe-mMUIUyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+spring+boot&sca_esv=3e3a42b854afc95"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.6788,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug spring boot",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 530.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517178824"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8422,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 575.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517178824"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-e9e5495465ba7d7b",
+   "source": "google",
+   "goal": "Search Google for how to debug terraform and open the results.",
+   "fingerprint": 72890,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 18086,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bterraform%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bterraform%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuizCvHz0hA-AlCw1ZHOVOAQBPdww%253A1790517245446%26source%3Dhp%26ei%3D_R-5ao-CGvXHkPIPupSreA%26iflsig%3DABILxe8AAAAAarkuDQfcMwXXfntE1njUAeR1IjKJeh3x%26ved%3D0ahUKEwjP9ILD9I6XAxX1I0QIHTrKCg8Q4dUDCCE%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bterraform%26gs_lp%3DEgdnd3Mtd2l6IhZob3cgdG8gZGVidWcgdGVycmFmb3JtMgUQABiABDIFEAAYgAQyCBAAGIAEGLQHMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMggQABiJBRiiBEijI1AMWAxwAXgAkAEAmAGXAqABlwKqAQMyLTG4AQPIAQD4AQGYAgKgApwCqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBTVLhxDS4zC-kgcFMS4wLjGgB7YGsgcDMi0xuAeZAsIHAzAuMsgHA4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIPA5NUGIjCT2laOFqcjt2rl2Pv3yE-5fCweW_gwqcsIpc_ProL2CZHgFb09LIzKKViNsRZFMDEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+terraform&sca_esv=3e3a42b854afc954&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.4303,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug terraform",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 469.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517245798"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.9027,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Actual Google search results page listing results for 'how to debug terraform'; The search has not been submitted/opened; only the search box with sug",
+     "page_changed": null,
+     "latency_ms": 665.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517245798"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517245798"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3f713d6719a984ea",
+   "source": "google",
+   "goal": "First search Google for python performance optimization, then search Google for swift cheat sheet.",
+   "fingerprint": 72890,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14865,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpython%2bperformance%2boptimization%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpython%2Bperformance%2Boptimization%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvH9WDpB565N8FNu584QW9KYP3cvg%253A1790517315713%26source%3Dhp%26ei%3DQyC5aqS2KuOrur8Pp_ebgAU%26iflsig%3DABILxe8AAAAAarkuU34syqrjQdZyO5Kk0mOHjLrQrhUE%26ved%3D0ahUKEwjk48Pk9I6XAxXjle4BHaf7BlAQ4dUDCCE%26uact%3D5%26oq%3Dpython%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ih9weXRob24gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkijB1AOWA5wAXgAkAEAmAGQAqABkAKqAQMyLTG4AQPIAQD4AQGYAgKgApYCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBV3US9f44WwNkgcFMS4wLjGgB5wGsgcDMi0xuAeSAsIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMbA5NUGIjDcWjfX-372Gmaj2k3r3CL9TJ_apuLEidY64iAJU_gH0URYjxgKMyXaGiPdrkzLfkQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=python+performance+optimization&sca_esv=3e3a42b8"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8959,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "python performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 562.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517315945"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9011,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 554.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517315945"
+    }
+   ]
+  }
+ ]
+}

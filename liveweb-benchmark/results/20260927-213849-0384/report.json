@@ -1,0 +1,953 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 63871,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:45:58+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 6.1,
+  "mean_duration_ms": 18610,
+  "decision_latency_ms": {
+   "p50": 503.3,
+   "p95": 614.5
+  },
+  "step_outcomes": {
+   "stale": 9,
+   "refused-empty-enter": 1,
+   "executed": 37,
+   "page changed since the decision (url or marker mismatch)": 1,
+   "done": 1
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 6.1
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-12052e646b5de6e7",
+   "source": "google",
+   "goal": "First search Google for llama.cpp security vulnerabilities, then search Google for code review interview questions.",
+   "fingerprint": 63871,
+   "status": "max-steps",
+   "verified": false,
+   "success": false,
+   "steps": 27,
+   "total_ms": 38389,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['review', 'code']]",
+    "checks": {
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/",
+    "final_title": "Google Search Overview and Improvements - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9104,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llama.cpp security vulnerabilities",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 510.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.5078,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 491.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516333829"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8829,
+     "target": "20",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 515.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516333829"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.9274,
+     "target": "3",
+     "target_label": "我们​的​做法",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 429.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search/howsearchworks/?fg=1"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.551,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 535.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.9372,
+     "target": "4",
+     "target_label": "Google ​搜索​的​运作​方式",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 406.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.9324,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 391.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.9402,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 441.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.9418,
+     "target": "13",
+     "target_label": "rigorous process",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 437.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.9301,
+     "target": "2",
+     "target_label": "Overview",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 403.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/rigorous-testing/"
+    },
+    {
+     "step": 11,
+     "operation": "CLICK",
+     "confidence": 0.9268,
+     "target": "2",
+     "target_label": "Overview",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 387.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/rigorous-testing/"
+    },
+    {
+     "step": 12,
+     "operation": "CLICK",
+     "confidence": 0.9302,
+     "target": "4",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 423.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    },
+    {
+     "step": 13,
+     "operation": "CLICK",
+     "confidence": 0.9335,
+     "target": "4",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 374.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 14,
+     "operation": "CLICK",
+     "confidence": 0.9365,
+     "target": "4",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 569.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 14,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 15,
+     "operation": "CLICK",
+     "confidence": 0.8629,
+     "target": "4",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 421.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 16,
+     "operation": "CLICK",
+     "confidence": 0.8048,
+     "target": "4",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 446.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 17,
+     "operation": "CLICK",
+     "confidence": 0.929,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 385.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 18,
+     "operation": "CLICK",
+     "confidence": 0.9258,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 534.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 19,
+     "operation": "CLICK",
+     "confidence": 0.9229,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 441.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 19,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 20,
+     "operation": "CLICK",
+     "confidence": 0.9302,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 463.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    },
+    {
+     "step": 21,
+     "operation": "CLICK",
+     "confidence": 0.9216,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 427.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 22,
+     "operation": "CLICK",
+     "confidence": 0.9261,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 422.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 23,
+     "operation": "CLICK",
+     "confidence": 0.9267,
+     "target": "7",
+     "target_label": "Learn more",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 387.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    },
+    {
+     "step": 24,
+     "operation": "CLICK",
+     "confidence": 0.9279,
+     "target": "4",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 383.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    },
+    {
+     "step": 25,
+     "operation": "CLICK",
+     "confidence": 0.929,
+     "target": "4",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 385.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-26ced3683a72331e",
+   "source": "google",
+   "goal": "First search Google for rust cheat sheet, then search Google for huggingface transformers open source alternatives.",
+   "fingerprint": 63871,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 10,
+   "total_ms": 22353,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=transformers'",
+    "checks": {
+     "url": "https://www.google.com/search?q=huggingface+transformers+open+source+alternatives+rust&sca_esv=3e3a42b854afc954&hl=en&gl",
+     "bot_challenge": false,
+     "group0": [
+      "transformers",
+      "huggingface"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=huggingface+transformers+open+source+alternatives+rust&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnuQuN3kwVBQqp9iC7K7UKVNYyhBbw%3A1790516381242&ei=nRy5arerDp3IkPIP6MaH6Ac&biw=1120&bih=780&oq=huggingface+transformers+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiMWh1Z2dpbmdmYWNlIHRyYW5zZm9ybWVycyBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMqBQgBGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRifBUjECFAYWBhwAXgBkAEAmAGSAqABkgKqAQMyLTG4AQHIAQD4AQGYAgKgAqACwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAOYAwCIBgGQBgySBwUxLjAuMaAHggWyBwMyLTG4B50CwgcFMC4xLjHIBweACAE&sclient=gws-wiz-serp",
+    "final_title": "huggingface transformers open source alternatives rust - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9005,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rust cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 498.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8718,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 553.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516380055"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8371,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 711.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=rust+cheat+sheet&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQns2WfFnGztDc06XxFe9JqI5WcM26g%3A1790516377993&source=hp&ei=mRy5areOO4HAkPIP8eTUqA0&iflsig=ABILxe8AAAAAarkqqY6RLN6K1-lqU-WhAgkcW2XqpOko&ved=0ahUKEwj3vrGl8Y6XAxUBIEQIHXEyFdUQ4dUDCDI&uact=5&oq=rust+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhBydXN0IGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSLYHUBhYGHABeACQAQCYAbwBoAG8AaoBAzAuMbgBA8gBAPgBAZgCAqACyQGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBfEFbNGcGbIMJ1iSBwMxLjGgB4cFsgcDMC4xuAfEAcIHBTAuMS4xyAcGgAgB&sclient=gws-wiz&sei=nBy5avLNONmP8L0P98yJsA8"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8367,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 595.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=rust+cheat+sheet&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQns2WfFnGztDc06XxFe9JqI5WcM26g%3A1790516377993&source=hp&ei=mRy5areOO4HAkPIP8eTUqA0&iflsig=ABILxe8AAAAAarkqqY6RLN6K1-lqU-WhAgkcW2XqpOko&ved=0ahUKEwj3vrGl8Y6XAxUBIEQIHXEyFdUQ4dUDCDI&uact=5&oq=rust+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhBydXN0IGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSLYHUBhYGHABeACQAQCYAbwBoAG8AaoBAzAuMbgBA8gBAPgBAZgCAqACyQGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBfEFbNGcGbIMJ1iSBwMxLjGgB4cFsgcDMC4xuAfEAcIHBTAuMS4xyAcGgAgB&sclient=gws-wiz&sei=nBy5avLNONmP8L0P98yJsA8"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8367,
+     "target": "30",
+     "target_label": "Rust cheat sheet | Opensource.com Open Source",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: target occluded",
+     "page_changed": false,
+     "latency_ms": 594.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=rust+cheat+sheet&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQns2WfFnGztDc06XxFe9JqI5WcM26g%3A1790516377993&source=hp&ei=mRy5areOO4HAkPIP8eTUqA0&iflsig=ABILxe8AAAAAarkqqY6RLN6K1-lqU-WhAgkcW2XqpOko&ved=0ahUKEwj3vrGl8Y6XAxUBIEQIHXEyFdUQ4dUDCDI&uact=5&oq=rust+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhBydXN0IGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSLYHUBhYGHABeACQAQCYAbwBoAG8AaoBAzAuMbgBA8gBAPgBAZgCAqACyQGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBfEFbNGcGbIMJ1iSBwMxLjGgB4cFsgcDMC4xuAfEAcIHBTAuMS4xyAcGgAgB&sclient=gws-wiz&sei=nBy5avLNONmP8L0P98yJsA8"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8367,
+     "target": "30",
+     "target_label": "Rust cheat sheet | Opensource.com Open Source",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: target occluded",
+     "page_changed": false,
+     "latency_ms": 591.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=rust+cheat+sheet&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQns2WfFnGztDc06XxFe9JqI5WcM26g%3A1790516377993&source=hp&ei=mRy5areOO4HAkPIP8eTUqA0&iflsig=ABILxe8AAAAAarkqqY6RLN6K1-lqU-WhAgkcW2XqpOko&ved=0ahUKEwj3vrGl8Y6XAxUBIEQIHXEyFdUQ4dUDCDI&uact=5&oq=rust+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhBydXN0IGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSLYHUBhYGHABeACQAQCYAbwBoAG8AaoBAzAuMbgBA8gBAPgBAZgCAqACyQGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBfEFbNGcGbIMJ1iSBwMxLjGgB4cFsgcDMC4xuAfEAcIHBTAuMS4xyAcGgAgB&sclient=gws-wiz&sei=nBy5avLNONmP8L0P98yJsA8"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8367,
+     "target": "30",
+     "target_label": "Rust cheat sheet | Opensource.com Open Source",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: target occluded",
+     "page_changed": false,
+     "latency_ms": 611.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=rust+cheat+sheet&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQns2WfFnGztDc06XxFe9JqI5WcM26g%3A1790516377993&source=hp&ei=mRy5areOO4HAkPIP8eTUqA0&iflsig=ABILxe8AAAAAarkqqY6RLN6K1-lqU-WhAgkcW2XqpOko&ved=0ahUKEwj3vrGl8Y6XAxUBIEQIHXEyFdUQ4dUDCDI&uact=5&oq=rust+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhBydXN0IGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSLYHUBhYGHABeACQAQCYAbwBoAG8AaoBAzAuMbgBA8gBAPgBAZgCAqACyQGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBfEFbNGcGbIMJ1iSBwMxLjGgB4cFsgcDMC4xuAfEAcIHBTAuMS4xyAcGgAgB&sclient=gws-wiz&sei=nBy5avLNONmP8L0P98yJsA8"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "huggingface transformers open source alternatives",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=rust+cheat+sheet&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQns2WfFnGztDc06XxFe9JqI5WcM26g%3A1790516377993&source=hp&ei=mRy5areOO4HAkPIP8eTUqA0&iflsig=ABILxe8AAAAAarkqqY6RLN6K1-lqU-WhAgkcW2XqpOko&ved=0ahUKEwj3vrGl8Y6XAxUBIEQIHXEyFdUQ4dUDCDI&uact=5&oq=rust+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhBydXN0IGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSLYHUBhYGHABeACQAQCYAbwBoAG8AaoBAzAuMbgBA8gBAPgBAZgCAqACyQGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBfEFbNGcGbIMJ1iSBwMxLjGgB4cFsgcDMC4xuAfEAcIHBTAuMS4xyAcGgAgB&sclient=gws-wiz&sei=nBy5avLNONmP8L0P98yJsA8"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.8235,
+     "target": "7",
+     "target_label": "huggingface transformers open source alternatives rust",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 633.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=rust+cheat+sheet&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQns2WfFnGztDc06XxFe9JqI5WcM26g%3A1790516377993&source=hp&ei=mRy5areOO4HAkPIP8eTUqA0&iflsig=ABILxe8AAAAAarkqqY6RLN6K1-lqU-WhAgkcW2XqpOko&ved=0ahUKEwj3vrGl8Y6XAxUBIEQIHXEyFdUQ4dUDCDI&uact=5&oq=rust+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhBydXN0IGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSLYHUBhYGHABeACQAQCYAbwBoAG8AaoBAzAuMbgBA8gBAPgBAZgCAqACyQGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBfEFbNGcGbIMJ1iSBwMxLjGgB4cFsgcDMC4xuAfEAcIHBTAuMS4xyAcGgAgB&sclient=gws-wiz&sei=nBy5avLNONmP8L0P98yJsA8"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.8684,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 614.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=huggingface+transformers+open+source+alternatives+rust&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnuQuN3kwVBQqp9iC7K7UKVNYyhBbw%3A1790516381242&ei=nRy5arerDp3IkPIP6MaH6Ac&biw=1120&bih=780&oq=huggingface+transformers+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiMWh1Z2dpbmdmYWNlIHRyYW5zZm9ybWVycyBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMqBQgBGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRifBUjECFAYWBhwAXgBkAEAmAGSAqABkgKqAQMyLTG4AQHIAQD4AQGYAgKgAqACwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAOYAwCIBgGQBgySBwUxLjAuMaAHggWyBwMyLTG4B50CwgcFMC4xLjHIBweACAE&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-88eadedcdb3999a2",
+   "source": "google",
+   "goal": "Search Google for express security vulnerabilities and open the results.",
+   "fingerprint": 63871,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14644,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dexpress%2bsecurity%2bvulnerabilities%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dexpress%2Bsecurity%2Bvulnerabilities%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnulnwZgjhTwDvF-XPNzPLYSwbqw9w%253A1790516407783%26source%3Dhp%26ei%3Dtxy5atjDLv2rur8PgdMP%26iflsig%3DABILxe8AAAAAarkqxwFPi3uoOgleQXpGxdPdwzbclPw1%26ved%3D0ahUKEwiY-8uz8Y6XAxX9le4BHYHpAwAQ4dUDCDI%26uact%3D5%26oq%3Dexpress%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IiBleHByZXNzIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllczIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCBAAGIAEGKIEMgUQABjvBTIIEAAYgAQYogRI2AdQFlgWcAF4AJABAJgBlwKgAZcCqgEDMi0xuAEDyAEA-AEBmAICoAKjAqgCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME8QWRB39njlzH8pIHBTEuMC4xoAemA7IHAzItMbgHnwLCBwMyLTLIBwiACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLq55NUGIjAdyII-eLh1CNgXp0MlttbrzWKe8G9Oa9FEtuvHtQ4y1exdVYQr4q0o6vPWEHt1hn4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=express+security+vulnerabilities&sca_esv=3e3a42b"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8865,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "express security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 504.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516408122"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9064,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 584.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516408122"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-4a46f5dfacd6fc6f",
+   "source": "google",
+   "goal": "First search Google for mongodb interview questions, then search Google for memory leak debugging cheat sheet.",
+   "fingerprint": 63871,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14742,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmongodb%2binterview%2bquestions%26sca_es",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmongodb%2Binterview%2Bquestions%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsjuxD8l-wVdAMM5gZSvI-t7KPa6w%253A1790516474657%26source%3Dhp%26ei%3D-hy5av_bJr7JkPIPsYGZCQ%26iflsig%3DABILxe8AAAAAarkrCjVVYw-ixi8876WOZKIYObBuBgn3%26ved%3D0ahUKEwj_wL3T8Y6XAxW-JEQIHbFAJgEQ4dUDCDY%26uact%3D5%26oq%3Dmongodb%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Ihttb25nb2RiIGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESO0HUBRYFHABeACQAQCYAZICoAGSAqoBAzItMbgBA8gBAPgBAZgCAqACowKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBfEFLRnTPVLVOU6SBwUxLjAuMaAHrgayBwMyLTG4B54CwgcFMi0xLjHIBwyACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGP255NUGIjCVG0qTa5z_IoBS7tFF48TEsxP2vn2UVcqc3vVYlOAP8uuMFW3nt7GDc2YOy_r4PjkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mongodb+interview+questions&sca_esv=3e3a42b854af"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8961,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mongodb interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 527.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516475130"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8873,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 603.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516475130"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5264406a6a7de17e",
+   "source": "google",
+   "goal": "First search Google for how to debug zig, then search Google for rabbitmq security vulnerabilities.",
+   "fingerprint": 63871,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14666,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bzig%26sca_esv%3d3e3a4",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bzig%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt0yUrHd-yOB5_GjeEJ6S4KsgxjeA%253A1790516541634%26source%3Dhp%26ei%3DPR25atGHJbDIkPIP0MuEWQ%26iflsig%3DABILxe8AAAAAarkrTYpdg4Z3egu7MpLHsnyvtAqRYfss%26ved%3D0ahUKEwiRmrXz8Y6XAxUwJEQIHdAlIQsQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bzig%26gs_lp%3DEgdnd3Mtd2l6IhBob3cgdG8gZGVidWcgemlnMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIIEAAYiQUYogQyBRAAGO8FSN4HUBJYEnABeACQAQCYAawCoAGsAqoBAzMtMbgBA8gBAPgBAZgCAqACuQKoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCmAME8QVKde-P9cfZ9pIHBTEuMy0xoAfZA7IHAzMtMbgHtQLCBwMyLTLIBwqACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMC65NUGIjBwlpEbLyKumKj9XTC9M14ZGdioP1WTPBYSVryY2goxXt0R_wdlWdAis6mrRczmPU8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+zig&sca_esv=3e3a42b854afc954&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8793,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug zig",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 525.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516542109"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8796,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 585.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516542109"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d6e3171be2cc690c",
+   "source": "google",
+   "goal": "First search Google for how to debug elixir, then search Google for llama.cpp interview questions.",
+   "fingerprint": 63871,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14825,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2belixir%26sca_esv%3d3e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Belixir%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsjS0woTEcOcXoosDecoc6tlMBglA%253A1790516608489%26source%3Dhp%26ei%3DgB25aoOvHKi5kPIP07rg0AY%26iflsig%3DABILxe8AAAAAarkrkBgwGoA_iRTmOU8-A8t4C3OEP2Zn%26ved%3D0ahUKEwiD76WT8o6XAxWoHEQIHVMdGGoQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Belixir%26gs_lp%3DEgdnd3Mtd2l6IhNob3cgdG8gZGVidWcgZWxpeGlyMgYQABgWGB4yBRAAGO8FMgUQABjvBTIIEAAYiQUYogRIrgdQFVgVcAF4AJABAJgBpAKgAaQCqgEDMi0xuAEDyAEA-AEBmAICoAKyAqgCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME8QX6s7j0O6g3O5IHBTEuMy0xoAf_AbIHAzMtMbgHrQLCBwMyLTLIBwqACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIO75NUGIjCNaI7BR5nTLxM0HA6MuLThurjJ1DTE9MyPW4FkgQR9i1lhwY-AWIQnrm8EGTnsDisyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+elixir&sca_esv=3e3a42b854afc954&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8887,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug elixir",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 577.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516608808"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8875,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 538.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516608808"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-559d63a2cf065c19",
+   "source": "google",
+   "goal": "First search Google for kotlin performance optimization, then search Google for retrieval augmented generation migration guide.",
+   "fingerprint": 63871,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14649,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dkotlin%2bperformance%2boptimization%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dkotlin%2Bperformance%2Boptimization%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvRZm9toTR4JAKHZpskVPHKM-z5Dg%253A1790516675525%26source%3Dhp%26ei%3Dwx25avf_Hc2ckPIPrq3ZuQ0%26iflsig%3DABILxe8AAAAAarkr08DdiNGZ8YyZKzI6rf360g6dLn8-%26ved%3D0ahUKEwi37aCz8o6XAxVNDkQIHa5WNtcQ4dUDCDI%26uact%3D5%26oq%3Dkotlin%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ih9rb3RsaW4gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIEMggQABiABBiiBEiwB1AYWBhwAXgAkAEAmAGiAqABogKqAQMyLTG4AQPIAQD4AQGYAgKgArICqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBaNoCgRv2jiJkgcFMS4zLTGgB54DsgcDMy0xuAeuAsIHAzItMsgHCoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMa75NUGIjDA0snu3fsfw6GmeppKfuV7MovWUva8Buwm9k0jZROcaszDL8MTcadFl0bvEcmw3H8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=kotlin+performance+optimization&sca_esv=3e3a42b8"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9044,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kotlin performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 503.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516675847"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9059,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 542.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516675847"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d9d1898e749c0495",
+   "source": "google",
+   "goal": "First search Google for react cheat sheet, then search Google for llama.cpp tutorial.",
+   "fingerprint": 63871,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14609,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dreact%2bcheat%2bsheet%26sca_esv%3d3e3a42",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dreact%2Bcheat%2Bsheet%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvX2WL4HPwlVNYD4hOCiw1a2sAPFg%253A1790516742368%26source%3Dhp%26ei%3DBh65asekFdvMkPIP1pmK8A0%26iflsig%3DABILxe8AAAAAarksFphv_-kAOfcQBzEwZcHkmgo4rm2G%26ved%3D0ahUKEwjHv5HT8o6XAxVbJkQIHdaMAt4Q4dUDCDI%26uact%3D5%26oq%3Dreact%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhFyZWFjdCBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5ItQdQElgScAF4AJABAJgBkgKgAZICqgEDMi0xuAEDyAEA-AEBmAICoAKpAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QWj6WnLXdrtxJIHBTEuMC4xoAerBbIHAzItMbgHpQLCBwUyLTEuMcgHEoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIm85NUGIjCs6ClvJjpxag4U6uidJDKd5s2BM9QdoD75VaebUE9c9PfM_cxKgbOdjvVCqB77G2kyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=react+cheat+sheet&sca_esv=3e3a42b854afc954&hl=en"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9073,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "react cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 527.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516742713"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8548,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 560.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516742713"
+    }
+   ]
+  }
+ ]
+}

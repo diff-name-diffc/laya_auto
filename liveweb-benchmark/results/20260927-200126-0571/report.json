@@ -1,0 +1,554 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 85581,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T20:09:44+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.6,
+  "mean_duration_ms": 16091,
+  "decision_latency_ms": {
+   "p50": 500.6,
+   "p95": 647.0
+  },
+  "step_outcomes": {
+   "executed": 16,
+   "stale": 1,
+   "refused-empty-enter": 1,
+   "done-rejected": 3
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.6
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-4f7c6ef11b9dc511",
+   "source": "google",
+   "goal": "First search Google for react security vulnerabilities, then search Google for how to debug rabbitmq.",
+   "fingerprint": 85581,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14821,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2brabbitmq%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Brabbitmq%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuNmK_04zY0jseplUhdU1vEz9DF-g%253A1790510489630%26source%3Dhp%26ei%3DmQW5asySJeOPur8Pt93qoAw%26iflsig%3DABILxe8AAAAAarkTqW1ngm5SkNweMj0kN70twEFqy_XQ%26ved%3D0ahUKEwiMw8yt246XAxXjh-4BHbeuGsQQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Brabbitmq%26gs_lp%3DEgdnd3Mtd2l6IhVob3cgdG8gZGVidWcgcmFiYml0bXEyBhAAGBYYHjIGEAAYFhgeMggQABiJBRiiBDIFEAAY7wVIwQdQF1gXcAF4AJABAJgByQGgAckBqgEDMi0xuAEDyAEA-AEBmAICoALTAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMG8QWRlJLAEdq3E5IHBTEuMC4xoAezArIHAzItMbgHzAHCBwUwLjEuMcgHB4AIAQ%26sclient%3Dgws-wiz%26sei%3DnAW5ar3LH9ChkPIPub3ZkQo&hl=en&q=EgQm0XtnGJyL5NUGIjDDy5IdabIsO-mvilG-Pu0jt1YHJWxQquvHFi_2lm0YDQqXyCl5D87rCGAwFlOraxIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+rabbitmq&sca_esv=18a60b01d202c9ee&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9052,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug rabbitmq",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 479.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8198,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 553.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510491170"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c314c81399d72909",
+   "source": "google",
+   "goal": "Search Google for flask migration guide and open the results.",
+   "fingerprint": 85581,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 21866,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dflask%2bmigration%2bguide%26sca_esv%3d18",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dflask%2Bmigration%2Bguide%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt2Bc4xttyudIf0ZSIIphJC8oKoSA%253A1790510556858%26source%3Dhp%26ei%3D3AW5apDhMtbMkPIPqImIiAM%26iflsig%3DABILxe8AAAAAarkT7KdwU7XV_Hhr2NWA2_QN9zAEa9S8%26ved%3D0ahUKEwiQv9PN246XAxVWJkQIHagEAjEQ4dUDCDI%26oq%3Dflask%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhVmbGFzayBtaWdyYXRpb24gZ3VpZGUyBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyCBAAGIkFGKIEMggQABiABBiiBDIIEAAYiQUYogRI4iFQDVgNcAF4AJABAJgB0gGgAdIBqgEDMi0xuAEMyAEA-AEBmAICoALaAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QXV2zpCpLqklJIHBTEuMC4xoAfvA7IHAzItMbgH1gHCBwMwLjLIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOaL5NUGIjBkGjXQ3Q7vaLUJTLDq4TH4aPf5rAuD0f-jrkBVQ57EEJs-ICkcZTg5Q1l4B2IuFMgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=flask+migration+guide&sca_esv=18a60b01d202c9ee&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8982,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "flask migration guide",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 481.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8963,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 477.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510558373"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.902,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for flask migration guide",
+     "page_changed": null,
+     "latency_ms": 488.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510558373"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "flask migration guide",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510558373"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9161,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'flask migration guide' (only the query typed in the search box and autocomplete suggestions are shown; the search has not been run",
+     "page_changed": null,
+     "latency_ms": 617.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510558373"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:30",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510558373"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-bb407dd6e82792bf",
+   "source": "google",
+   "goal": "Search Google for nginx migration guide and open the results.",
+   "fingerprint": 85581,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14535,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dnginx%2bmigration%2bguide%26sca_esv%3d18",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dnginx%2Bmigration%2Bguide%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt7vfNop_ZhCxsQg7gb1_jOZTLkoA%253A1790510631114%26source%3Dhp%26ei%3DJwa5asbdBYfYkPIPqYXg2Qs%26iflsig%3DABILxe8AAAAAarkUN_-3F0MrUAgKOeeA50lqAMzQfWF2%26ved%3D0ahUKEwiGjYjx246XAxUHLEQIHakCOLsQ4dUDCDI%26uact%3D5%26oq%3Dnginx%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhVuZ2lueCBtaWdyYXRpb24gZ3VpZGUyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBRAAGO8FMgUQABjvBTIIEAAYiQUYogRIqAdQDlgOcAF4AJABAJgB3QGgAd0BqgEDMi0xuAEDyAEA-AEBmAICoALlAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QXab7TiEfuM_JIHBTEuMC4xoAeKA7IHAzItMbgH4QHCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKmM5NUGIjCJ_Y6EON6G7cB-FDDFHhqm9m2PUcGmRZ7k-UJs4_82fgEjqKr5XZq6Uto_651IWywyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=nginx+migration+guide&sca_esv=18a60b01d202c9ee&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8709,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "nginx migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 492.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510631425"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.908,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 543.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510631425"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8d70391f61e94470",
+   "source": "google",
+   "goal": "Search Google for mysql security vulnerabilities and open the results.",
+   "fingerprint": 85581,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14894,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmysql%2bsecurity%2bvulnerabilities%26sca",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmysql%2Bsecurity%2Bvulnerabilities%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntJPlpTWeWtGuMVf6DTojRXGlaE9Q%253A1790510697853%26source%3Dhp%26ei%3DaQa5asP3MqPIkPIPzqaEqAc%26iflsig%3DABILxe8AAAAAarkUeYNW6EW2cEVqMxQMJV4epSIjs2QS%26ved%3D0ahUKEwiD0PGQ3I6XAxUjJEQIHU4TAXUQ4dUDCDI%26uact%3D5%26oq%3Dmysql%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6Ih5teXNxbCBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIFEAAY7wVI1QhQDlgOcAF4AJABAJgB2QGgAdkBqgEDMi0xuAEDyAEA-AEBmAICoALgAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QWd6bM419_BKpIHBTEuMC4xoAeIBLIHAzItMbgH3AHCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOyM5NUGIjBDOKfFIuZAiv32IQMgU14i1f8gO_8T5Eh08bm9nBqPU5buEAKwvQQn5Z5mUywz1I0yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mysql+security+vulnerabilities&sca_esv=18a60b01d"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9041,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mysql security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 522.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510698063"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9001,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 716.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510698063"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5545b983eb76bee3",
+   "source": "google",
+   "goal": "Search Google for spring boot open source alternatives and open the results.",
+   "fingerprint": 85581,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14461,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dspring%2bboot%2bopen%2bsource%2balternat",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dspring%2Bboot%2Bopen%2Bsource%2Balternatives%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntyKukI8DwWFYWBEKf_o7unUAslKA%253A1790510764895%26source%3Dhp%26ei%3DrAa5apHnNJvLkPIPucGtsAs%26iflsig%3DABILxe8AAAAAarkUvDx29yxhfMkKiMtZ3o9Rp_-VvMlU%26ved%3D0ahUKEwiR7eyw3I6XAxWbJUQIHblgC7YQ4dUDCDI%26uact%3D5%26oq%3Dspring%2Bboot%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiRzcHJpbmcgYm9vdCBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABSPQGUA9YD3ABeACQAQCYAecBoAHnAaoBAzItMbgBA8gBAPgBAZgCAqAC8AGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFA3A9L6AHy5WSBwUxLjAuMaAH8gSyBwMyLTG4B-wBwgcFMC4xLjHIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGK-N5NUGIjB-k_FOYj5bOCfxL1YFoksDOgIo2Eft8ZnyP2-MSAq76zBG7LK9dEfQ09Q417MIpXEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=spring+boot+open+source+alternatives&sca_esv=18a"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8631,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "spring boot open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 498.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510765048"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8948,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 500.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510765048"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8a52ce8cffb62f4b",
+   "source": "google",
+   "goal": "Search Google for pytorch open source alternatives and open the results.",
+   "fingerprint": 85581,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14443,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpytorch%2bopen%2bsource%2balternatives%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpytorch%2Bopen%2Bsource%2Balternatives%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvY7M9DMXni4Wlf1qFFg2hFHuVt4w%253A1790510831515%26source%3Dhp%26ei%3D7wa5aon7Hf2vur8P06qMkAo%26iflsig%3DABILxe8AAAAAarkU_189JH8gFmTjvhkvvpCzUbh7pjpJ%26ved%3D0ahUKEwjJrs_Q3I6XAxX9l-4BHVMVA6IQ4dUDCDI%26uact%3D5%26oq%3Dpytorch%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiBweXRvcmNoIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABSOwGUA1YDXABeACQAQCYAeoBoAHqAaoBAzItMbgBA8gBAPgBAZgCAqAC8wGoAgrCAgoQABgDGI8BGOoCmAME8QWF6xgGJD-EOJIHBTEuMC4xoAfQArIHAzItMbgH7wHCBwUwLjEuMcgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPKN5NUGIjDLMSibaqIZAXQ1eEYMvZj-pV1ntEv1k0QIcIAgPsfZ0IsKVklLPGWY1CQPeHW3c3gyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=pytorch+open+source+alternatives&sca_esv=18a60b0"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9037,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "pytorch open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 528.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510831670"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8325,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 489.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510831670"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8f24424d8c7fa92f",
+   "source": "google",
+   "goal": "First search Google for golang interview questions, then search Google for how to debug typescript.",
+   "fingerprint": 85581,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 18891,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2btypescript%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Btypescript%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt0ZKM8ocnXuNgImThHvCihO6Ge4A%253A1790510898106%26source%3Dhp%26ei%3DMge5avW6Bb7JkPIPsYGZCQ%26iflsig%3DABILxe8AAAAAarkVQvKmvfwgArnLVllnsmhU9Cz4LMAK%26ved%3D0ahUKEwj1m7Dw3I6XAxW-JEQIHbFAJgEQ4dUDCDI%26oq%3Dhow%2Bto%2Bdebug%2Btypescript%26gs_lp%3DEgdnd3Mtd2l6Ihdob3cgdG8gZGVidWcgdHlwZXNjcmlwdDIIEAAYgAQYtAcyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjfKFAPWA9wAXgAkAEAmAHXAaAB1wGqAQMyLTG4AQzIAQD4AQGYAgKgAt8BqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBS9dO0UuYf1UkgcFMS4wLjGgB5QGsgcDMi0xuAfaAcIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLmO5NUGIjApBMZcveAhhAjhjrfALYpkLh05orbs1CDKczJu1guj261CGSvYTMPTRIctLHXiodYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+typescript&sca_esv=18a60b01d202c9ee"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8973,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug typescript",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 529.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510898275"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.825,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for how to debug typescript",
+     "page_changed": null,
+     "latency_ms": 647.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510898275"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510898275"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-77e9de0c5ac88d84",
+   "source": "google",
+   "goal": "Search Google for c++ interview questions and open the results.",
+   "fingerprint": 85581,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14812,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dc%252b%252b%2binterview%2bquestions%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dc%252B%252B%2Binterview%2Bquestions%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt19Q1ZA59lYM2o7RTTneKuoP7moQ%253A1790510969170%26source%3Dhp%26ei%3DeQe5ar2iCfbckPIPrZiViAc%26iflsig%3DABILxe8AAAAAarkViciVB-l-6Kr4TAnpmcLcA99y0mUH%26ved%3D0ahUKEwj9wqGS3Y6XAxV2LkQIHS1MBXEQ4dUDCDI%26uact%3D5%26oq%3Dc%252B%252B%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhdjKysgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBRAAGIAEMggQABiABBi0BzIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAdI6AdQDlgOcAF4AJABAJgB0wGgAdMBqgEDMi0xuAEDyAEA-AEBmAICoALaAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QVZo93qjCjZlJIHBTEuMC4xoAeqBrIHAzItMbgH1gHCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPuO5NUGIjD5dJRvTFF99MTKB7gKFu2HHCh1l7Lj2YAr_xxfPnGPkJCHus7nLCtZNGANYXLZkhEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=c%2B%2B+interview+questions&sca_esv=18a60b01d202"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9008,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "c++ interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 503.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510969339"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8906,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 604.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510969339"
+    }
+   ]
+  }
+ ]
+}

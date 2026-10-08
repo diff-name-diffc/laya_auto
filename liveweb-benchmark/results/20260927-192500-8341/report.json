@@ -1,0 +1,695 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 87019,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:30:52+0800",
+  "n_tasks": 8,
+  "success": 3,
+  "success_rate": 0.375,
+  "verified": 3,
+  "verified_rate": 0.375,
+  "found_but_not_stopped": 0,
+  "mean_steps": 3.8,
+  "mean_duration_ms": 14709,
+  "decision_latency_ms": {
+   "p50": 561.6,
+   "p95": 767.8
+  },
+  "step_outcomes": {
+   "executed": 21,
+   "stale": 2,
+   "refused-empty-enter": 1,
+   "done-rejected": 2,
+   "done": 3,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 3,
+    "success_rate": 0.375,
+    "verified": 3,
+    "verified_rate": 0.375,
+    "mean_steps": 3.8
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-3d4fe6a831f078ec",
+   "source": "google",
+   "goal": "First search Google for kubernetes open source alternatives, then search Google for rust cheat sheet.",
+   "fingerprint": 87019,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14855,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dkubernetes%2bopen%2bsource%2balternative",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dkubernetes%2Bopen%2Bsource%2Balternatives%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntceqpihvzWnAzFPfueTPFpew6YDw%253A1790508303147%26source%3Dhp%26ei%3DD_24apvmB7vIkPIP-sHHiQ8%26iflsig%3DABILxe8AAAAAarkLH2Vu7u_Ho1lHqtxo-Nt0q_hEfDen%26ved%3D0ahUKEwjbqYCb046XAxU7JEQIHfrgMfEQ4dUDCDI%26uact%3D5%26oq%3Dkubernetes%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiNrdWJlcm5ldGVzIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FSMMHUBBYEHABeACQAQCYAdQBoAHUAaoBAzItMbgBA8gBAPgBAZgCAqAC2wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBfEFevkebAmn3vaSBwUxLjAuMaAH3gOyBwMyLTG4B9YBwgcFMC4xLjHIBwaACAE%26sclient%3Dgws-wiz%26sei%3DEv24auvQDorukPIPloWo4Aw&hl=en&q=EgQm0XtnGJL649UGIjB25QAipcoavaE4PmcRz-zwmvuauulRoGYOUeZmPD239_tFBzeFOKF_dlZKDSzqhf0yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=kubernetes+open+source+alternatives&sca_esv=18a6"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9005,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kubernetes open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 495.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9055,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 570.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508305141"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a9afbe25b3348dcc",
+   "source": "google",
+   "goal": "Search Google for design patterns performance optimization and open the results.",
+   "fingerprint": 87019,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 9,
+   "total_ms": 25243,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=design+patterns+performance+optimization&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=appe",
+     "bot_challenge": false,
+     "group0": [
+      "patterns",
+      "design"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=design+patterns+performance+optimization&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuLdUsymkeCpV1h9ULXW6RnTyYyzw%3A1790508370583&source=hp&ei=Uv24avumIt7ckPIP-sSaQQ&iflsig=ABILxe8AAAAAarkLYrnK83K34wRzftorbZdhueyGDKQU&ved=0ahUKEwj7l5S7046XAxVeLkQIHXqiJggQ4dUDCDI&uact=5&oq=design+patterns+performance+optimization&gs_lp=Egdnd3Mtd2l6IihkZXNpZ24gcGF0dGVybnMgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgUQIRigATIFECEYoAEyBRAhGKABSNGkAVDzHljzHnAEeACQAQCYAdEBoAHRAaoBAzItMbgBA8gBAPgBAZgCBaAC2wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFJ7ytjkFvyX-SBwU0LjAuMaAH3wOyBwMyLTG4B9MBwgcFMy4xLjHIBweACAE&sclient=gws-wiz",
+    "final_title": "design patterns performance optimization - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.886,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "design patterns performance optimization",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 469.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.904,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 458.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508371905"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8428,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 527.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508371905"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8161,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 577.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508371905"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8552,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 572.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508371905"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "design patterns performance optimization",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508371905"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.9091,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for 'design patterns performance optimization' — only the query typed in the search box with autocomplete suggestions is visible",
+     "page_changed": null,
+     "latency_ms": 695.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508371905"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508371905"
+    },
+    {
+     "step": 7,
+     "operation": "DONE",
+     "confidence": 0.9491,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 560.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=design+patterns+performance+optimization&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuLdUsymkeCpV1h9ULXW6RnTyYyzw%3A1790508370583&source=hp&ei=Uv24avumIt7ckPIP-sSaQQ&iflsig=ABILxe8AAAAAarkLYrnK83K34wRzftorbZdhueyGDKQU&ved=0ahUKEwj7l5S7046XAxVeLkQIHXqiJggQ4dUDCDI&uact=5&oq=design+patterns+performance+optimization&gs_lp=Egdnd3Mtd2l6IihkZXNpZ24gcGF0dGVybnMgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgUQIRigATIFECEYoAEyBRAhGKABSNGkAVDzHljzHnAEeACQAQCYAdEBoAHRAaoBAzItMbgBA8gBAPgBAZgCBaAC2wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFJ7ytjkFvyX-SBwU0LjAuMaAH3wOyBwMyLTG4B9MBwgcFMy4xLjHIBweACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-da1114f6593522b8",
+   "source": "google",
+   "goal": "Search Google for redis best practices and open the results.",
+   "fingerprint": 87019,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4045,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=redis+best+practices&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=appeqntvdponsqili42mruz5",
+     "bot_challenge": false,
+     "group0": [
+      "redis"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=redis+best+practices&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQntVDpOnsQiLi42MRUz5QunewZcC6A%3A1790508403205&source=hp&ei=c_24aoTiCrnKkPIP0aDbwQg&iflsig=ABILxe8AAAAAarkLg9IPb-3zT3lI9XSzB9QzZ3a5CM_h&ved=0ahUKEwjE59rK046XAxU5JUQIHVHQNogQ4dUDCDI&uact=5&oq=redis+best+practices&gs_lp=Egdnd3Mtd2l6IhRyZWRpcyBiZXN0IHByYWN0aWNlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5InAlQDlgOcAF4AJABAJgB0QGgAdEBqgEDMi0xuAEDyAEA-AEBmAICoALYAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QVWRfBSBxLZg5IHBTEuMC4xoAfVBbIHAzItMbgH1QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz",
+    "final_title": "redis best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8882,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 655.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508403480"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8772,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 800.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508403480"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9037,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 550.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=redis+best+practices&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQntVDpOnsQiLi42MRUz5QunewZcC6A%3A1790508403205&source=hp&ei=c_24aoTiCrnKkPIP0aDbwQg&iflsig=ABILxe8AAAAAarkLg9IPb-3zT3lI9XSzB9QzZ3a5CM_h&ved=0ahUKEwjE59rK046XAxU5JUQIHVHQNogQ4dUDCDI&uact=5&oq=redis+best+practices&gs_lp=Egdnd3Mtd2l6IhRyZWRpcyBiZXN0IHByYWN0aWNlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5InAlQDlgOcAF4AJABAJgB0QGgAdEBqgEDMi0xuAEDyAEA-AEBmAICoALYAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QVWRfBSBxLZg5IHBTEuMC4xoAfVBbIHAzItMbgH1QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d80dda6a47f99a3b",
+   "source": "google",
+   "goal": "Search Google for redis open source alternatives and open the results.",
+   "fingerprint": 87019,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 4,
+   "total_ms": 6793,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=redis+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=appeqnuxuh0d5z",
+     "bot_challenge": false,
+     "group0": [
+      "redis"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=redis+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuXUh0D5zbPOC5Uip3080P-ygjf8A%3A1790508417129&ei=gf24ap7FB-q_kPIP6qWxyAs&biw=1120&bih=780&ved=2ahUKEwjeia7R046XAxXqH0QIHepSDLkQ4dUDegQIBhAN&oq=redis+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiHnJlZGlzIG9wZW4gc291cmNlIGFsdGVybmF0aXZlc0gAUABYAHAAeACQAQCYAQCgAQCqAQC4AQzIAQCYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwCACAE&sclient=gws-wiz-serp",
+    "final_title": "redis open source alternatives - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9034,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 510.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508414717"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.8801,
+     "target": "12",
+     "target_label": "redis open source alternatives",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 582.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508414717"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.5318,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 767.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=redis+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuC1B3vB1Q8rZcXCas7cVztQclG5w%3A1790508414441&source=hp&ei=fv24aoPCGa6fkPIP6vKy4QE&iflsig=ABILxe8AAAAAarkLjoOuMUiW8ByBuGZ82LVPjNc24zgy&oq=redis+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih5yZWRpcyBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMqBggAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMggQABiABBiiBDIIEAAYgAQYogRI6gdQC1gLcAF4AJABAJgB2gGgAdoBqgEDMi0xuAEByAEA-AEBmAICoALeAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QUbgU4qouxkmJIHBTEuMC4xoAeYBrIHAzItMbgH3AHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8862,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 575.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=redis+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnuXUh0D5zbPOC5Uip3080P-ygjf8A%3A1790508417129&ei=gf24ap7FB-q_kPIP6qWxyAs&biw=1120&bih=780&ved=2ahUKEwjeia7R046XAxXqH0QIHepSDLkQ4dUDegQIBhAN&oq=redis+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiHnJlZGlzIG9wZW4gc291cmNlIGFsdGVybmF0aXZlc0gAUABYAHAAeACQAQCYAQCgAQCqAQC4AQzIAQCYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwCACAE&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a38ad6104595d761",
+   "source": "google",
+   "goal": "First search Google for llama.cpp open source alternatives, then search Google for model quantization interview questions.",
+   "fingerprint": 87019,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 22606,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dllama.cpp%2bopen%2bsource%2balternatives",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dllama.cpp%2Bopen%2Bsource%2Balternatives%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvnSmUCrhBhO9sEGudiDBaSFxamjg%253A1790508430980%26ei%3Djv24auK3O8S_kPIP37aS2QM%26biw%3D1120%26bih%3D780%26ved%3D2ahUKEwjitvvX046XAxXEH0QIHV-bJDsQ4dUDegQIBhAN%26oq%3Dllama.cpp%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiImxsYW1hLmNwcCBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB%26sclient%3Dgws-wiz-serp&hl=en&q=EgQm0XtnGJf749UGIjBPxXDPkS0vvr7nOriZUpEzzmTuWsKxMf7QqNXg_HaNlPied4fs4wf1ysVNynU96skyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=llama.cpp+open+source+alternatives&sca_esv=18a60"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9065,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llama.cpp open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 453.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508428579"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8231,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 526.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508428579"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8118,
+     "target": "17",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 570.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=llama.cpp+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQntmIGpAm8zfWY-m7AnBvE3Y3ll69Q%3A1790508428396&source=hp&ei=jP24ariJF8zBkPIPxPng-QI&iflsig=ABILxe8AAAAAarkLnG-1BkKtWvUMvmIi6Wy3rz2Q1wyF&ved=0ahUKEwi4_9zW046XAxXMIEQIHcQ8OC8Q4dUDCDI&uact=5&oq=llama.cpp+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiJsbGFtYS5jcHAgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUiMB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuQBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBd0Qev4iQmhdkgcFMS4wLjGgB84EsgcDMi0xuAffAcIHBTEuMC4xyAcEgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9078,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'model quantization interview questions' (page still shows results for 'llama.cpp open source alternatives')",
+     "page_changed": null,
+     "latency_ms": 571.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=llama.cpp+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQntmIGpAm8zfWY-m7AnBvE3Y3ll69Q%3A1790508428396&source=hp&ei=jP24ariJF8zBkPIPxPng-QI&iflsig=ABILxe8AAAAAarkLnG-1BkKtWvUMvmIi6Wy3rz2Q1wyF&ved=0ahUKEwi4_9zW046XAxXMIEQIHcQ8OC8Q4dUDCDI&uact=5&oq=llama.cpp+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiJsbGFtYS5jcHAgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUiMB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuQBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBd0Qev4iQmhdkgcFMS4wLjGgB84EsgcDMi0xuAffAcIHBTEuMC4xyAcEgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization interview questions",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=llama.cpp+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQntmIGpAm8zfWY-m7AnBvE3Y3ll69Q%3A1790508428396&source=hp&ei=jP24ariJF8zBkPIPxPng-QI&iflsig=ABILxe8AAAAAarkLnG-1BkKtWvUMvmIi6Wy3rz2Q1wyF&ved=0ahUKEwi4_9zW046XAxXMIEQIHcQ8OC8Q4dUDCDI&uact=5&oq=llama.cpp+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiJsbGFtYS5jcHAgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUiMB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuQBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBd0Qev4iQmhdkgcFMS4wLjGgB84EsgcDMi0xuAffAcIHBTEuMC4xyAcEgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8205,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 597.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=llama.cpp+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQntmIGpAm8zfWY-m7AnBvE3Y3ll69Q%3A1790508428396&source=hp&ei=jP24ariJF8zBkPIPxPng-QI&iflsig=ABILxe8AAAAAarkLnG-1BkKtWvUMvmIi6Wy3rz2Q1wyF&ved=0ahUKEwi4_9zW046XAxXMIEQIHcQ8OC8Q4dUDCDI&uact=5&oq=llama.cpp+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiJsbGFtYS5jcHAgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUiMB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuQBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBd0Qev4iQmhdkgcFMS4wLjGgB84EsgcDMi0xuAffAcIHBTEuMC4xyAcEgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d090e61dc97a2d07",
+   "source": "google",
+   "goal": "Search Google for huggingface transformers release notes and open the results.",
+   "fingerprint": 87019,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14821,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhuggingface%2btransformers%2brelease%2bn",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhuggingface%2Btransformers%2Brelease%2Bnotes%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntsjZIFCQOOuMftVD-GWsEVmXBu3Q%253A1790508503208%26source%3Dhp%26ei%3D1_24auWwC9avur8Ppb636Qo%26iflsig%3DABILxe8AAAAAarkL5_FsonALnwj7QUUoJKN9oPvq0axT%26ved%3D0ahUKEwil-LL6046XAxXWl-4BHSXfLa0Q4dUDCDI%26uact%3D5%26oq%3Dhuggingface%2Btransformers%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IiZodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgcmVsZWFzZSBub3RlczIGEAAYFhgeMgUQABjvBTIIEAAYiQUYogQyBRAAGO8FSLkHUBBYEHABeACQAQCYAfQBoAH0AaoBAzItMbgBA8gBAPgBAZgCAqAC_AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFw3qVOGl12Z6SBwUxLjAuMaAH1gKyBwMyLTG4B_gBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNn749UGIjAvTO1y5IHYbRvDU3Rv24GKKypJjy-XaQp-Sfg103r3Jyf8YLERxNEAwvRyA-msAhsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=huggingface+transformers+release+notes&sca_esv=1"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8615,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "huggingface transformers release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 489.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508503363"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9028,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 561.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508503363"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-eb61042263c48e31",
+   "source": "google",
+   "goal": "First search Google for svelte open source alternatives, then search Google for vllm best practices.",
+   "fingerprint": 87019,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14638,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dsvelte%2bopen%2bsource%2balternatives%26",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsvelte%2Bopen%2Bsource%2Balternatives%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsPqi2hMlMetd3bvzUxlelrQLLlKQ%253A1790508570246%26source%3Dhp%26ei%3DGv64aq7xDYSP8L0PjqmroQ8%26iflsig%3DABILxe8AAAAAarkMKh8jNoCH1hp017HM-_2IuFTeOEYe%26ved%3D0ahUKEwiu5q6a1I6XAxWEB7wBHY7UKvQQ4dUDCDI%26uact%3D5%26oq%3Dsvelte%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ih9zdmVsdGUgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUiUB1AQWBBwAXgAkAEAmAHjAaAB4wGqAQMyLTG4AQPIAQD4AQGYAgKgAu4BqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBah912Z33ULykgcFMS4wLjGgB7QEsgcDMi0xuAfqAcIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJ3849UGIjDzlfL36Q6LeEc_sAZUDeruDcKHk3tBseuctSVobwlGKv0KKK9799babPMmW9Mp60cyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=svelte+open+source+alternatives&sca_esv=18a60b01"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9001,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "svelte open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 602.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508570399"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9007,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 521.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508570399"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-84def353ba7e3ac0",
+   "source": "google",
+   "goal": "First search Google for laravel tutorial, then search Google for tensorflow tutorial.",
+   "fingerprint": 87019,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14670,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlaravel%2btutorial%26sca_esv%3d18a60b01d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlaravel%2Btutorial%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntriM2S3ep7kU6MsOf8myDVehxJDg%253A1790508637100%26source%3Dhp%26ei%3DXf64aufpBPD8kPIPw9iB-A8%26iflsig%3DABILxe8AAAAAarkMbZEmkiJwNdiHGCceND85bN3J0FSx%26ved%3D0ahUKEwinjJ-61I6XAxVwPkQIHUNsAP8Q4dUDCDY%26uact%3D5%26oq%3Dlaravel%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhBsYXJhdmVsIHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjPB1AQWBBwAXgAkAEAmAHTAaAB0wGqAQMyLTG4AQPIAQD4AQGYAgKgAtwBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBbvIzgfjYyYykgcFMS4wLjGgB_8EsgcDMi0xuAfYAcIHAzItMsgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGN_849UGIjA7gAZ27o5t9xG4uXMaROZ_W_KlTQ5uCCFqSSWXbUUzqC7U5X4slZmN2EZZlorJgigyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=laravel+tutorial&sca_esv=18a60b01d202c9ee&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8899,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "laravel tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 494.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508637254"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8787,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 581.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508637254"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,897 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 43807,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:19:47+0800",
+  "n_tasks": 8,
+  "success": 1,
+  "success_rate": 0.125,
+  "verified": 1,
+  "verified_rate": 0.125,
+  "found_but_not_stopped": 0,
+  "mean_steps": 5.6,
+  "mean_duration_ms": 20005,
+  "decision_latency_ms": {
+   "p50": 569.5,
+   "p95": 708.1
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 4,
+   "done-rejected": 7,
+   "executed": 30,
+   "done": 1,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 10,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 1,
+    "success_rate": 0.125,
+    "verified": 1,
+    "verified_rate": 0.125,
+    "mean_steps": 5.6
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-4ff9f134c45acc9f",
+   "source": "google",
+   "goal": "Search Google for terraform security vulnerabilities and open the results.",
+   "fingerprint": 43807,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 7,
+   "total_ms": 10542,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=terraform+security+vulnerabilities&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=appeqntkfa",
+     "bot_challenge": false,
+     "group0": [
+      "terraform"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=terraform+security+vulnerabilities&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQntKfaZQA1yAot4wIqGlP4mPybH6dw%3A1790514750214&source=hp&ei=Pha5apvjC7HJkPIP6a62iQI&iflsig=ABILxe8AAAAAarkkTp2nqAfKLRr-a7Vlh0aSsUmJTu_v&ved=0ahUKEwib-pmd646XAxWxJEQIHWmXLSEQ4dUDCCE&oq=terraform+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IiJ0ZXJyYWZvcm0gc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMggQABiJBRiiBDIFEAAY7wUyBRAAGO8FSKQfUBBYEHABeACQAQCYAeMBoAHjAaoBAzItMbgBDMgBAPgBAZgCAqAC6QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EF3x6_0jb-A_-SBwUxLjAuMaAH_wOyBwMyLTG4B-YBwgcDMC4yyAcEgAgB&sclient=gws-wiz&sei=SBa5aq3QCaXakPIPpNj3kAc",
+    "final_title": "terraform security vulnerabilities - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9044,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "terraform security vulnerabilities",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 499.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9007,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 492.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514751724"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8497,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for \"terraform security vulnerabilities\"",
+     "page_changed": null,
+     "latency_ms": 509.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514751724"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "terraform security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514751724"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.903,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'terraform security vulnerabilities' (query typed in search box only, results page not displayed)",
+     "page_changed": null,
+     "latency_ms": 687.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514751724"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:29",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514751724"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8855,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 654.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=terraform+security+vulnerabilities&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQntKfaZQA1yAot4wIqGlP4mPybH6dw%3A1790514750214&source=hp&ei=Pha5apvjC7HJkPIP6a62iQI&iflsig=ABILxe8AAAAAarkkTp2nqAfKLRr-a7Vlh0aSsUmJTu_v&ved=0ahUKEwib-pmd646XAxWxJEQIHWmXLSEQ4dUDCCE&oq=terraform+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IiJ0ZXJyYWZvcm0gc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMggQABiJBRiiBDIFEAAY7wUyBRAAGO8FSKQfUBBYEHABeACQAQCYAeMBoAHjAaoBAzItMbgBDMgBAPgBAZgCAqAC6QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EF3x6_0jb-A_-SBwUxLjAuMaAH_wOyBwMyLTG4B-YBwgcDMC4yyAcEgAgB&sclient=gws-wiz&sei=SBa5aq3QCaXakPIPpNj3kAc"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3dcec38164160cea",
+   "source": "google",
+   "goal": "First search Google for langchain best practices, then search Google for redis tutorial.",
+   "fingerprint": 43807,
+   "status": "repeat-loop",
+   "verified": false,
+   "success": false,
+   "steps": 20,
+   "total_ms": 36182,
+   "error": "TYPE_TEXT on the same target repeats without progress; stopping",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['redis']]",
+    "checks": {
+     "url": "https://www.google.com/search?q=langchain+best+practices&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=appeqnsd1hljkqglxrtj",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/search?q=langchain+best+practices&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnsD1hljkQGlXrtjlkUEsOwjps6ORw%3A1790514768159&source=hp&ei=UBa5aueNCP_akPIP2tLE2QI&iflsig=ABILxe8AAAAAarkkYEivFZwXFJYAxYisADTUgU2x7tzq&ved=0ahUKEwjn9eCl646XAxV_LUQIHVopMSsQ4dUDCCE&uact=5&oq=langchain+best+practices&gs_lp=Egdnd3Mtd2l6IhhsYW5nY2hhaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBUi3GFAhWCFwAngAkAEAmAH0AaAB9AGqAQMyLTG4AQPIAQD4AQGYAgOgAoMCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwjxBRuCTQ08JNjOkgcFMi4wLjGgB9QFsgcDMi0xuAf5AcIHBTAuMi4xyAcLgAgB&sclient=gws-wiz",
+    "final_title": "langchain best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9086,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain best practices",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 452.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7987,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 597.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514769815"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.86,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 802.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514769815"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.881,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain best practices",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 592.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514769815"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514769815"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.3145,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for redis tutorial",
+     "page_changed": null,
+     "latency_ms": 792.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=langchain+best+practices&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnsD1hljkQGlXrtjlkUEsOwjps6ORw%3A1790514768159&source=hp&ei=UBa5aueNCP_akPIP2tLE2QI&iflsig=ABILxe8AAAAAarkkYEivFZwXFJYAxYisADTUgU2x7tzq&ved=0ahUKEwjn9eCl646XAxV_LUQIHVopMSsQ4dUDCCE&uact=5&oq=langchain+best+practices&gs_lp=Egdnd3Mtd2l6IhhsYW5nY2hhaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBUi3GFAhWCFwAngAkAEAmAH0AaAB9AGqAQMyLTG4AQPIAQD4AQGYAgOgAoMCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwjxBRuCTQ08JNjOkgcFMi4wLjGgB9QFsgcDMi0xuAf5AcIHBTAuMi4xyAcLgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis tutorial",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=langchain+best+practices&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnsD1hljkQGlXrtjlkUEsOwjps6ORw%3A1790514768159&source=hp&ei=UBa5aueNCP_akPIP2tLE2QI&iflsig=ABILxe8AAAAAarkkYEivFZwXFJYAxYisADTUgU2x7tzq&ved=0ahUKEwjn9eCl646XAxV_LUQIHVopMSsQ4dUDCCE&uact=5&oq=langchain+best+practices&gs_lp=Egdnd3Mtd2l6IhhsYW5nY2hhaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBUi3GFAhWCFwAngAkAEAmAH0AaAB9AGqAQMyLTG4AQPIAQD4AQGYAgOgAoMCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwjxBRuCTQ08JNjOkgcFMi4wLjGgB9QFsgcDMi0xuAf5AcIHBTAuMi4xyAcLgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.2736,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for redis tutorial",
+     "page_changed": null,
+     "latency_ms": 570.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=langchain+best+practices&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnsD1hljkQGlXrtjlkUEsOwjps6ORw%3A1790514768159&source=hp&ei=UBa5aueNCP_akPIP2tLE2QI&iflsig=ABILxe8AAAAAarkkYEivFZwXFJYAxYisADTUgU2x7tzq&ved=0ahUKEwjn9eCl646XAxV_LUQIHVopMSsQ4dUDCCE&uact=5&oq=langchain+best+practices&gs_lp=Egdnd3Mtd2l6IhhsYW5nY2hhaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBUi3GFAhWCFwAngAkAEAmAH0AaAB9AGqAQMyLTG4AQPIAQD4AQGYAgOgAoMCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwjxBRuCTQ08JNjOkgcFMi4wLjGgB9QFsgcDMi0xuAf5AcIHBTAuMi4xyAcLgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis tutorial",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=langchain+best+practices&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnsD1hljkQGlXrtjlkUEsOwjps6ORw%3A1790514768159&source=hp&ei=UBa5aueNCP_akPIP2tLE2QI&iflsig=ABILxe8AAAAAarkkYEivFZwXFJYAxYisADTUgU2x7tzq&ved=0ahUKEwjn9eCl646XAxV_LUQIHVopMSsQ4dUDCCE&uact=5&oq=langchain+best+practices&gs_lp=Egdnd3Mtd2l6IhhsYW5nY2hhaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBUi3GFAhWCFwAngAkAEAmAH0AaAB9AGqAQMyLTG4AQPIAQD4AQGYAgOgAoMCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwjxBRuCTQ08JNjOkgcFMi4wLjGgB9QFsgcDMi0xuAf5AcIHBTAuMi4xyAcLgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.5641,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 624.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=langchain+best+practices&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnsD1hljkQGlXrtjlkUEsOwjps6ORw%3A1790514768159&source=hp&ei=UBa5aueNCP_akPIP2tLE2QI&iflsig=ABILxe8AAAAAarkkYEivFZwXFJYAxYisADTUgU2x7tzq&ved=0ahUKEwjn9eCl646XAxV_LUQIHVopMSsQ4dUDCCE&uact=5&oq=langchain+best+practices&gs_lp=Egdnd3Mtd2l6IhhsYW5nY2hhaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBUi3GFAhWCFwAngAkAEAmAH0AaAB9AGqAQMyLTG4AQPIAQD4AQGYAgOgAoMCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwjxBRuCTQ08JNjOkgcFMi4wLjGgB9QFsgcDMi0xuAf5AcIHBTAuMi4xyAcLgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2858,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain best practices",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 696.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=langchain+best+practices&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnsD1hljkQGlXrtjlkUEsOwjps6ORw%3A1790514768159&source=hp&ei=UBa5aueNCP_akPIP2tLE2QI&iflsig=ABILxe8AAAAAarkkYEivFZwXFJYAxYisADTUgU2x7tzq&ved=0ahUKEwjn9eCl646XAxV_LUQIHVopMSsQ4dUDCCE&uact=5&oq=langchain+best+practices&gs_lp=Egdnd3Mtd2l6IhhsYW5nY2hhaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBUi3GFAhWCFwAngAkAEAmAH0AaAB9AGqAQMyLTG4AQPIAQD4AQGYAgOgAoMCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwjxBRuCTQ08JNjOkgcFMi4wLjGgB9QFsgcDMi0xuAf5AcIHBTAuMi4xyAcLgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2858,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain best practices",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 593.1,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=langchain+best+practices&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnsD1hljkQGlXrtjlkUEsOwjps6ORw%3A1790514768159&source=hp&ei=UBa5aueNCP_akPIP2tLE2QI&iflsig=ABILxe8AAAAAarkkYEivFZwXFJYAxYisADTUgU2x7tzq&ved=0ahUKEwjn9eCl646XAxV_LUQIHVopMSsQ4dUDCCE&uact=5&oq=langchain+best+practices&gs_lp=Egdnd3Mtd2l6IhhsYW5nY2hhaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBUi3GFAhWCFwAngAkAEAmAH0AaAB9AGqAQMyLTG4AQPIAQD4AQGYAgOgAoMCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwjxBRuCTQ08JNjOkgcFMi4wLjGgB9QFsgcDMi0xuAf5AcIHBTAuMi4xyAcLgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis tutorial",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=langchain+best+practices&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnsD1hljkQGlXrtjlkUEsOwjps6ORw%3A1790514768159&source=hp&ei=UBa5aueNCP_akPIP2tLE2QI&iflsig=ABILxe8AAAAAarkkYEivFZwXFJYAxYisADTUgU2x7tzq&ved=0ahUKEwjn9eCl646XAxV_LUQIHVopMSsQ4dUDCCE&uact=5&oq=langchain+best+practices&gs_lp=Egdnd3Mtd2l6IhhsYW5nY2hhaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBUi3GFAhWCFwAngAkAEAmAH0AaAB9AGqAQMyLTG4AQPIAQD4AQGYAgOgAoMCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwjxBRuCTQ08JNjOkgcFMi4wLjGgB9QFsgcDMi0xuAf5AcIHBTAuMi4xyAcLgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 10,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.5641,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 691.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=langchain+best+practices&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnsD1hljkQGlXrtjlkUEsOwjps6ORw%3A1790514768159&source=hp&ei=UBa5aueNCP_akPIP2tLE2QI&iflsig=ABILxe8AAAAAarkkYEivFZwXFJYAxYisADTUgU2x7tzq&ved=0ahUKEwjn9eCl646XAxV_LUQIHVopMSsQ4dUDCCE&uact=5&oq=langchain+best+practices&gs_lp=Egdnd3Mtd2l6IhhsYW5nY2hhaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBUi3GFAhWCFwAngAkAEAmAH0AaAB9AGqAQMyLTG4AQPIAQD4AQGYAgOgAoMCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwjxBRuCTQ08JNjOkgcFMi4wLjGgB9QFsgcDMi0xuAf5AcIHBTAuMi4xyAcLgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 11,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2858,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain best practices",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 617.4,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=langchain+best+practices&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnsD1hljkQGlXrtjlkUEsOwjps6ORw%3A1790514768159&source=hp&ei=UBa5aueNCP_akPIP2tLE2QI&iflsig=ABILxe8AAAAAarkkYEivFZwXFJYAxYisADTUgU2x7tzq&ved=0ahUKEwjn9eCl646XAxV_LUQIHVopMSsQ4dUDCCE&uact=5&oq=langchain+best+practices&gs_lp=Egdnd3Mtd2l6IhhsYW5nY2hhaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBUi3GFAhWCFwAngAkAEAmAH0AaAB9AGqAQMyLTG4AQPIAQD4AQGYAgOgAoMCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwjxBRuCTQ08JNjOkgcFMi4wLjGgB9QFsgcDMi0xuAf5AcIHBTAuMi4xyAcLgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 12,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2858,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain best practices",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 593.2,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=langchain+best+practices&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnsD1hljkQGlXrtjlkUEsOwjps6ORw%3A1790514768159&source=hp&ei=UBa5aueNCP_akPIP2tLE2QI&iflsig=ABILxe8AAAAAarkkYEivFZwXFJYAxYisADTUgU2x7tzq&ved=0ahUKEwjn9eCl646XAxV_LUQIHVopMSsQ4dUDCCE&uact=5&oq=langchain+best+practices&gs_lp=Egdnd3Mtd2l6IhhsYW5nY2hhaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBUi3GFAhWCFwAngAkAEAmAH0AaAB9AGqAQMyLTG4AQPIAQD4AQGYAgOgAoMCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwjxBRuCTQ08JNjOkgcFMi4wLjGgB9QFsgcDMi0xuAf5AcIHBTAuMi4xyAcLgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 12,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis tutorial",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=langchain+best+practices&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnsD1hljkQGlXrtjlkUEsOwjps6ORw%3A1790514768159&source=hp&ei=UBa5aueNCP_akPIP2tLE2QI&iflsig=ABILxe8AAAAAarkkYEivFZwXFJYAxYisADTUgU2x7tzq&ved=0ahUKEwjn9eCl646XAxV_LUQIHVopMSsQ4dUDCCE&uact=5&oq=langchain+best+practices&gs_lp=Egdnd3Mtd2l6IhhsYW5nY2hhaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBUi3GFAhWCFwAngAkAEAmAH0AaAB9AGqAQMyLTG4AQPIAQD4AQGYAgOgAoMCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwjxBRuCTQ08JNjOkgcFMi4wLjGgB9QFsgcDMi0xuAf5AcIHBTAuMi4xyAcLgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 13,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.5641,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 708.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=langchain+best+practices&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnsD1hljkQGlXrtjlkUEsOwjps6ORw%3A1790514768159&source=hp&ei=UBa5aueNCP_akPIP2tLE2QI&iflsig=ABILxe8AAAAAarkkYEivFZwXFJYAxYisADTUgU2x7tzq&ved=0ahUKEwjn9eCl646XAxV_LUQIHVopMSsQ4dUDCCE&uact=5&oq=langchain+best+practices&gs_lp=Egdnd3Mtd2l6IhhsYW5nY2hhaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBUi3GFAhWCFwAngAkAEAmAH0AaAB9AGqAQMyLTG4AQPIAQD4AQGYAgOgAoMCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwjxBRuCTQ08JNjOkgcFMi4wLjGgB9QFsgcDMi0xuAf5AcIHBTAuMi4xyAcLgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 14,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2858,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain best practices",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 604.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=langchain+best+practices&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnsD1hljkQGlXrtjlkUEsOwjps6ORw%3A1790514768159&source=hp&ei=UBa5aueNCP_akPIP2tLE2QI&iflsig=ABILxe8AAAAAarkkYEivFZwXFJYAxYisADTUgU2x7tzq&ved=0ahUKEwjn9eCl646XAxV_LUQIHVopMSsQ4dUDCCE&uact=5&oq=langchain+best+practices&gs_lp=Egdnd3Mtd2l6IhhsYW5nY2hhaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBUi3GFAhWCFwAngAkAEAmAH0AaAB9AGqAQMyLTG4AQPIAQD4AQGYAgOgAoMCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwjxBRuCTQ08JNjOkgcFMi4wLjGgB9QFsgcDMi0xuAf5AcIHBTAuMi4xyAcLgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 15,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2858,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain best practices",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 595.7,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=langchain+best+practices&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnsD1hljkQGlXrtjlkUEsOwjps6ORw%3A1790514768159&source=hp&ei=UBa5aueNCP_akPIP2tLE2QI&iflsig=ABILxe8AAAAAarkkYEivFZwXFJYAxYisADTUgU2x7tzq&ved=0ahUKEwjn9eCl646XAxV_LUQIHVopMSsQ4dUDCCE&uact=5&oq=langchain+best+practices&gs_lp=Egdnd3Mtd2l6IhhsYW5nY2hhaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBUi3GFAhWCFwAngAkAEAmAH0AaAB9AGqAQMyLTG4AQPIAQD4AQGYAgOgAoMCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwjxBRuCTQ08JNjOkgcFMi4wLjGgB9QFsgcDMi0xuAf5AcIHBTAuMi4xyAcLgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d124b226469124f6",
+   "source": "google",
+   "goal": "First search Google for express open source alternatives, then search Google for refactoring interview questions.",
+   "fingerprint": 43807,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 4,
+   "total_ms": 30675,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dexpress%2bopen%2bsource%2balternatives%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dexpress%2Bopen%2Bsource%2Balternatives%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntu3EVjSjvnOzURpj-NAMAC4rjaMA%253A1790514811831%26source%3Dhp%26ei%3Dexa5auiuMarGkPIP-pXbkQE%26iflsig%3DABILxe8AAAAAarkkiwVAQSelg7hs-CvtyHPjA_5k2pqm%26ved%3D0ahUKEwio2Mq6646XAxUqI0QIHfrKNhIQ4dUDCCE%26uact%3D5%26oq%3Dexpress%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiBleHByZXNzIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIIEAAYiQUYogQyBRAAGO8FMggQABiJBRiiBDIFEAAY7wVI44ABUA9YD3ABeACQAQCYAYACoAGAAqoBAzItMbgBA8gBAPgBAZgCAqAChgKoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFn_FhokpeqtqSBwUxLjAuMaAH2QWyBwMyLTG4B4ICwgcFMC4xLjHIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGI6t5NUGIjAYl7p4nA-r-hveVsNmMa8D-VV_cvdtdbf8EI-y3xlgGfma1AulogL1Dp3o4yU4AlsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=express+open+source+alternatives&sca_esv=3e3a42b"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.4297,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 533.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514812234"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8785,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "express open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 470.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514812234"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8395,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'refactoring interview questions'",
+     "page_changed": null,
+     "latency_ms": 570.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514812234"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514812234"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-85377f67e34c6f94",
+   "source": "google",
+   "goal": "First search Google for django migration guide, then search Google for mongodb interview questions.",
+   "fingerprint": 43807,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14619,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddjango%2bmigration%2bguide%26sca_esv%3d3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddjango%2Bmigration%2Bguide%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntcpfPoLY8u4MT0tQJz-32neWcvVA%253A1790514894709%26source%3Dhp%26ei%3Dzha5avCTKsPAkPIPzfeikA4%26iflsig%3DABILxe8AAAAAarkk3jRVZc0f8MQD6sGxXrCnP12CNGII%26ved%3D0ahUKEwjwso3i646XAxVDIEQIHc27COIQ4dUDCCE%26uact%3D5%26oq%3Ddjango%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhZkamFuZ28gbWlncmF0aW9uIGd1aWRlMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IxgdQElgScAF4AJABAJgB9QGgAfUBqgEDMi0xuAEDyAEA-AEBmAICoAL9AagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QXNe9m6pbJoHpIHBTEuMC4xoAeoBbIHAzItMbgH-QHCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNGt5NUGIjBA3rfc4g6-vl9X5d1UvBY8eomUjtajhA4HoBoxhIVt41UgneK6uRuSrF1KX9_2q7cyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=django+migration+guide&sca_esv=3e3a42b854afc954&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8969,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 483.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514895139"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8877,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 580.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514895139"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-dc95623f43895f1a",
+   "source": "google",
+   "goal": "First search Google for ruby cheat sheet, then search Google for vllm interview questions.",
+   "fingerprint": 43807,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14794,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3druby%2bcheat%2bsheet%26sca_esv%3d3e3a42b",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Druby%2Bcheat%2Bsheet%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns396r8oexFcXI4kavS2hNoDcGzRg%253A1790514961526%26source%3Dhp%26ei%3DERe5asfpHvfDkPIP77aiyQY%26iflsig%3DABILxe8AAAAAarklIS2d62L98pjfSIP25kFF_YMBhyY6%26oq%3Druby%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhBydWJ5IGNoZWF0IHNoZWV0KgUIABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjeB1APWA9wAXgAkAEAmAHrAaAB6wGqAQMyLTG4AQHIAQD4AQGYAgKgAvEBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBRJHFxdkW0H7kgcFMS4wLjGgB4EFsgcDMi0xuAftAcIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJSu5NUGIjAUcbcWtbQzBuVsSQZgL_kPx2M__mZ7Wepc1U0-EVoo3LupgMGG-_vXnCjRb7wRGyIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=ruby+cheat+sheet&sca_esv=3e3a42b854afc954&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8958,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ruby cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 510.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514961940"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.7464,
+     "target": "11",
+     "target_label": "ruby cheat sheet",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 570.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514961940"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-88b599e0f9c049a7",
+   "source": "google",
+   "goal": "Search Google for code review cheat sheet and open the results.",
+   "fingerprint": 43807,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14847,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dcode%2breview%2bcheat%2bsheet%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dcode%2Breview%2Bcheat%2Bsheet%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuZrkwEukl6Tc-Najh4wu-EoVHCnw%253A1790515028476%26source%3Dhp%26ei%3DVBe5apX6GtbBkPIP18LR2Q4%26iflsig%3DABILxe8AAAAAarklZGrikd6ovBv9ovBFz8eqHBmwSa2A%26oq%3Dcode%2Breview%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6Ihdjb2RlIHJldmlldyBjaGVhdCBzaGVldCoFCAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMggQABiJBRiiBDIFEAAY7wUyBRAAGO8FSOEHUA9YD3ABeACQAQCYAeQBoAHkAaoBAzItMbgBAcgBAPgBAZgCAqAC6wGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBdUz5Mrzzz4CkgcFMS4wLjGgB90FsgcDMi0xuAfnAcIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNeu5NUGIjBDpuXTyTqFxGjLpP4821oOtsWw5yELfxtRLFdqMYboMHtxZeTlqkLY2rCAbmY0POAyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=code+review+cheat+sheet&sca_esv=3e3a42b854afc954"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9008,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "code review cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 487.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515028713"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.5867,
+     "target": "11",
+     "target_label": "code review cheat sheet",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 569.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515028713"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-81e3ff76750d4e9e",
+   "source": "google",
+   "goal": "First search Google for next.js best practices, then search Google for vue performance optimization.",
+   "fingerprint": 43807,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 23834,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvue%2bperformance%2boptimization%26sca_e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvue%2Bperformance%2Boptimization%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntiHP8lfQo0SeJAnZ4igjyWKTTOFA%253A1790515095485%26source%3Dhp%26ei%3Dlxe5apG8HPPekPIP5fVG%26iflsig%3DABILxe8AAAAAarklp7n_BXX5hf-NAGQ5ySqCz7aRKKW1%26ved%3D0ahUKEwjR4-vB7I6XAxVzL0QIHeW6EQAQ4dUDCCE%26oq%3Dvue%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ihx2dWUgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBRAAGO8FMggQABiABBiiBDIFEAAY7wUyBRAAGO8FSKVLUBBYmSZwAngAkAEAmAGEAqAB2gOqAQMyLTK4AQzIAQD4AQGYAgSgAuUDqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBZ2PgJvAXF9IkgcFMi4wLjKgB8EJsgcDMi0yuAfgA8IHBTEuMi4xyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKOv5NUGIjAqfusiQEFb2cfsuGqafmbLrykTd-li0Kwd0mpdBtSqtVP7XXFYRo-8R21pD4SfXh0yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vue+performance+optimization&sca_esv=3e3a42b854a"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2911,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 493.1,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515095698"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2679,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "next.js best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 547.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515095698"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8208,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for 'vue performance optimization' (page still shows the next.js best practices query/autocomplete, no vue results)",
+     "page_changed": null,
+     "latency_ms": 683.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515095698"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue performance optimization",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515095698"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9117,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'vue performance optimization' (only autocomplete suggestions are shown; the search was not submitted)",
+     "page_changed": null,
+     "latency_ms": 707.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515095698"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:32",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515095698"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d8749e6191b27fc3",
+   "source": "google",
+   "goal": "First search Google for vllm performance optimization, then search Google for typescript release notes.",
+   "fingerprint": 43807,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14549,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvllm%2bperformance%2boptimization%26sca_",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvllm%2Bperformance%2Boptimization%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuhrz3ShpvaEtX9eZeF64x1_c5Asg%253A1790515171475%26source%3Dhp%26ei%3D4xe5aqvKG8udkPIPi4-N2AM%26iflsig%3DABILxe8AAAAAarkl89sMwJ-Z8W2DZEZksskHLb3rDtwF%26ved%3D0ahUKEwjrx4nm7I6XAxXLDkQIHYtHAzsQ4dUDCCE%26uact%3D5%26oq%3Dvllm%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ih12bGxtIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMggQABiABBiiBDIFEAAY7wUyBRAAGO8FMggQABiABBiiBEi4B1APWA9wAXgAkAEAmAH2AaAB9gGqAQMyLTG4AQPIAQD4AQGYAgKgAvwBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBRmEo3AP-SB3kgcFMS4wLjGgB-4EsgcDMi0xuAf4AcIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOav5NUGIjASwmsIoXtooe5ObmkyD0UAbTUtHx7oYwCq7NnyCNcgnf08SRCFhwF-U5GXGs-HToQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vllm+performance+optimization&sca_esv=3e3a42b854"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8447,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vllm performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 553.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515171723"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9075,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 571.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515171723"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,791 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 22130,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:17:50+0800",
+  "n_tasks": 8,
+  "success": 3,
+  "success_rate": 0.375,
+  "verified": 3,
+  "verified_rate": 0.375,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.6,
+  "mean_duration_ms": 18038,
+  "decision_latency_ms": {
+   "p50": 577.2,
+   "p95": 628.7
+  },
+  "step_outcomes": {
+   "stale": 4,
+   "refused-empty-enter": 2,
+   "done-rejected": 5,
+   "executed": 23,
+   "done": 3
+  },
+  "low_confidence_steps": 3,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 3,
+    "success_rate": 0.375,
+    "verified": 3,
+    "verified_rate": 0.375,
+    "mean_steps": 4.6
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-d9b31e7df372ed82",
+   "source": "google",
+   "goal": "Search Google for vue migration guide and open the results.",
+   "fingerprint": 22130,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 28202,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvue%2bmigration%2bguide%26sca_esv%3d54dc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvue%2Bmigration%2Bguide%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns12cBfW-p8SA8cdKpAGN6fE0kSoQ%253A1790507494365%26source%3Dhp%26ei%3D5vm4aquYFd3GkPIPl8OxuQk%26iflsig%3DABILxe8AAAAAarkH9vS0CFWG0ti_yUaHQJ4_Oz4dRiqG%26ved%3D0ahUKEwiro6yZ0I6XAxVdI0QIHZdhLJcQ4dUDCDI%26oq%3Dvue%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhN2dWUgbWlncmF0aW9uIGd1aWRlMgYQABgWGB4yBhAAGBYYHjIIEAAYFhgeGAoyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMggQABiJBRiiBDIIEAAYiQUYogRIw09QD1gPcAF4AJABAJgB1wGgAdcBqgEDMi0xuAEMyAEA-AEBmAICoALhAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME8QVgNgBQ2VlzwpIHBTEuMC4xoAfBBbIHAzItMbgH3AHCBwMyLTLIBwaACAE%26sclient%3Dgws-wiz%26sei%3D9vm4aqiEFrCckPIP84L3iAc&hl=en&q=EgQm0XtnGPbz49UGIjDazKwAjpFbZKBV78xc9DIWvb7EtZ6Tw3m23qWuE-XxC0GaLtCQqZVCpgPQA4fTJnIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vue+migration+guide&sca_esv=54dc793dbd0950c5&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8455,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue migration guide",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 477.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8939,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 476.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507495640"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.872,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'vue migration guide' is not displayed; the page is still the empty Google homepage search box",
+     "page_changed": null,
+     "latency_ms": 488.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507495640"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue migration guide",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507495640"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9019,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for 'vue migration guide' (only autocomplete suggestions on the Google search box are shown); No results or result links are displ",
+     "page_changed": null,
+     "latency_ms": 611.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507495640"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507495640"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-37e7b83364b41d7f",
+   "source": "google",
+   "goal": "Search Google for angular best practices and open the results.",
+   "fingerprint": 22130,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 8,
+   "total_ms": 25166,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=angular+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnvrgd2hgly6qdy5sr",
+     "bot_challenge": false,
+     "group0": [
+      "angular"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=angular+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvrgD2HGLy6qDy5SrxQasnPKihFAg%3A1790507574930&source=hp&ei=Nvq4aquvN5_IkPIPtou-GA&iflsig=ABILxe8AAAAAarkIRrCj2D2peImqrA7uiok1etWW8hqM&ved=0ahUKEwirouG_0I6XAxUfJEQIHbaFDwMQ4dUDCDI&oq=angular+best+practices&gs_lp=Egdnd3Mtd2l6IhZhbmd1bGFyIGJlc3QgcHJhY3RpY2VzMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5ImKkBUJsgWJsgcAJ4AJABAJgBxQGgAcUBqgEDMC4xuAEMyAEA-AEBmAIDoALOAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QUscWSRD1TV8ZIHAzIuMaAH4gWyBwMwLjG4B8cBwgcFMC4yLjHIBwaACAE&sclient=gws-wiz",
+    "final_title": "angular best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8933,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular best practices",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 656.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9015,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 477.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507576205"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8849,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 718.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507576205"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8566,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'angular best practices'; search query entered/visible; results list open",
+     "page_changed": null,
+     "latency_ms": 625.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507576205"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507576205"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.918,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page listing results for 'angular best practices' (only the homepage search box with autocomplete suggestions is shown)",
+     "page_changed": null,
+     "latency_ms": 615.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507576205"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:32",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507576205"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.8969,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 595.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=angular+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvrgD2HGLy6qDy5SrxQasnPKihFAg%3A1790507574930&source=hp&ei=Nvq4aquvN5_IkPIPtou-GA&iflsig=ABILxe8AAAAAarkIRrCj2D2peImqrA7uiok1etWW8hqM&ved=0ahUKEwirouG_0I6XAxUfJEQIHbaFDwMQ4dUDCDI&oq=angular+best+practices&gs_lp=Egdnd3Mtd2l6IhZhbmd1bGFyIGJlc3QgcHJhY3RpY2VzMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5ImKkBUJsgWJsgcAJ4AJABAJgBxQGgAcUBqgEDMC4xuAEMyAEA-AEBmAIDoALOAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QUscWSRD1TV8ZIHAzIuMaAH4gWyBwMwLjG4B8cBwgcFMC4yLjHIBwaACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f55d6f6fdd1ea5c5",
+   "source": "google",
+   "goal": "First search Google for ci/cd pipelines migration guide, then search Google for elixir performance optimization.",
+   "fingerprint": 22130,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 10,
+   "total_ms": 15694,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=elixir+performance+optimization&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnuqqvuch",
+     "bot_challenge": false,
+     "group0": [
+      "elixir"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=elixir+performance+optimization&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuqqVUcHfsbcnWMcoHlR5k1LjmHmQ%3A1790507610091&ei=Wvq4asqaBZXIkPIPmK304AQ&biw=1120&bih=780&uact=5&oq=elixir+performance+optimization&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2VsaXhpciBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRifBUjcB1ALWAtwAXgAkAEAmAHaAaAB2gGqAQMyLTG4AQPIAQD4AQGYAgKgAt8BwgIIEAAY7wUYsAPCAgsQABiABBiiBBiwA5gDAIgGAZAGBZIHBTEuMC4xoAf4BLIHAzItMbgH3QHCBwMwLjLIBwKACAE&sclient=gws-wiz-serp",
+    "final_title": "elixir performance optimization - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8831,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ci/cd pipelines migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 471.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507607698"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8898,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 563.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507607698"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.2624,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 612.7,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuBTlvvmz9H5E850vyMZzFb17MpKA%3A1790507607455&source=hp&ei=V_q4aoieGqCwur8PneHI6Q4&iflsig=ABILxe8AAAAAarkIZ4VHIyhg83SsEJluotUm7xt_kdHr&ved=0ahUKEwjIpaLP0I6XAxUgmO4BHZ0wMu0Q4dUDCDI&uact=5&oq=ci%2Fcd+pipelines+migration+guide&gs_lp=Egdnd3Mtd2l6Ih9jaS9jZCBwaXBlbGluZXMgbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIqwdQC1gLcAF4AJABAJgB2wGgAdsBqgEDMi0xuAEDyAEA-AEBmAICoALgAagCCsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtALCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBTM6WRegEqYlkgcFMS4wLjGgB4kFsgcDMi0xuAfdAcIHAzEuMcgHAoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.2453,
+     "target": "19",
+     "target_label": "CI/CD Pipeline Guides",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 579.7,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuBTlvvmz9H5E850vyMZzFb17MpKA%3A1790507607455&source=hp&ei=V_q4aoieGqCwur8PneHI6Q4&iflsig=ABILxe8AAAAAarkIZ4VHIyhg83SsEJluotUm7xt_kdHr&ved=0ahUKEwjIpaLP0I6XAxUgmO4BHZ0wMu0Q4dUDCDI&uact=5&oq=ci%2Fcd+pipelines+migration+guide&gs_lp=Egdnd3Mtd2l6Ih9jaS9jZCBwaXBlbGluZXMgbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIqwdQC1gLcAF4AJABAJgB2wGgAdsBqgEDMi0xuAEDyAEA-AEBmAICoALgAagCCsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtALCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBTM6WRegEqYlkgcFMS4wLjGgB4kFsgcDMi0xuAfdAcIHAzEuMcgHAoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2177,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 577.2,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuBTlvvmz9H5E850vyMZzFb17MpKA%3A1790507607455&source=hp&ei=V_q4aoieGqCwur8PneHI6Q4&iflsig=ABILxe8AAAAAarkIZ4VHIyhg83SsEJluotUm7xt_kdHr&ved=0ahUKEwjIpaLP0I6XAxUgmO4BHZ0wMu0Q4dUDCDI&uact=5&oq=ci%2Fcd+pipelines+migration+guide&gs_lp=Egdnd3Mtd2l6Ih9jaS9jZCBwaXBlbGluZXMgbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIqwdQC1gLcAF4AJABAJgB2wGgAdsBqgEDMi0xuAEDyAEA-AEBmAICoALgAagCCsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtALCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBTM6WRegEqYlkgcFMS4wLjGgB4kFsgcDMi0xuAfdAcIHAzEuMcgHAoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.4109,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 580.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuBTlvvmz9H5E850vyMZzFb17MpKA%3A1790507607455&source=hp&ei=V_q4aoieGqCwur8PneHI6Q4&iflsig=ABILxe8AAAAAarkIZ4VHIyhg83SsEJluotUm7xt_kdHr&ved=0ahUKEwjIpaLP0I6XAxUgmO4BHZ0wMu0Q4dUDCDI&uact=5&oq=ci%2Fcd+pipelines+migration+guide&gs_lp=Egdnd3Mtd2l6Ih9jaS9jZCBwaXBlbGluZXMgbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIqwdQC1gLcAF4AJABAJgB2wGgAdsBqgEDMi0xuAEDyAEA-AEBmAICoALgAagCCsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtALCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBTM6WRegEqYlkgcFMS4wLjGgB4kFsgcDMi0xuAfdAcIHAzEuMcgHAoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.4109,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 579.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuBTlvvmz9H5E850vyMZzFb17MpKA%3A1790507607455&source=hp&ei=V_q4aoieGqCwur8PneHI6Q4&iflsig=ABILxe8AAAAAarkIZ4VHIyhg83SsEJluotUm7xt_kdHr&ved=0ahUKEwjIpaLP0I6XAxUgmO4BHZ0wMu0Q4dUDCDI&uact=5&oq=ci%2Fcd+pipelines+migration+guide&gs_lp=Egdnd3Mtd2l6Ih9jaS9jZCBwaXBlbGluZXMgbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIqwdQC1gLcAF4AJABAJgB2wGgAdsBqgEDMi0xuAEDyAEA-AEBmAICoALgAagCCsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtALCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBTM6WRegEqYlkgcFMS4wLjGgB4kFsgcDMi0xuAfdAcIHAzEuMcgHAoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elixir performance optimization",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuBTlvvmz9H5E850vyMZzFb17MpKA%3A1790507607455&source=hp&ei=V_q4aoieGqCwur8PneHI6Q4&iflsig=ABILxe8AAAAAarkIZ4VHIyhg83SsEJluotUm7xt_kdHr&ved=0ahUKEwjIpaLP0I6XAxUgmO4BHZ0wMu0Q4dUDCDI&uact=5&oq=ci%2Fcd+pipelines+migration+guide&gs_lp=Egdnd3Mtd2l6Ih9jaS9jZCBwaXBlbGluZXMgbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIqwdQC1gLcAF4AJABAJgB2wGgAdsBqgEDMi0xuAEDyAEA-AEBmAICoALgAagCCsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtALCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBTM6WRegEqYlkgcFMS4wLjGgB4kFsgcDMi0xuAfdAcIHAzEuMcgHAoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.5682,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 607.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuBTlvvmz9H5E850vyMZzFb17MpKA%3A1790507607455&source=hp&ei=V_q4aoieGqCwur8PneHI6Q4&iflsig=ABILxe8AAAAAarkIZ4VHIyhg83SsEJluotUm7xt_kdHr&ved=0ahUKEwjIpaLP0I6XAxUgmO4BHZ0wMu0Q4dUDCDI&uact=5&oq=ci%2Fcd+pipelines+migration+guide&gs_lp=Egdnd3Mtd2l6Ih9jaS9jZCBwaXBlbGluZXMgbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIqwdQC1gLcAF4AJABAJgB2wGgAdsBqgEDMi0xuAEDyAEA-AEBmAICoALgAagCCsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtALCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBTM6WRegEqYlkgcFMS4wLjGgB4kFsgcDMi0xuAfdAcIHAzEuMcgHAoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.8908,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 577.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=elixir+performance+optimization&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuqqVUcHfsbcnWMcoHlR5k1LjmHmQ%3A1790507610091&ei=Wvq4asqaBZXIkPIPmK304AQ&biw=1120&bih=780&uact=5&oq=elixir+performance+optimization&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2VsaXhpciBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRifBUjcB1ALWAtwAXgAkAEAmAHaAaAB2gGqAQMyLTG4AQPIAQD4AQGYAgKgAt8BwgIIEAAY7wUYsAPCAgsQABiABBiiBBiwA5gDAIgGAZAGBZIHBTEuMC4xoAf4BLIHAzItMbgH3QHCBwMwLjLIBwKACAE&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-165bcf97966c297f",
+   "source": "google",
+   "goal": "Search Google for zig cheat sheet and open the results.",
+   "fingerprint": 22130,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 5,
+   "total_ms": 16597,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=zig+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnvhfgffdfxux7_z7sguxvlt6",
+     "bot_challenge": false,
+     "group0": [
+      "zig"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=zig+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvHFGFfdfxuX7_z7sgUxVlT6HFh8g%3A1790507630351&source=hp&ei=bvq4at6ZFI3EkPIPhomIoQ8&iflsig=ABILxe8AAAAAarkIfnNNPfTD9EdzWav4UtwdKbcSmV7W&ved=0ahUKEwjeiJja0I6XAxUNIkQIHYYEIvQQ4dUDCDI&uact=5&oq=zig+cheat+sheet&gs_lp=Egdnd3Mtd2l6Ig96aWcgY2hlYXQgc2hlZXQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgUQABjvBUjOB1AQWBBwAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAugBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBVLbuTRKXd2tkgcFMS4wLjGgB4AEsgcDMi0xuAfjAcIHAzItMsgHB4AIAQ&sclient=gws-wiz",
+    "final_title": "zig cheat sheet - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8958,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "zig cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 492.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507630551"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.5822,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 586.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507630551"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8861,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results not visibly listed; page still shows loading placeholders",
+     "page_changed": null,
+     "latency_ms": 610.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=zig+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvHFGFfdfxuX7_z7sgUxVlT6HFh8g%3A1790507630351&source=hp&ei=bvq4at6ZFI3EkPIPhomIoQ8&iflsig=ABILxe8AAAAAarkIfnNNPfTD9EdzWav4UtwdKbcSmV7W&ved=0ahUKEwjeiJja0I6XAxUNIkQIHYYEIvQQ4dUDCDI&uact=5&oq=zig+cheat+sheet&gs_lp=Egdnd3Mtd2l6Ig96aWcgY2hlYXQgc2hlZXQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgUQABjvBUjOB1AQWBBwAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAugBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBVLbuTRKXd2tkgcFMS4wLjGgB4AEsgcDMi0xuAfjAcIHAzItMsgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "wait",
+     "target_label": "Wait for the page to update",
+     "kind": "wait",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=zig+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvHFGFfdfxuX7_z7sgUxVlT6HFh8g%3A1790507630351&source=hp&ei=bvq4at6ZFI3EkPIPhomIoQ8&iflsig=ABILxe8AAAAAarkIfnNNPfTD9EdzWav4UtwdKbcSmV7W&ved=0ahUKEwjeiJja0I6XAxUNIkQIHYYEIvQQ4dUDCDI&uact=5&oq=zig+cheat+sheet&gs_lp=Egdnd3Mtd2l6Ig96aWcgY2hlYXQgc2hlZXQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgUQABjvBUjOB1AQWBBwAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAugBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBVLbuTRKXd2tkgcFMS4wLjGgB4AEsgcDMi0xuAfjAcIHAzItMsgHB4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8661,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 606.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=zig+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvHFGFfdfxuX7_z7sgUxVlT6HFh8g%3A1790507630351&source=hp&ei=bvq4at6ZFI3EkPIPhomIoQ8&iflsig=ABILxe8AAAAAarkIfnNNPfTD9EdzWav4UtwdKbcSmV7W&ved=0ahUKEwjeiJja0I6XAxUNIkQIHYYEIvQQ4dUDCDI&uact=5&oq=zig+cheat+sheet&gs_lp=Egdnd3Mtd2l6Ig96aWcgY2hlYXQgc2hlZXQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgUQABjvBUjOB1AQWBBwAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAugBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBVLbuTRKXd2tkgcFMS4wLjGgB4AEsgcDMi0xuAfjAcIHAzItMsgHB4AIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-0abac9e03d71065e",
+   "source": "google",
+   "goal": "First search Google for flask tutorial, then search Google for vllm migration guide.",
+   "fingerprint": 22130,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14556,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dflask%2btutorial%26sca_esv%3d54dc793dbd0",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dflask%2Btutorial%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntDy9GoPQ7s0JFkGz9SpZMxgEol2w%253A1790507654146%26source%3Dhp%26ei%3Dhvq4asvBB9bKkPIPxanZ-Ac%26iflsig%3DABILxe8AAAAAarkIlnxld2o5tn8gzjumU7MOY8pvO4lH%26ved%3D0ahUKEwjLnMTl0I6XAxVWJUQIHcVUFn8Q4dUDCDI%26uact%3D5%26oq%3Dflask%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig5mbGFzayB0dXRvcmlhbDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wVI-gdQEFgQcAF4AJABAJgB5QGgAeUBqgEDMi0xuAEDyAEA-AEBmAICoALuAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QXPYFvTK_xKTJIHBTEuMC4xoAffBLIHAzItMbgH6gHCBwMyLTLIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIj149UGIjBt8AIVlNP8Lmczy2uEaAlApnRzBZz_FRG_TyuG5fkOrByQwBwB3q_tXn5O8wpGuL4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=flask+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8943,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "flask tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 498.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507654259"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9015,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 628.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507654259"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-fca15324650983dd",
+   "source": "google",
+   "goal": "First search Google for mysql tutorial, then search Google for python cheat sheet.",
+   "fingerprint": 22130,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14700,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmysql%2btutorial%26sca_esv%3d54dc793dbd0",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmysql%2Btutorial%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntKqZz678MAenDMEOJzp17uoPey9g%253A1790507720920%26source%3Dhp%26ei%3DyPq4ar_SNrPIkPIPqN6D2Q4%26iflsig%3DABILxe8AAAAAarkI2Bkek8YXjt6NLeCvIwvLFOK_L2Oy%26ved%3D0ahUKEwi_1q-F0Y6XAxUzJEQIHSjvIOsQ4dUDCDI%26uact%3D5%26oq%3Dmysql%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig5teXNxbCB0dXRvcmlhbDIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESOoHUA9YD3ABeACQAQCYAcQBoAHEAaoBAzAuMbgBA8gBAPgBAZgCAqACzgGoAgrCAhMQLhiABBiKBRhDGOcGGOoCGLQCwgITEAAYgAQYigUYQxjnBhjqAhi0ApgDBPEFbth8ylZXhIqSBwUxLjAuMaAHgwWyBwMyLTG4B8kBwgcFMC4xLjHIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMv149UGIjAdk6Ooo_RoIXeyhIX5xE8B_UM99lPR95NiPZIWiUCa9pT6kHEUueaENMPBlkAwY0oyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mysql+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8855,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mysql tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 496.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507721030"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8977,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 618.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507721030"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-37dbd25d83c43e14",
+   "source": "google",
+   "goal": "First search Google for grafana best practices, then search Google for react security vulnerabilities.",
+   "fingerprint": 22130,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14847,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgrafana%2bbest%2bpractices%26sca_esv%3d5",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgrafana%2Bbest%2Bpractices%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns4UJ8N5FXCYrVdYgPPGkNlv-zAyw%253A1790507787817%26source%3Dhp%26ei%3DC_u4asnzMKfGkPIP4eCU2AU%26iflsig%3DABILxe8AAAAAarkJG8dU_ULJ96eDTVbexvuk49GxoHQF%26ved%3D0ahUKEwiJpaOl0Y6XAxUnI0QIHWEwBVsQ4dUDCDI%26uact%3D5%26oq%3Dgrafana%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhZncmFmYW5hIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjpB1AMWAxwAXgAkAEAmAHOAaABzgGqAQMyLTG4AQPIAQD4AQGYAgKgAtMBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0ApgDA_EFnKk0AMGKEA-SBwUxLjAuMaAH1QWyBwMyLTG4B9ABwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGI7249UGIjCEJkHghShsDjqkkyJdSwtf3POSa0r9J3cnBp-cRakFUibSBk1hNGFaTyJbXNfETAoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=grafana+best+practices&sca_esv=54dc793dbd0950c5&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8983,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "grafana best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 535.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507787929"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8531,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 620.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507787929"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-47963c579f4ac5b4",
+   "source": "google",
+   "goal": "First search Google for kafka cheat sheet, then search Google for mongodb migration guide.",
+   "fingerprint": 22130,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14545,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dkafka%2bcheat%2bsheet%26sca_esv%3d54dc79",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dkafka%2Bcheat%2Bsheet%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnufDosywGjAPY5ezz2axj79nJ5XDw%253A1790507854815%26source%3Dhp%26ei%3DTvu4apDAMO6rur8P25G_yQ8%26iflsig%3DABILxe8AAAAAarkJXk-E-NjrgaA777dGS9bRhfnOJl8E%26ved%3D0ahUKEwiQn5zF0Y6XAxXule4BHdvIL_kQ4dUDCDI%26uact%3D5%26oq%3Dkafka%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhFrYWZrYSBjaGVhdCBzaGVldDILEAAYgAQYigUYkQIyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMggQABgWGB4YCjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSLcHUBBYEHABeACQAQCYAdIBoAHSAaoBAzItMbgBA8gBAPgBAZgCAqAC3AGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEF17U_4Yf73riSBwUxLjAuMaAHxQWyBwMyLTG4B9gBwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNH249UGIjC5WkanaHBDTVN5qkzBTxIPyzx27VjXoijqohBPKllsxPche8PVtQZtABqBeW_XTycyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=kafka+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8919,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kafka cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 496.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507854913"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8852,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 563.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507854913"
+    }
+   ]
+  }
+ ]
+}

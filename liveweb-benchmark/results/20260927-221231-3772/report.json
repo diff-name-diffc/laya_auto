@@ -1,0 +1,797 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 16091,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T22:21:17+0800",
+  "n_tasks": 8,
+  "success": 1,
+  "success_rate": 0.125,
+  "verified": 1,
+  "verified_rate": 0.125,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.8,
+  "mean_duration_ms": 19420,
+  "decision_latency_ms": {
+   "p50": 561.2,
+   "p95": 628.1
+  },
+  "step_outcomes": {
+   "executed": 28,
+   "stale": 5,
+   "refused-empty-enter": 2,
+   "done-rejected": 2,
+   "done": 1
+  },
+  "low_confidence_steps": 2,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 1,
+    "success_rate": 0.125,
+    "verified": 1,
+    "verified_rate": 0.125,
+    "mean_steps": 4.8
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-a9482154d606036b",
+   "source": "google",
+   "goal": "First search Google for c++ performance optimization, then search Google for kotlin migration guide.",
+   "fingerprint": 16091,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 22206,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dc%252b%252b%2bperformance%2boptimization",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dc%252B%252B%2Bperformance%2Boptimization%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvCi9pj35JoGrAF8L9gTbTTZV53-w%253A1790518354916%26source%3Dhp%26ei%3DUiS5avLDNpTPkPIPs_CA0Ao%26iflsig%3DABILxe8AAAAAarkyYnKMkiNDI9BIoc2_VZQNF3II8WG_%26ved%3D0ahUKEwjytIfU-I6XAxWUJ0QIHTM4AKoQ4dUDCDI%26uact%3D5%26oq%3Dc%252B%252B%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IhxjKysgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBRAAGO8FSJw_UBJYEnAEeACQAQCYAcQDoAHEA6oBAzQtMbgBA8gBAPgBAZgCBaAC0gOoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFccsXwMbKr_SSBwU0LjQtMaAHhQSyBwM0LTG4B8kDwgcFMS4zLjHIBwmACAE%26sclient%3Dgws-wiz%26sei%3DXSS5ap-jAcnKkPIP5_LJOA&hl=en&q=EgQm0XtnGN3I5NUGIjD4RAwr4hMe2iiipNUY_5Wuu3hf-gnXyHTImw9IzjVgOuY77Bzovc6IqNPR2f0GSgEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=c%2B%2B+performance+optimization&sca_esv=f9132ac"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9023,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "c++ performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 501.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8939,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "stale: URL changed since the decision",
+     "page_changed": true,
+     "latency_ms": 567.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8957,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "c++ performance optimization",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 597.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518357587"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9002,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "c++ performance optimization",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 577.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518357587"
+    },
+    {
+     "step": 5,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8964,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "c++ performance optimization",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 578.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518357587"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518357587"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-af05850450e38873",
+   "source": "google",
+   "goal": "First search Google for django interview questions, then search Google for kafka interview questions.",
+   "fingerprint": 16091,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 18014,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddjango%2binterview%2bquestions%26sca_esv",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddjango%2Binterview%2Bquestions%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv4SikAt6dItEyM0HtVEk7uPY1Xbg%253A1790518429582%26source%3Dhp%26ei%3DnSS5at6uItequr8Pw7-S8QM%26iflsig%3DABILxe8AAAAAarkyrQ5MQb-k7TXezaPouCahKwa3y6hI%26ved%3D0ahUKEwie8dT3-I6XAxVXle4BHcOfJD4Q4dUDCDI%26uact%3D5%26oq%3Ddjango%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhpkamFuZ28gaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBRAAGIAEMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIFEAAYgAQyBRAAGIAEMggQABiABBi0BzIFEAAYgARIsxhQDVgNcAJ4AJABAJgB4QGgAeEBqgEDMi0xuAEDyAEA-AEBmAIDoALoAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QUqjDJVsxd-5JIHBTIuMC4xoAfCBrIHAzItMbgH4wHCBwMxLjLIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKPJ5NUGIjBSKnhukz8brPYhCPg0B4UpdJRGRigTlhUEe0BojnO_mRyVBuEnFRXj_4uMatvSosIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=django+interview+questions&sca_esv=f9132ac85e259"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9042,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django interview questions",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 539.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8778,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 475.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518431230"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8897,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 494.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518431230"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9021,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django interview questions",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 628.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518431230"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518431230"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ccc46e67e7cdf582",
+   "source": "google",
+   "goal": "First search Google for how to debug async programming, then search Google for retrieval augmented generation tutorial.",
+   "fingerprint": 16091,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 36803,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dretrieval%2baugmented%2bgeneration%2btut",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dretrieval%2Baugmented%2Bgeneration%2Btutorial%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsExRwVC-lWcRTB2ft-XtZ_4ZtTrw%253A1790518500025%26source%3Dhp%26ei%3D5CS5arUUlsCQ8g_ytvUQ%26iflsig%3DABILxe8AAAAAarky9A9GqhwmA3zMQF64qaVhzAjz2Vm5%26ved%3D0ahUKEwi1lqCZ-Y6XAxUWIEQIHXJbHQIQ4dUDCDI%26oq%3Dretrieval%2Baugmented%2Bgeneration%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IidyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gdHV0b3JpYWwyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wVI5K4BUA5YkiJwAngAkAEAmAGsAqAB1wSqAQUyLTEuMbgBDMgBAPgBAZgCBKAC5ASoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIFECEYoAHCAgUQIRirApgDBPEFLR_raWaGnMySBwUyLjMtMqAH-wmyBwMzLTK4B98EwgcFMS4yLjHIBweACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPzJ5NUGIjA4hN9_3VHK-3eVEGcdIRg57a_92X4BlkV6TZwAyc5dqGW05RHIiIfOK8rhNdfZnlYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=retrieval+augmented+generation+tutorial&sca_esv="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.3644,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 495.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518500490"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2608,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug async programming",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 493.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518500490"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8644,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for retrieval augmented generation tutorial",
+     "page_changed": null,
+     "latency_ms": 541.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518500490"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation tutorial",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518500490"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9105,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for retrieval augmented generation tutorial",
+     "page_changed": null,
+     "latency_ms": 840.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518500490"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:30",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518500490"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-87275247f10383f5",
+   "source": "google",
+   "goal": "First search Google for vllm best practices, then search Google for spring boot release notes.",
+   "fingerprint": 16091,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14643,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvllm%2bbest%2bpractices%26sca_esv%3df913",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvllm%2Bbest%2Bpractices%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuxlSmpujsuk067phA1YBt7nldExg%253A1790518589076%26source%3Dhp%26ei%3DPSW5au3iA6afkPIP8v7C2AI%26iflsig%3DABILxe8AAAAAarkzTUUXDkAR_nLPieELPIsOgXSWoD-j%26ved%3D0ahUKEwit9dvD-Y6XAxWmD0QIHXK_ECsQ4dUDCDI%26uact%3D5%26oq%3Dvllm%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhN2bGxtIGJlc3QgcHJhY3RpY2VzMgUQABiABDILEAAYgAQYigUYhgMyBRAAGO8FMggQABiABBiiBDIFEAAY7wVIvgdQEFgQcAF4AJABAJgBjwKgAY8CqgEDMi0xuAEDyAEA-AEBmAICoAKYAqgCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBfEFGZVgB-LNA3OSBwUxLjAuMaAHrwKyBwMyLTG4B5MCwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGL_K5NUGIjAiHN0zrfgURKwPnD-kpuh0WIU0S4GlE8mOc2cXj5Jl0hV01CywEnqFwVsHNb8ici8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vllm+best+practices&sca_esv=f9132ac85e259377&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.863,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vllm best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 480.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518589440"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9056,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 568.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518589440"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-374f7856a958e3b8",
+   "source": "google",
+   "goal": "First search Google for angular performance optimization, then search Google for nginx interview questions.",
+   "fingerprint": 16091,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14747,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dangular%2bperformance%2boptimization%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dangular%2Bperformance%2Boptimization%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnueyi0tOf47zljXaE28tXgmI3NWKg%253A1790518655904%26source%3Dhp%26ei%3DfyW5aquANrHwkPIPq7HPsAo%26iflsig%3DABILxe8AAAAAarkzj0dZ8s1ikLOlwK8WKCY26dSi7FB4%26ved%3D0ahUKEwjru8rj-Y6XAxUxOEQIHavYE6YQ4dUDCDI%26uact%3D5%26oq%3Dangular%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiBhbmd1bGFyIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDSJwHUBBYEHABeACQAQCYAfMDoAHzA6oBAzQtMbgBA8gBAPgBAZgCAqAC_gOoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFYJ-qG0ycGuWSBwUxLjQtMaAHtgayBwM0LTG4B_oDwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGILL5NUGIjD_74Idp16__8WTOr7DWbvkxd2KgcTD__qawVdO66mXGlAflkzal_R2NlOd2NtJHjQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=angular+performance+optimization&sca_esv=f9132ac"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8929,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 501.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518656251"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8961,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 536.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518656251"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-851ae04b90f1e399",
+   "source": "google",
+   "goal": "Search Google for llm fine-tuning security vulnerabilities and open the results.",
+   "fingerprint": 16091,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14771,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dllm%2bfine-tuning%2bsecurity%2bvulnerabi",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dllm%2Bfine-tuning%2Bsecurity%2Bvulnerabilities%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnu3vcK8INS_B29UiQHuD9EpjAGrhQ%253A1790518722856%26source%3Dhp%26ei%3DwiW5aqj-MqrCkPIPxoTt0Qs%26iflsig%3DABILxe8AAAAAarkz0ifZN0qvaoKSGcRty0igxYZ1EgXV%26ved%3D0ahUKEwio58CD-o6XAxUqIUQIHUZCO7oQ4dUDCDI%26uact%3D5%26oq%3Dllm%2Bfine-tuning%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IihsbG0gZmluZS10dW5pbmcgc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUj5BlAQWBBwAXgAkAEAmAGjAqABowKqAQMyLTG4AQPIAQD4AQGYAgKgAq0CqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBUZCnwKzCLLokgcFMS4wLjGgB6MFsgcDMi0xuAepAsIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMXL5NUGIjDJEivzpe2GbBmvecUuM7ea4RgkOl8g5CP_f_EvZ4k_rOy1ccc8CoNk54SaIhCZBugyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=llm+fine-tuning+security+vulnerabilities&sca_esv"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8237,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llm fine-tuning security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 503.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518723168"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8973,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 500.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518723168"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-87e5678e6c43243a",
+   "source": "google",
+   "goal": "Search Google for express performance optimization and open the results.",
+   "fingerprint": 16091,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14671,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dexpress%2bperformance%2boptimization%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dexpress%2Bperformance%2Boptimization%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntXENfUjxcXqJiUPsZ4n5GTYODkGA%253A1790518789867%26source%3Dhp%26ei%3DBSa5aqTeMPTmkPIPwa7fgQ8%26iflsig%3DABILxe8AAAAAark0FfnrICn5hFiwldvuVOHY1JfuBv0L%26ved%3D0ahUKEwjk9Lej-o6XAxV0M0QIHUHXN_AQ4dUDCDI%26uact%3D5%26oq%3Dexpress%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiBleHByZXNzIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wUyCBAAGIkFGKIESLUHUBBYEHABeACQAQCYAa0CoAGtAqoBAzMtMbgBA8gBAPgBAZgCAqACtgKoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFon_Vh2Clq92SBwUxLjMtMaAHvQSyBwMzLTG4B7ICwgcDMi0yyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIjM5NUGIjAHBdbPTGOuN0R_rSAJprqpl5DybmjDGvsJcmINfLr3Q53O_mHuvWGm7Q1tAU3xfaIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=express+performance+optimization&sca_esv=f9132ac"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.6783,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "express performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 509.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518790443"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9127,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 561.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518790443"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a02155ee8f1a9a71",
+   "source": "google",
+   "goal": "First search Google for retrieval augmented generation performance optimization, then search Google for refactoring cheat sheet.",
+   "fingerprint": 16091,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 13,
+   "total_ms": 19506,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=refactoring+cheat+sheet&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=appeqnv-0emh3ad22lwzt",
+     "bot_challenge": false,
+     "group0": [
+      "refactoring"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=refactoring+cheat+sheet&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnv-0emH3AD22LwZtTGogkjWuMbYlg%3A1790518859516&ei=Sya5aqKNH_qvur8PnMffsA4&biw=1120&bih=780&oq=refactoring+cheat+sheet&gs_lp=Egxnd3Mtd2l6LXNlcnAiF3JlZmFjdG9yaW5nIGNoZWF0IHNoZWV0KgYIABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FMgUQABjvBUijWFCJUFiJUHAFeAGQAQCYAaUCoAGlAqoBAzItMbgBAcgBAPgBAZgCBqACuALCAgoQABhHGNYEGLADmAMAiAYBkAYIkgcFNS4zLTGgB7YFsgcDMy0xuAesAsIHBTAuNS4xyAcOgAgB&sclient=gws-wiz-serp",
+    "final_title": "refactoring cheat sheet - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.849,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 495.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518857076"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9045,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 582.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518857076"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7723,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation performance optimization",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 565.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+performance+optimization&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnuo8pngKukImWf_MLUuAIJZ3qrLWQ%3A1790518856742&source=hp&ei=SCa5ao7YK8nakPIPhP3SyAw&iflsig=ABILxe8AAAAAark0WIvpyj-XYLt1_KJxIu9yhJTL80sm&ved=0ahUKEwiOnKzD-o6XAxVJLUQIHYS-FMkQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+performance+optimization&gs_lp=Egdnd3Mtd2l6IjdyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSMgHUA5YDnABeACQAQCYAacCoAGnAqoBAzItMbgBA8gBAPgBAZgCAqACsQKoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFSrV67cnTdWiSBwUxLjMtMaAH-QWyBwMzLTG4B6wCwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8306,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation performance optimization",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 573.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+performance+optimization&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnuo8pngKukImWf_MLUuAIJZ3qrLWQ%3A1790518856742&source=hp&ei=SCa5ao7YK8nakPIPhP3SyAw&iflsig=ABILxe8AAAAAark0WIvpyj-XYLt1_KJxIu9yhJTL80sm&ved=0ahUKEwiOnKzD-o6XAxVJLUQIHYS-FMkQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+performance+optimization&gs_lp=Egdnd3Mtd2l6IjdyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSMgHUA5YDnABeACQAQCYAacCoAGnAqoBAzItMbgBA8gBAPgBAZgCAqACsQKoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFSrV67cnTdWiSBwUxLjMtMaAH-QWyBwMzLTG4B6wCwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2675,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 578.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+performance+optimization&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnuo8pngKukImWf_MLUuAIJZ3qrLWQ%3A1790518856742&source=hp&ei=SCa5ao7YK8nakPIPhP3SyAw&iflsig=ABILxe8AAAAAark0WIvpyj-XYLt1_KJxIu9yhJTL80sm&ved=0ahUKEwiOnKzD-o6XAxVJLUQIHYS-FMkQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+performance+optimization&gs_lp=Egdnd3Mtd2l6IjdyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSMgHUA5YDnABeACQAQCYAacCoAGnAqoBAzItMbgBA8gBAPgBAZgCAqACsQKoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFSrV67cnTdWiSBwUxLjMtMaAH-QWyBwMzLTG4B6wCwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.4592,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation performance optimization",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 592.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+performance+optimization&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnuo8pngKukImWf_MLUuAIJZ3qrLWQ%3A1790518856742&source=hp&ei=SCa5ao7YK8nakPIPhP3SyAw&iflsig=ABILxe8AAAAAark0WIvpyj-XYLt1_KJxIu9yhJTL80sm&ved=0ahUKEwiOnKzD-o6XAxVJLUQIHYS-FMkQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+performance+optimization&gs_lp=Egdnd3Mtd2l6IjdyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSMgHUA5YDnABeACQAQCYAacCoAGnAqoBAzItMbgBA8gBAPgBAZgCAqACsQKoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFSrV67cnTdWiSBwUxLjMtMaAH-QWyBwMzLTG4B6wCwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8153,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 574.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+performance+optimization&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnuo8pngKukImWf_MLUuAIJZ3qrLWQ%3A1790518856742&source=hp&ei=SCa5ao7YK8nakPIPhP3SyAw&iflsig=ABILxe8AAAAAark0WIvpyj-XYLt1_KJxIu9yhJTL80sm&ved=0ahUKEwiOnKzD-o6XAxVJLUQIHYS-FMkQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+performance+optimization&gs_lp=Egdnd3Mtd2l6IjdyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSMgHUA5YDnABeACQAQCYAacCoAGnAqoBAzItMbgBA8gBAPgBAZgCAqACsQKoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFSrV67cnTdWiSBwUxLjMtMaAH-QWyBwMzLTG4B6wCwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7637,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation performance optimization",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 596.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+performance+optimization&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnuo8pngKukImWf_MLUuAIJZ3qrLWQ%3A1790518856742&source=hp&ei=SCa5ao7YK8nakPIPhP3SyAw&iflsig=ABILxe8AAAAAark0WIvpyj-XYLt1_KJxIu9yhJTL80sm&ved=0ahUKEwiOnKzD-o6XAxVJLUQIHYS-FMkQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+performance+optimization&gs_lp=Egdnd3Mtd2l6IjdyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSMgHUA5YDnABeACQAQCYAacCoAGnAqoBAzItMbgBA8gBAPgBAZgCAqACsQKoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFSrV67cnTdWiSBwUxLjMtMaAH-QWyBwMzLTG4B6wCwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7637,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation performance optimization",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 587.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+performance+optimization&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnuo8pngKukImWf_MLUuAIJZ3qrLWQ%3A1790518856742&source=hp&ei=SCa5ao7YK8nakPIPhP3SyAw&iflsig=ABILxe8AAAAAark0WIvpyj-XYLt1_KJxIu9yhJTL80sm&ved=0ahUKEwiOnKzD-o6XAxVJLUQIHYS-FMkQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+performance+optimization&gs_lp=Egdnd3Mtd2l6IjdyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSMgHUA5YDnABeACQAQCYAacCoAGnAqoBAzItMbgBA8gBAPgBAZgCAqACsQKoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFSrV67cnTdWiSBwUxLjMtMaAH-QWyBwMzLTG4B6wCwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 10,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7637,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation performance optimization",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 576.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+performance+optimization&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnuo8pngKukImWf_MLUuAIJZ3qrLWQ%3A1790518856742&source=hp&ei=SCa5ao7YK8nakPIPhP3SyAw&iflsig=ABILxe8AAAAAark0WIvpyj-XYLt1_KJxIu9yhJTL80sm&ved=0ahUKEwiOnKzD-o6XAxVJLUQIHYS-FMkQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+performance+optimization&gs_lp=Egdnd3Mtd2l6IjdyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSMgHUA5YDnABeACQAQCYAacCoAGnAqoBAzItMbgBA8gBAPgBAZgCAqACsQKoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFSrV67cnTdWiSBwUxLjMtMaAH-QWyBwMzLTG4B6wCwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 10,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "refactoring cheat sheet",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+performance+optimization&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnuo8pngKukImWf_MLUuAIJZ3qrLWQ%3A1790518856742&source=hp&ei=SCa5ao7YK8nakPIPhP3SyAw&iflsig=ABILxe8AAAAAark0WIvpyj-XYLt1_KJxIu9yhJTL80sm&ved=0ahUKEwiOnKzD-o6XAxVJLUQIHYS-FMkQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+performance+optimization&gs_lp=Egdnd3Mtd2l6IjdyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSMgHUA5YDnABeACQAQCYAacCoAGnAqoBAzItMbgBA8gBAPgBAZgCAqACsQKoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFSrV67cnTdWiSBwUxLjMtMaAH-QWyBwMzLTG4B6wCwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 11,
+     "operation": "CLICK",
+     "confidence": 0.8175,
+     "target": "6",
+     "target_label": "refactoring cheat sheet",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 610.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+performance+optimization&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnuo8pngKukImWf_MLUuAIJZ3qrLWQ%3A1790518856742&source=hp&ei=SCa5ao7YK8nakPIPhP3SyAw&iflsig=ABILxe8AAAAAark0WIvpyj-XYLt1_KJxIu9yhJTL80sm&ved=0ahUKEwiOnKzD-o6XAxVJLUQIHYS-FMkQ4dUDCDI&uact=5&oq=retrieval+augmented+generation+performance+optimization&gs_lp=Egdnd3Mtd2l6IjdyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSMgHUA5YDnABeACQAQCYAacCoAGnAqoBAzItMbgBA8gBAPgBAZgCAqACsQKoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFSrV67cnTdWiSBwUxLjMtMaAH-QWyBwMzLTG4B6wCwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 12,
+     "operation": "DONE",
+     "confidence": 0.8829,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 629.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=refactoring+cheat+sheet&sca_esv=f9132ac85e259377&hl=en&gl=us&sxsrf=APpeQnv-0emH3AD22LwZtTGogkjWuMbYlg%3A1790518859516&ei=Sya5aqKNH_qvur8PnMffsA4&biw=1120&bih=780&oq=refactoring+cheat+sheet&gs_lp=Egxnd3Mtd2l6LXNlcnAiF3JlZmFjdG9yaW5nIGNoZWF0IHNoZWV0KgYIABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FMgUQABjvBUijWFCJUFiJUHAFeAGQAQCYAaUCoAGlAqoBAzItMbgBAcgBAPgBAZgCBqACuALCAgoQABhHGNYEGLADmAMAiAYBkAYIkgcFNS4zLTGgB7YFsgcDMy0xuAesAsIHBTAuNS4xyAcOgAgB&sclient=gws-wiz-serp"
+    }
+   ]
+  }
+ ]
+}

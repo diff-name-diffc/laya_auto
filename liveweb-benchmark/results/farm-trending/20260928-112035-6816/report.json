@@ -1,0 +1,499 @@
+{
+ "meta": {
+  "base_url": "http://127.0.0.1:8812",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 11158,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 8.0,
+  "backend": {
+   "ok": true,
+   "variant": "out/laya-browser-v18d-run2",
+   "calls": 584,
+   "tau": 0.0,
+   "escalated": 0,
+   "recent": [
+    {
+     "ms": 273.4,
+     "questions": 3,
+     "options": 11,
+     "tokens": 3072,
+     "passes": 1
+    },
+    {
+     "ms": 245.4,
+     "questions": 3,
+     "options": 11,
+     "tokens": 3072,
+     "passes": 1
+    },
+    {
+     "ms": 244.2,
+     "questions": 3,
+     "options": 11,
+     "tokens": 3072,
+     "passes": 1
+    },
+    {
+     "ms": 492.0,
+     "questions": 2,
+     "options": 53,
+     "tokens": 1674,
+     "passes": 1
+    },
+    {
+     "ms": 215.3,
+     "questions": 2,
+     "options": 53,
+     "tokens": 1698,
+     "passes": 1
+    }
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-28T11:22:07+0800",
+  "n_tasks": 6,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 1,
+  "verified_rate": 0.167,
+  "found_but_not_stopped": 1,
+  "mean_steps": 2.7,
+  "mean_duration_ms": 6665,
+  "decision_latency_ms": {
+   "p50": 188.5,
+   "p95": 284.3
+  },
+  "step_outcomes": {
+   "executed": 15,
+   "no-text-model": 1
+  },
+  "low_confidence_steps": 3,
+  "vlm_rescues": 7,
+  "by_source": {
+   "github": {
+    "n": 6,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 1,
+    "verified_rate": 0.167,
+    "mean_steps": 2.7
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-c2a77b3b10bfab57",
+   "source": "github",
+   "goal": "From GitHub trending, open a repository related to pytorch and view its README.",
+   "fingerprint": 11158,
+   "status": "blocked",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "vlm_rescues": 5,
+   "total_ms": 18554,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9464,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 216.6,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 7,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.886,
+     "target": "1",
+     "target_label": "Search or jump to",
+     "kind": "fill",
+     "text": null,
+     "outcome": "no-text-model",
+     "page_changed": null,
+     "latency_ms": 300.9,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a8a9b5f58ba5bafd",
+   "source": "github",
+   "goal": "On GitHub trending, show only the rust language repositories.",
+   "fingerprint": 11158,
+   "status": "incomplete",
+   "verified": true,
+   "success": false,
+   "steps": 9,
+   "vlm_rescues": 2,
+   "total_ms": 13364,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://github.com/trending/rust?since=daily",
+     "bot_challenge": false,
+     "group0": [
+      "rust"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://github.com/trending/rust?since=daily",
+    "final_title": "Trending Rust repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9443,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 218.8,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.94,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 183.2,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.9406,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 188.5,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:21",
+     "target_label": "Language: Any",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.347,
+     "target": "2",
+     "target_label": "Open Type or choose a language",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 255.1,
+     "low_confidence": true,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.2984,
+     "target": "2",
+     "target_label": "Open Type or choose a language",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 248.7,
+     "low_confidence": true,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.3169,
+     "target": "2",
+     "target_label": "Open Type or choose a language",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 255.0,
+     "low_confidence": true,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:49",
+     "target_label": "Type or choose a language",
+     "kind": "fill",
+     "text": "Rust",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.899,
+     "target": "3",
+     "target_label": "Rust",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 284.3,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d3e118546cdd519c",
+   "source": "github",
+   "goal": "From GitHub trending, open a repository related to ci/cd pipelines and view its README.",
+   "fingerprint": 11158,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2018,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-0d8378df06a4908d",
+   "source": "github",
+   "goal": "Open the first repository in GitHub's trending kotlin section and view its details.",
+   "fingerprint": 11158,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2017,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending/kotlin",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending/kotlin",
+    "final_title": "Trending Kotlin repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-4d4d5e2fbc6bb6f7",
+   "source": "github",
+   "goal": "Browse GitHub trending and open one repository about golang.",
+   "fingerprint": 11158,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2017,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-4e88e150b7ee968f",
+   "source": "github",
+   "goal": "From GitHub trending, open a repository related to express and view its README.",
+   "fingerprint": 11158,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2020,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  }
+ ]
+}

@@ -1,0 +1,1069 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 98342,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T17:37:16+0800",
+  "n_tasks": 8,
+  "success": 6,
+  "success_rate": 0.75,
+  "verified": 6,
+  "verified_rate": 0.75,
+  "found_but_not_stopped": 0,
+  "mean_steps": 6.9,
+  "mean_duration_ms": 12488,
+  "decision_latency_ms": {
+   "p50": 533.4,
+   "p95": 790.6
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 3,
+   "executed": 31,
+   "done-rejected": 9,
+   "page changed since the decision (url or marker mismatch)": 2,
+   "done": 8
+  },
+  "low_confidence_steps": 3,
+  "by_source": {
+   "github": {
+    "n": 1,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 14.0
+   },
+   "google": {
+    "n": 7,
+    "success": 6,
+    "success_rate": 0.857,
+    "verified": 6,
+    "verified_rate": 0.857,
+    "mean_steps": 5.9
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-e9857dc62238133b",
+   "source": "google",
+   "goal": "First search Google for ci/cd pipelines performance optimization, then search Google for svelte best practices.",
+   "fingerprint": 98342,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 13,
+   "total_ms": 22709,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=svelte+best+practices&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqnu8a1u4ppq-7hws9am",
+     "bot_challenge": false,
+     "group0": [
+      "svelte"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=svelte+best+practices&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnu8A1U4PPq-7hws9AM1PB6VqQRXRg%3A1790501689833&ei=OeO4aoe-MsrQkPIP-uiUyA8&biw=1120&bih=780&oq=svelte+best+practices&gs_lp=Egxnd3Mtd2l6LXNlcnAiFXN2ZWx0ZSBiZXN0IHByYWN0aWNlcyoFCAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yCBAAGBYYHhgKMggQABgWGB4YCjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSLIIUA5YDnABeAGQAQCYAeUBoAHlAaoBAzItMbgBAcgBAPgBAZgCAqAC6wHCAgoQABhHGNYEGLADmAMAiAYBkAYIkgcFMS4wLjGgB-gFsgcDMi0xuAfnAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz-serp",
+    "final_title": "svelte best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8986,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ci/cd pipelines performance optimization",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 799.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9005,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 787.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501685432"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8585,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 506.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501685432"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8636,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ci/cd pipelines performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 609.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501685432"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.793,
+     "target": "12",
+     "target_label": "ci/cd pipelines performance optimization github",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 533.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501685432"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.638,
+     "target": "17",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 624.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+performance+optimization+github&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQns_dmz4fwNdFsCmXMka4fRIxsoOvA%3A1790501684082&source=hp&ei=NOO4asniA9Kiur8PpuC12A4&iflsig=ABILxe8AAAAAarjxRNrLo7Wua474jXsN53T226dNJXWp&oq=ci%2Fcd+pipelines+performance+optimization&gs_lp=Egdnd3Mtd2l6IihjaS9jZCBwaXBlbGluZXMgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uKgUIABigATIFECEYoAEyBRAhGKABMgUQIRigAUjHD1CYCFiYCHACeACQAQCYAcwBoAHMAaoBAzItMbgBAcgBAPgBAZgCA6AC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFztECG82bgGOSBwUyLjAuMaAH2wOyBwMyLTG4B84BwgcDMS4yyAcEgAgB&sclient=gws-wiz&sei=OeO4aoXeIsLNkPIPzq2JiAM"
+    },
+    {
+     "step": 7,
+     "operation": "DONE",
+     "confidence": 0.4923,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'svelte best practices'",
+     "page_changed": null,
+     "latency_ms": 611.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+performance+optimization+github&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQns_dmz4fwNdFsCmXMka4fRIxsoOvA%3A1790501684082&source=hp&ei=NOO4asniA9Kiur8PpuC12A4&iflsig=ABILxe8AAAAAarjxRNrLo7Wua474jXsN53T226dNJXWp&oq=ci%2Fcd+pipelines+performance+optimization&gs_lp=Egdnd3Mtd2l6IihjaS9jZCBwaXBlbGluZXMgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uKgUIABigATIFECEYoAEyBRAhGKABMgUQIRigAUjHD1CYCFiYCHACeACQAQCYAcwBoAHMAaoBAzItMbgBAcgBAPgBAZgCA6AC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFztECG82bgGOSBwUyLjAuMaAH2wOyBwMyLTG4B84BwgcDMS4yyAcEgAgB&sclient=gws-wiz&sei=OeO4aoXeIsLNkPIPzq2JiAM"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "svelte best practices",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+performance+optimization+github&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQns_dmz4fwNdFsCmXMka4fRIxsoOvA%3A1790501684082&source=hp&ei=NOO4asniA9Kiur8PpuC12A4&iflsig=ABILxe8AAAAAarjxRNrLo7Wua474jXsN53T226dNJXWp&oq=ci%2Fcd+pipelines+performance+optimization&gs_lp=Egdnd3Mtd2l6IihjaS9jZCBwaXBlbGluZXMgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uKgUIABigATIFECEYoAEyBRAhGKABMgUQIRigAUjHD1CYCFiYCHACeACQAQCYAcwBoAHMAaoBAzItMbgBAcgBAPgBAZgCA6AC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFztECG82bgGOSBwUyLjAuMaAH2wOyBwMyLTG4B84BwgcDMS4yyAcEgAgB&sclient=gws-wiz&sei=OeO4aoXeIsLNkPIPzq2JiAM"
+    },
+    {
+     "step": 8,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.3654,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 600.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+performance+optimization+github&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQns_dmz4fwNdFsCmXMka4fRIxsoOvA%3A1790501684082&source=hp&ei=NOO4asniA9Kiur8PpuC12A4&iflsig=ABILxe8AAAAAarjxRNrLo7Wua474jXsN53T226dNJXWp&oq=ci%2Fcd+pipelines+performance+optimization&gs_lp=Egdnd3Mtd2l6IihjaS9jZCBwaXBlbGluZXMgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uKgUIABigATIFECEYoAEyBRAhGKABMgUQIRigAUjHD1CYCFiYCHACeACQAQCYAcwBoAHMAaoBAzItMbgBAcgBAPgBAZgCA6AC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFztECG82bgGOSBwUyLjAuMaAH2wOyBwMyLTG4B84BwgcDMS4yyAcEgAgB&sclient=gws-wiz&sei=OeO4aoXeIsLNkPIPzq2JiAM"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.726,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'svelte best practices'",
+     "page_changed": null,
+     "latency_ms": 766.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+performance+optimization+github&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQns_dmz4fwNdFsCmXMka4fRIxsoOvA%3A1790501684082&source=hp&ei=NOO4asniA9Kiur8PpuC12A4&iflsig=ABILxe8AAAAAarjxRNrLo7Wua474jXsN53T226dNJXWp&oq=ci%2Fcd+pipelines+performance+optimization&gs_lp=Egdnd3Mtd2l6IihjaS9jZCBwaXBlbGluZXMgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uKgUIABigATIFECEYoAEyBRAhGKABMgUQIRigAUjHD1CYCFiYCHACeACQAQCYAcwBoAHMAaoBAzItMbgBAcgBAPgBAZgCA6AC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFztECG82bgGOSBwUyLjAuMaAH2wOyBwMyLTG4B84BwgcDMS4yyAcEgAgB&sclient=gws-wiz&sei=OeO4aoXeIsLNkPIPzq2JiAM"
+    },
+    {
+     "step": 9,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "svelte best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+performance+optimization+github&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQns_dmz4fwNdFsCmXMka4fRIxsoOvA%3A1790501684082&source=hp&ei=NOO4asniA9Kiur8PpuC12A4&iflsig=ABILxe8AAAAAarjxRNrLo7Wua474jXsN53T226dNJXWp&oq=ci%2Fcd+pipelines+performance+optimization&gs_lp=Egdnd3Mtd2l6IihjaS9jZCBwaXBlbGluZXMgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uKgUIABigATIFECEYoAEyBRAhGKABMgUQIRigAUjHD1CYCFiYCHACeACQAQCYAcwBoAHMAaoBAzItMbgBAcgBAPgBAZgCA6AC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFztECG82bgGOSBwUyLjAuMaAH2wOyBwMyLTG4B84BwgcDMS4yyAcEgAgB&sclient=gws-wiz&sei=OeO4aoXeIsLNkPIPzq2JiAM"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.7118,
+     "target": "5",
+     "target_label": "svelte best practices",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 638.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+performance+optimization+github&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQns_dmz4fwNdFsCmXMka4fRIxsoOvA%3A1790501684082&source=hp&ei=NOO4asniA9Kiur8PpuC12A4&iflsig=ABILxe8AAAAAarjxRNrLo7Wua474jXsN53T226dNJXWp&oq=ci%2Fcd+pipelines+performance+optimization&gs_lp=Egdnd3Mtd2l6IihjaS9jZCBwaXBlbGluZXMgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uKgUIABigATIFECEYoAEyBRAhGKABMgUQIRigAUjHD1CYCFiYCHACeACQAQCYAcwBoAHMAaoBAzItMbgBAcgBAPgBAZgCA6AC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFztECG82bgGOSBwUyLjAuMaAH2wOyBwMyLTG4B84BwgcDMS4yyAcEgAgB&sclient=gws-wiz&sei=OeO4aoXeIsLNkPIPzq2JiAM"
+    },
+    {
+     "step": 11,
+     "operation": "DONE",
+     "confidence": 0.9103,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 629.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=svelte+best+practices&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnu8A1U4PPq-7hws9AM1PB6VqQRXRg%3A1790501689833&ei=OeO4aoe-MsrQkPIP-uiUyA8&biw=1120&bih=780&oq=svelte+best+practices&gs_lp=Egxnd3Mtd2l6LXNlcnAiFXN2ZWx0ZSBiZXN0IHByYWN0aWNlcyoFCAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yCBAAGBYYHhgKMggQABgWGB4YCjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSLIIUA5YDnABeAGQAQCYAeUBoAHlAaoBAzItMbgBAcgBAPgBAZgCAqAC6wHCAgoQABhHGNYEGLADmAMAiAYBkAYIkgcFMS4wLjGgB-gFsgcDMi0xuAfnAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-84fb72a998622e8b",
+   "source": "google",
+   "goal": "Search Google for express tutorial and open the results.",
+   "fingerprint": 98342,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 8,
+   "total_ms": 13165,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=express+tutorial&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqnva7284jdmf-4pizapzpuzp",
+     "bot_challenge": false,
+     "group0": [
+      "express"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=express+tutorial&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnvA7284jdMF-4piZapzpUzpcMIZAw%3A1790501714158&source=hp&ei=UuO4ap6WCMmWkPIPoZHd6QM&iflsig=ABILxe8AAAAAarjxYv4VTNgqiDu9Y1B4SLKiLv-PY9Ft&ved=0ahUKEwieh5DVuo6XAxVJC0QIHaFINz0Q4dUDCDI&oq=express+tutorial&gs_lp=Egdnd3Mtd2l6IhBleHByZXNzIHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5Iv05QjSdYjSdwAngAkAEAmAHUAaAB1AGqAQMyLTG4AQzIAQD4AQGYAgOgAtwBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBXBfru5oHfG2kgcFMi4wLjGgB40FsgcDMi0xuAfWAcIHBTAuMi4xyAcFgAgB&sclient=gws-wiz",
+    "final_title": "express tutorial - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8558,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "express tutorial",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 520.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9045,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 509.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501715637"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8779,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 534.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501715637"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8773,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"express tutorial\"",
+     "page_changed": null,
+     "latency_ms": 650.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501715637"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "express tutorial",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501715637"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.9049,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page listing results for 'express tutorial' (only the Google homepage search box with autocomplete suggestions is shown, no results)",
+     "page_changed": null,
+     "latency_ms": 692.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501715637"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501715637"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.8933,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 607.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=express+tutorial&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnvA7284jdMF-4piZapzpUzpcMIZAw%3A1790501714158&source=hp&ei=UuO4ap6WCMmWkPIPoZHd6QM&iflsig=ABILxe8AAAAAarjxYv4VTNgqiDu9Y1B4SLKiLv-PY9Ft&ved=0ahUKEwieh5DVuo6XAxVJC0QIHaFINz0Q4dUDCDI&oq=express+tutorial&gs_lp=Egdnd3Mtd2l6IhBleHByZXNzIHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5Iv05QjSdYjSdwAngAkAEAmAHUAaAB1AGqAQMyLTG4AQzIAQD4AQGYAgOgAtwBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBXBfru5oHfG2kgcFMi4wLjGgB40FsgcDMi0xuAfWAcIHBTAuMi4xyAcFgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d27d61bbeb2b7514",
+   "source": "google",
+   "goal": "Search Google for how to debug c++ and open the results.",
+   "fingerprint": 98342,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 5,
+   "total_ms": 9079,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=how+to+debug+c%2b%2b&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqns8xa-lkg5rruhkultr",
+     "bot_challenge": false,
+     "group0": [
+      "how"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=how+to+debug+c%2B%2B&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQns8Xa-LKG5rRUHKultRW0ooLQTFzQ%3A1790501734679&source=hp&ei=ZuO4aoi2KMfAkPIPxpjlkQs&iflsig=ABILxe8AAAAAarjxdsULe5bEtN3cE8vHQbl-aTEy9zz7&ved=0ahUKEwiIgfXeuo6XAxVHIEQIHUZMObIQ4dUDCDI&oq=how+to+debug+c%2B%2B&gs_lp=Egdnd3Mtd2l6IhBob3cgdG8gZGVidWcgYysrMggQABiABBi0BzIIEAAYgAQYtAcyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I-SVQDFgMcAF4AJABAJgB3AGgAdwBqgEDMi0xuAEMyAEA-AEBmAICoALhAagCCsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtALCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqApgDAvEFkyD1jSivlA2SBwUxLjAuMaAHtQWyBwMyLTG4B94BwgcDMC4yyAcDgAgB&sclient=gws-wiz",
+    "final_title": "how to debug c++ - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.611,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 458.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501734958"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8894,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug c++",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 480.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501734958"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9209,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'how to debug c++' are not displayed; the search has not been executed yet",
+     "page_changed": null,
+     "latency_ms": 614.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501734958"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501734958"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8909,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 610.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+c%2B%2B&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQns8Xa-LKG5rRUHKultRW0ooLQTFzQ%3A1790501734679&source=hp&ei=ZuO4aoi2KMfAkPIPxpjlkQs&iflsig=ABILxe8AAAAAarjxdsULe5bEtN3cE8vHQbl-aTEy9zz7&ved=0ahUKEwiIgfXeuo6XAxVHIEQIHUZMObIQ4dUDCDI&oq=how+to+debug+c%2B%2B&gs_lp=Egdnd3Mtd2l6IhBob3cgdG8gZGVidWcgYysrMggQABiABBi0BzIIEAAYgAQYtAcyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I-SVQDFgMcAF4AJABAJgB3AGgAdwBqgEDMi0xuAEMyAEA-AEBmAICoALhAagCCsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtALCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqApgDAvEFkyD1jSivlA2SBwUxLjAuMaAHtQWyBwMyLTG4B94BwgcDMC4yyAcDgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-999b35774398544e",
+   "source": "google",
+   "goal": "Search Google for typescript release notes and open the results.",
+   "fingerprint": 98342,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 5163,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=typescript+release+notes&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqnsmgj1sd-gatxcz",
+     "bot_challenge": false,
+     "group0": [
+      "typescript"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=typescript+release+notes&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnsMgj1sd-GAtxczr-IPy35no1W7Hg%3A1790501750954&source=hp&ei=duO4auaQOZ6ckPIPoI7jkAE&iflsig=ABILxe8AAAAAarjxhlsPzq5cYoEnFplrXJL9zSJcNwUE&ved=0ahUKEwjmo9bmuo6XAxUeDkQIHSDHGBIQ4dUDCDI&uact=5&oq=typescript+release+notes&gs_lp=Egdnd3Mtd2l6Ihh0eXBlc2NyaXB0IHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSMQHUBBYEHABeACQAQCYAdUBoAHVAaoBAzItMbgBA8gBAPgBAZgCAqAC2wGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFrQu1Gu217iaSBwUxLjAuMaAHwwWyBwMyLTG4B9cBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz",
+    "final_title": "typescript release notes - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8819,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "typescript release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 458.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501751092"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8956,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 577.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501751092"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.3199,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 573.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=typescript+release+notes&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnsMgj1sd-GAtxczr-IPy35no1W7Hg%3A1790501750954&source=hp&ei=duO4auaQOZ6ckPIPoI7jkAE&iflsig=ABILxe8AAAAAarjxhlsPzq5cYoEnFplrXJL9zSJcNwUE&ved=0ahUKEwjmo9bmuo6XAxUeDkQIHSDHGBIQ4dUDCDI&uact=5&oq=typescript+release+notes&gs_lp=Egdnd3Mtd2l6Ihh0eXBlc2NyaXB0IHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSMQHUBBYEHABeACQAQCYAdUBoAHVAaoBAzItMbgBA8gBAPgBAZgCAqAC2wGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFrQu1Gu217iaSBwUxLjAuMaAHwwWyBwMyLTG4B9cBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5e8b5cdfd77bb6e7",
+   "source": "github",
+   "goal": "Search GitHub for 'laravel' repositories and open the search results.",
+   "fingerprint": 98342,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 14,
+   "total_ms": 28741,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'github.com/search'",
+    "checks": {
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=",
+     "bot_challenge": false,
+     "group0": [
+      "laravel"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=laravel",
+    "final_title": "Understanding GitHub Code Search syntax - GitHub Docs"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8493,
+     "target": "11",
+     "target_label": "Enter your email",
+     "kind": "fill",
+     "text": "laravel",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 737.1,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8956,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 409.7,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.4734,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 733.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.801,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page listing 'laravel' repositories is not shown — only the GitHub homepage with the search dropdown/explore suggestions visible",
+     "page_changed": null,
+     "latency_ms": 437.2,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:14",
+     "target_label": "Search or jump to",
+     "kind": "fill",
+     "text": "laravel",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8185,
+     "target": "2",
+     "target_label": "Clear search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 484.9,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8733,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 494.6,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.876,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 516.6,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.8827,
+     "target": "6",
+     "target_label": "Search syntax tips",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 529.1,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.8792,
+     "target": "6",
+     "target_label": "Search or ask Copilot",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 790.6,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.546,
+     "target": "2",
+     "target_label": "Clear",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 580.8,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 11,
+     "operation": "DONE",
+     "confidence": 0.2556,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub repository search results for 'laravel'",
+     "page_changed": null,
+     "latency_ms": 582.4,
+     "low_confidence": true,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 11,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:25",
+     "target_label": "Search or ask Copilot",
+     "kind": "fill",
+     "text": "laravel",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 12,
+     "operation": "DONE",
+     "confidence": 0.9142,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 811.6,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=laravel"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-0651def5165e251b",
+   "source": "google",
+   "goal": "Search Google for logging best practices interview questions and open the results.",
+   "fingerprint": 98342,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 5099,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=logging+best+practices+interview+questions&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=ap",
+     "bot_challenge": false,
+     "group0": [
+      "logging"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=logging+best+practices+interview+questions&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQntzxFPv8alLoTi7hAe181K5EmRyQQ%3A1790501799991&source=hp&ei=p-O4aqv6OvfKvMcP5N-WkQE&iflsig=ABILxe8AAAAAarjxtwaUA8s8KyzgpObhzb7RtP4KFuxw&ved=0ahUKEwjr6Yb-uo6XAxV3Je8CHeSvJRIQ4dUDCDI&uact=5&oq=logging+best+practices+interview+questions&gs_lp=Egdnd3Mtd2l6Iipsb2dnaW5nIGJlc3QgcHJhY3RpY2VzIGludGVydmlldyBxdWVzdGlvbnMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAkiKB1AaWBpwAXgAkAEAmAHkAaAB5AGqAQMyLTG4AQPIAQD4AQGYAgKgAusBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBZ1MdYWSZZo-kgcFMS4wLjGgB9YFsgcDMi0xuAfnAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz",
+    "final_title": "logging best practices interview questions - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.3221,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "logging best practices interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 485.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501800138"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8861,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 513.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501800138"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8571,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 638.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=logging+best+practices+interview+questions&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQntzxFPv8alLoTi7hAe181K5EmRyQQ%3A1790501799991&source=hp&ei=p-O4aqv6OvfKvMcP5N-WkQE&iflsig=ABILxe8AAAAAarjxtwaUA8s8KyzgpObhzb7RtP4KFuxw&ved=0ahUKEwjr6Yb-uo6XAxV3Je8CHeSvJRIQ4dUDCDI&uact=5&oq=logging+best+practices+interview+questions&gs_lp=Egdnd3Mtd2l6Iipsb2dnaW5nIGJlc3QgcHJhY3RpY2VzIGludGVydmlldyBxdWVzdGlvbnMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAkiKB1AaWBpwAXgAkAEAmAHkAaAB5AGqAQMyLTG4AQPIAQD4AQGYAgKgAusBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBZ1MdYWSZZo-kgcFMS4wLjGgB9YFsgcDMi0xuAfnAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-bb0f972563ad21cf",
+   "source": "google",
+   "goal": "Search Google for kafka best practices and open the results.",
+   "fingerprint": 98342,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4610,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=kafka+best+practices&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqnsrm24n-tk8c80agv0v",
+     "bot_challenge": false,
+     "group0": [
+      "kafka"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=kafka+best+practices&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnsRm24N-tk8c80AGV0vBGnu6dDCiQ%3A1790501812262&source=hp&ei=tOO4avXXDsTCkPIPjpC6gAc&iflsig=ABILxe8AAAAAarjxxAf8YFoqFs4YFg2ydI23TZA979Eb&ved=0ahUKEwj1gfSDu46XAxVEIUQIHQ6IDnAQ4dUDCDI&uact=5&oq=kafka+best+practices&gs_lp=Egdnd3Mtd2l6IhRrYWZrYSBiZXN0IHByYWN0aWNlczILEAAYgAQYigUYkQIyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IjglQDFgMcAF4AJABAJgB2QGgAdkBqgEDMi0xuAEDyAEA-AEBmAICoALdAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMC8QXxjjrLl0mxOpIHBTEuMC4xoAfWBbIHAzItMbgH2wHCBwMwLjLIBwOACAE&sclient=gws-wiz",
+    "final_title": "kafka best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8903,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kafka best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 790.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501812400"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8769,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 789.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501812400"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8857,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 553.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kafka+best+practices&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnsRm24N-tk8c80AGV0vBGnu6dDCiQ%3A1790501812262&source=hp&ei=tOO4avXXDsTCkPIPjpC6gAc&iflsig=ABILxe8AAAAAarjxxAf8YFoqFs4YFg2ydI23TZA979Eb&ved=0ahUKEwj1gfSDu46XAxVEIUQIHQ6IDnAQ4dUDCDI&uact=5&oq=kafka+best+practices&gs_lp=Egdnd3Mtd2l6IhRrYWZrYSBiZXN0IHByYWN0aWNlczILEAAYgAQYigUYkQIyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IjglQDFgMcAF4AJABAJgB2QGgAdkBqgEDMi0xuAEDyAEA-AEBmAICoALdAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMC8QXxjjrLl0mxOpIHBTEuMC4xoAfWBbIHAzItMbgH2wHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8c6a82df9f1f663a",
+   "source": "google",
+   "goal": "Search Google for logging best practices security vulnerabilities and open the results.",
+   "fingerprint": 98342,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 11337,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['logging']]",
+    "checks": {
+     "url": "https://about.google/intl/zh-cn_all/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://about.google/intl/zh-CN_ALL/",
+    "final_title": "关于 Google：我们的产品、技术以及公司信息 - About Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.837,
+     "target": "1",
+     "target_label": "About",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 458.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501824328"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8434,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'logging best practices security vulnerabilities'; Search results listing (page shows the About Google homepage instead",
+     "page_changed": null,
+     "latency_ms": 354.9,
+     "low_confidence": false,
+     "url": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google logo",
+     "kind": "click",
+     "text": null,
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9375,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'logging best practices security vulnerabilities'",
+     "page_changed": null,
+     "latency_ms": 359.8,
+     "low_confidence": false,
+     "url": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google logo",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9181,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 395.1,
+     "low_confidence": false,
+     "url": "https://about.google/intl/zh-CN_ALL/"
+    }
+   ]
+  }
+ ]
+}

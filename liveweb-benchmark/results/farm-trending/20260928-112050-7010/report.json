@@ -1,0 +1,363 @@
+{
+ "meta": {
+  "base_url": "http://127.0.0.1:8812",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 21529,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 8.0,
+  "backend": {
+   "ok": true,
+   "variant": "out/laya-browser-v18d-run2",
+   "calls": 592,
+   "tau": 0.0,
+   "escalated": 0,
+   "recent": [
+    {
+     "ms": 223.6,
+     "questions": 3,
+     "options": 21,
+     "tokens": 2147,
+     "passes": 1
+    },
+    {
+     "ms": 215.3,
+     "questions": 2,
+     "options": 53,
+     "tokens": 1678,
+     "passes": 1
+    },
+    {
+     "ms": 232.4,
+     "questions": 3,
+     "options": 14,
+     "tokens": 2447,
+     "passes": 1
+    },
+    {
+     "ms": 261.2,
+     "questions": 3,
+     "options": 14,
+     "tokens": 2534,
+     "passes": 1
+    },
+    {
+     "ms": 263.8,
+     "questions": 3,
+     "options": 14,
+     "tokens": 2621,
+     "passes": 1
+    }
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-28T11:22:14+0800",
+  "n_tasks": 6,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 1.2,
+  "mean_duration_ms": 5725,
+  "decision_latency_ms": {
+   "p50": 0.0,
+   "p95": 210.4
+  },
+  "step_outcomes": {
+   "executed": 6,
+   "refused-empty-enter": 1
+  },
+  "low_confidence_steps": 0,
+  "vlm_rescues": 5,
+  "by_source": {
+   "github": {
+    "n": 6,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 1.2
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-ba1a3f56f920bd3e",
+   "source": "github",
+   "goal": "From today's GitHub trending list, open a mysql project and view its details.",
+   "fingerprint": 21529,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "vlm_rescues": 5,
+   "total_ms": 26275,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9451,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 209.4,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8426,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 210.4,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8b488fff2632dc6a",
+   "source": "github",
+   "goal": "From GitHub trending, open a repository related to ruby and view its README.",
+   "fingerprint": 21529,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2018,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-229932f524590027",
+   "source": "github",
+   "goal": "Open a memory leak debugging repository from GitHub trending and check its README.",
+   "fingerprint": 21529,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2016,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-d598abf49ca5ecff",
+   "source": "github",
+   "goal": "From today's GitHub trending list, open a react project and view its details.",
+   "fingerprint": 21529,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2019,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-6b36b0bb22712464",
+   "source": "github",
+   "goal": "From today's GitHub trending list, open a flask project and view its details.",
+   "fingerprint": 21529,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2021,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-a70f41ff7cdf5959",
+   "source": "github",
+   "goal": "Open a java repository from GitHub trending and check its README.",
+   "fingerprint": 21529,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 0,
+   "error": "TargetClosedError: Page.goto: Target page, context or browser has been closed",
+   "verification": {
+    "passed": false,
+    "reason": "harness error",
+    "checks": {}
+   },
+   "trajectory": []
+  }
+ ]
+}

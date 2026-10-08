@@ -1,0 +1,821 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 37827,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:24:29+0800",
+  "n_tasks": 8,
+  "success": 3,
+  "success_rate": 0.375,
+  "verified": 3,
+  "verified_rate": 0.375,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.9,
+  "mean_duration_ms": 15623,
+  "decision_latency_ms": {
+   "p50": 529.0,
+   "p95": 910.2
+  },
+  "step_outcomes": {
+   "stale": 3,
+   "refused-empty-enter": 3,
+   "done-rejected": 7,
+   "executed": 22,
+   "done": 3,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 5,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 3,
+    "success_rate": 0.375,
+    "verified": 3,
+    "verified_rate": 0.375,
+    "mean_steps": 4.9
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-852f65d8831c2989",
+   "source": "google",
+   "goal": "Search Google for java best practices and open the results.",
+   "fingerprint": 37827,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 23952,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3djava%2bbest%2bpractices%26sca_esv%3d54dc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Djava%2Bbest%2Bpractices%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvtPOxIrdoaNGQPUKhD6unf_3Z6uQ%253A1790507913286%26source%3Dhp%26ei%3Difu4aouUEOzGkPIPnfrcUA%26iflsig%3DABILxe8AAAAAarkJmeCiKL5xnru4JNTBqll0wENSyJjq%26ved%3D0ahUKEwjL_Izh0Y6XAxVsI0QIHR09FwoQ4dUDCDI%26oq%3Djava%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhNqYXZhIGJlc3QgcHJhY3RpY2VzMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IwytQD1gPcAF4AJABAJgBxAGgAcQBqgEDMC4xuAEMyAEA-AEBmAICoALKAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QVvyi1-S-V2K5IHAzEuMaAH0gWyBwMwLjG4B8YBwgcFMC4xLjHIBwSACAE%26sclient%3Dgws-wiz%26sei%3Dlfu4auaaB-zGkPIPnfrcUA&hl=en&q=EgQm0XtnGJX349UGIjDJWZ3tgwNl-mTrHzyr4mONlGOv95PelCOlwLKlgBjE7uhFCRn2jCDOiXz9imBK9B4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=java+best+practices&sca_esv=54dc793dbd0950c5&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8581,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "java best practices",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 570.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9039,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 470.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507914666"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8993,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'java best practices' are not shown; search query has not been entered",
+     "page_changed": null,
+     "latency_ms": 501.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507914666"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "java best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507914666"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.3527,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for java best practices",
+     "page_changed": null,
+     "latency_ms": 615.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507914666"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507914666"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-48f11f743062fd73",
+   "source": "google",
+   "goal": "Search Google for llama.cpp release notes and open the results.",
+   "fingerprint": 37827,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 7,
+   "total_ms": 13487,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=llama.cpp+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnsbmx6nob_v9qzjy",
+     "bot_challenge": false,
+     "group0": [
+      "llama.cpp"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=llama.cpp+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsbmx6NOb_v9QzJyZZMRi7PtIN2Jg%3A1790507989595&source=hp&ei=1fu4arWZI7SekPIPnLq9yAM&iflsig=ABILxe8AAAAAarkJ5UXuohyLUOrot1RDCpbxQiJStXeY&ved=0ahUKEwj1176F0o6XAxU0D0QIHRxdDzkQ4dUDCDI&oq=llama.cpp+release+notes&gs_lp=Egdnd3Mtd2l6IhdsbGFtYS5jcHAgcmVsZWFzZSBub3RlczIFEAAYgAQyBRAAGO8FMggQABiABBiiBDIFEAAY7wUyBRAAGO8FSPc2UA5YDnABeACQAQCYAc4BoAHOAaoBAzItMbgBDMgBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFUioJrURAIoqSBwUxLjAuMaAHqwKyBwMyLTG4B9ABwgcDMC4yyAcDgAgB&sclient=gws-wiz",
+    "final_title": "llama.cpp release notes - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8805,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llama.cpp release notes",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 475.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8983,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 490.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507990890"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8903,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page listing results for \"llama.cpp release notes\"",
+     "page_changed": null,
+     "latency_ms": 485.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507990890"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llama.cpp release notes",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507990890"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9071,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for llama.cpp release notes",
+     "page_changed": null,
+     "latency_ms": 551.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507990890"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:28",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507990890"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8743,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 623.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=llama.cpp+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsbmx6NOb_v9QzJyZZMRi7PtIN2Jg%3A1790507989595&source=hp&ei=1fu4arWZI7SekPIPnLq9yAM&iflsig=ABILxe8AAAAAarkJ5UXuohyLUOrot1RDCpbxQiJStXeY&ved=0ahUKEwj1176F0o6XAxU0D0QIHRxdDzkQ4dUDCDI&oq=llama.cpp+release+notes&gs_lp=Egdnd3Mtd2l6IhdsbGFtYS5jcHAgcmVsZWFzZSBub3RlczIFEAAYgAQyBRAAGO8FMggQABiABBiiBDIFEAAY7wUyBRAAGO8FSPc2UA5YDnABeACQAQCYAc4BoAHOAaoBAzItMbgBDMgBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFUioJrURAIoqSBwUxLjAuMaAHqwKyBwMyLTG4B9ABwgcDMC4yyAcDgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-03f9c43c5d730cf3",
+   "source": "google",
+   "goal": "Search Google for zig security vulnerabilities and open the results.",
+   "fingerprint": 37827,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 7,
+   "total_ms": 11089,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=zig+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=appeqns38gcwhieg",
+     "bot_challenge": false,
+     "group0": [
+      "zig"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=zig+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQns38gcWhiEgm4odRXCWOY0CQ9TMwg%3A1790508010453&source=hp&ei=6vu4arejGpnNkPIPkri5oQk&iflsig=ABILxe8AAAAAarkJ-i5DOx4et-W5PaZQw2t2ccf21Tln&ved=0ahUKEwi3wLeP0o6XAxWZJkQIHRJcLpQQ4dUDCDI&uact=5&oq=zig+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ihx6aWcgc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FSNpKULIrWLIrcAJ4AJABAJgB4QGgAeEBqgEDMi0xuAEDyAEA-AEBmAIDoALrAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QXrwPa1lOwHLpIHBTIuMC4xoAfvBbIHAzItMbgH5wHCBwMwLjPIBwWACAE&sclient=gws-wiz",
+    "final_title": "zig security vulnerabilities - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.3592,
+     "target": "8",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 474.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508010703"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8171,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 571.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508010703"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.7862,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for zig security vulnerabilities",
+     "page_changed": null,
+     "latency_ms": 549.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508010703"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "zig security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508010703"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8919,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'zig security vulnerabilities' (only the query is typed in the search box with autocomplete suggestions; results have not been load",
+     "page_changed": null,
+     "latency_ms": 607.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508010703"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508010703"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8853,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 570.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=zig+security+vulnerabilities&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQns38gcWhiEgm4odRXCWOY0CQ9TMwg%3A1790508010453&source=hp&ei=6vu4arejGpnNkPIPkri5oQk&iflsig=ABILxe8AAAAAarkJ-i5DOx4et-W5PaZQw2t2ccf21Tln&ved=0ahUKEwi3wLeP0o6XAxWZJkQIHRJcLpQQ4dUDCDI&uact=5&oq=zig+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ihx6aWcgc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FSNpKULIrWLIrcAJ4AJABAJgB4QGgAeEBqgEDMi0xuAEDyAEA-AEBmAIDoALrAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QXrwPa1lOwHLpIHBTIuMC4xoAfvBbIHAzItMbgH5wHCBwMwLjPIBwWACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-65e1d3afcdf232e8",
+   "source": "google",
+   "goal": "Search Google for code review performance optimization and open the results.",
+   "fingerprint": 37827,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4222,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=code+review+performance+optimization&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=appeqnvi",
+     "bot_challenge": false,
+     "group0": [
+      "review",
+      "code"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=code+review+performance+optimization&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvIxR9j1YNR67FYo80apg-GcfFQtA%3A1790508028749&source=hp&ei=_Pu4at67LPa4kPIP26-qoAg&iflsig=ABILxe8AAAAAarkKDLWe1ELDY8bqgEMekE_WexeEpUcm&ved=0ahUKEwjeqZSY0o6XAxV2HEQIHduXCoQQ4dUDCDI&uact=5&oq=code+review+performance+optimization&gs_lp=Egdnd3Mtd2l6IiRjb2RlIHJldmlldyBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBUiDCVAMWAxwAXgAkAEAmAHyAaAB8gGqAQMyLTG4AQPIAQD4AQGYAgKgAvcBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBQBplItLwkgckgcFMS4wLjGgB50IsgcDMi0xuAf1AcIHAzEuMcgHAoAIAQ&sclient=gws-wiz",
+    "final_title": "code review performance optimization - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8912,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "code review performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 493.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508028945"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.906,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 771.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508028945"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9033,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 606.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=code+review+performance+optimization&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvIxR9j1YNR67FYo80apg-GcfFQtA%3A1790508028749&source=hp&ei=_Pu4at67LPa4kPIP26-qoAg&iflsig=ABILxe8AAAAAarkKDLWe1ELDY8bqgEMekE_WexeEpUcm&ved=0ahUKEwjeqZSY0o6XAxV2HEQIHduXCoQQ4dUDCDI&uact=5&oq=code+review+performance+optimization&gs_lp=Egdnd3Mtd2l6IiRjb2RlIHJldmlldyBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBUiDCVAMWAxwAXgAkAEAmAHyAaAB8gGqAQMyLTG4AQPIAQD4AQGYAgKgAvcBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBQBplItLwkgckgcFMS4wLjGgB50IsgcDMi0xuAf1AcIHAzEuMcgHAoAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f9c06fabfbe72095",
+   "source": "google",
+   "goal": "First search Google for memory leak debugging tutorial, then search Google for docker tutorial.",
+   "fingerprint": 37827,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 10,
+   "total_ms": 27959,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddocker%2btutorial%26sca_esv%3d54dc793dbd",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddocker%2Btutorial%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuNfp8tMMPZ3vY4Fsn-WKDjSgBz_Q%253A1790508043129%26ei%3DC_y4avC6B5W6kPIPp7rDsA0%26biw%3D1120%26bih%3D780%26oq%3Ddocker%2Btutorial%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiD2RvY2tlciB0dXRvcmlhbCoKCAAYgAQYigUYQzIKEAAYgAQYigUYQzILEC4Y-gYY8gYYjwcyChAAGIAEGIoFGEMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIIEAAYgAQYtAcyBRAAGIAESKoIUA1YDXABeAGQAQCYAdYBoAHWAaoBAzItMbgBAcgBAPgBAZgCAqAC3gHCAgoQABhHGNYEGLADmAMAiAYBkAYIkgcFMS4wLjGgB-kGsgcDMi0xuAfaAcIHAzAuMsgHBYAIAQ%26sclient%3Dgws-wiz-serp&hl=en&q=EgQm0XtnGJf449UGIjBplRZGaUiLszZppjV9KD2wlSi5-MNfH8BsWyvebFwd-q3G1dn4eq5NsIDF5GbVJp8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=docker+tutorial&sca_esv=54dc793dbd0950c5&hl=en&g"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8714,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "memory leak debugging tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 498.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508040218"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9043,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 969.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508040218"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.2216,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'docker tutorial' (page currently shows results for 'memory leak debugging tutorial', which is only the first step)",
+     "page_changed": null,
+     "latency_ms": 910.2,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=memory+leak+debugging+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntL2WGqubvd4hFJE_8Di6v78uGn5Q%3A1790508040116&source=hp&ei=CPy4apb3BYPAkPIPof2a0Qs&iflsig=ABILxe8AAAAAarkKGM5Dp8WdT30wOb5E4KnKvjIcb1yY&ved=0ahUKEwiWm8qd0o6XAxUDIEQIHaG-JroQ4dUDCDI&uact=5&oq=memory+leak+debugging+tutorial&gs_lp=Egdnd3Mtd2l6Ih5tZW1vcnkgbGVhayBkZWJ1Z2dpbmcgdHV0b3JpYWwyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwJIwApQC1gLcAF4AJABAJgB4AGgAeABqgEDMi0xuAEDyAEA-AEBmAICoALlAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMC8QVAyZhi6R5_J5IHBTEuMC4xoAfzBbIHAzItMbgH4wHCBwMxLjHIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "docker tutorial",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=memory+leak+debugging+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntL2WGqubvd4hFJE_8Di6v78uGn5Q%3A1790508040116&source=hp&ei=CPy4apb3BYPAkPIPof2a0Qs&iflsig=ABILxe8AAAAAarkKGM5Dp8WdT30wOb5E4KnKvjIcb1yY&ved=0ahUKEwiWm8qd0o6XAxUDIEQIHaG-JroQ4dUDCDI&uact=5&oq=memory+leak+debugging+tutorial&gs_lp=Egdnd3Mtd2l6Ih5tZW1vcnkgbGVhayBkZWJ1Z2dpbmcgdHV0b3JpYWwyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwJIwApQC1gLcAF4AJABAJgB4AGgAeABqgEDMi0xuAEDyAEA-AEBmAICoALlAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMC8QVAyZhi6R5_J5IHBTEuMC4xoAfzBbIHAzItMbgH4wHCBwMxLjHIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8264,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 625.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=memory+leak+debugging+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntL2WGqubvd4hFJE_8Di6v78uGn5Q%3A1790508040116&source=hp&ei=CPy4apb3BYPAkPIPof2a0Qs&iflsig=ABILxe8AAAAAarkKGM5Dp8WdT30wOb5E4KnKvjIcb1yY&ved=0ahUKEwiWm8qd0o6XAxUDIEQIHaG-JroQ4dUDCDI&uact=5&oq=memory+leak+debugging+tutorial&gs_lp=Egdnd3Mtd2l6Ih5tZW1vcnkgbGVhayBkZWJ1Z2dpbmcgdHV0b3JpYWwyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwJIwApQC1gLcAF4AJABAJgB4AGgAeABqgEDMi0xuAEDyAEA-AEBmAICoALlAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMC8QVAyZhi6R5_J5IHBTEuMC4xoAfzBbIHAzItMbgH4wHCBwMxLjHIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2164,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 579.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=memory+leak+debugging+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntL2WGqubvd4hFJE_8Di6v78uGn5Q%3A1790508040116&source=hp&ei=CPy4apb3BYPAkPIPof2a0Qs&iflsig=ABILxe8AAAAAarkKGM5Dp8WdT30wOb5E4KnKvjIcb1yY&ved=0ahUKEwiWm8qd0o6XAxUDIEQIHaG-JroQ4dUDCDI&uact=5&oq=memory+leak+debugging+tutorial&gs_lp=Egdnd3Mtd2l6Ih5tZW1vcnkgbGVhayBkZWJ1Z2dpbmcgdHV0b3JpYWwyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwJIwApQC1gLcAF4AJABAJgB4AGgAeABqgEDMi0xuAEDyAEA-AEBmAICoALlAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMC8QVAyZhi6R5_J5IHBTEuMC4xoAfzBbIHAzItMbgH4wHCBwMxLjHIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2164,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 546.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=memory+leak+debugging+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntL2WGqubvd4hFJE_8Di6v78uGn5Q%3A1790508040116&source=hp&ei=CPy4apb3BYPAkPIPof2a0Qs&iflsig=ABILxe8AAAAAarkKGM5Dp8WdT30wOb5E4KnKvjIcb1yY&ved=0ahUKEwiWm8qd0o6XAxUDIEQIHaG-JroQ4dUDCDI&uact=5&oq=memory+leak+debugging+tutorial&gs_lp=Egdnd3Mtd2l6Ih5tZW1vcnkgbGVhayBkZWJ1Z2dpbmcgdHV0b3JpYWwyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwJIwApQC1gLcAF4AJABAJgB4AGgAeABqgEDMi0xuAEDyAEA-AEBmAICoALlAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMC8QVAyZhi6R5_J5IHBTEuMC4xoAfzBbIHAzItMbgH4wHCBwMxLjHIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2164,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 1017.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=memory+leak+debugging+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntL2WGqubvd4hFJE_8Di6v78uGn5Q%3A1790508040116&source=hp&ei=CPy4apb3BYPAkPIPof2a0Qs&iflsig=ABILxe8AAAAAarkKGM5Dp8WdT30wOb5E4KnKvjIcb1yY&ved=0ahUKEwiWm8qd0o6XAxUDIEQIHaG-JroQ4dUDCDI&uact=5&oq=memory+leak+debugging+tutorial&gs_lp=Egdnd3Mtd2l6Ih5tZW1vcnkgbGVhayBkZWJ1Z2dpbmcgdHV0b3JpYWwyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwJIwApQC1gLcAF4AJABAJgB4AGgAeABqgEDMi0xuAEDyAEA-AEBmAICoALlAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMC8QVAyZhi6R5_J5IHBTEuMC4xoAfzBbIHAzItMbgH4wHCBwMxLjHIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "docker tutorial",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=memory+leak+debugging+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntL2WGqubvd4hFJE_8Di6v78uGn5Q%3A1790508040116&source=hp&ei=CPy4apb3BYPAkPIPof2a0Qs&iflsig=ABILxe8AAAAAarkKGM5Dp8WdT30wOb5E4KnKvjIcb1yY&ved=0ahUKEwiWm8qd0o6XAxUDIEQIHaG-JroQ4dUDCDI&uact=5&oq=memory+leak+debugging+tutorial&gs_lp=Egdnd3Mtd2l6Ih5tZW1vcnkgbGVhayBkZWJ1Z2dpbmcgdHV0b3JpYWwyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwJIwApQC1gLcAF4AJABAJgB4AGgAeABqgEDMi0xuAEDyAEA-AEBmAICoALlAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMC8QVAyZhi6R5_J5IHBTEuMC4xoAfzBbIHAzItMbgH4wHCBwMxLjHIBwOACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.2521,
+     "target": "5",
+     "target_label": "docker tutorial",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 622.1,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=memory+leak+debugging+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntL2WGqubvd4hFJE_8Di6v78uGn5Q%3A1790508040116&source=hp&ei=CPy4apb3BYPAkPIPof2a0Qs&iflsig=ABILxe8AAAAAarkKGM5Dp8WdT30wOb5E4KnKvjIcb1yY&ved=0ahUKEwiWm8qd0o6XAxUDIEQIHaG-JroQ4dUDCDI&uact=5&oq=memory+leak+debugging+tutorial&gs_lp=Egdnd3Mtd2l6Ih5tZW1vcnkgbGVhayBkZWJ1Z2dpbmcgdHV0b3JpYWwyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwJIwApQC1gLcAF4AJABAJgB4AGgAeABqgEDMi0xuAEDyAEA-AEBmAICoALlAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMC8QVAyZhi6R5_J5IHBTEuMC4xoAfzBbIHAzItMbgH4wHCBwMxLjHIBwOACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-da855f832684f616",
+   "source": "google",
+   "goal": "First search Google for grafana tutorial, then search Google for rust security vulnerabilities.",
+   "fingerprint": 37827,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14877,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgrafana%2btutorial%26sca_esv%3d18a60b01d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgrafana%2Btutorial%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvzLOBZt5MHsxdaRKslgG8mJijWbw%253A1790508120204%26source%3Dhp%26ei%3DWPy4atidC7uXkPIPisq2yQI%26iflsig%3DABILxe8AAAAAarkKaCgFbHcl2uAqEneNUKTiRzbTwPQ-%26ved%3D0ahUKEwjYqeLD0o6XAxW7C0QIHQqlLSkQ4dUDCDI%26uact%3D5%26oq%3Dgrafana%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhBncmFmYW5hIHR1dG9yaWFsMgoQABiABBiKBRhDMgsQLhj6BhjyBhiPBzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSLoIUA1YDXABeACQAQCYAccBoAHHAaoBAzAuMbgBA8gBAPgBAZgCAqACzQGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBXUW2ZAvwFTbkgcFMS4wLjGgB9cGsgcDMi0xuAfJAcIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNv449UGIjAqp26YgA6q226Fkt1g5__TUNFLZB10yRVGcv_dBtUvU-eEdzuiFL6Fv0ddE3_uiKEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=grafana+tutorial&sca_esv=18a60b01d202c9ee&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9022,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "grafana tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 499.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508120292"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8247,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 701.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508120292"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-2adf838c6a60ec75",
+   "source": "google",
+   "goal": "First search Google for rust migration guide, then search Google for elasticsearch security vulnerabilities.",
+   "fingerprint": 37827,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14631,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drust%2bmigration%2bguide%26sca_esv%3d18a",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drust%2Bmigration%2Bguide%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnswbJJsaji6EtZouY_6EpgMlRH_BA%253A1790508187274%26source%3Dhp%26ei%3Dm_y4aqDOD5Owur8PlKrZmQ4%26iflsig%3DABILxe8AAAAAarkKq6_OZ2NicgK3EcEy2BQrnEtjp4E4%26ved%3D0ahUKEwjgh-Dj0o6XAxUTmO4BHRRVNuMQ4dUDCDI%26uact%3D5%26oq%3Drust%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhRydXN0IG1pZ3JhdGlvbiBndWlkZTIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMggQABiABBiiBDIFEAAY7wUyCBAAGIkFGKIESIsHUA1YDXABeACQAQCYAdsBoAHbAaoBAzItMbgBA8gBAPgBAZgCAqAC4AGoAgrCAhMQLhiABBiKBRhDGOcGGOoCGLQCwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBQ08eDqoK1rakgcFMS4wLjGgB6MFsgcDMi0xuAfcAcIHAzAuMsgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJ3549UGIjBRGqOKTiauc6E_x300sQOQnRfdo1-qlmDCI96JeHzsmGi07PegG4yw8z3gwq_h8-UyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=rust+migration+guide&sca_esv=18a60b01d202c9ee&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.903,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rust migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 482.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508187368"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8671,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 529.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508187368"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3955e080b75d3ab2",
+   "source": "google",
+   "goal": "First search Google for langchain open source alternatives, then search Google for mysql release notes.",
+   "fingerprint": 37827,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14770,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlangchain%2bopen%2bsource%2balternatives",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlangchain%2Bopen%2Bsource%2Balternatives%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuI7ZaLTPvz2Off3uRZB7L3gVANUA%253A1790508254102%26source%3Dhp%26ei%3D3vy4as6SBeHmkPIP-p-gkA0%26iflsig%3DABILxe8AAAAAarkK7p7hYRlz1sXRZSkg2JeHje82yPOH%26ved%3D0ahUKEwjO-c6D046XAxVhM0QIHfoPCNIQ4dUDCDI%26uact%3D5%26oq%3Dlangchain%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiJsYW5nY2hhaW4gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIAEGKIESNwHUA9YD3ABeACQAQCYAeABoAHgAaoBAzItMbgBA8gBAPgBAZgCAqAC6wGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEF_jmtm_z3ZYOSBwUxLjAuMaAH7wSyBwMyLTG4B-YBwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOD549UGIjCqBq5a9wwYskVMSpkBMWEI3jCDYcjHwOQA0M99cfOB38PvOwu0R3msUitOVe69bQMyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=langchain+open+source+alternatives&sca_esv=18a60"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8842,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 496.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508254323"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8928,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 596.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508254323"
+    }
+   ]
+  }
+ ]
+}

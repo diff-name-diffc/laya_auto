@@ -1,0 +1,885 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 13845,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:22:44+0800",
+  "n_tasks": 8,
+  "success": 4,
+  "success_rate": 0.5,
+  "verified": 4,
+  "verified_rate": 0.5,
+  "found_but_not_stopped": 0,
+  "mean_steps": 5.4,
+  "mean_duration_ms": 15519,
+  "decision_latency_ms": {
+   "p50": 565.0,
+   "p95": 845.1
+  },
+  "step_outcomes": {
+   "stale": 3,
+   "refused-empty-enter": 1,
+   "done-rejected": 5,
+   "executed": 27,
+   "done": 5,
+   "page changed since the decision (url or marker mismatch)": 2
+  },
+  "low_confidence_steps": 2,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 4,
+    "success_rate": 0.5,
+    "verified": 4,
+    "verified_rate": 0.5,
+    "mean_steps": 5.4
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-60aa77891145a37f",
+   "source": "google",
+   "goal": "Search Google for terraform migration guide and open the results.",
+   "fingerprint": 13845,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 24907,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dterraform%2bmigration%2bguide%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dterraform%2Bmigration%2Bguide%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuXQSTnmC27WIVWk-3zFeR_4LkV7g%253A1790507898420%26source%3Dhp%26ei%3Devu4aqiyGOrNkPIPhNbg0Ac%26iflsig%3DABILxe8AAAAAarkJijbGN7Vpr1hfJDwUiScaPJt2ZMf2%26ved%3D0ahUKEwio14Ha0Y6XAxXqJkQIHQQrGHoQ4dUDCDI%26uact%3D5%26oq%3Dterraform%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6Ihl0ZXJyYWZvcm0gbWlncmF0aW9uIGd1aWRlMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUjhOVAQWBBwAXgAkAEAmAHFAaABxQGqAQMwLjGwAQC4AQPIAQD4AQGYAgKgAs8BqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBRYeOfRUSFCgkgcFMS4wLjGgB_UDsgcDMi0xuAfKAcIHBTAuMS4xyAcGgAgB%26sclient%3Dgws-wiz%26sei%3Dh_u4apWwGM68kPIPvKjE4QU&hl=en&q=EgQm0XtnGIf349UGIjAcZeTVosJ7yGimcGf0_JqoxrzoD_aOydavgptcPI5gP4Lq1oOJcLTQ2qmXJQWkR2UyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=terraform+migration+guide&sca_esv=54dc793dbd0950"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9104,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "terraform migration guide",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 507.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.881,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 580.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507899727"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9108,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search query \"terraform migration guide\" not entered; search results for \"terraform migration guide\" not displayed/opened",
+     "page_changed": null,
+     "latency_ms": 520.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507899727"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "terraform migration guide",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507899727"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9104,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'terraform migration guide' are not displayed; only the search box with query and autocomplete suggestions are visible.",
+     "page_changed": null,
+     "latency_ms": 617.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507899727"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507899727"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-366f060f29b2c8dc",
+   "source": "google",
+   "goal": "Search Google for elasticsearch security vulnerabilities and open the results.",
+   "fingerprint": 13845,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 5,
+   "total_ms": 8469,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=elasticsearch+security+vulnerabilities&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqn",
+     "bot_challenge": false,
+     "group0": [
+      "elasticsearch"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=elasticsearch+security+vulnerabilities&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuDrPZIXwmAnVA1dEgGxMGS8GxLBg%3A1790507975704&source=hp&ei=x_u4asDkKf2JkPIPvMW_4QM&iflsig=ABILxe8AAAAAarkJ15zuzpZh6dU4oxU7mNc6rRdb6kZK&oq=elasticsearch+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IiZlbGFzdGljc2VhcmNoIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllcyoGCAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCBAAGIkFGKIEMggQABiABBiiBDIFEAAY7wUyBRAAGO8FSKIIUBJYEnABeACQAQCYAcwBoAHMAaoBAzItMbABALgBAcgBAPgBAZgCAqAC1wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBeIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFNvQLqv_WcaqSBwUxLjAuMaAHgwSyBwMyLTG4B9IBwgcDMi0yyAcHgAgB&sclient=gws-wiz",
+    "final_title": "elasticsearch security vulnerabilities - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9009,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elasticsearch security vulnerabilities",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 508.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.5024,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'elasticsearch security vulnerabilities'; The search query has not been performed",
+     "page_changed": null,
+     "latency_ms": 510.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507977023"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elasticsearch security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507977023"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8958,
+     "target": "12",
+     "target_label": "elasticsearch security vulnerabilities",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 622.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507977023"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8764,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 613.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=elasticsearch+security+vulnerabilities&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuDrPZIXwmAnVA1dEgGxMGS8GxLBg%3A1790507975704&source=hp&ei=x_u4asDkKf2JkPIPvMW_4QM&iflsig=ABILxe8AAAAAarkJ15zuzpZh6dU4oxU7mNc6rRdb6kZK&oq=elasticsearch+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6IiZlbGFzdGljc2VhcmNoIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllcyoGCAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCBAAGIkFGKIEMggQABiABBiiBDIFEAAY7wUyBRAAGO8FSKIIUBJYEnABeACQAQCYAcwBoAHMAaoBAzItMbABALgBAcgBAPgBAZgCAqAC1wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBeIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFNvQLqv_WcaqSBwUxLjAuMaAHgwSyBwMyLTG4B9IBwgcDMi0yyAcHgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-888014e803070f42",
+   "source": "google",
+   "goal": "First search Google for laravel migration guide, then search Google for django best practices.",
+   "fingerprint": 13845,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 11,
+   "total_ms": 15184,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=django+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqns0gk7wrueapyhvkc-",
+     "bot_challenge": false,
+     "group0": [
+      "django"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=django+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQns0GK7WrUEaPYHvKC-DYVIr4Zza3Q%3A1790507994274&ei=2vu4asWvELbfkPIP3fT3-Aw&biw=1120&bih=780&oq=django+best+practices&gs_lp=Egxnd3Mtd2l6LXNlcnAiFWRqYW5nbyBiZXN0IHByYWN0aWNlcyoFCAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjOClALWAtwAXgBkAEAmAHOAaABzgGqAQMyLTGwAQC4AQHIAQD4AQGYAgKgAtMBwgIKEAAYRxjWBBiwA5gDAOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYogGAZAGCJIHBTEuMC4xoAfMBbIHAzItMbgH0AHCBwMwLjLIBwOACAE&sclient=gws-wiz-serp",
+    "final_title": "django best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.905,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "laravel migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 477.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507991819"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.452,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 594.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507991819"
+    },
+    {
+     "step": 3,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.5848,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 563.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=laravel+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntz8QYprPERpkTlTV2ynnP6uzzvDQ%3A1790507991559&source=hp&ei=1_u4apriINykkPIPz-zW0Qs&iflsig=ABILxe8AAAAAarkJ5-X4QX3kqvzzv7TTBwoRsL4-O02b&ved=0ahUKEwjaqbaG0o6XAxVcEkQIHU-2NboQ4dUDCDI&uact=5&oq=laravel+migration+guide&gs_lp=Egdnd3Mtd2l6IhdsYXJhdmVsIG1pZ3JhdGlvbiBndWlkZTIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I1gdQD1gPcAF4AJABAJgB0QGgAdEBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALZAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWgYOScOfydupIHBTEuMC4xoAeSB7IHAzItMbgH1QHCBwMwLjLIBwWACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2413,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 587.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=laravel+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntz8QYprPERpkTlTV2ynnP6uzzvDQ%3A1790507991559&source=hp&ei=1_u4apriINykkPIPz-zW0Qs&iflsig=ABILxe8AAAAAarkJ5-X4QX3kqvzzv7TTBwoRsL4-O02b&ved=0ahUKEwjaqbaG0o6XAxVcEkQIHU-2NboQ4dUDCDI&uact=5&oq=laravel+migration+guide&gs_lp=Egdnd3Mtd2l6IhdsYXJhdmVsIG1pZ3JhdGlvbiBndWlkZTIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I1gdQD1gPcAF4AJABAJgB0QGgAdEBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALZAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWgYOScOfydupIHBTEuMC4xoAeSB7IHAzItMbgH1QHCBwMwLjLIBwWACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django best practices",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=laravel+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntz8QYprPERpkTlTV2ynnP6uzzvDQ%3A1790507991559&source=hp&ei=1_u4apriINykkPIPz-zW0Qs&iflsig=ABILxe8AAAAAarkJ5-X4QX3kqvzzv7TTBwoRsL4-O02b&ved=0ahUKEwjaqbaG0o6XAxVcEkQIHU-2NboQ4dUDCDI&uact=5&oq=laravel+migration+guide&gs_lp=Egdnd3Mtd2l6IhdsYXJhdmVsIG1pZ3JhdGlvbiBndWlkZTIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I1gdQD1gPcAF4AJABAJgB0QGgAdEBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALZAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWgYOScOfydupIHBTEuMC4xoAeSB7IHAzItMbgH1QHCBwMwLjLIBwWACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.7213,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 596.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=laravel+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntz8QYprPERpkTlTV2ynnP6uzzvDQ%3A1790507991559&source=hp&ei=1_u4apriINykkPIPz-zW0Qs&iflsig=ABILxe8AAAAAarkJ5-X4QX3kqvzzv7TTBwoRsL4-O02b&ved=0ahUKEwjaqbaG0o6XAxVcEkQIHU-2NboQ4dUDCDI&uact=5&oq=laravel+migration+guide&gs_lp=Egdnd3Mtd2l6IhdsYXJhdmVsIG1pZ3JhdGlvbiBndWlkZTIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I1gdQD1gPcAF4AJABAJgB0QGgAdEBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALZAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWgYOScOfydupIHBTEuMC4xoAeSB7IHAzItMbgH1QHCBwMwLjLIBwWACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.7213,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 576.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=laravel+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntz8QYprPERpkTlTV2ynnP6uzzvDQ%3A1790507991559&source=hp&ei=1_u4apriINykkPIPz-zW0Qs&iflsig=ABILxe8AAAAAarkJ5-X4QX3kqvzzv7TTBwoRsL4-O02b&ved=0ahUKEwjaqbaG0o6XAxVcEkQIHU-2NboQ4dUDCDI&uact=5&oq=laravel+migration+guide&gs_lp=Egdnd3Mtd2l6IhdsYXJhdmVsIG1pZ3JhdGlvbiBndWlkZTIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I1gdQD1gPcAF4AJABAJgB0QGgAdEBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALZAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWgYOScOfydupIHBTEuMC4xoAeSB7IHAzItMbgH1QHCBwMwLjLIBwWACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.7213,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 603.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=laravel+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntz8QYprPERpkTlTV2ynnP6uzzvDQ%3A1790507991559&source=hp&ei=1_u4apriINykkPIPz-zW0Qs&iflsig=ABILxe8AAAAAarkJ5-X4QX3kqvzzv7TTBwoRsL4-O02b&ved=0ahUKEwjaqbaG0o6XAxVcEkQIHU-2NboQ4dUDCDI&uact=5&oq=laravel+migration+guide&gs_lp=Egdnd3Mtd2l6IhdsYXJhdmVsIG1pZ3JhdGlvbiBndWlkZTIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I1gdQD1gPcAF4AJABAJgB0QGgAdEBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALZAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWgYOScOfydupIHBTEuMC4xoAeSB7IHAzItMbgH1QHCBwMwLjLIBwWACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=laravel+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntz8QYprPERpkTlTV2ynnP6uzzvDQ%3A1790507991559&source=hp&ei=1_u4apriINykkPIPz-zW0Qs&iflsig=ABILxe8AAAAAarkJ5-X4QX3kqvzzv7TTBwoRsL4-O02b&ved=0ahUKEwjaqbaG0o6XAxVcEkQIHU-2NboQ4dUDCDI&uact=5&oq=laravel+migration+guide&gs_lp=Egdnd3Mtd2l6IhdsYXJhdmVsIG1pZ3JhdGlvbiBndWlkZTIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I1gdQD1gPcAF4AJABAJgB0QGgAdEBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALZAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWgYOScOfydupIHBTEuMC4xoAeSB7IHAzItMbgH1QHCBwMwLjLIBwWACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.277,
+     "target": "6",
+     "target_label": "django best practices",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 937.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=laravel+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntz8QYprPERpkTlTV2ynnP6uzzvDQ%3A1790507991559&source=hp&ei=1_u4apriINykkPIPz-zW0Qs&iflsig=ABILxe8AAAAAarkJ5-X4QX3kqvzzv7TTBwoRsL4-O02b&ved=0ahUKEwjaqbaG0o6XAxVcEkQIHU-2NboQ4dUDCDI&uact=5&oq=laravel+migration+guide&gs_lp=Egdnd3Mtd2l6IhdsYXJhdmVsIG1pZ3JhdGlvbiBndWlkZTIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I1gdQD1gPcAF4AJABAJgB0QGgAdEBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALZAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWgYOScOfydupIHBTEuMC4xoAeSB7IHAzItMbgH1QHCBwMwLjLIBwWACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.9107,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 845.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=django+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQns0GK7WrUEaPYHvKC-DYVIr4Zza3Q%3A1790507994274&ei=2vu4asWvELbfkPIP3fT3-Aw&biw=1120&bih=780&oq=django+best+practices&gs_lp=Egxnd3Mtd2l6LXNlcnAiFWRqYW5nbyBiZXN0IHByYWN0aWNlcyoFCAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjOClALWAtwAXgBkAEAmAHOAaABzgGqAQMyLTGwAQC4AQHIAQD4AQGYAgKgAtMBwgIKEAAYRxjWBBiwA5gDAOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYogGAZAGCJIHBTEuMC4xoAfMBbIHAzItMbgH0AHCBwMwLjLIBwOACAE&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-662bd8394df6ea93",
+   "source": "google",
+   "goal": "Search Google for elasticsearch migration guide and open the results.",
+   "fingerprint": 13845,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 4,
+   "total_ms": 8378,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=elasticsearch+migration+guide&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=appeqntdemu7twn",
+     "bot_challenge": false,
+     "group0": [
+      "elasticsearch"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=elasticsearch+migration+guide&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQntdEMU7TwNftzWfUl6ZJ_sxr5dNig%3A1790508013948&source=hp&ei=7fu4aqfkOLDIkPIP0MuEWQ&iflsig=ABILxe8AAAAAarkJ_S_If9agirGwSPoCanZaUF2cI2tF&ved=0ahUKEwjnjo2R0o6XAxUwJEQIHdAlIQsQ4dUDCDI&uact=5&oq=elasticsearch+migration+guide&gs_lp=Egdnd3Mtd2l6Ih1lbGFzdGljc2VhcmNoIG1pZ3JhdGlvbiBndWlkZTIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMggQABiABBiiBDIFEAAY7wUyBRAAGO8FSPIpUA1YDXABeACQAQCYAdcBoAHXAaoBAzItMbABALgBA8gBAPgBAZgCAqAC3QGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFauCwj8i8x2WSBwUxLjAuMaAHpQWyBwMyLTG4B9kBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz",
+    "final_title": "elasticsearch migration guide - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9102,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elasticsearch migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 496.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508014222"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8216,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for \"elasticsearch migration guide\" is not shown; only autocomplete suggestions are visible and the query has not been submitted",
+     "page_changed": null,
+     "latency_ms": 567.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508014222"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508014222"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.828,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 623.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=elasticsearch+migration+guide&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQntdEMU7TwNftzWfUl6ZJ_sxr5dNig%3A1790508013948&source=hp&ei=7fu4aqfkOLDIkPIP0MuEWQ&iflsig=ABILxe8AAAAAarkJ_S_If9agirGwSPoCanZaUF2cI2tF&ved=0ahUKEwjnjo2R0o6XAxUwJEQIHdAlIQsQ4dUDCDI&uact=5&oq=elasticsearch+migration+guide&gs_lp=Egdnd3Mtd2l6Ih1lbGFzdGljc2VhcmNoIG1pZ3JhdGlvbiBndWlkZTIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMggQABiABBiiBDIFEAAY7wUyBRAAGO8FSPIpUA1YDXABeACQAQCYAdcBoAHXAaoBAzItMbABALgBA8gBAPgBAZgCAqAC3QGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFauCwj8i8x2WSBwUxLjAuMaAHpQWyBwMyLTG4B9kBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-306b5d3c76cfc14c",
+   "source": "google",
+   "goal": "First search Google for huggingface transformers cheat sheet, then search Google for model quantization cheat sheet.",
+   "fingerprint": 13845,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 10,
+   "total_ms": 25291,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=quantization'",
+    "checks": {
+     "url": "https://www.google.com/search?q=model+quantization+cheat+sheet+transformers&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=a",
+     "bot_challenge": false,
+     "group0": [
+      "quantization",
+      "model"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=model+quantization+cheat+sheet+transformers&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuhs1VkzYqTPvT9irhU76LZ9cBaUQ%3A1790508032183&ei=APy4aoDoCvfMkPIPo_OM6Aw&biw=1120&bih=780&oq=model+quantization+cheat+sheet&gs_lp=Egxnd3Mtd2l6LXNlcnAiHm1vZGVsIHF1YW50aXphdGlvbiBjaGVhdCBzaGVldCoFCAMYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAjIFECEYqwJI4QdQDFgMcAF4AZABAJgB3gGgAd4BqgEDMi0xsAEAuAEByAEA-AEBmAICoALjAcICChAAGEcY1gQYsAOYAwDiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGKIBgGQBgiSBwUxLjAuMaAHpgayBwMyLTG4B-EBwgcDMS4xyAcCgAgB&sclient=gws-wiz-serp",
+    "final_title": "model quantization cheat sheet transformers - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9118,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "huggingface transformers cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 493.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508029607"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8141,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 563.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508029607"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8626,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for model quantization cheat sheet",
+     "page_changed": null,
+     "latency_ms": 580.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=huggingface+transformers+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntokxj493IHfiTSc-ALtNL75sIuMQ%3A1790508029518&source=hp&ei=_fu4aouPHve5kPIP49bY4As&iflsig=ABILxe8AAAAAarkKDWls69FXHoSi8hiKsQAemItCdCMJ&ved=0ahUKEwjLgcOY0o6XAxX3HEQIHWMrFrwQ4dUDCDI&uact=5&oq=huggingface+transformers+cheat+sheet&gs_lp=Egdnd3Mtd2l6IiRodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgY2hlYXQgc2hlZXQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUivB1AOWA5wAXgAkAEAmAHdAaAB3QGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAuYBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBWAEPC0PTwVekgcFMS4wLjGgB44EsgcDMi0xuAfiAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization cheat sheet",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=huggingface+transformers+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntokxj493IHfiTSc-ALtNL75sIuMQ%3A1790508029518&source=hp&ei=_fu4aouPHve5kPIP49bY4As&iflsig=ABILxe8AAAAAarkKDWls69FXHoSi8hiKsQAemItCdCMJ&ved=0ahUKEwjLgcOY0o6XAxX3HEQIHWMrFrwQ4dUDCDI&uact=5&oq=huggingface+transformers+cheat+sheet&gs_lp=Egdnd3Mtd2l6IiRodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgY2hlYXQgc2hlZXQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUivB1AOWA5wAXgAkAEAmAHdAaAB3QGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAuYBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBWAEPC0PTwVekgcFMS4wLjGgB44EsgcDMi0xuAfiAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.4412,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 792.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=huggingface+transformers+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntokxj493IHfiTSc-ALtNL75sIuMQ%3A1790508029518&source=hp&ei=_fu4aouPHve5kPIP49bY4As&iflsig=ABILxe8AAAAAarkKDWls69FXHoSi8hiKsQAemItCdCMJ&ved=0ahUKEwjLgcOY0o6XAxX3HEQIHWMrFrwQ4dUDCDI&uact=5&oq=huggingface+transformers+cheat+sheet&gs_lp=Egdnd3Mtd2l6IiRodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgY2hlYXQgc2hlZXQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUivB1AOWA5wAXgAkAEAmAHdAaAB3QGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAuYBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBWAEPC0PTwVekgcFMS4wLjGgB44EsgcDMi0xuAfiAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.4412,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 837.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=huggingface+transformers+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntokxj493IHfiTSc-ALtNL75sIuMQ%3A1790508029518&source=hp&ei=_fu4aouPHve5kPIP49bY4As&iflsig=ABILxe8AAAAAarkKDWls69FXHoSi8hiKsQAemItCdCMJ&ved=0ahUKEwjLgcOY0o6XAxX3HEQIHWMrFrwQ4dUDCDI&uact=5&oq=huggingface+transformers+cheat+sheet&gs_lp=Egdnd3Mtd2l6IiRodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgY2hlYXQgc2hlZXQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUivB1AOWA5wAXgAkAEAmAHdAaAB3QGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAuYBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBWAEPC0PTwVekgcFMS4wLjGgB44EsgcDMi0xuAfiAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.4412,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 921.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=huggingface+transformers+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntokxj493IHfiTSc-ALtNL75sIuMQ%3A1790508029518&source=hp&ei=_fu4aouPHve5kPIP49bY4As&iflsig=ABILxe8AAAAAarkKDWls69FXHoSi8hiKsQAemItCdCMJ&ved=0ahUKEwjLgcOY0o6XAxX3HEQIHWMrFrwQ4dUDCDI&uact=5&oq=huggingface+transformers+cheat+sheet&gs_lp=Egdnd3Mtd2l6IiRodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgY2hlYXQgc2hlZXQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUivB1AOWA5wAXgAkAEAmAHdAaAB3QGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAuYBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBWAEPC0PTwVekgcFMS4wLjGgB44EsgcDMi0xuAfiAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization cheat sheet",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=huggingface+transformers+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntokxj493IHfiTSc-ALtNL75sIuMQ%3A1790508029518&source=hp&ei=_fu4aouPHve5kPIP49bY4As&iflsig=ABILxe8AAAAAarkKDWls69FXHoSi8hiKsQAemItCdCMJ&ved=0ahUKEwjLgcOY0o6XAxX3HEQIHWMrFrwQ4dUDCDI&uact=5&oq=huggingface+transformers+cheat+sheet&gs_lp=Egdnd3Mtd2l6IiRodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgY2hlYXQgc2hlZXQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUivB1AOWA5wAXgAkAEAmAHdAaAB3QGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAuYBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBWAEPC0PTwVekgcFMS4wLjGgB44EsgcDMi0xuAfiAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.381,
+     "target": "9",
+     "target_label": "model quantization cheat sheet transformers",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 565.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=huggingface+transformers+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntokxj493IHfiTSc-ALtNL75sIuMQ%3A1790508029518&source=hp&ei=_fu4aouPHve5kPIP49bY4As&iflsig=ABILxe8AAAAAarkKDWls69FXHoSi8hiKsQAemItCdCMJ&ved=0ahUKEwjLgcOY0o6XAxX3HEQIHWMrFrwQ4dUDCDI&uact=5&oq=huggingface+transformers+cheat+sheet&gs_lp=Egdnd3Mtd2l6IiRodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgY2hlYXQgc2hlZXQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUivB1AOWA5wAXgAkAEAmAHdAaAB3QGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAuYBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBWAEPC0PTwVekgcFMS4wLjGgB44EsgcDMi0xuAfiAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.876,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 599.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=model+quantization+cheat+sheet+transformers&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuhs1VkzYqTPvT9irhU76LZ9cBaUQ%3A1790508032183&ei=APy4aoDoCvfMkPIPo_OM6Aw&biw=1120&bih=780&oq=model+quantization+cheat+sheet&gs_lp=Egxnd3Mtd2l6LXNlcnAiHm1vZGVsIHF1YW50aXphdGlvbiBjaGVhdCBzaGVldCoFCAMYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAjIFECEYqwJI4QdQDFgMcAF4AZABAJgB3gGgAd4BqgEDMi0xsAEAuAEByAEA-AEBmAICoALjAcICChAAGEcY1gQYsAOYAwDiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGKIBgGQBgiSBwUxLjAuMaAHpgayBwMyLTG4B-EBwgcDMS4xyAcCgAgB&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8d3e441fc2b05a6e",
+   "source": "google",
+   "goal": "Search Google for golang migration guide and open the results.",
+   "fingerprint": 13845,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 12579,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=golang+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqntkrjdopgqyuf50dg",
+     "bot_challenge": false,
+     "group0": [
+      "golang"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=golang+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntkrjdopgqYuF50dgmmtwl4q6zYlA%3A1790508061981&source=hp&ei=Hfy4ao3iOsylkPIP0NniiQM&iflsig=ABILxe8AAAAAarkKLTAixCTxOVTEju303ugq8hNTbMW5&ved=0ahUKEwjN5ICo0o6XAxXMEkQIHdCsODEQ4dUDCDI&uact=5&oq=golang+migration+guide&gs_lp=Egdnd3Mtd2l6IhZnb2xhbmcgbWlncmF0aW9uIGd1aWRlMgYQABgWGB4yBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSNIHUBJYEnABeACQAQCYAeMBoAHjAaoBAzItMbABALgBA8gBAPgBAZgCAqAC7AGoAgrCAhEQABjlBhiKAxjnBhjqAhi0AsICERAuGOUGGIoDGOcGGOoCGLQCwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwXiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBddIOkJduenZkgcFMS4wLjGgB-YCsgcDMi0xuAfnAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz",
+    "final_title": "golang migration guide - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9117,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 525.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508062075"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8863,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 590.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508062075"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8994,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 641.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntkrjdopgqYuF50dgmmtwl4q6zYlA%3A1790508061981&source=hp&ei=Hfy4ao3iOsylkPIP0NniiQM&iflsig=ABILxe8AAAAAarkKLTAixCTxOVTEju303ugq8hNTbMW5&ved=0ahUKEwjN5ICo0o6XAxXMEkQIHdCsODEQ4dUDCDI&uact=5&oq=golang+migration+guide&gs_lp=Egdnd3Mtd2l6IhZnb2xhbmcgbWlncmF0aW9uIGd1aWRlMgYQABgWGB4yBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSNIHUBJYEnABeACQAQCYAeMBoAHjAaoBAzItMbABALgBA8gBAPgBAZgCAqAC7AGoAgrCAhEQABjlBhiKAxjnBhjqAhi0AsICERAuGOUGGIoDGOcGGOoCGLQCwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwXiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBddIOkJduenZkgcFMS4wLjGgB-YCsgcDMi0xuAfnAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-26be311429654639",
+   "source": "google",
+   "goal": "Search Google for elixir best practices and open the results.",
+   "fingerprint": 13845,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14722,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3delixir%2bbest%2bpractices%26sca_esv%3d18",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Delixir%2Bbest%2Bpractices%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt1MzOfNmB_8WLv3rMtH2nN63BXDQ%253A1790508081751%26source%3Dhp%26ei%3DMfy4av7zK4qrur8P6OOYQQ%26iflsig%3DABILxe8AAAAAarkKQZhMbOm6-urjnOX8es8f7IG_ATev%26ved%3D0ahUKEwi-0Lax0o6XAxWKle4BHegxJggQ4dUDCDI%26uact%3D5%26oq%3Delixir%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhVlbGl4aXIgYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyCBAAGIkFGKIESKUHUA9YD3ABeACQAQCYAd4BoAHeAaoBAzItMbABALgBA8gBAPgBAZgCAqAC5wGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFraQ7EmOtNMmSBwUxLjAuMaAHkAOyBwMyLTG4B-IBwgcFMC4xLjHIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLT449UGIjDkdb_mf_bP9z5142_15EQIB2LAYzGf6jCDguvVzifFvXJx7XoSTiE5AStKfvndACgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=elixir+best+practices&sca_esv=18a60b01d202c9ee&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9102,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elixir best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 493.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508081861"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9115,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 544.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508081861"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-eda7f3912eddbbdb",
+   "source": "google",
+   "goal": "First search Google for vue interview questions, then search Google for async programming release notes.",
+   "fingerprint": 13845,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14626,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvue%2binterview%2bquestions%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvue%2Binterview%2Bquestions%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntukC_9GeJVLHKolQr-eM1FBmtvyw%253A1790508148676%26source%3Dhp%26ei%3DdPy4aoqZKNe_kPIPpe64kQo%26iflsig%3DABILxe8AAAAAarkKhPnzMMZHN9PvPot9nOK3qDGSWwbd%26ved%3D0ahUKEwiKo6zR0o6XAxXXH0QIHSU3LqIQ4dUDCDI%26uact%3D5%26oq%3Dvue%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Ihd2dWUgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjLB1AOWA5wAXgAkAEAmAHLAaABywGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAtMBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBYNiH9VS9XcAkgcFMS4wLjGgB4gGsgcDMi0xuAfOAcIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPf449UGIjAbYgNwRD3S_uZc937ghkwz9LJHT-rhZHMDIZLVYFQn1S-pPXWRkPOFScfEiE93al0yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vue+interview+questions&sca_esv=18a60b01d202c9ee"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8886,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 528.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508148782"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.884,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 583.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508148782"
+    }
+   ]
+  }
+ ]
+}

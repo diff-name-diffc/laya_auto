@@ -1,0 +1,759 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 64227,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:39:37+0800",
+  "n_tasks": 8,
+  "success": 3,
+  "success_rate": 0.375,
+  "verified": 3,
+  "verified_rate": 0.375,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.2,
+  "mean_duration_ms": 19953,
+  "decision_latency_ms": {
+   "p50": 517.7,
+   "p95": 631.9
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 2,
+   "done-rejected": 7,
+   "executed": 18,
+   "done": 4,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 3,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 3,
+    "success_rate": 0.375,
+    "verified": 3,
+    "verified_rate": 0.375,
+    "mean_steps": 4.2
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-689cee7ad5576a96",
+   "source": "google",
+   "goal": "Search Google for llm fine-tuning release notes and open the results.",
+   "fingerprint": 64227,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 21717,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dllm%2bfine-tuning%2brelease%2bnotes%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dllm%2Bfine-tuning%2Brelease%2Bnotes%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntcA4FuEdtB14CM9smM9jRacuiuqg%253A1790508786368%26source%3Dhp%26ei%3D8v64aoqQFZPxkPIP0bnEiQQ%26iflsig%3DABILxe8AAAAAarkNAl0x1j9X7kEvc6fIriZof9K-q7Kc%26ved%3D0ahUKEwiK0bWB1Y6XAxWTOEQIHdEcMUEQ4dUDCDI%26uact%3D5%26oq%3Dllm%2Bfine-tuning%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6Ih1sbG0gZmluZS10dW5pbmcgcmVsZWFzZSBub3RlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAkjsG1AOWA5wAXgAkAEAmAHmAaAB5gGqAQMyLTG4AQPIAQD4AQGYAgKgAvABqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBZpFhxqUGFOqkgcFMS4wLjGgB7AFsgcDMi0xuAfsAcIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz%26sei%3D-_64ap7DK52tur8PnYzOuQ4&hl=en&q=EgQm0XtnGPz949UGIjBdI1FgjJIelq5QHqIDUC34GtFcgYHv0vsbeSNwo0jmtPUg61pe9Av50LZN1c0gW9kyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=llm+fine-tuning+release+notes&sca_esv=18a60b01d2"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7998,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llm fine-tuning release notes",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 479.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8955,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 471.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508787688"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8851,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'llm fine-tuning release notes'",
+     "page_changed": null,
+     "latency_ms": 493.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508787688"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llm fine-tuning release notes",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508787688"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9111,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page listing results for 'llm fine-tuning release notes' (query is only typed in the search box with autocomplete suggestions, not subm",
+     "page_changed": null,
+     "latency_ms": 611.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508787688"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508787688"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-39a436d7a90b2cb0",
+   "source": "google",
+   "goal": "First search Google for how to debug java, then search Google for retrieval augmented generation best practices.",
+   "fingerprint": 64227,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 19423,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=generation'",
+    "checks": {
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508861809",
+     "bot_challenge": false,
+     "group0": [
+      "generation",
+      "retrieval"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/?hl=en&gl=us&zx=1790508861809",
+    "final_title": "Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8646,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug java",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 495.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.898,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 512.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508861809"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.2901,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for retrieval augmented generation best practices",
+     "page_changed": null,
+     "latency_ms": 517.7,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508861809"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug java",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508861809"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9048,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for retrieval augmented generation best practices",
+     "page_changed": null,
+     "latency_ms": 595.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508861809"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508861809"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8805,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 631.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508861809"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b305b55787053d69",
+   "source": "google",
+   "goal": "Search Google for docker tutorial and open the results.",
+   "fingerprint": 64227,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14689,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddocker%2btutorial%26sca_esv%3d18a60b01d2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddocker%2Btutorial%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuJIPrlhpBCrjnKfnfsFNy0R786Ow%253A1790508887275%26source%3Dhp%26ei%3DV_-4aoXRD6zckPIP7aiU0AM%26iflsig%3DABILxe8AAAAAarkNZ23H310qE7EQv580sRIWuRxSPvLU%26ved%3D0ahUKEwjF2MSx1Y6XAxUsLkQIHW0UBToQ4dUDCDI%26uact%3D5%26oq%3Ddocker%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig9kb2NrZXIgdHV0b3JpYWwyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMggQABiABBi0BzIFEAAYgAQyBRAAGIAESMwHUA9YD3ABeACQAQCYAbcBoAG3AaoBAzAuMbgBA8gBAPgBAZgCAqACwAGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFpCUuATrMSxOSBwMxLjGgB6oFsgcDMC4xuAe7AcIHAzItMsgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNn-49UGIjBciazogU9-WW3_T9o1NWTit2T7pQmyil_tYfQmNNDgD6ANcZ5Weq3r2UwTDTk4hZYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=docker+tutorial&sca_esv=18a60b01d202c9ee&hl=en&g"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8762,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "docker tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 491.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508887560"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8742,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 581.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508887560"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-6940db71dd16e024",
+   "source": "google",
+   "goal": "First search Google for refactoring cheat sheet, then search Google for pytorch security vulnerabilities.",
+   "fingerprint": 64227,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14533,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drefactoring%2bcheat%2bsheet%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drefactoring%2Bcheat%2Bsheet%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsTDRnoNTpU_lZTN7hvspon4tr0kQ%253A1790508954167%26source%3Dhp%26ei%3Dmv-4asybCY3NkPIP0I_xwQ4%26iflsig%3DABILxe8AAAAAarkNqoTq4m2xaqyngLhS26LO8bqN_nXN%26ved%3D0ahUKEwjM0LfR1Y6XAxWNJkQIHdBHPOgQ4dUDCDI%26uact%3D5%26oq%3Drefactoring%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhdyZWZhY3RvcmluZyBjaGVhdCBzaGVldDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSMsHUA5YDnABeACQAQCYAdsBoAHbAaoBAzItMbgBA8gBAPgBAZgCAqAC5AGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCmAME8QXmtwfDEnxizpIHBTEuMC4xoAe5BbIHAzItMbgH4AHCBwMyLTLIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJz_49UGIjDcmfGBIQSsU2RQhyTJoe0cUT5e9YqFvfyaWbGfqwBf__KmMSEOUYzwDvK_yDfKSJkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=refactoring+cheat+sheet&sca_esv=18a60b01d202c9ee"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8751,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "refactoring cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 484.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508954410"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8907,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 581.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508954410"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-25dd7644da26d4bc",
+   "source": "google",
+   "goal": "Search Google for mongodb interview questions and open the results.",
+   "fingerprint": 64227,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 17160,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=mongodb+interview+questions&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=appeqnvf89f1miiew",
+     "bot_challenge": false,
+     "group0": [
+      "mongodb"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=mongodb+interview+questions&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvF89f1miieWJbkQ6R2PpP102NKQw%3A1790509020842&source=hp&ei=3P-4arKgMvuP8L0Psp2CyQs&iflsig=ABILxe8AAAAAarkN7I9gl0MCBQPad0J1wsTmMBoe7Tju&ved=0ahUKEwiy_pzx1Y6XAxX7B7wBHbKOILkQ4dUDCDI&uact=5&oq=mongodb+interview+questions&gs_lp=Egdnd3Mtd2l6Ihttb25nb2RiIGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMggQABiABBi0BzIFEAAYgAQyCBAAGIAEGLQHMgUQABiABDIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABDIFEAAYgAQyBRAAGIAESNMIUA5YDnABeACQAQCYAdABoAHQAaoBAzItMbgBA8gBAPgBAZgCAqAC2AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFQCWWJ0o3_bWSBwUxLjAuMaAHvgayBwMyLTG4B9QBwgcDMi0yyAcGgAgB&sclient=gws-wiz",
+    "final_title": "mongodb interview questions - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8943,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mongodb interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 692.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509020978"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8295,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 723.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509020978"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8502,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 631.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=mongodb+interview+questions&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvF89f1miieWJbkQ6R2PpP102NKQw%3A1790509020842&source=hp&ei=3P-4arKgMvuP8L0Psp2CyQs&iflsig=ABILxe8AAAAAarkN7I9gl0MCBQPad0J1wsTmMBoe7Tju&ved=0ahUKEwiy_pzx1Y6XAxX7B7wBHbKOILkQ4dUDCDI&uact=5&oq=mongodb+interview+questions&gs_lp=Egdnd3Mtd2l6Ihttb25nb2RiIGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMggQABiABBi0BzIFEAAYgAQyCBAAGIAEGLQHMgUQABiABDIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABDIFEAAYgAQyBRAAGIAESNMIUA5YDnABeACQAQCYAdABoAHQAaoBAzItMbgBA8gBAPgBAZgCAqAC2AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFQCWWJ0o3_bWSBwUxLjAuMaAHvgayBwMyLTG4B9QBwgcDMi0yyAcGgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-2ba4a69b1eed169c",
+   "source": "google",
+   "goal": "Search Google for kubernetes open source alternatives and open the results.",
+   "fingerprint": 64227,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 58546,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'google.com/search'",
+    "checks": {
+     "url": "https://www.betsol.com/blog/kubernetes-alternatives-for-container-orchestration/",
+     "bot_challenge": false,
+     "group0": [
+      "kubernetes"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.betsol.com/blog/kubernetes-alternatives-for-container-orchestration/",
+    "final_title": "Are There Viable Kubernetes Alternatives for the Enterprise? - BETSOL"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.899,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kubernetes open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 513.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509045289"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8835,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 550.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509045289"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8915,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing visible search results list",
+     "page_changed": null,
+     "latency_ms": 580.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kubernetes+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnswO1pE6SZWET-VnGYvkrC7780Glg%3A1790509045136&source=hp&ei=9f-4arWCB5POkPIPwISriAU&iflsig=ABILxe8AAAAAarkOBRx9X7iXys1_fLUWCD7FWsdsmSm5&ved=0ahUKEwj10Of81Y6XAxUTJ0QIHUDCClEQ4dUDCDI&uact=5&oq=kubernetes+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiNrdWJlcm5ldGVzIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FSKoHUA9YD3ABeACQAQCYAdEBoAHRAaoBAzItMbgBA8gBAPgBAZgCAqAC2wGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBep6_45_aHE4kgcFMS4wLjGgB94DsgcDMi0xuAfWAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kubernetes+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnswO1pE6SZWET-VnGYvkrC7780Glg%3A1790509045136&source=hp&ei=9f-4arWCB5POkPIPwISriAU&iflsig=ABILxe8AAAAAarkOBRx9X7iXys1_fLUWCD7FWsdsmSm5&ved=0ahUKEwj10Of81Y6XAxUTJ0QIHUDCClEQ4dUDCDI&uact=5&oq=kubernetes+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiNrdWJlcm5ldGVzIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FSKoHUA9YD3ABeACQAQCYAdEBoAHRAaoBAzItMbgBA8gBAPgBAZgCAqAC2wGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBep6_45_aHE4kgcFMS4wLjGgB94DsgcDMi0xuAfWAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.2605,
+     "target": "11",
+     "target_label": "Are There Viable Kubernetes Alternatives for the Enterprise? BETSOL https://www.betsol.com › blog › kubernetes-alternati",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 598.7,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=kubernetes+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnswO1pE6SZWET-VnGYvkrC7780Glg%3A1790509045136&source=hp&ei=9f-4arWCB5POkPIPwISriAU&iflsig=ABILxe8AAAAAarkOBRx9X7iXys1_fLUWCD7FWsdsmSm5&ved=0ahUKEwj10Of81Y6XAxUTJ0QIHUDCClEQ4dUDCDI&uact=5&oq=kubernetes+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiNrdWJlcm5ldGVzIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FSKoHUA9YD3ABeACQAQCYAdEBoAHRAaoBAzItMbgBA8gBAPgBAZgCAqAC2wGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBep6_45_aHE4kgcFMS4wLjGgB94DsgcDMi0xuAfWAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.9075,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search-results page listing results for 'kubernetes open source alternatives' (current page is a BETSOL blog article, not a search results list",
+     "page_changed": null,
+     "latency_ms": 410.4,
+     "low_confidence": false,
+     "url": "https://www.betsol.com/blog/kubernetes-alternatives-for-container-orchestration/"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:5",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.betsol.com/blog/kubernetes-alternatives-for-container-orchestration/"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8debb0b5bde27fe2",
+   "source": "google",
+   "goal": "Search Google for vllm tutorial and open the results.",
+   "fingerprint": 64227,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 4,
+   "total_ms": 9077,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=vllm+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=appeqntopl2w4jvubzw229rac1ryd2i",
+     "bot_challenge": false,
+     "group0": [
+      "vllm"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=vllm+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQntOpL2w4jVUbzW229raC1rYD2iUlw%3A1790509155876&source=hp&ei=YwC5au-7NIzbkPIPn5TW-AE&iflsig=ABILxe8AAAAAarkOc2jYITQbQ6w-aKd2UTEXWO1vMAt7&ved=0ahUKEwiv-c6x1o6XAxWMLUQIHR-KFR8Q4dUDCDI&oq=vllm+tutorial&gs_lp=Egdnd3Mtd2l6Ig12bGxtIHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSN4oUB9YH3ABeACQAQCYAc8BoAHPAaoBAzItMbgBDMgBAPgBAZgCAqAC1gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFV2GU5788oWmSBwUxLjAuMaAH7wSyBwMyLTG4B9EBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz",
+    "final_title": "vllm tutorial - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.3447,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vllm tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 454.1,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509156034"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8232,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing actual search results for vllm tutorial",
+     "page_changed": null,
+     "latency_ms": 566.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509156034"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509156034"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8998,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 623.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vllm+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQntOpL2w4jVUbzW229raC1rYD2iUlw%3A1790509155876&source=hp&ei=YwC5au-7NIzbkPIPn5TW-AE&iflsig=ABILxe8AAAAAarkOc2jYITQbQ6w-aKd2UTEXWO1vMAt7&ved=0ahUKEwiv-c6x1o6XAxWMLUQIHR-KFR8Q4dUDCDI&oq=vllm+tutorial&gs_lp=Egdnd3Mtd2l6Ig12bGxtIHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSN4oUB9YH3ABeACQAQCYAc8BoAHPAaoBAzItMbgBDMgBAPgBAZgCAqAC1gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFV2GU5788oWmSBwUxLjAuMaAH7wSyBwMyLTG4B9EBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a04682fb3f31a155",
+   "source": "google",
+   "goal": "Search Google for elasticsearch cheat sheet and open the results.",
+   "fingerprint": 64227,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4483,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=elasticsearch+cheat+sheet&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=appeqnu3mkxby6c-j7q",
+     "bot_challenge": false,
+     "group0": [
+      "elasticsearch"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=elasticsearch+cheat+sheet&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnu3MkxBy6c-J7q7KItvGSmJ6kqF8Q%3A1790509172136&source=hp&ei=dAC5apucB_Siur8PrtmB-Ac&iflsig=ABILxe8AAAAAarkOhP0WmJIPM7xXwDZEcqxol_-5-cI-&ved=0ahUKEwibpq-51o6XAxV0ke4BHa5sAH8Q4dUDCDI&uact=5&oq=elasticsearch+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhllbGFzdGljc2VhcmNoIGNoZWF0IHNoZWV0MgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjAB1AMWAxwAXgAkAEAmAHbAaAB2wGqAQMyLTG4AQPIAQD4AQGYAgKgAuMBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBXB1VxjE7MlWkgcFMS4wLjGgB48GsgcDMi0xuAfgAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz",
+    "final_title": "elasticsearch cheat sheet - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9023,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elasticsearch cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 518.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509172297"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8963,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 579.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509172297"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8398,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 587.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=elasticsearch+cheat+sheet&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnu3MkxBy6c-J7q7KItvGSmJ6kqF8Q%3A1790509172136&source=hp&ei=dAC5apucB_Siur8PrtmB-Ac&iflsig=ABILxe8AAAAAarkOhP0WmJIPM7xXwDZEcqxol_-5-cI-&ved=0ahUKEwibpq-51o6XAxV0ke4BHa5sAH8Q4dUDCDI&uact=5&oq=elasticsearch+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhllbGFzdGljc2VhcmNoIGNoZWF0IHNoZWV0MgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjAB1AMWAxwAXgAkAEAmAHbAaAB2wGqAQMyLTG4AQPIAQD4AQGYAgKgAuMBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBXB1VxjE7MlWkgcFMS4wLjGgB48GsgcDMi0xuAfgAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz"
+    }
+   ]
+  }
+ ]
+}

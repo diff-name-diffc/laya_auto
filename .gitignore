@@ -1,0 +1,32 @@
+# ===== OS / editor =====
+.DS_Store
+*.swp
+
+# ===== python =====
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# ===== ZCode session data =====
+.zcode/
+
+# ===== model weights & fine-tune working area =====
+# 3.5 GB: cloned official repo, v17s/v18d checkpoints (614 MB each), uv env, tokenized items
+liveweb-benchmark/finetune/work/
+liveweb-benchmark/**/*.bak
+# build outputs, regenerable from distill/dataset.jsonl via convert_distill.py
+liveweb-benchmark/finetune/out/
+
+# ===== Mind2Web raw data =====
+# two shards, 587 MB + 599 MB -- over GitHub's 100 MB per-file hard limit.
+# Regenerate with: python -m benchmark.download --split train --shards 0 1
+laya-browser-agent/benchmark/data/
+
+# ===== screenshots =====
+liveweb-benchmark/shots*/
+
+# ===== logs =====
+*.log
+nohup.out

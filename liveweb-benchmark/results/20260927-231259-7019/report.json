@@ -1,0 +1,950 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 33908,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T23:21:43+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 6.1,
+  "mean_duration_ms": 24859,
+  "decision_latency_ms": {
+   "p50": 457.0,
+   "p95": 611.3
+  },
+  "step_outcomes": {
+   "stale": 6,
+   "refused-empty-enter": 4,
+   "executed": 36,
+   "done-rejected": 3
+  },
+  "low_confidence_steps": 2,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 6.1
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-3f7c259630628dd7",
+   "source": "google",
+   "goal": "First search Google for profiling performance optimization, then search Google for kafka interview questions.",
+   "fingerprint": 33908,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 24281,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dprofiling%2bperformance%2boptimization%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dprofiling%2Bperformance%2Boptimization%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnskqB2-FcRJwC9FtQWOigTb-Uabyw%253A1790521982551%26source%3Dhp%26ei%3DfjK5aumWIJbAkPIPturp8Q8%26iflsig%3DABILxe8AAAAAarlAjiMi5UJXppRjktI2o6h72ZS6g2S2%26ved%3D0ahUKEwjpzeyVho-XAxUWIEQIHTZ1Ov4Q4dUDCDI%26uact%3D5%26oq%3Dprofiling%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiJwcm9maWxpbmcgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyBRAAGO8FSNZGUBtYG3ACeACQAQCYAY4CoAGOAqoBAzItMbgBA8gBAPgBAZgCA6AClwKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFj9h7w5wftjiSBwUyLjAuMaAH3gKyBwMyLTG4B5ICwgcFMS4xLjHIBwaACAE%26sclient%3Dgws-wiz%26sei%3DizK5aoigB5nGkPIPm8LqiQg&hl=en&q=EgQm0XtnGIvl5NUGIjApRH5YMkJFvB-qglAi_ltat7oKY5jX7EVkyWwSEod2TekxO3OXtEqLZN8jPoTakXIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=profiling+performance+optimization&sca_esv=7c867"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8986,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "profiling performance optimization",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 513.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9057,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 508.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521984232"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8786,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "profiling performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 526.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521984232"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9079,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "profiling performance optimization",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 594.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521984232"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521984232"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-bb28be7b61f6cb22",
+   "source": "google",
+   "goal": "Search Google for concurrency security vulnerabilities and open the results.",
+   "fingerprint": 33908,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14969,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dconcurrency%2bsecurity%2bvulnerabilities",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dconcurrency%2Bsecurity%2Bvulnerabilities%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntTDloan9B2EOvoJ33fbmAd0663Jg%253A1790522059754%26source%3Dhp%26ei%3DyzK5at2VLKbCkPIP6YfG2Aw%26iflsig%3DABILxe8AAAAAarlA2zoDhXWSSN6vq6Ug9zvoRKUlevXz%26ved%3D0ahUKEwidp9S6ho-XAxUmIUQIHemDEcsQ4dUDCDI%26uact%3D5%26oq%3Dconcurrency%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IiRjb25jdXJyZW5jeSBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVIpwdQFVgVcAF4AJABAJgB2AGgAdgBqgEDMi0xuAEDyAEA-AEBmAICoALgAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMF8QWYH8gf3h858ZIHBTEuMC4xoAfSBrIHAzItMbgH2wHCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGM7l5NUGIjAlvaS1jghgVL1SQpZs_uN_067k-_USxfEm4dPxiK5EPN8QRIZZ5iRqG7hZeKJMOm8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=concurrency+security+vulnerabilities&sca_esv=7c8"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9027,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "concurrency security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 508.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9023,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 544.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522061506"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a70b3d004c347e09",
+   "source": "google",
+   "goal": "First search Google for model quantization performance optimization, then search Google for logging best practices performance optimization.",
+   "fingerprint": 33908,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14844,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmodel%2bquantization%2bperformance%2bopt",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmodel%2Bquantization%2Bperformance%2Boptimization%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuApfkmWmqwpPZm43Hw2Izmp0I68A%253A1790522127236%26source%3Dhp%26ei%3DDzO5apTjDIjBkPIP_oeN4AE%26iflsig%3DABILxe8AAAAAarlBH-TPxYkldmZu4zs4E6MpCFV4xylb%26ved%3D0ahUKEwjUpuvaho-XAxWIIEQIHf5DAxwQ4dUDCDI%26uact%3D5%26oq%3Dmodel%2Bquantization%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Iittb2RlbCBxdWFudGl6YXRpb24gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRifBUiIB1AOWA5wAXgAkAEAmAG1AqABtQKqAQMzLTG4AQPIAQD4AQGYAgKgAsACqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwPxBQDxWvJT5_OtkgcFMS4zLTGgB4sFsgcDMy0xuAe9AsIHAzAuMsgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJHm5NUGIjD1Ui5p3v-hBEWbMWc3uLNQt-AtIiBdC_4IVheatQOePR5xkfCo6ClAzK80f8esWZkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=model+quantization+performance+optimization&sca_"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8715,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 542.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522127613"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9074,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 524.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522127613"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d14e8df5b900fa69",
+   "source": "google",
+   "goal": "First search Google for how to debug profiling, then search Google for concurrency interview questions.",
+   "fingerprint": 33908,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 60538,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dconcurrency%2binterview%2bquestions%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dconcurrency%2Binterview%2Bquestions%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnssc6_mzmBhWaLW4bvCRQ4PYwxp2Q%253A1790522194348%26source%3Dhp%26ei%3DUjO5asaEFJ24kPIP88TywA4%26iflsig%3DABILxe8AAAAAarlBYjfYN0OY4d5NDn9vGW3Ae_fZouwz%26ved%3D0ahUKEwjG9ev6ho-XAxUdHEQIHXOiHOgQ4dUDCDI%26uact%3D5%26oq%3Dconcurrency%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Ih9jb25jdXJyZW5jeSBpbnRlcnZpZXcgcXVlc3Rpb25zMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I5OgCUA5YnKoCcAJ4AJABAJgBsQKgAd4EqgEDMy0yuAEDyAEA-AEBmAIEoALsBKgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCwgIFEAAY7wXCAggQABiJBRiiBJgDA_EFnZ8lYhISbw-SBwUyLjMtMqAH4wqyBwMzLTK4B-cEwgcFMS4yLjHIBwmACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGILn5NUGIjCrKJTkEiHibuQyQZFfUdFZoqaMmzcppmzXn3Ashx4keazhmcNMyblLuwJ5-vEzMB8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=concurrency+interview+questions&sca_esv=7c867999"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.4367,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 538.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522194662"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2645,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug profiling",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 509.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522194662"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8681,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'concurrency interview questions'",
+     "page_changed": null,
+     "latency_ms": 611.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522194662"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "concurrency interview questions",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522194662"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9127,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for concurrency interview questions; page is Google homepage with autocomplete suggestions, not a results page",
+     "page_changed": null,
+     "latency_ms": 615.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522194662"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522194662"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f525a66c7946318f",
+   "source": "google",
+   "goal": "First search Google for express interview questions, then search Google for how to debug vue.",
+   "fingerprint": 33908,
+   "status": "max-steps",
+   "verified": false,
+   "success": false,
+   "steps": 28,
+   "total_ms": 40253,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=how'",
+    "checks": {
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/",
+     "bot_challenge": false,
+     "group0": [
+      "how"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/intl/en_us/search/howsearchworks/",
+    "final_title": "Google Search - What Is Google Search And How Does It Work"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8205,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 457.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522307321"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2637,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 533.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522307321"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8335,
+     "target": "18",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 494.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522307321"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8971,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for \"how to debug vue\"",
+     "page_changed": null,
+     "latency_ms": 448.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search/howsearchworks/?fg=1"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search/howsearchworks/?fg=1"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.895,
+     "target": "4",
+     "target_label": "Google ​搜索​的​运作​方式",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 432.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8956,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 375.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8982,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 375.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.9019,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 446.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 8,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.8952,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 417.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.9054,
+     "target": "10",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 448.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 11,
+     "operation": "CLICK",
+     "confidence": 0.9079,
+     "target": "4",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 478.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 12,
+     "operation": "CLICK",
+     "confidence": 0.9157,
+     "target": "4",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 388.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 13,
+     "operation": "CLICK",
+     "confidence": 0.9207,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 387.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 14,
+     "operation": "CLICK",
+     "confidence": 0.9076,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 687.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 15,
+     "operation": "CLICK",
+     "confidence": 0.9152,
+     "target": "5",
+     "target_label": "Features",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 391.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    },
+    {
+     "step": 16,
+     "operation": "CLICK",
+     "confidence": 0.9245,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 477.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/features/"
+    },
+    {
+     "step": 17,
+     "operation": "CLICK",
+     "confidence": 0.9217,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 358.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/features/"
+    },
+    {
+     "step": 18,
+     "operation": "CLICK",
+     "confidence": 0.913,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 389.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    },
+    {
+     "step": 19,
+     "operation": "CLICK",
+     "confidence": 0.9172,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 438.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 20,
+     "operation": "CLICK",
+     "confidence": 0.9174,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 611.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 20,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 21,
+     "operation": "CLICK",
+     "confidence": 0.911,
+     "target": "4",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 407.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    },
+    {
+     "step": 22,
+     "operation": "CLICK",
+     "confidence": 0.9092,
+     "target": "4",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 377.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 23,
+     "operation": "CLICK",
+     "confidence": 0.9223,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 391.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 24,
+     "operation": "CLICK",
+     "confidence": 0.9058,
+     "target": "4",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 384.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    },
+    {
+     "step": 25,
+     "operation": "CLICK",
+     "confidence": 0.9212,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 395.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-824dadb4340fbb9e",
+   "source": "google",
+   "goal": "First search Google for langchain open source alternatives, then search Google for elasticsearch open source alternatives.",
+   "fingerprint": 33908,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14523,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlangchain%2bopen%2bsource%2balternatives",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlangchain%2Bopen%2Bsource%2Balternatives%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntnyWHIJFEiPWWVE6EIEVHGgUK0BA%253A1790522354544%26source%3Dhp%26ei%3D8jO5auWDIN7xkPIPt_3P8Qo%26iflsig%3DABILxe8AAAAAarlCAp4DIBDc-8UWQrJJcFFEm5PXGj0U%26ved%3D0ahUKEwjlxJ3Hh4-XAxXeOEQIHbf-M64Q4dUDCDI%26uact%3D5%26oq%3Dlangchain%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiJsYW5nY2hhaW4gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyBRAAGO8FSM8HUA5YDnABeACQAQCYAasCoAGrAqoBAzItMbgBA8gBAPgBAZgCAqACsAKoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBditTP4TC95okgcFMS4zLTGgB-wEsgcDMy0xuAeuAsIHAzAuMsgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPXn5NUGIjAMkJ_VsTXheZO4le72Cxzp7HJz7sjAyrZ_gchFWtGfoVbrb84ER2rFupkolcT_6a4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=langchain+open+source+alternatives&sca_esv=7c867"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9107,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 462.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522354795"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8105,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 596.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522354795"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-1b849a570d416cd4",
+   "source": "google",
+   "goal": "First search Google for huggingface transformers interview questions, then search Google for express security vulnerabilities.",
+   "fingerprint": 33908,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14692,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhuggingface%2btransformers%2binterview%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhuggingface%2Btransformers%2Binterview%2Bquestions%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntfHDQSruD7fUSRruXwzohnlY63dg%253A1790522421290%26source%3Dhp%26ei%3DNTS5arjCENjRkPIP26ad6QY%26iflsig%3DABILxe8AAAAAarlCRaE0jPAv1D6O3SSIW2rVhFKLxNGF%26ved%3D0ahUKEwj4sIfnh4-XAxXYKEQIHVtTJ20Q4dUDCDI%26uact%3D5%26oq%3Dhuggingface%2Btransformers%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IixodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAkirB1AOWA5wAXgAkAEAmAGmAqABpgKqAQMyLTG4AQPIAQD4AQGYAgKgArACqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBfp327r5BvUIkgcFMS4zLTGgB_EGsgcDMy0xuAetAsIHAzAuMsgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLfo5NUGIjD3BYlzkhID0X3Fwbkui0JWdkVwao2XZJI8_k4xv3MdCSNTBRvrqrQSCsnplwcKgosyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=huggingface+transformers+interview+questions&sca"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8958,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "huggingface transformers interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 492.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522421527"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8984,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 552.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522421527"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f53dc7b1ff1d73ee",
+   "source": "google",
+   "goal": "Search Google for mysql performance optimization and open the results.",
+   "fingerprint": 33908,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14769,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmysql%2bperformance%2boptimization%26sca",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmysql%2Bperformance%2Boptimization%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsgKcqVkmLjklAcoJMVtRLUDPJJMw%253A1790522488179%26source%3Dhp%26ei%3DeDS5arXYCezJkPIP8c214AQ%26iflsig%3DABILxe8AAAAAarlCiIe1sgtQnoTMOCP1qgqQuOUHsE7C%26ved%3D0ahUKEwi19PmGiI-XAxXsJEQIHfFmDUwQ4dUDCDI%26uact%3D5%26oq%3Dmysql%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ih5teXNxbCBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSM0HUAxYDHABeACQAQCYAaECoAGhAqoBAzItMbgBA8gBAPgBAZgCAqACpQKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDAvEFT78YGWZckvySBwUxLjAuMaAH8AWyBwMyLTG4B6MCwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPro5NUGIjBjlZsIh2U7xFufo1Ot0imAP5tnhcbF6MEVKjbHfU80-s7xSnoPlWfhpwuaBppDOPoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mysql+performance+optimization&sca_esv=7c8679995"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8765,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mysql performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 495.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522488418"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.911,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 600.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522488418"
+    }
+   ]
+  }
+ ]
+}

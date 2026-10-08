@@ -1,0 +1,27 @@
+[project]
+name = "local-inference-server"
+version = "0.1.0"
+description = "Local inference server exposing Laya decisions over the Jev /v1/systemone protocol"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115,<1",
+    "uvicorn[standard]>=0.30,<1",
+    "httpx>=0.27",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+# The Laya decision model. torch is pulled in transitively; pick a platform
+# wheel (CPU/MPS/CUDA) per pytorch.org BEFORE installing this extra if the
+# default PyPI wheel is not the one you want.
+laya = [
+    "laya>=0.3.20",
+]
+dev = [
+    "pytest>=8",
+    "pytest-asyncio>=0.23",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

@@ -1,0 +1,1103 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 67343,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T17:24:28+0800",
+  "n_tasks": 8,
+  "success": 6,
+  "success_rate": 0.75,
+  "verified": 6,
+  "verified_rate": 0.75,
+  "found_but_not_stopped": 0,
+  "mean_steps": 7.1,
+  "mean_duration_ms": 16648,
+  "decision_latency_ms": {
+   "p50": 561.9,
+   "p95": 836.2
+  },
+  "step_outcomes": {
+   "executed": 39,
+   "done-rejected": 5,
+   "done": 8,
+   "stale": 3,
+   "refused-empty-enter": 2
+  },
+  "low_confidence_steps": 3,
+  "by_source": {
+   "github": {
+    "n": 1,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 12.0
+   },
+   "google": {
+    "n": 7,
+    "success": 6,
+    "success_rate": 0.857,
+    "verified": 6,
+    "verified_rate": 0.857,
+    "mean_steps": 6.4
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-d35c0faab76bfa3f",
+   "source": "github",
+   "goal": "Search GitHub for 'langchain' repositories and open the search results.",
+   "fingerprint": 67343,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 12,
+   "total_ms": 50665,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'github.com/search'",
+    "checks": {
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=",
+     "bot_challenge": false,
+     "group0": [
+      "langchain"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=langchain&search-overlay-ask-ai=true",
+    "final_title": "Understanding GitHub Code Search syntax - GitHub Docs"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.874,
+     "target": "11",
+     "target_label": "Enter your email",
+     "kind": "fill",
+     "text": "langchain",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 447.1,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8529,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 426.6,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.88,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 439.4,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8157,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 440.2,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8693,
+     "target": "6",
+     "target_label": "Search syntax tips",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 456.7,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.6735,
+     "target": "6",
+     "target_label": "Search or ask Copilot",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 561.9,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8406,
+     "target": "2",
+     "target_label": "Clear",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 556.9,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.8425,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'langchain' repositories",
+     "page_changed": null,
+     "latency_ms": 685.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 8,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:25",
+     "target_label": "Search or ask Copilot",
+     "kind": "fill",
+     "text": "langchain",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.9192,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub repository search results for 'langchain' (page shows only a GitHub Docs site search overlay, not repository results)",
+     "page_changed": null,
+     "latency_ms": 694.7,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=langchain"
+    },
+    {
+     "step": 9,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=langchain"
+    },
+    {
+     "step": 10,
+     "operation": "DONE",
+     "confidence": 0.9041,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 633.4,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=langchain&search-overlay-ask-ai=true"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5d1c185b2ef8a3ac",
+   "source": "google",
+   "goal": "First search Google for redis cheat sheet, then search Google for svelte open source alternatives.",
+   "fingerprint": 67343,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 16,
+   "total_ms": 32287,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=svelte+open+source+alternatives&sca_esv=b06d940b672a194c&hl=en&gl=us&biw=1120&bih=780&sx",
+     "bot_challenge": false,
+     "group0": [
+      "svelte"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=svelte+open+source+alternatives&sca_esv=b06d940b672a194c&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnu24wURBENeP-zfa-wTuQ__9SinxA%3A1790500953812&ei=WeC4av-fMcq8kPIPsci1uQU&ved=2ahUKEwi_sMnqt46XAxVKHkQIHTFkLVcQ4dUDegQIBhAN&uact=5&oq=svelte+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH3N2ZWx0ZSBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABSIBvUAxYDHABeAGQAQCYAewBoAHsAaoBAzItMbgBA8gBAPgBAZgCAqAC-QHCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA5gDAIgGAZAGCZIHBTEuMC4xoAe0BLIHAzItMbgH9wHCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz-serp",
+    "final_title": "svelte open source alternatives - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.855,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis cheat sheet",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 464.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9069,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 465.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790500942724"
+    },
+    {
+     "step": 3,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.5108,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 494.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790500942724"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8754,
+     "target": "9",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 503.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790500942724"
+    },
+    {
+     "step": 5,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8397,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 575.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790500942724"
+    },
+    {
+     "step": 6,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8557,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis cheat sheet",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 674.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790500942724"
+    },
+    {
+     "step": 7,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8391,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis cheat sheet",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 833.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790500942724"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790500942724"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.3164,
+     "target": "19",
+     "target_label": "Redis Cheat Sheet",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 555.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=redis+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnssS3spxKQyJwBpZqlws6DrYnv3ug%3A1790500941346&source=hp&ei=TeC4avrTE-HPkPIPup-x8AY&iflsig=ABILxe8AAAAAarjuXZ0jz9vUrXBpq7pesrdyvFmR1YTM&ved=0ahUKEwi6rs_kt46XAxXhJ0QIHbpPDG4Q4dUDCCE&uact=5&oq=redis+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhFyZWRpcyBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkilKlDsB1jsB3AEeACQAQCYAcQBoAHEAaoBAzAuMbgBA8gBAPgBAZgCBaACzwGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFuALysfvAtBWSBwM0LjGgB7EFsgcDMC4xuAfGAcIHBTIuMi4xyAcIgAgB&sclient=gws-wiz&sei=VuC4av-zBKO7kPIP4-njEA"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.3164,
+     "target": "19",
+     "target_label": "Redis Cheat Sheet",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 643.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=redis+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnssS3spxKQyJwBpZqlws6DrYnv3ug%3A1790500941346&source=hp&ei=TeC4avrTE-HPkPIPup-x8AY&iflsig=ABILxe8AAAAAarjuXZ0jz9vUrXBpq7pesrdyvFmR1YTM&ved=0ahUKEwi6rs_kt46XAxXhJ0QIHbpPDG4Q4dUDCCE&uact=5&oq=redis+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhFyZWRpcyBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkilKlDsB1jsB3AEeACQAQCYAcQBoAHEAaoBAzAuMbgBA8gBAPgBAZgCBaACzwGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFuALysfvAtBWSBwM0LjGgB7EFsgcDMC4xuAfGAcIHBTIuMi4xyAcIgAgB&sclient=gws-wiz&sei=VuC4av-zBKO7kPIP4-njEA"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.3646,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 690.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=redis+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnssS3spxKQyJwBpZqlws6DrYnv3ug%3A1790500941346&source=hp&ei=TeC4avrTE-HPkPIPup-x8AY&iflsig=ABILxe8AAAAAarjuXZ0jz9vUrXBpq7pesrdyvFmR1YTM&ved=0ahUKEwi6rs_kt46XAxXhJ0QIHbpPDG4Q4dUDCCE&uact=5&oq=redis+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhFyZWRpcyBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkilKlDsB1jsB3AEeACQAQCYAcQBoAHEAaoBAzAuMbgBA8gBAPgBAZgCBaACzwGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFuALysfvAtBWSBwM0LjGgB7EFsgcDMC4xuAfGAcIHBTIuMi4xyAcIgAgB&sclient=gws-wiz&sei=VuC4av-zBKO7kPIP4-njEA"
+    },
+    {
+     "step": 11,
+     "operation": "DONE",
+     "confidence": 0.8113,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'svelte open source alternatives' (page still shows 'redis cheat sheet' results)",
+     "page_changed": null,
+     "latency_ms": 877.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=redis+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnuUR-aV0Z9a8_LOOy5Gd1N1S1od3Q%3A1790500950333&ei=VuC4apr9E4_KkPIPvqW-iQU&biw=1120&bih=780&ved=2ahUKEwiagPXot46XAxUPJUQIHb6SL1EQ4dUDegQIBhAN&oq=redis+cheat+sheet&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXJlZGlzIGNoZWF0IHNoZWV0SABQAFgAcAB4AZABAJgBAKABAKoBALgBDMgBAJgCAKACAJgDAJIHAKAHALIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 11,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "svelte open source alternatives",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=redis+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnuUR-aV0Z9a8_LOOy5Gd1N1S1od3Q%3A1790500950333&ei=VuC4apr9E4_KkPIPvqW-iQU&biw=1120&bih=780&ved=2ahUKEwiagPXot46XAxUPJUQIHb6SL1EQ4dUDegQIBhAN&oq=redis+cheat+sheet&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXJlZGlzIGNoZWF0IHNoZWV0SABQAFgAcAB4AZABAJgBAKABAKoBALgBDMgBAJgCAKACAJgDAJIHAKAHALIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 12,
+     "operation": "DONE",
+     "confidence": 0.8266,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'svelte open source alternatives' are not visible; the page still shows results for 'redis cheat sheet'.",
+     "page_changed": null,
+     "latency_ms": 617.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=redis+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnuUR-aV0Z9a8_LOOy5Gd1N1S1od3Q%3A1790500950333&ei=VuC4apr9E4_KkPIPvqW-iQU&biw=1120&bih=780&ved=2ahUKEwiagPXot46XAxUPJUQIHb6SL1EQ4dUDegQIBhAN&oq=redis+cheat+sheet&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXJlZGlzIGNoZWF0IHNoZWV0SABQAFgAcAB4AZABAJgBAKABAKoBALgBDMgBAJgCAKACAJgDAJIHAKAHALIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 12,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=redis+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnuUR-aV0Z9a8_LOOy5Gd1N1S1od3Q%3A1790500950333&ei=VuC4apr9E4_KkPIPvqW-iQU&biw=1120&bih=780&ved=2ahUKEwiagPXot46XAxUPJUQIHb6SL1EQ4dUDegQIBhAN&oq=redis+cheat+sheet&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXJlZGlzIGNoZWF0IHNoZWV0SABQAFgAcAB4AZABAJgBAKABAKoBALgBDMgBAJgCAKACAJgDAJIHAKAHALIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 13,
+     "operation": "DONE",
+     "confidence": 0.8932,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 682.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=svelte+open+source+alternatives&sca_esv=b06d940b672a194c&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnu24wURBENeP-zfa-wTuQ__9SinxA%3A1790500953812&ei=WeC4av-fMcq8kPIPsci1uQU&ved=2ahUKEwi_sMnqt46XAxVKHkQIHTFkLVcQ4dUDegQIBhAN&uact=5&oq=svelte+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH3N2ZWx0ZSBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABSIBvUAxYDHABeAGQAQCYAewBoAHsAaoBAzItMbgBA8gBAPgBAZgCAqAC-QHCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA5gDAIgGAZAGCZIHBTEuMC4xoAe0BLIHAzItMbgH9wHCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f31eef3355d3f177",
+   "source": "google",
+   "goal": "First search Google for python tutorial, then search Google for scala release notes.",
+   "fingerprint": 67343,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 7,
+   "total_ms": 12701,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqntvubffmwzwdg9wejref",
+     "bot_challenge": false,
+     "group0": [
+      "scala"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=scala+release+notes&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQntvUBfFMWZWdG9wejReFBs-03b6dg%3A1790500983761&ei=d-C4aq-OLsXGkPIPyvWPgQw&biw=1120&bih=780&oq=scala+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3NjYWxhIHJlbGVhc2Ugbm90ZXMqBQgAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBRAAGO8FMgUQABjvBUiEClAOWA5wAXgBkAEAmAHmAaAB5gGqAQMyLTG4AQHIAQD4AQGYAgKgAvUBwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAOYAwCIBgGQBgySBwUxLjAuMaAHiQSyBwMyLTG4B_IBwgcHMC4xLjAuMcgHCoAIAQ&sclient=gws-wiz-serp",
+    "final_title": "scala release notes - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8994,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "python tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 466.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9022,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 541.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790500982465"
+    },
+    {
+     "step": 3,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8585,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 576.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=python+tutorial&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnsLfY4RvvqYt6e8wcFbgQ6ayzH1qg%3A1790500980983&source=hp&ei=dOC4avLbOvqvur8PnMffsA4&iflsig=ABILxe8AAAAAarjuhMnKLObSTJV6DneSP8ZFY1JBOpwn&ved=0ahUKEwjy5cL3t46XAxX6l-4BHZzjF-YQ4dUDCCE&uact=5&oq=python+tutorial&gs_lp=Egdnd3Mtd2l6Ig9weXRob24gdHV0b3JpYWwyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESJoHUA9YD3ABeACQAQCYAdMBoAHTAaoBAzItMbgBA8gBAPgBAZgCAqAC4AGoAgrCAhEQABjlBhiKAxjnBhjqAhi0AsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QU5UFegbO4oEZIHBTEuMC4xoAeSBbIHAzItMbgH3QHCBwUwLjEuMcgHCIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8585,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 794.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=python+tutorial&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnsLfY4RvvqYt6e8wcFbgQ6ayzH1qg%3A1790500980983&source=hp&ei=dOC4avLbOvqvur8PnMffsA4&iflsig=ABILxe8AAAAAarjuhMnKLObSTJV6DneSP8ZFY1JBOpwn&ved=0ahUKEwjy5cL3t46XAxX6l-4BHZzjF-YQ4dUDCCE&uact=5&oq=python+tutorial&gs_lp=Egdnd3Mtd2l6Ig9weXRob24gdHV0b3JpYWwyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESJoHUA9YD3ABeACQAQCYAdMBoAHTAaoBAzItMbgBA8gBAPgBAZgCAqAC4AGoAgrCAhEQABjlBhiKAxjnBhjqAhi0AsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QU5UFegbO4oEZIHBTEuMC4xoAeSBbIHAzItMbgH3QHCBwUwLjEuMcgHCIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "scala release notes",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=python+tutorial&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnsLfY4RvvqYt6e8wcFbgQ6ayzH1qg%3A1790500980983&source=hp&ei=dOC4avLbOvqvur8PnMffsA4&iflsig=ABILxe8AAAAAarjuhMnKLObSTJV6DneSP8ZFY1JBOpwn&ved=0ahUKEwjy5cL3t46XAxX6l-4BHZzjF-YQ4dUDCCE&uact=5&oq=python+tutorial&gs_lp=Egdnd3Mtd2l6Ig9weXRob24gdHV0b3JpYWwyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESJoHUA9YD3ABeACQAQCYAdMBoAHTAaoBAzItMbgBA8gBAPgBAZgCAqAC4AGoAgrCAhEQABjlBhiKAxjnBhjqAhi0AsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QU5UFegbO4oEZIHBTEuMC4xoAeSBbIHAzItMbgH3QHCBwUwLjEuMcgHCIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.83,
+     "target": "5",
+     "target_label": "scala release notes",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 836.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=python+tutorial&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnsLfY4RvvqYt6e8wcFbgQ6ayzH1qg%3A1790500980983&source=hp&ei=dOC4avLbOvqvur8PnMffsA4&iflsig=ABILxe8AAAAAarjuhMnKLObSTJV6DneSP8ZFY1JBOpwn&ved=0ahUKEwjy5cL3t46XAxX6l-4BHZzjF-YQ4dUDCCE&uact=5&oq=python+tutorial&gs_lp=Egdnd3Mtd2l6Ig9weXRob24gdHV0b3JpYWwyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESJoHUA9YD3ABeACQAQCYAdMBoAHTAaoBAzItMbgBA8gBAPgBAZgCAqAC4AGoAgrCAhEQABjlBhiKAxjnBhjqAhi0AsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QU5UFegbO4oEZIHBTEuMC4xoAeSBbIHAzItMbgH3QHCBwUwLjEuMcgHCIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.8858,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 604.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=scala+release+notes&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQntvUBfFMWZWdG9wejReFBs-03b6dg%3A1790500983761&ei=d-C4aq-OLsXGkPIPyvWPgQw&biw=1120&bih=780&oq=scala+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3NjYWxhIHJlbGVhc2Ugbm90ZXMqBQgAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBRAAGO8FMgUQABjvBUiEClAOWA5wAXgBkAEAmAHmAaAB5gGqAQMyLTG4AQHIAQD4AQGYAgKgAvUBwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAOYAwCIBgGQBgySBwUxLjAuMaAHiQSyBwMyLTG4B_IBwgcHMC4xLjAuMcgHCoAIAQ&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-251978efb3820e87",
+   "source": "google",
+   "goal": "First search Google for flask cheat sheet, then search Google for retrieval augmented generation security vulnerabilities.",
+   "fingerprint": 67343,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 8,
+   "total_ms": 15149,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=generation'",
+    "checks": {
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+security+vulnerabilities+github&sca_esv=b06d940b672a194c&",
+     "bot_challenge": false,
+     "group0": [
+      "generation",
+      "retrieval"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=retrieval+augmented+generation+security+vulnerabilities+github&sca_esv=b06d940b672a194c&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnvKoJbii7kObsf1IUylOvRWsJeMZA%3A1790501007293&ei=j-C4arbDEYmqur8Pz4Cn0Qk&oq=retrieval+augmented+generation+security+vulnerabilities&gs_lp=Egxnd3Mtd2l6LXNlcnAiN3JldHJpZXZhbCBhdWdtZW50ZWQgZ2VuZXJhdGlvbiBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMqBQgAGKABMgUQIRigATIFECEYoAEyBRAhGKABSO4HUA1YDXABeAGQAQCYAeABoAHgAaoBAzItMbgBAcgBAPgBAZgCAqAC8wHCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA5gDAIgGAZAGCpIHBTEuMC4xoAeyBLIHAzItMbgH8gHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz-serp",
+    "final_title": "retrieval augmented generation security vulnerabilities github - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.893,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "flask cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 479.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501001403"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.885,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 554.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501001403"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.7738,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 627.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=flask+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQntMY-hvMdLk6ae-pRmAkbt0LbW7Gw%3A1790501001035&source=hp&ei=ieC4asloz8eQ8g_m8oCwAQ&iflsig=ABILxe8AAAAAarjumeDEqLJTUy34ZQC4GHK5vFNJ-6ZX&ved=0ahUKEwiJ0YqBuI6XAxXPI0QIHWY5ABYQ4dUDCCE&uact=5&oq=flask+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhFmbGFzayBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDSKsHUA1YDXABeACQAQCYAeQBoAHkAaoBAzItMbgBA8gBAPgBAZgCAqAC7QGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDA_EFoPvsGLceQUySBwUxLjAuMaAHhwayBwMyLTG4B-oBwgcFMC4xLjHIBweACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.7636,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 799.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=flask+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQntMY-hvMdLk6ae-pRmAkbt0LbW7Gw%3A1790501001035&source=hp&ei=ieC4asloz8eQ8g_m8oCwAQ&iflsig=ABILxe8AAAAAarjumeDEqLJTUy34ZQC4GHK5vFNJ-6ZX&ved=0ahUKEwiJ0YqBuI6XAxXPI0QIHWY5ABYQ4dUDCCE&uact=5&oq=flask+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhFmbGFzayBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDSKsHUA1YDXABeACQAQCYAeQBoAHkAaoBAzItMbgBA8gBAPgBAZgCAqAC7QGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDA_EFoPvsGLceQUySBwUxLjAuMaAHhwayBwMyLTG4B-oBwgcFMC4xLjHIBweACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8163,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 569.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=flask+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnvEypCPsm6382wbJ_a8UGyq1Nx8cQ%3A1790501003677&ei=i-C4arf6KMjNkPIPh-XGwAs&biw=1120&bih=780&ved=2ahUKEwj366yCuI6XAxXIJkQIHYeyEbgQ4dUDegQIBhAN&oq=flask+cheat+sheet&gs_lp=Egxnd3Mtd2l6LXNlcnAiEWZsYXNrIGNoZWF0IHNoZWV0SABQAFgAcAB4AZABAJgBAKABAKoBALgBDMgBAJgCAKACAJgDAJIHAKAHALIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=flask+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQns9P65-7sgnTOLo0KBxdD75vvXGVw%3A1790501005619&ei=jeC4arm6JdjRkPIP26ad6QY&ved=2ahUKEwj5tKODuI6XAxXYKEQIHVtTJ20Q4dUDegQIBhAN&oq=flask+cheat+sheet&gs_lp=Egxnd3Mtd2l6LXNlcnAiEWZsYXNrIGNoZWF0IHNoZWV0SABQAFgAcAB4AZABAJgBAKABAKoBALgBDMgBAJgCAKACAJgDAJIHAKAHALIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8059,
+     "target": "5",
+     "target_label": "retrieval augmented generation security vulnerabilities github",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 570.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=flask+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQns9P65-7sgnTOLo0KBxdD75vvXGVw%3A1790501005619&ei=jeC4arm6JdjRkPIP26ad6QY&ved=2ahUKEwj5tKODuI6XAxXYKEQIHVtTJ20Q4dUDegQIBhAN&oq=flask+cheat+sheet&gs_lp=Egxnd3Mtd2l6LXNlcnAiEWZsYXNrIGNoZWF0IHNoZWV0SABQAFgAcAB4AZABAJgBAKABAKoBALgBDMgBAJgCAKACAJgDAJIHAKAHALIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 7,
+     "operation": "DONE",
+     "confidence": 0.891,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 694.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+security+vulnerabilities+github&sca_esv=b06d940b672a194c&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnvKoJbii7kObsf1IUylOvRWsJeMZA%3A1790501007293&ei=j-C4arbDEYmqur8Pz4Cn0Qk&oq=retrieval+augmented+generation+security+vulnerabilities&gs_lp=Egxnd3Mtd2l6LXNlcnAiN3JldHJpZXZhbCBhdWdtZW50ZWQgZ2VuZXJhdGlvbiBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMqBQgAGKABMgUQIRigATIFECEYoAEyBRAhGKABSO4HUA1YDXABeAGQAQCYAeABoAHgAaoBAzItMbgBAcgBAPgBAZgCAqAC8wHCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA5gDAIgGAZAGCpIHBTEuMC4xoAeyBLIHAzItMbgH8gHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-335c6c0c6ba59834",
+   "source": "google",
+   "goal": "Search Google for unit testing cheat sheet and open the results.",
+   "fingerprint": 67343,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4594,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=unit+testing+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqnt-kqffn3wgq3l2",
+     "bot_challenge": false,
+     "group0": [
+      "testing",
+      "unit"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=unit+testing+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnt-KQFfn3wGQ3L2raeVfateczzd1A%3A1790501023372&source=hp&ei=n-C4aoXLFeS8kPIP05e66Qc&iflsig=ABILxe8AAAAAarjur3wkEDHOpoLPyuvIB6-nUD3GEcsa&ved=0ahUKEwjFlt6LuI6XAxVkHkQIHdOLLn0Q4dUDCCE&uact=5&oq=unit+testing+cheat+sheet&gs_lp=Egdnd3Mtd2l6Ihh1bml0IHRlc3RpbmcgY2hlYXQgc2hlZXQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wVIgApQD1gPcAF4AJABAJgB5wGgAecBqgEDMi0xuAEDyAEA-AEBmAICoALzAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMC8QX0IRJ5lOqbGpIHBTEuMC4xoAfrA7IHAzItMbgH8AHCBwUwLjEuMcgHCYAIAQ&sclient=gws-wiz",
+    "final_title": "unit testing cheat sheet - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8996,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "unit testing cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 428.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501023731"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9088,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 898.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501023731"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8904,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 579.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=unit+testing+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnt-KQFfn3wGQ3L2raeVfateczzd1A%3A1790501023372&source=hp&ei=n-C4aoXLFeS8kPIP05e66Qc&iflsig=ABILxe8AAAAAarjur3wkEDHOpoLPyuvIB6-nUD3GEcsa&ved=0ahUKEwjFlt6LuI6XAxVkHkQIHdOLLn0Q4dUDCCE&uact=5&oq=unit+testing+cheat+sheet&gs_lp=Egdnd3Mtd2l6Ihh1bml0IHRlc3RpbmcgY2hlYXQgc2hlZXQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wVIgApQD1gPcAF4AJABAJgB5wGgAecBqgEDMi0xuAEDyAEA-AEBmAICoALzAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMC8QX0IRJ5lOqbGpIHBTEuMC4xoAfrA7IHAzItMbgH8AHCBwUwLjEuMcgHCYAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-7b85235385af06f3",
+   "source": "google",
+   "goal": "Search Google for spring boot release notes and open the results.",
+   "fingerprint": 67343,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 4,
+   "total_ms": 6452,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=spring+boot+release+notes&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqntoonwuaoajbp9",
+     "bot_challenge": false,
+     "group0": [
+      "spring",
+      "boot"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=spring+boot+release+notes&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQntOOnWuaoAjbP9k2f4ijMVnqAl2Cw%3A1790501038229&ei=ruC4avbKDb7fkPIPqLLvgQw&biw=1120&bih=780&ved=2ahUKEwj22emSuI6XAxW-L0QIHSjZO8AQ4dUDegQIBhAN&oq=spring+boot+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiGXNwcmluZyBib290IHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp",
+    "final_title": "spring boot release notes - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8633,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "spring boot release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 997.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501035388"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.889,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 595.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501035388"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.2466,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 587.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=spring+boot+release+notes&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnvpJLnfqyvNzBB36GL-mF6w66sgrw%3A1790501035096&source=hp&ei=q-C4avzdBJmWkPIPsqC1kAk&iflsig=ABILxe8AAAAAarjuu5Ap9n5ZFmpWaMFVmHll9U1VB8CJ&ved=0ahUKEwi836mRuI6XAxUZC0QIHTJQDZIQ4dUDCCE&uact=5&oq=spring+boot+release+notes&gs_lp=Egdnd3Mtd2l6IhlzcHJpbmcgYm9vdCByZWxlYXNlIG5vdGVzMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSNAHUA9YD3ABeACQAQCYAdIBoAHSAaoBAzItMbgBA8gBAPgBAZgCAqAC3gGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFaNIcBZ3mKpuSBwUxLjAuMaAH3wWyBwMyLTG4B9oBwgcDMi0yyAcIgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8969,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 755.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=spring+boot+release+notes&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQntOOnWuaoAjbP9k2f4ijMVnqAl2Cw%3A1790501038229&ei=ruC4avbKDb7fkPIPqLLvgQw&biw=1120&bih=780&ved=2ahUKEwj22emSuI6XAxW-L0QIHSjZO8AQ4dUDegQIBhAN&oq=spring+boot+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiGXNwcmluZyBib290IHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d317d8fb0f75856a",
+   "source": "google",
+   "goal": "Search Google for rabbitmq cheat sheet and open the results.",
+   "fingerprint": 67343,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 4,
+   "total_ms": 7506,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=rabbitmq+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqnvsl1oaw97meskdazdk",
+     "bot_challenge": false,
+     "group0": [
+      "rabbitmq"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=rabbitmq+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnvSl1OAW97mESKdAzdK5bk-7i7j2w%3A1790501048680&source=hp&ei=uOC4avyTKMSjur8PwJuuqA8&iflsig=ABILxe8AAAAAarjuyNn425tbbrWP3xp8jjDWtVr-yocM&ved=0ahUKEwj8z-aXuI6XAxXEke4BHcCNC_UQ4dUDCCE&oq=rabbitmq+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhRyYWJiaXRtcSBjaGVhdCBzaGVldDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMggQABiJBRiiBEj8H1APWA9wAXgAkAEAmAHlAaAB5QGqAQMyLTG4AQzIAQD4AQGYAgKgAu8BqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBR_DgI7W6cFdkgcFMS4wLjGgB-QDsgcDMi0xuAfsAcIHBTAuMS4xyAcGgAgB&sclient=gws-wiz",
+    "final_title": "rabbitmq cheat sheet - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9059,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rabbitmq cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 471.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501048829"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.7972,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for rabbitmq cheat sheet",
+     "page_changed": null,
+     "latency_ms": 554.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501048829"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:29",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501048829"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8837,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 623.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=rabbitmq+cheat+sheet&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnvSl1OAW97mESKdAzdK5bk-7i7j2w%3A1790501048680&source=hp&ei=uOC4avyTKMSjur8PwJuuqA8&iflsig=ABILxe8AAAAAarjuyNn425tbbrWP3xp8jjDWtVr-yocM&ved=0ahUKEwj8z-aXuI6XAxXEke4BHcCNC_UQ4dUDCCE&oq=rabbitmq+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhRyYWJiaXRtcSBjaGVhdCBzaGVldDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMggQABiJBRiiBEj8H1APWA9wAXgAkAEAmAHlAaAB5QGqAQMyLTG4AQzIAQD4AQGYAgKgAu8BqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBR_DgI7W6cFdkgcFMS4wLjGgB-QDsgcDMi0xuAfsAcIHBTAuMS4xyAcGgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8986b55a8f6f7d45",
+   "source": "google",
+   "goal": "Search Google for ci/cd pipelines release notes and open the results.",
+   "fingerprint": 67343,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 3829,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=ci%2fcd+pipelines+release+notes&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqnv9h5u-x",
+     "bot_challenge": false,
+     "group0": [
+      "pipelines",
+      "ci/cd"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=ci%2Fcd+pipelines+release+notes&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnv9H5u-XcbDb6_SK_c9vo4ribgclQ%3A1790501063335&source=hp&ei=x-C4avmEE8PgkPIP_dGZ4Qw&iflsig=ABILxe8AAAAAarju1w79jFIos6ufQLc9MP2HJyW1wGDM&ved=0ahUKEwi5hOWeuI6XAxVDMEQIHf1oJswQ4dUDCCE&uact=5&oq=ci%2Fcd+pipelines+release+notes&gs_lp=Egdnd3Mtd2l6Ih1jaS9jZCBwaXBlbGluZXMgcmVsZWFzZSBub3RlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKsCSPcGUBBYEHABeACQAQCYAd4BoAHeAaoBAzItMbgBA8gBAPgBAZgCAqAC7wGoAgrCAhEQABjlBhiKAxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QUtmMcFaIOJCpIHBTEuMC4xoAfdBLIHAzItMbgH6wHCBwUwLjEuMcgHB4AIAQ&sclient=gws-wiz",
+    "final_title": "ci/cd pipelines release notes - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8703,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ci/cd pipelines release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 483.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501063496"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8982,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 502.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501063496"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8424,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 580.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+release+notes&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnv9H5u-XcbDb6_SK_c9vo4ribgclQ%3A1790501063335&source=hp&ei=x-C4avmEE8PgkPIP_dGZ4Qw&iflsig=ABILxe8AAAAAarju1w79jFIos6ufQLc9MP2HJyW1wGDM&ved=0ahUKEwi5hOWeuI6XAxVDMEQIHf1oJswQ4dUDCCE&uact=5&oq=ci%2Fcd+pipelines+release+notes&gs_lp=Egdnd3Mtd2l6Ih1jaS9jZCBwaXBlbGluZXMgcmVsZWFzZSBub3RlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKsCSPcGUBBYEHABeACQAQCYAd4BoAHeAaoBAzItMbgBA8gBAPgBAZgCAqAC7wGoAgrCAhEQABjlBhiKAxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QUtmMcFaIOJCpIHBTEuMC4xoAfdBLIHAzItMbgH6wHCBwUwLjEuMcgHB4AIAQ&sclient=gws-wiz"
+    }
+   ]
+  }
+ ]
+}

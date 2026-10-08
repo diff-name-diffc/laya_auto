@@ -1,0 +1,481 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 32178,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:38:18+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.0,
+  "mean_duration_ms": 14685,
+  "decision_latency_ms": {
+   "p50": 542.4,
+   "p95": 622.6
+  },
+  "step_outcomes": {
+   "executed": 16
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.0
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-d4558ab1abe9152c",
+   "source": "google",
+   "goal": "First search Google for model quantization open source alternatives, then search Google for how to debug kubernetes.",
+   "fingerprint": 32178,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14951,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bkubernetes%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bkubernetes%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntlQ8apBwkSyGsuGFrofXgUVjfNwA%253A1790515814662%26source%3Dhp%26ei%3DZhq5aouuJ8Sjur8PwJuuqA8%26iflsig%3DABILxe8AAAAAarkodtesIt5653FuAH6cdQAO4lDlpsdK%26ved%3D0ahUKEwiL-eKY746XAxXEke4BHcCNC_UQ4dUDCCA%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bkubernetes%26gs_lp%3DEgdnd3Mtd2l6Ihdob3cgdG8gZGVidWcga3ViZXJuZXRlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IxwdQElgScAF4AJABAJgB3QGgAd0BqgEDMi0xuAEDyAEA-AEBmAICoALkAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QX90nGfHWAmWJIHBTEuMC4xoAf_BbIHAzItMbgH4AHCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz%26sei%3DaRq5aqyhI6vOkPIPvtSa4A0&hl=en&q=EgQm0XtnGOm05NUGIjA0Qn_exxMwsHjX4MN7fJur3RAwR3bzZ0Wt_JgT-U9WVd_xu_OE_A-yvUsuZqFnQHgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+kubernetes&sca_esv=3e3a42b854afc954"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.887,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug kubernetes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 468.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.4358,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 577.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ff15263ff5b7853b",
+   "source": "google",
+   "goal": "First search Google for mongodb tutorial, then search Google for how to debug golang.",
+   "fingerprint": 32178,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14574,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bgolang%26sca_esv%3d3e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bgolang%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntoCdX9Estqa0Wura4xbjNXvGkWWQ%253A1790515882045%26source%3Dhp%26ei%3Dqhq5aqShAcnIkPIPzsTB8Qk%26iflsig%3DABILxe8AAAAAarkoul2njbBz55bQZt0irYB0a7qAaKDh%26ved%3D0ahUKEwiknvO4746XAxVJJEQIHU5iMJ4Q4dUDCCA%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bgolang%26gs_lp%3DEgdnd3Mtd2l6IhNob3cgdG8gZGVidWcgZ29sYW5nMggQABiABBi0BzIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSPUHUBZYFnABeACQAQCYAdMBoAHTAaoBAzItMbgBA8gBAPgBAZgCAqAC2wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEF7bg8DhG8_6KSBwUxLjAuMaAHtwWyBwMyLTG4B9YBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKy15NUGIjD1vtwVMrCwzYe_dn9S9IDnNj5PPgfHwhnAb78NicuwRIslH_r7crWJfuuU5jyWkQQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+golang&sca_esv=3e3a42b854afc954&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.5185,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug golang",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 467.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8006,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 622.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-7f5de9ebca9fbdaa",
+   "source": "google",
+   "goal": "First search Google for model quantization tutorial, then search Google for async programming cheat sheet.",
+   "fingerprint": 32178,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14676,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmodel%2bquantization%2btutorial%26sca_es",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmodel%2Bquantization%2Btutorial%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvOjOGOH4dE9weJLSxnRzGxRJiFow%253A1790515949027%26source%3Dhp%26ei%3D7Rq5arUknf2Q8g-KibahCQ%26iflsig%3DABILxe8AAAAAarko_XUTxmqAxUMbeCOfTjaospEkt2Mj%26ved%3D0ahUKEwj1zuvY746XAxWdPkQIHYqELZQQ4dUDCCA%26uact%3D5%26oq%3Dmodel%2Bquantization%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ihttb2RlbCBxdWFudGl6YXRpb24gdHV0b3JpYWwyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FSJUHUA1YDXABeACQAQCYAaICoAGiAqoBAzItMbgBA8gBAPgBAZgCAqACpwKoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDA_EFN0BylznY6LOSBwUxLjAuMaAH9wOyBwMyLTG4B6QCwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGO-15NUGIjC3-b1eBvxkMYUTbEMoS4dL70Y_fj481J4rBOhp3VlK3HzwVFC8UnYDh2QHv2suBCwyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=model+quantization+tutorial&sca_esv=3e3a42b854af"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9036,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 468.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8826,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 540.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8516d46ba4e3325f",
+   "source": "google",
+   "goal": "Search Google for prometheus interview questions and open the results.",
+   "fingerprint": 32178,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14592,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dprometheus%2binterview%2bquestions%26sca",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dprometheus%2Binterview%2Bquestions%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnurX61lsSrSPw90m8Hi4PVsB_hCog%253A1790516015938%26source%3Dhp%26ei%3DLxu5aob_N6rKvMcPp6iX6Ak%26iflsig%3DABILxe8AAAAAarkpPz7gEwga-Q2srlODqyxkAWtI8l5B%26ved%3D0ahUKEwjG0t_4746XAxUqJe8CHSfUBZ0Q4dUDCCA%26uact%3D5%26oq%3Dprometheus%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Ih5wcm9tZXRoZXVzIGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IvwdQDFgMcAF4AJABAJgB_AGgAfwBqgEDMi0xuAEDyAEA-AEBmAICoAKBAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QUocYqGpfb3HpIHBTEuMC4xoAejB7IHAzItMbgH_gHCBwMwLjLIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLK25NUGIjDg31pLfL9--arx6VICeMaMMrZ_eo-5hk0SAxzwjEbWi90ENkZcuovRjdF6Xl_An_8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=prometheus+interview+questions&sca_esv=3e3a42b85"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8903,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "prometheus interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 464.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7741,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 578.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-81e6282d256d45c3",
+   "source": "google",
+   "goal": "First search Google for typescript performance optimization, then search Google for mongodb open source alternatives.",
+   "fingerprint": 32178,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14447,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dtypescript%2bperformance%2boptimization%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtypescript%2Bperformance%2Boptimization%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsE3Y5NWSDMZUsx5N_lVn6Ujwf-BA%253A1790516082708%26source%3Dhp%26ei%3Dchu5as6JKtLOkPIPrffq8QY%26iflsig%3DABILxe8AAAAAarkpgl7CrB8Nh373ilkeRMh8foXnLlxA%26ved%3D0ahUKEwjOisuY8I6XAxVSJ0QIHa27Om4Q4dUDCCA%26uact%3D5%26oq%3Dtypescript%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiN0eXBlc2NyaXB0IHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMggQABiJBRiiBDIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBUiUB1APWA9wAXgAkAEAmAGRAqABkQKqAQMyLTG4AQPIAQD4AQGYAgKgApYCqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMC8QXxx8GYL2DY75IHBTEuMC4xoAehBLIHAzItMbgHlALCBwMwLjLIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPW25NUGIjB2gjOexfkNe7q9stWbR5QPHhBYCfrrF2X8De6PZ7MxzlOMHWxSGsUysFnulFncYL4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=typescript+performance+optimization&sca_esv=3e3a"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8523,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "typescript performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 480.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9038,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 537.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-06e6cf9bf6337303",
+   "source": "google",
+   "goal": "Search Google for golang performance optimization and open the results.",
+   "fingerprint": 32178,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14738,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgolang%2bperformance%2boptimization%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgolang%2Bperformance%2Boptimization%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntkTLbXtbDyeSGJfLBsB9hhmpXlLg%253A1790516149316%26source%3Dhp%26ei%3DtRu5atKXEoDCkPIPtryrkAE%26iflsig%3DABILxe8AAAAAarkpxU9ppLFPBU1B_3AFyfkVHR3jE0Dh%26ved%3D0ahUKEwiSxqy48I6XAxUAIUQIHTbeChIQ4dUDCCA%26uact%3D5%26oq%3Dgolang%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ih9nb2xhbmcgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIIEAAYiQUYogQyBRAAGO8FSO0HUA9YD3ABeACQAQCYAZUCoAGVAqoBAzItMbgBA8gBAPgBAZgCAqACnAKoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFLL9zi1iuW16SBwUxLjAuMaAHoQWyBwMyLTG4B5gCwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLi35NUGIjCJ-1sy3Z6KnwddlNTARTJFp9gNfjSqC0q7wqq-WIWD8d-msnJYPWoZDVCorVHPQYoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=golang+performance+optimization&sca_esv=3e3a42b8"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8613,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 584.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.89,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 621.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-163c0cbd43c696ee",
+   "source": "google",
+   "goal": "First search Google for rust interview questions, then search Google for mysql performance optimization.",
+   "fingerprint": 32178,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14834,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drust%2binterview%2bquestions%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drust%2Binterview%2Bquestions%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvNhKQPn7BJa_vtkOlsm--bGcVikA%253A1790516216209%26source%3Dhp%26ei%3D-Bu5ap3NC6LFkPIP2tPHqQQ%26iflsig%3DABILxe8AAAAAarkqCJEJNsVKg5ECvJoTtgJlOsxpoXd_%26ved%3D0ahUKEwidqZ_Y8I6XAxWiIkQIHdrpMUUQ4dUDCCA%26uact%3D5%26oq%3Drust%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhhydXN0IGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSJgHUAxYDHABeACQAQCYAfEBoAHxAaoBAzItMbgBA8gBAPgBAZgCAqAC9wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDAvEFkJNC4pXCW0KSBwUxLjAuMaAH6wWyBwMyLTG4B_UBwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPq35NUGIjCnxqRJdlhC_fpso2ezfZAQEuWM51fbx1Zesdps4e5zdy5jaexjItb8YTXOxi989SQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=rust+interview+questions&sca_esv=3e3a42b854afc95"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8884,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rust interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 627.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8741,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 542.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-e52133c88a78e578",
+   "source": "google",
+   "goal": "Search Google for postgresql performance optimization and open the results.",
+   "fingerprint": 32178,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14669,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpostgresql%2bperformance%2boptimization%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpostgresql%2Bperformance%2Boptimization%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntY5d7aQ0MDtohehhbSHFb1qILRmQ%253A1790516283234%26source%3Dhp%26ei%3DOxy5aqT6DN7CkPIPic7fqQs%26iflsig%3DABILxe8AAAAAarkqSwyWQhHVGm4x2urbcdOGAAL2ESmL%26ved%3D0ahUKEwjkg5r48I6XAxVeIUQIHQnnN7UQ4dUDCCA%26uact%3D5%26oq%3Dpostgresql%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiNwb3N0Z3Jlc3FsIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSIMHUA1YDXABeACQAQCYAeoBoAHqAaoBAzItMbgBA8gBAPgBAZgCAqAC8AGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBSzr4oNjlVc4kgcFMS4wLjGgB6wGsgcDMi0xuAftAcIHAzAuMsgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGL245NUGIjA2QAgp6o1y5cClq6aVpKbsY-B_A4Rgab6ZGXmfEd7uP4iLHiJo0bxF2phsDS_Yu8EyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=postgresql+performance+optimization&sca_esv=3e3a"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8397,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 587.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9101,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 524.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  }
+ ]
+}

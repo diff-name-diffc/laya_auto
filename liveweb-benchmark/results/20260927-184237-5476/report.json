@@ -1,0 +1,911 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 16111,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T18:47:46+0800",
+  "n_tasks": 8,
+  "success": 1,
+  "success_rate": 0.125,
+  "verified": 1,
+  "verified_rate": 0.125,
+  "found_but_not_stopped": 0,
+  "mean_steps": 5.6,
+  "mean_duration_ms": 14950,
+  "decision_latency_ms": {
+   "p50": 569.3,
+   "p95": 924.5
+  },
+  "step_outcomes": {
+   "stale": 3,
+   "refused-empty-enter": 3,
+   "done-rejected": 9,
+   "executed": 23,
+   "done": 5,
+   "page changed since the decision (url or marker mismatch)": 2
+  },
+  "low_confidence_steps": 7,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 1,
+    "success_rate": 0.125,
+    "verified": 1,
+    "verified_rate": 0.125,
+    "mean_steps": 5.6
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-0eb232af20f63f58",
+   "source": "google",
+   "goal": "Search Google for kotlin release notes and open the results.",
+   "fingerprint": 16111,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 24600,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dkotlin%2brelease%2bnotes%26sca_esv%3d54d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dkotlin%2Brelease%2Bnotes%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnveWzD44q8k4CYQZ4TIT7BYSn0jwg%253A1790505760155%26source%3Dhp%26ei%3DIPO4au3yB7Stur8P9qO0iAo%26iflsig%3DABILxe8AAAAAarkBMFGUNlbDpOOVQv9mdat3FLNYQjIO%26ved%3D0ahUKEwjtgrTeyY6XAxW0lu4BHfYRDaEQ4dUDCDM%26uact%3D5%26oq%3Dkotlin%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhRrb3RsaW4gcmVsZWFzZSBub3RlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I-TNQDlgOcAF4AJABAJgB0gGgAdIBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALcAagCCsICChAAGAMYjwEY6gKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBRuMKZIvGrHckgcFMS4wLjGgB7QFsgcDMi0xuAfYAcIHBTAuMS4xyAcGgAgB%26sclient%3Dgws-wiz%26sei%3DLPO4as6gJNXSkPIP0sTOgAw&hl=en&q=EgQm0XtnGKzm49UGIjB5R1v_4p3V3ywqxb_uT-XujcckB4pojwG7pz8tXT48nLs2CnLX1O-ByZKI4URP17IyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=kotlin+release+notes&sca_esv=54dc793dbd0950c5&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9067,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kotlin release notes",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 513.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8745,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 495.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505761535"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.906,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for \"kotlin release notes\"; the search query is not entered/submitted (empty search box on Google homepage)",
+     "page_changed": null,
+     "latency_ms": 513.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505761535"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kotlin release notes",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505761535"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9111,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Actual search results for 'kotlin release notes' (page only shows the search box with autocomplete suggestions, no result listings)",
+     "page_changed": null,
+     "latency_ms": 626.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505761535"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505761535"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-aed9b28e6c7ab591",
+   "source": "google",
+   "goal": "Search Google for ci/cd pipelines cheat sheet and open the results.",
+   "fingerprint": 16111,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 11,
+   "total_ms": 19579,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'google.com/search'",
+    "checks": {
+     "url": "https://www.wiz.io/lp/ci-cd-security-best-practices-cheat-sheet?utm_source=google&utm_medium=ppc&utm_campaign=non-brand-",
+     "bot_challenge": false,
+     "group0": [
+      "pipelines",
+      "ci/cd"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.wiz.io/lp/ci-cd-security-best-practices-cheat-sheet?utm_source=google&utm_medium=ppc&utm_campaign=non-brand-commercial-content-code-defend-search-us+ca&utm_term=devops%20ci%20cd&utm_adgroupname={ci-cd}&utm_device=c&gad_source=1&gad_campaignid=22912182210&gbraid=0AAAAABYVGbJYd-VFrfAjLlVUBQ0YMg8fP&gclid=EAIaIQobChMIvavgiMqOlwMVkChECB2ckASkEAAYASAAEgKIyPD_BwE",
+    "final_title": "CI/CD Pipeline Security Best Practices [Cheat Sheet] | Wiz"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.911,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ci/cd pipelines cheat sheet",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 508.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.6457,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 499.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505838509"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8978,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"ci/cd pipelines cheat sheet\"",
+     "page_changed": null,
+     "latency_ms": 644.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505838509"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ci/cd pipelines cheat sheet",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505838509"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8948,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results listing for 'ci/cd pipelines cheat sheet'",
+     "page_changed": null,
+     "latency_ms": 738.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505838509"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:35",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505838509"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2335,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 571.2,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvjTSBdM18NuGZZ9UhZhjOZSUKm4Q%3A1790505837160&source=hp&ei=bfO4aty2CM-vur8P99y3oAE&iflsig=ABILxe8AAAAAarkBfdWpHwTqwwFKvhPe-bhnEWmpIZZy&ved=0ahUKEwicoZCDyo6XAxXPl-4BHXfuDRQQ4dUDCDM&oq=ci%2Fcd+pipelines+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhtjaS9jZCBwaXBlbGluZXMgY2hlYXQgc2hlZXQyBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIESK9IUMYiWMYicAJ4AJABAJgB2gGgAdoBqgEDMi0xsAEAuAEMyAEA-AEBmAIDoALiAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXhOLf443BnqpIHBTIuMC4xoAeMA7IHAzItMbgH3AHCBwUwLjIuMcgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2335,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 587.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvjTSBdM18NuGZZ9UhZhjOZSUKm4Q%3A1790505837160&source=hp&ei=bfO4aty2CM-vur8P99y3oAE&iflsig=ABILxe8AAAAAarkBfdWpHwTqwwFKvhPe-bhnEWmpIZZy&ved=0ahUKEwicoZCDyo6XAxXPl-4BHXfuDRQQ4dUDCDM&oq=ci%2Fcd+pipelines+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhtjaS9jZCBwaXBlbGluZXMgY2hlYXQgc2hlZXQyBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIESK9IUMYiWMYicAJ4AJABAJgB2gGgAdoBqgEDMi0xsAEAuAEMyAEA-AEBmAIDoALiAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXhOLf443BnqpIHBTIuMC4xoAeMA7IHAzItMbgH3AHCBwUwLjIuMcgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2335,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 601.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvjTSBdM18NuGZZ9UhZhjOZSUKm4Q%3A1790505837160&source=hp&ei=bfO4aty2CM-vur8P99y3oAE&iflsig=ABILxe8AAAAAarkBfdWpHwTqwwFKvhPe-bhnEWmpIZZy&ved=0ahUKEwicoZCDyo6XAxXPl-4BHXfuDRQQ4dUDCDM&oq=ci%2Fcd+pipelines+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhtjaS9jZCBwaXBlbGluZXMgY2hlYXQgc2hlZXQyBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIESK9IUMYiWMYicAJ4AJABAJgB2gGgAdoBqgEDMi0xsAEAuAEMyAEA-AEBmAIDoALiAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXhOLf443BnqpIHBTIuMC4xoAeMA7IHAzItMbgH3AHCBwUwLjIuMcgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:18",
+     "target_label": "Free CI/CD Cheat Sheet Wiz™ https://www.wiz.io",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ci%2Fcd+pipelines+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvjTSBdM18NuGZZ9UhZhjOZSUKm4Q%3A1790505837160&source=hp&ei=bfO4aty2CM-vur8P99y3oAE&iflsig=ABILxe8AAAAAarkBfdWpHwTqwwFKvhPe-bhnEWmpIZZy&ved=0ahUKEwicoZCDyo6XAxXPl-4BHXfuDRQQ4dUDCDM&oq=ci%2Fcd+pipelines+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhtjaS9jZCBwaXBlbGluZXMgY2hlYXQgc2hlZXQyBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIESK9IUMYiWMYicAJ4AJABAJgB2gGgAdoBqgEDMi0xsAEAuAEMyAEA-AEBmAIDoALiAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXhOLf443BnqpIHBTIuMC4xoAeMA7IHAzItMbgH3AHCBwUwLjIuMcgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.8612,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 640.3,
+     "low_confidence": false,
+     "url": "https://www.wiz.io/lp/ci-cd-security-best-practices-cheat-sheet?utm_source=google&utm_medium=ppc&utm_campaign=non-brand-commercial-content-code-defend-search-us+ca&utm_term=devops%20ci%20cd&utm_adgroupname={ci-cd}&utm_device=c&gad_source=1&gad_campaignid=22912182210&gbraid=0AAAAABYVGbJYd-VFrfAjLlVUBQ0YMg8fP&gclid=EAIaIQobChMIvavgiMqOlwMVkChECB2ckASkEAAYASAAEgKIyPD_BwE"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-cedac3a1ea4c4e39",
+   "source": "google",
+   "goal": "Search Google for llama.cpp tutorial and open the results.",
+   "fingerprint": 16111,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 4,
+   "total_ms": 9860,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=llama.cpp+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnt-spm0xrfamt87sxrq9-",
+     "bot_challenge": false,
+     "group0": [
+      "llama.cpp"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=llama.cpp+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt-sPm0XrFAMT87SXrq9-fcDNLbqw%3A1790505864144&source=hp&ei=iPO4avC_B9TJkPIPk7uI2AQ&iflsig=ABILxe8AAAAAarkBmLkmfGdz-BvH0jE0dPK8HtYs0J8B&ved=0ahUKEwjwo_-Pyo6XAxXUJEQIHZMdAksQ4dUDCDM&uact=5&oq=llama.cpp+tutorial&gs_lp=Egdnd3Mtd2l6IhJsbGFtYS5jcHAgdHV0b3JpYWwyBRAAGIAEMgYQABgWGB4yCBAAGBYYHhgKMgYQABgWGB4yCBAAGBYYHhgKMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGBYYHhgKSP4jUBtYG3ABeACQAQCYAdQBoAHUAaoBAzItMbABALgBA8gBAPgBAZgCAqAC3AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFkoUVIEFjPC6SBwUxLjAuMaAH4QWyBwMyLTG4B9gBwgcDMi0yyAcGgAgB&sclient=gws-wiz",
+    "final_title": "llama.cpp tutorial - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9095,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llama.cpp tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 484.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505864290"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8988,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"llama.cpp tutorial\" are not displayed (only the search box with autocomplete suggestions is visible)",
+     "page_changed": null,
+     "latency_ms": 808.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505864290"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505864290"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.7722,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 770.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=llama.cpp+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnt-sPm0XrFAMT87SXrq9-fcDNLbqw%3A1790505864144&source=hp&ei=iPO4avC_B9TJkPIPk7uI2AQ&iflsig=ABILxe8AAAAAarkBmLkmfGdz-BvH0jE0dPK8HtYs0J8B&ved=0ahUKEwjwo_-Pyo6XAxXUJEQIHZMdAksQ4dUDCDM&uact=5&oq=llama.cpp+tutorial&gs_lp=Egdnd3Mtd2l6IhJsbGFtYS5jcHAgdHV0b3JpYWwyBRAAGIAEMgYQABgWGB4yCBAAGBYYHhgKMgYQABgWGB4yCBAAGBYYHhgKMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGBYYHhgKSP4jUBtYG3ABeACQAQCYAdQBoAHUAaoBAzItMbABALgBA8gBAPgBAZgCAqAC3AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFkoUVIEFjPC6SBwUxLjAuMaAH4QWyBwMyLTG4B9gBwgcDMi0yyAcGgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-7175d54d2e7556c1",
+   "source": "google",
+   "goal": "First search Google for llm fine-tuning tutorial, then search Google for how to debug concurrency.",
+   "fingerprint": 16111,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 5852,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=concurrency'",
+    "checks": {
+     "url": "https://www.google.com/search?q=how+to+debug+concurrency&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqntcqczvfbtym7fi",
+     "bot_challenge": false,
+     "group0": [
+      "concurrency"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=how+to+debug+concurrency&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntcqcZVFBTyM7FiuKxiL1QQZWzOeg%3A1790505881192&source=hp&ei=mfO4at24CpbBkPIPz_uL6Ag&iflsig=ABILxe8AAAAAarkBqYJFobrZtzvHF48Xc5s-FKglxoil&ved=0ahUKEwid6Y-Yyo6XAxWWIEQIHc_9Ao0Q4dUDCDM&uact=5&oq=how+to+debug+concurrency&gs_lp=Egdnd3Mtd2l6Ihhob3cgdG8gZGVidWcgY29uY3VycmVuY3kyBhAAGBYYHjIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBTIFEAAY7wVI9gdQDlgOcAF4AJABAJgB3wGgAd8BqgEDMi0xsAEAuAEDyAEA-AEBmAICoALkAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXcg8vSSEK3DZIHBTEuMC4xoAeTA7IHAzItMbgH4QHCBwMwLjLIBwOACAE&sclient=gws-wiz",
+    "final_title": "how to debug concurrency - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8962,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug concurrency",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 461.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505881321"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2738,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 636.4,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505881321"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8609,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 552.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+concurrency&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntcqcZVFBTyM7FiuKxiL1QQZWzOeg%3A1790505881192&source=hp&ei=mfO4at24CpbBkPIPz_uL6Ag&iflsig=ABILxe8AAAAAarkBqYJFobrZtzvHF48Xc5s-FKglxoil&ved=0ahUKEwid6Y-Yyo6XAxWWIEQIHc_9Ao0Q4dUDCDM&uact=5&oq=how+to+debug+concurrency&gs_lp=Egdnd3Mtd2l6Ihhob3cgdG8gZGVidWcgY29uY3VycmVuY3kyBhAAGBYYHjIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBTIFEAAY7wVI9gdQDlgOcAF4AJABAJgB3wGgAd8BqgEDMi0xsAEAuAEDyAEA-AEBmAICoALkAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXcg8vSSEK3DZIHBTEuMC4xoAeTA7IHAzItMbgH4QHCBwMwLjLIBwOACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-63d74f6ecf10b2c4",
+   "source": "google",
+   "goal": "First search Google for mysql cheat sheet, then search Google for concurrency best practices.",
+   "fingerprint": 16111,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 8,
+   "total_ms": 14152,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['concurrency']]",
+    "checks": {
+     "url": "https://www.google.com/search?q=mysql+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqns3fl9suvt4rfxgmryfagc",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/search?q=mysql+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQns3Fl9SUVT4rFXgmryFAgc0LM-7fg%3A1790505894231&source=hp&ei=pvO4au7oDOKiur8Pn7jP-As&iflsig=ABILxe8AAAAAarkBtiY8p5gF_1CQ4zNqZIYd5AR9XdN2&ved=0ahUKEwju06ueyo6XAxVike4BHR_cE78Q4dUDCDM&uact=5&oq=mysql+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhFteXNxbCBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOgHUA9YD3ABeACQAQCYAdQBoAHUAaoBAzItMbABALgBA8gBAPgBAZgCAqAC2gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFudvMaEcqnmmSBwUxLjAuMaAHugWyBwMyLTG4B9YBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz",
+    "final_title": "mysql cheat sheet - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8975,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mysql cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 481.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505894484"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.3417,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 621.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505894484"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.4406,
+     "target": "3",
+     "target_label": "Clear",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 594.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=mysql+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQns3Fl9SUVT4rFXgmryFAgc0LM-7fg%3A1790505894231&source=hp&ei=pvO4au7oDOKiur8Pn7jP-As&iflsig=ABILxe8AAAAAarkBtiY8p5gF_1CQ4zNqZIYd5AR9XdN2&ved=0ahUKEwju06ueyo6XAxVike4BHR_cE78Q4dUDCDM&uact=5&oq=mysql+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhFteXNxbCBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOgHUA9YD3ABeACQAQCYAdQBoAHUAaoBAzItMbABALgBA8gBAPgBAZgCAqAC2gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFudvMaEcqnmmSBwUxLjAuMaAHugWyBwMyLTG4B9YBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8247,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for 'concurrency best practices' (page still shows 'mysql cheat sheet' results)",
+     "page_changed": null,
+     "latency_ms": 1017.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=mysql+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQns3Fl9SUVT4rFXgmryFAgc0LM-7fg%3A1790505894231&source=hp&ei=pvO4au7oDOKiur8Pn7jP-As&iflsig=ABILxe8AAAAAarkBtiY8p5gF_1CQ4zNqZIYd5AR9XdN2&ved=0ahUKEwju06ueyo6XAxVike4BHR_cE78Q4dUDCDM&uact=5&oq=mysql+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhFteXNxbCBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOgHUA9YD3ABeACQAQCYAdQBoAHUAaoBAzItMbABALgBA8gBAPgBAZgCAqAC2gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFudvMaEcqnmmSBwUxLjAuMaAHugWyBwMyLTG4B9YBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "concurrency best practices",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=mysql+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQns3Fl9SUVT4rFXgmryFAgc0LM-7fg%3A1790505894231&source=hp&ei=pvO4au7oDOKiur8Pn7jP-As&iflsig=ABILxe8AAAAAarkBtiY8p5gF_1CQ4zNqZIYd5AR9XdN2&ved=0ahUKEwju06ueyo6XAxVike4BHR_cE78Q4dUDCDM&uact=5&oq=mysql+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhFteXNxbCBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOgHUA9YD3ABeACQAQCYAdQBoAHUAaoBAzItMbABALgBA8gBAPgBAZgCAqAC2gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFudvMaEcqnmmSBwUxLjAuMaAHugWyBwMyLTG4B9YBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8345,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'concurrency best practices' (page still shows results for 'mysql cheat sheet')",
+     "page_changed": null,
+     "latency_ms": 924.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=mysql+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQns3Fl9SUVT4rFXgmryFAgc0LM-7fg%3A1790505894231&source=hp&ei=pvO4au7oDOKiur8Pn7jP-As&iflsig=ABILxe8AAAAAarkBtiY8p5gF_1CQ4zNqZIYd5AR9XdN2&ved=0ahUKEwju06ueyo6XAxVike4BHR_cE78Q4dUDCDM&uact=5&oq=mysql+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhFteXNxbCBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOgHUA9YD3ABeACQAQCYAdQBoAHUAaoBAzItMbABALgBA8gBAPgBAZgCAqAC2gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFudvMaEcqnmmSBwUxLjAuMaAHugWyBwMyLTG4B9YBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "concurrency best practices",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=mysql+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQns3Fl9SUVT4rFXgmryFAgc0LM-7fg%3A1790505894231&source=hp&ei=pvO4au7oDOKiur8Pn7jP-As&iflsig=ABILxe8AAAAAarkBtiY8p5gF_1CQ4zNqZIYd5AR9XdN2&ved=0ahUKEwju06ueyo6XAxVike4BHR_cE78Q4dUDCDM&uact=5&oq=mysql+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhFteXNxbCBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOgHUA9YD3ABeACQAQCYAdQBoAHUAaoBAzItMbABALgBA8gBAPgBAZgCAqAC2gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFudvMaEcqnmmSBwUxLjAuMaAHugWyBwMyLTG4B9YBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.8345,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 575.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=mysql+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQns3Fl9SUVT4rFXgmryFAgc0LM-7fg%3A1790505894231&source=hp&ei=pvO4au7oDOKiur8Pn7jP-As&iflsig=ABILxe8AAAAAarkBtiY8p5gF_1CQ4zNqZIYd5AR9XdN2&ved=0ahUKEwju06ueyo6XAxVike4BHR_cE78Q4dUDCDM&uact=5&oq=mysql+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhFteXNxbCBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOgHUA9YD3ABeACQAQCYAdQBoAHUAaoBAzItMbABALgBA8gBAPgBAZgCAqAC2gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFudvMaEcqnmmSBwUxLjAuMaAHugWyBwMyLTG4B9YBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-96bb5cacd82a69f9",
+   "source": "google",
+   "goal": "Search Google for vllm performance optimization and open the results.",
+   "fingerprint": 16111,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 23651,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvllm%2bperformance%2boptimization%26sca_",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvllm%2Bperformance%2Boptimization%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv6CqFquJjv5MwRo_f4lFMn6JVSEQ%253A1790505915576%26source%3Dhp%26ei%3Du_O4aqrYIZjJkPIP1siA6Aw%26iflsig%3DABILxe8AAAAAarkBy_6ktCe_IfR5ySqqE-YprjPI6Fo5%26ved%3D0ahUKEwjqocKoyo6XAxWYJEQIHVYkAM0Q4dUDCDM%26uact%3D5%26oq%3Dvllm%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ih12bGxtIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMggQABiABBiiBDIFEAAY7wUyBRAAGO8FMggQABiABBiiBEimSlDdKVjdKXACeACQAQCYAd8BoAHfAaoBAzItMbABALgBA8gBAPgBAZgCA6AC6gGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIZEC4YgAQYigUYQxjnBhjHARjRAxjqAhi0ApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFyQDq7KG3haeSBwUyLjAuMaAHuQWyBwMyLTG4B-MBwgcFMC4xLjLIBwiACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMfn49UGIjBEAUFQlwk7WL6GK1PH8bdrBbTsheu1mGVBnIl8yEkSH65VHHDOolhfIJujAM37T94yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vllm+performance+optimization&sca_esv=54dc793dbd"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.3017,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 831.4,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505915785"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8088,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 982.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505915785"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.7742,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results page for \"vllm performance optimization\"",
+     "page_changed": null,
+     "latency_ms": 863.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505915785"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vllm performance optimization",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505915785"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8962,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page listing results for 'vllm performance optimization'; Only the Google homepage with query typed in the search box and autocomplete ",
+     "page_changed": null,
+     "latency_ms": 674.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505915785"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505915785"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8382328143db0b83",
+   "source": "google",
+   "goal": "First search Google for react open source alternatives, then search Google for swift security vulnerabilities.",
+   "fingerprint": 16111,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 4,
+   "total_ms": 16309,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dreact%2bopen%2bsource%2bapps%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dreact%2Bopen%2Bsource%2Bapps%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntoORnUgLbAfmcBmV8bA03Q5sjUaA%253A1790505991385%26source%3Dhp%26ei%3DB_S4auWTFrjJkPIP1c7t0A0%26iflsig%3DABILxe8AAAAAarkCFxU0XOlGzA8o1vd0pcoQ5iWgioVq%26oq%3Dreact%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ih5yZWFjdCBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMqBQgHGO8FMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FSNwUULQMWLQMcAJ4AJABAJgB4wGgAeMBqgEDMi0xsAEAuAEByAEA-AEBmAIDoALrAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXhCgYAWZrghpIHBTIuMC4xoAfWBrIHAzItMbgH5QHCBwUwLjIuMcgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIvo49UGIjBoMQe4jE5vcYh_b-yAIa_CCiEyk5fJmf125AG2HFw771uAJwIGo3Ygt3uxAMlOZKsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=react+open+source+apps&sca_esv=54dc793dbd0950c5&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.6992,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 484.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505991522"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8339,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 563.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505991522"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2126,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "react open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 589.1,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505991522"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.874,
+     "target": "19",
+     "target_label": "react open source apps",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 655.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505991522"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b830322ad20d9ee2",
+   "source": "google",
+   "goal": "First search Google for java migration guide, then search Google for how to debug memory leak debugging.",
+   "fingerprint": 16111,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 5600,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=debugging'",
+    "checks": {
+     "url": "https://www.google.com/search?q=how+to+debug+memory+leak+debugging&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnv0iw",
+     "bot_challenge": false,
+     "group0": [
+      "debugging",
+      "memory"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=how+to+debug+memory+leak+debugging&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnv0IWOBSQpSV99gMvS5VhD_GD9RNw%3A1790506059842&source=hp&ei=S_S4ao-HMpO5kPIPq9jtiAs&iflsig=ABILxe8AAAAAarkCWwfLRZe82NWFW9UIyXERt0cibu4F&ved=0ahUKEwjP2Kftyo6XAxWTHEQIHStsG7EQ4dUDCDM&uact=5&oq=how+to+debug+memory+leak+debugging&gs_lp=Egdnd3Mtd2l6IiJob3cgdG8gZGVidWcgbWVtb3J5IGxlYWsgZGVidWdnaW5nMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAjIFECEYqwIyBRAhGKsCMgUQIRifBUixB1APWA9wAXgAkAEAmAHkAaAB5AGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAusBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBdpRN_ArFpYfkgcFMS4wLjGgB4oHsgcDMi0xuAfmAcIHBTEuMC4xyAcEgAgB&sclient=gws-wiz",
+    "final_title": "how to debug memory leak debugging - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9008,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug memory leak debugging",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 493.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506059980"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8878,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 569.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506059980"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8364,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 584.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+memory+leak+debugging&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnv0IWOBSQpSV99gMvS5VhD_GD9RNw%3A1790506059842&source=hp&ei=S_S4ao-HMpO5kPIPq9jtiAs&iflsig=ABILxe8AAAAAarkCWwfLRZe82NWFW9UIyXERt0cibu4F&ved=0ahUKEwjP2Kftyo6XAxWTHEQIHStsG7EQ4dUDCDM&uact=5&oq=how+to+debug+memory+leak+debugging&gs_lp=Egdnd3Mtd2l6IiJob3cgdG8gZGVidWcgbWVtb3J5IGxlYWsgZGVidWdnaW5nMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAjIFECEYqwIyBRAhGKsCMgUQIRifBUixB1APWA9wAXgAkAEAmAHkAaAB5AGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAusBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBdpRN_ArFpYfkgcFMS4wLjGgB4oHsgcDMi0xuAfmAcIHBTEuMC4xyAcEgAgB&sclient=gws-wiz"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,553 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 36272,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T23:04:05+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.6,
+  "mean_duration_ms": 17700,
+  "decision_latency_ms": {
+   "p50": 551.8,
+   "p95": 697.8
+  },
+  "step_outcomes": {
+   "executed": 18,
+   "stale": 1,
+   "done-rejected": 2
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.6
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-e3299ac791e2938e",
+   "source": "google",
+   "goal": "First search Google for golang best practices, then search Google for tensorflow interview questions.",
+   "fingerprint": 36272,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 15719,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgolang%2bbest%2bpractices%26sca_esv%3df9",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgolang%2Bbest%2Bpractices%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsRYZp8y6c-kZA3NrQxxe2NVMVFUQ%253A1790520937420%26source%3Dhp%26ei%3DaS65apaPGOzIkPIPoqbAwAg%26iflsig%3DABILxe8AAAAAark8eV_cspQGTJpQ17aeLDSgj0cMlP8X%26oq%3Dgolang%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhVnb2xhbmcgYmVzdCBwcmFjdGljZXMqBQgAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjhDFAgWCBwAXgAkAEAmAH4AaAB-AGqAQMyLTGwAQC4AQHIAQD4AQGYAgKgAv8BqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBfEW-vGw3Pt3kgcFMS4wLjGgB-kFsgcDMi0xuAf6AcIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz%26sei%3DbC65aoKRO6ysur8PmKjc6A0&hl=en&q=EgQm0XtnGO3c5NUGIjByvfl_Ll5Ls-6dtskZZT5pjF_OB3oUjY2kcmGWiZySRTZ4FDTqZovDSPpvEAsrgEMyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=golang+best+practices&sca_esv=f9132ac85e259377&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.905,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 499.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8629,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "stale: URL changed since the decision",
+     "page_changed": true,
+     "latency_ms": 581.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.421,
+     "target": "12",
+     "target_label": "golang best practices",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 599.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790520939492"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f07a0ebbac527bb2",
+   "source": "google",
+   "goal": "First search Google for flask interview questions, then search Google for tensorflow interview questions.",
+   "fingerprint": 36272,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14911,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dflask%2binterview%2bquestions%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dflask%2Binterview%2Bquestions%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntDKN1veb8J38pgODUHXLyNIKxejw%253A1790521005511%26source%3Dhp%26ei%3DrS65av-IHuzakPIPgMnMkAE%26iflsig%3DABILxe8AAAAAark8vS6ixUUVlmk1vaoIJXv6wu-8I-Ae%26ved%3D0ahUKEwi_k_vDgo-XAxVsLUQIHYAkExIQ4dUDCDI%26uact%3D5%26oq%3Dflask%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhlmbGFzayBpbnRlcnZpZXcgcXVlc3Rpb25zMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I2gdQEVgRcAF4AJABAJgB9wGgAfcBqgEDMi0xsAEAuAEDyAEA-AEBmAICoAL_AagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QVn0Xme_Svm-JIHBTEuMC4xoAelBrIHAzItMbgH-wHCBwUwLjEuMcgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLDd5NUGIjAhvJplcOPRIPqS9gCnyN3Ctk04CdxPafKtEb442M-sdCmbB0YbQKTQNBBXiMbY6CsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=flask+interview+questions&sca_esv=f9132ac85e2593"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9053,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "flask interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 524.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8845,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 599.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521007511"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-381120477cce69f0",
+   "source": "google",
+   "goal": "First search Google for llama.cpp performance optimization, then search Google for how to debug zig.",
+   "fingerprint": 36272,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14949,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bzig%26sca_esv%3d7c867",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bzig%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnu8nyD8MyLShUsCOktPNr-ULAznSQ%253A1790521072911%26source%3Dhp%26ei%3D8C65atTmNaPVkPIP2PHC8Qw%26iflsig%3DABILxe8AAAAAark9AATrvp9h4zIFxjF3jBHyt9qqp_UR%26ved%3D0ahUKEwjUnozkgo-XAxWjKkQIHdi4MM4Q4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bzig%26gs_lp%3DEgdnd3Mtd2l6IhBob3cgdG8gZGVidWcgemlnMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIIEAAYiQUYogQyBRAAGO8FSNMHUA5YDnABeACQAQCYAbkCoAG5AqoBAzMtMbABALgBA8gBAPgBAZgCAqACwgKoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgITEC4YgAQYigUYQxjnBhjqAhi0ApgDA-IDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFqAldxJiVS_CSBwUxLjMtMaAH2QOyBwMzLTG4B74CwgcDMC4yyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPPd5NUGIjDJ9cstVwcNQ_wn63k5m-jrqfjxgUeBmiAXT-j_Ui035dGddyn4tN2pfiybWn03yfsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+zig&sca_esv=7c8679995c553972&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9051,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug zig",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 525.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521073506"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8957,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 588.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521073506"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-00028085a57eab04",
+   "source": "google",
+   "goal": "First search Google for golang security vulnerabilities, then search Google for next.js tutorial.",
+   "fingerprint": 36272,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 36902,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgolang%2bsecurity%2bvulnerabilities%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgolang%2Bsecurity%2Bvulnerabilities%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntwUKyMl96aafDkoOKd-jhWjJ7eSQ%253A1790521140132%26source%3Dhp%26ei%3DNC-5aqzHBsSxur8P25zZ6Qw%26iflsig%3DABILxe8AAAAAark9RM3LxD2N3KQwZNIvQO6goWQP0ms5%26oq%3Dgolang%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6Ih9nb2xhbmcgc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzKgUIABiABDIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIIEAAYgAQYogRIh7MBUA5Y36oBcAR4AJABAJgBpQKgAcEEqgEDMi0ysAEAuAEByAEA-AEBmAIGoALTBKgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXmY6_I9WCG85IHBTQuMC4yoAevCbIHAzItMrgHywTCBwUxLjQuMcgHC4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMze5NUGIjBwY8H6ZFY41Phr8CulJjStpckSMHM0aGXc8BV_wYWECNcduOn-YC50qUwvoCgWt8EyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=golang+security+vulnerabilities&sca_esv=7c867999"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8739,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 531.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521140470"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.4521,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for next.js tutorial",
+     "page_changed": null,
+     "latency_ms": 544.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521140470"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "next.js tutorial",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521140470"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9128,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Executed search results page for 'next.js tutorial' (only autocomplete suggestions are shown, search not yet submitted)",
+     "page_changed": null,
+     "latency_ms": 606.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521140470"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521140470"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.4337,
+     "target": "12",
+     "target_label": "golang security vulnerabilities",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 635.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521140470"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-bde6fded71cb7dec",
+   "source": "google",
+   "goal": "First search Google for concurrency open source alternatives, then search Google for express interview questions.",
+   "fingerprint": 36272,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14979,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dconcurrency%2bopen%2bsource%2balternativ",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dconcurrency%2Bopen%2Bsource%2Balternatives%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnu-KjMbzDjZgaqSSKjNEmkaJz7ivw%253A1790521229234%26source%3Dhp%26ei%3DjS-5avXRDP-Our8PpvXouQ8%26iflsig%3DABILxe8AAAAAark9nfrXC2v-kgswec7DsAuiePumbhdt%26ved%3D0ahUKEwi1zNGug4-XAxV_h-4BHaY6OvcQ4dUDCDI%26uact%3D5%26oq%3Dconcurrency%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiRjb25jdXJyZW5jeSBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMyBRAhGKABMgUQIRigATIFECEYoAFIrQdQC1gLcAF4AJABAJgBtQKgAbUCqgEDMy0xsAEAuAEDyAEA-AEBmAICoAK7AqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWt0MWXFOS6jpIHBTEuMy0xoAfPA7IHAzMtMbgHuQLCBwMxLjHIBwKACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJDf5NUGIjBMpdFJGNCQzviVOsVQXg6_D17w-nI-N6cC3smbzgyk4feH8bWu3N6_T0T1PIkOXusyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=concurrency+open+source+alternatives&sca_esv=7c8"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8665,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "concurrency open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 828.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521229490"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.883,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 562.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521229490"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-26adab20b992827a",
+   "source": "google",
+   "goal": "First search Google for huggingface transformers migration guide, then search Google for golang open source alternatives.",
+   "fingerprint": 36272,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14742,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhuggingface%2btransformers%2bmigration%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhuggingface%2Btransformers%2Bmigration%2Bguide%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuUD5wjHEKLuZzT36Cilh5j5sNxrg%253A1790521296397%26source%3Dhp%26ei%3D0C-5aubkFty5kPIPlf3duQc%26iflsig%3DABILxe8AAAAAark94Hrrv-JIBp5Gg2ZB9i5EKSmlI_TO%26ved%3D0ahUKEwjmjNXOg4-XAxXcHEQIHZV-N3cQ4dUDCDI%26uact%3D5%26oq%3Dhuggingface%2Btransformers%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IihodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgbWlncmF0aW9uIGd1aWRlMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIiwdQDVgNcAF4AJABAJgBigKgAYoCqgEDMi0xsAEAuAEDyAEA-AEBmAICoAKQAqgCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMC4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QUNM0pIVbVq7pIHBTEuMC4xoAenBbIHAzItMbgHjQLCBwMwLjLIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNPf5NUGIjCLDJVXBtMqmUFbj5D4Ebb2M_E2_ZoQryuCMf41mVzfyVgs4Euu910QnJX70BiEwgoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=huggingface+transformers+migration+guide&sca_esv"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9009,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "huggingface transformers migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 697.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521296773"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9019,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 529.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521296773"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-60e7e22f6abbab6c",
+   "source": "google",
+   "goal": "Search Google for profiling tutorial and open the results.",
+   "fingerprint": 36272,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14649,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dprofiling%2btutorial%26sca_esv%3d7c86799",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dprofiling%2Btutorial%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntVhtgb3cdimKiAc2NX-IGT7aIyJA%253A1790521363317%26source%3Dhp%26ei%3DEzC5aqWGEvHJkPIPzsOy0Q4%26iflsig%3DABILxe8AAAAAark-IzON6f-f-gAJxss9_s0k73zii9o7%26ved%3D0ahUKEwjl28nug4-XAxXxJEQIHc6hLOoQ4dUDCDI%26uact%3D5%26oq%3Dprofiling%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhJwcm9maWxpbmcgdHV0b3JpYWwyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkidB1APWA9wAXgAkAEAmAGaAqABmgKqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAqECqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwPiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBWenLlRtNio4kgcFMS4wLjGgB5UFsgcDMi0xuAeeAsIHAzAuMsgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJXg5NUGIjDJTaWDOIOP0JY49NV8D-VDPTBk9p1s8304VOuTCCt1ECwCHTD4hSkhNOnLnGR6sokyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=profiling+tutorial&sca_esv=7c8679995c553972&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.5757,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "profiling tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 466.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521363566"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8698,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 544.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521363566"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-e491d9cfa65e5cd1",
+   "source": "google",
+   "goal": "Search Google for scala security vulnerabilities and open the results.",
+   "fingerprint": 36272,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14746,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dscala%2bsecurity%2bvulnerabilities%26sca",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dscala%2Bsecurity%2Bvulnerabilities%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvA18efkab1OJHreJSkV0_mJNzRIQ%253A1790521430156%26source%3Dhp%26ei%3DVjC5arKECKq8kPIPhPCGqAw%26iflsig%3DABILxe8AAAAAark-ZvV-2YJW1CO89khKdHrvsl6LuFCf%26ved%3D0ahUKEwiyh7mOhI-XAxUqHkQIHQS4AcUQ4dUDCDI%26uact%3D5%26oq%3Dscala%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6Ih5zY2FsYSBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBUiuB1ANWA1wAXgAkAEAmAGlAqABpQKqAQMyLTGwAQC4AQPIAQD4AQGYAgKgArICqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBUMuNJVDMqvckgcFMS4zLTGgB4cFsgcDMy0xuAevAsIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNjg5NUGIjAuQtRhXxWWMQK2oB9eywMiADsKI5LxqIoXd659-Bwi5SrcX2Alj15D2oKx7gfo474yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=scala+security+vulnerabilities&sca_esv=7c8679995"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8746,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "scala security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 576.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521430437"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8913,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 551.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521430437"
+    }
+   ]
+  }
+ ]
+}

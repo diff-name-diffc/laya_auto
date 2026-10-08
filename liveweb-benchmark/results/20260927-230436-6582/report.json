@@ -1,0 +1,481 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 25194,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T23:12:44+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.0,
+  "mean_duration_ms": 14736,
+  "decision_latency_ms": {
+   "p50": 554.5,
+   "p95": 628.6
+  },
+  "step_outcomes": {
+   "executed": 16
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.0
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-915f610e97d6ddeb",
+   "source": "google",
+   "goal": "First search Google for ruby interview questions, then search Google for memory leak debugging security vulnerabilities.",
+   "fingerprint": 25194,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14972,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3druby%2binterview%2bquestions%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Druby%2Binterview%2Bquestions%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsvkwESNkYwYjZkswXzP0sL6K2_8w%253A1790521479182%26source%3Dhp%26ei%3DhzC5aujkCYrCkPIP0K71kAY%26iflsig%3DABILxe8AAAAAark-l8Fyz1ug-2bcNyPzEv0hNGVOXFzY%26ved%3D0ahUKEwioxOmlhI-XAxUKIUQIHVBXHWIQ4dUDCDI%26uact%3D5%26oq%3Druby%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhhydWJ5IGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IvAdQEVgRcAF4AJABAJgB4gGgAeIBqgEDMi0xuAEDyAEA-AEBmAICoALoAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QVo6R4klDh1gpIHBTEuMC4xoAf3BbIHAzItMbgH5AHCBwUwLjEuMcgHBIAIAQ%26sclient%3Dgws-wiz%26sei%3DijC5avnOBrfokPIPro3rwA8&hl=en&q=EgQm0XtnGIrh5NUGIjB_XvFeRTXry0rzxmYByxQpDdIGjNkPJuCnJwWN3_emFuTnAqa7_GRmB1UWYtIeGlYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=ruby+interview+questions&sca_esv=7c8679995c55397"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9018,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ruby interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 487.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7257,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 574.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521480851"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-76d3519492c40c71",
+   "source": "google",
+   "goal": "First search Google for how to debug golang, then search Google for angular tutorial.",
+   "fingerprint": 25194,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14813,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bgolang%26sca_esv%3d7c",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bgolang%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsQa3eFjSOwJHzV94eUELrT3ewTIA%253A1790521546593%26source%3Dhp%26ei%3DyjC5avDXIuS9kPIPjIO4qQI%26iflsig%3DABILxe8AAAAAark-2iP9zWvm4MTiCH2DUtLJIdH2fkYj%26oq%3Dhow%2Bto%2Bdebug%2Bgolang%26gs_lp%3DEgdnd3Mtd2l6IhNob3cgdG8gZGVidWcgZ29sYW5nKgUIARiABDIIEAAYgAQYtAcyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjwB1ATWBNwAXgAkAEAmAH5AaAB-QGqAQMyLTG4AQHIAQD4AQGYAgKgAoECqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwXxBcWEXzcR5VyvkgcFMS4wLjGgB7cFsgcDMi0xuAf7AcIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGM3h5NUGIjCY_H4T7WjfNkPyJqKFGGKYzkMmMtdD0marprV6rEzPYFe9w5uhRPGGHijTGHlm_M8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+golang&sca_esv=7c8679995c553972&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.3238,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug golang",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 478.1,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.8345,
+     "target": "13",
+     "target_label": "how to debug golang",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 577.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521548621"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b67d72f719989ff8",
+   "source": "google",
+   "goal": "First search Google for kubernetes security vulnerabilities, then search Google for retrieval augmented generation migration guide.",
+   "fingerprint": 25194,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14798,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dkubernetes%2bsecurity%2bvulnerabilities%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dkubernetes%2Bsecurity%2Bvulnerabilities%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntjcun1aW-ptJD4SKSeq_SrVP-Q6Q%253A1790521614087%26source%3Dhp%26ei%3DDjG5atPQA_mMur8P483LiA0%26iflsig%3DABILxe8AAAAAark_Hv0TNDiGvk2tXqCy5HgdR2m3iHm7%26ved%3D0ahUKEwjTj5PmhI-XAxV5hu4BHePmEtEQ4dUDCDI%26uact%3D5%26oq%3Dkubernetes%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IiNrdWJlcm5ldGVzIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyCBAAGIAEGKIESKYHUAxYDHABeACQAQCYAa0CoAGtAqoBAzMtMbgBA8gBAPgBAZgCAqACsQKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDAvEFFyXM8j5HujiSBwUxLjMtMaAHwgOyBwMzLTG4B68CwgcDMC4yyAcCgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJDi5NUGIjBqaVffKty4xKyB5NKWpTLQ2NKG4EBChctZdf5s2rOKSFCZlIvtiPh7RdPFSeJXK4kyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=kubernetes+security+vulnerabilities&sca_esv=7c86"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8891,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kubernetes security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 628.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521614554"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8927,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 557.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521614554"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-7e16907ba29ac6f0",
+   "source": "google",
+   "goal": "First search Google for retrieval augmented generation performance optimization, then search Google for express migration guide.",
+   "fingerprint": 25194,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14535,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dretrieval%2baugmented%2bgeneration%2bper",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dretrieval%2Baugmented%2Bgeneration%2Bperformance%2Boptimization%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntfpDvXfs0Yb2C5GSCA05dYpvFckQ%253A1790521681166%26source%3Dhp%26ei%3DUTG5aqzmCOPLkPIP_eGp8Qw%26iflsig%3DABILxe8AAAAAark_YY-mUXGC6MX7lGJVNz5y5fiHvZpz%26ved%3D0ahUKEwjs0pGGhY-XAxXjJUQIHf1wKs4Q4dUDCDI%26uact%3D5%26oq%3Dretrieval%2Baugmented%2Bgeneration%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IjdyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgYQABgWGB4yBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FMgUQABjvBUilB1AMWAxwAXgAkAEAmAG2AqABtgKqAQMzLTG4AQPIAQD4AQGYAgKgAroCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBWinS5iMDkk2kgcFMS4zLTGgB9cEsgcDMy0xuAe4AsIHAzAuMsgHAoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNPi5NUGIjB5Be3UK83QIQso05HTVr02NCXkTCvKXE81nMKgW5lr_ok-kWBJj1Po7TiW4msf9dgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=retrieval+augmented+generation+performance+optim"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.6475,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 483.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521681542"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8914,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 558.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521681542"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-158b8b95a8f0cc66",
+   "source": "google",
+   "goal": "First search Google for design patterns cheat sheet, then search Google for nginx interview questions.",
+   "fingerprint": 25194,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14557,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddesign%2bpatterns%2bcheat%2bsheet%26sca_",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddesign%2Bpatterns%2Bcheat%2Bsheet%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntRWQO4sdyqLIvnHdbDkgUKyNWJlw%253A1790521747878%26source%3Dhp%26ei%3DkzG5aqjBNL3bkPIPuMuLoAY%26iflsig%3DABILxe8AAAAAark_o90Yu-OhvhRM0Jr8EuJUtDsY_FEY%26ved%3D0ahUKEwjo1vmlhY-XAxW9LUQIHbjlAmQQ4dUDCDI%26uact%3D5%26oq%3Ddesign%2Bpatterns%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhtkZXNpZ24gcGF0dGVybnMgY2hlYXQgc2hlZXQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IxgdQDFgMcAF4AJABAJgBrQKgAa0CqgEDMy0xuAEDyAEA-AEBmAICoAKxAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QU5CNix1HV45ZIHBTEuMy0xoAeFBrIHAzMtMbgHrwLCBwMwLjLIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJbj5NUGIjD-HUr88uBchnTr0gq68v2B3anppIRp31dCIYP6wqFwmWZfkCZXAzGpaEszv8X-k-0yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=design+patterns+cheat+sheet&sca_esv=7c8679995c55"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8884,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "design patterns cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 462.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521748115"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8865,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 589.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521748115"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-6aa7cc5e1eefd7d2",
+   "source": "google",
+   "goal": "First search Google for zig performance optimization, then search Google for terraform tutorial.",
+   "fingerprint": 25194,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14700,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dzig%2bperformance%2boptimization%26sca_e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dzig%2Bperformance%2Boptimization%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvUDJV9ID0tJSeJswzm6Fp7UuBmCw%253A1790521814633%26source%3Dhp%26ei%3D1jG5arK5JaL9kPIP39D1mQc%26iflsig%3DABILxe8AAAAAark_5kKWTnUsku9Dzu_AcWJpDSG55Qlm%26ved%3D0ahUKEwiy_OPFhY-XAxWiPkQIHV9oPXMQ4dUDCDI%26uact%3D5%26oq%3Dzig%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ihx6aWcgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVIjQdQD1gPcAF4AJABAJgBmgKgAZoCqgEDMi0xuAEDyAEA-AEBmAICoAKnAqgCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFGEvAIxlDdLuSBwUxLjAuMaAHggiyBwMyLTG4B6MCwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNnj5NUGIjD5rzJ62cKkMSS17yOrbxK-bjSSJuOsVrPQox1boi5_1fGfCiWAg3tr0GqK9UrL3SIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=zig+performance+optimization&sca_esv=7c8679995c5"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8752,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "zig performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 493.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521814850"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9107,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 524.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521814850"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8c7268a8dd6862b0",
+   "source": "google",
+   "goal": "Search Google for profiling cheat sheet and open the results.",
+   "fingerprint": 25194,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14570,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dprofiling%2bcheat%2bsheet%26sca_esv%3d7c",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dprofiling%2Bcheat%2Bsheet%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvW8svUUQ1gt4VIV2VL1II5BbASNw%253A1790521881536%26source%3Dhp%26ei%3DGTK5auH5Hsi9kPIP5YPp0Ac%26iflsig%3DABILxe8AAAAAarlAKbR-Ud7nVmLTzw8rhNgMuOEzBvqn%26ved%3D0ahUKEwih6tblhY-XAxXIHkQIHeVBGnoQ4dUDCDI%26uact%3D5%26oq%3Dprofiling%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhVwcm9maWxpbmcgY2hlYXQgc2hlZXQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyBRAAGO8FMggQABiABBiiBEitB1AOWA5wAXgAkAEAmAGuAqABrgKqAQMzLTG4AQPIAQD4AQGYAgKgArcCqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBWC1WxW7zt8SkgcFMS4zLTGgB9QFsgcDMy0xuAe0AsIHBTAuMS4xyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJzk5NUGIjBh8S6wdC3H8K_5tAJeBJNxjn3ZZm3Nj4GQKtYJJ00jS8GiQ9n3vkar-eYEHp-WhkIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=profiling+cheat+sheet&sca_esv=7c8679995c553972&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8981,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "profiling cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 487.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521881688"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8848,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 554.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521881688"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-aa2b44908ba3b35b",
+   "source": "google",
+   "goal": "First search Google for code review tutorial, then search Google for svelte performance optimization.",
+   "fingerprint": 25194,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14947,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dcode%2breview%2btutorial%26sca_esv%3d7c8",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dcode%2Breview%2Btutorial%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsXLseM2xW994FVp2hRur3MF7CG4Q%253A1790521948265%26source%3Dhp%26ei%3DXDK5auvFDruP8L0Pp4qL6QI%26iflsig%3DABILxe8AAAAAarlAbGMIuClQ-Mv4CRYnVwLpuPIsODo6%26ved%3D0ahUKEwjr47-Fho-XAxW7B7wBHSfFIi0Q4dUDCDI%26uact%3D5%26oq%3Dcode%2Breview%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhRjb2RlIHJldmlldyB0dXRvcmlhbDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMggQABgWGB4YCjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkiwCFAPWA9wAXgAkAEAmAGgAqABoAKqAQMyLTG4AQPIAQD4AQGYAgKgAqsCqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBd3W0kv8TslDkgcFMS4wLjGgB8YFsgcDMi0xuAenAsIHBTAuMS4xyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGN_k5NUGIjCIrUG6ddacwFQ1APeA79rmDBknjTduKtWJUNhaMooAaAwj5objCJDIp7CGDYrD79gyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=code+review+tutorial&sca_esv=7c8679995c553972&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8857,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "code review tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 521.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521948506"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8955,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 689.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521948506"
+    }
+   ]
+  }
+ ]
+}

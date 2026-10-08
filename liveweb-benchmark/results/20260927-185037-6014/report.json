@@ -1,0 +1,807 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 11939,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T18:54:04+0800",
+  "n_tasks": 8,
+  "success": 6,
+  "success_rate": 0.75,
+  "verified": 6,
+  "verified_rate": 0.75,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.6,
+  "mean_duration_ms": 13362,
+  "decision_latency_ms": {
+   "p50": 568.8,
+   "p95": 636.6
+  },
+  "step_outcomes": {
+   "executed": 23,
+   "done-rejected": 5,
+   "done": 6,
+   "refused-empty-enter": 1,
+   "page changed since the decision (url or marker mismatch)": 2
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 6,
+    "success_rate": 0.75,
+    "verified": 6,
+    "verified_rate": 0.75,
+    "mean_steps": 4.6
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-88893885e5a626e0",
+   "source": "google",
+   "goal": "First search Google for concurrency interview questions, then search Google for rabbitmq cheat sheet.",
+   "fingerprint": 11939,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15170,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dconcurrency%2binterview%2bquestions%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dconcurrency%2Binterview%2Bquestions%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntHuFSoKO4Tt-UxUjqxpZ3_v59vsQ%253A1790506240830%26source%3Dhp%26ei%3DAPW4avGUMYDmkPIPuKXeKA%26iflsig%3DABILxe8AAAAAarkDEOrT3wvyzfovF-3FpyWTWVfHk5MH%26ved%3D0ahUKEwjxlM7Dy46XAxUAM0QIHbiSFwUQ4dUDCDI%26uact%3D5%26oq%3Dconcurrency%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Ih9jb25jdXJyZW5jeSBpbnRlcnZpZXcgcXVlc3Rpb25zMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I1wdQEFgQcAF4AJABAJgByQGgAckBqgEDMi0xuAEDyAEA-AEBmAICoALSAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMG8QWdwhp1sDLuApIHBTEuMC4xoAfQBrIHAzItMbgHzAHCBwUwLjEuMcgHB4AIAQ%26sclient%3Dgws-wiz%26sei%3DA_W4av28LZzQkPIPk5DXyA4&hl=en&q=EgQm0XtnGITq49UGIjC0bLg0KfkRbhRb9eMWRkW85Jgx8ag31hRGRiUXI3rvnaF_lEsYwlcK21htlUw0YpIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=concurrency+interview+questions&sca_esv=54dc793d"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8978,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "concurrency interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 480.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8935,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 584.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506242382"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ba18ee0d190218d9",
+   "source": "google",
+   "goal": "Search Google for golang tutorial and open the results.",
+   "fingerprint": 11939,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 4,
+   "total_ms": 8473,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=golang+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnvjwk1d_lufno51oivuplqah",
+     "bot_challenge": false,
+     "group0": [
+      "golang"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=golang+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvJWk1D_LUFno51oiVUPlQaHBfivA%3A1790506308378&source=hp&ei=RPW4asnDFeLNkPIP2svFiA4&iflsig=ABILxe8AAAAAarkDVEQbtQbwcAOJ24r8o6ztDO8FJ8AL&ved=0ahUKEwjJ9ejjy46XAxXiJkQIHdplEeEQ4dUDCDI&oq=golang+tutorial&gs_lp=Egdnd3Mtd2l6Ig9nb2xhbmcgdHV0b3JpYWwyBRAAGIAEMgsQLhj7BhjyBhiPBzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESNEkUBRYFHABeACQAQCYAcEBoAHBAaoBAzAuMbgBDMgBAPgBAZgCAqACyQGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFUMF4Xi1OJDKSBwMxLjGgB7gGsgcDMC4xuAfEAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz",
+    "final_title": "golang tutorial - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.879,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 479.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8905,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page listing results for 'golang tutorial'",
+     "page_changed": null,
+     "latency_ms": 636.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506309943"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506309943"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.902,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 595.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvJWk1D_LUFno51oiVUPlQaHBfivA%3A1790506308378&source=hp&ei=RPW4asnDFeLNkPIP2svFiA4&iflsig=ABILxe8AAAAAarkDVEQbtQbwcAOJ24r8o6ztDO8FJ8AL&ved=0ahUKEwjJ9ejjy46XAxXiJkQIHdplEeEQ4dUDCDI&oq=golang+tutorial&gs_lp=Egdnd3Mtd2l6Ig9nb2xhbmcgdHV0b3JpYWwyBRAAGIAEMgsQLhj7BhjyBhiPBzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESNEkUBRYFHABeACQAQCYAcEBoAHBAaoBAzAuMbgBDMgBAPgBAZgCAqACyQGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFUMF4Xi1OJDKSBwMxLjGgB7gGsgcDMC4xuAfEAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9467fa2be5352f82",
+   "source": "google",
+   "goal": "Search Google for spring boot interview questions and open the results.",
+   "fingerprint": 11939,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 3982,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=spring+boot+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnuxpwy1r",
+     "bot_challenge": false,
+     "group0": [
+      "spring",
+      "boot"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=spring+boot+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuxpWy1rIciY-YfculhQ-8YjMpYfw%3A1790506324216&source=hp&ei=VPW4aqriC-_LkPIPvtXk-QE&iflsig=ABILxe8AAAAAarkDZJS2ixqhDdxHoYo6GKUlfwjPC5Io&ved=0ahUKEwiq3K_ry46XAxXvJUQIHb4qOR8Q4dUDCDY&uact=5&oq=spring+boot+interview+questions&gs_lp=Egdnd3Mtd2l6Ih9zcHJpbmcgYm9vdCBpbnRlcnZpZXcgcXVlc3Rpb25zMggQABiABBixAzILEC4Y-wYY8gYYjwcyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0B0jSB1ANWA1wAXgAkAEAmAHiAaAB4gGqAQMyLTG4AQPIAQD4AQGYAgKgAugBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBWqSfSE3CkldkgcFMS4wLjGgB-gIsgcDMi0xuAfkAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz",
+    "final_title": "spring boot interview questions - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9015,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "spring boot interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 452.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506324489"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8662,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 598.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506324489"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8469,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 593.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=spring+boot+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuxpWy1rIciY-YfculhQ-8YjMpYfw%3A1790506324216&source=hp&ei=VPW4aqriC-_LkPIPvtXk-QE&iflsig=ABILxe8AAAAAarkDZJS2ixqhDdxHoYo6GKUlfwjPC5Io&ved=0ahUKEwiq3K_ry46XAxXvJUQIHb4qOR8Q4dUDCDY&uact=5&oq=spring+boot+interview+questions&gs_lp=Egdnd3Mtd2l6Ih9zcHJpbmcgYm9vdCBpbnRlcnZpZXcgcXVlc3Rpb25zMggQABiABBixAzILEC4Y-wYY8gYYjwcyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0B0jSB1ANWA1wAXgAkAEAmAHiAaAB4gGqAQMyLTG4AQPIAQD4AQGYAgKgAugBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBWqSfSE3CkldkgcFMS4wLjGgB-gIsgcDMi0xuAfkAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f3766d87c0e07b1e",
+   "source": "google",
+   "goal": "Search Google for memory leak debugging interview questions and open the results.",
+   "fingerprint": 11939,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4675,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=memory+leak+debugging+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=app",
+     "bot_challenge": false,
+     "group0": [
+      "debugging",
+      "memory"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=memory+leak+debugging+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntTKGy64fV2kdRz-BbrJJzyIIWeFg%3A1790506335398&source=hp&ei=X_W4ar7qFrmwur8PgargWA&iflsig=ABILxe8AAAAAarkDbydvVEBN0HudYlvLiFahMYXItzNN&ved=0ahUKEwj-ldrwy46XAxU5mO4BHQEVGAsQ4dUDCDI&uact=5&oq=memory+leak+debugging+interview+questions&gs_lp=Egdnd3Mtd2l6IiltZW1vcnkgbGVhayBkZWJ1Z2dpbmcgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKsCMgUQIRirAkj8BlAMWAxwAXgAkAEAmAHkAaAB5AGqAQMyLTG4AQPIAQD4AQGYAgKgAusBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBayr0rZr-LZLkgcFMS4wLjGgB-wGsgcDMi0xuAfoAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz",
+    "final_title": "memory leak debugging interview questions - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8663,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "memory leak debugging interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 746.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506335682"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.89,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 510.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506335682"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8964,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 596.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=memory+leak+debugging+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntTKGy64fV2kdRz-BbrJJzyIIWeFg%3A1790506335398&source=hp&ei=X_W4ar7qFrmwur8PgargWA&iflsig=ABILxe8AAAAAarkDbydvVEBN0HudYlvLiFahMYXItzNN&ved=0ahUKEwj-ldrwy46XAxU5mO4BHQEVGAsQ4dUDCDI&uact=5&oq=memory+leak+debugging+interview+questions&gs_lp=Egdnd3Mtd2l6IiltZW1vcnkgbGVhayBkZWJ1Z2dpbmcgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKsCMgUQIRirAkj8BlAMWAxwAXgAkAEAmAHkAaAB5AGqAQMyLTG4AQPIAQD4AQGYAgKgAusBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBayr0rZr-LZLkgcFMS4wLjGgB-wGsgcDMi0xuAfoAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-29311d2ee1fb49ae",
+   "source": "google",
+   "goal": "First search Google for how to debug vector embeddings, then search Google for pytorch best practices.",
+   "fingerprint": 11939,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 12,
+   "total_ms": 37342,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=pytorch+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnu4qaavchad_1qx6t",
+     "bot_challenge": false,
+     "group0": [
+      "pytorch"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=pytorch+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnu4qAavcHaD_1QX6t0jPMoizGqAXA%3A1790506368929&ei=gPW4aq-oOMXMkPIP0p-PWQ&biw=1120&bih=780&oq=pytorch+best+practices&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnB5dG9yY2ggYmVzdCBwcmFjdGljZXMqBQgAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wVIjAhQEFgQcAF4AJABAJgB5AGgAeQBqgEDMi0xuAEByAEA-AEBmAICoALsAcICDhAAGIAEGIoFGIYDGLADwgIIEAAY7wUYsAPCAgsQABiJBRiiBBiwA5gDAIgGAZAGBpIHBTEuMC4xoAfNBbIHAzItMbgH6AHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz-serp",
+    "final_title": "pytorch best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.6785,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 489.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506347381"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8923,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug vector embeddings",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 484.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506347381"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8323,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for pytorch best practices",
+     "page_changed": null,
+     "latency_ms": 627.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506347381"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506347381"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8785,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'pytorch best practices' (current page is for 'how to debug vector embeddings')",
+     "page_changed": null,
+     "latency_ms": 605.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+vector+embeddings&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnv5Go5OapXtQRqqJmkRX8cUCcFjaA%3A1790506347248&source=hp&ei=a_W4ap3nDcTBkPIPyvjb6Ag&iflsig=ABILxe8AAAAAarkDexPa4oMJ09gb2JgXD3v3us2XOD6g&ved=0ahUKEwjdyK32y46XAxXEIEQIHUr8Fo0Q4dUDCDI&uact=5&oq=how+to+debug+vector+embeddings&gs_lp=Egdnd3Mtd2l6Ih5ob3cgdG8gZGVidWcgdmVjdG9yIGVtYmVkZGluZ3MyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSMWYAVAQWBBwAXgAkAEAmAHdAaAB3QGqAQMyLTG4AQPIAQD4AQGYAgKgAuQBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBbXrYilVxvykkgcFMS4wLjGgB9oIsgcDMi0xuAfgAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "pytorch best practices",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+vector+embeddings&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnv5Go5OapXtQRqqJmkRX8cUCcFjaA%3A1790506347248&source=hp&ei=a_W4ap3nDcTBkPIPyvjb6Ag&iflsig=ABILxe8AAAAAarkDexPa4oMJ09gb2JgXD3v3us2XOD6g&ved=0ahUKEwjdyK32y46XAxXEIEQIHUr8Fo0Q4dUDCDI&uact=5&oq=how+to+debug+vector+embeddings&gs_lp=Egdnd3Mtd2l6Ih5ob3cgdG8gZGVidWcgdmVjdG9yIGVtYmVkZGluZ3MyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSMWYAVAQWBBwAXgAkAEAmAHdAaAB3QGqAQMyLTG4AQPIAQD4AQGYAgKgAuQBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBbXrYilVxvykkgcFMS4wLjGgB9oIsgcDMi0xuAfgAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.76,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 618.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+vector+embeddings&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnv5Go5OapXtQRqqJmkRX8cUCcFjaA%3A1790506347248&source=hp&ei=a_W4ap3nDcTBkPIPyvjb6Ag&iflsig=ABILxe8AAAAAarkDexPa4oMJ09gb2JgXD3v3us2XOD6g&ved=0ahUKEwjdyK32y46XAxXEIEQIHUr8Fo0Q4dUDCDI&uact=5&oq=how+to+debug+vector+embeddings&gs_lp=Egdnd3Mtd2l6Ih5ob3cgdG8gZGVidWcgdmVjdG9yIGVtYmVkZGluZ3MyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSMWYAVAQWBBwAXgAkAEAmAHdAaAB3QGqAQMyLTG4AQPIAQD4AQGYAgKgAuQBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBbXrYilVxvykkgcFMS4wLjGgB9oIsgcDMi0xuAfgAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.63,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 590.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+vector+embeddings&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnv5Go5OapXtQRqqJmkRX8cUCcFjaA%3A1790506347248&source=hp&ei=a_W4ap3nDcTBkPIPyvjb6Ag&iflsig=ABILxe8AAAAAarkDexPa4oMJ09gb2JgXD3v3us2XOD6g&ved=0ahUKEwjdyK32y46XAxXEIEQIHUr8Fo0Q4dUDCDI&uact=5&oq=how+to+debug+vector+embeddings&gs_lp=Egdnd3Mtd2l6Ih5ob3cgdG8gZGVidWcgdmVjdG9yIGVtYmVkZGluZ3MyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSMWYAVAQWBBwAXgAkAEAmAHdAaAB3QGqAQMyLTG4AQPIAQD4AQGYAgKgAuQBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBbXrYilVxvykkgcFMS4wLjGgB9oIsgcDMi0xuAfgAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.76,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 650.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+vector+embeddings&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnv5Go5OapXtQRqqJmkRX8cUCcFjaA%3A1790506347248&source=hp&ei=a_W4ap3nDcTBkPIPyvjb6Ag&iflsig=ABILxe8AAAAAarkDexPa4oMJ09gb2JgXD3v3us2XOD6g&ved=0ahUKEwjdyK32y46XAxXEIEQIHUr8Fo0Q4dUDCDI&uact=5&oq=how+to+debug+vector+embeddings&gs_lp=Egdnd3Mtd2l6Ih5ob3cgdG8gZGVidWcgdmVjdG9yIGVtYmVkZGluZ3MyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSMWYAVAQWBBwAXgAkAEAmAHdAaAB3QGqAQMyLTG4AQPIAQD4AQGYAgKgAuQBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBbXrYilVxvykkgcFMS4wLjGgB9oIsgcDMi0xuAfgAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "pytorch best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+vector+embeddings&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnv5Go5OapXtQRqqJmkRX8cUCcFjaA%3A1790506347248&source=hp&ei=a_W4ap3nDcTBkPIPyvjb6Ag&iflsig=ABILxe8AAAAAarkDexPa4oMJ09gb2JgXD3v3us2XOD6g&ved=0ahUKEwjdyK32y46XAxXEIEQIHUr8Fo0Q4dUDCDI&uact=5&oq=how+to+debug+vector+embeddings&gs_lp=Egdnd3Mtd2l6Ih5ob3cgdG8gZGVidWcgdmVjdG9yIGVtYmVkZGluZ3MyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSMWYAVAQWBBwAXgAkAEAmAHdAaAB3QGqAQMyLTG4AQPIAQD4AQGYAgKgAuQBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBbXrYilVxvykkgcFMS4wLjGgB9oIsgcDMi0xuAfgAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.8352,
+     "target": "6",
+     "target_label": "pytorch best practices",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 593.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+vector+embeddings&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnv5Go5OapXtQRqqJmkRX8cUCcFjaA%3A1790506347248&source=hp&ei=a_W4ap3nDcTBkPIPyvjb6Ag&iflsig=ABILxe8AAAAAarkDexPa4oMJ09gb2JgXD3v3us2XOD6g&ved=0ahUKEwjdyK32y46XAxXEIEQIHUr8Fo0Q4dUDCDI&uact=5&oq=how+to+debug+vector+embeddings&gs_lp=Egdnd3Mtd2l6Ih5ob3cgdG8gZGVidWcgdmVjdG9yIGVtYmVkZGluZ3MyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSMWYAVAQWBBwAXgAkAEAmAHdAaAB3QGqAQMyLTG4AQPIAQD4AQGYAgKgAuQBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBbXrYilVxvykkgcFMS4wLjGgB9oIsgcDMi0xuAfgAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.9041,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 568.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=pytorch+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnu4qAavcHaD_1QX6t0jPMoizGqAXA%3A1790506368929&ei=gPW4aq-oOMXMkPIP0p-PWQ&biw=1120&bih=780&oq=pytorch+best+practices&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnB5dG9yY2ggYmVzdCBwcmFjdGljZXMqBQgAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wVIjAhQEFgQcAF4AJABAJgB5AGgAeQBqgEDMi0xuAEByAEA-AEBmAICoALsAcICDhAAGIAEGIoFGIYDGLADwgIIEAAY7wUYsAPCAgsQABiJBRiiBBiwA5gDAIgGAZAGBpIHBTEuMC4xoAfNBbIHAzItMbgH6AHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-09d8a1cfc9b280a8",
+   "source": "google",
+   "goal": "Search Google for react security vulnerabilities and open the results.",
+   "fingerprint": 11939,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4110,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=react+security+vulnerabilities&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnsyt_ft9m",
+     "bot_challenge": false,
+     "group0": [
+      "react"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=react+security+vulnerabilities&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsyT_ft9MEvaoub1b5rmxT0VCVidw%3A1790506391731&source=hp&ei=l_W4atjGK-aikPIPl5ng4As&iflsig=ABILxe8AAAAAarkDp90BFkL7tU8PJO8iPZYfQRIsso1f&ved=0ahUKEwiY7siLzI6XAxVmEUQIHZcMGLwQ4dUDCDI&uact=5&oq=react+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ih5yZWFjdCBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSK4HUA5YDnABeACQAQCYAd0BoAHdAaoBAzItMbgBA8gBAPgBAZgCAqAC5AGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFTXmrYMaDb5SSBwUxLjAuMaAH8QWyBwMyLTG4B-ABwgcFMC4xLjHIBwSACAE&sclient=gws-wiz",
+    "final_title": "react security vulnerabilities - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8322,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "react security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 490.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506391846"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9014,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 561.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506391846"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8862,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 624.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=react+security+vulnerabilities&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsyT_ft9MEvaoub1b5rmxT0VCVidw%3A1790506391731&source=hp&ei=l_W4atjGK-aikPIPl5ng4As&iflsig=ABILxe8AAAAAarkDp90BFkL7tU8PJO8iPZYfQRIsso1f&ved=0ahUKEwiY7siLzI6XAxVmEUQIHZcMGLwQ4dUDCDI&uact=5&oq=react+security+vulnerabilities&gs_lp=Egdnd3Mtd2l6Ih5yZWFjdCBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSK4HUA5YDnABeACQAQCYAd0BoAHdAaoBAzItMbgBA8gBAPgBAZgCAqAC5AGoAgrCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFTXmrYMaDb5SSBwUxLjAuMaAH8QWyBwMyLTG4B-ABwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-71182272a98531dd",
+   "source": "google",
+   "goal": "Search Google for unit testing performance optimization and open the results.",
+   "fingerprint": 11939,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4632,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=unit+testing+performance+optimization&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnv",
+     "bot_challenge": false,
+     "group0": [
+      "testing",
+      "unit"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=unit+testing+performance+optimization&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvPXyHtDeaUzC1H9CXj3Uam0USWoA%3A1790506403023&source=hp&ei=o_W4arYT28yQ8g_SwZDYAw&iflsig=ABILxe8AAAAAarkDs9uDJibpgvhS2Q2MJyhu6XPK9BbT&ved=0ahUKEwj28PmQzI6XAxVbJkQIHdIgBDsQ4dUDCDI&uact=5&oq=unit+testing+performance+optimization&gs_lp=Egdnd3Mtd2l6IiV1bml0IHRlc3RpbmcgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgUQIRigATIFECEYoAEyBRAhGKABSP8GUAZYBnABeACQAQCYAeEBoAHhAaoBAzItMbgBA8gBAPgBAZgCAaAC6AGoAgCYAwHxBSOV9HBjd1vykgcDMi0xoAfbA7IHAzItMbgH6AHCBwMyLTHIBwOACAE&sclient=gws-wiz",
+    "final_title": "unit testing performance optimization - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8841,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "unit testing performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 479.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506403145"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9006,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 510.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506403145"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8772,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 569.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=unit+testing+performance+optimization&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvPXyHtDeaUzC1H9CXj3Uam0USWoA%3A1790506403023&source=hp&ei=o_W4arYT28yQ8g_SwZDYAw&iflsig=ABILxe8AAAAAarkDs9uDJibpgvhS2Q2MJyhu6XPK9BbT&ved=0ahUKEwj28PmQzI6XAxVbJkQIHdIgBDsQ4dUDCDI&uact=5&oq=unit+testing+performance+optimization&gs_lp=Egdnd3Mtd2l6IiV1bml0IHRlc3RpbmcgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgUQIRigATIFECEYoAEyBRAhGKABSP8GUAZYBnABeACQAQCYAeEBoAHhAaoBAzItMbgBA8gBAPgBAZgCAaAC6AGoAgCYAwHxBSOV9HBjd1vykgcDMi0xoAfbA7IHAzItMbgH6AHCBwMyLTHIBwOACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-1224f8df5cde0120",
+   "source": "google",
+   "goal": "First search Google for angular open source alternatives, then search Google for profiling interview questions.",
+   "fingerprint": 11939,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 28511,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['profiling']]",
+    "checks": {
+     "url": "https://www.reddit.com/r/angular2/comments/uq2dg8/comment/i8pdc2h/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.reddit.com/r/Angular2/comments/uq2dg8/comment/i8pdc2h/",
+    "final_title": "What are some good open source Angular projects on Github to contribute? : r/Ang"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8919,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 491.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506414967"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9041,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 596.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506414967"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8074,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'profiling interview questions' (page still shows results for 'angular open source alternatives')",
+     "page_changed": null,
+     "latency_ms": 590.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=angular+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntHVCCDwSePS_1LKTJh9U1gi-zJ7Q%3A1790506414839&source=hp&ei=rvW4ar2NMtCtur8Pi9bb-QY&iflsig=ABILxe8AAAAAarkDvuTpf6wfn9-WBkk2oCTZsfw3_aPj&ved=0ahUKEwi9nMuWzI6XAxXQlu4BHQvrNm8Q4dUDCDI&uact=5&oq=angular+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiBhbmd1bGFyIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVI3QdQElgScAF4AJABAJgB6gGgAeoBqgEDMi0xuAEDyAEA-AEBmAICoAL4AagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMF8QWdzFFAQ-3gV5IHBTEuMC4xoAf3CrIHAzItMbgH8wHCBwMyLTLIBweACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "profiling interview questions",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=angular+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntHVCCDwSePS_1LKTJh9U1gi-zJ7Q%3A1790506414839&source=hp&ei=rvW4ar2NMtCtur8Pi9bb-QY&iflsig=ABILxe8AAAAAarkDvuTpf6wfn9-WBkk2oCTZsfw3_aPj&ved=0ahUKEwi9nMuWzI6XAxXQlu4BHQvrNm8Q4dUDCDI&uact=5&oq=angular+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiBhbmd1bGFyIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVI3QdQElgScAF4AJABAJgB6gGgAeoBqgEDMi0xuAEDyAEA-AEBmAICoAL4AagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMF8QWdzFFAQ-3gV5IHBTEuMC4xoAf3CrIHAzItMbgH8wHCBwMyLTLIBweACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.5509,
+     "target": "23",
+     "target_label": "19 answers",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 613.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=angular+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntHVCCDwSePS_1LKTJh9U1gi-zJ7Q%3A1790506414839&source=hp&ei=rvW4ar2NMtCtur8Pi9bb-QY&iflsig=ABILxe8AAAAAarkDvuTpf6wfn9-WBkk2oCTZsfw3_aPj&ved=0ahUKEwi9nMuWzI6XAxXQlu4BHQvrNm8Q4dUDCDI&uact=5&oq=angular+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiBhbmd1bGFyIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVI3QdQElgScAF4AJABAJgB6gGgAeoBqgEDMi0xuAEDyAEA-AEBmAICoAL4AagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMF8QWdzFFAQ-3gV5IHBTEuMC4xoAf3CrIHAzItMbgH8wHCBwMyLTLIBweACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.9742,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for profiling interview questions are not visible",
+     "page_changed": null,
+     "latency_ms": 234.7,
+     "low_confidence": false,
+     "url": "https://www.reddit.com/r/Angular2/comments/uq2dg8/comment/i8pdc2h/"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "wait",
+     "target_label": "Wait for the page to update",
+     "kind": "wait",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.reddit.com/r/Angular2/comments/uq2dg8/comment/i8pdc2h/"
+    }
+   ]
+  }
+ ]
+}

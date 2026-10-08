@@ -1,0 +1,783 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 54366,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T17:33:05+0800",
+  "n_tasks": 8,
+  "success": 6,
+  "success_rate": 0.75,
+  "verified": 6,
+  "verified_rate": 0.75,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.4,
+  "mean_duration_ms": 17695,
+  "decision_latency_ms": {
+   "p50": 569.5,
+   "p95": 897.9
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 2,
+   "done-rejected": 7,
+   "executed": 16,
+   "done": 8
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 6,
+    "success_rate": 0.75,
+    "verified": 6,
+    "verified_rate": 0.75,
+    "mean_steps": 4.4
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-bc6dec5f9f2c8d75",
+   "source": "google",
+   "goal": "Search Google for vllm migration guide and open the results.",
+   "fingerprint": 54366,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 7,
+   "total_ms": 10621,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=vllm+migration+guide&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqnsxjiditcb8itnt4fbr",
+     "bot_challenge": false,
+     "group0": [
+      "vllm"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=vllm+migration+guide&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnsxJiditCb8iTNT4fbrljS1zc2RfA%3A1790501393105&source=hp&ei=EeK4aoD2BM-vur8P99y3oAE&iflsig=ABILxe8AAAAAarjwIZDb7V9XZX9blzbZVwo90tsmeLi8&ved=0ahUKEwjAwoS8uY6XAxXPl-4BHXfuDRQQ4dUDCDI&uact=5&oq=vllm+migration+guide&gs_lp=Egdnd3Mtd2l6IhR2bGxtIG1pZ3JhdGlvbiBndWlkZTIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBUjnIFAeWB5wAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAuUBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBfMsH_nkTKZ4kgcFMS4wLjGgB5gFsgcDMi0xuAfhAcIHBTEuMC4xyAcEgAgB&sclient=gws-wiz&sei=G-K4ar_ZD9X3kPIP6MGPoA4",
+    "final_title": "vllm migration guide - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8914,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vllm migration guide",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 480.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8978,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 480.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501394435"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9058,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for \"vllm migration guide\"",
+     "page_changed": null,
+     "latency_ms": 494.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501394435"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vllm migration guide",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501394435"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9019,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search has not been submitted — page is still the Google homepage with the query typed in the search box and autocomplete suggestions, no results list",
+     "page_changed": null,
+     "latency_ms": 897.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501394435"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501394435"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8494,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 575.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vllm+migration+guide&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnsxJiditCb8iTNT4fbrljS1zc2RfA%3A1790501393105&source=hp&ei=EeK4aoD2BM-vur8P99y3oAE&iflsig=ABILxe8AAAAAarjwIZDb7V9XZX9blzbZVwo90tsmeLi8&ved=0ahUKEwjAwoS8uY6XAxXPl-4BHXfuDRQQ4dUDCDI&uact=5&oq=vllm+migration+guide&gs_lp=Egdnd3Mtd2l6IhR2bGxtIG1pZ3JhdGlvbiBndWlkZTIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBUjnIFAeWB5wAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAuUBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBfMsH_nkTKZ4kgcFMS4wLjGgB5gFsgcDMi0xuAfhAcIHBTEuMC4xyAcEgAgB&sclient=gws-wiz&sei=G-K4ar_ZD9X3kPIP6MGPoA4"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d8cadd8945c764de",
+   "source": "google",
+   "goal": "Search Google for llama.cpp open source alternatives and open the results.",
+   "fingerprint": 54366,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 7,
+   "total_ms": 11378,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=llama.cpp+open+source+alternatives&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqnsij2",
+     "bot_challenge": false,
+     "group0": [
+      "llama.cpp"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=llama.cpp+open+source+alternatives&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnsIJ20OS-Frkm4PbyvXZyixejcq-g%3A1790501411077&source=hp&ei=I-K4aoWYA4GS8L0P98OdmAI&iflsig=ABILxe8AAAAAarjwM9xvqoyAlxM4xq3EmHT7xh00mLW5&ved=0ahUKEwjFtc3EuY6XAxUBCbwBHfdhByMQ4dUDCDI&uact=5&oq=llama.cpp+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiJsbGFtYS5jcHAgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUiZKlAOWA5wAXgAkAEAmAHlAaAB5QGqAQMyLTG4AQPIAQD4AQGYAgKgAuwBqAIKwgIREAAY5QYYigMY5wYY6gIYtALCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EF8o-hd9cdM2OSBwUxLjAuMaAHxASyBwMyLTG4B-gBwgcFMS4wLjHIBwOACAE&sclient=gws-wiz",
+    "final_title": "llama.cpp open source alternatives - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9015,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llama.cpp open source alternatives",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 437.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8927,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 1231.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501412401"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8956,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'llama.cpp open source alternatives'; query not entered in search box; no results listed",
+     "page_changed": null,
+     "latency_ms": 492.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501412401"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llama.cpp open source alternatives",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501412401"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9178,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'llama.cpp open source alternatives' are not displayed — the page only shows the Google homepage with the query typed in the search",
+     "page_changed": null,
+     "latency_ms": 593.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501412401"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501412401"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8683,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 599.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=llama.cpp+open+source+alternatives&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnsIJ20OS-Frkm4PbyvXZyixejcq-g%3A1790501411077&source=hp&ei=I-K4aoWYA4GS8L0P98OdmAI&iflsig=ABILxe8AAAAAarjwM9xvqoyAlxM4xq3EmHT7xh00mLW5&ved=0ahUKEwjFtc3EuY6XAxUBCbwBHfdhByMQ4dUDCDI&uact=5&oq=llama.cpp+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiJsbGFtYS5jcHAgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUiZKlAOWA5wAXgAkAEAmAHlAaAB5QGqAQMyLTG4AQPIAQD4AQGYAgKgAuwBqAIKwgIREAAY5QYYigMY5wYY6gIYtALCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EF8o-hd9cdM2OSBwUxLjAuMaAHxASyBwMyLTG4B-gBwgcFMS4wLjHIBwOACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a6ac7889c328734b",
+   "source": "google",
+   "goal": "Search Google for nginx performance optimization and open the results.",
+   "fingerprint": 54366,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4503,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=nginx+performance+optimization&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqnubpfgvqo",
+     "bot_challenge": false,
+     "group0": [
+      "nginx"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=nginx+performance+optimization&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnubPfgVQov80LLmpZQBYlZCg7v2CA%3A1790501429811&source=hp&ei=NeK4aqDoL4_PkPIP9PXZ4AU&iflsig=ABILxe8AAAAAarjwRRef746u6UZjUNg3ZyyBeNEQWdvk&ved=0ahUKEwjg1sTNuY6XAxWPJ0QIHfR6FlwQ4dUDCDI&uact=5&oq=nginx+performance+optimization&gs_lp=Egdnd3Mtd2l6Ih5uZ2lueCBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGIkFGKIEMggQABiJBRiiBDIFEAAY7wUyCBAAGIAEGKIESLMHUA9YD3ABeACQAQCYAeYBoAHmAaoBAzItMbgBA8gBAPgBAZgCAqAC7AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFc9ldY4j7Z8OSBwUxLjAuMaAH1gOyBwMyLTG4B-gBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz",
+    "final_title": "nginx performance optimization - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8678,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "nginx performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 494.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501430100"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9158,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 567.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501430100"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8984,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 613.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=nginx+performance+optimization&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnubPfgVQov80LLmpZQBYlZCg7v2CA%3A1790501429811&source=hp&ei=NeK4aqDoL4_PkPIP9PXZ4AU&iflsig=ABILxe8AAAAAarjwRRef746u6UZjUNg3ZyyBeNEQWdvk&ved=0ahUKEwjg1sTNuY6XAxWPJ0QIHfR6FlwQ4dUDCDI&uact=5&oq=nginx+performance+optimization&gs_lp=Egdnd3Mtd2l6Ih5uZ2lueCBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGIkFGKIEMggQABiJBRiiBDIFEAAY7wUyCBAAGIAEGKIESLMHUA9YD3ABeACQAQCYAeYBoAHmAaoBAzItMbgBA8gBAPgBAZgCAqAC7AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFc9ldY4j7Z8OSBwUxLjAuMaAH1gOyBwMyLTG4B-gBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3f5e3d2d540b0c44",
+   "source": "google",
+   "goal": "Search Google for vue open source alternatives and open the results.",
+   "fingerprint": 54366,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4426,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=vue+open+source+alternatives&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqnuryds7kpmc",
+     "bot_challenge": false,
+     "group0": [
+      "vue"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=vue+open+source+alternatives&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnuryDS7KPMcYfwJtJI_JrYRlImjZA%3A1790501441496&source=hp&ei=QeK4aqbMHMTCkPIPjpC6gAc&iflsig=ABILxe8AAAAAarjwUZJJnd7eFjHWe2_3lJijFh5ltCoi&ved=0ahUKEwjm8I3TuY6XAxVEIUQIHQ6IDnAQ4dUDCDI&uact=5&oq=vue+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ihx2dWUgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUjNB1APWA9wAXgAkAEAmAHjAaAB4wGqAQMyLTG4AQPIAQD4AQGYAgKgAusBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBTBHIcEccMPakgcFMS4wLjGgB6sEsgcDMi0xuAfmAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz",
+    "final_title": "vue open source alternatives - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8744,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 525.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501441715"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8948,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 594.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501441715"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8934,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 617.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vue+open+source+alternatives&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnuryDS7KPMcYfwJtJI_JrYRlImjZA%3A1790501441496&source=hp&ei=QeK4aqbMHMTCkPIPjpC6gAc&iflsig=ABILxe8AAAAAarjwUZJJnd7eFjHWe2_3lJijFh5ltCoi&ved=0ahUKEwjm8I3TuY6XAxVEIUQIHQ6IDnAQ4dUDCDI&uact=5&oq=vue+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ihx2dWUgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUjNB1APWA9wAXgAkAEAmAHjAaAB4wGqAQMyLTG4AQPIAQD4AQGYAgKgAusBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBTBHIcEccMPakgcFMS4wLjGgB6sEsgcDMi0xuAfmAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-26fa2cfe24d2b7e2",
+   "source": "google",
+   "goal": "Search Google for refactoring best practices and open the results.",
+   "fingerprint": 54366,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 3979,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=refactoring+best+practices&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqnsknwel_tryo-",
+     "bot_challenge": false,
+     "group0": [
+      "refactoring"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=refactoring+best+practices&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnsKnWEL_trYo-zH0Nbs_raVB3bF1A%3A1790501453041&source=hp&ei=TeK4ao2iAebDkPIPhorx0A4&iflsig=ABILxe8AAAAAarjwXXou2WjjJunMqN9yC_NQfSg13Crc&ved=0ahUKEwjN_M7YuY6XAxXmIUQIHQZFHOoQ4dUDCDI&uact=5&oq=refactoring+best+practices&gs_lp=Egdnd3Mtd2l6IhpyZWZhY3RvcmluZyBiZXN0IHByYWN0aWNlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBUjLB1APWA9wAXgAkAEAmAHvAaAB7wGqAQMyLTG4AQPIAQD4AQGYAgKgAvUBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwPxBW3BWXExXDgHkgcFMS4wLjGgB6EFsgcDMi0xuAfxAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz",
+    "final_title": "refactoring best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9065,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "refactoring best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 465.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501453200"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9071,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 595.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501453200"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8956,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 582.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=refactoring+best+practices&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnsKnWEL_trYo-zH0Nbs_raVB3bF1A%3A1790501453041&source=hp&ei=TeK4ao2iAebDkPIPhorx0A4&iflsig=ABILxe8AAAAAarjwXXou2WjjJunMqN9yC_NQfSg13Crc&ved=0ahUKEwjN_M7YuY6XAxXmIUQIHQZFHOoQ4dUDCDI&uact=5&oq=refactoring+best+practices&gs_lp=Egdnd3Mtd2l6IhpyZWZhY3RvcmluZyBiZXN0IHByYWN0aWNlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBUjLB1APWA9wAXgAkAEAmAHvAaAB7wGqAQMyLTG4AQPIAQD4AQGYAgKgAvUBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwPxBW3BWXExXDgHkgcFMS4wLjGgB6EFsgcDMi0xuAfxAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3f45ac6d90b49012",
+   "source": "google",
+   "goal": "Search Google for react documentation and open the official site.",
+   "fingerprint": 54366,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 94500,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'react.dev'",
+    "checks": {
+     "url": "https://www.google.com/search?q=react+documentation&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqnvwhxh6ffxyxzbzbplr7",
+     "bot_challenge": false,
+     "group0": [
+      "react"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=react+documentation&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnvWHXh6fFxyxZbZBPLR7EKJjQ7n_g%3A1790501464156&source=hp&ei=WOK4atyDCOPRkPIP_Pii-As&iflsig=ABILxe8AAAAAarjwaGjGkawUPHMQjhM3rHj8m6f712H6&ved=0ahUKEwjcj_XduY6XAxXjKEQIHXy8CL8Q4dUDCDI&uact=5&oq=react+documentation&gs_lp=Egdnd3Mtd2l6IhNyZWFjdCBkb2N1bWVudGF0aW9uMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi0B1AOWA5wAXgAkAEAmAHZAaAB2QGqAQMyLTG4AQPIAQD4AQGYAgKgAt8BqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBaZhrXJzZKkpkgcFMS4wLjGgB4UFsgcDMi0xuAfbAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz",
+    "final_title": "react documentation - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8855,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "react documentation",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 486.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501464311"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9021,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 569.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501464311"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.7996,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Official React documentation site is not open; page is still Google search results",
+     "page_changed": null,
+     "latency_ms": 589.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=react+documentation&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnvWHXh6fFxyxZbZBPLR7EKJjQ7n_g%3A1790501464156&source=hp&ei=WOK4atyDCOPRkPIP_Pii-As&iflsig=ABILxe8AAAAAarjwaGjGkawUPHMQjhM3rHj8m6f712H6&ved=0ahUKEwjcj_XduY6XAxXjKEQIHXy8CL8Q4dUDCDI&uact=5&oq=react+documentation&gs_lp=Egdnd3Mtd2l6IhNyZWFjdCBkb2N1bWVudGF0aW9uMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi0B1AOWA5wAXgAkAEAmAHZAaAB2QGqAQMyLTG4AQPIAQD4AQGYAgKgAt8BqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBaZhrXJzZKkpkgcFMS4wLjGgB4UFsgcDMi0xuAfbAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8509,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Official React documentation site (react.dev) is not open; page is Google search results only",
+     "page_changed": null,
+     "latency_ms": 592.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=react+documentation&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnvWHXh6fFxyxZbZBPLR7EKJjQ7n_g%3A1790501464156&source=hp&ei=WOK4atyDCOPRkPIP_Pii-As&iflsig=ABILxe8AAAAAarjwaGjGkawUPHMQjhM3rHj8m6f712H6&ved=0ahUKEwjcj_XduY6XAxXjKEQIHXy8CL8Q4dUDCDI&uact=5&oq=react+documentation&gs_lp=Egdnd3Mtd2l6IhNyZWFjdCBkb2N1bWVudGF0aW9uMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi0B1AOWA5wAXgAkAEAmAHZAaAB2QGqAQMyLTG4AQPIAQD4AQGYAgKgAt8BqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBaZhrXJzZKkpkgcFMS4wLjGgB4UFsgcDMi0xuAfbAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8446,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 959.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=react+documentation&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQnvWHXh6fFxyxZbZBPLR7EKJjQ7n_g%3A1790501464156&source=hp&ei=WOK4atyDCOPRkPIP_Pii-As&iflsig=ABILxe8AAAAAarjwaGjGkawUPHMQjhM3rHj8m6f712H6&ved=0ahUKEwjcj_XduY6XAxXjKEQIHXy8CL8Q4dUDCDI&uact=5&oq=react+documentation&gs_lp=Egdnd3Mtd2l6IhNyZWFjdCBkb2N1bWVudGF0aW9uMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi0B1AOWA5wAXgAkAEAmAHZAaAB2QGqAQMyLTG4AQPIAQD4AQGYAgKgAt8BqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBaZhrXJzZKkpkgcFMS4wLjGgB4UFsgcDMi0xuAfbAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-0d006751f71bbd22",
+   "source": "google",
+   "goal": "First search Google for zig interview questions, then search Google for how to debug rabbitmq.",
+   "fingerprint": 54366,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 4,
+   "total_ms": 8183,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=rabbitmq'",
+    "checks": {
+     "url": "https://www.google.com/search?q=how+to+debug+rabbitmq&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqnty7lgzgjuiuov0e9p",
+     "bot_challenge": false,
+     "group0": [
+      "rabbitmq"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=how+to+debug+rabbitmq&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQntY7lGZGjUiuoV0E9PbTEoR-napYw%3A1790501565817&source=hp&ei=veK4apf6LtiO8L0PyITJgA8&iflsig=ABILxe8AAAAAarjwzbvpx3571EZQNE_C4aTsH403wcc0&ved=0ahUKEwjXzLCOuo6XAxVYB7wBHUhCEvAQ4dUDCDI&uact=5&oq=how+to+debug+rabbitmq&gs_lp=Egdnd3Mtd2l6IhVob3cgdG8gZGVidWcgcmFiYml0bXEyBhAAGBYYHjIGEAAYFhgeMggQABiJBRiiBDIFEAAY7wVIziJQDlgOcAF4AJABAJgB4gGgAeIBqgEDMi0xuAEDyAEA-AEBmAICoALnAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QWJwWozVd2-aZIHBTEuMC4xoAezArIHAzItMbgH4wHCBwUwLjEuMcgHBIAIAQ&sclient=gws-wiz",
+    "final_title": "how to debug rabbitmq - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8674,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug rabbitmq",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 506.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501565960"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.843,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'how to debug rabbitmq'",
+     "page_changed": null,
+     "latency_ms": 609.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501565960"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501565960"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8155,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 595.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+rabbitmq&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQntY7lGZGjUiuoV0E9PbTEoR-napYw%3A1790501565817&source=hp&ei=veK4apf6LtiO8L0PyITJgA8&iflsig=ABILxe8AAAAAarjwzbvpx3571EZQNE_C4aTsH403wcc0&ved=0ahUKEwjXzLCOuo6XAxVYB7wBHUhCEvAQ4dUDCDI&uact=5&oq=how+to+debug+rabbitmq&gs_lp=Egdnd3Mtd2l6IhVob3cgdG8gZGVidWcgcmFiYml0bXEyBhAAGBYYHjIGEAAYFhgeMggQABiJBRiiBDIFEAAY7wVIziJQDlgOcAF4AJABAJgB4gGgAeIBqgEDMi0xuAEDyAEA-AEBmAICoALnAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAME8QWJwWozVd2-aZIHBTEuMC4xoAezArIHAzItMbgH4wHCBwUwLjEuMcgHBIAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-65a566a5a1371e7b",
+   "source": "google",
+   "goal": "Search Google for zig migration guide and open the results.",
+   "fingerprint": 54366,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 3969,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=zig+migration+guide&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=appeqns9jeravsbgucv7rnj7j",
+     "bot_challenge": false,
+     "group0": [
+      "zig"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=zig+migration+guide&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQns9jeraVSbgUcv7rNj7JtuDElolDA%3A1790501581124&source=hp&ei=zeK4arWrBvKMur8Pu-2gmQc&iflsig=ABILxe8AAAAAarjw3UgeMbgRiMIpHq4D66jKRk3oYKK1&ved=0ahUKEwj1xdiVuo6XAxVyhu4BHbs2KHMQ4dUDCDI&uact=5&oq=zig+migration+guide&gs_lp=Egdnd3Mtd2l6IhN6aWcgbWlncmF0aW9uIGd1aWRlMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIFEAAY7wUyBRAAGO8FMggQABiABBiiBEjKB1ANWA1wAXgAkAEAmAHbAaAB2wGqAQMyLTG4AQPIAQD4AQGYAgKgAuEBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBS4ZMUAedFrSkgcFMS4wLjGgB7ADsgcDMi0xuAfeAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz",
+    "final_title": "zig migration guide - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.89,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "zig migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 527.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501581266"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9054,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 593.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790501581266"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8974,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 620.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=zig+migration+guide&sca_esv=b06d940b672a194c&hl=en&gl=us&sxsrf=APpeQns9jeraVSbgUcv7rNj7JtuDElolDA%3A1790501581124&source=hp&ei=zeK4arWrBvKMur8Pu-2gmQc&iflsig=ABILxe8AAAAAarjw3UgeMbgRiMIpHq4D66jKRk3oYKK1&ved=0ahUKEwj1xdiVuo6XAxVyhu4BHbs2KHMQ4dUDCDI&uact=5&oq=zig+migration+guide&gs_lp=Egdnd3Mtd2l6IhN6aWcgbWlncmF0aW9uIGd1aWRlMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIFEAAY7wUyBRAAGO8FMggQABiABBiiBEjKB1ANWA1wAXgAkAEAmAHbAaAB2wGqAQMyLTG4AQPIAQD4AQGYAgKgAuEBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBS4ZMUAedFrSkgcFMS4wLjGgB7ADsgcDMi0xuAfeAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz"
+    }
+   ]
+  }
+ ]
+}

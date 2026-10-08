@@ -1,0 +1,375 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "humanize": true,
+  "headless": false,
+  "fingerprint": "per-task-stable",
+  "max_steps": 25,
+  "delay": 4.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T02:59:09+0800",
+  "n_tasks": 4,
+  "success": 2,
+  "success_rate": 0.5,
+  "verified": 2,
+  "verified_rate": 0.5,
+  "found_but_not_stopped": 0,
+  "mean_steps": 3.8,
+  "mean_duration_ms": 4747,
+  "decision_latency_ms": {
+   "p50": 552.4,
+   "p95": 619.1
+  },
+  "step_outcomes": {
+   "executed": 10,
+   "done": 2,
+   "stale": 3
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 4,
+    "success": 2,
+    "success_rate": 0.5,
+    "verified": 2,
+    "verified_rate": 0.5,
+    "mean_steps": 3.8
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "google-ai-anthropic",
+   "source": "google",
+   "goal": "Search Google for recent Anthropic Claude announcements and open the results.",
+   "fingerprint": 62844,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 3796,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=anthropic+claude+news&sca_esv=69f18be9691a8a30&sxsrf=appeqnso1zsfjuhx0hs4rm44tkf1ctr6bq%",
+     "bot_challenge": false,
+     "group0": [
+      "anthropic",
+      "claude"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=Anthropic+Claude+news&sca_esv=69f18be9691a8a30&sxsrf=APpeQnso1zSFJUHX0hS4RM44Tkf1cTR6BQ%3A1790449104890&source=hp&ei=0BW4avKjNZjXkPIPu8COmAc&iflsig=ABILxe8AAAAAargj4IC1R8xfpewQMCxW7DnO3TJ-hKzc&ved=0ahUKEwjyy4nX9oyXAxWYK0QIHTugA3MQ4dUDCB8&uact=5&oq=Anthropic+Claude+news&gs_lp=Egdnd3Mtd2l6IhVBbnRocm9waWMgQ2xhdWRlIG5ld3MyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I7gdQDlgOcAF4AJABAJgBwAGgAcABqgEDMC4xuAEDyAEA-AEBmAICoALGAagCCsICChAAGAMYjwEY6gKYAwTxBYBTw11SPiK9kgcDMS4xoAfEBbIHAzAuMbgHwgHCBwMwLjLIBwSACAE&sclient=gws-wiz&sei=0xW4aoX3M8i9vr0P0_SIwAc",
+    "final_title": "Anthropic Claude news - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9017,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "Anthropic Claude news",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 488.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9065,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 631.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.5543,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 609.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=Anthropic+Claude+news&sca_esv=69f18be9691a8a30&sxsrf=APpeQnso1zSFJUHX0hS4RM44Tkf1cTR6BQ%3A1790449104890&source=hp&ei=0BW4avKjNZjXkPIPu8COmAc&iflsig=ABILxe8AAAAAargj4IC1R8xfpewQMCxW7DnO3TJ-hKzc&ved=0ahUKEwjyy4nX9oyXAxWYK0QIHTugA3MQ4dUDCB8&uact=5&oq=Anthropic+Claude+news&gs_lp=Egdnd3Mtd2l6IhVBbnRocm9waWMgQ2xhdWRlIG5ld3MyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I7gdQDlgOcAF4AJABAJgBwAGgAcABqgEDMC4xuAEDyAEA-AEBmAICoALGAagCCsICChAAGAMYjwEY6gKYAwTxBYBTw11SPiK9kgcDMS4xoAfEBbIHAzAuMbgHwgHCBwMwLjLIBwSACAE&sclient=gws-wiz&sei=0xW4aoX3M8i9vr0P0_SIwAc"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-deepmind",
+   "source": "google",
+   "goal": "Search Google for Google DeepMind news and open the results.",
+   "fingerprint": 33187,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 3076,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgoogle%2bdeepmind%2bnews%26sca_esv%3d69f",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DGoogle%2BDeepMind%2Bnews%26sca_esv%3D69f18be9691a8a30%26sxsrf%3DAPpeQnvHlJNIbTzhsH55o9pg49QWEnKlwg%253A1790449116637%26source%3Dhp%26ei%3D3BW4apblJfeT8L0PuI2Q6AE%26iflsig%3DABILxe8AAAAAargj7MOhWXpqDI15V1jK5Mm28NRuaeLI%26ved%3D0ahUKEwiWw9bc9oyXAxX3CbwBHbgGBB0Q4dUDCB8%26uact%3D5%26oq%3DGoogle%2BDeepMind%2Bnews%26gs_lp%3DEgdnd3Mtd2l6IhRHb29nbGUgRGVlcE1pbmQgbmV3czIFEAAYgAQyCxAuGPsGGPIGGI8HMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDSNoHUA5YDnABeACQAQCYAdsBoAHbAaoBAzItMbgBA8gBAPgBAZgCAqAC4QGoAgrCAgoQABgDGI8BGOoCmAMD8QWOwcw8IDBgrZIHBTEuMC4xoAexB7IHAzItMbgH3QHCBwUwLjEuMcgHBIAIAQ%26sclient%3Dgws-wiz%26sei%3D3xW4at7-KPfKvMcP9Juw0AU&q=EgQm0XtnGOCr4NUGIjApYWQbiYn9ti9RBFZIgy4e771NogqDqk-ShoONHxmeoftmANS_2GNiUjvKs8vb_EQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=Google+DeepMind+news&sca_esv=69f18be9691a8a30&sx"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8308,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "Google DeepMind news",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 461.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.904,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 604.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-llm",
+   "source": "google",
+   "goal": "Search Google for the latest large language model news and open the results.",
+   "fingerprint": 17795,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4008,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=large+language+models+latest+news&sca_esv=69f18be9691a8a30&sxsrf=appeqnvry4yfbgq3y5kmv-e",
+     "bot_challenge": false,
+     "group0": [
+      "language model",
+      "llm"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=large+language+models+latest+news&sca_esv=69f18be9691a8a30&sxsrf=APpeQnvrY4yFbgQ3Y5KMv-ERHdxO1xc2CA%3A1790449127727&source=hp&ei=5xW4atn7KrXQkPIP6ZPF4Q0&iflsig=ABILxe8AAAAAargj90SZnKBz3xV70eilK0eVuvxtx7Hk&oq=large+language+model+news&gs_lp=Egdnd3Mtd2l6IhlsYXJnZSBsYW5ndWFnZSBtb2RlbCBuZXdzKgYIARgWGB4yBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wVI-AdQDlgOcAF4AJABAJgBwAGgAcABqgEDMC4xsAEAuAEByAEA-AEBmAICoALFAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWxZuKhpHTI65IHAzEuMaAHnweyBwMwLjG4B8IBwgcDMC4yyAcEgAgB&sclient=gws-wiz&sei=6hW4avatKu_Fvr0Pw-bBoAo",
+    "final_title": "large language models latest news - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.5864,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "large language model news",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 492.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.8798,
+     "target": "11",
+     "target_label": "large language models latest news",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 592.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8917,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 619.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=large+language+models+latest+news&sca_esv=69f18be9691a8a30&sxsrf=APpeQnvrY4yFbgQ3Y5KMv-ERHdxO1xc2CA%3A1790449127727&source=hp&ei=5xW4atn7KrXQkPIP6ZPF4Q0&iflsig=ABILxe8AAAAAargj90SZnKBz3xV70eilK0eVuvxtx7Hk&oq=large+language+model+news&gs_lp=Egdnd3Mtd2l6IhlsYXJnZSBsYW5ndWFnZSBtb2RlbCBuZXdzKgYIARgWGB4yBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wVI-AdQDlgOcAF4AJABAJgBwAGgAcABqgEDMC4xsAEAuAEByAEA-AEBmAICoALFAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWxZuKhpHTI65IHAzEuMaAHnweyBwMwLjG4B8IBwgcDMC4yyAcEgAgB&sclient=gws-wiz&sei=6hW4avatKu_Fvr0Pw-bBoAo"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-zh",
+   "source": "google",
+   "goal": "在 Google 上搜索最新的中国大模型资讯并查看搜索结果。",
+   "fingerprint": 75209,
+   "status": "repeat-loop",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 8110,
+   "error": "same operation+target repeated 3x; stopping",
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'google.com/search'",
+    "checks": {
+     "url": "https://news.qq.com/rain/a/20260917a0d26000",
+     "bot_challenge": false,
+     "group0": [
+      "大模型"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://news.qq.com/rain/a/20260917A0D26000",
+    "final_title": "DoorDash、Airbnb都在用 中国大模型周调用量已近美国3倍_腾讯新闻"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.6864,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "中国大模型 最新资讯",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 475.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9018,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 552.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.496,
+     "target": "22",
+     "target_label": "Read more",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 607.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=%E4%B8%AD%E5%9B%BD%E5%A4%A7%E6%A8%A1%E5%9E%8B+%E6%9C%80%E6%96%B0%E8%B5%84%E8%AE%AF&sca_esv=69f18be9691a8a30&sxsrf=APpeQnsLNjEadfj2cZAqvbwwawf4mSIJjA%3A1790449140014&source=hp&ei=8xW4auitPO_YkPIPweTr6AY&iflsig=ABILxe8AAAAAargkBFh6ERzhMUHdAA3dtaXHGGKIH0fr&ved=0ahUKEwio8-jn9oyXAxVvLEQIHUHyGm0Q4dUDCB8&uact=5&oq=%E4%B8%AD%E5%9B%BD%E5%A4%A7%E6%A8%A1%E5%9E%8B+%E6%9C%80%E6%96%B0%E8%B5%84%E8%AE%AF&gs_lp=Egdnd3Mtd2l6IhzkuK3lm73lpKfmqKHlnosg5pyA5paw6LWE6K6vMgUQABjvBTIFEAAY7wUyBRAAGO8FMggQABiABBiiBDIIEAAYgAQYogRIrQdQFVgVcAF4AJABAJgBvwGgAb8BqgEDMC4xuAEDyAEA-AEBmAICoALFAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QV3Z7mvODjJ7pIHAzEuMaAH4gGyBwMwLjG4B8EBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz&sei=9hW4ar21N9uMvr0Pqt-XyQo"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8598,
+     "target": "25",
+     "target_label": "Read more",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 564.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=%E4%B8%AD%E5%9B%BD%E5%A4%A7%E6%A8%A1%E5%9E%8B+%E6%9C%80%E6%96%B0%E8%B5%84%E8%AE%AF&sca_esv=69f18be9691a8a30&sxsrf=APpeQnsLNjEadfj2cZAqvbwwawf4mSIJjA%3A1790449140014&source=hp&ei=8xW4auitPO_YkPIPweTr6AY&iflsig=ABILxe8AAAAAargkBFh6ERzhMUHdAA3dtaXHGGKIH0fr&ved=0ahUKEwio8-jn9oyXAxVvLEQIHUHyGm0Q4dUDCB8&uact=5&oq=%E4%B8%AD%E5%9B%BD%E5%A4%A7%E6%A8%A1%E5%9E%8B+%E6%9C%80%E6%96%B0%E8%B5%84%E8%AE%AF&gs_lp=Egdnd3Mtd2l6IhzkuK3lm73lpKfmqKHlnosg5pyA5paw6LWE6K6vMgUQABjvBTIFEAAY7wUyBRAAGO8FMggQABiABBiiBDIIEAAYgAQYogRIrQdQFVgVcAF4AJABAJgBvwGgAb8BqgEDMC4xuAEDyAEA-AEBmAICoALFAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QV3Z7mvODjJ7pIHAzEuMaAH4gGyBwMwLjG4B8EBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz&sei=9hW4ar21N9uMvr0Pqt-XyQo"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.9014,
+     "target": "2",
+     "target_label": "首页",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 490.5,
+     "low_confidence": false,
+     "url": "https://news.qq.com/rain/a/20260917A0D26000"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8865,
+     "target": "2",
+     "target_label": "首页",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 410.7,
+     "low_confidence": false,
+     "url": "https://news.qq.com/rain/a/20260917A0D26000"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8865,
+     "target": "2",
+     "target_label": "首页",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 432.3,
+     "low_confidence": false,
+     "url": "https://news.qq.com/rain/a/20260917A0D26000"
+    }
+   ]
+  }
+ ]
+}

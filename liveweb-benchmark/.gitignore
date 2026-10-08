@@ -1,0 +1,12 @@
+# Subproject-local ignores. Repo-level rules live in ../.gitignore.
+# NOTE: datasets (distill/) and experiment reports (results/) ARE tracked.
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+shots*/
+*.log

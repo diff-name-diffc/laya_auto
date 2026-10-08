@@ -1,0 +1,542 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 38047,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T14:16:33+0800",
+  "n_tasks": 3,
+  "success": 1,
+  "success_rate": 0.333,
+  "verified": 1,
+  "verified_rate": 0.333,
+  "found_but_not_stopped": 0,
+  "mean_steps": 9.3,
+  "mean_duration_ms": 32021,
+  "decision_latency_ms": {
+   "p50": 510.3,
+   "p95": 627.0
+  },
+  "step_outcomes": {
+   "stale": 5,
+   "refused-empty-enter": 2,
+   "executed": 14,
+   "done-rejected": 4,
+   "done": 3
+  },
+  "low_confidence_steps": 5,
+  "by_source": {
+   "google": {
+    "n": 3,
+    "success": 1,
+    "success_rate": 0.333,
+    "verified": 1,
+    "verified_rate": 0.333,
+    "mean_steps": 9.3
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "google-multi-k8s-docker",
+   "source": "google",
+   "goal": "First search Google for Kubernetes ingress tutorial, then search Google for Docker compose networking.",
+   "fingerprint": 38047,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 12,
+   "total_ms": 68449,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['docker', 'compose']]",
+    "checks": {
+     "url": "https://devopscube.com/kubernetes-ingress-tutorial/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://devopscube.com/kubernetes-ingress-tutorial/",
+    "final_title": "Kubernetes Ingress Tutorial: Beginners Series"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8843,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kubernetes ingress tutorial",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 511.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.906,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 491.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790489683011"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2859,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kubernetes ingress tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 510.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790489683011"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8861,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kubernetes ingress tutorial",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 595.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790489683011"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790489683011"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.2819,
+     "target": "18",
+     "target_label": "Kubernetes Ingress Tutorial: Beginners Series DevOpsCube https://devopscube.com › kubernetes-ingress-tutorial",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 627.0,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=kubernetes+ingress+tutorial&sca_esv=44bd84562ffcbf81&hl=en&gl=us&sxsrf=APpeQnttR4AcF3pi7g1x3vYUdpWd4mSoFw%3A1790489681408&source=hp&ei=UbS4au_3F_mMur8P483LiA0&iflsig=ABILxe8AAAAAarjCYQZFX3sUmXbZGQBHE9nNLELipPEI&ved=0ahUKEwiv5LvrjY6XAxV5hu4BHePmEtEQ4dUDCDI&uact=5&oq=kubernetes+ingress+tutorial&gs_lp=Egdnd3Mtd2l6IhtrdWJlcm5ldGVzIGluZ3Jlc3MgdHV0b3JpYWwyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wVIzxZQDFgMcAJ4AJABAJgBuAGgAbgBqgEDMC4xuAEDyAEA-AEBmAIDoAK-AagCCsICChAAGAMYjwEY6gKYAwPxBdQi9dC76e_8kgcDMi4xoAezBbIHAzAuMbgHugHCBwUxLjEuMcgHBYAIAQ&sclient=gws-wiz&sei=V7S4atj8DryWkPIPw47vaA"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.5054,
+     "target": "18",
+     "target_label": "Kubernetes Ingress Tutorial: Beginners Series DevOpsCube https://devopscube.com › kubernetes-ingress-tutorial",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 590.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kubernetes+ingress+tutorial&sca_esv=44bd84562ffcbf81&hl=en&gl=us&sxsrf=APpeQnttR4AcF3pi7g1x3vYUdpWd4mSoFw%3A1790489681408&source=hp&ei=UbS4au_3F_mMur8P483LiA0&iflsig=ABILxe8AAAAAarjCYQZFX3sUmXbZGQBHE9nNLELipPEI&ved=0ahUKEwiv5LvrjY6XAxV5hu4BHePmEtEQ4dUDCDI&uact=5&oq=kubernetes+ingress+tutorial&gs_lp=Egdnd3Mtd2l6IhtrdWJlcm5ldGVzIGluZ3Jlc3MgdHV0b3JpYWwyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wVIzxZQDFgMcAJ4AJABAJgBuAGgAbgBqgEDMC4xuAEDyAEA-AEBmAIDoAK-AagCCsICChAAGAMYjwEY6gKYAwPxBdQi9dC76e_8kgcDMi4xoAezBbIHAzAuMbgHugHCBwUxLjEuMcgHBYAIAQ&sclient=gws-wiz&sei=V7S4atj8DryWkPIPw47vaA"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.9235,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 453.1,
+     "low_confidence": false,
+     "url": "https://devopscube.com/kubernetes-ingress-tutorial/"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.9338,
+     "target": "3",
+     "target_label": "💻 Roadmaps",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: target occluded",
+     "page_changed": false,
+     "latency_ms": 372.3,
+     "low_confidence": false,
+     "url": "https://devopscube.com/kubernetes-ingress-tutorial/"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.9204,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for Docker compose networking",
+     "page_changed": null,
+     "latency_ms": 384.0,
+     "low_confidence": false,
+     "url": "https://devopscube.com/kubernetes-ingress-tutorial/"
+    },
+    {
+     "step": 10,
+     "operation": "DONE",
+     "confidence": 0.9139,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for Docker compose networking",
+     "page_changed": null,
+     "latency_ms": 437.7,
+     "low_confidence": false,
+     "url": "https://devopscube.com/kubernetes-ingress-tutorial/"
+    },
+    {
+     "step": 11,
+     "operation": "DONE",
+     "confidence": 0.8954,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 427.1,
+     "low_confidence": false,
+     "url": "https://devopscube.com/kubernetes-ingress-tutorial/"
+    }
+   ]
+  },
+  {
+   "task_id": "google-multi-pytorch-tensorflow",
+   "source": "google",
+   "goal": "First search Google for PyTorch latest release notes, then search Google for TensorFlow latest release.",
+   "fingerprint": 38047,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 7,
+   "total_ms": 12560,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=tensorflow+latest+release&sca_esv=44bd84562ffcbf81&hl=en&gl=us&sxsrf=appeqnvrnepl4u0cgyh",
+     "bot_challenge": false,
+     "group0": [
+      "tensorflow"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=TensorFlow+latest+release&sca_esv=44bd84562ffcbf81&hl=en&gl=us&sxsrf=APpeQnvrnEpl4U0CgyHBonF4OGy8k2-oqg%3A1790489757277&source=hp&ei=nbS4apWwD9Sjur8Pze63mQ0&iflsig=ABILxe8AAAAAarjCrZI-9gseT8MeZCCUULgH6UpILLRD&ved=0ahUKEwjV8tGPjo6XAxXUke4BHU33LdMQ4dUDCDI&oq=TensorFlow+latest+release&gs_lp=Egdnd3Mtd2l6IhlUZW5zb3JGbG93IGxhdGVzdCByZWxlYXNlMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMggQABgWGB4YCjIFEAAY7wUyBRAAGO8FMgUQABjvBUjLIVAgWCBwAXgAkAEAmAHqAaAB6gGqAQMyLTG4AQzIAQD4AQGYAgKgAvABqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBRiFK1cNhKZQkgcFMS4wLjGgB9EFsgcDMi0xuAfsAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz",
+    "final_title": "TensorFlow latest release - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.83,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "pytorch latest release notes",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 497.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9066,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 489.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790489758724"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9013,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for TensorFlow latest release (only the Google homepage search box is shown)",
+     "page_changed": null,
+     "latency_ms": 504.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790489758724"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "TensorFlow latest release",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790489758724"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9151,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing TensorFlow latest release search results (page only shows the search box with autocomplete suggestions, no results listed)",
+     "page_changed": null,
+     "latency_ms": 621.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790489758724"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790489758724"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8981,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 610.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=TensorFlow+latest+release&sca_esv=44bd84562ffcbf81&hl=en&gl=us&sxsrf=APpeQnvrnEpl4U0CgyHBonF4OGy8k2-oqg%3A1790489757277&source=hp&ei=nbS4apWwD9Sjur8Pze63mQ0&iflsig=ABILxe8AAAAAarjCrZI-9gseT8MeZCCUULgH6UpILLRD&ved=0ahUKEwjV8tGPjo6XAxXUke4BHU33LdMQ4dUDCDI&oq=TensorFlow+latest+release&gs_lp=Egdnd3Mtd2l6IhlUZW5zb3JGbG93IGxhdGVzdCByZWxlYXNlMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMggQABgWGB4YCjIFEAAY7wUyBRAAGO8FMgUQABjvBUjLIVAgWCBwAXgAkAEAmAHqAaAB6gGqAQMyLTG4AQzIAQD4AQGYAgKgAvABqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwPxBRiFK1cNhKZQkgcFMS4wLjGgB9EFsgcDMi0xuAfsAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "google-multi-python-rust",
+   "source": "google",
+   "goal": "First search Google for the latest stable Python version, then search Google for the latest stable Rust version.",
+   "fingerprint": 38047,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 9,
+   "total_ms": 15054,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=rust'",
+    "checks": {
+     "url": "https://www.google.com/search?q=latest+stable+rust+version&sca_esv=44bd84562ffcbf81&hl=en&gl=us&sxsrf=appeqnsbvlr0ru6nri",
+     "bot_challenge": false,
+     "group0": [
+      "rust"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=latest+stable+rust+version&sca_esv=44bd84562ffcbf81&hl=en&gl=us&sxsrf=APpeQnsBVLR0Ru6nrIfEwifaqGSy4V_czQ%3A1790489779991&ei=s7S4asORPIrAkPIPv-LdwQs&biw=1120&bih=780&oq=latest+stable+rust+version&gs_lp=Egxnd3Mtd2l6LXNlcnAiGmxhdGVzdCBzdGFibGUgcnVzdCB2ZXJzaW9uKgUIABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIIEAAYgAQYogRIgQhQDFgMcAF4AZABAJgB4gGgAeIBqgEDMi0xuAEByAEA-AEBmAICoALnAcICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADmAMAiAYBkAYKkgcFMS4wLjGgB9EDsgcDMi0xuAflAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz-serp",
+    "final_title": "latest stable rust version - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8845,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "latest stable python version",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 491.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790489777680"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8887,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 578.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790489777680"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.5323,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 574.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=latest+stable+python+version&sca_esv=44bd84562ffcbf81&hl=en&gl=us&sxsrf=APpeQnvXVDoJSCtWeccxllxB6-Bby3QS_g%3A1790489777315&source=hp&ei=sbS4aszEEO-5kPIP_q2lWA&iflsig=ABILxe8AAAAAarjCwRaga8THSafQNggIXBDHDHhhoYa9&ved=0ahUKEwiM4ZeZjo6XAxXvHEQIHf5WCQsQ4dUDCDI&uact=5&oq=latest+stable+python+version&gs_lp=Egdnd3Mtd2l6IhxsYXRlc3Qgc3RhYmxlIHB5dGhvbiB2ZXJzaW9uMgsQABiABBiKBRiRAjIIEAAYgAQYtAcyCBAAGIAEGLQHMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IvgdQDVgNcAF4AJABAJgB0QGgAdEBqgEDMi0xuAEDyAEA-AEBmAICoALXAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QWioXV0i0Qa1ZIHBTEuMC4xoAeoBrIHAzItMbgH0wHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.228,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 572.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=latest+stable+python+version&sca_esv=44bd84562ffcbf81&hl=en&gl=us&sxsrf=APpeQnvXVDoJSCtWeccxllxB6-Bby3QS_g%3A1790489777315&source=hp&ei=sbS4aszEEO-5kPIP_q2lWA&iflsig=ABILxe8AAAAAarjCwRaga8THSafQNggIXBDHDHhhoYa9&ved=0ahUKEwiM4ZeZjo6XAxXvHEQIHf5WCQsQ4dUDCDI&uact=5&oq=latest+stable+python+version&gs_lp=Egdnd3Mtd2l6IhxsYXRlc3Qgc3RhYmxlIHB5dGhvbiB2ZXJzaW9uMgsQABiABBiKBRiRAjIIEAAYgAQYtAcyCBAAGIAEGLQHMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IvgdQDVgNcAF4AJABAJgB0QGgAdEBqgEDMi0xuAEDyAEA-AEBmAICoALXAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QWioXV0i0Qa1ZIHBTEuMC4xoAeoBrIHAzItMbgH0wHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.228,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 670.7,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=latest+stable+python+version&sca_esv=44bd84562ffcbf81&hl=en&gl=us&sxsrf=APpeQnvXVDoJSCtWeccxllxB6-Bby3QS_g%3A1790489777315&source=hp&ei=sbS4aszEEO-5kPIP_q2lWA&iflsig=ABILxe8AAAAAarjCwRaga8THSafQNggIXBDHDHhhoYa9&ved=0ahUKEwiM4ZeZjo6XAxXvHEQIHf5WCQsQ4dUDCDI&uact=5&oq=latest+stable+python+version&gs_lp=Egdnd3Mtd2l6IhxsYXRlc3Qgc3RhYmxlIHB5dGhvbiB2ZXJzaW9uMgsQABiABBiKBRiRAjIIEAAYgAQYtAcyCBAAGIAEGLQHMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IvgdQDVgNcAF4AJABAJgB0QGgAdEBqgEDMi0xuAEDyAEA-AEBmAICoALXAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QWioXV0i0Qa1ZIHBTEuMC4xoAeoBrIHAzItMbgH0wHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.228,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 575.7,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=latest+stable+python+version&sca_esv=44bd84562ffcbf81&hl=en&gl=us&sxsrf=APpeQnvXVDoJSCtWeccxllxB6-Bby3QS_g%3A1790489777315&source=hp&ei=sbS4aszEEO-5kPIP_q2lWA&iflsig=ABILxe8AAAAAarjCwRaga8THSafQNggIXBDHDHhhoYa9&ved=0ahUKEwiM4ZeZjo6XAxXvHEQIHf5WCQsQ4dUDCDI&uact=5&oq=latest+stable+python+version&gs_lp=Egdnd3Mtd2l6IhxsYXRlc3Qgc3RhYmxlIHB5dGhvbiB2ZXJzaW9uMgsQABiABBiKBRiRAjIIEAAYgAQYtAcyCBAAGIAEGLQHMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IvgdQDVgNcAF4AJABAJgB0QGgAdEBqgEDMi0xuAEDyAEA-AEBmAICoALXAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QWioXV0i0Qa1ZIHBTEuMC4xoAeoBrIHAzItMbgH0wHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "latest stable rust version",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=latest+stable+python+version&sca_esv=44bd84562ffcbf81&hl=en&gl=us&sxsrf=APpeQnvXVDoJSCtWeccxllxB6-Bby3QS_g%3A1790489777315&source=hp&ei=sbS4aszEEO-5kPIP_q2lWA&iflsig=ABILxe8AAAAAarjCwRaga8THSafQNggIXBDHDHhhoYa9&ved=0ahUKEwiM4ZeZjo6XAxXvHEQIHf5WCQsQ4dUDCDI&uact=5&oq=latest+stable+python+version&gs_lp=Egdnd3Mtd2l6IhxsYXRlc3Qgc3RhYmxlIHB5dGhvbiB2ZXJzaW9uMgsQABiABBiKBRiRAjIIEAAYgAQYtAcyCBAAGIAEGLQHMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IvgdQDVgNcAF4AJABAJgB0QGgAdEBqgEDMi0xuAEDyAEA-AEBmAICoALXAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QWioXV0i0Qa1ZIHBTEuMC4xoAeoBrIHAzItMbgH0wHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8527,
+     "target": "6",
+     "target_label": "latest stable rust version",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 604.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=latest+stable+python+version&sca_esv=44bd84562ffcbf81&hl=en&gl=us&sxsrf=APpeQnvXVDoJSCtWeccxllxB6-Bby3QS_g%3A1790489777315&source=hp&ei=sbS4aszEEO-5kPIP_q2lWA&iflsig=ABILxe8AAAAAarjCwRaga8THSafQNggIXBDHDHhhoYa9&ved=0ahUKEwiM4ZeZjo6XAxXvHEQIHf5WCQsQ4dUDCDI&uact=5&oq=latest+stable+python+version&gs_lp=Egdnd3Mtd2l6IhxsYXRlc3Qgc3RhYmxlIHB5dGhvbiB2ZXJzaW9uMgsQABiABBiKBRiRAjIIEAAYgAQYtAcyCBAAGIAEGLQHMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IvgdQDVgNcAF4AJABAJgB0QGgAdEBqgEDMi0xuAEDyAEA-AEBmAICoALXAagCCsICERAAGOUGGIoDGOcGGOoCGLQCmAMD8QWioXV0i0Qa1ZIHBTEuMC4xoAeoBrIHAzItMbgH0wHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.698,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 619.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=latest+stable+rust+version&sca_esv=44bd84562ffcbf81&hl=en&gl=us&sxsrf=APpeQnsBVLR0Ru6nrIfEwifaqGSy4V_czQ%3A1790489779991&ei=s7S4asORPIrAkPIPv-LdwQs&biw=1120&bih=780&oq=latest+stable+rust+version&gs_lp=Egxnd3Mtd2l6LXNlcnAiGmxhdGVzdCBzdGFibGUgcnVzdCB2ZXJzaW9uKgUIABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIIEAAYgAQYogRIgQhQDFgMcAF4AZABAJgB4gGgAeIBqgEDMi0xuAEByAEA-AEBmAICoALnAcICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADmAMAiAYBkAYKkgcFMS4wLjGgB9EDsgcDMi0xuAflAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz-serp"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,638 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 32472,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:59:50+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 3.4,
+  "mean_duration_ms": 19841,
+  "decision_latency_ms": {
+   "p50": 529.1,
+   "p95": 673.5
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 2,
+   "executed": 18,
+   "done-rejected": 5
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 3.4
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-9f12d50a3c13c757",
+   "source": "google",
+   "goal": "First search Google for express security vulnerabilities, then search Google for mysql cheat sheet.",
+   "fingerprint": 32472,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 31962,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dexpress%2bsecurity%2bvulnerabilities%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dexpress%2Bsecurity%2Bvulnerabilities%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnubkV_H6MCxYZuQwpW6WNXLhGs4hw%253A1790509865267%26source%3Dhp%26ei%3DKQO5apGvDuPOkPIPz-DkoA4%26iflsig%3DABILxe8AAAAAarkROXS8-znlbAyLbUuWrJxjDgLpkDsD%26oq%3Dexpress%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IiBleHByZXNzIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllcyoGCAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIIEAAYgAQYogQyBRAAGO8FMggQABiABBiiBEjigwFQD1gPcAJ4AJABAJgB1gGgAdYBqgEDMi0xuAEByAEA-AEBmAIDoALgAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QVI0eD0WTT_uJIHBTIuMC4xoAemA7IHAzItMbgH2gHCBwUxLjEuMcgHBoAIAQ%26sclient%3Dgws-wiz%26sei%3DPQO5ar_NBMbbkPIPjo3DkAI&hl=en&q=EgQm0XtnGL2G5NUGIjCTUpD9NdLnEmN0nn-M8FBj8W9yEZcCPcc7dk0xgYGIbhVGgfIzeuS0Q70RNVL460syAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=express+security+vulnerabilities&sca_esv=18a60b0"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8921,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "express security vulnerabilities",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 499.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9048,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 473.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509866632"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8457,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "express security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 535.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509866632"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8731,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "express security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 603.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509866632"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:23",
+     "target_label": "express security vulnerabilities",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509866632"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-12249b33059dba6a",
+   "source": "google",
+   "goal": "Search Google for llm fine-tuning best practices and open the results.",
+   "fingerprint": 32472,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 26060,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dllm%2bfine-tuning%2bbest%2bpractices%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dllm%2Bfine-tuning%2Bbest%2Bpractices%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvy4UcYiFLXc5U3r6qDF2ahp47StA%253A1790509949624%26source%3Dhp%26ei%3DfQO5ar_xI9WIkPIPgqG04QY%26iflsig%3DABILxe8AAAAAarkRjY3slTcJKl341dVTQpI5MyLcUVgj%26ved%3D0ahUKEwj_o4ys2Y6XAxVVBEQIHYIQLWwQ4dUDCDI%26oq%3Dllm%2Bfine-tuning%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6Ih5sbG0gZmluZS10dW5pbmcgYmVzdCBwcmFjdGljZXMyBhAAGBYYHjIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wVIkzZQD1gPcAF4AJABAJgB2QGgAdkBqgEDMi0xuAEMyAEA-AEBmAICoALjAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME8QVNMIeDTKFOopIHBTEuMC4xoAf6ArIHAzItMbgH3wHCBwMyLTLIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIuH5NUGIjD7d-jrBvmoRfr1n0qQklKqWLiPGEZLt3AjxSyEsP5hHbTh6c53Qxpr-cVzbKOnAkUyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=llm+fine-tuning+best+practices&sca_esv=18a60b01d"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.5944,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 495.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.3606,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'llm fine-tuning best practices' are not displayed",
+     "page_changed": null,
+     "latency_ms": 481.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509951005"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llm fine-tuning best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509951005"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9124,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for llm fine-tuning best practices",
+     "page_changed": null,
+     "latency_ms": 575.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509951005"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:28",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509951005"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c6c0f6f5d825120b",
+   "source": "google",
+   "goal": "Search Google for how to debug rabbitmq and open the results.",
+   "fingerprint": 32472,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 18517,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2brabbitmq%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Brabbitmq%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsJbY6wuo96bUEE-92Jy-2z9OxfMg%253A1790510028071%26source%3Dhp%26ei%3DzAO5ao_fAq3dkPIPtY7cyAs%26iflsig%3DABILxe8AAAAAarkR3AJXVxwD3hWPpBjqUMOfYobbLNiR%26ved%3D0ahUKEwiP9cDR2Y6XAxWtLkQIHTUHF7kQ4dUDCDI%26oq%3Dhow%2Bto%2Bdebug%2Brabbitmq%26gs_lp%3DEgdnd3Mtd2l6IhVob3cgdG8gZGVidWcgcmFiYml0bXEyBhAAGBYYHjIGEAAYFhgeMggQABiJBRiiBDIFEAAY7wVIwSRQD1gPcAF4AJABAJgB2QGgAdkBqgEDMi0xuAEMyAEA-AEBmAICoALiAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QV312uHRvCkYZIHBTEuMC4xoAePArIHAzItMbgH3gHCBwUwLjEuMcgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNKH5NUGIjDTWa1jRqFpFcfhkbdzG_U01RlMdqyVEowPgWpIdhmgRCLDnSkFq_0J9wUZm5ss6WUyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+rabbitmq&sca_esv=18a60b01d202c9ee&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8914,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug rabbitmq",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 568.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510028388"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8814,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'how to debug rabbitmq' are not displayed",
+     "page_changed": null,
+     "latency_ms": 673.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510028388"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:27",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510028388"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ed30f43e9256caf6",
+   "source": "google",
+   "goal": "Search Google for rust open source alternatives and open the results.",
+   "fingerprint": 32472,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14857,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drust%2bopen%2bsource%2balternatives%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drust%2Bopen%2Bsource%2Balternatives%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuEDxAU3gmO8DTvS-Xr3Aq9SYZO-Q%253A1790510098783%26source%3Dhp%26ei%3DEgS5av7TLszgkPIP3tvJgAU%26iflsig%3DABILxe8AAAAAarkSIo5o0l_WaYe7A4ZEhkdyOpK_mZVY%26ved%3D0ahUKEwj-pJ3z2Y6XAxVMMEQIHd5tElAQ4dUDCDI%26uact%3D5%26oq%3Drust%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ih1ydXN0IG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBTIFECEYnwVI_gdQD1gPcAF4AJABAJgB6wGgAesBqgEDMi0xuAEDyAEA-AEBmAICoAL3AagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QX5vHCvl7GAupIHBTEuMC4xoAeFB7IHAzItMbgH8wHCBwMyLTLIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJWI5NUGIjCH31QRpJ2DITc7EEsmiPPEBQ3Eyo2fqkS-dSOFkik6tfDKvpDOE4KejeLcjgslvskyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=rust+open+source+alternatives&sca_esv=18a60b01d2"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8978,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rust open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 524.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510099031"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9071,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 629.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510099031"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-346f791fc4fe834e",
+   "source": "google",
+   "goal": "First search Google for typescript security vulnerabilities, then search Google for vllm cheat sheet.",
+   "fingerprint": 32472,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14657,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dtypescript%2bsecurity%2bvulnerabilities%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtypescript%2Bsecurity%2Bvulnerabilities%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntKG4QplqDv6UhNkEFSJxsyYcZVoA%253A1790510165774%26source%3Dhp%26ei%3DVQS5aricLvbDkPIPucjw4Aw%26iflsig%3DABILxe8AAAAAarkSZeE5VBBJrBudTRumRhRDenoja7p0%26ved%3D0ahUKEwj4mpaT2o6XAxX2IUQIHTkkHMwQ4dUDCDI%26uact%3D5%26oq%3Dtypescript%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IiN0eXBlc2NyaXB0IHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllczIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCBAAGIAEGKIEMggQABiJBRiiBDIFEAAY7wUyCBAAGIkFGKIESOQHUBBYEHABeACQAQCYAeQBoAHkAaoBAzItMbgBA8gBAPgBAZgCAqAC7QGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFIV-6x6Z9LiaSBwUxLjAuMaAH8wSyBwMyLTG4B-kBwgcFMC4xLjHIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNiI5NUGIjDaMB91VkGKPjDESCVem5I1jky6gGs6hLv6J2VzdfipvzhWl8LyuZygOzHtPKUibyEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=typescript+security+vulnerabilities&sca_esv=18a6"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8729,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "typescript security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 517.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510165949"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9063,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 601.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510165949"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c0e88975350a9d69",
+   "source": "google",
+   "goal": "Search Google for how to debug vllm and open the results.",
+   "fingerprint": 32472,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 22917,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bvllm%26sca_esv%3d18a6",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bvllm%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntyEYZzSOdRNgCJ7fyV6GoJTXSnLQ%253A1790510232588%26source%3Dhp%26ei%3DmAS5arnRItqWkPIP7tu0kQ8%26iflsig%3DABILxe8AAAAAarkSqPJfJnHozceSVA653BgcwGVCk7qT%26ved%3D0ahUKEwi5_YOz2o6XAxVaC0QIHe4tLfIQ4dUDCDI%26oq%3Dhow%2Bto%2Bdebug%2Bvllm%26gs_lp%3DEgdnd3Mtd2l6IhFob3cgdG8gZGVidWcgdmxsbTIGEAAYFhgeMggQABiABBiiBDIFEAAY7wUyBRAAGO8FSNlGUKAlWKAlcAJ4AJABAJgB3AGgAdwBqgEDMi0xuAEMyAEA-AEBmAIDoALpAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QUS4aJSSM586ZIHBTIuMC4xoAeZArIHAzItMbgH4gHCBwUwLjEuMsgHCYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKOJ5NUGIjBqjpwU6wBrTZ4OAZLZ14n3KHmyfBEM5xvNn-4aR-wuBPJQxrsCzRQiNlvLit7TbmcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+vllm&sca_esv=18a60b01d202c9ee&hl=en"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.3971,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 616.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510232738"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.857,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 604.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510232738"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.7276,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'how to debug vllm'",
+     "page_changed": null,
+     "latency_ms": 616.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510232738"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug vllm",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510232738"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8808,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results listing for \"how to debug vllm\" (page shows only the homepage with autocomplete suggestions)",
+     "page_changed": null,
+     "latency_ms": 655.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510232738"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510232738"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-77c581c4b527a2fa",
+   "source": "google",
+   "goal": "First search Google for tensorflow release notes, then search Google for zig best practices.",
+   "fingerprint": 32472,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14659,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dtensorflow%2brelease%2bnotes%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtensorflow%2Brelease%2Bnotes%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv5NDsYIECInssuYGITpJyXwiKlcQ%253A1790510307656%26source%3Dhp%26ei%3D4wS5aqr9Jtegur8Pn5-OqA0%26iflsig%3DABILxe8AAAAAarkS88adfJM_KasxEuDZLau6ZFAtpzWD%26ved%3D0ahUKEwjq-unW2o6XAxVXkO4BHZ-PA9UQ4dUDCDI%26uact%3D5%26oq%3Dtensorflow%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6Ihh0ZW5zb3JmbG93IHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyCBAAGIkFGKIESIQIUAtYC3ABeACQAQCYAd0BoAHdAaoBAzItMbgBA8gBAPgBAZgCAqAC5gGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDA_EFdmJSZG_gqO-SBwUxLjAuMaAHuwSyBwMyLTG4B-MBwgcFMC4xLjHIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOaJ5NUGIjD8l5Dz16CdlOPXzS-JyVVcx3w86_r0uhFSbg_hrLyc3xAOmj-zls9ZHTcggr6hGHYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=tensorflow+release+notes&sca_esv=18a60b01d202c9e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8799,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 529.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510307813"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9045,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 634.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510307813"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f589ce376b92b930",
+   "source": "google",
+   "goal": "Search Google for docker cheat sheet and open the results.",
+   "fingerprint": 32472,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15097,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddocker%2bcheat%2bsheet%26sca_esv%3d18a60",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddocker%2Bcheat%2Bsheet%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntlvS-KBPj_0h7o3ClZoF5Ymgr8qw%253A1790510374483%26source%3Dhp%26ei%3DJgW5atSWHNmmkPIPoPPCgQw%26iflsig%3DABILxe8AAAAAarkTNhP6fCbMt9ZVDwv1SegjulFPlCWD%26ved%3D0ahUKEwjUwdj22o6XAxVZE0QIHaC5MMAQ4dUDCDI%26uact%3D5%26oq%3Ddocker%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhJkb2NrZXIgY2hlYXQgc2hlZXQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB5I3whQD1gPcAF4AJABAJgB1AGgAdQBqgEDMi0xuAEDyAEA-AEBmAICoALgAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QV__7LWQl78JpIHBTEuMC4xoAemBbIHAzItMbgH2wHCBwMyLTLIBweACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKmK5NUGIjBYT3QiWTx7hbLObTi3aO7XUb_3cTFBCma0YWtlc7ZRFyS50RghwsduqRKlVaJtTEcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=docker+cheat+sheet&sca_esv=18a60b01d202c9ee&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8767,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "docker cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 487.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510374648"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8662,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 721.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510374648"
+    }
+   ]
+  }
+ ]
+}

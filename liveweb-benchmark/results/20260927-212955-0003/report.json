@@ -1,0 +1,567 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 96241,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:38:17+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.8,
+  "mean_duration_ms": 16497,
+  "decision_latency_ms": {
+   "p50": 568.5,
+   "p95": 630.2
+  },
+  "step_outcomes": {
+   "executed": 18,
+   "refused-empty-enter": 2,
+   "done-rejected": 2
+  },
+  "low_confidence_steps": 2,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.8
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-54eef1b8bccef599",
+   "source": "google",
+   "goal": "First search Google for rabbitmq security vulnerabilities, then search Google for grafana release notes.",
+   "fingerprint": 96241,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14907,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drabbitmq%2bsecurity%2bvulnerabilities%26",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drabbitmq%2Bsecurity%2Bvulnerabilities%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntV2O6toXj-UHl5r7_U8W5E9XNenw%253A1790515799038%26source%3Dhp%26ei%3DVxq5aoR6iMCQ8g-ThNnJDw%26iflsig%3DABILxe8AAAAAarkoZ9w_ix59Y6s-_I8aIaxIk837Qjgc%26ved%3D0ahUKEwjEgamR746XAxUIIEQIHRNCNvkQ4dUDCCE%26uact%3D5%26oq%3Drabbitmq%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IiFyYWJiaXRtcSBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMggQABiJBRiiBDIIEAAYgAQYogQyCBAAGIAEGKIESMMHUBZYFnABeACQAQCYAYICoAGCAqoBAzItMbgBA8gBAPgBAZgCAqACjAKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDB_EFTsMKPmYtVr-SBwUxLjAuMaAH0gSyBwMyLTG4B4UCwgcFMC4xLjHIBweACAE%26sclient%3Dgws-wiz%26sei%3DWRq5avm3Otequr8Pw7-S8QM&hl=en&q=EgQm0XtnGNq05NUGIjBlnHBhH5znMvgnKeSHnlqV2p46bNLtbIn0F_0y4LEFog3p8ygFbWThpS9HzeSTPbgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=rabbitmq+security+vulnerabilities&sca_esv=3e3a42"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8996,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rabbitmq security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 493.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9046,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 568.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515800873"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-e9cbbad8a9db6028",
+   "source": "google",
+   "goal": "Search Google for express open source alternatives and open the results.",
+   "fingerprint": 96241,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14710,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dexpress%2bopen%2bsource%2balternatives%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dexpress%2Bopen%2Bsource%2Balternatives%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuyjIu6idEQH-n4NL4XzZzs4Jsh9w%253A1790515866376%26source%3Dhp%26ei%3Dmhq5asO-FfjIkPIP_tvG2Ao%26iflsig%3DABILxe8AAAAAarkoqgpr95o13-VVgZ8EMIFzqeqn3oLc%26ved%3D0ahUKEwjD87ax746XAxV4JEQIHf6tEasQ4dUDCCE%26uact%3D5%26oq%3Dexpress%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiBleHByZXNzIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMggQABiJBRiiBDIFEAAY7wUyCBAAGIkFGKIESNoHUDRYNHABeACQAQCYAecBoAHnAaoBAzItMbgBA8gBAPgBAZgCAqAC7wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBfEFWULyCusGNpySBwUxLjAuMaAHywSyBwMyLTG4B-kBwgcFMC4xLjHIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJ215NUGIjAdUy33-OGzXVCOgVvgQ5OVZQXxY5-4CcG9nfl-9CSPFBWAZXqFauvuaThLYOHQbIIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=express+open+source+alternatives&sca_esv=3e3a42b"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8856,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "express open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 478.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8902,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 570.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515868072"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ec3f00938a28677d",
+   "source": "google",
+   "goal": "Search Google for how to debug swift and open the results.",
+   "fingerprint": 96241,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 22806,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bswift%26sca_esv%3d3e3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bswift%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntsrhoyjZjICHVMOWZd8XEz5n0-1A%253A1790515933509%26source%3Dhp%26ei%3D3Rq5au7VHeiiur8P8_XJkQs%26iflsig%3DABILxe8AAAAAarko7dHrM1ujoZkebb1FsmK-T_k1raGQ%26ved%3D0ahUKEwiuuLjR746XAxVoke4BHfN6MrIQ4dUDCCE%26oq%3Dhow%2Bto%2Bdebug%2Bswift%26gs_lp%3DEgdnd3Mtd2l6IhJob3cgdG8gZGVidWcgc3dpZnQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMgUQABjvBUjkRVC4GVi4GXADeACQAQCYAaECoAGhAqoBAzItMbgBDMgBAPgBAZgCBKACqwKoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDAvEFxnqdzZi7syaSBwUzLjAuMaAHpgWyBwMyLTG4B6UCwgcDMS4zyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOi15NUGIjDEfOJGzeLmdCWPTFCUAY2q0W2gzHvVkZDA8--z9459TiOSvW5b0FSpAiN4HjDhv58yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+swift&sca_esv=3e3a42b854afc954&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.857,
+     "target": "7",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 473.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515933939"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8996,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 627.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515933939"
+    },
+    {
+     "step": 3,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2355,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 571.2,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515933939"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.2936,
+     "target": "7",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 569.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515933939"
+    },
+    {
+     "step": 5,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.4481,
+     "target": "7",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug swift",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 660.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515933939"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.8808,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'how to debug swift' (page shows only the Google search box with autocomplete suggestions, no results listed)",
+     "page_changed": null,
+     "latency_ms": 596.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515933939"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:29",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515933939"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-11ac6518a4822257",
+   "source": "google",
+   "goal": "First search Google for vllm tutorial, then search Google for mongodb security vulnerabilities.",
+   "fingerprint": 96241,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14685,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvllm%2btutorial%26sca_esv%3d3e3a42b854af",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvllm%2Btutorial%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntw4aLvsWjDnYkEvwj0o3WvexhiLw%253A1790516008549%26source%3Dhp%26ei%3DKBu5ap2rIJ29kPIP3qvTqA8%26iflsig%3DABILxe8AAAAAarkpOG_1NPuN7_0LMA17YjLThC2F2PKj%26ved%3D0ahUKEwid35z1746XAxWdHkQIHd7VFPUQ4dUDCCE%26uact%3D5%26oq%3Dvllm%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig12bGxtIHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSPIHUA5YDnABeACQAQCYAfgBoAH4AaoBAzItMbgBA8gBAPgBAZgCAqAC_QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDAvEFRKKUmDBfYqySBwUxLjAuMaAH7wSyBwMyLTG4B_sBwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKu25NUGIjDRSzOEu3Wa7_jOtWW0RhuEQbrO9CHVmsc-6p6fMq65A_bs2E63W6tgf0IQJe-d0xEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vllm+tutorial&sca_esv=3e3a42b854afc954&hl=en&gl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8823,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vllm tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 485.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516008898"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8611,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 630.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516008898"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-12358e709c6dc17e",
+   "source": "google",
+   "goal": "Search Google for mysql interview questions and open the results.",
+   "fingerprint": 96241,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 20512,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmysql%2binterview%2bquestions%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmysql%2Binterview%2Bquestions%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv6UsTjw40CBfD6tYNr6LFe-eoV8Q%253A1790516075401%26source%3Dhp%26ei%3Daxu5asaPF8bbkPIPjo3DkAI%26iflsig%3DABILxe8AAAAAarkpe3S9Lw5wDFpQ7JGUMJoBTdJ_B0Cw%26ved%3D0ahUKEwiG8YyV8I6XAxXGLUQIHY7GECIQ4dUDCCE%26oq%3Dmysql%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhlteXNxbCBpbnRlcnZpZXcgcXVlc3Rpb25zMgUQABiABDILEC4Y-wYY8gYYjwcyCBAAGIAEGLQHMgUQABiABDIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyBRAAGIAEMggQABiABBi0B0jhNVANWA1wAXgAkAEAmAGFAqABhQKqAQMyLTG4AQzIAQD4AQGYAgKgAosCqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QUMgq2noCcNopIHBTEuMC4xoAeECLIHAzItMbgHiALCBwMwLjLIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPO25NUGIjBd92zlHtZyNH3_uZP6wWR3kouofjN8sZ8wSS36A66BMJuZK3fB5f7HCBSWBPeOnioyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mysql+interview+questions&sca_esv=3e3a42b854afc9"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8939,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mysql interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 482.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516075691"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8754,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results listing for 'mysql interview questions' (page shows only the search box with autocomplete suggestions, no actual results)",
+     "page_changed": null,
+     "latency_ms": 594.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516075691"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:32",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516075691"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-63078bee0960d9eb",
+   "source": "google",
+   "goal": "Search Google for grafana migration guide and open the results.",
+   "fingerprint": 96241,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14837,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgrafana%2bmigration%2bguide%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgrafana%2Bmigration%2Bguide%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvrJSvWLJy5sT1YHT-4P0YKU6WBYQ%253A1790516148087%26source%3Dhp%26ei%3DtBu5asraA-rNkPIPhNbg0Ac%26iflsig%3DABILxe8AAAAAarkpxPCcHhWV2_LaXwHtzXOmE9jmNBJT%26ved%3D0ahUKEwjKhOG38I6XAxXqJkQIHQQrGHoQ4dUDCCE%26uact%3D5%26oq%3Dgrafana%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhdncmFmYW5hIG1pZ3JhdGlvbiBndWlkZTIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIESLkHUAtYC3ABeACQAQCYAfoBoAH6AaoBAzItMbgBA8gBAPgBAZgCAqACgAKoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCmAMC8QUhJrAn_XtB8JIHBTEuMC4xoAf1ArIHAzItMbgH_QHCBwMwLjLIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLa35NUGIjDSeUQ36jiJkb8rg1gxvV1rEcVxVu3CAQsFfdnAL1cmAXS4mBK2g4uFa6rz-lA7oqAyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=grafana+migration+guide&sca_esv=3e3a42b854afc954"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9005,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "grafana migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 513.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516148350"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9078,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 575.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516148350"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5da389a79f9cf14c",
+   "source": "google",
+   "goal": "First search Google for memory leak debugging interview questions, then search Google for laravel interview questions.",
+   "fingerprint": 96241,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14693,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmemory%2bleak%2bdebugging%2binterview%2b",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmemory%2Bleak%2Bdebugging%2Binterview%2Bquestions%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuLyWOwBjk2eG-G92K9UxvNxAoNoA%253A1790516215080%26source%3Dhp%26ei%3D9xu5as7kA9qwur8PufO_uQo%26iflsig%3DABILxe8AAAAAarkqB-3ya01cCqUOzAbL77OqdgL1YCCs%26ved%3D0ahUKEwiOvNrX8I6XAxVamO4BHbn5L6cQ4dUDCCE%26uact%3D5%26oq%3Dmemory%2Bleak%2Bdebugging%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IiltZW1vcnkgbGVhayBkZWJ1Z2dpbmcgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKsCMgUQIRirAkiSB1AQWBBwAXgAkAEAmAGOAqABjgKqAQMyLTG4AQPIAQD4AQGYAgKgApQCqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBe1upS918uXYkgcFMS4wLjGgB-4GsgcDMi0xuAeRAsIHAzEuMcgHA4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPm35NUGIjBREDiFcvqZeR0Q7ytSfUUaiOSo0I60akwOxGhN5itEM1elvrrFalWvKMJXA643NKwyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=memory+leak+debugging+interview+questions&sca_es"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.859,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "memory leak debugging interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 498.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516215390"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9177,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 527.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516215390"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-33cf219efabd7040",
+   "source": "google",
+   "goal": "First search Google for how to debug refactoring, then search Google for kafka release notes.",
+   "fingerprint": 96241,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14826,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2brefactoring%26sca_esv",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Brefactoring%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsO1hkbG0Pye0ftgHADixlYMuawzg%253A1790516281966%26source%3Dhp%26ei%3DORy5aqr0OLLMkPIP8bvH0A4%26iflsig%3DABILxe8AAAAAarkqSdyrrwChvuI24rI0lx0Z9Q6mVR4k%26ved%3D0ahUKEwjq9Mv38I6XAxUyJkQIHfHdEeoQ4dUDCCE%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Brefactoring%26gs_lp%3DEgdnd3Mtd2l6Ihhob3cgdG8gZGVidWcgcmVmYWN0b3JpbmcyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSNcHUAxYDHABeACQAQCYAZACoAGQAqoBAzItMbgBA8gBAPgBAZgCAqAClwKoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDAvEFOWjLI7Y1GwOSBwUxLjAuMaAH3gmyBwMyLTG4B5QCwgcDMC4yyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLy45NUGIjAYLu-8pavamVBJOGry8riKpLD2Z3hsEO1RVRrFE0kDI7WXSNEykDTPHanXJVqKjYUyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+refactoring&sca_esv=3e3a42b854afc95"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8779,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug refactoring",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 536.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516282226"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9092,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 593.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516282226"
+    }
+   ]
+  }
+ ]
+}

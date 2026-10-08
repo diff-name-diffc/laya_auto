@@ -1,0 +1,582 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 32844,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:29:32+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.9,
+  "mean_duration_ms": 17020,
+  "decision_latency_ms": {
+   "p50": 548.3,
+   "p95": 652.6
+  },
+  "step_outcomes": {
+   "executed": 18,
+   "stale": 1,
+   "refused-empty-enter": 2,
+   "done-rejected": 2
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.9
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-36a2a3c82d6e5cdd",
+   "source": "google",
+   "goal": "First search Google for swift performance optimization, then search Google for kubernetes best practices.",
+   "fingerprint": 32844,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15156,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dswift%2bperformance%2boptimization%26sca",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dswift%2Bperformance%2Boptimization%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvEfhp52DVP34v3h0BPa3hhB3Tzxg%253A1790515269953%26source%3Dhp%26ei%3DRRi5auLsOLXPkPIP9Yno6QM%26iflsig%3DABILxe8AAAAAarkmVTB1JrP107w6M57VtJlkTR1KuI4I%26ved%3D0ahUKEwiio4SV7Y6XAxW1J0QIHfUEOj0Q4dUDCDI%26uact%3D5%26oq%3Dswift%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ih5zd2lmdCBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUiqB1ASWBJwAXgAkAEAmAHxAaAB8QGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAvoBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwbiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBaMS2gHiPNyukgcFMS4wLjGgB7MDsgcDMi0xuAfzAcIHBTAuMS4xyAcGgAgB%26sclient%3Dgws-wiz%26sei%3DSBi5aqCYN4_fkPIPmsaj8Qc&hl=en&q=EgQm0XtnGMmw5NUGIjDUtYWCY168yZd8Vdr40KAmp7VWv8kmeP8DIf7yEipJeg61s2d1WZ9288LHhjBKVCIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=swift+performance+optimization&sca_esv=3e3a42b85"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9061,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "swift performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 511.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9003,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 548.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515271660"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c9e975dd8efe173a",
+   "source": "google",
+   "goal": "First search Google for react migration guide, then search Google for redis tutorial.",
+   "fingerprint": 32844,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 23540,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dreact%2bmigration%2bguide%26sca_esv%3d3e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dreact%2Bmigration%2Bguide%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuyF7FrxTyO8TZQw-MarO4XVvDDaA%253A1790515337576%26source%3Dhp%26ei%3DiRi5apHUIfe5kPIP49bY4As%26iflsig%3DABILxe8AAAAAarkmmWfXYGwrpLeDPtP1XQ9Sr60eUA3u%26ved%3D0ahUKEwjRvKO17Y6XAxX3HEQIHWMrFrwQ4dUDCDI%26uact%3D5%26oq%3Dreact%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhVyZWFjdCBtaWdyYXRpb24gZ3VpZGUyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSNZDUBNYE3ACeACQAQCYAdkBoAHZAaoBAzItMbABALgBA8gBAPgBAZgCA6AC4AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA-IDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEF8xAUWfEC8GuSBwUyLjAuMaAHpwWyBwMyLTG4B9sBwgcDMS4yyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJWx5NUGIjBBBY19vSHeKPCGBjFJqc5m7tRVYh4ilsqqQmL3POJ4iBcPXurmAYguA_yO_F9vgkgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=react+migration+guide&sca_esv=3e3a42b854afc954&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9104,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "react migration guide",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 502.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8815,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 490.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515339087"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8792,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "react migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 556.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515339087"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9013,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "react migration guide",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 581.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515339087"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515339087"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-08fdc54da99e386f",
+   "source": "google",
+   "goal": "First search Google for design patterns open source alternatives, then search Google for zig performance optimization.",
+   "fingerprint": 32844,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14879,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddesign%2bpatterns%2bopen%2bsource%2balte",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddesign%2Bpatterns%2Bopen%2Bsource%2Balternatives%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsn9KJomhLEwDQZrquhT2tsQebJiw%253A1790515413554%26source%3Dhp%26ei%3D1Ri5apu-ILPakPIP__2RiQM%26iflsig%3DABILxe8AAAAAarkm5VoRrnLG1et-UejDmg0UeVAHqcm8%26ved%3D0ahUKEwjb_MDZ7Y6XAxUzLUQIHf9-JDEQ4dUDCDI%26uact%3D5%26oq%3Ddesign%2Bpatterns%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IihkZXNpZ24gcGF0dGVybnMgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABSLAHUA5YDnABeACQAQCYAfIBoAHyAaoBAzItMbABALgBA8gBAPgBAZgCAqAC9wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDAuIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFN0YAq_1NyUKSBwUxLjAuMaAH4QOyBwMyLTG4B_QBwgcDMS4xyAcCgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNix5NUGIjAQSHpoU_Ag2ST7cLLFyPe_dsgd-6ywdkL1KnpCqk7JG8wMn-CD6xwD6fxbmMRSylwyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=design+patterns+open+source+alternatives&sca_esv"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7238,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "design patterns open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 544.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515413946"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9079,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 566.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515413946"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-24bd29b462f47808",
+   "source": "google",
+   "goal": "Search Google for how to debug zig and open the results.",
+   "fingerprint": 32844,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 20553,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bzig%26sca_esv%3d3e3a4",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bzig%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsWRXg4Bypi-KR8oo5QuoetBC8VqQ%253A1790515480656%26source%3Dhp%26ei%3DGBm5asrkJdy7kPIP5LPriA0%26iflsig%3DABILxe8AAAAAarknKAbaAb1SECi2QZYBCd1D4G5r7oir%26oq%3Dhow%2Bto%2Bdebug%2Bzig%26gs_lp%3DEgdnd3Mtd2l6IhBob3cgdG8gZGVidWcgemlnKgYIABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMggQABiJBRiiBEiWNlCNLliNLnACeACQAQCYAfwBoAH8AaoBAzItMbABALgBAcgBAPgBAZgCA6AChAKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA-IDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEF0APTKdEokqeSBwUyLjAuMaAHowOyBwMyLTG4B_4BwgcDMC4zyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKGy5NUGIjA0OiyK3WNx3AwXRnCxJxafsu3RXtW8iURmRzWdHFEJEBZS7P5mGjKj7eCf01t3IHQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+zig&sca_esv=3e3a42b854afc954&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.2854,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 506.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515480961"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8709,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 564.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515480961"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8166,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"how to debug zig\"; opened results",
+     "page_changed": null,
+     "latency_ms": 574.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515480961"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug zig",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515480961"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.6842,
+     "target": "12",
+     "target_label": "how to debug zig",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 617.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515480961"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d9dfff2afcab3b4e",
+   "source": "google",
+   "goal": "First search Google for java release notes, then search Google for how to debug golang.",
+   "fingerprint": 32844,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14548,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bgolang%26sca_esv%3d3e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bgolang%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnusjN0fyxgVxuZJwUvVfPkK-rQ57g%253A1790515553364%26source%3Dhp%26ei%3DYRm5arrkFO3FkPIP187SkA4%26iflsig%3DABILxe8AAAAAarkncb0tyf9_bzP0TcOMExupTPB6Qo2G%26ved%3D0ahUKEwj6mJac7o6XAxXtIkQIHVenFOIQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bgolang%26gs_lp%3DEgdnd3Mtd2l6IhNob3cgdG8gZGVidWcgZ29sYW5nMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSNsHUA5YDnABeACQAQCYAf4BoAH-AaoBAzItMbABALgBA8gBAPgBAZgCAqACgwKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDAuIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFdAp_kHfiU0eSBwUxLjAuMaAHswWyBwMyLTG4B4ACwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOSy5NUGIjAk1IXIV-k3J3NDLda4BHaAdtKYehOBEYLb3SyaX0X3J3DpIH2SKAw5TnvEG9shc64yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+golang&sca_esv=3e3a42b854afc954&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.866,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug golang",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 519.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515553618"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8976,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 602.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515553618"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-978347f98442cf9d",
+   "source": "google",
+   "goal": "Search Google for ci/cd pipelines interview questions and open the results.",
+   "fingerprint": 32844,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15062,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dci%252fcd%2bpipelines%2binterview%2bques",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dci%252Fcd%2Bpipelines%2Binterview%2Bquestions%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsyO3LHRXiHEsg5bhJceSa3ECax5w%253A1790515620087%26source%3Dhp%26ei%3DpBm5apKEBOeNvMcPqdLNoAw%26iflsig%3DABILxe8AAAAAarkntLEDqPfpgAfx3Tan3S-0KgK4EO7Q%26oq%3Dci%252Fcd%2Bpipelines%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IiNjaS9jZCBwaXBlbGluZXMgaW50ZXJ2aWV3IHF1ZXN0aW9ucyoFCAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSLwIUA5YDnABeACQAQCYAfoBoAH6AaoBAzItMbABALgBAcgBAPgBAZgCAqACgQKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA-IDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFg4rBUkE2NyOSBwUxLjAuMaAH7giyBwMyLTG4B_0BwgcDMC4yyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKaz5NUGIjCLGfGyHbOQ2oPLzR8Q4u2iPfkz_iuqhggHHMj4m_kuM8GhjxPhOYeJ-nBQJQUCzK4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=ci%2Fcd+pipelines+interview+questions&sca_esv=3e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9043,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ci/cd pipelines interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 531.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515620322"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.8005,
+     "target": "12",
+     "target_label": "ci/cd pipelines interview questions",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 670.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515620322"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d27e95935b7704aa",
+   "source": "google",
+   "goal": "Search Google for typescript best practices and open the results.",
+   "fingerprint": 32844,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14681,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dtypescript%2bbest%2bpractices%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtypescript%2Bbest%2Bpractices%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnthtPeR_oJhd1LS6jjnkFOs93cI-Q%253A1790515687324%26source%3Dhp%26ei%3D5xm5apu9Et_ZkPIP6-32kQU%26iflsig%3DABILxe8AAAAAarkn91-IZOjG8J9DSaSWY0BwR_e004BQ%26ved%3D0ahUKEwjbzIbc7o6XAxXfLEQIHeu2PVIQ4dUDCDI%26uact%3D5%26oq%3Dtypescript%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6Ihl0eXBlc2NyaXB0IGJlc3QgcHJhY3RpY2VzMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkiLCFAMWAxwAXgAkAEAmAH1AaAB9QGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAvoBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBeDsX5RKRLsekgcFMS4wLjGgB_YFsgcDMi0xuAf4AcIHAzAuMsgHA4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOqz5NUGIjBkPx5Hd4rUiI9VQ138Twyn1uqiY8153kkDGA55swlK5mqn8Q3ZNRkxGOpeRrLvYCkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=typescript+best+practices&sca_esv=3e3a42b854afc9"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.905,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "typescript best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 564.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515687736"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8973,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 652.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515687736"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-104eeeabc2e336dd",
+   "source": "google",
+   "goal": "Search Google for postgresql release notes and open the results.",
+   "fingerprint": 32844,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 17741,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpostgresql%2brelease%2bnotes%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpostgresql%2Brelease%2Bnotes%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntTgqEp0NWAk8hPQZZDkgvsE-49kA%253A1790515754173%26source%3Dhp%26ei%3DKhq5auWfCYPGkPIP6ODGgA0%26iflsig%3DABILxe8AAAAAarkoOkXtxJc7s575bkK6GF9JyF2EPw1Y%26ved%3D0ahUKEwjl3Pb77o6XAxUDI0QIHWiwEdAQ4dUDCDI%26oq%3Dpostgresql%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6Ihhwb3N0Z3Jlc3FsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSNUeUBBYEHABeACQAQCYAesBoAHrAaoBAzItMbABALgBDMgBAPgBAZgCAqAC8gGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBWa8qveFuI3QkgcFMS4wLjGgB7gFsgcDMi0xuAfuAcIHAzAuMsgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGK-05NUGIjB89nLsQkynA0TW88ToJQPpwQZhGqPlN_aqI7tvbPlwf0_-nZCAnNNFcypRb5r4LhcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=3e3a42b854afc95"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9081,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 512.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515754429"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8227,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for \"postgresql release notes\" — page only shows the query typed in the search box with autocomplete suggestions, no results listed",
+     "page_changed": null,
+     "latency_ms": 564.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515754429"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:35",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515754429"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,544 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "humanize": true,
+  "headless": true,
+  "fingerprint": "per-task-stable",
+  "max_steps": 25,
+  "delay": 8.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "router",
+   "pool_size": 1,
+   "models": [
+    "english",
+    "multilingual",
+    "typed-decisions"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T02:46:11+0800",
+  "n_tasks": 12,
+  "success": 1,
+  "success_rate": 0.083,
+  "verified": 1,
+  "verified_rate": 0.083,
+  "found_but_not_stopped": 0,
+  "mean_steps": 1.0,
+  "mean_duration_ms": 515,
+  "decision_latency_ms": {
+   "p50": 473.9,
+   "p95": 529.2
+  },
+  "step_outcomes": {
+   "done": 12
+  },
+  "low_confidence_steps": 8,
+  "by_source": {
+   "github": {
+    "n": 4,
+    "success": 1,
+    "success_rate": 0.25,
+    "verified": 1,
+    "verified_rate": 0.25,
+    "mean_steps": 1.0
+   },
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 1.0
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "google-ai-openai",
+   "source": "google",
+   "goal": "Search Google for the latest OpenAI news and open the results.",
+   "fingerprint": 66185,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 1,
+   "total_ms": 472,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['openai']]",
+    "checks": {
+     "url": "https://www.google.com/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/",
+    "final_title": "Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "DONE",
+     "confidence": 0.2635,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 464.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-anthropic",
+   "source": "google",
+   "goal": "Search Google for recent Anthropic Claude announcements and open the results.",
+   "fingerprint": 62844,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 1,
+   "total_ms": 486,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['anthropic', 'claude']]",
+    "checks": {
+     "url": "https://www.google.com/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/",
+    "final_title": "Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "DONE",
+     "confidence": 0.2958,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 477.7,
+     "low_confidence": true,
+     "url": "https://www.google.com/"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-deepmind",
+   "source": "google",
+   "goal": "Search Google for Google DeepMind news and open the results.",
+   "fingerprint": 33187,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 1,
+   "total_ms": 473,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['deepmind']]",
+    "checks": {
+     "url": "https://www.google.com/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/",
+    "final_title": "Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "DONE",
+     "confidence": 0.2933,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 460.1,
+     "low_confidence": true,
+     "url": "https://www.google.com/"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-llm",
+   "source": "google",
+   "goal": "Search Google for the latest large language model news and open the results.",
+   "fingerprint": 17795,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 1,
+   "total_ms": 467,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['language model', 'llm']]",
+    "checks": {
+     "url": "https://www.google.com/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/",
+    "final_title": "Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "DONE",
+     "confidence": 0.2679,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 458.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-agents",
+   "source": "google",
+   "goal": "Search Google for AI agent frameworks and open the results.",
+   "fingerprint": 56149,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 1,
+   "total_ms": 467,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['agent']]",
+    "checks": {
+     "url": "https://www.google.com/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/",
+    "final_title": "Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "DONE",
+     "confidence": 0.3275,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 457.4,
+     "low_confidence": true,
+     "url": "https://www.google.com/"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-papers",
+   "source": "google",
+   "goal": "Search Google for recent AI research papers and open the results.",
+   "fingerprint": 65633,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 1,
+   "total_ms": 482,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['arxiv', 'paper']]",
+    "checks": {
+     "url": "https://www.google.com/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/",
+    "final_title": "Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "DONE",
+     "confidence": 0.2304,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 473.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-zh",
+   "source": "google",
+   "goal": "在 Google 上搜索最新的中国大模型资讯并查看搜索结果。",
+   "fingerprint": 75209,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 1,
+   "total_ms": 475,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['大模型', 'llm']]",
+    "checks": {
+     "url": "https://www.google.com/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/",
+    "final_title": "Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "DONE",
+     "confidence": 0.4196,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 467.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-opensource",
+   "source": "google",
+   "goal": "Search Google for open source AI model releases and open the results.",
+   "fingerprint": 46517,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 1,
+   "total_ms": 463,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['open source', '开源']]",
+    "checks": {
+     "url": "https://www.google.com/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/",
+    "final_title": "Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "DONE",
+     "confidence": 0.2992,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 454.7,
+     "low_confidence": true,
+     "url": "https://www.google.com/"
+    }
+   ]
+  },
+  {
+   "task_id": "github-trending-view",
+   "source": "github",
+   "goal": "Open GitHub's trending page and review today's trending repositories.",
+   "fingerprint": 84023,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 1,
+   "total_ms": 529,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "trending",
+      "stars today",
+      "built by"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "DONE",
+     "confidence": 0.3659,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 508.9,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    }
+   ]
+  },
+  {
+   "task_id": "github-trending-ai-repo",
+   "source": "github",
+   "goal": "From GitHub trending, open a repository about AI, LLMs, or machine learning, and view its README.",
+   "fingerprint": 45775,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 1,
+   "total_ms": 547,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "DONE",
+     "confidence": 0.3997,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 529.2,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    }
+   ]
+  },
+  {
+   "task_id": "github-search-llm",
+   "source": "github",
+   "goal": "Search GitHub for 'LLM agent' repositories and open the search results.",
+   "fingerprint": 31031,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 1,
+   "total_ms": 791,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['llm']]",
+    "checks": {
+     "url": "https://github.com/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://github.com/",
+    "final_title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "DONE",
+     "confidence": 0.4509,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 539.6,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    }
+   ]
+  },
+  {
+   "task_id": "github-trending-first-repo",
+   "source": "github",
+   "goal": "Open the first repository in GitHub's trending list and view its details page.",
+   "fingerprint": 51613,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 1,
+   "total_ms": 531,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "DONE",
+     "confidence": 0.3385,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 512.1,
+     "low_confidence": true,
+     "url": "https://github.com/trending"
+    }
+   ]
+  }
+ ]
+}

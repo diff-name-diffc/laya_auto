@@ -1,0 +1,492 @@
+{
+ "meta": {
+  "base_url": "http://127.0.0.1:8812",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 68281,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": null,
+  "max_steps": 25,
+  "delay": 4.0,
+  "backend": {
+   "ok": true,
+   "variant": "/Users/jk/work/python/ai/test_jev/liveweb-benchmark/finetune/work/laya-browser/code/out/laya-browser-v18d",
+   "calls": 0,
+   "tau": 0.0,
+   "escalated": 0,
+   "recent": []
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:52:15+0800",
+  "n_tasks": 6,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 3.2,
+  "mean_duration_ms": 9197,
+  "decision_latency_ms": {
+   "p50": 276.2,
+   "p95": 350.1
+  },
+  "step_outcomes": {
+   "executed": 17,
+   "stale": 1,
+   "done": 1
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "github": {
+    "n": 3,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 4.0
+   },
+   "google": {
+    "n": 3,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.3
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "google-ai-openai",
+   "source": "google",
+   "goal": "Search Google for the latest OpenAI news and open the results.",
+   "fingerprint": 68281,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14569,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dopenai%2blatest%2bnews%26sca_esv%3d3e3a4",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DOpenAI%2Blatest%2Bnews%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt0CGa6npJMojVsJOT2KeU5pHXpyA%253A1790516916043%26source%3Dhp%26ei%3DtB65avfAAaOsur8P4c2o4Ao%26iflsig%3DABILxe8AAAAAarksxK_EPuCfQU53pPvKbPI8kT518pq6%26ved%3D0ahUKEwj36vml846XAxUjlu4BHeEmCqwQ4dUDCDI%26uact%3D5%26oq%3DOpenAI%2Blatest%2Bnews%26gs_lp%3DEgdnd3Mtd2l6IhJPcGVuQUkgbGF0ZXN0IG5ld3MyCxAAGIAEGLEDGIMBMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSN0FUBBYEHABeACQAQCYAeYBoAHmAaoBAzItMbgBA8gBAPgBAZgCAqAC7gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBvEFwtQ5B30hFAKSBwUxLjAuMaAHhgWyBwMyLTG4B-gBwgcFMC4xLjHIBwaACAE%26sclient%3Dgws-wiz%26sei%3Dth65aozFLNGsur8P8JT_CA&hl=en&q=EgQm0XtnGLe95NUGIjD88naXvqLh2Y9Lif4oIKnUna1nQQByj-prEy172SJOBIyttiS2p_mOh19vaKnyDzYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=OpenAI+latest+news&sca_esv=3e3a42b854afc954&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 1.0,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "OpenAI latest news",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 491.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 1.0,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 350.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516917920"
+    }
+   ]
+  },
+  {
+   "task_id": "google-ai-papers",
+   "source": "google",
+   "goal": "Search Google for recent AI research papers and open the results.",
+   "fingerprint": 68281,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 14734,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dai%2bresearch%2bpapers%2barxiv%26sca_esv",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DAI%2Bresearch%2Bpapers%2Barxiv%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns95xCXLVq2DQ9nrpu_LZAtfGEYJQ%253A1790516981041%26source%3Dhp%26ei%3D9R65aoGHAe_LkPIPvtXk-QE%26iflsig%3DABILxe8AAAAAarktBQA7hgiwfV1dbnZq2Did8RIOYaIF%26ved%3D0ahUKEwjB1fjE846XAxXvJUQIHb4qOR8Q4dUDCDI%26oq%3DAI%2Bresearch%2Bpapers%2Barxiv%26gs_lp%3DEgdnd3Mtd2l6IhhBSSByZXNlYXJjaCBwYXBlcnMgYXJ4aXYyBhAAGBYYHjILEAAYgAQYigUYhgMyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogRIlwhQEVgRcAF4AJABAJgB_QGgAf0BqgEDMi0xuAEMyAEA-AEBmAICoAKEAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QUYi4AMQB0-ZJIHBTEuMC4xoAfAArIHAzItMbgH_wHCBwUwLjEuMcgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPe95NUGIjCo86wfBtoAcC_xOkz8fyYBVmM8zutWtyCT3lDB_LIl6BE9e0__zi7hWz4tlfKwteIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=AI+research+papers+arxiv&sca_esv=3e3a42b854afc95"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 1.0,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "AI research papers arxiv",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 280.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 1.0,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "stale: URL changed since the decision",
+     "page_changed": true,
+     "latency_ms": 301.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.5207,
+     "target": "17",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 319.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516982929"
+    }
+   ]
+  },
+  {
+   "task_id": "google-news-tab",
+   "source": "google",
+   "goal": "Search Google for OpenAI news and switch to the News results tab.",
+   "fingerprint": 68281,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14352,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dopenai%2bnews%26sca_esv%3d3e3a42b854afc9",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DOpenAI%2Bnews%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt6TIBHgR5C5yr5DpWvbvbw0nCcqw%253A1790517046184%26source%3Dhp%26ei%3DNh-5ap3jCYHdkPIPleOl6Q0%26iflsig%3DABILxe8AAAAAarktRmWxSP4rhQyqVO7hGrWhJL0TZAub%26ved%3D0ahUKEwid1oDk846XAxWBLkQIHZVxKd0Q4dUDCDI%26uact%3D5%26oq%3DOpenAI%2Bnews%26gs_lp%3DEgdnd3Mtd2l6IgtPcGVuQUkgbmV3czILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIxgVQC1gLcAF4AJABAJgBhAKgAYQCqgEDMi0xuAEDyAEA-AEBmAICoAKJAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QWgbRK_a9GQFpIHBTEuMC4xoAfDBLIHAzItMbgHhgLCBwMwLjLIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLi-5NUGIjAJqVTSgW8S8lX2GQmhWtPrAzUKijsQ1Xr37iZ42lv3yEOEXyVQOfMaz0W3iMdqP_cyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=OpenAI+news&sca_esv=3e3a42b854afc954&hl=en&gl=us"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 1.0,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "OpenAI news",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 305.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517046548"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 1.0,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 329.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517046548"
+    }
+   ]
+  },
+  {
+   "task_id": "github-trending-first-repo",
+   "source": "github",
+   "goal": "Open the first repository in GitHub's trending list and view its details page.",
+   "fingerprint": 68281,
+   "status": "repeat-loop",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 3940,
+   "error": "CLICK on the same target repeats without progress; stopping",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 1.0,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 283.9,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 1.0,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 258.6,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 1.0,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 231.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    }
+   ]
+  },
+  {
+   "task_id": "github-trending-python",
+   "source": "github",
+   "goal": "On GitHub trending, show only the Python language repositories.",
+   "fingerprint": 68281,
+   "status": "repeat-loop",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 3021,
+   "error": "CLICK on the same target repeats without progress; stopping",
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'github.com/trending/python'",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "python"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 1.0,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 258.9,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 1.0,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 230.9,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 1.0,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 230.2,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    }
+   ]
+  },
+  {
+   "task_id": "github-search-first",
+   "source": "github",
+   "goal": "Search GitHub for 'llm' and open the first repository in the results.",
+   "fingerprint": 68281,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 4564,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/search?q=llm&type=repositories",
+     "bot_challenge": false,
+     "group0": [
+      "star"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/search?q=llm&type=repositories",
+    "final_title": "Repository search results · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 1.0,
+     "target": "11",
+     "target_label": "Enter your email",
+     "kind": "fill",
+     "text": "llm",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 276.2,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7941,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 252.6,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 1.0,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 284.1,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 1.0,
+     "target": "1",
+     "target_label": "Search or jump to",
+     "kind": "fill",
+     "text": "llm",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 269.8,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 1.0,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 238.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 1.0,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 265.0,
+     "low_confidence": false,
+     "url": "https://github.com/search?q=llm&type=repositories"
+    }
+   ]
+  }
+ ]
+}

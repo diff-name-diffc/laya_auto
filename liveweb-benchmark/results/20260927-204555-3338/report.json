@@ -1,0 +1,652 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 34441,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T20:54:34+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 3.5,
+  "mean_duration_ms": 18700,
+  "decision_latency_ms": {
+   "p50": 505.3,
+   "p95": 692.4
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 2,
+   "done-rejected": 7,
+   "executed": 17
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 3.5
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-11eff1f27eb1fe7a",
+   "source": "google",
+   "goal": "Search Google for react interview questions and open the results.",
+   "fingerprint": 34441,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 22247,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dreact%2binterview%2bquestions%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dreact%2Binterview%2Bquestions%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv6_r7HEPP388EFs1KqNIa_tkm0Cw%253A1790513158594%26source%3Dhp%26ei%3DBhC5av6RI4GgkPIPtI_vkQ8%26iflsig%3DABILxe8AAAAAarkeFu9v5AnMIdv75NEjE_it4N4UAH7N%26ved%3D0ahUKEwj-rKGm5Y6XAxUBEEQIHbTHO_IQ4dUDCDI%26uact%3D5%26oq%3Dreact%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhlyZWFjdCBpbnRlcnZpZXcgcXVlc3Rpb25zMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIFEAAYgAQyBRAAGIAEMgUQABiABEjBH1AWWBZwAXgAkAEAmAG8AaABvAGqAQMwLjG4AQPIAQD4AQGYAgKgAsUBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBRtW3qMLgvwpkgcDMS4xoAe-BrIHAzAuMbgHwAHCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz%26sei%3DEBC5atfJJ5fAkPIP-PmQ0Qs&hl=en&q=EgQm0XtnGJCg5NUGIjBIs4W6xAeFPdG0pqYKGAAJgWQnhWDRgsip9CBu6-VH80dq4nREP3H0XfVYK58wJUMyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=react+interview+questions&sca_esv=75b852f910b8e5"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8996,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "react interview questions",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 561.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9058,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 473.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513160019"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8828,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for 'react interview questions' — only the empty Google homepage search box is shown",
+     "page_changed": null,
+     "latency_ms": 486.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513160019"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "react interview questions",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513160019"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9083,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for 'react interview questions' is not displayed — only the Google search box with autocomplete suggestions is shown, so the searc",
+     "page_changed": null,
+     "latency_ms": 637.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513160019"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513160019"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3631ab5cf78dec33",
+   "source": "google",
+   "goal": "Search Google for how to debug llama.cpp and open the results.",
+   "fingerprint": 34441,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 22232,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bllama.cpp%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bllama.cpp%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnttmtCUlRHoOSXpa-P1n36IECIgsA%253A1790513233258%26source%3Dhp%26ei%3DURC5arCWDY-ikPIPxvXSGA%26iflsig%3DABILxe8AAAAAarkeYV0JyydoJBKXZ8FSXbH-DoGPkyqQ%26ved%3D0ahUKEwjwgu3J5Y6XAxUPEUQIHca6FAMQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bllama.cpp%26gs_lp%3DEgdnd3Mtd2l6IhZob3cgdG8gZGVidWcgbGxhbWEuY3BwMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBUi9IlANWA1wAXgAkAEAmAHgAaAB4AGqAQMyLTG4AQPIAQD4AQGYAgKgAu4BqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBStaaHHNnG1OkgcFMS4wLjGgB7IKsgcDMi0xuAfqAcIHAzItMsgHB4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNug5NUGIjAXYDGaxxjBcs5OYUQydhiaUC7m6T_wEfGwis2tjrOjFxpYcHVt2ZIcsWp70KbNQOsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+llama.cpp&sca_esv=75b852f910b8e50f&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8319,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug llama.cpp",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 510.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8685,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'how to debug llama.cpp'",
+     "page_changed": null,
+     "latency_ms": 468.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513234796"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug llama.cpp",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513234796"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9151,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for 'how to debug llama.cpp' is not displayed; only the Google homepage with a typed query and autocomplete suggestions is visible",
+     "page_changed": null,
+     "latency_ms": 635.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513234796"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513234796"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-835761ea1175c206",
+   "source": "google",
+   "goal": "First search Google for angular open source alternatives, then search Google for c++ open source alternatives.",
+   "fingerprint": 34441,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14768,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dangular%2bopen%2bsource%2balternatives%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dangular%2Bopen%2Bsource%2Balternatives%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt8nYM52Ra0t_SYyuU6D_G9sImYnw%253A1790513307921%26source%3Dhp%26ei%3DmxC5atiwNoDOkPIPurHv0QQ%26iflsig%3DABILxe8AAAAAarkeq4YfxMtlfMTARPSAAcXvFtYAjeKB%26ved%3D0ahUKEwiY6rrt5Y6XAxUAJ0QIHbrYO0oQ4dUDCDI%26uact%3D5%26oq%3Dangular%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiBhbmd1bGFyIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVI0AdQDVgNcAF4AJABAJgB7AGgAewBqgEDMi0xuAEDyAEA-AEBmAICoAL6AagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QXRuD4SOM6v0ZIHBTEuMC4xoAfwCrIHAzItMbgH9wHCBwUwLjEuMcgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJ6h5NUGIjC3ixXWD8z0IU6ajO8lE0xa9pwT3MRaQNh--OnKAqIXwzYFm4K8i6FqgeqrYLRE6_0yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=angular+open+source+alternatives&sca_esv=75b852f"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8962,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 495.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513308302"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9104,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 582.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513308302"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-94572614b0c6223c",
+   "source": "google",
+   "goal": "Search Google for swift best practices and open the results.",
+   "fingerprint": 34441,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 28796,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dswift%2bbest%2bpractices%26sca_esv%3d75b",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dswift%2Bbest%2Bpractices%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv2hypUljTZRABo8JkPg8cOOZzOVQ%253A1790513374912%26source%3Dhp%26ei%3D3hC5atrFNsOikPIPlJLV0Q0%26iflsig%3DABILxe8AAAAAarke7t1vzIunPZDBRSGdXiYc8JvbNkGG%26ved%3D0ahUKEwjarLSN5o6XAxVDEUQIHRRJNdoQ4dUDCDI%26oq%3Dswift%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhRzd2lmdCBiZXN0IHByYWN0aWNlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGBYYHhgKMgYQABgWGB4yBhAAGBYYHki9c1CgKligKnACeACQAQCYAdcBoAHXAaoBAzItMbgBDMgBAPgBAZgCA6AC3gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDAvEFzE1DLEMemmGSBwUyLjAuMaAHugWyBwMyLTG4B9kBwgcDMC4zyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGO-h5NUGIjAQdUdplMD_oxWdcfj79TIqOXzKRiRaG0CJLqM7BiV8sImwt6zUzJw_nMQJDCEICasyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=swift+best+practices&sca_esv=75b852f910b8e50f&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.8758,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 692.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513375224"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8597,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 546.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513375224"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8311,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'swift best practices' are not displayed; the page is the Google homepage with an empty search box.",
+     "page_changed": null,
+     "latency_ms": 763.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513375224"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "swift best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513375224"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.7025,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'swift best practices'",
+     "page_changed": null,
+     "latency_ms": 610.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513375224"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:32",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513375224"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-0e6d21dcd534640f",
+   "source": "google",
+   "goal": "Search Google for next.js interview questions and open the results.",
+   "fingerprint": 34441,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 17861,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dnext.js%2binterview%2bquestions%26sca_es",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dnext.js%2Binterview%2Bquestions%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsPn4tdsVmQXe3XLXgqljYbESAQnA%253A1790513455876%26source%3Dhp%26ei%3DLxG5asKlNIGgur8PpJCmwQk%26iflsig%3DABILxe8AAAAAarkfP92kQ_886fW9RaGqKFNwiP2lLeSe%26ved%3D0ahUKEwiC-YG05o6XAxUBkO4BHSSIKZgQ4dUDCDI%26uact%3D5%26oq%3Dnext.js%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhtuZXh0LmpzIGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IjiFQC1gLcAF4AJABAJgB1AGgAdQBqgEDMi0xuAEDyAEA-AEBmAICoALZAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QXCGXZTXVTQmJIHBTEuMC4xoAf0BrIHAzItMbgH1wHCBwMwLjLIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLWi5NUGIjAcs3rnLXZLWGCwyDWzSc9QW8JclHQchuTGxyPTrB-lxf1TMgVCS4PPxYtLEU-yIsMyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=next.js+interview+questions&sca_esv=75b852f910b8"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8795,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "next.js interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 482.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513456110"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8974,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results page for 'next.js interview questions' (only autocomplete suggestions shown, search not executed)",
+     "page_changed": null,
+     "latency_ms": 583.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513456110"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513456110"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b993e7b7db0c1d18",
+   "source": "google",
+   "goal": "First search Google for huggingface transformers best practices, then search Google for design patterns open source alternatives.",
+   "fingerprint": 34441,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14427,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhuggingface%2btransformers%2bbest%2bprac",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhuggingface%2Btransformers%2Bbest%2Bpractices%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv6PyXGorszDjr_sgfrXCQrkQiMnw%253A1790513525880%26source%3Dhp%26ei%3DdRG5asnRNLzfkPIPpMOqwAw%26iflsig%3DABILxe8AAAAAarkfhf6ljJYtUuMTXaMoITEuBgbvm0B7%26ved%3D0ahUKEwiJ4LLV5o6XAxW8L0QIHaShCsgQ4dUDCDI%26uact%3D5%26oq%3Dhuggingface%2Btransformers%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IidodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgYmVzdCBwcmFjdGljZXMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwIyBRAhGKsCSJkHUA5YDnABeACQAQCYAekBoAHpAaoBAzItMbgBA8gBAPgBAZgCAqAC8AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EF8lIJpZn-gv2SBwUxLjAuMaAHwgeyBwMyLTG4B-wBwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPii5NUGIjAdFHiD0qmUio4tRLYFtDzCG3sj1U4ah7JldQd7L6crigw3s6afY1lgrWTgkNMbHfsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=huggingface+transformers+best+practices&sca_esv="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9001,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "huggingface transformers best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 467.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513526120"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9099,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 536.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513526120"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-6c2f284a5bf8e3c1",
+   "source": "google",
+   "goal": "First search Google for grafana migration guide, then search Google for java security vulnerabilities.",
+   "fingerprint": 34441,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14555,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgrafana%2bmigration%2bguide%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgrafana%2Bmigration%2Bguide%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntCw_dlEPlR383-55cfUBiPvcRxbg%253A1790513592463%26source%3Dhp%26ei%3DuBG5areKG7LMkPIP8bvH0A4%26iflsig%3DABILxe8AAAAAarkfyJzX0cnRY9s3awxBlFMcJkkuBEF2%26ved%3D0ahUKEwi3xpL15o6XAxUyJkQIHfHdEeoQ4dUDCDI%26uact%3D5%26oq%3Dgrafana%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhdncmFmYW5hIG1pZ3JhdGlvbiBndWlkZTIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIESKsHUA1YDXABeACQAQCYAdwBoAHcAaoBAzItMbgBA8gBAPgBAZgCAqAC4gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFAxoWiVa0RzuSBwUxLjAuMaAH9QKyBwMyLTG4B98BwgcDMC4yyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLuj5NUGIjADAcQQLn70B8vZay5lbNiIwVY2hkfm6SzfxtuMqjFhQ79-bwMOr0TQgPHMpRHVNdEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=grafana+migration+guide&sca_esv=75b852f910b8e50f"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8969,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "grafana migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 428.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513592710"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.872,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 544.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513592710"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3ea796ab325b530c",
+   "source": "google",
+   "goal": "First search Google for how to debug kafka, then search Google for docker migration guide.",
+   "fingerprint": 34441,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14711,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bkafka%26sca_esv%3d75b",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bkafka%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntj9iKASl6Qj7cfbX6C9-yFE7GYOQ%253A1790513659176%26source%3Dhp%26ei%3D-xG5aq3ACcvEkPIPo_OZuAE%26iflsig%3DABILxe8AAAAAarkgC2-_BzANIvWuB2bG36qjiOqijre2%26ved%3D0ahUKEwjtqfqU546XAxVLIkQIHaN5BhcQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bkafka%26gs_lp%3DEgdnd3Mtd2l6IhJob3cgdG8gZGVidWcga2Fma2EyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIFEAAY7wUyBRAAGO8FMggQABiJBRiiBDIFEAAY7wVItwdQC1gLcAF4AJABAJgB6wGgAesBqgEDMi0xuAEDyAEA-AEBmAICoALyAagCCsICChAAGAMYjwEY6gKYAwPxBTUCUaWufML5kgcFMS4wLjGgB5gGsgcDMi0xuAfvAcIHAzAuMsgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGP2j5NUGIjCqsad5EHMn9LAh1d0pmxGuD7IG4BOi_87yrATni8N-8i_xrTlyqir2acxWRHEBmSQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+kafka&sca_esv=75b852f910b8e50f&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8877,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug kafka",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 505.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513659423"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8973,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 573.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513659423"
+    }
+   ]
+  }
+ ]
+}

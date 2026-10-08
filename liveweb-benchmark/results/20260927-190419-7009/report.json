@@ -1,0 +1,1028 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 80592,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:09:43+0800",
+  "n_tasks": 8,
+  "success": 3,
+  "success_rate": 0.375,
+  "verified": 3,
+  "verified_rate": 0.375,
+  "found_but_not_stopped": 0,
+  "mean_steps": 6.6,
+  "mean_duration_ms": 16676,
+  "decision_latency_ms": {
+   "p50": 534.3,
+   "p95": 664.1
+  },
+  "step_outcomes": {
+   "stale": 3,
+   "refused-empty-enter": 5,
+   "done-rejected": 9,
+   "executed": 31,
+   "done": 4,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "github": {
+    "n": 1,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 16.0
+   },
+   "google": {
+    "n": 7,
+    "success": 3,
+    "success_rate": 0.429,
+    "verified": 3,
+    "verified_rate": 0.429,
+    "mean_steps": 5.3
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-bf7a2f94d6ab42f4",
+   "source": "google",
+   "goal": "Search Google for c++ best practices and open the results.",
+   "fingerprint": 80592,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 22518,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dc%252b%252b%2bbest%2bpractices%26sca_esv",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dc%252B%252B%2Bbest%2Bpractices%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuPd9kGmYJfkwjqlWKXf2aXD54dNQ%253A1790507062409%26source%3Dhp%26ei%3DNvi4atbnF_Kxur8P7Lii-QY%26iflsig%3DABILxe8AAAAAarkGRh3wwWD2HF2uziFe3USpGxUVX1f9%26ved%3D0ahUKEwjW2q_Lzo6XAxXymO4BHWycKG8Q4dUDCDI%26uact%3D5%26oq%3Dc%252B%252B%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhJjKysgYmVzdCBwcmFjdGljZXMyBRAAGIAEMgUQLhiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IxCVQG1gbcAF4AJABAJgBzAGgAcwBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALTAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWepnN6S7QqSJIHBTEuMC4xoAeLCLIHAzItMbgHzgHCBwUwLjEuMcgHBIAIAQ%26sclient%3Dgws-wiz%26sei%3DQPi4asOrL5SP8L0Pu_af-A8&hl=en&q=EgQm0XtnGMHw49UGIjD70F3hnDujo4iAW8427nh3ZaqC_5UAp0VmmisFKBPDj6AZ1aCeTuADhWOycxnWbk0yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=c%2B%2B+best+practices&sca_esv=54dc793dbd0950c5&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9013,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "c++ best practices",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 499.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8967,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 488.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507063784"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8844,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for \"c++ best practices\" (current page is the empty Google homepage with no query entered and no results listed)",
+     "page_changed": null,
+     "latency_ms": 512.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507063784"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "c++ best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507063784"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9062,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Actual search results page for 'c++ best practices' (only autocomplete suggestions are shown; search not yet submitted)",
+     "page_changed": null,
+     "latency_ms": 633.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507063784"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507063784"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-cc12380900316cc1",
+   "source": "google",
+   "goal": "Search Google for ruby tutorial and open the results.",
+   "fingerprint": 80592,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 7,
+   "total_ms": 11781,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=ruby+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqntzp7gy61yqphvftteqyydo_vj",
+     "bot_challenge": false,
+     "group0": [
+      "ruby"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=ruby+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntzp7Gy61YqphVftTeqYydo_VJLFg%3A1790507137287&source=hp&ei=gfi4atykEPrHkPIPyv3NqA8&iflsig=ABILxe8AAAAAarkGkd4QJo9ruFuHaPSzoNpqTu6Ruicw&ved=0ahUKEwic6Ynvzo6XAxX6I0QIHcp-E_UQ4dUDCDI&oq=ruby+tutorial&gs_lp=Egdnd3Mtd2l6Ig1ydWJ5IHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHki3KlASWBJwAXgAkAEAmAHEAaABxAGqAQMwLjGwAQC4AQzIAQD4AQGYAgKgAs4BqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwXiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBd33riyS5PP5kgcFMS4wLjGgB4QFsgcDMi0xuAfJAcIHBTAuMS4xyAcHgAgB&sclient=gws-wiz",
+    "final_title": "ruby tutorial - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.913,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ruby tutorial",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 600.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8972,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 490.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507138651"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8992,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for ruby tutorial",
+     "page_changed": null,
+     "latency_ms": 508.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507138651"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ruby tutorial",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507138651"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9107,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Actual search results page for 'ruby tutorial' (currently only the Google search box with autocomplete suggestions is shown; search has not been submi",
+     "page_changed": null,
+     "latency_ms": 598.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507138651"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:35",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507138651"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.6167,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 686.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=ruby+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntzp7Gy61YqphVftTeqYydo_VJLFg%3A1790507137287&source=hp&ei=gfi4atykEPrHkPIPyv3NqA8&iflsig=ABILxe8AAAAAarkGkd4QJo9ruFuHaPSzoNpqTu6Ruicw&ved=0ahUKEwic6Ynvzo6XAxX6I0QIHcp-E_UQ4dUDCDI&oq=ruby+tutorial&gs_lp=Egdnd3Mtd2l6Ig1ydWJ5IHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHki3KlASWBJwAXgAkAEAmAHEAaABxAGqAQMwLjGwAQC4AQzIAQD4AQGYAgKgAs4BqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwXiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBd33riyS5PP5kgcFMS4wLjGgB4QFsgcDMi0xuAfJAcIHBTAuMS4xyAcHgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-01589b7871dcb24f",
+   "source": "github",
+   "goal": "Search GitHub for 'profiling' repositories and open the search results.",
+   "fingerprint": 80592,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 16,
+   "total_ms": 22982,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'github.com/search'",
+    "checks": {
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=",
+     "bot_challenge": false,
+     "group0": [
+      "profiling"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=profiling&search-overlay-ask-ai=true",
+    "final_title": "Understanding GitHub Code Search syntax - GitHub Docs"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.8506,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 450.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9025,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 416.6,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8296,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 430.5,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.7459,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 447.5,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.839,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 478.7,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8619,
+     "target": "6",
+     "target_label": "Search syntax tips",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 1051.8,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.9325,
+     "target": "6",
+     "target_label": "Search or ask Copilot",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 410.7,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.8169,
+     "target": "1",
+     "target_label": "Open Search or ask Copilot",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 579.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.8342,
+     "target": "1",
+     "target_label": "Open Search or ask Copilot",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 575.4,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.7946,
+     "target": "1",
+     "target_label": "Open Search or ask Copilot",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 575.5,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 10,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:25",
+     "target_label": "Search or ask Copilot",
+     "kind": "fill",
+     "text": "profiling",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 11,
+     "operation": "DONE",
+     "confidence": 0.9117,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub repository search results for 'profiling' (page shows GitHub Docs search suggestions, not repository results)",
+     "page_changed": null,
+     "latency_ms": 563.7,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=profiling"
+    },
+    {
+     "step": 11,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=profiling"
+    },
+    {
+     "step": 12,
+     "operation": "DONE",
+     "confidence": 0.8828,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub repository search results for 'profiling' (page shows GitHub Docs documentation search suggestions, not repositories)",
+     "page_changed": null,
+     "latency_ms": 621.5,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=profiling&search-overlay-ask-ai=true"
+    },
+    {
+     "step": 12,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=profiling&search-overlay-ask-ai=true"
+    },
+    {
+     "step": 13,
+     "operation": "DONE",
+     "confidence": 0.8966,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 667.5,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=profiling&search-overlay-ask-ai=true"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-40bccac05ae3c8de",
+   "source": "google",
+   "goal": "Search Google for tensorflow open source alternatives and open the results.",
+   "fingerprint": 80592,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4439,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=tensorflow+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnvdj",
+     "bot_challenge": false,
+     "group0": [
+      "tensorflow"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=tensorflow+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvDjZCEmqgavMOAFGuFoFWMUseqhQ%3A1790507187397&source=hp&ei=s_i4asXuFtaM8L0PkpyK-Qo&iflsig=ABILxe8AAAAAarkGw9g7rh4vT3J8iS4C26miZFIdmxwh&ved=0ahUKEwiFlPyGz46XAxVWBrwBHRKOIq8Q4dUDCDY&uact=5&oq=tensorflow+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiN0ZW5zb3JmbG93IG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIESNAHUCFYIXABeACQAQCYAeIBoAHiAaoBAzItMbABALgBA8gBAPgBAZgCAqAC7AGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgITEC4YgAQYigUYQxjnBhjqAhi0ApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFTnj9eYjCDyySBwUxLjAuMaAH5QOyBwMyLTG4B-cBwgcDMi0yyAcGgAgB&sclient=gws-wiz",
+    "final_title": "tensorflow open source alternatives - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8364,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 564.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507187523"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8903,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 572.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507187523"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8969,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 581.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=tensorflow+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvDjZCEmqgavMOAFGuFoFWMUseqhQ%3A1790507187397&source=hp&ei=s_i4asXuFtaM8L0PkpyK-Qo&iflsig=ABILxe8AAAAAarkGw9g7rh4vT3J8iS4C26miZFIdmxwh&ved=0ahUKEwiFlPyGz46XAxVWBrwBHRKOIq8Q4dUDCDY&uact=5&oq=tensorflow+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiN0ZW5zb3JmbG93IG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIESNAHUCFYIXABeACQAQCYAeIBoAHiAaoBAzItMbABALgBA8gBAPgBAZgCAqAC7AGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgITEC4YgAQYigUYQxjnBhjqAhi0ApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFTnj9eYjCDyySBwUxLjAuMaAH5QOyBwMyLTG4B-cBwgcDMi0yyAcGgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a00efeac1fb94b8e",
+   "source": "google",
+   "goal": "Search Google for langchain cheat sheet and open the results.",
+   "fingerprint": 80592,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 4,
+   "total_ms": 8667,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=langchain+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnsnsyh7i89rkyur9lk",
+     "bot_challenge": false,
+     "group0": [
+      "langchain"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=langchain+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsnSyH7I89RKyUr9lkm_t7Ejdsedg%3A1790507199021&source=hp&ei=v_i4argg9sCQ8g_trIPQDw&iflsig=ABILxe8AAAAAarkGz13jULKpQqTTsBW1oTP3kIT56Ite&ved=0ahUKEwj4-8GMz46XAxV2IEQIHW3WAPoQ4dUDCDI&oq=langchain+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhVsYW5nY2hhaW4gY2hlYXQgc2hlZXQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUiYIVAQWBBwAXgAkAEAmAHlAaAB5QGqAQMyLTGwAQC4AQzIAQD4AQGYAgKgAu0BqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBSnRrDeI7m7QkgcFMS4wLjGgB4EEsgcDMi0xuAfpAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz",
+    "final_title": "langchain cheat sheet - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9142,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 509.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507199279"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8842,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results listing for 'langchain cheat sheet' (only the search box with autocomplete suggestions and a 'Google Search' button are visible)",
+     "page_changed": null,
+     "latency_ms": 564.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507199279"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:32",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507199279"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9019,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 611.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=langchain+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsnSyH7I89RKyUr9lkm_t7Ejdsedg%3A1790507199021&source=hp&ei=v_i4argg9sCQ8g_trIPQDw&iflsig=ABILxe8AAAAAarkGz13jULKpQqTTsBW1oTP3kIT56Ite&ved=0ahUKEwj4-8GMz46XAxV2IEQIHW3WAPoQ4dUDCDI&oq=langchain+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhVsYW5nY2hhaW4gY2hlYXQgc2hlZXQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUiYIVAQWBBwAXgAkAEAmAHlAaAB5QGqAQMyLTGwAQC4AQzIAQD4AQGYAgKgAu0BqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBSnRrDeI7m7QkgcFMS4wLjGgB4EEsgcDMi0xuAfpAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-826fced32bbcee40",
+   "source": "google",
+   "goal": "First search Google for golang open source alternatives, then search Google for nginx security vulnerabilities.",
+   "fingerprint": 80592,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 10,
+   "total_ms": 27161,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dnginx%2bsecurity%2bvulnerabilities%26sca",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dnginx%2Bsecurity%2Bvulnerabilities%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvLkv07XELc0mUmUwrKFXcKwq0lNQ%253A1790507217521%26ei%3D0fi4auK7H-bEkPIPoPGP0QY%26biw%3D1120%26bih%3D780%26oq%3Dnginx%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiHm5naW54IHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllcyoGCAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIJEAAYFhgeGMcDMgsQABiABBiKBRiGAzIFEAAY7wVIrAhQD1gPcAF4AJABAJgB3gGgAd4BqgEDMi0xsAEAuAEByAEA-AEBmAICoALqAcICCBAAGO8FGLADmAMA4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBiiAYBkAYEkgcFMS4wLjGgB9gEsgcDMi0xuAfmAcIHBTAuMS4xyAcIgAgB%26sclient%3Dgws-wiz-serp&hl=en&q=EgQm0XtnGN7x49UGIjAltOm58Z3SNmKaIR6OU0JbI-mEe3OZFDBChox9sit7Jru1m_LaA97MgjhVnjSBKt0yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=nginx+security+vulnerabilities&sca_esv=54dc793db"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8955,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 534.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507215216"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8433,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 503.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507215216"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.441,
+     "target": "3",
+     "target_label": "Clear",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 561.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntS88KPNjw1ZpH9Z7pG8afgpLGdIQ%3A1790507214909&source=hp&ei=zvi4aqqINpOwur8P85bNyQs&iflsig=ABILxe8AAAAAarkG3iPzIYU8pfcgs1NDJXSHyKU7WZlG&ved=0ahUKEwiqp4uUz46XAxUTmO4BHXNLM7kQ4dUDCDI&uact=5&oq=golang+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih9nb2xhbmcgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUj0BlAOWA5wAXgAkAEAmAHhAaAB4QGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAusBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXSBwLTDMOTbZIHBTEuMC4xoAfHBLIHAzItMbgH6AHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.7752,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'nginx security vulnerabilities' (page currently shows results for 'golang open source alternatives' instead)",
+     "page_changed": null,
+     "latency_ms": 580.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntS88KPNjw1ZpH9Z7pG8afgpLGdIQ%3A1790507214909&source=hp&ei=zvi4aqqINpOwur8P85bNyQs&iflsig=ABILxe8AAAAAarkG3iPzIYU8pfcgs1NDJXSHyKU7WZlG&ved=0ahUKEwiqp4uUz46XAxUTmO4BHXNLM7kQ4dUDCDI&uact=5&oq=golang+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih9nb2xhbmcgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUj0BlAOWA5wAXgAkAEAmAHhAaAB4QGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAusBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXSBwLTDMOTbZIHBTEuMC4xoAfHBLIHAzItMbgH6AHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "nginx security vulnerabilities",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntS88KPNjw1ZpH9Z7pG8afgpLGdIQ%3A1790507214909&source=hp&ei=zvi4aqqINpOwur8P85bNyQs&iflsig=ABILxe8AAAAAarkG3iPzIYU8pfcgs1NDJXSHyKU7WZlG&ved=0ahUKEwiqp4uUz46XAxUTmO4BHXNLM7kQ4dUDCDI&uact=5&oq=golang+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih9nb2xhbmcgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUj0BlAOWA5wAXgAkAEAmAHhAaAB4QGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAusBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXSBwLTDMOTbZIHBTEuMC4xoAfHBLIHAzItMbgH6AHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.7922,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 621.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntS88KPNjw1ZpH9Z7pG8afgpLGdIQ%3A1790507214909&source=hp&ei=zvi4aqqINpOwur8P85bNyQs&iflsig=ABILxe8AAAAAarkG3iPzIYU8pfcgs1NDJXSHyKU7WZlG&ved=0ahUKEwiqp4uUz46XAxUTmO4BHXNLM7kQ4dUDCDI&uact=5&oq=golang+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih9nb2xhbmcgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUj0BlAOWA5wAXgAkAEAmAHhAaAB4QGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAusBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXSBwLTDMOTbZIHBTEuMC4xoAfHBLIHAzItMbgH6AHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.7823,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 575.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntS88KPNjw1ZpH9Z7pG8afgpLGdIQ%3A1790507214909&source=hp&ei=zvi4aqqINpOwur8P85bNyQs&iflsig=ABILxe8AAAAAarkG3iPzIYU8pfcgs1NDJXSHyKU7WZlG&ved=0ahUKEwiqp4uUz46XAxUTmO4BHXNLM7kQ4dUDCDI&uact=5&oq=golang+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih9nb2xhbmcgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUj0BlAOWA5wAXgAkAEAmAHhAaAB4QGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAusBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXSBwLTDMOTbZIHBTEuMC4xoAfHBLIHAzItMbgH6AHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.7922,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 664.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntS88KPNjw1ZpH9Z7pG8afgpLGdIQ%3A1790507214909&source=hp&ei=zvi4aqqINpOwur8P85bNyQs&iflsig=ABILxe8AAAAAarkG3iPzIYU8pfcgs1NDJXSHyKU7WZlG&ved=0ahUKEwiqp4uUz46XAxUTmO4BHXNLM7kQ4dUDCDI&uact=5&oq=golang+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih9nb2xhbmcgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUj0BlAOWA5wAXgAkAEAmAHhAaAB4QGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAusBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXSBwLTDMOTbZIHBTEuMC4xoAfHBLIHAzItMbgH6AHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "nginx security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntS88KPNjw1ZpH9Z7pG8afgpLGdIQ%3A1790507214909&source=hp&ei=zvi4aqqINpOwur8P85bNyQs&iflsig=ABILxe8AAAAAarkG3iPzIYU8pfcgs1NDJXSHyKU7WZlG&ved=0ahUKEwiqp4uUz46XAxUTmO4BHXNLM7kQ4dUDCDI&uact=5&oq=golang+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih9nb2xhbmcgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUj0BlAOWA5wAXgAkAEAmAHhAaAB4QGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAusBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXSBwLTDMOTbZIHBTEuMC4xoAfHBLIHAzItMbgH6AHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.8252,
+     "target": "6",
+     "target_label": "nginx security vulnerabilities",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 614.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=golang+open+source+alternatives&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQntS88KPNjw1ZpH9Z7pG8afgpLGdIQ%3A1790507214909&source=hp&ei=zvi4aqqINpOwur8P85bNyQs&iflsig=ABILxe8AAAAAarkG3iPzIYU8pfcgs1NDJXSHyKU7WZlG&ved=0ahUKEwiqp4uUz46XAxUTmO4BHXNLM7kQ4dUDCDI&uact=5&oq=golang+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih9nb2xhbmcgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUj0BlAOWA5wAXgAkAEAmAHhAaAB4QGqAQMyLTGwAQC4AQPIAQD4AQGYAgKgAusBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXSBwLTDMOTbZIHBTEuMC4xoAfHBLIHAzItMbgH6AHCBwMwLjLIBwSACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-4b11f0fc21ffe0b9",
+   "source": "google",
+   "goal": "Search Google for swift performance optimization and open the results.",
+   "fingerprint": 80592,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 4,
+   "total_ms": 15974,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dbrock%2bfaber%26sca_esv%3d54dc793dbd0950",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dbrock%2Bfaber%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns5aHz4zYgcJ-6wvu-QIm4PDEcLiA%253A1790507294214%26source%3Dhp%26ei%3DHvm4aonrC_uP8L0Psp2CyQs%26iflsig%3DABILxe8AAAAAarkHLiZPJhmOj2LoAfIv5lLkouCznfgH%26gs_ssp%3DeJzj4tVP1zc0TKusLCtIyzM1YPTiTirKT85WSEtMSi0CAIIYCT0%26oq%3D%26gs_lp%3DEgdnd3Mtd2l6IgAqCggAGAMYjwEY6gIyChAuGAMYjwEY6gIyChAAGAMYjwEY6gIyChAAGAMYjwEY6gIyChAAGAMYjwEY6gIyChAAGAMYjwEY6gIyChAuGAMYjwEY6gIyChAuGAMYjwEY6gIyChAAGAMYjwEY6gIyChAuGAMYjwEY6gIyChAAGAMYjwEY6gJIjRJQAFgAcAF4AJABAJgBAKABAKoBALABALgBAcgBAJgCAaACBKgCCpgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFTRLJoIHiZQiSBwExoAcAsgcAuAcAwgcDMi0xyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKLy49UGIjDt-svJtIQcLDu-GpUeOGQjum_z9E-kR-3sPomQkwQuOZkTIEPesvktAp-qRqZ3AIoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=brock+faber&sca_esv=54dc793dbd0950c5&hl=en&gl=us"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.8655,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 510.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507294334"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.4733,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 546.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507294334"
+    },
+    {
+     "step": 3,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.481,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 586.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507294334"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.2589,
+     "target": "8",
+     "target_label": "brock faber",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 540.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507294334"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-2705634d6c276445",
+   "source": "google",
+   "goal": "Search Google for vue cheat sheet and open the results.",
+   "fingerprint": 80592,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 19889,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvue%2bcheat%2bsheet%26sca_esv%3d54dc793d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvue%2Bcheat%2Bsheet%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvrSQFPiELyrGE_6lbCv012AHP-Uw%253A1790507362403%26source%3Dhp%26ei%3DYvm4arCgFrvIkPIP-sHHiQ8%26iflsig%3DABILxe8AAAAAarkHcgjZ4jJ-ikbrIm6b1bI4h1TVXV14%26ved%3D0ahUKEwiw2bTaz46XAxU7JEQIHfrgMfEQ4dUDCDI%26uact%3D5%26oq%3Dvue%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6Ig92dWUgY2hlYXQgc2hlZXQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IyzBQEVgRcAF4AJABAJgB0gGgAdIBqgEDMi0xsAEAuAEDyAEA-AEBmAICoALcAagCCsICExAuGIAEGIoFGEMY5wYY6gIYtAKYAwTiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLxBRY1sLJOaXr7kgcFMS4wLjGgB50FsgcDMi0xuAfXAcIHAzItMsgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOry49UGIjBbCMk4R9wwbV_myv14rdj3xMLRqgyZ_Vkmy64nRtvv6RqKKu5UBiDPlrEeyO0fAXcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vue+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&g"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.897,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 500.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507362498"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8487,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"vue cheat sheet\" are not displayed",
+     "page_changed": null,
+     "latency_ms": 559.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507362498"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790507362498"
+    }
+   ]
+  }
+ ]
+}

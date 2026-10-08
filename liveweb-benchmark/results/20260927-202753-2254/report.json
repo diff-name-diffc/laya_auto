@@ -1,0 +1,624 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 58764,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T20:36:19+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 3.2,
+  "mean_duration_ms": 17032,
+  "decision_latency_ms": {
+   "p50": 528.7,
+   "p95": 604.0
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 2,
+   "executed": 18,
+   "done-rejected": 4
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 3.2
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-a02fd3ca10d9e00a",
+   "source": "google",
+   "goal": "Search Google for angular cheat sheet and open the results.",
+   "fingerprint": 58764,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 8,
+   "total_ms": 26065,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dangular%2bcheat%2bsheet%26sca_esv%3d75b8",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dangular%2Bcheat%2Bsheet%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26sxsrf%3DAPpeQnuS2-dU5e3U0LSFDtDTb9gRvmfMGw:1790512080133%26source%3Dhp%26biw%3D1120%26bih%3D780%26ei%3D0Au5ao7zBtqnkPIP-Jvs2QY%26iflsig%3DABILxe8AAAAAarkZ4Js2XVQDN2S6AADI1IRmLh_Q6B86%26ved%3D0ahUKEwiOm4Gk4Y6XAxXaE0QIHfgNO2sQ4dUDCA0%26oq%3Dangular%2Bcheat%2Bsheet%26gs_lp%3DEgNpbWciE2FuZ3VsYXIgY2hlYXQgc2hlZXQyBRAAGIAEMgUQABiABDIFEAAYgAQyBBAAGB4yBBAAGB4yBBAAGB4yBBAAGB4yBBAAGB4yBhAAGAUYHjIGEAAYCBgeSPooUAZYBnAAeACQAQCYAb8BoAG_AaoBAzAuMbgBDMgBAPgBAYoCC2d3cy13aXotaW1nmAIBoALLAagCAJgDAZIHAzItMaAHiAWyBwMyLTG4B8sBwgcDMy0xyAcIgAgB%26sclient%3Dimg%26udm%3D2%26sei%3D2Qu5avL9PIXBkPIP5L_buAs&hl=en&q=EgQm0XtnGNqX5NUGIjBvQwzpZw8Dej5-zgnU32wq8oNBz1zu2JPSwkaD8QMzoIEdkDs-0mL-XbPCCoyOChwyAVJaAUM",
+    "final_title": "https://www.google.com/search?q=angular+cheat+sheet&sca_esv=75b852f910b8e50f&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8864,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular cheat sheet",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 471.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8998,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 478.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512077566"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8351,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 487.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512077566"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.708,
+     "target": "4",
+     "target_label": "Search for Images",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 602.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512077566"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8433,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'angular cheat sheet' (page shows only the empty Google Images search homepage)",
+     "page_changed": null,
+     "latency_ms": 430.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/imghp?hl=en&ogbl"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular cheat sheet",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/imghp?hl=en&ogbl"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.8989,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"angular cheat sheet\"",
+     "page_changed": null,
+     "latency_ms": 600.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/imghp?hl=en&ogbl"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:25",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/imghp?hl=en&ogbl"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f8bb6078e8d36f75",
+   "source": "google",
+   "goal": "Search Google for concurrency interview questions and open the results.",
+   "fingerprint": 58764,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 22034,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dconcurrency%2binterview%2bquestions%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dconcurrency%2Binterview%2Bquestions%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns5A2BrrjBUNud0PwlQpPuzyJItjA%253A1790512154643%26source%3Dhp%26ei%3DGgy5aqLtJdLKvMcPzO_K-Q8%26iflsig%3DABILxe8AAAAAarkaKqOPMovU6a_VvE71ocLOmDVfDf1n%26ved%3D0ahUKEwii4sTH4Y6XAxVSJe8CHcy3Mv8Q4dUDCDI%26uact%3D5%26oq%3Dconcurrency%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Ih9jb25jdXJyZW5jeSBpbnRlcnZpZXcgcXVlc3Rpb25zMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IgiBQDVgNcAF4AJABAJgBxwGgAccBqgEDMC4xuAEDyAEA-AEBmAICoALTAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QX8K9pBuOGvJ5IHBTEuMC4xoAfQBrIHAzItMbgHzwHCBwMyLTLIBweACAE%26sclient%3Dgws-wiz%26sei%3DJAy5aqmOJYGNvMcP5f_laA&hl=en&q=EgQm0XtnGKSY5NUGIjBInce03kFpgkdt-RC89GCff4AfC3FkCUAXEZ851mCDdsuj_Lm6eSEef6Hf8Xjy4uEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=concurrency+interview+questions&sca_esv=75b852f9"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9028,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "concurrency interview questions",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 513.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9024,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 498.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512156170"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8629,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for \"concurrency interview questions\"",
+     "page_changed": null,
+     "latency_ms": 604.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512156170"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "concurrency interview questions",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512156170"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8646,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Actual search-results page for 'concurrency interview questions' (page shows only the search box with autocomplete suggestions, no listed results)",
+     "page_changed": null,
+     "latency_ms": 641.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512156170"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512156170"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-cd76a8041b09c4d5",
+   "source": "google",
+   "goal": "First search Google for how to debug design patterns, then search Google for huggingface transformers cheat sheet.",
+   "fingerprint": 58764,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14748,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bdesign%2bpatterns%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bdesign%2Bpatterns%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvRU-SoxjMBV7JMNqaY55jxoP8ivg%253A1790512229082%26source%3Dhp%26ei%3DZQy5apvGA9LHkPIPgPz8kA8%26iflsig%3DABILxe8AAAAAarkadTAiJAa_vBdcMUDk-9E-fD2BUKiP%26ved%3D0ahUKEwjbjITr4Y6XAxXSI0QIHQA-H_IQ4dUDCDY%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bdesign%2Bpatterns%26gs_lp%3DEgdnd3Mtd2l6Ihxob3cgdG8gZGVidWcgZGVzaWduIHBhdHRlcm5zMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwIyBRAhGKsCSOEHUA5YDnABeACQAQCYAeEBoAHhAaoBAzItMbgBA8gBAPgBAZgCAqAC7wGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBUSgDyTGG_1TkgcFMS4wLjGgB_UFsgcDMi0xuAfrAcIHAzItMsgHB4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOeY5NUGIjCwepdRQ5lyTGdkqooSNboGkTqkl3rNiXj8erCz7dq4Yf70z7oGKaq3FbMUI3OL4y4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+design+patterns&sca_esv=75b852f910b"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8769,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug design patterns",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 548.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512229437"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9133,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 595.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512229437"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-46ca697e529fa06c",
+   "source": "google",
+   "goal": "First search Google for flask migration guide, then search Google for prometheus release notes.",
+   "fingerprint": 58764,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14615,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dflask%2bmigration%2bguide%26sca_esv%3d75",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dflask%2Bmigration%2Bguide%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv-BCBFfrwzg-bY9WqZb5fb09kqBA%253A1790512296049%26source%3Dhp%26ei%3DqAy5apHdAfbOkPIP_MPBqQw%26iflsig%3DABILxe8AAAAAarkauBjlcZR-DpcGml4C1UdiD0aiTANU%26ved%3D0ahUKEwiR0fuK4o6XAxV2J0QIHfxhMMUQ4dUDCDI%26uact%3D5%26oq%3Dflask%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhVmbGFzayBtaWdyYXRpb24gZ3VpZGUyBhAAGBYYHjIGEAAYFhgeMggQABiJBRiiBDIIEAAYiQUYogQyCBAAGIAEGKIEMgUQABjvBUi2B1AMWAxwAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAukBqAIKwgIKEAAYAxiPARjqApgDBPEFs-RfiWw0hRWSBwUxLjAuMaAHjwOyBwMyLTG4B-QBwgcDMi0yyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKqZ5NUGIjAyM51C0YtUmHoHwPu1LzuHESBTzRDBHmw_mxGDkQ_p4rRBRqsHHzbLFKWpibHOfIIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=flask+migration+guide&sca_esv=75b852f910b8e50f&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8509,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "flask migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 528.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512296321"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9129,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 564.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512296321"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-4197b89374d8c0c4",
+   "source": "google",
+   "goal": "Search Google for redis cheat sheet and open the results.",
+   "fingerprint": 58764,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14694,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dredis%2bcheat%2bsheet%26sca_esv%3d75b852",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dredis%2Bcheat%2Bsheet%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuxxZCUmTp074UhVEeSwSMPBzK5qw%253A1790512362830%26source%3Dhp%26ei%3D6gy5ar7MMfzEkPIPiZ_ciQI%26iflsig%3DABILxe8AAAAAarka-j957Eg1vewR0QKdrHO0q9lqLMjD%26ved%3D0ahUKEwi-6eeq4o6XAxV8IkQIHYkPNyEQ4dUDCDI%26uact%3D5%26oq%3Dredis%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhFyZWRpcyBjaGVhdCBzaGVldDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjBB1AOWA5wAXgAkAEAmAHVAaAB1QGqAQMyLTG4AQPIAQD4AQGYAgKgAuEBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBUYyIJqp0oxFkgcFMS4wLjGgB7EFsgcDMi0xuAfdAcIHAzItMsgHB4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGO2Z5NUGIjDpCKtAhOwOapd76Qh8IzlqnzV6GgfMtrmJ7ZyLyW7HVeebJfSBwG7GCUlVlX6w-ZYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=redis+cheat+sheet&sca_esv=75b852f910b8e50f&hl=en"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9001,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 495.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512363037"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8962,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 562.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512363037"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-84a80461754454c7",
+   "source": "google",
+   "goal": "First search Google for docker release notes, then search Google for async programming performance optimization.",
+   "fingerprint": 58764,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14665,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddocker%2brelease%2bnotes%26sca_esv%3d75b",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddocker%2Brelease%2Bnotes%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsTTwjEn6pral0lTrDrv3IG8pDEvQ%253A1790512429693%26source%3Dhp%26ei%3DLQ25arzfKLC_kPIPtJzw8Q8%26iflsig%3DABILxe8AAAAAarkbPQoa85Qh4hRR14rDeGi10pcS1dYw%26ved%3D0ahUKEwj8qdjK4o6XAxWwH0QIHTQOPP4Q4dUDCDI%26uact%3D5%26oq%3Ddocker%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhRkb2NrZXIgcmVsZWFzZSBub3RlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IwgdQD1gPcAF4AJABAJgB0wGgAdMBqgEDMi0xuAEDyAEA-AEBmAICoALdAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QWvpgxuGPN9l5IHBTEuMC4xoAekBbIHAzItMbgH2QHCBwMyLTLIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLCa5NUGIjAxto-PGKzYeghxjqhETNwNCmQGct2SAMWjfaah_gIvkN7ikoRSV6-4lutrP_cTHcIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=docker+release+notes&sca_esv=75b852f910b8e50f&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8586,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "docker release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 597.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512429905"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8909,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 565.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512429905"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8b2ead7db3a3bcb7",
+   "source": "google",
+   "goal": "First search Google for typescript security vulnerabilities, then search Google for how to debug langchain.",
+   "fingerprint": 58764,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14832,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2blangchain%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Blangchain%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns3_-w9HclTzLWvKF4xU5gK1Iph2w%253A1790512496533%26source%3Dhp%26ei%3DcA25atOBH6Krur8Pyc-i8A4%26iflsig%3DABILxe8AAAAAarkbgOmB4eqHd9Altn5CTOei2rmQhhoj%26oq%3Dhow%2Bto%2Bdebug%2Blangchain%26gs_lp%3DEgdnd3Mtd2l6IhZob3cgdG8gZGVidWcgbGFuZ2NoYWluKgYIABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyBRAAGO8FMggQABiABBiiBDIFEAAY7wUyCBAAGIkFGKIESIoIUA5YDnABeACQAQCYAeEBoAHhAaoBAzItMbgBAcgBAPgBAZgCAqAC7AGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBRQUcFyBwAbHkgcFMS4wLjGgB7gDsgcDMi0xuAfoAcIHAzItMsgHB4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPOa5NUGIjDDwbL6MwSPE3U_XDOrAGGHWrPWGujtuCEke-2b4rxSzWdvL0-88dxp6G12_Hl2wjIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+langchain&sca_esv=75b852f910b8e50f&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.4097,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug langchain",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 524.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512496746"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.5917,
+     "target": "12",
+     "target_label": "how to debug langchain",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 590.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512496746"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-69dae866df5d00c7",
+   "source": "google",
+   "goal": "First search Google for flask best practices, then search Google for design patterns tutorial.",
+   "fingerprint": 58764,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14601,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dflask%2bbest%2bpractices%26sca_esv%3d75b",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dflask%2Bbest%2Bpractices%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvgp2Aylv9yu70netYVIbKeCZqYRg%253A1790512563530%26source%3Dhp%26ei%3Dsw25asfsHq-O8L0PptzTyAc%26iflsig%3DABILxe8AAAAAarkbwzRMGetrMqvM3koC9qNGdlZ0SuI8%26ved%3D0ahUKEwiHksGK446XAxUvB7wBHSbuFHkQ4dUDCDI%26uact%3D5%26oq%3Dflask%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhRmbGFzayBiZXN0IHByYWN0aWNlc0iKB1ANWA1wAXgAkAEAmAHXAaAB1wGqAQMyLTG4AQPIAQD4AQGYAgGgAgSoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFCYtzx4ZacRiSBwExoAcmsgcAuAcAwgcDMi0xyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLab5NUGIjDNy8SXuHe9QXXjRN90AUKAMO4mdb5g1ncYwXNck6AfUyABAVfWgymZPG9Xk-cu4yMyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=flask+best+practices&sca_esv=75b852f910b8e50f&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8992,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "flask best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 534.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512563768"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9032,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 518.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512563768"
+    }
+   ]
+  }
+ ]
+}

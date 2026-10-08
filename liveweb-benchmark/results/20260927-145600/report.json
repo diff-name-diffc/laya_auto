@@ -1,0 +1,826 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 36193,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T14:59:28+0800",
+  "n_tasks": 6,
+  "success": 3,
+  "success_rate": 0.5,
+  "verified": 3,
+  "verified_rate": 0.5,
+  "found_but_not_stopped": 0,
+  "mean_steps": 7.0,
+  "mean_duration_ms": 20103,
+  "decision_latency_ms": {
+   "p50": 475.5,
+   "p95": 626.1
+  },
+  "step_outcomes": {
+   "stale": 3,
+   "refused-empty-enter": 4,
+   "done-rejected": 5,
+   "executed": 25,
+   "done": 5
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "github": {
+    "n": 2,
+    "success": 1,
+    "success_rate": 0.5,
+    "verified": 1,
+    "verified_rate": 0.5,
+    "mean_steps": 9.5
+   },
+   "google": {
+    "n": 4,
+    "success": 2,
+    "success_rate": 0.5,
+    "verified": 2,
+    "verified_rate": 0.5,
+    "mean_steps": 5.8
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-0854fb21fe8b1714",
+   "source": "google",
+   "goal": "Search Google for mongodb best practices and open the results.",
+   "fingerprint": 36193,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 20247,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmongodb%2bbest%2bpractices%26sca_esv%3d6",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmongodb%2Bbest%2Bpractices%26sca_esv%3D65a1095235da4984%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntqm_O1vrslmoidpVDsikJH4K29Vg%253A1790492163910%26source%3Dhp%26ei%3DA764avyjNrfIkPIPjO7ewAw%26iflsig%3DABILxe8AAAAAarjME1k1SHhCC6fvy8JPUZsCJpYbCvyd%26oq%3Dmongodb%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhZtb25nb2RiIGJlc3QgcHJhY3RpY2VzKgUIABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IkAhQIFggcAF4AJABAJgBwwGgAcMBqgEDMC4xuAEByAEA-AEBmAICoALJAagCCsICChAAGAMYjwEY6gKYAwTxBZkNeTLbSfr_kgcDMS4xoAfcBbIHAzAuMbgHxQHCBwUwLjEuMcgHBIAIAQ%26sclient%3Dgws-wiz%26sei%3DC764asu2OfTGkPIP87fZyA8&hl=en&q=EgQm0XtnGIz84tUGIjAybweXYUUuGjzKOudIa2IGN25x90gOXvw6eUqrNVHcqd2tJSCBPts9fkz-p9t1_X0yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mongodb+best+practices&sca_esv=65a1095235da4984&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8946,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mongodb best practices",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 474.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9077,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 468.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790492165266"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.7598,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search query 'mongodb best practices' is not entered; search results page is not displayed",
+     "page_changed": null,
+     "latency_ms": 483.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790492165266"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mongodb best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790492165266"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8742,
+     "target": "12",
+     "target_label": "mongodb best practices",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 603.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790492165266"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-019c4104ac06726e",
+   "source": "github",
+   "goal": "Search GitHub for 'next.js' repositories and open the search results.",
+   "fingerprint": 36193,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 9,
+   "total_ms": 17259,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://github.com/search?q=next.js&type=repositories",
+     "bot_challenge": false,
+     "group0": [
+      "next.js"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://github.com/search?q=next.js&type=repositories",
+    "final_title": "Repository search results · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.7076,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 562.5,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9053,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 453.4,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8162,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 448.1,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.7947,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 464.3,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8169,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 479.9,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8449,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 552.9,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:14",
+     "target_label": "Search or jump to",
+     "kind": "fill",
+     "text": "next.js",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 7,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.649,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 519.7,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.9344,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 475.8,
+     "low_confidence": false,
+     "url": "https://github.com/search?q=next.js&type=repositories"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c7db7d38f9dc3378",
+   "source": "github",
+   "goal": "Search GitHub for 'kotlin' repositories and open the search results.",
+   "fingerprint": 36193,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 10,
+   "total_ms": 56873,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'github.com/search'",
+    "checks": {
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=",
+     "bot_challenge": false,
+     "group0": [
+      "kotlin"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=kotlin",
+    "final_title": "Understanding GitHub Code Search syntax - GitHub Docs"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8754,
+     "target": "11",
+     "target_label": "Enter your email",
+     "kind": "fill",
+     "text": "kotlin",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 439.5,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8938,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 491.4,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8461,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 468.0,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.5835,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 465.9,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8662,
+     "target": "6",
+     "target_label": "Search syntax tips",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 471.1,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8242,
+     "target": "6",
+     "target_label": "Search or ask Copilot",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 458.2,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 7,
+     "operation": "DONE",
+     "confidence": 0.8434,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub search results page listing repositories for 'kotlin'; the search query/term 'kotlin' entered in a repository search; visible list of kotlin re",
+     "page_changed": null,
+     "latency_ms": 582.8,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:25",
+     "target_label": "Search or ask Copilot",
+     "kind": "fill",
+     "text": "kotlin",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.9107,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub repository search results for 'kotlin' (page only shows a GitHub Docs help-site search overlay with documentation links, not repository results",
+     "page_changed": null,
+     "latency_ms": 627.7,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=kotlin"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.9151,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 626.1,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax?search-overlay-open=true&search-overlay-input=kotlin"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9bf0bdeaf2a7428a",
+   "source": "google",
+   "goal": "First search Google for profiling interview questions, then search Google for swift security vulnerabilities.",
+   "fingerprint": 36193,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 12,
+   "total_ms": 15539,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['swift']]",
+    "checks": {
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/intl/en_us/search/howsearchworks/",
+    "final_title": "Google Search - What Is Google Search And How Does It Work"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8615,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "profiling interview questions",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 511.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9012,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 476.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790492327451"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.5469,
+     "target": "4",
+     "target_label": "Search for Images",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 521.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790492327451"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8269,
+     "target": "5",
+     "target_label": "Search by image",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 424.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/imghp?hl=en&ogbl"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.6102,
+     "target": "9",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 412.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/imghp?hl=en&ogbl"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8988,
+     "target": "4",
+     "target_label": "Google ​搜索​的​运作​方式",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 407.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search/howsearchworks/?fg=1"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.9157,
+     "target": "9",
+     "target_label": "Features",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 356.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.8909,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for swift security vulnerabilities",
+     "page_changed": null,
+     "latency_ms": 384.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 8,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.9224,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"swift security vulnerabilities\"",
+     "page_changed": null,
+     "latency_ms": 495.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    },
+    {
+     "step": 9,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    },
+    {
+     "step": 10,
+     "operation": "DONE",
+     "confidence": 0.927,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 436.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-82e66ed444578f59",
+   "source": "google",
+   "goal": "Search Google for postgresql best practices and open the results.",
+   "fingerprint": 36193,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4777,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=postgresql+best+practices&sca_esv=65a1095235da4984&hl=en&gl=us&sxsrf=appeqntpsr0yuiqkgfr",
+     "bot_challenge": false,
+     "group0": [
+      "postgresql"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=postgresql+best+practices&sca_esv=65a1095235da4984&hl=en&gl=us&sxsrf=APpeQntPSR0YUiqKGFrrIdyUrZz3Fgq_PA%3A1790492349181&source=hp&ei=vb64at7rCaCikPIPt6PD4AQ&iflsig=ABILxe8AAAAAarjMzWL4TznIgq0XoCI28xFSd4wnnhN8&oq=postgresql+best+practices&gs_lp=Egdnd3Mtd2l6Ihlwb3N0Z3Jlc3FsIGJlc3QgcHJhY3RpY2VzKgUIABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHki-CFAPWA9wAXgAkAEAmAHFAaABxQGqAQMwLjG4AQHIAQD4AQGYAgKgAssBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBVHKbjN2DOWekgcDMS4xoAfkBrIHAzAuMbgHxwHCBwUwLjEuMcgHBIAIAQ&sclient=gws-wiz",
+    "final_title": "postgresql best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8895,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 493.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790492349354"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.7897,
+     "target": "12",
+     "target_label": "postgresql best practices",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 666.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790492349354"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8999,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 611.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=postgresql+best+practices&sca_esv=65a1095235da4984&hl=en&gl=us&sxsrf=APpeQntPSR0YUiqKGFrrIdyUrZz3Fgq_PA%3A1790492349181&source=hp&ei=vb64at7rCaCikPIPt6PD4AQ&iflsig=ABILxe8AAAAAarjMzWL4TznIgq0XoCI28xFSd4wnnhN8&oq=postgresql+best+practices&gs_lp=Egdnd3Mtd2l6Ihlwb3N0Z3Jlc3FsIGJlc3QgcHJhY3RpY2VzKgUIABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHki-CFAPWA9wAXgAkAEAmAHFAaABxQGqAQMwLjG4AQHIAQD4AQGYAgKgAssBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBVHKbjN2DOWekgcDMS4xoAfkBrIHAzAuMbgHxwHCBwUwLjEuMcgHBIAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3ddcf607874be362",
+   "source": "google",
+   "goal": "Search Google for fastapi open source alternatives and open the results.",
+   "fingerprint": 36193,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 5919,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=fastapi+open+source+alternatives&sca_esv=65a1095235da4984&hl=en&gl=us&sxsrf=appeqntmeusi",
+     "bot_challenge": false,
+     "group0": [
+      "fastapi"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=fastapi+open+source+alternatives&sca_esv=65a1095235da4984&hl=en&gl=us&sxsrf=APpeQntmEusiJJkfdlYw6-duS2wnH-yfTQ%3A1790492361185&source=hp&ei=yb64asKKCpuwur8P1OeAwAw&iflsig=ABILxe8AAAAAarjM2ThPOe3qm355hq_aSa03ydd16LzM&ved=0ahUKEwiCk6Tpl46XAxUbmO4BHdQzAMgQ4dUDCDI&uact=5&oq=fastapi+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiBmYXN0YXBpIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigAUjbBlAOWA5wAXgAkAEAmAHfAaAB3wGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBcY8XMT8BR-xkgcFMS4wLjGgB-UDsgcDMi0xuAfiAcIHBTEuMC4xyAcEgAgB&sclient=gws-wiz",
+    "final_title": "fastapi open source alternatives - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8768,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "fastapi open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 504.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790492361362"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8982,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 475.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790492361362"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8764,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 539.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=fastapi+open+source+alternatives&sca_esv=65a1095235da4984&hl=en&gl=us&sxsrf=APpeQntmEusiJJkfdlYw6-duS2wnH-yfTQ%3A1790492361185&source=hp&ei=yb64asKKCpuwur8P1OeAwAw&iflsig=ABILxe8AAAAAarjM2ThPOe3qm355hq_aSa03ydd16LzM&ved=0ahUKEwiCk6Tpl46XAxUbmO4BHdQzAMgQ4dUDCDI&uact=5&oq=fastapi+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiBmYXN0YXBpIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigAUjbBlAOWA5wAXgAkAEAmAHfAaAB3wGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIREAAY5QYYigMY5wYY6gIYtAKYAwTxBcY8XMT8BR-xkgcFMS4wLjGgB-UDsgcDMi0xuAfiAcIHBTEuMC4xyAcEgAgB&sclient=gws-wiz"
+    }
+   ]
+  }
+ ]
+}

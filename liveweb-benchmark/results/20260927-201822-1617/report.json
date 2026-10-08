@@ -1,0 +1,834 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 49100,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T20:21:10+0800",
+  "n_tasks": 8,
+  "success": 6,
+  "success_rate": 0.75,
+  "verified": 6,
+  "verified_rate": 0.75,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.9,
+  "mean_duration_ms": 14043,
+  "decision_latency_ms": {
+   "p50": 492.5,
+   "p95": 680.6
+  },
+  "step_outcomes": {
+   "stale": 4,
+   "refused-empty-enter": 4,
+   "done-rejected": 4,
+   "executed": 20,
+   "done": 7
+  },
+  "low_confidence_steps": 3,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 6,
+    "success_rate": 0.75,
+    "verified": 6,
+    "verified_rate": 0.75,
+    "mean_steps": 4.9
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-570bb4df0c223820",
+   "source": "google",
+   "goal": "First search Google for kafka migration guide, then search Google for vue tutorial.",
+   "fingerprint": 49100,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 6,
+   "total_ms": 22093,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=vue+tutorial&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=appeqntuzciq4n2j4spfm7jtfpyd0hnx",
+     "bot_challenge": false,
+     "group0": [
+      "vue"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=vue+tutorial&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQntUZcIQ4n2J4SpFM7jtFpYD0HnXLQ%3A1790511506110&source=hp&ei=kgm5ataVBeTDkPIP2JejkQ4&iflsig=ABILxe8AAAAAarkXohaaXiilxIijPNrquULYFPuG2E9G&oq=vue+tutorial&gs_lp=Egdnd3Mtd2l6Igx2dWUgdHV0b3JpYWwqBQgAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IqghQIFggcAF4AJABAJgBvwGgAb8BqgEDMC4xuAEByAEA-AEBmAICoALFAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QUMvE5d5Kmtk5IHAzEuMaAH8gSyBwMwLjG4B8EBwgcDMC4yyAcEgAgB&sclient=gws-wiz&sei=mgm5aomgBb7fkPIPqLLvgQw",
+    "final_title": "vue tutorial - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9025,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kafka migration guide",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 479.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.871,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 477.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511507447"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8816,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for \"vue tutorial\" are not visible; page is the Google homepage with a search box only.",
+     "page_changed": null,
+     "latency_ms": 492.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511507447"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue tutorial",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511507447"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.3979,
+     "target": "12",
+     "target_label": "vue tutorial",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 613.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511507447"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8611,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 579.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=vue+tutorial&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQntUZcIQ4n2J4SpFM7jtFpYD0HnXLQ%3A1790511506110&source=hp&ei=kgm5ataVBeTDkPIP2JejkQ4&iflsig=ABILxe8AAAAAarkXohaaXiilxIijPNrquULYFPuG2E9G&oq=vue+tutorial&gs_lp=Egdnd3Mtd2l6Igx2dWUgdHV0b3JpYWwqBQgAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IqghQIFggcAF4AJABAJgBvwGgAb8BqgEDMC4xuAEByAEA-AEBmAICoALFAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QUMvE5d5Kmtk5IHAzEuMaAH8gSyBwMwLjG4B8EBwgcDMC4yyAcEgAgB&sclient=gws-wiz&sei=mgm5aomgBb7fkPIPqLLvgQw"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-66e19c913fc4a898",
+   "source": "google",
+   "goal": "First search Google for vector embeddings best practices, then search Google for memory leak debugging cheat sheet.",
+   "fingerprint": 49100,
+   "status": "repeat-loop",
+   "verified": false,
+   "success": false,
+   "steps": 8,
+   "total_ms": 51665,
+   "error": "CLICK on the same target repeats without progress; stopping",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['debugging', 'memory']]",
+    "checks": {
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/",
+    "final_title": "Our Approach - How Google Search Works"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8835,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vector embeddings best practices",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 487.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9026,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 488.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511536934"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.4655,
+     "target": "18",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 511.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511536934"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.9128,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 393.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search/howsearchworks/?fg=1"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.9229,
+     "target": "5",
+     "target_label": "功​能",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 492.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.9307,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 349.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/features/"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.9369,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 332.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/features/"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.9364,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 506.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3980a81f4587083c",
+   "source": "google",
+   "goal": "Search Google for java release notes and open the results.",
+   "fingerprint": 49100,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 5,
+   "total_ms": 8493,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=java+release+notes&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=appeqnsomscjrgkgpbzq8ixfzx",
+     "bot_challenge": false,
+     "group0": [
+      "java"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=java+release+notes&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQnsomscJRGkGPbzQ8IxfZXAZXypKIQ%3A1790511594613&source=hp&ei=6gm5aqD0I_aekPIPoZO42Qc&iflsig=ABILxe8AAAAAarkX-oN0igWWuP913hdrKtBD-jBp4G-B&ved=0ahUKEwigkb-8346XAxV2D0QIHaEJLnsQ4dUDCDI&oq=java+release+notes&gs_lp=Egdnd3Mtd2l6IhJqYXZhIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMggQABiJBRiiBDIIEAAYiQUYogQyCBAAGIkFGKIESOchUA1YDXABeACQAQCYAd0BoAHdAaoBAzItMbgBDMgBAPgBAZgCAqAC5AGoAgrCAhkQLhiABBiKBRhDGOcGGMcBGNEDGOoCGLQCwgITEAAYgAQYigUYQxjnBhjqAhi0ApgDA_EFKP3xwRHMJaWSBwUxLjAuMaAH5gOyBwMyLTG4B-ABwgcDMC4yyAcEgAgB&sclient=gws-wiz",
+    "final_title": "java release notes - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.6878,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 480.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511594937"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7123,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "java release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 467.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511594937"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9205,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results listing for 'java release notes' (only the search box with suggestions is shown)",
+     "page_changed": null,
+     "latency_ms": 803.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511594937"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:30",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511594937"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8919,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 603.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=java+release+notes&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQnsomscJRGkGPbzQ8IxfZXAZXypKIQ%3A1790511594613&source=hp&ei=6gm5aqD0I_aekPIPoZO42Qc&iflsig=ABILxe8AAAAAarkX-oN0igWWuP913hdrKtBD-jBp4G-B&ved=0ahUKEwigkb-8346XAxV2D0QIHaEJLnsQ4dUDCDI&oq=java+release+notes&gs_lp=Egdnd3Mtd2l6IhJqYXZhIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMggQABiJBRiiBDIIEAAYiQUYogQyCBAAGIkFGKIESOchUA1YDXABeACQAQCYAd0BoAHdAaoBAzItMbgBDMgBAPgBAZgCAqAC5AGoAgrCAhkQLhiABBiKBRhDGOcGGMcBGNEDGOoCGLQCwgITEAAYgAQYigUYQxjnBhjqAhi0ApgDA_EFKP3xwRHMJaWSBwUxLjAuMaAH5gOyBwMyLTG4B-ABwgcDMC4yyAcEgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-74e1b5988ad1908d",
+   "source": "google",
+   "goal": "Search Google for design patterns release notes and open the results.",
+   "fingerprint": 49100,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 10600,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['patterns', 'design']]",
+    "checks": {
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511610740",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/?hl=en&gl=us&zx=1790511610740",
+    "final_title": "Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.3619,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 480.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511610740"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.2656,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"design patterns release notes\"; query entered/searched",
+     "page_changed": null,
+     "latency_ms": 472.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511610740"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511610740"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8996,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search query not entered; search results page for 'design patterns release notes' not shown",
+     "page_changed": null,
+     "latency_ms": 694.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511610740"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "design patterns release notes",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511610740"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.913,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 663.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511610740"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-eaf6b208b5bbe3ad",
+   "source": "google",
+   "goal": "Search Google for async programming migration guide and open the results.",
+   "fingerprint": 49100,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4674,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=async+programming+migration+guide&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=appeqnt1t2e",
+     "bot_challenge": false,
+     "group0": [
+      "programming",
+      "async"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=async+programming+migration+guide&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQnt1t2EzKI1-KDZWloK8czOZxPXpCQ%3A1790511628098&source=hp&ei=DAq5asbpBO_UkPIPw8X7-AI&iflsig=ABILxe8AAAAAarkYHCTY7DWsn24oqahLjp9_lFJodu6W&ved=0ahUKEwjGn7vM346XAxVvKkQIHcPiHi8Q4dUDCDI&uact=5&oq=async+programming+migration+guide&gs_lp=Egdnd3Mtd2l6IiFhc3luYyBwcm9ncmFtbWluZyBtaWdyYXRpb24gZ3VpZGUyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABSIQHUA1YDXABeACQAQCYAeUBoAHlAaoBAzItMbgBA8gBAPgBAZgCAqAC8gGoAgrCAgoQABgDGI8BGOoCmAME8QW6Mu4sftNvkpIHBTEuMC4xoAePBLIHAzItMbgH7gHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz",
+    "final_title": "async programming migration guide - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9062,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "async programming migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 478.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511628287"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8924,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 507.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511628287"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8844,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 534.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=async+programming+migration+guide&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQnt1t2EzKI1-KDZWloK8czOZxPXpCQ%3A1790511628098&source=hp&ei=DAq5asbpBO_UkPIPw8X7-AI&iflsig=ABILxe8AAAAAarkYHCTY7DWsn24oqahLjp9_lFJodu6W&ved=0ahUKEwjGn7vM346XAxVvKkQIHcPiHi8Q4dUDCDI&uact=5&oq=async+programming+migration+guide&gs_lp=Egdnd3Mtd2l6IiFhc3luYyBwcm9ncmFtbWluZyBtaWdyYXRpb24gZ3VpZGUyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABSIQHUA1YDXABeACQAQCYAeUBoAHlAaoBAzItMbgBA8gBAPgBAZgCAqAC8gGoAgrCAgoQABgDGI8BGOoCmAME8QW6Mu4sftNvkpIHBTEuMC4xoAePBLIHAzItMbgH7gHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5e7370270cc25afb",
+   "source": "google",
+   "goal": "Search Google for pytorch best practices and open the results.",
+   "fingerprint": 49100,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4075,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=pytorch+best+practices&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=appeqnvdwjztzs1mw2y6qp",
+     "bot_challenge": false,
+     "group0": [
+      "pytorch"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=pytorch+best+practices&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQnvdwJztZs1mw2y6QpxleP7vlcXxYg%3A1790511639955&source=hp&ei=Fwq5atf9OL2ekPIPlaz1uAI&iflsig=ABILxe8AAAAAarkYJ2OmNKz8jyD_bWQQVFlkAoBknGj-&ved=0ahUKEwiX5Y7S346XAxU9D0QIHRVWHScQ4dUDCDI&uact=5&oq=pytorch+best+practices&gs_lp=Egdnd3Mtd2l6IhZweXRvcmNoIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgNIvQdQDVgNcAF4AJABAJgB4gGgAeIBqgEDMi0xuAEDyAEA-AEBmAICoALpAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QURqin4LvHqsZIHBTEuMC4xoAfTBbIHAzItMbgH5QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz",
+    "final_title": "pytorch best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9014,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "pytorch best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 481.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511640149"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.895,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 564.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511640149"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8982,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 568.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=pytorch+best+practices&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQnvdwJztZs1mw2y6QpxleP7vlcXxYg%3A1790511639955&source=hp&ei=Fwq5atf9OL2ekPIPlaz1uAI&iflsig=ABILxe8AAAAAarkYJ2OmNKz8jyD_bWQQVFlkAoBknGj-&ved=0ahUKEwiX5Y7S346XAxU9D0QIHRVWHScQ4dUDCDI&uact=5&oq=pytorch+best+practices&gs_lp=Egdnd3Mtd2l6IhZweXRvcmNoIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgNIvQdQDVgNcAF4AJABAJgB4gGgAeIBqgEDMi0xuAEDyAEA-AEBmAICoALpAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QURqin4LvHqsZIHBTEuMC4xoAfTBbIHAzItMbgH5QHCBwUwLjEuMcgHBYAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-56d6c2816d559b1d",
+   "source": "google",
+   "goal": "Search Google for java performance optimization and open the results.",
+   "fingerprint": 49100,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 3,
+   "total_ms": 4314,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=java+performance+optimization&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=appeqnspc3ic-65",
+     "bot_challenge": false,
+     "group0": [
+      "java"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=java+performance+optimization&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQnsPC3iC-659UBdnIOEg5dNnVwXLow%3A1790511651213&source=hp&ei=Iwq5auTVC9zPkPIP5beF8Ak&iflsig=ABILxe8AAAAAarkYM1fjehCbJLXeHAJltOo0bnvd8tP6&ved=0ahUKEwik873X346XAxXcJ0QIHeVbAZ4Q4dUDCDI&uact=5&oq=java+performance+optimization&gs_lp=Egdnd3Mtd2l6Ih1qYXZhIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IuAhQD1gPcAF4AJABAJgBzwGgAc8BqgEDMi0xuAEDyAEA-AEBmAICoALbAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME8QU9xqLOpwo6LpIHBTEuMC4xoAf4BbIHAzItMbgH1gHCBwMyLTLIBwiACAE&sclient=gws-wiz",
+    "final_title": "java performance optimization - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.5049,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "java performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 482.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511651409"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9126,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 680.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511651409"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8973,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 593.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=java+performance+optimization&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQnsPC3iC-659UBdnIOEg5dNnVwXLow%3A1790511651213&source=hp&ei=Iwq5auTVC9zPkPIP5beF8Ak&iflsig=ABILxe8AAAAAarkYM1fjehCbJLXeHAJltOo0bnvd8tP6&ved=0ahUKEwik873X346XAxXcJ0QIHeVbAZ4Q4dUDCDI&uact=5&oq=java+performance+optimization&gs_lp=Egdnd3Mtd2l6Ih1qYXZhIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IuAhQD1gPcAF4AJABAJgBzwGgAc8BqgEDMi0xuAEDyAEA-AEBmAICoALbAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME8QU9xqLOpwo6LpIHBTEuMC4xoAf4BbIHAzItMbgH1gHCBwMyLTLIBwiACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-553149439745a7a6",
+   "source": "google",
+   "goal": "Search Google for redis release notes and open the results.",
+   "fingerprint": 49100,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 5,
+   "total_ms": 6433,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=redis+release+notes&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=appeqnugiwjcefrj4ypj0ixjh",
+     "bot_challenge": false,
+     "group0": [
+      "redis"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=redis+release+notes&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQnugiwJCeFrj4ypj0IxjH7_xShOmeQ%3A1790511665426&ei=MQq5aoHVGabOkPIPl8evgQs&biw=1120&bih=780&ved=2ahUKEwjBsaLe346XAxUmJ0QIHZfjK7AQ4dUDegQIBhAN&oq=redis+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3JlZGlzIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp",
+    "final_title": "redis release notes - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8945,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "redis release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 495.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511662892"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7326,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 623.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790511662892"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.2399,
+     "target": "22",
+     "target_label": "More results from redis.io »",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 621.0,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=redis+release+notes&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQnvxtz_YpQqXfov3iy8JIc76bo9s4w%3A1790511662696&source=hp&ei=Lgq5aoKTKfzRkPIPrdmjwAY&iflsig=ABILxe8AAAAAarkYPtJLhwUO3pWCgO2OVtlVlUH8RWzc&ved=0ahUKEwiC4vrc346XAxX8KEQIHa3sCGgQ4dUDCDI&uact=5&oq=redis+release+notes&gs_lp=Egdnd3Mtd2l6IhNyZWRpcyByZWxlYXNlIG5vdGVzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjzB1AOWA5wAXgAkAEAmAHdAaAB3QGqAQMyLTG4AQPIAQD4AQGYAgKgAucBqAIKwgIREC4Y5QYYigMY5wYY6gIYtALCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFJg0FHyNLvZ-SBwUxLjAuMaAHmAWyBwMyLTG4B-MBwgcDMi0yyAcGgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.2373,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 567.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=redis+release+notes&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQnvxtz_YpQqXfov3iy8JIc76bo9s4w%3A1790511662696&source=hp&ei=Lgq5aoKTKfzRkPIPrdmjwAY&iflsig=ABILxe8AAAAAarkYPtJLhwUO3pWCgO2OVtlVlUH8RWzc&ved=0ahUKEwiC4vrc346XAxX8KEQIHa3sCGgQ4dUDCDI&uact=5&oq=redis+release+notes&gs_lp=Egdnd3Mtd2l6IhNyZWRpcyByZWxlYXNlIG5vdGVzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjzB1AOWA5wAXgAkAEAmAHdAaAB3QGqAQMyLTG4AQPIAQD4AQGYAgKgAucBqAIKwgIREC4Y5QYYigMY5wYY6gIYtALCAhEQABjlBhiKAxjnBhjqAhi0ApgDBPEFJg0FHyNLvZ-SBwUxLjAuMaAHmAWyBwMyLTG4B-MBwgcDMi0yyAcGgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8956,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 605.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=redis+release+notes&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQnugiwJCeFrj4ypj0IxjH7_xShOmeQ%3A1790511665426&ei=MQq5aoHVGabOkPIPl8evgQs&biw=1120&bih=780&ved=2ahUKEwjBsaLe346XAxUmJ0QIHZfjK7AQ4dUDegQIBhAN&oq=redis+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3JlZGlzIHJlbGVhc2Ugbm90ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    }
+   ]
+  }
+ ]
+}

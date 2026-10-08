@@ -1,0 +1,638 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 59468,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T20:09:22+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 3.4,
+  "mean_duration_ms": 17037,
+  "decision_latency_ms": {
+   "p50": 515.8,
+   "p95": 659.7
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 2,
+   "executed": 20,
+   "done-rejected": 3
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 3.4
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-dfde0a6e7750c2a7",
+   "source": "google",
+   "goal": "Search Google for concurrency performance optimization and open the results.",
+   "fingerprint": 59468,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 24427,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dconcurrency%2bperformance%2boptimization",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dconcurrency%2Bperformance%2Boptimization%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuu3ubGG6rFZz9M-dCRH14bdjlP7Q%253A1790510459640%26source%3Dhp%26ei%3DewW5au3SJYbakPIP2NeOsAw%26iflsig%3DABILxe8AAAAAarkTi25bO_arKoL2U827DG-6xbDcH-gJ%26ved%3D0ahUKEwit_KWf246XAxUGLUQIHdirA8YQ4dUDCDY%26uact%3D5%26oq%3Dconcurrency%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiRjb25jdXJyZW5jeSBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGBYYHhgKMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSNdJUPQiWPQicAJ4AJABAJgB2AGgAdgBqgEDMi0xuAEDyAEA-AEBmAIDoALmAagCCsICChAAGAMYjwEY6gKYAwPxBRJA8oayJWf2kgcFMi4wLjGgB-UIsgcDMi0xuAfgAcIHBTAuMi4xyAcIgAgB%26sclient%3Dgws-wiz%26sei%3DhwW5apfrO7DOkPIP_t-zoQE&hl=en&q=EgQm0XtnGIiL5NUGIjA0DkZbv3Jy9wkapoOeot0sJFh1DClTSeEvPta0PKrnMmyvDqeXg-R-Ijdw8H25Io4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=concurrency+performance+optimization&sca_esv=18a"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.885,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "concurrency performance optimization",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 482.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9053,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 482.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510460989"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8515,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 510.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510460989"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8044,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'concurrency performance optimization' are not shown; page is the Google homepage with a search box and trending searches on",
+     "page_changed": null,
+     "latency_ms": 659.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510460989"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "concurrency performance optimization",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510460989"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8865,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search-results page listing results for concurrency performance optimization",
+     "page_changed": null,
+     "latency_ms": 620.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510460989"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510460989"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-7a22f2ee3074cd0d",
+   "source": "google",
+   "goal": "Search Google for c++ cheat sheet and open the results.",
+   "fingerprint": 59468,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 19726,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dc%252b%252b%2bcheat%2bsheet%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dc%252B%252B%2Bcheat%2Bsheet%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntvFBTWWPxPmQ01UQJxbh-7SgQI_g%253A1790510536455%26source%3Dhp%26ei%3DyAW5aveZGq7nkPIPgMi5oAM%26iflsig%3DABILxe8AAAAAarkT2CGHqEiLmtQpqLagXFIGn6GyEtQB%26oq%3Dc%252B%252B%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6Ig9jKysgY2hlYXQgc2hlZXQqBQgAGIAEMgUQABiABDIFEAAYgAQyCBAAGIAEGLQHMgUQABiABDIFEAAYgAQyBRAAGIAEMggQABiABBi0BzIFEAAYgAQyBRAAGIAEMgUQABiABEiUJ1DmHljmHnAEeACQAQCYAcsBoAHLAaoBAzItMbgBAcgBAPgBAZgCBaAC2QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFJkrCSA_-Cb2SBwU0LjAuMaAHuQWyBwMyLTG4B88BwgcFMC40LjHIBwqACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNCL5NUGIjBt_NbqV_USNlFs7AABgpNSnSAk41oA07HWn6PDIEjF1WVACX9XSTetsR4po_2zo0EyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=c%2B%2B+cheat+sheet&sca_esv=18a60b01d202c9ee&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8949,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "c++ cheat sheet",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 487.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8957,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 472.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510537801"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.876,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 494.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510537801"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8038,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 691.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510537801"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8859,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 603.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510537801"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "c++ cheat sheet",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510537801"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.4328,
+     "target": "12",
+     "target_label": "c++ cheat sheet",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 647.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510537801"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d75cdadbef7ed3e6",
+   "source": "google",
+   "goal": "First search Google for rabbitmq interview questions, then search Google for prometheus cheat sheet.",
+   "fingerprint": 59468,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14783,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drabbitmq%2binterview%2bquestions%26sca_e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drabbitmq%2Binterview%2Bquestions%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntkxlP893y3cnhnfgZvSBqoiWtYjw%253A1790510608566%26source%3Dhp%26ei%3DEAa5aueuIai-kPIPjLDHiAE%26iflsig%3DABILxe8AAAAAarkUIBk2siuhegg_i9E07Qt7IDWg3F6d%26ved%3D0ahUKEwjn9qfm246XAxUoH0QIHQzYEREQ4dUDCDI%26uact%3D5%26oq%3Drabbitmq%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhxyYWJiaXRtcSBpbnRlcnZpZXcgcXVlc3Rpb25zMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBUjcB1AOWA5wAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuQBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtAKYAwTxBTK6s7JcLt-NkgcFMS4wLjGgB58GsgcDMi0xuAffAcIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJOM5NUGIjCnCQHHLZxBkALt8jIGFrcYe0hiNQbiYBo0r7AsY_uSRYb5s2u635wQjSdLSyoTCJIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=rabbitmq+interview+questions&sca_esv=18a60b01d20"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8843,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rabbitmq interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 500.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510608863"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.902,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 598.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510608863"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-4921b93dc18c023f",
+   "source": "google",
+   "goal": "Search Google for rabbitmq migration guide and open the results.",
+   "fingerprint": 59468,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 18279,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drabbitmq%2bmigration%2bguide%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drabbitmq%2Bmigration%2Bguide%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuB-kOMi-ytJV_N7QjlOlque2EIGQ%253A1790510675563%26source%3Dhp%26ei%3DUwa5auOKIdyhur8P6sbz4QE%26iflsig%3DABILxe8AAAAAarkUY_GF7SEfP7TNFt5wxfn5G1U1x941%26ved%3D0ahUKEwijgKGG3I6XAxXckO4BHWrjPBwQ4dUDCDI%26oq%3Drabbitmq%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhhyYWJiaXRtcSBtaWdyYXRpb24gZ3VpZGUyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGIkFGKIEMgUQABjvBTIIEAAYgAQYogRI_iNQDVgNcAF4AJABAJgB0wGgAdMBqgEDMi0xuAEMyAEA-AEBmAICoALaAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCmAME8QXLkGiMLd3C3ZIHBTEuMC4xoAeFA7IHAzItMbgH1gHCBwUwLjEuMcgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNmM5NUGIjB7Ca022oBxoIe2w6xT5IM7eNZEZz6TvNwaZax1RP2O8Ih_NlM-2EeRHWgAK93bgEcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=rabbitmq+migration+guide&sca_esv=75b852f910b8e50"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9014,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rabbitmq migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 494.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510675983"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.7219,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"rabbitmq migration guide\" are not displayed (only the query typed in the search box with autocomplete suggestions; the search has ",
+     "page_changed": null,
+     "latency_ms": 596.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510675983"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:29",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510675983"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-950aace104453efd",
+   "source": "google",
+   "goal": "First search Google for pytorch tutorial, then search Google for swift release notes.",
+   "fingerprint": 59468,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14725,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpytorch%2btutorial%26sca_esv%3d18a60b01d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpytorch%2Btutorial%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntHUTzL0InNRtgqm3X3xC0j8F8cEw%253A1790510746004%26source%3Dhp%26ei%3DmQa5apLdO7nKkPIP3ZLS0Qc%26iflsig%3DABILxe8AAAAAarkUqngWLS5eqpON2fIqi9-QehQGCDxI%26ved%3D0ahUKEwjSjeyn3I6XAxU5JUQIHV2JNHoQ4dUDCDI%26uact%3D5%26oq%3Dpytorch%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhBweXRvcmNoIHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi-B1AOWA5wAXgAkAEAmAHUAaAB1AGqAQMyLTG4AQPIAQD4AQGYAgKgAt4BqAIKwgIKEAAYAxiPARjqApgDBPEFNktEaS7akmqSBwUxLjAuMaAH-gSyBwMyLTG4B9oBwgcFMC4xLjHIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJyN5NUGIjCByBbL60OHHj5WFhqj-8MlnAJ1sSfUaWeyxdi7UIXzIXmbs5E3ioHBjwhzfP4mefIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=pytorch+tutorial&sca_esv=18a60b01d202c9ee&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9014,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "pytorch tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 492.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510746175"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8909,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 566.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510746175"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-6fef8f568c1acf33",
+   "source": "google",
+   "goal": "Search Google for concurrency migration guide and open the results.",
+   "fingerprint": 59468,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14715,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dconcurrency%2bmigration%2bguide%26sca_es",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dconcurrency%2Bmigration%2Bguide%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsWaKRT7jmdg2NiOXmf6XahaPEl-Q%253A1790510812905%26source%3Dhp%26ei%3D3Aa5apT7NYSXkPIPzrWOoAg%26iflsig%3DABILxe8AAAAAarkU7JJ_kOUgavXWH6-deTIimA5pxNi5%26ved%3D0ahUKEwiU2d_H3I6XAxWEC0QIHc6aA4QQ4dUDCDI%26uact%3D5%26oq%3Dconcurrency%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6Ihtjb25jdXJyZW5jeSBtaWdyYXRpb24gZ3VpZGUyBhAAGBYYHjILEAAYgAQYigUYhgMyBRAAGO8FMggQABiABBiiBDIIEAAYiQUYogQyBRAAGO8FMggQABiABBiiBEjeB1AOWA5wAXgAkAEAmAHjAaAB4wGqAQMyLTG4AQPIAQD4AQGYAgKgAu0BqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICExAuGIAEGIoFGEMY5wYY6gIYtAKYAwPxBTKG3uao7eMokgcFMS4wLjGgB-0DsgcDMi0xuAfqAcIHBTAuMS4xyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGN-N5NUGIjBFkiOl3cP7zRukwWFbgjOaqoQxO0AskQvKUstixTm5gO4_d9fXhwIXfAZ2VOqRBWEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=concurrency+migration+guide&sca_esv=18a60b01d202"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8925,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "concurrency migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 528.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510813173"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9102,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 596.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510813173"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5539fe6d5cc3071a",
+   "source": "google",
+   "goal": "Search Google for kubernetes security vulnerabilities and open the results.",
+   "fingerprint": 59468,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14822,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dkubernetes%2bsecurity%2bvulnerabilities%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dkubernetes%2Bsecurity%2Bvulnerabilities%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntw7NuMr7FTfg9Fm5ehZxPZwbmrcg%253A1790510879780%26source%3Dhp%26ei%3DHwe5aoaqLrnZkPIPhPSEkAs%26iflsig%3DABILxe8AAAAAarkVL-0LOKHts2nK9GoJLhMB8zAUQj9f%26ved%3D0ahUKEwjGtdHn3I6XAxW5LEQIHQQ6AbIQ4dUDCDI%26uact%3D5%26oq%3Dkubernetes%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IiNrdWJlcm5ldGVzIHNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMggQABiABBiiBEjSB1AOWA5wAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAuUBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBYAiKNoe1JkrkgcFMS4wLjGgB6sEsgcDMi0xuAfhAcIHAzAuMsgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKKO5NUGIjDFjYrts__-w4PMeApwH6EEkqRgRMhvZlvX9mbU5xuDoRL4TuRLr0CPgiQHvbDVugQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=kubernetes+security+vulnerabilities&sca_esv=18a6"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8987,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kubernetes security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 515.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510879946"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8958,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 589.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510879946"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-af5edddfc2ea6c7e",
+   "source": "google",
+   "goal": "First search Google for postgresql interview questions, then search Google for kotlin cheat sheet.",
+   "fingerprint": 59468,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14820,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpostgresql%2binterview%2bquestions%26sca",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpostgresql%2Binterview%2Bquestions%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvAaNeeUSt8SrKSolEy9Db0eAYiEQ%253A1790510946762%26source%3Dhp%26ei%3DYge5atu1Lb3bkPIPmsOM8A0%26iflsig%3DABILxe8AAAAAarkVcp1aj1mnKno20kpYbXgpLspdpvbj%26ved%3D0ahUKEwjb7smH3Y6XAxW9LUQIHZohA94Q4dUDCDI%26uact%3D5%26oq%3Dpostgresql%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Ih5wb3N0Z3Jlc3FsIGludGVydmlldyBxdWVzdGlvbnMyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDSOsHUA1YDXABeACQAQCYAZsDoAGbA6oBAzQtMbgBA8gBAPgBAZgCAqACowOoAgrCAgoQABgDGI8BGOoCmAME8QXO31TXEt6IwpIHBTEuNC0xoAfxBrIHAzQtMbgHngPCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOWO5NUGIjBZhqWgRNzDiCUrfKOimJrk9LojEBoX1XBo0V4DG5zMcPqIGIdBZ89O5wTGm0xU7_syAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=postgresql+interview+questions&sca_esv=18a60b01d"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.892,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 523.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510947141"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9064,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 620.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790510947141"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,785 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 58318,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:32:33+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.6,
+  "mean_duration_ms": 17895,
+  "decision_latency_ms": {
+   "p50": 563.5,
+   "p95": 767.5
+  },
+  "step_outcomes": {
+   "stale": 5,
+   "refused-empty-enter": 2,
+   "done-rejected": 4,
+   "executed": 24,
+   "done": 1,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 6,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 4.6
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-fcb05abefb49a758",
+   "source": "google",
+   "goal": "Search Google for kotlin performance optimization and open the results.",
+   "fingerprint": 58318,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 23867,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dkotlin%2bperformance%2boptimization%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dkotlin%2Bperformance%2Boptimization%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsQE4t3auxLJA5vPZ9L7y3N0DUCyg%253A1790508288184%26source%3Dhp%26ei%3DAP24aoX1CeLckPIPltXUgQc%26iflsig%3DABILxe8AAAAAarkLEJQaN-rgfFfuzG8g7bTxAnj6uYFx%26ved%3D0ahUKEwiF9e6T046XAxViLkQIHZYqNXAQ4dUDCDI%26oq%3Dkotlin%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ih9rb3RsaW4gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiJBRiiBEijLlAPWA9wAXgAkAEAmAHaAaAB2gGqAQMyLTG4AQzIAQD4AQGYAgKgAuMBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBXR3UCxbKEhRkgcFMS4wLjGgB54DsgcDMi0xuAffAcIHAzItMsgHBoAIAQ%26sclient%3Dgws-wiz%26sei%3DC_24asbsOZejkPIP37zY4Ao&hl=en&q=EgQm0XtnGIz649UGIjB-wjb71kqVkUq7aR2IO1f0rFMbdbF_88Zp1KilzZ0Sg07X3PPc3uHSPcx7dYio2jwyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=kotlin+performance+optimization&sca_esv=18a60b01"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8997,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kotlin performance optimization",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 485.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.902,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 471.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508289651"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.7711,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'kotlin performance optimization' are not displayed; page is still the empty Google homepage search box",
+     "page_changed": null,
+     "latency_ms": 514.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508289651"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kotlin performance optimization",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508289651"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8759,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for kotlin performance optimization are not visible; page only shows the Google homepage/search box with autocomplete suggestions",
+     "page_changed": null,
+     "latency_ms": 598.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508289651"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:29",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508289651"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f88de05a32881c12",
+   "source": "google",
+   "goal": "First search Google for llm fine-tuning migration guide, then search Google for retrieval augmented generation release notes.",
+   "fingerprint": 58318,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 14,
+   "total_ms": 20507,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=generation'",
+    "checks": {
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+release+notes&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=11",
+     "bot_challenge": false,
+     "group0": [
+      "generation",
+      "retrieval"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=retrieval+augmented+generation+release+notes&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnuNa9yN_daclAy1aCxV_TQJudV_eA%3A1790508376512&ei=WP24apjuHuePur8PvZ6G-Ao&ved=2ahUKEwiY-v69046XAxXnh-4BHT2PAa8Q4dUDegQIBhAN&oq=retrieval+augmented+generation+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiLHJldHJpZXZhbCBhdWdtZW50ZWQgZ2VuZXJhdGlvbiByZWxlYXNlIG5vdGVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwJIoAhQDFgMcAF4AJABAJgB4wGgAeMBqgEDMi0xuAEMyAEA-AEBmAICoALuAcICCBAAGO8FGLADmAMAiAYBkAYEkgcFMS4wLjGgB6kFsgcDMi0xuAfsAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz-serp",
+    "final_title": "retrieval augmented generation release notes - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9067,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llm fine-tuning migration guide",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 496.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.91,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 498.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508365838"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8796,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 512.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508365838"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.6903,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 596.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508365838"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8582,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 680.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508365838"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llm fine-tuning migration guide",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508365838"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.5493,
+     "target": "14",
+     "target_label": "llm fine-tuning migration guides",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 767.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508365838"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.2445,
+     "target": "17",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 755.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=llm+fine-tuning+migration+guides&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvw9Kpc--_fA7EanWQn_olSua2RkQ%3A1790508364415&source=hp&ei=TP24apn7F5nwkPIP5ebj-QE&iflsig=ABILxe8AAAAAarkLXNGLoVgpEQJ7CKiRPeDV2B45ndOM&oq=llm+fine-tuning+migration+guide&gs_lp=Egdnd3Mtd2l6Ih9sbG0gZmluZS10dW5pbmcgbWlncmF0aW9uIGd1aWRlKgUIAhigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIvjFQpChYpChwBHgAkAEAmAHoAaAB6AGqAQMyLTG4AQHIAQD4AQGYAgWgAvkBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBeD--F7MZEqqkgcFNC4wLjGgB_oDsgcDMi0xuAfvAcIHBTAuNC4xyAcJgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.2774,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 569.4,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=llm+fine-tuning+migration+guides&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnvw9Kpc--_fA7EanWQn_olSua2RkQ%3A1790508364415&source=hp&ei=TP24apn7F5nwkPIP5ebj-QE&iflsig=ABILxe8AAAAAarkLXNGLoVgpEQJ7CKiRPeDV2B45ndOM&oq=llm+fine-tuning+migration+guide&gs_lp=Egdnd3Mtd2l6Ih9sbG0gZmluZS10dW5pbmcgbWlncmF0aW9uIGd1aWRlKgUIAhigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIvjFQpChYpChwBHgAkAEAmAHoAaAB6AGqAQMyLTG4AQHIAQD4AQGYAgWgAvkBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBeD--F7MZEqqkgcFNC4wLjGgB_oDsgcDMi0xuAfvAcIHBTAuNC4xyAcJgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.5181,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 607.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=llm+fine-tuning+migration+guides&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnsPmHEuMKm6-VIDN9mvaI06jCvv-w%3A1790508373873&ei=Vf24arn0NLuekPIP89LHyAc&biw=1120&bih=780&ved=2ahUKEwj58t28046XAxU7D0QIHXPpEXkQ4dUDegQIBhAN&oq=llm+fine-tuning+migration+guides&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGxsbSBmaW5lLXR1bmluZyBtaWdyYXRpb24gZ3VpZGVzSABQAFgAcAB4AJABAJgBAKABAKoBALgBDMgBAJgCAKACAJgDAJIHAKAHALIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.2678,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 843.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=llm+fine-tuning+migration+guides&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnsPmHEuMKm6-VIDN9mvaI06jCvv-w%3A1790508373873&ei=Vf24arn0NLuekPIP89LHyAc&biw=1120&bih=780&ved=2ahUKEwj58t28046XAxU7D0QIHXPpEXkQ4dUDegQIBhAN&oq=llm+fine-tuning+migration+guides&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGxsbSBmaW5lLXR1bmluZyBtaWdyYXRpb24gZ3VpZGVzSABQAFgAcAB4AJABAJgBAKABAKoBALgBDMgBAJgCAKACAJgDAJIHAKAHALIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 10,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation release notes",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=llm+fine-tuning+migration+guides&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnsPmHEuMKm6-VIDN9mvaI06jCvv-w%3A1790508373873&ei=Vf24arn0NLuekPIP89LHyAc&biw=1120&bih=780&ved=2ahUKEwj58t28046XAxU7D0QIHXPpEXkQ4dUDegQIBhAN&oq=llm+fine-tuning+migration+guides&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGxsbSBmaW5lLXR1bmluZyBtaWdyYXRpb24gZ3VpZGVzSABQAFgAcAB4AJABAJgBAKABAKoBALgBDMgBAJgCAKACAJgDAJIHAKAHALIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 11,
+     "operation": "CLICK",
+     "confidence": 0.205,
+     "target": "4",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 622.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=llm+fine-tuning+migration+guides&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnsPmHEuMKm6-VIDN9mvaI06jCvv-w%3A1790508373873&ei=Vf24arn0NLuekPIP89LHyAc&biw=1120&bih=780&ved=2ahUKEwj58t28046XAxU7D0QIHXPpEXkQ4dUDegQIBhAN&oq=llm+fine-tuning+migration+guides&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGxsbSBmaW5lLXR1bmluZyBtaWdyYXRpb24gZ3VpZGVzSABQAFgAcAB4AJABAJgBAKABAKoBALgBDMgBAJgCAKACAJgDAJIHAKAHALIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 12,
+     "operation": "DONE",
+     "confidence": 0.8815,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 616.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=retrieval+augmented+generation+release+notes&sca_esv=18a60b01d202c9ee&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnuNa9yN_daclAy1aCxV_TQJudV_eA%3A1790508376512&ei=WP24apjuHuePur8PvZ6G-Ao&ved=2ahUKEwiY-v69046XAxXnh-4BHT2PAa8Q4dUDegQIBhAN&oq=retrieval+augmented+generation+release+notes&gs_lp=Egxnd3Mtd2l6LXNlcnAiLHJldHJpZXZhbCBhdWdtZW50ZWQgZ2VuZXJhdGlvbiByZWxlYXNlIG5vdGVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwJIoAhQDFgMcAF4AJABAJgB4wGgAeMBqgEDMi0xuAEMyAEA-AEBmAICoALuAcICCBAAGO8FGLADmAMAiAYBkAYEkgcFMS4wLjGgB6kFsgcDMi0xuAfsAcIHBTAuMS4xyAcFgAgB&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-207e6cd5859c41af",
+   "source": "google",
+   "goal": "First search Google for prometheus best practices, then search Google for react best practices.",
+   "fingerprint": 58318,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 25368,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dreact%2bbest%2bpractices%26sca_esv%3d18a",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dreact%2Bbest%2Bpractices%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv50WPsRAvDQgW8If7UsqQC1GEPZg%253A1790508395215%26ei%3Da_24aqTeDJuwur8P1OeAwAw%26biw%3D1120%26bih%3D780%26oq%3Dreact%2Bbest%2Bpractices%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiFHJlYWN0IGJlc3QgcHJhY3RpY2VzKgUIABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIxAtQDFgMcAF4AJABAJgBzgGgAc4BqgEDMi0xuAEByAEA-AEBmAICoALUAcICCRAAGAcYHhiwA8ICCBAAGIAEGLADwgIHEAAYHhiwA8ICCRAAGAgYHhiwA5gDAIgGAZAGCpIHBTEuMC4xoAfHBbIHAzItMbgH0QHCBwMwLjLIBwSACAE%26sclient%3Dgws-wiz-serp&hl=en&q=EgQm0XtnGPX649UGIjCBQPvkojYs9BXv_7_lzRZjbXT6XoBsr--FyPJVxkUOhztpW3ySPtXvWnaeI5UeufUyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=react+best+practices&sca_esv=18a60b01d202c9ee&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9124,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "prometheus best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 501.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508393118"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.837,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 589.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508393118"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.2516,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'react best practices' (page currently shows 'prometheus best practices' results only)",
+     "page_changed": null,
+     "latency_ms": 569.0,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=prometheus+best+practices&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnsPBndx8l4pQtX0CB86BFaD2l9OiQ%3A1790508392506&source=hp&ei=aP24aqjMHM3QkPIPmoqw6QM&iflsig=ABILxe8AAAAAarkLeB1pH1n9iQLpKIK-9TpJTs7-WLA5&ved=0ahUKEwiooM3F046XAxVNKEQIHRoFLD0Q4dUDCDI&uact=5&oq=prometheus+best+practices&gs_lp=Egdnd3Mtd2l6Ihlwcm9tZXRoZXVzIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjJB1AQWBBwAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAucBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBdYPCWNFws62kgcFMS4wLjGgB_8FsgcDMi0xuAfiAcIHBTAuMS4xyAcGgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "react best practices",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=prometheus+best+practices&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnsPBndx8l4pQtX0CB86BFaD2l9OiQ%3A1790508392506&source=hp&ei=aP24aqjMHM3QkPIPmoqw6QM&iflsig=ABILxe8AAAAAarkLeB1pH1n9iQLpKIK-9TpJTs7-WLA5&ved=0ahUKEwiooM3F046XAxVNKEQIHRoFLD0Q4dUDCDI&uact=5&oq=prometheus+best+practices&gs_lp=Egdnd3Mtd2l6Ihlwcm9tZXRoZXVzIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjJB1AQWBBwAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAucBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBdYPCWNFws62kgcFMS4wLjGgB_8FsgcDMi0xuAfiAcIHBTAuMS4xyAcGgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.3045,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'react best practices' — the page still shows results for 'prometheus best practices'",
+     "page_changed": null,
+     "latency_ms": 622.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=prometheus+best+practices&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnsPBndx8l4pQtX0CB86BFaD2l9OiQ%3A1790508392506&source=hp&ei=aP24aqjMHM3QkPIPmoqw6QM&iflsig=ABILxe8AAAAAarkLeB1pH1n9iQLpKIK-9TpJTs7-WLA5&ved=0ahUKEwiooM3F046XAxVNKEQIHRoFLD0Q4dUDCDI&uact=5&oq=prometheus+best+practices&gs_lp=Egdnd3Mtd2l6Ihlwcm9tZXRoZXVzIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjJB1AQWBBwAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAucBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBdYPCWNFws62kgcFMS4wLjGgB_8FsgcDMi0xuAfiAcIHBTAuMS4xyAcGgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "react best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=prometheus+best+practices&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnsPBndx8l4pQtX0CB86BFaD2l9OiQ%3A1790508392506&source=hp&ei=aP24aqjMHM3QkPIPmoqw6QM&iflsig=ABILxe8AAAAAarkLeB1pH1n9iQLpKIK-9TpJTs7-WLA5&ved=0ahUKEwiooM3F046XAxVNKEQIHRoFLD0Q4dUDCDI&uact=5&oq=prometheus+best+practices&gs_lp=Egdnd3Mtd2l6Ihlwcm9tZXRoZXVzIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjJB1AQWBBwAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAucBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBdYPCWNFws62kgcFMS4wLjGgB_8FsgcDMi0xuAfiAcIHBTAuMS4xyAcGgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.7956,
+     "target": "5",
+     "target_label": "react best practices",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 1040.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=prometheus+best+practices&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnsPBndx8l4pQtX0CB86BFaD2l9OiQ%3A1790508392506&source=hp&ei=aP24aqjMHM3QkPIPmoqw6QM&iflsig=ABILxe8AAAAAarkLeB1pH1n9iQLpKIK-9TpJTs7-WLA5&ved=0ahUKEwiooM3F046XAxVNKEQIHRoFLD0Q4dUDCDI&uact=5&oq=prometheus+best+practices&gs_lp=Egdnd3Mtd2l6Ihlwcm9tZXRoZXVzIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjJB1AQWBBwAXgAkAEAmAHeAaAB3gGqAQMyLTG4AQPIAQD4AQGYAgKgAucBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBdYPCWNFws62kgcFMS4wLjGgB_8FsgcDMi0xuAfiAcIHBTAuMS4xyAcGgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ca6faf27feaa909a",
+   "source": "google",
+   "goal": "First search Google for retrieval augmented generation open source alternatives, then search Google for kubernetes performance optimization.",
+   "fingerprint": 58318,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14707,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dretrieval%2baugmented%2bgeneration%2bope",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dretrieval%2Baugmented%2Bgeneration%2Bopen%2Bsource%2Balternatives%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvJwsllp2xj488vne0_FHqPAkVhAA%253A1790508470067%26source%3Dhp%26ei%3Dtv24asrpAqvOkPIPvtSa4A0%26iflsig%3DABILxe8AAAAAarkLxuUxIDmLKLw_PzGFzc0X5gMOjlCM%26ved%3D0ahUKEwjKnMzq046XAxUrJ0QIHT6qBtwQ4dUDCDI%26uact%3D5%26oq%3Dretrieval%2Baugmented%2Bgeneration%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IjdyZXRyaWV2YWwgYXVnbWVudGVkIGdlbmVyYXRpb24gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABSNIHUA9YD3ABeACQAQCYAd8BoAHfAaoBAzItMbgBA8gBAPgBAZgCAqAC6QGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqApgDBPEF2w0FXeniAFmSBwUxLjAuMaAHrASyBwMyLTG4B-QBwgcFMC4xLjHIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLj749UGIjBuM8ULedLCwbG6OKMLu3HFOPC-YllqqrSGzp9Sjm8IJ5Sa9JvpbYHp4mTvb2yi8jUyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=retrieval+augmented+generation+open+source+alter"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8574,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "retrieval augmented generation open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 447.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508470204"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7256,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 585.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508470204"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f8e7c4206767be2d",
+   "source": "google",
+   "goal": "First search Google for code review tutorial, then search Google for design patterns best practices.",
+   "fingerprint": 58318,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14661,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dcode%2breview%2btutorial%26sca_esv%3d18a",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dcode%2Breview%2Btutorial%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnteF-JG7IgeozPEzzpQiEXuoEhNMw%253A1790508536956%26source%3Dhp%26ei%3D-P24asH7OMrVkPIP4cbj8Ag%26iflsig%3DABILxe8AAAAAarkMCO8RiOQpVvWnGYisPkLfezov_CI6%26ved%3D0ahUKEwjB176K1I6XAxXKKkQIHWHjGI4Q4dUDCDI%26uact%3D5%26oq%3Dcode%2Breview%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhRjb2RlIHJldmlldyB0dXRvcmlhbDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMggQABgWGB4YCjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjIB1APWA9wAXgAkAEAmAHWAaAB1gGqAQMyLTG4AQPIAQD4AQGYAgKgAuEBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBY37nWsFvH7WkgcFMS4wLjGgB8YFsgcDMi0xuAfcAcIHAzItMsgHB4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPv749UGIjAOb0rErI6pzKQhzff0Y_D2b2BlgDYKLytoPZyWduW9ogYco_VWvGHha8HCqdl_uycyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=code+review+tutorial&sca_esv=18a60b01d202c9ee&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8861,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "code review tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 456.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508537237"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8745,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 582.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508537237"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d1415de4d6d2cc7e",
+   "source": "google",
+   "goal": "Search Google for langchain migration guide and open the results.",
+   "fingerprint": 58318,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14710,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlangchain%2bmigration%2bguide%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlangchain%2Bmigration%2Bguide%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvxJBlw9SPUPzLs0N6Qw_vUv8Kr4Q%253A1790508603801%26source%3Dhp%26ei%3DO_64atblL-vYkPIPl-i8oAg%26iflsig%3DABILxe8AAAAAarkMSwJuHcwFTErt6aRrgz42e2BX3XLJ%26ved%3D0ahUKEwiW766q1I6XAxVrLEQIHRc0D4QQ4dUDCDI%26uact%3D5%26oq%3Dlangchain%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhlsYW5nY2hhaW4gbWlncmF0aW9uIGd1aWRlMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyCBAAGIAEGKIEMggQABiJBRiiBDIFEAAY7wVI2gdQDlgOcAF4AJABAJgB4gGgAeIBqgEDMi0xuAEDyAEA-AEBmAICoALsAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QWfBafYvOZQ9ZIHBTEuMC4xoAf1A7IHAzItMbgH6AHCBwUwLjEuMcgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGL7849UGIjDrSU3HjgvTNOdoh-t6okIpgomuyZEtEdwCTiQHvxH5p0x6hBaRV9P0m81RdNDFbYEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=langchain+migration+guide&sca_esv=18a60b01d202c9"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9087,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 464.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508604034"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8554,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 592.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508604034"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8c3e8ec5bc033841",
+   "source": "google",
+   "goal": "First search Google for model quantization security vulnerabilities, then search Google for profiling interview questions.",
+   "fingerprint": 58318,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14573,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmodel%2bquantization%2bsecurity%2bvulner",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmodel%2Bquantization%2Bsecurity%2Bvulnerabilities%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv1AJCaxaxaUvZRy_ekPXxfR9U0tg%253A1790508670653%26source%3Dhp%26ei%3Dfv64aovFJtzGkPIPsIe94As%26iflsig%3DABILxe8AAAAAarkMjjKSxFDJGJPBW46e8P147amq7y6s%26ved%3D0ahUKEwiL_J7K1I6XAxVcI0QIHbBDD7wQ4dUDCDI%26uact%3D5%26oq%3Dmodel%2Bquantization%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6Iittb2RlbCBxdWFudGl6YXRpb24gc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUjZB1AQWBBwAXgAkAEAmAHgAaAB4AGqAQMyLTG4AQPIAQD4AQGYAgKgAusBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBVjZd4iw8_s5kgcFMS4wLjGgB5MFsgcDMi0xuAfmAcIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIH949UGIjAqLyHrm2NhHxKTeggECA3ZOuBWf6naelhZLLo0dvqXpsTr8DdyNL-EMEDU0iuks14yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=model+quantization+security+vulnerabilities&sca_"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8301,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 506.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508670788"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9032,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 591.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508670788"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-684aae578524c0dd",
+   "source": "google",
+   "goal": "Search Google for mongodb open source alternatives and open the results.",
+   "fingerprint": 58318,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14769,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmongodb%2bopen%2bsource%2balternatives%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmongodb%2Bopen%2Bsource%2Balternatives%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsyCWhhoaF7azgOEfFY-y0ulO1FtQ%253A1790508737375%26source%3Dhp%26ei%3Dwf64auvIFbbfkPIP3fT3-Aw%26iflsig%3DABILxe8AAAAAarkM0VH3hPs2XQmbTmOWIXQjQSMTmFMa%26ved%3D0ahUKEwirrYfq1I6XAxW2L0QIHV36Hc8Q4dUDCDI%26uact%3D5%26oq%3Dmongodb%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiBtb25nb2RiIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDSL4HUBBYEHABeACQAQCYAeABoAHgAaoBAzItMbgBA8gBAPgBAZgCAqAC6QGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFE6vE6tksKRWSBwUxLjAuMaAHxQOyBwMyLTG4B-UBwgcDMi0yyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMT949UGIjBr-YcMUVMhfpR70iVa4ARytD7wv83eIVNDAJW2JdpI2SiJJisuDf8e1c9UiWSwiV8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=mongodb+open+source+alternatives&sca_esv=18a60b0"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8962,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "mongodb open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 492.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508737519"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.4836,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 563.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508737519"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,594 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 21668,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:03:00+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.9,
+  "mean_duration_ms": 14991,
+  "decision_latency_ms": {
+   "p50": 490.6,
+   "p95": 607.7
+  },
+  "step_outcomes": {
+   "executed": 20,
+   "done-rejected": 2,
+   "done": 1
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "github": {
+    "n": 1,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 9.0
+   },
+   "google": {
+    "n": 7,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.0
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-69a4ef72d6404244",
+   "source": "google",
+   "goal": "First search Google for ruby tutorial, then search Google for golang tutorial.",
+   "fingerprint": 21668,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14929,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3druby%2btutorial%26sca_esv%3d75b852f910b8",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Druby%2Btutorial%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsa5Q7YsszjYZrpR_tu2AFKKuSAEw%253A1790513737770%26source%3Dhp%26ei%3DSRK5arXNLeXAkPIPyufk4Ag%26iflsig%3DABILxe8AAAAAarkgWccAI_QzDIM1ucG__URJXlKvt0dR%26ved%3D0ahUKEwj1lbe6546XAxVlIEQIHcozGYwQ4dUDCCA%26uact%3D5%26oq%3Druby%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig1ydWJ5IHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjRB1AaWBpwAXgAkAEAmAHMAaABzAGqAQMyLTG4AQPIAQD4AQGYAgKgAtgBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwXxBWvuzEvjzGwOkgcFMS4wLjGgB4QFsgcDMi0xuAfTAcIHAzItMsgHCYAIAQ%26sclient%3Dgws-wiz%26sei%3DTBK5asuTKYeP8L0P18Dz-AE&hl=en&q=EgQm0XtnGMyk5NUGIjAPbDgi7mYg2T2xuMnYMovrMog1od-nCgklUbqIuYR398wJct1yWtL_8snT9VF0MCkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=ruby+tutorial&sca_esv=75b852f910b8e50f&hl=en&gl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8916,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ruby tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 467.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9095,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 567.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-608d804c3852259f",
+   "source": "google",
+   "goal": "First search Google for huggingface transformers open source alternatives, then search Google for typescript tutorial.",
+   "fingerprint": 21668,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14681,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhuggingface%2btransformers%2bopen%2bsour",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhuggingface%2Btransformers%2Bopen%2Bsource%2Balternatives%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvhxY1eUqEyBYPOYoGqZl9Jx-_8Yw%253A1790513805096%26source%3Dhp%26ei%3DjRK5ar-1BITAkPIP4JaYiQU%26iflsig%3DABILxe8AAAAAarkgnShineah4iRTsNk7V9sOx-kKHSFW%26ved%3D0ahUKEwj_r8Ta546XAxUEIEQIHWALJlEQ4dUDCCA%26uact%3D5%26oq%3Dhuggingface%2Btransformers%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IjFodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwVI7AdQFFgUcAF4AJABAJgB5AGgAeQBqgEDMi0xuAEDyAEA-AEBmAICoALxAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMF8QX7EegJE8t355IHBTEuMC4xoAeUBrIHAzItMbgH7AHCBwUwLjEuMcgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJCl5NUGIjDWzMGln3Npfa01pTnrELGPENZFGGtdgao6pNwYSHXJyMR_Uhl9HYC0-jK0ljCLQzcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=huggingface+transformers+open+source+alternative"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8919,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "huggingface transformers open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 465.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8973,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 607.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ca32739dd0ae2750",
+   "source": "google",
+   "goal": "First search Google for swift migration guide, then search Google for python best practices.",
+   "fingerprint": 21668,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14776,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dswift%2bmigration%2bguide%26sca_esv%3d75",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dswift%2Bmigration%2Bguide%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns_-33BSh4eGmgK_Yy3HWxTjy6uvw%253A1790513872195%26source%3Dhp%26ei%3D0BK5asbBCsmWkPIP___b8QE%26iflsig%3DABILxe8AAAAAarkg4B7-CgFIPMEWpjjku19LasuhBzEE%26ved%3D0ahUKEwjG6cP6546XAxVJC0QIHf__Nh4Q4dUDCCA%26uact%3D5%26oq%3Dswift%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhVzd2lmdCBtaWdyYXRpb24gZ3VpZGUyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGA0i0B1AMWAxwAXgAkAEAmAHnAaAB5wGqAQMyLTG4AQPIAQD4AQGYAgKgAvEBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBTeuaR_zj3zukgcFMS4wLjGgB50GsgcDMi0xuAfuAcIHBTAuMS4xyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNKl5NUGIjB-989FY1C_8nQR42ImdtMKeSERDOBmJrFDbT8SxmElLhhO-gKzzcFX_tQjEQcIm0YyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=swift+migration+guide&sca_esv=75b852f910b8e50f&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8873,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "swift migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 449.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9022,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 560.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f8ab56a1d91f9343",
+   "source": "google",
+   "goal": "First search Google for tensorflow performance optimization, then search Google for memory leak debugging migration guide.",
+   "fingerprint": 21668,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14616,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dtensorflow%2bperformance%2boptimization%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtensorflow%2Bperformance%2Boptimization%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsNSnyC-g-dgdey1eM4NAUs2aOCMQ%253A1790513939199%26source%3Dhp%26ei%3DExO5aornCrrGkPIP-46hmQY%26iflsig%3DABILxe8AAAAAarkhIzZEFN-2CP90jQkRYMr_uaki9BZn%26ved%3D0ahUKEwjKvL2a6I6XAxU6I0QIHXtHKGMQ4dUDCCA%26uact%3D5%26oq%3Dtensorflow%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiN0ZW5zb3JmbG93IHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIGEAAYFhgeMgUQABjvBTIIEAAYiQUYogQyCBAAGIkFGKIEMggQABiJBRiiBEjAB1AMWAxwAXgAkAEAmAH0AaAB9AGqAQMyLTG4AQPIAQD4AQGYAgKgAv0BqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwPxBcE96jYceVfPkgcFMS4wLjGgB-ECsgcDMi0xuAf6AcIHBTAuMS4xyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJWm5NUGIjBnTJaaa4OvHaoULXui-bO67FfOJ_qoFCt9F9RcybAM50GP53lk25zA9OTxxrtauG4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=tensorflow+performance+optimization&sca_esv=75b8"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7966,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "tensorflow performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 471.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9053,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 567.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-7f99f339c08e5a66",
+   "source": "google",
+   "goal": "First search Google for fastapi open source alternatives, then search Google for vllm security vulnerabilities.",
+   "fingerprint": 21668,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14634,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dfastapi%2bopen%2bsource%2balternatives%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dfastapi%2Bopen%2Bsource%2Balternatives%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsZbLLhuw3Q2dBGleqs89soWPt47Q%253A1790514005988%26source%3Dhp%26ei%3DVRO5arn_OtPGkPIP9Yu3kQ4%26iflsig%3DABILxe8AAAAAarkhZTTvqM2hcSKLIKs6ZbKoTFcQ4RXD%26ved%3D0ahUKEwj5_am66I6XAxVTI0QIHfXFLeIQ4dUDCCA%26uact%3D5%26oq%3Dfastapi%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiBmYXN0YXBpIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFI6gdQDFgMcAF4AJABAJgB6AGgAegBqgEDMi0xuAEDyAEA-AEBmAICoAL0AagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QXQhh5p4KlkMZIHBTEuMC4xoAfIBLIHAzItMbgH8QHCBwMwLjLIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNim5NUGIjAuY1Pqstz1IWTtABI3AKL85--bMqyRQQ8HneMEWH4nD3Wrg4LDAwZeJ5jJf4E109QyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=fastapi+open+source+alternatives&sca_esv=75b852f"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8692,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "fastapi open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 535.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8988,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 612.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-2e85f1d7061516cd",
+   "source": "google",
+   "goal": "First search Google for next.js performance optimization, then search Google for scala cheat sheet.",
+   "fingerprint": 21668,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14459,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dnext.js%2bperformance%2boptimization%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dnext.js%2Bperformance%2Boptimization%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntkpojLPpDniHHUfk-Q7pda4jmGQg%253A1790514072780%26source%3Dhp%26ei%3DmBO5aouoLpCLkPIPiYyYAQ%26iflsig%3DABILxe8AAAAAarkhqGPs22_tPp64UZaVpWhROsiBLLgG%26ved%3D0ahUKEwiL1Jba6I6XAxWQBUQIHQkGJgAQ4dUDCCA%26uact%3D5%26oq%3Dnext.js%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiBuZXh0LmpzIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMggQABiABBiiBDIIEAAYiQUYogQyBRAAGO8FSJQHUApYCnABeACQAQCYAeoBoAHqAaoBAzItMbgBA8gBAPgBAZgCAqAC7gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDAvEFdboyw8aGl-CSBwUxLjAuMaAHxAayBwMyLTG4B-wBwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJun5NUGIjBgXR8efyHEvwZ6BGBf_W9gxZVEWyl-oP0ubQiboLd7btuebD7CCU6nfGAzR2SOnF8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=next.js+performance+optimization&sca_esv=75b852f"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8811,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "next.js performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 467.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9095,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 538.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-528636d9b69832b6",
+   "source": "github",
+   "goal": "Search GitHub for 'code review' repositories and open the search results.",
+   "fingerprint": 21668,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 9,
+   "total_ms": 17104,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'github.com/search'",
+    "checks": {
+     "url": "https://github.com/features/code-review",
+     "bot_challenge": false,
+     "group0": [
+      "review",
+      "code"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://github.com/features/code-review",
+    "final_title": "Code review and pull requests | GitHub · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.874,
+     "target": "11",
+     "target_label": "Enter your email",
+     "kind": "fill",
+     "text": "code review",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 490.6,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9002,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 468.3,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8728,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 527.6,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.5602,
+     "target": "5",
+     "target_label": "Explore Code review",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 447.7,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.9467,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub repository search results for 'code review'; search-results page listing repositories for 'code review'",
+     "page_changed": null,
+     "latency_ms": 435.5,
+     "low_confidence": false,
+     "url": "https://github.com/features/code-review"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/features/code-review"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.9159,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub repository search results for 'code review'; search query entered in the search box",
+     "page_changed": null,
+     "latency_ms": 604.7,
+     "low_confidence": false,
+     "url": "https://github.com/features/code-review"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:22",
+     "target_label": "Search or jump to",
+     "kind": "fill",
+     "text": "code review",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/features/code-review"
+    },
+    {
+     "step": 7,
+     "operation": "DONE",
+     "confidence": 0.9015,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 536.7,
+     "low_confidence": false,
+     "url": "https://github.com/features/code-review"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-6da445ac60f20ab9",
+   "source": "google",
+   "goal": "First search Google for grafana open source alternatives, then search Google for logging best practices interview questions.",
+   "fingerprint": 21668,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14727,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgrafana%2bopen%2bsource%2balternatives%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgrafana%2Bopen%2Bsource%2Balternatives%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt18wOTydI_QGoPDKz396wkazzGoA%253A1790514164778%26source%3Dhp%26ei%3D9BO5aqf5LbrOkPIPguiL4Qs%26iflsig%3DABILxe8AAAAAarkiBB60zFwVI4ZMTtE2vgvBPgTO-IiK%26ved%3D0ahUKEwinw4WG6Y6XAxU6J0QIHQL0IrwQ4dUDCCA%26uact%3D5%26oq%3Dgrafana%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiBncmFmYW5hIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzIIEAAYiQUYogQyBRAAGO8FMgUQABjvBUivB1AYWBhwAXgAkAEAmAHoAaAB6AGqAQMyLTG4AQPIAQD4AQGYAgKgAu0BqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBS4plsckyCRmkgcFMS4wLjGgB7wEsgcDMi0xuAfqAcIHAzAuMsgHA4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPen5NUGIjAMZ_IDx9eh_Wm24Idt_y9efE-_scKZTz9M32vk7UmxXBZNsEob20kc-xgSjL_JvNkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=grafana+open+source+alternatives&sca_esv=75b852f"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.895,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "grafana open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 465.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9006,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 549.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,781 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 53724,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T18:47:53+0800",
+  "n_tasks": 8,
+  "success": 4,
+  "success_rate": 0.5,
+  "verified": 4,
+  "verified_rate": 0.5,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.5,
+  "mean_duration_ms": 13979,
+  "decision_latency_ms": {
+   "p50": 581.4,
+   "p95": 871.2
+  },
+  "step_outcomes": {
+   "executed": 23,
+   "stale": 3,
+   "refused-empty-enter": 1,
+   "done-rejected": 5,
+   "done": 4
+  },
+  "low_confidence_steps": 2,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 4,
+    "success_rate": 0.5,
+    "verified": 4,
+    "verified_rate": 0.5,
+    "mean_steps": 4.5
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-0b889c2647a9f13b",
+   "source": "google",
+   "goal": "Search Google for swift migration guide and open the results.",
+   "fingerprint": 53724,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15062,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dswift%2bmigration%2bguide%26sca_esv%3d54",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dswift%2Bmigration%2Bguide%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntEiYcckQSTnT9JArbMPA0UKe78LQ%253A1790505774919%26source%3Dhp%26ei%3DLvO4ataBN7isur8Pm4egyAo%26iflsig%3DABILxe8AAAAAarkBPkeHsl4sEc-PHhUxhTJFVO5BuAXV%26ved%3D0ahUKEwjW0LnlyY6XAxU4lu4BHZsDCKkQ4dUDCDI%26uact%3D5%26oq%3Dswift%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhVzd2lmdCBtaWdyYXRpb24gZ3VpZGUyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGA0jlB1AjWCNwAXgAkAEAmAHaAaAB2gGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwfxBYgpraYbcnO4kgcFMS4wLjGgB50GsgcDMi0xuAffAcIHAzItMsgHCYAIAQ%26sclient%3Dgws-wiz%26sei%3DMfO4auL1M96-kPIPiKy6oAs&hl=en&q=EgQm0XtnGLLm49UGIjDGGEawRgzwbb-c4m6GzXq-kPNyG0ahjsZmOxgXroivKBLVJJObj_Jly5JZAWUp028yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=swift+migration+guide&sca_esv=54dc793dbd0950c5&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8808,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "swift migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 520.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8943,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 582.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505776514"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f2d3aa666023e26c",
+   "source": "google",
+   "goal": "Search Google for how to debug kotlin and open the results.",
+   "fingerprint": 53724,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 7,
+   "total_ms": 11111,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=how+to+debug+kotlin&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnvrsquc17o4lqhnfu-__",
+     "bot_challenge": false,
+     "group0": [
+      "kotlin"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=how+to+debug+kotlin&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvrsquc17O4lqHNFu-__vUka19Wcg%3A1790505842352&source=hp&ei=cvO4avGSFK6wkPIPrrLcqAY&iflsig=ABILxe8AAAAAarkBgvYzoOS7PlHddoUajJrefNbiPcTz&ved=0ahUKEwjxk82Fyo6XAxUuGEQIHS4ZF2UQ4dUDCDI&oq=how+to+debug+kotlin&gs_lp=Egdnd3Mtd2l6IhNob3cgdG8gZGVidWcga290bGluMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBUi4IVAQWBBwAXgAkAEAmAHYAaAB2AGqAQMyLTG4AQzIAQD4AQGYAgKgAt8BqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBag4rBCqk25-kgcFMS4wLjGgB4MFsgcDMi0xuAfaAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz",
+    "final_title": "how to debug kotlin - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.856,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug kotlin",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 494.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.579,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 494.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505843692"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9102,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search query for \"how to debug kotlin\"; search results listing for \"how to debug kotlin\"",
+     "page_changed": null,
+     "latency_ms": 826.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505843692"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug kotlin",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505843692"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9036,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page listing results for 'how to debug kotlin' — only autocomplete suggestions are shown, the search has not been executed",
+     "page_changed": null,
+     "latency_ms": 632.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505843692"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:34",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505843692"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8856,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 620.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=how+to+debug+kotlin&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvrsquc17O4lqHNFu-__vUka19Wcg%3A1790505842352&source=hp&ei=cvO4avGSFK6wkPIPrrLcqAY&iflsig=ABILxe8AAAAAarkBgvYzoOS7PlHddoUajJrefNbiPcTz&ved=0ahUKEwjxk82Fyo6XAxUuGEQIHS4ZF2UQ4dUDCDI&oq=how+to+debug+kotlin&gs_lp=Egdnd3Mtd2l6IhNob3cgdG8gZGVidWcga290bGluMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBUi4IVAQWBBwAXgAkAEAmAHYAaAB2AGqAQMyLTG4AQzIAQD4AQGYAgKgAt8BqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBag4rBCqk25-kgcFMS4wLjGgB4MFsgcDMi0xuAfaAcIHBTAuMS4xyAcEgAgB&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d36e8982869743cc",
+   "source": "google",
+   "goal": "Search Google for java cheat sheet and open the results.",
+   "fingerprint": 53724,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 6,
+   "total_ms": 12713,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=java+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqns8ov7u-rxxsstzohl9hrpi",
+     "bot_challenge": false,
+     "group0": [
+      "java"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=java+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQns8oV7u-RXXSstzoHl9hRpiM9bfIQ%3A1790505860843&source=hp&ei=hPO4aqmKMtrvkPIPhMuBsAI&iflsig=ABILxe8AAAAAarkBlGw2EZx1EYMF6cZBAYyt9fcVlq2B&ved=0ahUKEwip3LWOyo6XAxXaN0QIHYRlACYQ4dUDCDI&oq=java+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhBqYXZhIGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEipN1APWA9wAXgAkAEAmAHRAaAB0QGqAQMyLTG4AQzIAQD4AQGYAgKgAtoBqAIKwgIdEAAYgAQYigUY1AMY5QIY5wYY6gIYtAIYigMYtwPCAhoQABiABBiKBRi3AxjlAhjnBhjqAhi0AhiKA8ICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QVEK4egMNDLX5IHBTEuMC4xoAePBbIHAzItMbgH1wHCBwMyLTLIBweACAE&sclient=gws-wiz#sv=CBAS1xgKrxgKBtrZ29IPABKkGAqzBQqwBbrZ29IPqQUKlgEvZ290bz91cmw9Q0FFU1pRSHJPekFWMkthRVI2aUVWZE1DcE13bnBBSHhmeUN2Qm1TUEVWdlNyZlR5dnhUdF91RXdWTkFrMlZFUEpvSTFfa1d4WUhZVkNRSEFoWEtaYzFUOXJXQzlRQXRud1d1Y3BKQ3FtdHlieTNrY0p1V193VlV4SDJKa05jSkhoX0w5THg0dlIwb2MSFFByaW5jZXRvbiBVbml2ZXJzaXR5GvMDZGF0YTppbWFnZS93ZWJwO2Jhc2U2NCxVa2xHUmx3QkFBQlhSVUpRVmxBNElGQUJBQUFRQndDZEFTb2NBQndBUHRFK3RGb29JaWdvRkFFQUdnbHNBSFlBNFFQY1QvNFhzZkZlQ0YvZUsvNXFQVkY0aUp6b2Vtbm5oZ1FSSlY5WWdWUVkzZEc4QUFEKzlDTVE3aytHTVRGcnY2UUZReHg2ZWtZTXVCcmlqdk1BU1h0L1ZidDU3MmZrTys2d1diMXZURW45OE5MZWYweWNENHR5SHc3K3MxakltQ0xHKzBXcmN4dm9uWkQrb2pLZnA2QkhPMWlUQ2VpQ1V1Znl0RUF6N3FldVg2Z3d0bHNpYytseENVQnBQMzdGUkEzZFZOZ0EwcklnZFB3YjlMQTg1cm5SajRsKzVQajlqaTVORGo1VHFUNVNqa2NNTG5KM0k5RS84NXo1eGJnN1NoNEwvcnZlUFAxYlBsY3hSbXVxVjljeWMxeGJWeHVjMUZDVktLT0hqb2FXRWoyazlkdVdCWjBDYkk2S0xNeXNROWdiakdVNFhQc29ZN2loNkZyOTNidDAveE1pcEI2WTV4ZUZ6a0w4UXRCU1hwWEhuSVpvSWMwOCs1MkQ5Mk9RQWhTVUJEdnlUbmlRVDhVRXc1SWFBQzNNQUFBPSABOAEKswIKsALS2dvSD6kCChtKYXZhIFByb2dyYW1taW5nIENoZWF0c2hlZXQSlgEvZ290bz91cmw9Q0FFU1pRSHJPekFWMkthRVI2aUVWZE1DcE13bnBBSHhmeUN2Qm1TUEVWdlNyZlR5dnhUdF91RXdWTkFrMlZFUEpvSTFfa1d4WUhZVkNRSEFoWEtaYzFUOXJXQzlRQXRud1d1Y3BKQ3FtdHlieTNrY0p1V193VlV4SDJKa05jSkhoX0w5THg0dlIwb2MacUphdmEgUHJvZ3JhbW1pbmcgQ2hlYXRzaGVldC4gV2Ugc3VtbWFyaXplIHRoZSBtb3N0IGNvbW1vbmx5IHVzZWQgSmF2YSBsYW5ndWFnZSBmZWF0dXJlcyBhbmQgQVBJcyBpbiB0aGUgdGV4dGJvb2suCrAJCq0Jwtnb0g-mCRIbSmF2YSBQcm9ncmFtbWluZyBDaGVhdHNoZWV0GpwDCpYBL2dvdG8_dXJsPUNBRVNaUUhyT3pBVjJLYUVSNmlFVmRNQ3BNd25wQUh4ZnlDdkJtU1BFVnZTcmZUeXZ4VHRfdUV3Vk5BazJWRVBKb0kxX2tXeFlIWVZDUUhBaFhLWmMxVDlyV0M5UUF0bndXdWNwSkNxbXR5Ynkza2NKdVdfd1ZVeEgySmtOY0pIaF9MOUx4NHZSMG9jEhtKYXZhIFByb2dyYW1taW5nIENoZWF0c2hlZXQacUphdmEgUHJvZ3JhbW1pbmcgQ2hlYXRzaGVldC4gV2Ugc3VtbWFyaXplIHRoZSBtb3N0IGNvbW1vbmx5IHVzZWQgSmF2YSBsYW5ndWFnZSBmZWF0dXJlcyBhbmQgQVBJcyBpbiB0aGUgdGV4dGJvb2suIAEqAmVuMgJVU0IfL3M_dGJtPW1hcCZnc19yaT1tYXBzJnN1Z2dlc3Q9cEowQUY1dFNPNTE1TUVpOF9CVlBsNDlMRUFMVlU4LW1oRXZ0dzoxNzkwNTA1ODY5ODczUhRQcmluY2V0b24gVW5pdmVyc2l0eVK4ARgFKhtKYXZhIFByb2dyYW1taW5nIENoZWF0c2hlZXQ6lgEvZ290bz91cmw9Q0FFU1pRSHJPekFWMkthRVI2aUVWZE1DcE13bnBBSHhmeUN2Qm1TUEVWdlNyZlR5dnhUdF91RXdWTkFrMlZFUEpvSTFfa1d4WUhZVkNRSEFoWEtaYzFUOXJXQzlRQXRud1d1Y3BKQ3FtdHlieTNrY0p1V193VlV4SDJKa05jSkhoX0w5THg0dlIwb2NyuQEKlgEvZ290bz91cmw9Q0FFU1pRSHJPekFWMkthRVI2aUVWZE1DcE13bnBBSHhmeUN2Qm1TUEVWdlNyZlR5dnhUdF91RXdWTkFrMlZFUEpvSTFfa1d4WUhZVkNRSEFoWEtaYzFUOXJXQzlRQXRud1d1Y3BKQ3FtdHlieTNrY0p1V193VlV4SDJKa05jSkhoX0w5THg0dlIwb2MoIzIcU291cmNlOiBQcmluY2V0b24gVW5pdmVyc2l0eXrwAhobSmF2YSBQcm9ncmFtbWluZyBDaGVhdHNoZWV0IhZ3ZWJyZXN1bHRfUjVKeHdxb19TR2tKMAFg7o8GagpNU0FGIC0gU1JQoAFisgGZAgBnpGBfkRICSLJDstXx5PmnqbOCHj-0Z8PUHLmaNTTahiP3jd_4h1cV19eEkq3F8MU3pCBGIGxLGTFEz4NwXNaHwn-oWCUtSQoYiq070ojhneGW1n9X4OfUgf-JieRv8IUBzXyMEbhtN2IRw3NTvn6khnfK-A1-cUfsqNL19wjbVPYA_c8MUcAXmnyR8Zst7vNf7k121znVc9rQTaabjOObkLvU6csfJxKCb4aE-7MJgZioEO-fJr7Zoy_K8Fwp1HoLsKWoJZbb6hOibXPE0xiJefyJSpg3cN-FCmC_vWkQ2C97Tek5BQBIfBp96Kvx8mJKt_QzGTuoK6uJkOxumT64ac8-iPr-No3rEueB7XCbzROrNBbaY2T3wAEB4AEB6AEBCoIHCv8Gytnb0g_4BhoAWgBgAWgBcAB4AIoB6AZDcFlCTDJkdmRHOF9kWEpzUFVOQlJWTmFVVWh5VDNwQlZqSkxZVVZTTm1sRlZtUk5RM0JOZDI1d1FVaDRabmxEZGtKdFUxQkZWblpUY21aVWVYWjRWSFJmZFVWM1ZrNUJhekpXUlZCS2Iwa3hYMnRYZUZsSVdWWkRVVWhCYUZoTFdtTXhWRGx5VjBNNVVVRjBibmRYZFdOd1NrTnhiWFI1WW5remEyTktkVmRmZDFaVmVFZ3lTbXRPWTBwSWFGOU1PVXg0TkhaU01HOWpFZ1FhQWdnQUd1SURFZ0lJQVJvQUlnQXFBRElHQ0FNU0FuVnpPZ0JDQkFnQkVBQktBRm9BY2dCNkFJSkF2QU1JQUJBQUdBQWdBQ29XQ2dScVlYWmhGVkNZdjBBYUNXbDJPM0E3YW1GMllTb3pDZ1ZqYUdWaGRCVUFBQUFBR2daamFHVmhkSE1hQldocGJuUnpHZ3BqYUdWaGRITm9aV1YwR2dwcGRqdHdPMk5vWldGMEtpY0tCWE5vWldWMEZRQUFBQUFhQldOdlpHVnpHZ1p6YUdWbGRITWFDbU5vWldGMGMyaGxaWFF5bGdFdloyOTBiejkxY213OVEwRkZVMXBSU0hKUGVrRldNa3RoUlZJMmFVVldaRTFEY0UxM2JuQkJTSGhtZVVOMlFtMVRVRVZXZGxOeVpsUjVkbmhVZEY5MVJYZFdUa0ZyTWxaRlVFcHZTVEZmYTFkNFdVaFpWa05SU0VGb1dFdGFZekZVT1hKWFF6bFJRWFJ1ZDFkMVkzQktRM0Z0ZEhsaWVUTnJZMHAxVjE5M1ZsVjRTREpLYTA1alNraG9YMHc1VEhnMGRsSXdiMk02S1R4aVBrcGhkbUU4TDJJLUlGQnliMmR5WVcxdGFXNW5JRHhpUGtOb1pXRjBjMmhsWlhROEwySS1Rbmc4WWo1S1lYWmhJRkJ5YjJkeVlXMXRhVzVuSUVOb1pXRjBjMmhsWlhROEwySS1MaUJYWlNCemRXMXRZWEpwZW1VZ2RHaGxJRzF2YzNRZ1kyOXRiVzl1YkhrZ2RYTmxaQ0JLWVhaaElHeGhibWQxWVdkbElHWmxZWFIxY21WeklHRnVaQ0JCVUVseklHbHVJSFJvWlNCMFpYaDBZbTl2YXk0aUFoQUJTQUJZQUdnQRIjYXRyaXRlbS1famZPNGF1NlNLc25ha1BJUGhQM1N5QXdfNzEYLyDGxuGUBQ",
+    "final_title": "java cheat sheet - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9063,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "java cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 514.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505861120"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.6251,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'java cheat sheet'",
+     "page_changed": null,
+     "latency_ms": 565.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505861120"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:35",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505861120"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.2172,
+     "target": "19",
+     "target_label": "About this result",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 597.2,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=java+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQns8oV7u-RXXSstzoHl9hRpiM9bfIQ%3A1790505860843&source=hp&ei=hPO4aqmKMtrvkPIPhMuBsAI&iflsig=ABILxe8AAAAAarkBlGw2EZx1EYMF6cZBAYyt9fcVlq2B&ved=0ahUKEwip3LWOyo6XAxXaN0QIHYRlACYQ4dUDCDI&oq=java+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhBqYXZhIGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEipN1APWA9wAXgAkAEAmAHRAaAB0QGqAQMyLTG4AQzIAQD4AQGYAgKgAtoBqAIKwgIdEAAYgAQYigUY1AMY5QIY5wYY6gIYtAIYigMYtwPCAhoQABiABBiKBRi3AxjlAhjnBhjqAhi0AhiKA8ICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QVEK4egMNDLX5IHBTEuMC4xoAePBbIHAzItMbgH1wHCBwMyLTLIBweACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.2172,
+     "target": "19",
+     "target_label": "About this result",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 874.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=java+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQns8oV7u-RXXSstzoHl9hRpiM9bfIQ%3A1790505860843&source=hp&ei=hPO4aqmKMtrvkPIPhMuBsAI&iflsig=ABILxe8AAAAAarkBlGw2EZx1EYMF6cZBAYyt9fcVlq2B&ved=0ahUKEwip3LWOyo6XAxXaN0QIHYRlACYQ4dUDCDI&oq=java+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhBqYXZhIGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEipN1APWA9wAXgAkAEAmAHRAaAB0QGqAQMyLTG4AQzIAQD4AQGYAgKgAtoBqAIKwgIdEAAYgAQYigUY1AMY5QIY5wYY6gIYtAIYigMYtwPCAhoQABiABBiKBRi3AxjlAhjnBhjqAhi0AhiKA8ICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QVEK4egMNDLX5IHBTEuMC4xoAePBbIHAzItMbgH1wHCBwMyLTLIBweACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.8775,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 666.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=java+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQns8oV7u-RXXSstzoHl9hRpiM9bfIQ%3A1790505860843&source=hp&ei=hPO4aqmKMtrvkPIPhMuBsAI&iflsig=ABILxe8AAAAAarkBlGw2EZx1EYMF6cZBAYyt9fcVlq2B&ved=0ahUKEwip3LWOyo6XAxXaN0QIHYRlACYQ4dUDCDI&oq=java+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhBqYXZhIGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEipN1APWA9wAXgAkAEAmAHRAaAB0QGqAQMyLTG4AQzIAQD4AQGYAgKgAtoBqAIKwgIdEAAYgAQYigUY1AMY5QIY5wYY6gIYtAIYigMYtwPCAhoQABiABBiKBRi3AxjlAhjnBhjqAhi0AhiKA8ICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QVEK4egMNDLX5IHBTEuMC4xoAePBbIHAzItMbgH1wHCBwMyLTLIBweACAE&sclient=gws-wiz#sv=CBAS1xgKrxgKBtrZ29IPABKkGAqzBQqwBbrZ29IPqQUKlgEvZ290bz91cmw9Q0FFU1pRSHJPekFWMkthRVI2aUVWZE1DcE13bnBBSHhmeUN2Qm1TUEVWdlNyZlR5dnhUdF91RXdWTkFrMlZFUEpvSTFfa1d4WUhZVkNRSEFoWEtaYzFUOXJXQzlRQXRud1d1Y3BKQ3FtdHlieTNrY0p1V193VlV4SDJKa05jSkhoX0w5THg0dlIwb2MSFFByaW5jZXRvbiBVbml2ZXJzaXR5GvMDZGF0YTppbWFnZS93ZWJwO2Jhc2U2NCxVa2xHUmx3QkFBQlhSVUpRVmxBNElGQUJBQUFRQndDZEFTb2NBQndBUHRFK3RGb29JaWdvRkFFQUdnbHNBSFlBNFFQY1QvNFhzZkZlQ0YvZUsvNXFQVkY0aUp6b2Vtbm5oZ1FSSlY5WWdWUVkzZEc4QUFEKzlDTVE3aytHTVRGcnY2UUZReHg2ZWtZTXVCcmlqdk1BU1h0L1ZidDU3MmZrTys2d1diMXZURW45OE5MZWYweWNENHR5SHc3K3MxakltQ0xHKzBXcmN4dm9uWkQrb2pLZnA2QkhPMWlUQ2VpQ1V1Znl0RUF6N3FldVg2Z3d0bHNpYytseENVQnBQMzdGUkEzZFZOZ0EwcklnZFB3YjlMQTg1cm5SajRsKzVQajlqaTVORGo1VHFUNVNqa2NNTG5KM0k5RS84NXo1eGJnN1NoNEwvcnZlUFAxYlBsY3hSbXVxVjljeWMxeGJWeHVjMUZDVktLT0hqb2FXRWoyazlkdVdCWjBDYkk2S0xNeXNROWdiakdVNFhQc29ZN2loNkZyOTNidDAveE1pcEI2WTV4ZUZ6a0w4UXRCU1hwWEhuSVpvSWMwOCs1MkQ5Mk9RQWhTVUJEdnlUbmlRVDhVRXc1SWFBQzNNQUFBPSABOAEKswIKsALS2dvSD6kCChtKYXZhIFByb2dyYW1taW5nIENoZWF0c2hlZXQSlgEvZ290bz91cmw9Q0FFU1pRSHJPekFWMkthRVI2aUVWZE1DcE13bnBBSHhmeUN2Qm1TUEVWdlNyZlR5dnhUdF91RXdWTkFrMlZFUEpvSTFfa1d4WUhZVkNRSEFoWEtaYzFUOXJXQzlRQXRud1d1Y3BKQ3FtdHlieTNrY0p1V193VlV4SDJKa05jSkhoX0w5THg0dlIwb2MacUphdmEgUHJvZ3JhbW1pbmcgQ2hlYXRzaGVldC4gV2Ugc3VtbWFyaXplIHRoZSBtb3N0IGNvbW1vbmx5IHVzZWQgSmF2YSBsYW5ndWFnZSBmZWF0dXJlcyBhbmQgQVBJcyBpbiB0aGUgdGV4dGJvb2suCrAJCq0Jwtnb0g-mCRIbSmF2YSBQcm9ncmFtbWluZyBDaGVhdHNoZWV0GpwDCpYBL2dvdG8_dXJsPUNBRVNaUUhyT3pBVjJLYUVSNmlFVmRNQ3BNd25wQUh4ZnlDdkJtU1BFVnZTcmZUeXZ4VHRfdUV3Vk5BazJWRVBKb0kxX2tXeFlIWVZDUUhBaFhLWmMxVDlyV0M5UUF0bndXdWNwSkNxbXR5Ynkza2NKdVdfd1ZVeEgySmtOY0pIaF9MOUx4NHZSMG9jEhtKYXZhIFByb2dyYW1taW5nIENoZWF0c2hlZXQacUphdmEgUHJvZ3JhbW1pbmcgQ2hlYXRzaGVldC4gV2Ugc3VtbWFyaXplIHRoZSBtb3N0IGNvbW1vbmx5IHVzZWQgSmF2YSBsYW5ndWFnZSBmZWF0dXJlcyBhbmQgQVBJcyBpbiB0aGUgdGV4dGJvb2suIAEqAmVuMgJVU0IfL3M_dGJtPW1hcCZnc19yaT1tYXBzJnN1Z2dlc3Q9cEowQUY1dFNPNTE1TUVpOF9CVlBsNDlMRUFMVlU4LW1oRXZ0dzoxNzkwNTA1ODY5ODczUhRQcmluY2V0b24gVW5pdmVyc2l0eVK4ARgFKhtKYXZhIFByb2dyYW1taW5nIENoZWF0c2hlZXQ6lgEvZ290bz91cmw9Q0FFU1pRSHJPekFWMkthRVI2aUVWZE1DcE13bnBBSHhmeUN2Qm1TUEVWdlNyZlR5dnhUdF91RXdWTkFrMlZFUEpvSTFfa1d4WUhZVkNRSEFoWEtaYzFUOXJXQzlRQXRud1d1Y3BKQ3FtdHlieTNrY0p1V193VlV4SDJKa05jSkhoX0w5THg0dlIwb2NyuQEKlgEvZ290bz91cmw9Q0FFU1pRSHJPekFWMkthRVI2aUVWZE1DcE13bnBBSHhmeUN2Qm1TUEVWdlNyZlR5dnhUdF91RXdWTkFrMlZFUEpvSTFfa1d4WUhZVkNRSEFoWEtaYzFUOXJXQzlRQXRud1d1Y3BKQ3FtdHlieTNrY0p1V193VlV4SDJKa05jSkhoX0w5THg0dlIwb2MoIzIcU291cmNlOiBQcmluY2V0b24gVW5pdmVyc2l0eXrwAhobSmF2YSBQcm9ncmFtbWluZyBDaGVhdHNoZWV0IhZ3ZWJyZXN1bHRfUjVKeHdxb19TR2tKMAFg7o8GagpNU0FGIC0gU1JQoAFisgGZAgBnpGBfkRICSLJDstXx5PmnqbOCHj-0Z8PUHLmaNTTahiP3jd_4h1cV19eEkq3F8MU3pCBGIGxLGTFEz4NwXNaHwn-oWCUtSQoYiq070ojhneGW1n9X4OfUgf-JieRv8IUBzXyMEbhtN2IRw3NTvn6khnfK-A1-cUfsqNL19wjbVPYA_c8MUcAXmnyR8Zst7vNf7k121znVc9rQTaabjOObkLvU6csfJxKCb4aE-7MJgZioEO-fJr7Zoy_K8Fwp1HoLsKWoJZbb6hOibXPE0xiJefyJSpg3cN-FCmC_vWkQ2C97Tek5BQBIfBp96Kvx8mJKt_QzGTuoK6uJkOxumT64ac8-iPr-No3rEueB7XCbzROrNBbaY2T3wAEB4AEB6AEBCoIHCv8Gytnb0g_4BhoAWgBgAWgBcAB4AIoB6AZDcFlCTDJkdmRHOF9kWEpzUFVOQlJWTmFVVWh5VDNwQlZqSkxZVVZTTm1sRlZtUk5RM0JOZDI1d1FVaDRabmxEZGtKdFUxQkZWblpUY21aVWVYWjRWSFJmZFVWM1ZrNUJhekpXUlZCS2Iwa3hYMnRYZUZsSVdWWkRVVWhCYUZoTFdtTXhWRGx5VjBNNVVVRjBibmRYZFdOd1NrTnhiWFI1WW5remEyTktkVmRmZDFaVmVFZ3lTbXRPWTBwSWFGOU1PVXg0TkhaU01HOWpFZ1FhQWdnQUd1SURFZ0lJQVJvQUlnQXFBRElHQ0FNU0FuVnpPZ0JDQkFnQkVBQktBRm9BY2dCNkFJSkF2QU1JQUJBQUdBQWdBQ29XQ2dScVlYWmhGVkNZdjBBYUNXbDJPM0E3YW1GMllTb3pDZ1ZqYUdWaGRCVUFBQUFBR2daamFHVmhkSE1hQldocGJuUnpHZ3BqYUdWaGRITm9aV1YwR2dwcGRqdHdPMk5vWldGMEtpY0tCWE5vWldWMEZRQUFBQUFhQldOdlpHVnpHZ1p6YUdWbGRITWFDbU5vWldGMGMyaGxaWFF5bGdFdloyOTBiejkxY213OVEwRkZVMXBSU0hKUGVrRldNa3RoUlZJMmFVVldaRTFEY0UxM2JuQkJTSGhtZVVOMlFtMVRVRVZXZGxOeVpsUjVkbmhVZEY5MVJYZFdUa0ZyTWxaRlVFcHZTVEZmYTFkNFdVaFpWa05SU0VGb1dFdGFZekZVT1hKWFF6bFJRWFJ1ZDFkMVkzQktRM0Z0ZEhsaWVUTnJZMHAxVjE5M1ZsVjRTREpLYTA1alNraG9YMHc1VEhnMGRsSXdiMk02S1R4aVBrcGhkbUU4TDJJLUlGQnliMmR5WVcxdGFXNW5JRHhpUGtOb1pXRjBjMmhsWlhROEwySS1Rbmc4WWo1S1lYWmhJRkJ5YjJkeVlXMXRhVzVuSUVOb1pXRjBjMmhsWlhROEwySS1MaUJYWlNCemRXMXRZWEpwZW1VZ2RHaGxJRzF2YzNRZ1kyOXRiVzl1YkhrZ2RYTmxaQ0JLWVhaaElHeGhibWQxWVdkbElHWmxZWFIxY21WeklHRnVaQ0JCVUVseklHbHVJSFJvWlNCMFpYaDBZbTl2YXk0aUFoQUJTQUJZQUdnQRIjYXRyaXRlbS1famZPNGF1NlNLc25ha1BJUGhQM1N5QXdfNzEYLyDGxuGUBQ"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-e8434249e08eb00b",
+   "source": "google",
+   "goal": "Search Google for next.js cheat sheet and open the results.",
+   "fingerprint": 53724,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 4,
+   "total_ms": 6895,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=next.js+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnuc1oynwsmtynos49eca",
+     "bot_challenge": false,
+     "group0": [
+      "next.js"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=next.js+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuc1oYnwsMtyNOs49eCALUKw4niqw%3A1790505880774&source=hp&ei=mPO4asCALqbNkPIP2-OysAc&iflsig=ABILxe8AAAAAarkBqEbtCfc3-WKhK-hlDN4qQcct69FP&ved=0ahUKEwjArPaXyo6XAxWmJkQIHduxDHYQ4dUDCDI&uact=5&oq=next.js+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhNuZXh0LmpzIGNoZWF0IHNoZWV0MgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjuHVAMWAxwAXgAkAEAmAHNAaABzQGqAQMyLTG4AQPIAQD4AQGYAgKgAtMBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtAKYAwPxBZ9B9fz2HJDPkgcFMS4wLjGgB_AFsgcDMi0xuAfQAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz",
+    "final_title": "next.js cheat sheet - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8804,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "next.js cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 523.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505880898"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8943,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for next.js cheat sheet",
+     "page_changed": null,
+     "latency_ms": 581.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505880898"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505880898"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.4354,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 866.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=next.js+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnuc1oYnwsMtyNOs49eCALUKw4niqw%3A1790505880774&source=hp&ei=mPO4asCALqbNkPIP2-OysAc&iflsig=ABILxe8AAAAAarkBqEbtCfc3-WKhK-hlDN4qQcct69FP&ved=0ahUKEwjArPaXyo6XAxWmJkQIHduxDHYQ4dUDCDI&uact=5&oq=next.js+cheat+sheet&gs_lp=Egdnd3Mtd2l6IhNuZXh0LmpzIGNoZWF0IHNoZWV0MgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjuHVAMWAxwAXgAkAEAmAHNAaABzQGqAQMyLTG4AQPIAQD4AQGYAgKgAtMBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtAKYAwPxBZ9B9fz2HJDPkgcFMS4wLjGgB_AFsgcDMi0xuAfQAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b9a4ad203f954156",
+   "source": "google",
+   "goal": "First search Google for elasticsearch release notes, then search Google for typescript tutorial.",
+   "fingerprint": 53724,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 10,
+   "total_ms": 14498,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=typescript+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnvwnzoilxjtd8odveoc4",
+     "bot_challenge": false,
+     "group0": [
+      "typescript"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=typescript+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvWnzOiLXjTD8odVeOC4olTDutl4Q%3A1790505897531&ei=qfO4aqqAIJbEkPIPgfeW-AY&biw=1120&bih=780&oq=typescript+tutorial&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3R5cGVzY3JpcHQgdHV0b3JpYWwqCwgAGIAEGLEDGIMBMgsQABiABBixAxiDATILEC4Y-wYY8gYYjwcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEihPVC4NVi4NXAFeAGQAQCYAd0BoAHdAaoBAzItMbgBAcgBAPgBAZgCBqAC7AHCAgoQABhHGNYEGLADmAMAiAYBkAYIkgcFNS4wLjGgB4QHsgcDMi0xuAffAcIHAzAuNsgHC4AIAQ&sclient=gws-wiz-serp",
+    "final_title": "typescript tutorial - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8846,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elasticsearch release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 476.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505894977"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.898,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 592.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505894977"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8387,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elasticsearch release notes",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 576.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=elasticsearch+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvG_y4xYXvnRRwqw5xV6RJcMkhj_w%3A1790505894860&source=hp&ei=pvO4apKjM7qdkPIPhdLlmAU&iflsig=ABILxe8AAAAAarkBtsdtPjwwXZOKfCyI03rC40Wy-96R&ved=0ahUKEwiSjtKeyo6XAxW6DkQIHQVpGVMQ4dUDCDI&uact=5&oq=elasticsearch+release+notes&gs_lp=Egdnd3Mtd2l6IhtlbGFzdGljc2VhcmNoIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I0wdQDVgNcAF4AJABAJgBzAGgAcwBqgEDMi0xuAEDyAEA-AEBmAICoALSAagCCsICHRAAGIAEGIoFGNQDGOUCGOcGGOoCGLQCGIoDGLcDwgIaEAAYgAQYigUYtwMY5QIY5wYY6gIYtAIYigOYAwPxBR1k57HudjJYkgcFMS4wLjGgB-UFsgcDMi0xuAfOAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8286,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elasticsearch release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 871.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=elasticsearch+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvG_y4xYXvnRRwqw5xV6RJcMkhj_w%3A1790505894860&source=hp&ei=pvO4apKjM7qdkPIPhdLlmAU&iflsig=ABILxe8AAAAAarkBtsdtPjwwXZOKfCyI03rC40Wy-96R&ved=0ahUKEwiSjtKeyo6XAxW6DkQIHQVpGVMQ4dUDCDI&uact=5&oq=elasticsearch+release+notes&gs_lp=Egdnd3Mtd2l6IhtlbGFzdGljc2VhcmNoIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I0wdQDVgNcAF4AJABAJgBzAGgAcwBqgEDMi0xuAEDyAEA-AEBmAICoALSAagCCsICHRAAGIAEGIoFGNQDGOUCGOcGGOoCGLQCGIoDGLcDwgIaEAAYgAQYigUYtwMY5QIY5wYY6gIYtAIYigOYAwPxBR1k57HudjJYkgcFMS4wLjGgB-UFsgcDMi0xuAfOAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8549,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elasticsearch release notes",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 569.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=elasticsearch+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvG_y4xYXvnRRwqw5xV6RJcMkhj_w%3A1790505894860&source=hp&ei=pvO4apKjM7qdkPIPhdLlmAU&iflsig=ABILxe8AAAAAarkBtsdtPjwwXZOKfCyI03rC40Wy-96R&ved=0ahUKEwiSjtKeyo6XAxW6DkQIHQVpGVMQ4dUDCDI&uact=5&oq=elasticsearch+release+notes&gs_lp=Egdnd3Mtd2l6IhtlbGFzdGljc2VhcmNoIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I0wdQDVgNcAF4AJABAJgBzAGgAcwBqgEDMi0xuAEDyAEA-AEBmAICoALSAagCCsICHRAAGIAEGIoFGNQDGOUCGOcGGOoCGLQCGIoDGLcDwgIaEAAYgAQYigUYtwMY5QIY5wYY6gIYtAIYigOYAwPxBR1k57HudjJYkgcFMS4wLjGgB-UFsgcDMi0xuAfOAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8549,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elasticsearch release notes",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 602.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=elasticsearch+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvG_y4xYXvnRRwqw5xV6RJcMkhj_w%3A1790505894860&source=hp&ei=pvO4apKjM7qdkPIPhdLlmAU&iflsig=ABILxe8AAAAAarkBtsdtPjwwXZOKfCyI03rC40Wy-96R&ved=0ahUKEwiSjtKeyo6XAxW6DkQIHQVpGVMQ4dUDCDI&uact=5&oq=elasticsearch+release+notes&gs_lp=Egdnd3Mtd2l6IhtlbGFzdGljc2VhcmNoIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I0wdQDVgNcAF4AJABAJgBzAGgAcwBqgEDMi0xuAEDyAEA-AEBmAICoALSAagCCsICHRAAGIAEGIoFGNQDGOUCGOcGGOoCGLQCGIoDGLcDwgIaEAAYgAQYigUYtwMY5QIY5wYY6gIYtAIYigOYAwPxBR1k57HudjJYkgcFMS4wLjGgB-UFsgcDMi0xuAfOAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8549,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elasticsearch release notes",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 581.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=elasticsearch+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvG_y4xYXvnRRwqw5xV6RJcMkhj_w%3A1790505894860&source=hp&ei=pvO4apKjM7qdkPIPhdLlmAU&iflsig=ABILxe8AAAAAarkBtsdtPjwwXZOKfCyI03rC40Wy-96R&ved=0ahUKEwiSjtKeyo6XAxW6DkQIHQVpGVMQ4dUDCDI&uact=5&oq=elasticsearch+release+notes&gs_lp=Egdnd3Mtd2l6IhtlbGFzdGljc2VhcmNoIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I0wdQDVgNcAF4AJABAJgBzAGgAcwBqgEDMi0xuAEDyAEA-AEBmAICoALSAagCCsICHRAAGIAEGIoFGNQDGOUCGOcGGOoCGLQCGIoDGLcDwgIaEAAYgAQYigUYtwMY5QIY5wYY6gIYtAIYigOYAwPxBR1k57HudjJYkgcFMS4wLjGgB-UFsgcDMi0xuAfOAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "typescript tutorial",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=elasticsearch+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvG_y4xYXvnRRwqw5xV6RJcMkhj_w%3A1790505894860&source=hp&ei=pvO4apKjM7qdkPIPhdLlmAU&iflsig=ABILxe8AAAAAarkBtsdtPjwwXZOKfCyI03rC40Wy-96R&ved=0ahUKEwiSjtKeyo6XAxW6DkQIHQVpGVMQ4dUDCDI&uact=5&oq=elasticsearch+release+notes&gs_lp=Egdnd3Mtd2l6IhtlbGFzdGljc2VhcmNoIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I0wdQDVgNcAF4AJABAJgBzAGgAcwBqgEDMi0xuAEDyAEA-AEBmAICoALSAagCCsICHRAAGIAEGIoFGNQDGOUCGOcGGOoCGLQCGIoDGLcDwgIaEAAYgAQYigUYtwMY5QIY5wYY6gIYtAIYigOYAwPxBR1k57HudjJYkgcFMS4wLjGgB-UFsgcDMi0xuAfOAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.7693,
+     "target": "6",
+     "target_label": "typescript tutorial",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 579.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=elasticsearch+release+notes&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvG_y4xYXvnRRwqw5xV6RJcMkhj_w%3A1790505894860&source=hp&ei=pvO4apKjM7qdkPIPhdLlmAU&iflsig=ABILxe8AAAAAarkBtsdtPjwwXZOKfCyI03rC40Wy-96R&ved=0ahUKEwiSjtKeyo6XAxW6DkQIHQVpGVMQ4dUDCDI&uact=5&oq=elasticsearch+release+notes&gs_lp=Egdnd3Mtd2l6IhtlbGFzdGljc2VhcmNoIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I0wdQDVgNcAF4AJABAJgBzAGgAcwBqgEDMi0xuAEDyAEA-AEBmAICoALSAagCCsICHRAAGIAEGIoFGNQDGOUCGOcGGOoCGLQCGIoDGLcDwgIaEAAYgAQYigUYtwMY5QIY5wYY6gIYtAIYigOYAwPxBR1k57HudjJYkgcFMS4wLjGgB-UFsgcDMi0xuAfOAcIHAzAuMsgHBIAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.8609,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 572.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=typescript+tutorial&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvWnzOiLXjTD8odVeOC4olTDutl4Q%3A1790505897531&ei=qfO4aqqAIJbEkPIPgfeW-AY&biw=1120&bih=780&oq=typescript+tutorial&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3R5cGVzY3JpcHQgdHV0b3JpYWwqCwgAGIAEGLEDGIMBMgsQABiABBixAxiDATILEC4Y-wYY8gYYjwcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEihPVC4NVi4NXAFeAGQAQCYAd0BoAHdAaoBAzItMbgBAcgBAPgBAZgCBqAC7AHCAgoQABhHGNYEGLADmAMAiAYBkAYIkgcFNS4wLjGgB4QHsgcDMi0xuAffAcIHAzAuNsgHC4AIAQ&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-1025241e1fe6bdcc",
+   "source": "google",
+   "goal": "First search Google for java interview questions, then search Google for svelte best practices.",
+   "fingerprint": 53724,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15629,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3djava%2binterview%2bquestions%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Djava%2Binterview%2Bquestions%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnubQo056Fo-27ORTsmdia1wt9gMxg%253A1790505916542%26source%3Dhp%26ei%3DvPO4ao3sH7SekPIPnLq9yAM%26iflsig%3DABILxe8AAAAAarkBzKJuBc8ngi6nbn62aTGX1rMWR19F%26ved%3D0ahUKEwiNuv2oyo6XAxU0D0QIHRxdDzkQ4dUDCDI%26uact%3D5%26oq%3Djava%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhhqYXZhIGludGVydmlldyBxdWVzdGlvbnMyCxAAGIAEGLEDGIMBMgsQLhj7BhjyBhiPBzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESPQMUA9YD3ABeACQAQCYAdYBoAHWAaoBAzItMbgBA8gBAPgBAZgCAqAC3gGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCmAME8QWhaag3durtLpIHBTEuMC4xoAfdB7IHAzItMbgH2gHCBwMyLTLIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMDn49UGIjAkaHVjBmkT7QQKVfxnlquJ0gE6hAXrLV_v5H1Vyqm0cVATyDYjwDtzhUoswHiWsIAyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=java+interview+questions&sca_esv=54dc793dbd0950c"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9049,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "java interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 838.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505916670"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8841,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 1257.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505916670"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-805b9a04d4d70a3b",
+   "source": "google",
+   "goal": "Search Google for rabbitmq interview questions and open the results.",
+   "fingerprint": 53724,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 21129,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drabbitmq%2binterview%2bquestions%26sca_e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drabbitmq%2Binterview%2Bquestions%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnugHaG_eyZhcWXD1cQ2iqu_cSjrxw%253A1790505984376%26source%3Dhp%26ei%3DAPS4aqrWFe3GkPIPr9bhmQg%26iflsig%3DABILxe8AAAAAarkCEFt3JBEDxM9luoLYFaBwwItM4OFD%26ved%3D0ahUKEwiq1qnJyo6XAxVtI0QIHS9rOIMQ4dUDCDI%26oq%3Drabbitmq%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhxyYWJiaXRtcSBpbnRlcnZpZXcgcXVlc3Rpb25zMgoQABiABBiKBRhDMgoQABiABBiKBRhDMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkinOFAPWA9wAXgAkAEAmAHIAaAByAGqAQMyLTG4AQzIAQD4AQGYAgKgAtEBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0ApgDBPEF98_rLWbEiAuSBwUxLjAuMaAHxAayBwMyLTG4B80BwgcFMC4xLjHIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIno49UGIjBcoVRL7U9vx99QMX-coybDT3Hm2OHdzPVtg3vQZATFk_FbetwYUr09nbsNDZyZJewyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=rabbitmq+interview+questions&sca_esv=54dc793dbd0"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9156,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rabbitmq interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 643.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505984510"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.9046,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for rabbitmq interview questions are not visible; results have not been opened",
+     "page_changed": null,
+     "latency_ms": 610.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505984510"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:35",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505984510"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c5a00b1e747edadb",
+   "source": "google",
+   "goal": "Search Google for rabbitmq best practices and open the results.",
+   "fingerprint": 53724,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14798,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drabbitmq%2bbest%2bpractices%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drabbitmq%2Bbest%2Bpractices%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnszT19RyOHEIsg6ud5nyd3KfPa6ng%253A1790506057714%26source%3Dhp%26ei%3DSfS4atq_KpfAkPIP-PmQ0Qs%26iflsig%3DABILxe8AAAAAarkCWTFhGn5WzdUKomn0blIWP1zLgoqW%26ved%3D0ahUKEwiaiKbsyo6XAxUXIEQIHfg8JLoQ4dUDCDI%26uact%3D5%26oq%3Drabbitmq%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhdyYWJiaXRtcSBiZXN0IHByYWN0aWNlczILEAAYgAQYigUYkQIyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IvQdQD1gPcAF4AJABAJgB2gGgAdoBqgEDMi0xuAEDyAEA-AEBmAICoALlAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAh0QABiABBiKBRjUAxjlAhjnBhjqAhi0AhiKAxi3A5gDBfEFP8D0Y1FzSNSSBwUxLjAuMaAH2AWyBwMyLTG4B-ABwgcDMi0yyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMzo49UGIjBSOqGQLdKFNVunKbI4ANFyAYfV6VEv4yGLwSdkNWo82FYKg-IAtFbZI5SLhhIgt84yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=rabbitmq+best+practices&sca_esv=54dc793dbd0950c5"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9132,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rabbitmq best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 531.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506057934"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8804,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 582.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506057934"
+    }
+   ]
+  }
+ ]
+}

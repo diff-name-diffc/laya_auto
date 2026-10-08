@@ -1,0 +1,782 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 46046,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T20:44:42+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.6,
+  "mean_duration_ms": 22378,
+  "decision_latency_ms": {
+   "p50": 501.3,
+   "p95": 631.0
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "executed": 21,
+   "done-rejected": 8,
+   "done": 2,
+   "refused-empty-enter": 3,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 2,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 4.6
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-74d4d37db829bff1",
+   "source": "google",
+   "goal": "First search Google for model quantization open source alternatives, then search Google for how to debug rust.",
+   "fingerprint": 46046,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 16542,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['rust']]",
+    "checks": {
+     "url": "https://www.google.com/intl/zh-cn_all/search/howsearchworks/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/",
+    "final_title": "Google 搜索 - 什么是 Google 搜索及其运作方式"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.896,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug rust",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 563.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.3037,
+     "target": "18",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 475.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512628715"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9344,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page listing results for 'how to debug rust' (current page is the 'How Search Works' overview page, not search results)",
+     "page_changed": null,
+     "latency_ms": 388.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search/howsearchworks/?fg=1"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search/howsearchworks/?fg=1"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9348,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'how to debug rust'; evidence of search results listing for the rust debugging query",
+     "page_changed": null,
+     "latency_ms": 497.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.9143,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 454.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-fb25826eebae4a98",
+   "source": "google",
+   "goal": "First search Google for nginx migration guide, then search Google for django best practices.",
+   "fingerprint": 46046,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 10,
+   "total_ms": 57423,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['django']]",
+    "checks": {
+     "url": "https://daily.dev/posts/ingress-nginx-is-eol-a-practical-guide-for-migrating-to-kubernetes-gateway-api-fj854bzvi",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://daily.dev/posts/ingress-nginx-is-eol-a-practical-guide-for-migrating-to-kubernetes-gateway-api-fj854bzvi",
+    "final_title": "Ingress NGINX is EOL: A practical guide for migrating to..."
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9047,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "nginx migration guide",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 472.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8871,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 484.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512652653"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8462,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "nginx migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 514.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512652653"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8842,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "nginx migration guide",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 595.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512652653"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512652653"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.7598,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'django best practices'",
+     "page_changed": null,
+     "latency_ms": 631.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=nginx+migration+guide&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQnuZoa6Nl_N7MG6ruoHaoc1MQJ6GRg%3A1790512651190&source=hp&ei=Cw65atH5CdjOkPIPvIX1kQ4&iflsig=ABILxe8AAAAAarkcG6nsVFwEvT_LdYko6TkgB3BEoO-f&ved=0ahUKEwiRq6e0446XAxVYJ0QIHbxCPeIQ4dUDCDI&uact=5&oq=nginx+migration+guide&gs_lp=Egdnd3Mtd2l6IhVuZ2lueCBtaWdyYXRpb24gZ3VpZGUyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FSNwVUBJYEnACeACQAQCYAcoBoAHKAaoBAzItMbgBA8gBAPgBAZgCA6AC2AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFJX_qWkteFjiSBwUyLjAuMaAHhASyBwMyLTG4B9EBwgcFMC4xLjLIBwiACAE&sclient=gws-wiz&sei=EA65apntNverur8PndXGoAQ"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django best practices",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=nginx+migration+guide&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQnuZoa6Nl_N7MG6ruoHaoc1MQJ6GRg%3A1790512651190&source=hp&ei=Cw65atH5CdjOkPIPvIX1kQ4&iflsig=ABILxe8AAAAAarkcG6nsVFwEvT_LdYko6TkgB3BEoO-f&ved=0ahUKEwiRq6e0446XAxVYJ0QIHbxCPeIQ4dUDCDI&uact=5&oq=nginx+migration+guide&gs_lp=Egdnd3Mtd2l6IhVuZ2lueCBtaWdyYXRpb24gZ3VpZGUyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FSNwVUBJYEnACeACQAQCYAcoBoAHKAaoBAzItMbgBA8gBAPgBAZgCA6AC2AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFJX_qWkteFjiSBwUyLjAuMaAHhASyBwMyLTG4B9EBwgcFMC4xLjLIBwiACAE&sclient=gws-wiz&sei=EA65apntNverur8PndXGoAQ"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.3908,
+     "target": "18",
+     "target_label": "Ingress NGINX is EOL: A practical guide for migrating to... daily.dev https://daily.dev › Datadog",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 624.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=nginx+migration+guide&sca_esv=75b852f910b8e50f&hl=en&gl=us&sxsrf=APpeQnuZoa6Nl_N7MG6ruoHaoc1MQJ6GRg%3A1790512651190&source=hp&ei=Cw65atH5CdjOkPIPvIX1kQ4&iflsig=ABILxe8AAAAAarkcG6nsVFwEvT_LdYko6TkgB3BEoO-f&ved=0ahUKEwiRq6e0446XAxVYJ0QIHbxCPeIQ4dUDCDI&uact=5&oq=nginx+migration+guide&gs_lp=Egdnd3Mtd2l6IhVuZ2lueCBtaWdyYXRpb24gZ3VpZGUyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FSNwVUBJYEnACeACQAQCYAcoBoAHKAaoBAzItMbgBA8gBAPgBAZgCA6AC2AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFJX_qWkteFjiSBwUyLjAuMaAHhASyBwMyLTG4B9EBwgcFMC4xLjLIBwiACAE&sclient=gws-wiz&sei=EA65apntNverur8PndXGoAQ"
+    },
+    {
+     "step": 7,
+     "operation": "DONE",
+     "confidence": 0.9355,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'django best practices'; Google search results for 'nginx migration guide'",
+     "page_changed": null,
+     "latency_ms": 453.6,
+     "low_confidence": false,
+     "url": "https://daily.dev/posts/ingress-nginx-is-eol-a-practical-guide-for-migrating-to-kubernetes-gateway-api-fj854bzvi"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.9411,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 561.6,
+     "low_confidence": false,
+     "url": "https://daily.dev/posts/ingress-nginx-is-eol-a-practical-guide-for-migrating-to-kubernetes-gateway-api-fj854bzvi"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-350354c9f5bf2aa6",
+   "source": "google",
+   "goal": "Search Google for angular interview questions and open the results.",
+   "fingerprint": 46046,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14696,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dangular%2binterview%2bquestions%26sca_es",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dangular%2Binterview%2Bquestions%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns4_XRliK2nDfYduX8E1ak1BPyz4Q%253A1790512716039%26source%3Dhp%26ei%3DTA65apMoh-6Q8g_UxoWwBg%26iflsig%3DABILxe8AAAAAarkcXO19iVJzWrUFrnFl0bCGJYiZvmGV%26ved%3D0ahUKEwiT_pzT446XAxUHN0QIHVRjAWYQ4dUDCDI%26uact%3D5%26oq%3Dangular%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Ihthbmd1bGFyIGludGVydmlldyBxdWVzdGlvbnMyCBAAGIAEGLQHMggQABiABBixAzIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABDIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHSNgHUBZYFnABeACQAQCYAdgBoAHYAaoBAzItMbgBA8gBAPgBAZgCAqAC3wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFXKFbUGqxM1eSBwUxLjAuMaAHnweyBwMyLTG4B9sBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGM6c5NUGIjAvYHKOPa7qUc6WHQ2UB6tPb2aKuH3VA14PyTvWC4494sSBqUXZ_MGZwqxOIFJePm8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=angular+interview+questions&sca_esv=75b852f910b8"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9023,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 494.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512716269"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8972,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 588.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512716269"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-2ad2352b802dd091",
+   "source": "google",
+   "goal": "First search Google for how to debug refactoring, then search Google for nginx open source alternatives.",
+   "fingerprint": 46046,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 22785,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dnginx%2bopen%2bsource%2balternatives%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dnginx%2Bopen%2Bsource%2Balternatives%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsp-zv3TGeuSiirdvN22hWlohiI2A%253A1790512782937%26source%3Dhp%26ei%3Djg65apvmN8ylkPIP0NniiQM%26iflsig%3DABILxe8AAAAAarkcnp6Rylp5H_Z7T59ZUl1muFb14YBY%26ved%3D0ahUKEwib5ZDz446XAxXMEkQIHdCsODEQ4dUDCDI%26uact%3D5%26oq%3Dnginx%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ih5uZ2lueCBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMyBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FSPRBUA1Yrh9wAngAkAEAmAGHAqAB_QOqAQMyLTK4AQPIAQD4AQGYAgSgApMEqAIKwgIWEAAYgAQYigUYQxi0BxjnBhjqAhi0AsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgUQIRifBZgDBPEFVgW3vuX9lNiSBwUyLjAuMqAHjg-yBwMyLTK4B40EwgcFMC4xLjPIBwqACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJmd5NUGIjC2Lj4es0oPoqGqHIqwtm-Md6K1Yyrhgg08JT937fvZXoxTAp3ne-CRn-urq_IFgq0yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=nginx+open+source+alternatives&sca_esv=75b852f91"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.6655,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 595.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512783284"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8623,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug refactoring",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 518.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512783284"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8622,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for nginx open source alternatives (page still shows the first query 'how to debug refactoring' with autocomplete suggestions, not",
+     "page_changed": null,
+     "latency_ms": 649.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512783284"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "nginx open source alternatives",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512783284"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.8843,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'nginx open source alternatives' (only the query typed with autocomplete suggestions is visible, no results listed)",
+     "page_changed": null,
+     "latency_ms": 598.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512783284"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512783284"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8dbcae60dd6a845d",
+   "source": "google",
+   "goal": "First search Google for docker open source alternatives, then search Google for profiling cheat sheet.",
+   "fingerprint": 46046,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14633,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddocker%2bopen%2bsource%2balternatives%26",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddocker%2Bopen%2Bsource%2Balternatives%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsYfHWysPtLI3AngH50hy7oZB52sA%253A1790512857938%26source%3Dhp%26ei%3D2Q65aveLOM_IkPIP97GUyA4%26iflsig%3DABILxe8AAAAAarkc6fHakhjk5HJduc1BiDVzNjd6Fp1X%26ved%3D0ahUKEwi33PKW5I6XAxVPJEQIHfcYBekQ4dUDCDI%26uact%3D5%26oq%3Ddocker%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ih9kb2NrZXIgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGBYYHhgKMgYQABgWGB4yBhAAGBYYHkjXB1AOWA5wAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAucBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBXWRj9bAkDF5kgcFMS4wLjGgB60HsgcDMi0xuAfjAcIHAzItMsgHB4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNyd5NUGIjDudraP6r6z_T-Uyeni230m2ol65fvUd4hHlOMfY-SkpMhEa7uN0nni-v4Dl8IC1GYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=docker+open+source+alternatives&sca_esv=75b852f9"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8915,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "docker open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 501.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512858275"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8956,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 586.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512858275"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-4a3afd58076af32c",
+   "source": "google",
+   "goal": "Search Google for svelte performance optimization and open the results.",
+   "fingerprint": 46046,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14727,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dsvelte%2bperformance%2boptimization%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsvelte%2Bperformance%2Boptimization%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntlO8Ap3OwjwATFYUSto-3QPa6Tsg%253A1790512924756%26source%3Dhp%26ei%3DHA-5aqrlLI68ur8P_dL22A4%26iflsig%3DABILxe8AAAAAarkdLLYt6ShKDXpedBzKmNb9htYY8z38%26ved%3D0ahUKEwiq4-C25I6XAxUOnu4BHX2pHesQ4dUDCDI%26uact%3D5%26oq%3Dsvelte%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ih9zdmVsdGUgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRifBTIFECEYnwVIiQdQD1gPcAF4AJABAJgB5QGgAeUBqgEDMi0xuAEDyAEA-AEBmAICoALzAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QWv9W9XnurTP5IHBTEuMC4xoAeJBbIHAzItMbgH7wHCBwMyLTLIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJ-e5NUGIjAicsRg_1CWt3JzWAaVSb6lBQOtCxc3p4GtoWGRUdHAxzV-Pz24v0L6f3kxB_OYKccyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=svelte+performance+optimization&sca_esv=75b852f9"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8598,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "svelte performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 547.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512924968"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9029,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 516.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512924968"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a5cecce11862ef4e",
+   "source": "google",
+   "goal": "Search Google for vue best practices and open the results.",
+   "fingerprint": 46046,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 23586,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvue%2bbest%2bpractices%26sca_esv%3d75b85",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvue%2Bbest%2Bpractices%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnszREB8hMsI1zm6qP0C-4mBRSSYDg%253A1790512991643%26source%3Dhp%26ei%3DXw-5arT-JfjnkPIPge-YsAs%26iflsig%3DABILxe8AAAAAarkdb3wm3TBPdRs0jRLFwv0037Y9NJbh%26ved%3D0ahUKEwj0qdPW5I6XAxX4M0QIHYE3BrYQ4dUDCDI%26oq%3Dvue%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhJ2dWUgYmVzdCBwcmFjdGljZXMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I60tQzSlYzSlwAngAkAEAmAHVAaAB1QGqAQMyLTG4AQzIAQD4AQGYAgOgAuMBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBRDLt1W-80wLkgcFMi4wLjGgB54FsgcDMi0xuAfdAcIHBTAuMS4yyAcJgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOue5NUGIjC8pDeZPLdQ2dYyejua_NAbJDwp-6COJqTUJDuJrIqHysfy0qbc_86K2L_iJV9UWN4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vue+best+practices&sca_esv=75b852f910b8e50f&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.8323,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 498.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512991865"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8766,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 636.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512991865"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.2885,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'vue best practices'",
+     "page_changed": null,
+     "latency_ms": 558.2,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512991865"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512991865"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.907,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'vue best practices' are not displayed; only search suggestions on Google homepage",
+     "page_changed": null,
+     "latency_ms": 618.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512991865"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:32",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512991865"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5e64acf8671af038",
+   "source": "google",
+   "goal": "First search Google for scala interview questions, then search Google for prometheus cheat sheet.",
+   "fingerprint": 46046,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14635,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dscala%2binterview%2bquestions%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dscala%2Binterview%2Bquestions%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvtpUETPuQ-x9sS3Qx-ni3oJ2ra5A%253A1790513067406%26source%3Dhp%26ei%3Dqw-5au7JF8LOkPIP6ZLwoAc%26iflsig%3DABILxe8AAAAAarkduyL1JhqlvRtfVsJr1rWikQ8YMLNE%26ved%3D0ahUKEwiuy-P65I6XAxVCJ0QIHWkJHHQQ4dUDCDI%26uact%3D5%26oq%3Dscala%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhlzY2FsYSBpbnRlcnZpZXcgcXVlc3Rpb25zMgUQABiABDIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSNIHUA5YDnABeACQAQCYAc0BoAHNAaoBAzItMbgBA8gBAPgBAZgCAqAC2wGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBdUhZjw0smiSkgcFMS4wLjGgB8cGsgcDMi0xuAfXAcIHAzItMsgHCYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGK6f5NUGIjCTubKs7RGuV_LwVfKUADsucXRVfkTsAUsoOlUpXhG0amLNEYV9SebCBdXvc323MbgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=scala+interview+questions&sca_esv=75b852f910b8e5"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.904,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "scala interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 498.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513067619"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8801,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 582.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513067619"
+    }
+   ]
+  }
+ ]
+}

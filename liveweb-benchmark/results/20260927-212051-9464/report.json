@@ -1,0 +1,496 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 14244,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:29:03+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.1,
+  "mean_duration_ms": 15162,
+  "decision_latency_ms": {
+   "p50": 510.3,
+   "p95": 578.0
+  },
+  "step_outcomes": {
+   "executed": 16,
+   "done-rejected": 1
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.1
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-4d6b53600bd6f94f",
+   "source": "google",
+   "goal": "First search Google for ruby performance optimization, then search Google for vllm security vulnerabilities.",
+   "fingerprint": 14244,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15050,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3druby%2bperformance%2boptimization%26sca_",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Druby%2Bperformance%2Boptimization%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv2UpZAMgscCiubYjp0qpikXIumbQ%253A1790515255026%26source%3Dhp%26ei%3DNxi5avYD4suQ8g-d5tqgBQ%26iflsig%3DABILxe8AAAAAarkmR85VoIx1C29HREaWyuvD9Tax5moW%26ved%3D0ahUKEwi2-_SN7Y6XAxXiJUQIHR2zFlQQ4dUDCDI%26uact%3D5%26oq%3Druby%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ih1ydWJ5IHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCBAAGIAEGKIEMgUQABjvBTIFEAAY7wVIuAdQFFgUcAF4AJABAJgBgAKgAYACqgEDMi0xuAEDyAEA-AEBmAICoAKHAqgCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME8QXRipJ86Eyyw5IHBTEuMC4xoAfoA7IHAzItMbgHggLCBwUwLjEuMcgHBIAIAQ%26sclient%3Dgws-wiz%26sei%3DORi5ao_tOMmWkPIP___b8QE&hl=en&q=EgQm0XtnGLqw5NUGIjA0QRvqZdz_mzYknyMAeuXpUNqQGkgCPlhkE6TkhNbfc6yPOms9XLqNmfZRNIsrPIAyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=ruby+performance+optimization&sca_esv=3e3a42b854"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9033,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ruby performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 483.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9075,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 560.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515256842"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-129d17300604b113",
+   "source": "google",
+   "goal": "First search Google for typescript interview questions, then search Google for rabbitmq best practices.",
+   "fingerprint": 14244,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14716,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dtypescript%2binterview%2bquestions%26sca",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtypescript%2Binterview%2Bquestions%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvuaA8g9Zzev2u_QojGjSBfNIYpEg%253A1790515322517%26source%3Dhp%26ei%3Dehi5aoCfHurJkPIPpYOUmQg%26iflsig%3DABILxe8AAAAAarkmihKHDzeLSrovWMAYqR5xjzycf4SK%26ved%3D0ahUKEwiAxIyu7Y6XAxXqJEQIHaUBJYMQ4dUDCDI%26uact%3D5%26oq%3Dtypescript%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Ih50eXBlc2NyaXB0IGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMggQABiABBi0BzIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyBRAAGIAEMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHSM8HUBhYGHABeACQAQCYAfUBoAH1AaoBAzItMbgBA8gBAPgBAZgCAqAC_AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBfEFgKajbHn9MtaSBwUxLjAuMaAHoAeyBwMyLTG4B_cBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGP2w5NUGIjCXYwy-QCci8HzceHDqIzEYo8lE_ypfxPE5X_54glRXjHvAHCDa7YBspxrmK9cuHogyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=typescript+interview+questions&sca_esv=3e3a42b85"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9087,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "typescript interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 489.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9037,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 584.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515324488"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b965e4ec0137e015",
+   "source": "google",
+   "goal": "First search Google for fastapi performance optimization, then search Google for svelte migration guide.",
+   "fingerprint": 14244,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14724,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dfastapi%2bperformance%2boptimization%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dfastapi%2Bperformance%2Boptimization%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuTgU-wwwiVy3VRSxRBceqEtGVPLw%253A1790515389703%26source%3Dhp%26ei%3DvRi5aum5KcnKkPIP5_LJOA%26iflsig%3DABILxe8AAAAAarkmzcrUzR7Hl7wTiKNz1yljR4IXNFZv%26ved%3D0ahUKEwipjJHO7Y6XAxVJJUQIHWd5EgcQ4dUDCDI%26uact%3D5%26oq%3Dfastapi%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiBmYXN0YXBpIHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCBAAGIkFGKIEMgUQABjvBTIFEAAY7wUyBRAAGO8FSLkHUA1YDXABeACQAQCYAeEBoAHhAaoBAzItMbgBA8gBAPgBAZgCAqAC5gGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCmAMC8QXkSo1sufBoqpIHBTEuMC4xoAeGBrIHAzItMbgH4wHCBwMwLjLIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMCx5NUGIjDfcCKv6wwZIJ8Y8_2BCf-EP8ZvJEVYKiKi-BjNpldid5vrKyzgjqVZHqzkHu1_83cyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=fastapi+performance+optimization&sca_esv=3e3a42b"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8803,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "fastapi performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 506.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515390138"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9089,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 575.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515390138"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c24311fa5363c746",
+   "source": "google",
+   "goal": "First search Google for golang tutorial, then search Google for vector embeddings tutorial.",
+   "fingerprint": 14244,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14629,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgolang%2btutorial%26sca_esv%3d3e3a42b854",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgolang%2Btutorial%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntnLiLytwmeB3WEyF3Y2U2i4DZv2Q%253A1790515456677%26source%3Dhp%26ei%3DABm5arP9J9uiur8PzJ-O0Q4%26iflsig%3DABILxe8AAAAAarknEFNiScIDiyMJ2D8r0r1L4nzbXNqN%26ved%3D0ahUKEwiz_Yju7Y6XAxVbke4BHcyPI-oQ4dUDCDI%26uact%3D5%26oq%3Dgolang%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig9nb2xhbmcgdHV0b3JpYWwyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESL4HUBFYEXABeACQAQCYAeUBoAHlAaoBAzItMbgBA8gBAPgBAZgCAqAC6gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDAvEFRzGvhm_AkraSBwUxLjAuMaAH8wSyBwMyLTG4B-gBwgcDMC4yyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIOy5NUGIjBG0om3q1O-06TvBnXtpc0UZpW25rrpN8SzE-b9kEgdros8lA6SN-I4P1r38TfW3tsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=golang+tutorial&sca_esv=3e3a42b854afc954&hl=en&g"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8934,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 524.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515456990"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9008,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 566.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515456990"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-bf979957f65c6999",
+   "source": "google",
+   "goal": "First search Google for how to debug retrieval augmented generation, then search Google for code review interview questions.",
+   "fingerprint": 14244,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14484,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bretrieval%2baugmented",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bretrieval%2Baugmented%2Bgeneration%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvZ9cUknEqr8p7eLdTtX25UoHK4sA%253A1790515523469%26source%3Dhp%26ei%3DQxm5asC7G5HEkPIPhZKq6AI%26iflsig%3DABILxe8AAAAAarknU4LPKihn7LBKMIt2bEV5joc6uDoZ%26ved%3D0ahUKEwiA6fWN7o6XAxURIkQIHQWJCi0Q4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bretrieval%2Baugmented%2Bgeneration%26gs_lp%3DEgdnd3Mtd2l6Iitob3cgdG8gZGVidWcgcmV0cmlldmFsIGF1Z21lbnRlZCBnZW5lcmF0aW9uMgUQIRigATIFECEYoAEyBRAhGKABSOgGUA9YD3ABeACQAQCYAZACoAGQAqoBAzItMbgBA8gBAPgBAZgCAqAClQKoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCmAMC8QVaKH0OICPn55IHBTEuMC4xoAeNBLIHAzItMbgHkgLCBwMxLjHIBwKACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMay5NUGIjBPktesdef5DdW1MCpnhWZXLqAc7dy5PYzzWLbeuFAquUmO1t3gR3BpJtxMkZN40u8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+retrieval+augmented+generation&sca_"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8872,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug retrieval augmented generation",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 491.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515523693"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9007,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 482.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515523693"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a91676dbe71a7eed",
+   "source": "google",
+   "goal": "First search Google for ci/cd pipelines cheat sheet, then search Google for spring boot security vulnerabilities.",
+   "fingerprint": 14244,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14648,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dci%252fcd%2bpipelines%2bcheat%2bsheet%26",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dci%252Fcd%2Bpipelines%2Bcheat%2Bsheet%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnso5Y1ymPGOCWOkTyVGs3KBmXOX-g%253A1790515590112%26source%3Dhp%26ei%3Dhhm5asq3BfeM8L0Pw92wqAo%26iflsig%3DABILxe8AAAAAarknlkdUCsDqg3VMXjYjGK77vHj7eKi8%26ved%3D0ahUKEwjKktmt7o6XAxV3BrwBHcMuDKUQ4dUDCDI%26uact%3D5%26oq%3Dci%252Fcd%2Bpipelines%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhtjaS9jZCBwaXBlbGluZXMgY2hlYXQgc2hlZXQyBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIESMAHUBFYEXABeACQAQCYAfEBoAHxAaoBAzItMbgBA8gBAPgBAZgCAqAC9wGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDAvEF5Bbo2z2bx2iSBwUxLjAuMaAHjAOyBwMyLTG4B_QBwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIiz5NUGIjCQ3QO610r1avupWBZFBnHBxWEBRMSqDDix4fua9YWpt__xzPX46KsAmw37KAyyhQoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=ci%2Fcd+pipelines+cheat+sheet&sca_esv=3e3a42b854"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8781,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ci/cd pipelines cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 489.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515590364"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8973,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 569.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515590364"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9cc926a3d73d967a",
+   "source": "google",
+   "goal": "Search Google for laravel open source alternatives and open the results.",
+   "fingerprint": 14244,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 18397,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlaravel%2bopen%2bsource%2balternatives%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlaravel%2Bopen%2Bsource%2Balternatives%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuvhYBN0TVEqkWjsf1I5kQpKh9ITw%253A1790515656935%26source%3Dhp%26ei%3DyBm5arT4N_egkPIP7-basAI%26iflsig%3DABILxe8AAAAAarkn2NYong662bR9haS3x6tZBIoAn7Tz%26ved%3D0ahUKEwi0_MfN7o6XAxV3EEQIHW-zFiYQ4dUDCDI%26uact%3D5%26oq%3Dlaravel%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiBsYXJhdmVsIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyBRAAGO8FMgUQABjvBTIFEAAY7wVI7SNQD1gPcAF4AJABAJgBhQKgAYUCqgEDMi0xuAEDyAEA-AEBmAICoAKLAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QU1rBQV3k-GoJIHBTEuMC4xoAfmBrIHAzItMbgHiALCBwUwLjEuMcgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGM-z5NUGIjAYrmF8nfaIpNf6-23VXP2x6gPmn_pvwOcjo9dHWvS0p_X0oKWJVvVbx9Q2ACjgWRIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=laravel+open+source+alternatives&sca_esv=3e3a42b"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9032,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "laravel open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 502.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515657158"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8667,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for 'laravel open source alternatives' is not shown; only the Google search box with autocomplete suggestions is visible",
+     "page_changed": null,
+     "latency_ms": 578.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515657158"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515657158"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d7f873d71435e642",
+   "source": "google",
+   "goal": "First search Google for memory leak debugging best practices, then search Google for elasticsearch cheat sheet.",
+   "fingerprint": 14244,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14647,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmemory%2bleak%2bdebugging%2bbest%2bpract",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmemory%2Bleak%2Bdebugging%2Bbest%2Bpractices%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvLhmNY5WfhUofZEnUvLnfRCLYFRA%253A1790515727496%26source%3Dhp%26ei%3DDxq5asfRHLfIkPIPjO7ewAw%26iflsig%3DABILxe8AAAAAarkoH-2erGlhsQORevPo8eYXTe_8UtXm%26ved%3D0ahUKEwiHlZrv7o6XAxU3JEQIHQy3F8gQ4dUDCDI%26uact%3D5%26oq%3Dmemory%2Bleak%2Bdebugging%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IiRtZW1vcnkgbGVhayBkZWJ1Z2dpbmcgYmVzdCBwcmFjdGljZXMyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKsCSIMHUBFYEXABeACQAQCYAZUCoAGVAqoBAzItMbgBA8gBAPgBAZgCAqACmwKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFRL88xEX2yQ2SBwUxLjAuMaAHmgSyBwMyLTG4B5cCwgcFMC4xLjHIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJK05NUGIjCRbnpEzn63RcNlAH5daoKXnpqajQtxq2igOzbFvFlGYA62PnFui81T4cP-Un5okhQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=memory+leak+debugging+best+practices&sca_esv=3e3"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8369,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "memory leak debugging best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 512.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515727766"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9135,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 510.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515727766"
+    }
+   ]
+  }
+ ]
+}

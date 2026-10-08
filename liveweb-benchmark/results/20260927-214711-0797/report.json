@@ -1,0 +1,511 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 98190,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:55:22+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.2,
+  "mean_duration_ms": 15134,
+  "decision_latency_ms": {
+   "p50": 545.8,
+   "p95": 665.7
+  },
+  "step_outcomes": {
+   "executed": 16,
+   "refused-empty-enter": 1,
+   "done-rejected": 1
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.2
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-414d7f80e82332be",
+   "source": "google",
+   "goal": "Search Google for logging best practices open source alternatives and open the results.",
+   "fingerprint": 98190,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14785,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlogging%2bbest%2bpractices%2bopen%2bsour",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlogging%2Bbest%2Bpractices%2Bopen%2Bsource%2Balternatives%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvutTSv7mNp7H9oKQsLG1KMrK5cPQ%253A1790516835229%26source%3Dhp%26ei%3DYx65aqukDND0kPIPgYShwAY%26iflsig%3DABILxe8AAAAAarksc85mtL8eWrL_J6waOd_r9cuzfcvK%26ved%3D0ahUKEwjr4bT_8o6XAxVQOkQIHQFCCGgQ4dUDCDI%26uact%3D5%26oq%3Dlogging%2Bbest%2Bpractices%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ii9sb2dnaW5nIGJlc3QgcHJhY3RpY2VzIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigAUjiBlARWBFwAXgAkAEAmAGCAqABggKqAQMyLTG4AQPIAQD4AQGYAgKgAosCqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwbxBYfhL9MxD6VIkgcFMS4wLjGgB4IEsgcDMi0xuAeFAsIHBTEuMC4xyAcGgAgB%26sclient%3Dgws-wiz%26sei%3DZh65atETkdqQ8g_etcyhDg&hl=en&q=EgQm0XtnGOa85NUGIjB50o7vN9FhCCjgefnupCEGIS4bqExZywWAJUrMbzsnNlmLTtOdd166KUPITTANg0oyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=logging+best+practices+open+source+alternatives&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8393,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "logging best practices open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 503.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8554,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 481.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516837019"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-7527dadd81a4fb64",
+   "source": "google",
+   "goal": "Search Google for rust performance optimization and open the results.",
+   "fingerprint": 98190,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14550,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drust%2bperformance%2boptimization%26sca_",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drust%2Bperformance%2Boptimization%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntXcj6JFhxLlA0AWnv5q9Vm_SHiHg%253A1790516902376%26source%3Dhp%26ei%3Dph65aqTdFcTBkPIPyvjb6Ag%26iflsig%3DABILxe8AAAAAarkstr6HzpYp-c1xgyPUn5hnPqqL3Hp5%26ved%3D0ahUKEwikyLef846XAxXEIEQIHUr8Fo0Q4dUDCDI%26uact%3D5%26oq%3Drust%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ih1ydXN0IHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCBAAGIAEGKIEMgUQABjvBUi4B1ASWBJwAXgAkAEAmAHjAaAB4wGqAQMyLTG4AQPIAQD4AQGYAgKgAukBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBbYHJlrozyYIkgcFMS4wLjGgB_gDsgcDMi0xuAflAcIHBTEuMC4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKm95NUGIjD9Mp2vOPd_bYjA1fPcqyhWRfNKFEbSdptc_gSomAeEEBw596an0qqouMQcuRtjPqkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=rust+performance+optimization&sca_esv=3e3a42b854"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8999,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rust performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 482.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9145,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 569.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516904035"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c658f6309fd0fa23",
+   "source": "google",
+   "goal": "Search Google for async programming best practices and open the results.",
+   "fingerprint": 98190,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14762,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dasync%2bprogramming%2bbest%2bpractices%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dasync%2Bprogramming%2Bbest%2Bpractices%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntot1jHXBpAaB-Nln0gfSlnUF08tQ%253A1790516969336%26source%3Dhp%26ei%3D6R65aon_ErjJkPIP67nqiAc%26iflsig%3DABILxe8AAAAAarks-fMvA1C8D58AxCDiJ27hMQD60ndX%26ved%3D0ahUKEwjJl66_846XAxW4JEQIHeucGnEQ4dUDCDI%26uact%3D5%26oq%3Dasync%2Bprogramming%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IiBhc3luYyBwcm9ncmFtbWluZyBiZXN0IHByYWN0aWNlczIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMggQABiJBRiiBDIIEAAYiQUYogRIkwhQDVgNcAF4AJABAJgBiAKgAYgCqgEDMi0xuAEDyAEA-AEBmAICoAKNAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QWELYRFj7nH7ZIHBTEuMC4xoAfMBrIHAzItMbgHigLCBwMwLjLIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOy95NUGIjCBtb_Fac4q30BgFVouLPlAELsZf3c4zg2vxzWpx_G7VutAx9SdJXm6fmHvUeYK-BIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=async+programming+best+practices&sca_esv=3e3a42b"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.899,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "async programming best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 545.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516969747"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9085,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 665.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516969747"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9572faa6fc633335",
+   "source": "google",
+   "goal": "First search Google for laravel best practices, then search Google for react cheat sheet.",
+   "fingerprint": 98190,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14664,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlaravel%2bbest%2bpractices%26sca_esv%3d3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlaravel%2Bbest%2Bpractices%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsRkl1_1BQXfBZXTQBgTYTMYElhVQ%253A1790517036314%26source%3Dhp%26ei%3DLB-5ap3VEYeRvMcP6uff2Ag%26iflsig%3DABILxe8AAAAAarktPKpuZzmhVyCBuGUP3oh_dPmzOquF%26ved%3D0ahUKEwidm6bf846XAxWHCO8CHerzF4sQ4dUDCDI%26uact%3D5%26oq%3Dlaravel%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhZsYXJhdmVsIGJlc3QgcHJhY3RpY2VzMgoQABiABBiKBRhDMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHki8B1APWA9wAXgAkAEAmAGAAqABgAKqAQMyLTG4AQPIAQD4AQGYAgKgAoYCqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBX9A3Ak8Mj23kgcFMS4wLjGgB-8FsgcDMi0xuAeCAsIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGK6-5NUGIjAj_Y1aoeAqiPa8-mt309oG3gX0NSEd_TfOFelt_IxyDJ34iXshTw22yjaaq5fcp5QyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=laravel+best+practices&sca_esv=3e3a42b854afc954&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9077,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "laravel best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 494.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517036593"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8606,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 580.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517036593"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-4dddb4e1d02a2553",
+   "source": "google",
+   "goal": "Search Google for design patterns best practices and open the results.",
+   "fingerprint": 98190,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14665,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddesign%2bpatterns%2bbest%2bpractices%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddesign%2Bpatterns%2Bbest%2Bpractices%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntje9cNIg933y4FeRPs7tOKywKNfQ%253A1790517103118%26source%3Dhp%26ei%3Dbx-5aub7BZzRkPIPko6H0QI%26iflsig%3DABILxe8AAAAAarktf0q2lhOiHAaIUNPoeGieKvkIRIFu%26ved%3D0ahUKEwim75P_846XAxWcKEQIHRLHISoQ4dUDCDI%26uact%3D5%26oq%3Ddesign%2Bpatterns%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6Ih5kZXNpZ24gcGF0dGVybnMgYmVzdCBwcmFjdGljZXMyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjdCFAOWA5wAXgAkAEAmAH1AaAB9QGqAQMyLTG4AQPIAQD4AQGYAgKgAvwBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMC8QXdj6p8NU9UtZIHBTEuMC4xoAf0CLIHAzItMbgH-QHCBwMwLjLIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPG-5NUGIjAfgmlaHe9FF_Lu_o3CaMynxT5VXj19eDC0OZ2nUl9wWTqLRafmPMFGKi-vtzJM5qQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=design+patterns+best+practices&sca_esv=3e3a42b85"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.4258,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "design patterns best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 491.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517103379"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8955,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 742.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517103379"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-fe7a9c1b80e7f522",
+   "source": "google",
+   "goal": "Search Google for how to debug golang and open the results.",
+   "fingerprint": 98190,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 4,
+   "total_ms": 18202,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bgolang%26sca_esv%3d3e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bgolang%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntG-Fl-8IeSt09g3wq3zy4nKjCwjQ%253A1790517169949%26source%3Dhp%26ei%3DsR-5aprhOKGuur8PvdbnyAo%26iflsig%3DABILxe8AAAAAarktwUCopf8JpOG5wtGO3hFH_7NGfpqr%26oq%3Dhow%2Bto%2Bdebug%2Bgolang%26gs_lp%3DEgdnd3Mtd2l6IhNob3cgdG8gZGVidWcgZ29sYW5nKgUIARiABDIIEAAYgAQYtAcyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkiCCFALWAtwAXgAkAEAmAGsAqABrAKqAQMzLTG4AQHIAQD4AQGYAgKgArACqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBa-sQvH3iKwnkgcFMS4zLTGgB7cFsgcDMy0xuAeuAsIHAzAuMsgHA4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLi_5NUGIjD5sz6UZ9QFoSqaM0D_7QdX945UbZkVmFaqPJMYIaI4bakeeo5N1xulur8XT4EmVooyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+golang&sca_esv=3e3a42b854afc954&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8266,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 556.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517170245"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.2491,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'how to debug golang'; performed search query in the search box",
+     "page_changed": null,
+     "latency_ms": 476.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517170245"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug golang",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517170245"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8881,
+     "target": "13",
+     "target_label": "how to debug golang",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 611.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517170245"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a86f1cad85604d09",
+   "source": "google",
+   "goal": "First search Google for concurrency tutorial, then search Google for golang interview questions.",
+   "fingerprint": 98190,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14736,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dconcurrency%2btutorial%26sca_esv%3d3e3a4",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dconcurrency%2Btutorial%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnu3OVXuF6Jnmgqmc4elOBzckcRK8w%253A1790517240341%26source%3Dhp%26ei%3D-B-5aouwE6PIkPIPzqaEqAc%26iflsig%3DABILxe8AAAAAarkuCG9lo_9zipND5sPPYB_vCzxh1MAY%26ved%3D0ahUKEwiLjMvA9I6XAxUjJEQIHU4TAXUQ4dUDCDI%26uact%3D5%26oq%3Dconcurrency%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhRjb25jdXJyZW5jeSB0dXRvcmlhbDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjfB1AOWA5wAXgAkAEAmAGbAqABmwKqAQMyLTG4AQPIAQD4AQGYAgKgAqACqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBRcm0Ig7g4DckgcFMS4wLjGgB-8FsgcDMi0xuAecAsIHAzAuMsgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPu_5NUGIjAuAn6Y-tlf6HGyQz6XrstDENIUy79KHRlacmhfV2pWzATp-_BKGeZtfgsUSWkGQZYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=concurrency+tutorial&sca_esv=3e3a42b854afc954&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8879,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "concurrency tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 504.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517240616"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9017,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 607.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517240616"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-0b9eee2ee3d43a3d",
+   "source": "google",
+   "goal": "First search Google for kafka open source alternatives, then search Google for flask tutorial.",
+   "fingerprint": 98190,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14707,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dkafka%2bopen%2bsource%2balternatives%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dkafka%2Bopen%2Bsource%2Balternatives%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv-5dqr7Hcwsn1QHtNIZj3yUIp-1Q%253A1790517307255%26source%3Dhp%26ei%3DOyC5asu9DuLMkPIPuvWw0A8%26iflsig%3DABILxe8AAAAAarkuSzKr2CryrjacQn8LnSbhp6BCZsm3%26oq%3Dkafka%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Ih5rYWZrYSBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMqBQgAGIAEMgUQABiABDIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wVIvwdQDFgMcAF4AJABAJgBoQKgAaECqgEDMi0xuAEByAEA-AEBmAICoAKlAqgCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMC8QUaxO6kBdjOvZIHBTEuMC4xoAe_ArIHAzItMbgHogLCBwMxLjHIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGL3A5NUGIjCpMp4QdvfKThGkzGGubqh6Qjfe9Q-YDczePtiv1Wmz3vSqRMZjwIOFpbuico8LpHYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=kafka+open+source+alternatives&sca_esv=f9132ac85"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8958,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kafka open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 493.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517307498"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.82,
+     "target": "12",
+     "target_label": "kafka open source alternatives",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 547.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790517307498"
+    }
+   ]
+  }
+ ]
+}

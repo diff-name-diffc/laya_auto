@@ -1,0 +1,852 @@
+{
+ "meta": {
+  "base_url": "http://127.0.0.1:8812",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 30192,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 8.0,
+  "backend": {
+   "ok": true,
+   "variant": "out/laya-browser-v18d-run2",
+   "calls": 236,
+   "tau": 0.0,
+   "escalated": 0,
+   "recent": [
+    {
+     "ms": 198.3,
+     "questions": 2,
+     "options": 53,
+     "tokens": 1698,
+     "passes": 1
+    },
+    {
+     "ms": 199.9,
+     "questions": 2,
+     "options": 61,
+     "tokens": 1904,
+     "passes": 1
+    },
+    {
+     "ms": 201.0,
+     "questions": 2,
+     "options": 35,
+     "tokens": 1689,
+     "passes": 1
+    },
+    {
+     "ms": 198.0,
+     "questions": 3,
+     "options": 14,
+     "tokens": 2480,
+     "passes": 1
+    },
+    {
+     "ms": 206.3,
+     "questions": 3,
+     "options": 14,
+     "tokens": 2591,
+     "passes": 1
+    }
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-28T13:04:24+0800",
+  "n_tasks": 6,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 6.8,
+  "mean_duration_ms": 27237,
+  "decision_latency_ms": {
+   "p50": 213.8,
+   "p95": 287.5
+  },
+  "step_outcomes": {
+   "executed": 32,
+   "done-rejected": 1,
+   "refused-empty-enter": 2,
+   "no-text-model": 2,
+   "stale": 3,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 5,
+  "vlm_rescues": 12,
+  "by_source": {
+   "github": {
+    "n": 4,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 5.5
+   },
+   "google": {
+    "n": 2,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 9.5
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-07b98c46e96a4145",
+   "source": "github",
+   "goal": "Find a code review repository on GitHub trending and open it to read its README.",
+   "fingerprint": 30192,
+   "status": "blocked",
+   "verified": false,
+   "success": false,
+   "steps": 14,
+   "vlm_rescues": 4,
+   "total_ms": 109195,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['star', 'stars'], ['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/features/code-review",
+     "bot_challenge": false,
+     "group0": [],
+     "group1": []
+    },
+    "final_url": "https://github.com/features/code-review",
+    "final_title": "Code review and pull requests | GitHub · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9384,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 206.8,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.9105,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing A code review repository opened from trending; Its README content displayed",
+     "page_changed": null,
+     "latency_ms": 203.6,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.2987,
+     "target": "1",
+     "target_label": "Explore",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 215.9,
+     "low_confidence": true,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.9218,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 198.1,
+     "low_confidence": false,
+     "url": "https://github.com/explore"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8345,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 216.7,
+     "low_confidence": false,
+     "url": "https://github.com/explore"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:38",
+     "target_label": "Explore Code review",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/explore"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.9374,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 201.3,
+     "low_confidence": false,
+     "url": "https://github.com/features/code-review"
+    },
+    {
+     "step": 8,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:26",
+     "target_label": "Explore Code review",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/features/code-review"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.9399,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 215.5,
+     "low_confidence": false,
+     "url": "https://github.com/features/code-review"
+    },
+    {
+     "step": 9,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:22",
+     "target_label": "Search or jump to",
+     "kind": "fill",
+     "text": "https://github.com/trending",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/features/code-review"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.253,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 259.4,
+     "low_confidence": true,
+     "url": "https://github.com/features/code-review"
+    },
+    {
+     "step": 11,
+     "operation": "CLICK",
+     "confidence": 0.3009,
+     "target": "2",
+     "target_label": "Clear search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 208.8,
+     "low_confidence": true,
+     "url": "https://github.com/features/code-review"
+    },
+    {
+     "step": 12,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2957,
+     "target": "1",
+     "target_label": "Search or jump to",
+     "kind": "fill",
+     "text": null,
+     "outcome": "no-text-model",
+     "page_changed": null,
+     "latency_ms": 236.9,
+     "low_confidence": true,
+     "url": "https://github.com/features/code-review"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-e3f97e74ce0c21b9",
+   "source": "google",
+   "goal": "First search Google for prometheus tutorial, then search Google for scala open source alternatives.",
+   "fingerprint": 30192,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "vlm_rescues": 0,
+   "total_ms": 14335,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dprometheus%2btutorial%26sca_esv%3d0187de",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dprometheus%2Btutorial%26sca_esv%3D0187de462875193d%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuIhn4TLBUrKRLzdW5v26XWd-2NPA%253A1790571724774%26source%3Dhp%26ei%3DzPS5avLsLf2vur8P06qMkAo%26iflsig%3DABILxe8AAAAAaroC3NpIzfi9MKmGzxPzNV_Msarf4kig%26ved%3D0ahUKEwjyguW8v5CXAxX9l-4BHVMVA6IQ4dUDCB8%26uact%3D5%26oq%3Dprometheus%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhNwcm9tZXRoZXVzIHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I_gRQH1gfcAF4AJABAJgBwwGgAcMBqgEDMC4xuAEDyAEA-AEBmAICoALOAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QUhKwFs4McEg5IHBTEuMC4xoAfMBbIHAzItMbgHygHCBwMyLTLIBweACAE%26sclient%3Dgws-wiz%26sei%3Dz_S5auf6ApvVkPIPk7GAyQg&hl=en&q=EgQm0XtnGM_p59UGIjC6ezi_iPLBUkI2K6q9FJHdPltCLW_Gym4F_XfUICdcmstJJXRzyNz0Yy_qZz7Zc-4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=prometheus+tutorial&sca_esv=0187de462875193d&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9326,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "prometheus tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 213.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9223,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 225.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-46a40c1f65a5eea7",
+   "source": "github",
+   "goal": "From today's GitHub trending list, open a langchain project and view its details.",
+   "fingerprint": 30192,
+   "status": "blocked",
+   "verified": false,
+   "success": false,
+   "steps": 8,
+   "vlm_rescues": 5,
+   "total_ms": 15032,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9445,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 157.8,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8438,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 200.9,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 8,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2939,
+     "target": "1",
+     "target_label": "Search or jump to",
+     "kind": "fill",
+     "text": null,
+     "outcome": "no-text-model",
+     "page_changed": null,
+     "latency_ms": 287.5,
+     "low_confidence": true,
+     "url": "https://github.com/trending"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-4578e5aed8728252",
+   "source": "google",
+   "goal": "First search Google for postgresql release notes, then search Google for elixir open source alternatives.",
+   "fingerprint": 30192,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 17,
+   "vlm_rescues": 3,
+   "total_ms": 20814,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['elixir']]",
+    "checks": {
+     "url": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=0187de462875193d&hl=en&gl=us&sxsrf=appeqntromn1paamdygu",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=0187de462875193d&hl=en&gl=us&sxsrf=APpeQntROmn1PaamdyGURhuFbnm4gPH8hA%3A1790571818880&source=hp&ei=KvW5avbDNJSP8L0Pu_af-A8&iflsig=ABILxe8AAAAAaroDOgVMkgh-I_C6kkVetR0nJXx1o-Y5&ved=0ahUKEwj2gNXpv5CXAxWUB7wBHTv7B_8Q4dUDCB8&uact=5&oq=postgresql+release+notes&gs_lp=Egdnd3Mtd2l6Ihhwb3N0Z3Jlc3FsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOUEUAtYC3ABeACQAQCYAckBoAHJAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFoUoakyf828qSBwUxLjAuMaAHuAWyBwMyLTG4B9ABwgcFMC4xLjHIBwaACAE&sclient=gws-wiz",
+    "final_title": "postgresql release notes - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9329,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 203.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9263,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 225.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.888,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql release notes",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 231.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=0187de462875193d&hl=en&gl=us&sxsrf=APpeQntROmn1PaamdyGURhuFbnm4gPH8hA%3A1790571818880&source=hp&ei=KvW5avbDNJSP8L0Pu_af-A8&iflsig=ABILxe8AAAAAaroDOgVMkgh-I_C6kkVetR0nJXx1o-Y5&ved=0ahUKEwj2gNXpv5CXAxWUB7wBHTv7B_8Q4dUDCB8&uact=5&oq=postgresql+release+notes&gs_lp=Egdnd3Mtd2l6Ihhwb3N0Z3Jlc3FsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOUEUAtYC3ABeACQAQCYAckBoAHJAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFoUoakyf828qSBwUxLjAuMaAHuAWyBwMyLTG4B9ABwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8963,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql release notes",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 230.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=0187de462875193d&hl=en&gl=us&sxsrf=APpeQntROmn1PaamdyGURhuFbnm4gPH8hA%3A1790571818880&source=hp&ei=KvW5avbDNJSP8L0Pu_af-A8&iflsig=ABILxe8AAAAAaroDOgVMkgh-I_C6kkVetR0nJXx1o-Y5&ved=0ahUKEwj2gNXpv5CXAxWUB7wBHTv7B_8Q4dUDCB8&uact=5&oq=postgresql+release+notes&gs_lp=Egdnd3Mtd2l6Ihhwb3N0Z3Jlc3FsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOUEUAtYC3ABeACQAQCYAckBoAHJAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFoUoakyf828qSBwUxLjAuMaAHuAWyBwMyLTG4B9ABwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8992,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql release notes",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 227.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=0187de462875193d&hl=en&gl=us&sxsrf=APpeQntROmn1PaamdyGURhuFbnm4gPH8hA%3A1790571818880&source=hp&ei=KvW5avbDNJSP8L0Pu_af-A8&iflsig=ABILxe8AAAAAaroDOgVMkgh-I_C6kkVetR0nJXx1o-Y5&ved=0ahUKEwj2gNXpv5CXAxWUB7wBHTv7B_8Q4dUDCB8&uact=5&oq=postgresql+release+notes&gs_lp=Egdnd3Mtd2l6Ihhwb3N0Z3Jlc3FsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOUEUAtYC3ABeACQAQCYAckBoAHJAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFoUoakyf828qSBwUxLjAuMaAHuAWyBwMyLTG4B9ABwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elixir open source alternatives",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=0187de462875193d&hl=en&gl=us&sxsrf=APpeQntROmn1PaamdyGURhuFbnm4gPH8hA%3A1790571818880&source=hp&ei=KvW5avbDNJSP8L0Pu_af-A8&iflsig=ABILxe8AAAAAaroDOgVMkgh-I_C6kkVetR0nJXx1o-Y5&ved=0ahUKEwj2gNXpv5CXAxWUB7wBHTv7B_8Q4dUDCB8&uact=5&oq=postgresql+release+notes&gs_lp=Egdnd3Mtd2l6Ihhwb3N0Z3Jlc3FsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOUEUAtYC3ABeACQAQCYAckBoAHJAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFoUoakyf828qSBwUxLjAuMaAHuAWyBwMyLTG4B9ABwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8906,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 227.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=0187de462875193d&hl=en&gl=us&sxsrf=APpeQntROmn1PaamdyGURhuFbnm4gPH8hA%3A1790571818880&source=hp&ei=KvW5avbDNJSP8L0Pu_af-A8&iflsig=ABILxe8AAAAAaroDOgVMkgh-I_C6kkVetR0nJXx1o-Y5&ved=0ahUKEwj2gNXpv5CXAxWUB7wBHTv7B_8Q4dUDCB8&uact=5&oq=postgresql+release+notes&gs_lp=Egdnd3Mtd2l6Ihhwb3N0Z3Jlc3FsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOUEUAtYC3ABeACQAQCYAckBoAHJAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFoUoakyf828qSBwUxLjAuMaAHuAWyBwMyLTG4B9ABwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8952,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql release notes",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 347.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=0187de462875193d&hl=en&gl=us&sxsrf=APpeQntROmn1PaamdyGURhuFbnm4gPH8hA%3A1790571818880&source=hp&ei=KvW5avbDNJSP8L0Pu_af-A8&iflsig=ABILxe8AAAAAaroDOgVMkgh-I_C6kkVetR0nJXx1o-Y5&ved=0ahUKEwj2gNXpv5CXAxWUB7wBHTv7B_8Q4dUDCB8&uact=5&oq=postgresql+release+notes&gs_lp=Egdnd3Mtd2l6Ihhwb3N0Z3Jlc3FsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOUEUAtYC3ABeACQAQCYAckBoAHJAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFoUoakyf828qSBwUxLjAuMaAHuAWyBwMyLTG4B9ABwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8952,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql release notes",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 228.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=0187de462875193d&hl=en&gl=us&sxsrf=APpeQntROmn1PaamdyGURhuFbnm4gPH8hA%3A1790571818880&source=hp&ei=KvW5avbDNJSP8L0Pu_af-A8&iflsig=ABILxe8AAAAAaroDOgVMkgh-I_C6kkVetR0nJXx1o-Y5&ved=0ahUKEwj2gNXpv5CXAxWUB7wBHTv7B_8Q4dUDCB8&uact=5&oq=postgresql+release+notes&gs_lp=Egdnd3Mtd2l6Ihhwb3N0Z3Jlc3FsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOUEUAtYC3ABeACQAQCYAckBoAHJAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFoUoakyf828qSBwUxLjAuMaAHuAWyBwMyLTG4B9ABwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8952,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql release notes",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 234.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=0187de462875193d&hl=en&gl=us&sxsrf=APpeQntROmn1PaamdyGURhuFbnm4gPH8hA%3A1790571818880&source=hp&ei=KvW5avbDNJSP8L0Pu_af-A8&iflsig=ABILxe8AAAAAaroDOgVMkgh-I_C6kkVetR0nJXx1o-Y5&ved=0ahUKEwj2gNXpv5CXAxWUB7wBHTv7B_8Q4dUDCB8&uact=5&oq=postgresql+release+notes&gs_lp=Egdnd3Mtd2l6Ihhwb3N0Z3Jlc3FsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOUEUAtYC3ABeACQAQCYAckBoAHJAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFoUoakyf828qSBwUxLjAuMaAHuAWyBwMyLTG4B9ABwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elixir open source alternatives",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=0187de462875193d&hl=en&gl=us&sxsrf=APpeQntROmn1PaamdyGURhuFbnm4gPH8hA%3A1790571818880&source=hp&ei=KvW5avbDNJSP8L0Pu_af-A8&iflsig=ABILxe8AAAAAaroDOgVMkgh-I_C6kkVetR0nJXx1o-Y5&ved=0ahUKEwj2gNXpv5CXAxWUB7wBHTv7B_8Q4dUDCB8&uact=5&oq=postgresql+release+notes&gs_lp=Egdnd3Mtd2l6Ihhwb3N0Z3Jlc3FsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOUEUAtYC3ABeACQAQCYAckBoAHJAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFoUoakyf828qSBwUxLjAuMaAHuAWyBwMyLTG4B9ABwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 10,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8932,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 229.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=0187de462875193d&hl=en&gl=us&sxsrf=APpeQntROmn1PaamdyGURhuFbnm4gPH8hA%3A1790571818880&source=hp&ei=KvW5avbDNJSP8L0Pu_af-A8&iflsig=ABILxe8AAAAAaroDOgVMkgh-I_C6kkVetR0nJXx1o-Y5&ved=0ahUKEwj2gNXpv5CXAxWUB7wBHTv7B_8Q4dUDCB8&uact=5&oq=postgresql+release+notes&gs_lp=Egdnd3Mtd2l6Ihhwb3N0Z3Jlc3FsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOUEUAtYC3ABeACQAQCYAckBoAHJAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFoUoakyf828qSBwUxLjAuMaAHuAWyBwMyLTG4B9ABwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 11,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8952,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql release notes",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 302.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=0187de462875193d&hl=en&gl=us&sxsrf=APpeQntROmn1PaamdyGURhuFbnm4gPH8hA%3A1790571818880&source=hp&ei=KvW5avbDNJSP8L0Pu_af-A8&iflsig=ABILxe8AAAAAaroDOgVMkgh-I_C6kkVetR0nJXx1o-Y5&ved=0ahUKEwj2gNXpv5CXAxWUB7wBHTv7B_8Q4dUDCB8&uact=5&oq=postgresql+release+notes&gs_lp=Egdnd3Mtd2l6Ihhwb3N0Z3Jlc3FsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOUEUAtYC3ABeACQAQCYAckBoAHJAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFoUoakyf828qSBwUxLjAuMaAHuAWyBwMyLTG4B9ABwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 12,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8952,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql release notes",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 229.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=0187de462875193d&hl=en&gl=us&sxsrf=APpeQntROmn1PaamdyGURhuFbnm4gPH8hA%3A1790571818880&source=hp&ei=KvW5avbDNJSP8L0Pu_af-A8&iflsig=ABILxe8AAAAAaroDOgVMkgh-I_C6kkVetR0nJXx1o-Y5&ved=0ahUKEwj2gNXpv5CXAxWUB7wBHTv7B_8Q4dUDCB8&uact=5&oq=postgresql+release+notes&gs_lp=Egdnd3Mtd2l6Ihhwb3N0Z3Jlc3FsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOUEUAtYC3ABeACQAQCYAckBoAHJAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFoUoakyf828qSBwUxLjAuMaAHuAWyBwMyLTG4B9ABwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 12,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elixir open source alternatives",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=0187de462875193d&hl=en&gl=us&sxsrf=APpeQntROmn1PaamdyGURhuFbnm4gPH8hA%3A1790571818880&source=hp&ei=KvW5avbDNJSP8L0Pu_af-A8&iflsig=ABILxe8AAAAAaroDOgVMkgh-I_C6kkVetR0nJXx1o-Y5&ved=0ahUKEwj2gNXpv5CXAxWUB7wBHTv7B_8Q4dUDCB8&uact=5&oq=postgresql+release+notes&gs_lp=Egdnd3Mtd2l6Ihhwb3N0Z3Jlc3FsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOUEUAtYC3ABeACQAQCYAckBoAHJAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFoUoakyf828qSBwUxLjAuMaAHuAWyBwMyLTG4B9ABwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 13,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8932,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 277.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=0187de462875193d&hl=en&gl=us&sxsrf=APpeQntROmn1PaamdyGURhuFbnm4gPH8hA%3A1790571818880&source=hp&ei=KvW5avbDNJSP8L0Pu_af-A8&iflsig=ABILxe8AAAAAaroDOgVMkgh-I_C6kkVetR0nJXx1o-Y5&ved=0ahUKEwj2gNXpv5CXAxWUB7wBHTv7B_8Q4dUDCB8&uact=5&oq=postgresql+release+notes&gs_lp=Egdnd3Mtd2l6Ihhwb3N0Z3Jlc3FsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOUEUAtYC3ABeACQAQCYAckBoAHJAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFoUoakyf828qSBwUxLjAuMaAHuAWyBwMyLTG4B9ABwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    },
+    {
+     "step": 14,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8952,
+     "target": "3",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql release notes",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 235.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=postgresql+release+notes&sca_esv=0187de462875193d&hl=en&gl=us&sxsrf=APpeQntROmn1PaamdyGURhuFbnm4gPH8hA%3A1790571818880&source=hp&ei=KvW5avbDNJSP8L0Pu_af-A8&iflsig=ABILxe8AAAAAaroDOgVMkgh-I_C6kkVetR0nJXx1o-Y5&ved=0ahUKEwj2gNXpv5CXAxWUB7wBHTv7B_8Q4dUDCB8&uact=5&oq=postgresql+release+notes&gs_lp=Egdnd3Mtd2l6Ihhwb3N0Z3Jlc3FsIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOUEUAtYC3ABeACQAQCYAckBoAHJAaoBAzItMbgBA8gBAPgBAZgCAqAC1AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFoUoakyf828qSBwUxLjAuMaAHuAWyBwMyLTG4B9ABwgcFMC4xLjHIBwaACAE&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ba1a3f56f920bd3e",
+   "source": "github",
+   "goal": "From today's GitHub trending list, open a mysql project and view its details.",
+   "fingerprint": 30192,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2025,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-abcc9d1a524ce7d3",
+   "source": "github",
+   "goal": "Open one flask project from the GitHub trending feed and view its page.",
+   "fingerprint": 30192,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2021,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  }
+ ]
+}

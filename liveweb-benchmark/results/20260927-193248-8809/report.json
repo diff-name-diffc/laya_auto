@@ -1,0 +1,781 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 79064,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:40:46+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.6,
+  "mean_duration_ms": 19155,
+  "decision_latency_ms": {
+   "p50": 496.8,
+   "p95": 633.6
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 4,
+   "executed": 24,
+   "done-rejected": 5,
+   "page changed since the decision (url or marker mismatch)": 1,
+   "done": 1
+  },
+  "low_confidence_steps": 4,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 4.6
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-1db60cec8e62c48b",
+   "source": "google",
+   "goal": "First search Google for c++ security vulnerabilities, then search Google for vllm interview questions.",
+   "fingerprint": 79064,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 10,
+   "total_ms": 26177,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvllm%2binterview%2bquestions%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvllm%2Binterview%2Bquestions%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt-lZFfqAs8ZhCq9_SA_8wNIuP07w%253A1790508771426%26source%3Dhp%26ei%3D4_64aoHIGPmikPIPh-zcoQU%26iflsig%3DABILxe8AAAAAarkM80pv9JegoRItSfuGaB2XkrqNAB02%26oq%3Dvllm%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Ihh2bGxtIGludGVydmlldyBxdWVzdGlvbnMqBQgAGIAEMgUQABiABDIIEAAYFhgeGAoyCxAAGIAEGIoFGIYDMggQABiABBiiBDIFEAAY7wUyBRAAGO8FMggQABiABBiiBDIIEAAYgAQYogRIylZQqRZYsE5wBXgAkAEAmAHVAaABoQOqAQMyLTK4AQHIAQD4AQGYAgegArIDqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gLCAgYQABgWGB6YAwTxBVvFrnc_9BK6kgcFNS4wLjKgB5cHsgcDMi0yuAenA8IHBTEuNS4xyAcLgAgB%26sclient%3Dgws-wiz%26sei%3D8f64asv7F9vLvMcPh6mEsAM&hl=en&q=EgQm0XtnGPH949UGIjAXt8fE9ioeCNywQHNBc8IOvipwRJZoHhWDsgNLuVK6DclhBYRvU2WDB30DJaR83w8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vllm+interview+questions&sca_esv=18a60b01d202c9e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8968,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "c++ security vulnerabilities",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 484.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9002,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 477.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508772778"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8781,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 495.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508772778"
+    },
+    {
+     "step": 4,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.6973,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 581.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508772778"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.7914,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 570.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508772778"
+    },
+    {
+     "step": 6,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.4216,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "c++ security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 628.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508772778"
+    },
+    {
+     "step": 7,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8283,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "c++ security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 576.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508772778"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.8687,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for vllm interview questions",
+     "page_changed": null,
+     "latency_ms": 654.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508772778"
+    },
+    {
+     "step": 8,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vllm interview questions",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508772778"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.3611,
+     "target": "12",
+     "target_label": "vllm interview questions",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 623.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508772778"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-cb6ac02b149ee41e",
+   "source": "google",
+   "goal": "First search Google for typescript interview questions, then search Google for refactoring interview questions.",
+   "fingerprint": 79064,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 17661,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dtypescript%2binterview%2bquestions%26sca",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtypescript%2Binterview%2Bquestions%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntp9LJY_RjNZPnznvwGSd0dUB8U-g%253A1790508849988%26source%3Dhp%26ei%3DMf-4aoCSOvqvur8PnMffsA4%26iflsig%3DABILxe8AAAAAarkNQUHQeTNsMvj9hK2JGcysb9StKjXZ%26oq%3Dtypescript%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Ih50eXBlc2NyaXB0IGludGVydmlldyBxdWVzdGlvbnMqBQgAGIAEMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABDIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0B0i5FlCqCFiqCHACeACQAQCYAfoCoAH6AqoBAzMtMbgBAcgBAPgBAZgCA6ACgwOoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFih46YXmBYnKSBwUyLjMtMaAHoAeyBwMzLTG4B_0CwgcFMC4yLjHIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLf-49UGIjBnvEbQGNahlI9HiRIwQPeO4IIqek2U3DB-o-dvyHV3q1KQMBImIqbbKqr8zhXe4_YyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=typescript+interview+questions&sca_esv=18a60b01d"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8967,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "typescript interview questions",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 496.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8845,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 466.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508851369"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.2659,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 479.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508851369"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.275,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "typescript interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 632.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508851369"
+    },
+    {
+     "step": 5,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.5851,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 586.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508851369"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8513,
+     "target": "12",
+     "target_label": "typescript interview questions",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 598.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508851369"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-7f4abb4539f73dca",
+   "source": "google",
+   "goal": "First search Google for design patterns security vulnerabilities, then search Google for fastapi migration guide.",
+   "fingerprint": 79064,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14531,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddesign%2bpatterns%2bsecurity%2bvulnerabi",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddesign%2Bpatterns%2Bsecurity%2Bvulnerabilities%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnutFaN4VVjgwTcrkhctQ85DHAAhqw%253A1790508920020%26source%3Dhp%26ei%3Dd_-4avOCPf_DkPIPtZ7UkQ4%26iflsig%3DABILxe8AAAAAarkNiLqnkR4ZrdHQR3dxxAS7mJwASOUX%26ved%3D0ahUKEwizmpPB1Y6XAxX_IUQIHTUPNeIQ4dUDCDI%26uact%3D5%26oq%3Ddesign%2Bpatterns%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IihkZXNpZ24gcGF0dGVybnMgc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIhAdQDlgOcAF4AJABAJgB6gGgAeoBqgEDMi0xuAEDyAEA-AEBmAICoAL1AagCCsICExAAGIAEGIoFGEMY5wYY6gIYtAKYAwTxBYU3RnhMZamukgcFMS4wLjGgB7wGsgcDMi0xuAfxAcIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGPr-49UGIjAHHn0B8JeMu5n_vjIuSNAAwztxTDJ1IilydngR3JDZs9APQx55iC5pdob-H4tKSvcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=design+patterns+security+vulnerabilities&sca_esv"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8705,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "design patterns security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 482.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508920310"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9087,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 510.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508920310"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5cf921f617fa4e0e",
+   "source": "google",
+   "goal": "First search Google for profiling security vulnerabilities, then search Google for express best practices.",
+   "fingerprint": 79064,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 26796,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['express']]",
+    "checks": {
+     "url": "https://about.google/intl/zh-cn_all/",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://about.google/intl/zh-CN_ALL/",
+    "final_title": "关于 Google：我们的产品、技术以及公司信息 - About Google"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2917,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 488.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508986975"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.2832,
+     "target": "1",
+     "target_label": "About",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 483.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790508986975"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9132,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'express best practices'; any search results listing for the query",
+     "page_changed": null,
+     "latency_ms": 352.4,
+     "low_confidence": false,
+     "url": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google logo",
+     "kind": "click",
+     "text": null,
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9386,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'express best practices'; Google search results page for 'profiling security vulnerabilities' (earlier step, not requir",
+     "page_changed": null,
+     "latency_ms": 389.0,
+     "low_confidence": false,
+     "url": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google logo",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.905,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 412.3,
+     "low_confidence": false,
+     "url": "https://about.google/intl/zh-CN_ALL/"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5f1f03ed29ad6d6c",
+   "source": "google",
+   "goal": "Search Google for kubernetes release notes and open the results.",
+   "fingerprint": 79064,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14613,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dkubernetes%2brelease%2bnotes%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dkubernetes%2Brelease%2Bnotes%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntvuRn5dTIChOMo0cwZ08nAgSoWWA%253A1790509020665%26source%3Dhp%26ei%3D3P-4apLKJ-SjkPIP1uW34QQ%26iflsig%3DABILxe8AAAAAarkN7FQeir4458oBdeknydWaicbb-tDA%26ved%3D0ahUKEwiSqJLx1Y6XAxXkEUQIHdbyLUwQ4dUDCDI%26uact%3D5%26oq%3Dkubernetes%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhhrdWJlcm5ldGVzIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjTB1AaWBpwAXgAkAEAmAHWAaAB1gGqAQMyLTG4AQPIAQD4AQGYAgKgAuEBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBQAGyv9hv7TtkgcFMS4wLjGgB9EFsgcDMi0xuAfcAcIHAzItMsgHB4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGN__49UGIjA_ZnzW0l1QwvALXT-IunA79PLKe2Rdv30-LdSN6kfbyqjd-x3nIBbVqYt5VlvwycsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=kubernetes+release+notes&sca_esv=18a60b01d202c9e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.888,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kubernetes release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 501.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509020821"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.901,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 584.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509020821"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-e28fa95767962d24",
+   "source": "google",
+   "goal": "First search Google for vue tutorial, then search Google for grafana migration guide.",
+   "fingerprint": 79064,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14680,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvue%2btutorial%26sca_esv%3d18a60b01d202c",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvue%2Btutorial%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnup7pIA2LbnXCM99aJeC06PWNljsA%253A1790509087452%26source%3Dhp%26ei%3DHwC5aoexGtLKvMcPzO_K-Q8%26iflsig%3DABILxe8AAAAAarkOL7KDjU8XxHsXBO2zsPWov3agU_Hf%26ved%3D0ahUKEwjHvP6Q1o6XAxVSJe8CHcy3Mv8Q4dUDCDI%26uact%3D5%26oq%3Dvue%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Igx2dWUgdHV0b3JpYWwyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkiICFAPWA9wAXgAkAEAmAHOAaABzgGqAQMyLTG4AQPIAQD4AQGYAgKgAtgBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QXDoLS5LyWudJIHBTEuMC4xoAfyBLIHAzItMbgH1AHCBwMyLTLIBweACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKKA5NUGIjDTv8wJaGW_fHaz_12rihKe27sii36HJ5Te2J9-AiHRX10q8Yodh8MJEfFMk6CpEIEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vue+tutorial&sca_esv=18a60b01d202c9ee&hl=en&gl=u"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8944,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 487.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509087604"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9016,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 644.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509087604"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-50d0c18802f7e48f",
+   "source": "google",
+   "goal": "Search Google for prometheus best practices and open the results.",
+   "fingerprint": 79064,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14509,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dprometheus%2bbest%2bpractices%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dprometheus%2Bbest%2Bpractices%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsomo_FODMBHlIeeF5Xla5V6k7AVA%253A1790509154336%26source%3Dhp%26ei%3DYgC5at2qE4nRkPIP3N_FkA8%26iflsig%3DABILxe8AAAAAarkOcjXIrkOuP_oeBzqC9huZINxJdRnJ%26ved%3D0ahUKEwjd4_Cw1o6XAxWJKEQIHdxvEfIQ4dUDCDI%26uact%3D5%26oq%3Dprometheus%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6Ihlwcm9tZXRoZXVzIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkivB1ANWA1wAXgAkAEAmAHSAaAB0gGqAQMyLTG4AQPIAQD4AQGYAgKgAtgBqAIKwgIZEC4YgAQYigUYQxjnBhjHARjRAxjqAhi0AsICExAAGIAEGIoFGEMY5wYY6gIYtAKYAwPxBQZ9PGpR8fcNkgcFMS4wLjGgB_8FsgcDMi0xuAfUAcIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOSA5NUGIjDlHh3b7BihlqfA7q5NYbmyIQX6DU5W4_B7cxJphAGwjRq9DC7xbmSBqe1Ln7Vr2-YyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=prometheus+best+practices&sca_esv=18a60b01d202c9"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8679,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "prometheus best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 510.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509154491"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7742,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 565.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509154491"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-22ea52d1815babde",
+   "source": "google",
+   "goal": "Search Google for how to debug vue and open the results.",
+   "fingerprint": 79064,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 24274,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bvue%26sca_esv%3d18a60",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bvue%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns0-PtVwnzaGT_v-Ewma7Xpuhl_YQ%253A1790509221001%26source%3Dhp%26ei%3DpAC5ap6KPPLHkPIP466iYA%26iflsig%3DABILxe8AAAAAarkOte6IVRzANdJJA2s5o7YhgDsKs8VP%26ved%3D0ahUKEwie7NXQ1o6XAxXyI0QIHWOXCAwQ4dUDCDI%26oq%3Dhow%2Bto%2Bdebug%2Bvue%26gs_lp%3DEgdnd3Mtd2l6IhBob3cgdG8gZGVidWcgdnVlMggQABiABBi0BzIIEAAYgAQYtAcyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSIZTUNUpWNUpcAJ4AJABAJgB0gGgAdIBqgEDMi0xuAEMyAEA-AEBmAIDoALdAagCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME8QUhp2htlhXJiZIHBTIuMC4xoAfABbIHAzItMbgH1gHCBwUwLjIuMcgHB4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLGB5NUGIjCFl7iHh7398-uSJ4fgSv9fuO0Hy3cDVWAWO9zh_C2T1j70HEIECdSl_00n5aICmGgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+vue&sca_esv=18a60b01d202c9ee&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.4364,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 486.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509221152"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8697,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 572.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509221152"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.7447,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for \"how to debug vue\"",
+     "page_changed": null,
+     "latency_ms": 614.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509221152"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug vue",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509221152"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.876,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"how to debug vue\" are not displayed/opened",
+     "page_changed": null,
+     "latency_ms": 633.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509221152"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509221152"
+    }
+   ]
+  }
+ ]
+}

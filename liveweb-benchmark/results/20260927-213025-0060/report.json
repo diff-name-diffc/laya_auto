@@ -1,0 +1,970 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 22528,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:37:49+0800",
+  "n_tasks": 8,
+  "success": 1,
+  "success_rate": 0.125,
+  "verified": 1,
+  "verified_rate": 0.125,
+  "found_but_not_stopped": 0,
+  "mean_steps": 6.2,
+  "mean_duration_ms": 20376,
+  "decision_latency_ms": {
+   "p50": 466.4,
+   "p95": 626.3
+  },
+  "step_outcomes": {
+   "stale": 3,
+   "refused-empty-enter": 1,
+   "executed": 39,
+   "done-rejected": 3,
+   "page changed since the decision (url or marker mismatch)": 3,
+   "done": 1
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 1,
+    "success_rate": 0.125,
+    "verified": 1,
+    "verified_rate": 0.125,
+    "mean_steps": 6.2
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-eedefad68b612961",
+   "source": "google",
+   "goal": "First search Google for kotlin cheat sheet, then search Google for unit testing tutorial.",
+   "fingerprint": 22528,
+   "status": "max-steps",
+   "verified": false,
+   "success": false,
+   "steps": 28,
+   "total_ms": 47129,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "url lacks 'q=testing'",
+    "checks": {
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/rigorous-testing/",
+     "bot_challenge": false,
+     "group0": [
+      "testing"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/rigorous-testing/",
+    "final_title": "Search Engine Testing & Evaluation - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9002,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kotlin cheat sheet",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 478.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9072,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 469.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515830474"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8487,
+     "target": "18",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 496.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515830474"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.9262,
+     "target": "3",
+     "target_label": "我们​的​做法",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 458.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search/howsearchworks/?fg=1"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.9187,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 449.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.9301,
+     "target": "3",
+     "target_label": "我们​的​做法",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 420.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.9329,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 433.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.9366,
+     "target": "3",
+     "target_label": "我们​的​做法",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 413.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.9329,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 451.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.9372,
+     "target": "3",
+     "target_label": "我们​的​做法",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 440.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    },
+    {
+     "step": 11,
+     "operation": "CLICK",
+     "confidence": 0.9329,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 447.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 12,
+     "operation": "CLICK",
+     "confidence": 0.9284,
+     "target": "4",
+     "target_label": "Google ​搜索​的​运作​方式",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 439.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/zh-CN_ALL/search/howsearchworks/"
+    },
+    {
+     "step": 13,
+     "operation": "CLICK",
+     "confidence": 0.9354,
+     "target": "7",
+     "target_label": "Rigorous testing",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 432.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 14,
+     "operation": "DONE",
+     "confidence": 0.9332,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for \"unit testing tutorial\"",
+     "page_changed": null,
+     "latency_ms": 392.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 14,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 15,
+     "operation": "CLICK",
+     "confidence": 0.9198,
+     "target": "4",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 429.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    },
+    {
+     "step": 16,
+     "operation": "CLICK",
+     "confidence": 0.9217,
+     "target": "4",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 388.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 17,
+     "operation": "CLICK",
+     "confidence": 0.9303,
+     "target": "4",
+     "target_label": "How Search works",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 400.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 17,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 18,
+     "operation": "CLICK",
+     "confidence": 0.9266,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 424.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/"
+    },
+    {
+     "step": 19,
+     "operation": "CLICK",
+     "confidence": 0.9271,
+     "target": "5",
+     "target_label": "Features",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 410.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    },
+    {
+     "step": 20,
+     "operation": "CLICK",
+     "confidence": 0.9332,
+     "target": "1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 599.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/features/"
+    },
+    {
+     "step": 21,
+     "operation": "CLICK",
+     "confidence": 0.9329,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 399.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/"
+    },
+    {
+     "step": 22,
+     "operation": "CLICK",
+     "confidence": 0.9366,
+     "target": "3",
+     "target_label": "Our approach",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 450.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 23,
+     "operation": "CLICK",
+     "confidence": 0.9333,
+     "target": "14",
+     "target_label": "quality raters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 450.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/our-approach/"
+    },
+    {
+     "step": 24,
+     "operation": "CLICK",
+     "confidence": 0.9058,
+     "target": "7",
+     "target_label": "Rigorous testing",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 401.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/rigorous-testing/"
+    },
+    {
+     "step": 25,
+     "operation": "DONE",
+     "confidence": 0.9236,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page for 'unit testing tutorial'; search results listing for unit testing tutorial",
+     "page_changed": null,
+     "latency_ms": 501.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/rigorous-testing/"
+    },
+    {
+     "step": 25,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:1",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/rigorous-testing/"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-4e2ce4df8db956c8",
+   "source": "google",
+   "goal": "First search Google for model quantization open source alternatives, then search Google for kotlin open source alternatives.",
+   "fingerprint": 22528,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 10,
+   "total_ms": 27407,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives+model+quantization&sca_esv=3e3a42b854afc954&hl=en&gl=us&",
+     "bot_challenge": false,
+     "group0": [
+      "kotlin"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=kotlin+open+source+alternatives+model+quantization&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnvS0oNrSJNciaDezLnIqFgM3fp2Rw%3A1790515886828&ei=rhq5asmUMuTDkPIP2JejkQ4&biw=1120&bih=780&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMqBQgBGKABMgUQIRigATIFECEYoAFIlghQCVgJcAF4AJABAJgBkQKgAZECqgEDMi0xuAEByAEA-AEBmAICoAKUAsICCBAAGO8FGLADmAMAiAYBkAYEkgcFMS4wLjGgB-cCsgcDMi0xuAeTAsIHATLIBwGACAE&sclient=gws-wiz-serp",
+    "final_title": "kotlin open source alternatives model quantization - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8999,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 466.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515884721"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.6573,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 496.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515884721"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.6255,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'kotlin open source alternatives' (page still shows results for 'model quantization open source alternatives')",
+     "page_changed": null,
+     "latency_ms": 616.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=model+quantization+open+source+alternatives&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnt4tRFGDBWIzSvVSHlT478G-OI5iA%3A1790515883511&source=hp&ei=qxq5atz3Heu-kPIP1IaD4QQ&iflsig=ABILxe8AAAAAarkouw2OKvSfZv6tQ60uoUaovSq0vGdx&ved=0ahUKEwic-cy5746XAxVrH0QIHVTDIEwQ4dUDCDI&uact=5&oq=model+quantization+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Iittb2RlbCBxdWFudGl6YXRpb24gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABSPkGUBRYFHABeACQAQCYAeUBoAHlAaoBAzItMbgBA8gBAPgBAZgCAqAC7QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFDSOytzKbGTSSBwUxLjAuMaAH8gOyBwMyLTG4B-kBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz&sei=rhq5aq22IOnVkPIPz9TX-Ak"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kotlin open source alternatives",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=model+quantization+open+source+alternatives&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnt4tRFGDBWIzSvVSHlT478G-OI5iA%3A1790515883511&source=hp&ei=qxq5atz3Heu-kPIP1IaD4QQ&iflsig=ABILxe8AAAAAarkouw2OKvSfZv6tQ60uoUaovSq0vGdx&ved=0ahUKEwic-cy5746XAxVrH0QIHVTDIEwQ4dUDCDI&uact=5&oq=model+quantization+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Iittb2RlbCBxdWFudGl6YXRpb24gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABSPkGUBRYFHABeACQAQCYAeUBoAHlAaoBAzItMbgBA8gBAPgBAZgCAqAC7QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFDSOytzKbGTSSBwUxLjAuMaAH8gOyBwMyLTG4B-kBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz&sei=rhq5aq22IOnVkPIPz9TX-Ak"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.7946,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 613.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=model+quantization+open+source+alternatives&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnt4tRFGDBWIzSvVSHlT478G-OI5iA%3A1790515883511&source=hp&ei=qxq5atz3Heu-kPIP1IaD4QQ&iflsig=ABILxe8AAAAAarkouw2OKvSfZv6tQ60uoUaovSq0vGdx&ved=0ahUKEwic-cy5746XAxVrH0QIHVTDIEwQ4dUDCDI&uact=5&oq=model+quantization+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Iittb2RlbCBxdWFudGl6YXRpb24gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABSPkGUBRYFHABeACQAQCYAeUBoAHlAaoBAzItMbgBA8gBAPgBAZgCAqAC7QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFDSOytzKbGTSSBwUxLjAuMaAH8gOyBwMyLTG4B-kBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz&sei=rhq5aq22IOnVkPIPz9TX-Ak"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.7946,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 580.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=model+quantization+open+source+alternatives&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnt4tRFGDBWIzSvVSHlT478G-OI5iA%3A1790515883511&source=hp&ei=qxq5atz3Heu-kPIP1IaD4QQ&iflsig=ABILxe8AAAAAarkouw2OKvSfZv6tQ60uoUaovSq0vGdx&ved=0ahUKEwic-cy5746XAxVrH0QIHVTDIEwQ4dUDCDI&uact=5&oq=model+quantization+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Iittb2RlbCBxdWFudGl6YXRpb24gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABSPkGUBRYFHABeACQAQCYAeUBoAHlAaoBAzItMbgBA8gBAPgBAZgCAqAC7QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFDSOytzKbGTSSBwUxLjAuMaAH8gOyBwMyLTG4B-kBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz&sei=rhq5aq22IOnVkPIPz9TX-Ak"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.7946,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 583.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=model+quantization+open+source+alternatives&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnt4tRFGDBWIzSvVSHlT478G-OI5iA%3A1790515883511&source=hp&ei=qxq5atz3Heu-kPIP1IaD4QQ&iflsig=ABILxe8AAAAAarkouw2OKvSfZv6tQ60uoUaovSq0vGdx&ved=0ahUKEwic-cy5746XAxVrH0QIHVTDIEwQ4dUDCDI&uact=5&oq=model+quantization+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Iittb2RlbCBxdWFudGl6YXRpb24gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABSPkGUBRYFHABeACQAQCYAeUBoAHlAaoBAzItMbgBA8gBAPgBAZgCAqAC7QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFDSOytzKbGTSSBwUxLjAuMaAH8gOyBwMyLTG4B-kBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz&sei=rhq5aq22IOnVkPIPz9TX-Ak"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kotlin open source alternatives",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=model+quantization+open+source+alternatives&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnt4tRFGDBWIzSvVSHlT478G-OI5iA%3A1790515883511&source=hp&ei=qxq5atz3Heu-kPIP1IaD4QQ&iflsig=ABILxe8AAAAAarkouw2OKvSfZv6tQ60uoUaovSq0vGdx&ved=0ahUKEwic-cy5746XAxVrH0QIHVTDIEwQ4dUDCDI&uact=5&oq=model+quantization+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Iittb2RlbCBxdWFudGl6YXRpb24gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABSPkGUBRYFHABeACQAQCYAeUBoAHlAaoBAzItMbgBA8gBAPgBAZgCAqAC7QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFDSOytzKbGTSSBwUxLjAuMaAH8gOyBwMyLTG4B-kBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz&sei=rhq5aq22IOnVkPIPz9TX-Ak"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8005,
+     "target": "7",
+     "target_label": "kotlin open source alternatives model quantization",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 624.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=model+quantization+open+source+alternatives&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnt4tRFGDBWIzSvVSHlT478G-OI5iA%3A1790515883511&source=hp&ei=qxq5atz3Heu-kPIP1IaD4QQ&iflsig=ABILxe8AAAAAarkouw2OKvSfZv6tQ60uoUaovSq0vGdx&ved=0ahUKEwic-cy5746XAxVrH0QIHVTDIEwQ4dUDCDI&uact=5&oq=model+quantization+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Iittb2RlbCBxdWFudGl6YXRpb24gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABSPkGUBRYFHABeACQAQCYAeUBoAHlAaoBAzItMbgBA8gBAPgBAZgCAqAC7QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFDSOytzKbGTSSBwUxLjAuMaAH8gOyBwMyLTG4B-kBwgcFMC4xLjHIBwSACAE&sclient=gws-wiz&sei=rhq5aq22IOnVkPIPz9TX-Ak"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.8864,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 610.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives+model+quantization&sca_esv=3e3a42b854afc954&hl=en&gl=us&sxsrf=APpeQnvS0oNrSJNciaDezLnIqFgM3fp2Rw%3A1790515886828&ei=rhq5asmUMuTDkPIP2JejkQ4&biw=1120&bih=780&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXMqBQgBGKABMgUQIRigATIFECEYoAFIlghQCVgJcAF4AJABAJgBkQKgAZECqgEDMi0xuAEByAEA-AEBmAICoAKUAsICCBAAGO8FGLADmAMAiAYBkAYEkgcFMS4wLjGgB-cCsgcDMi0xuAeTAsIHATLIBwGACAE&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-916e881e7a2c9c0d",
+   "source": "google",
+   "goal": "Search Google for django migration guide and open the results.",
+   "fingerprint": 22528,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14621,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddjango%2bmigration%2bguide%26sca_esv%3d3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddjango%2Bmigration%2Bguide%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuLKn_ifTueHZ0lDB2RinuRFQwD_Q%253A1790515918545%26source%3Dhp%26ei%3Dzhq5aryPIMGjur8PmL_46AI%26iflsig%3DABILxe8AAAAAarko3qOp3LUu4OYac3_I1fYINA4zlw9r%26ved%3D0ahUKEwi8rqfK746XAxXBke4BHZgfHi0Q4dUDCDI%26uact%3D5%26oq%3Ddjango%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhZkamFuZ28gbWlncmF0aW9uIGd1aWRlMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I_QdQFFgUcAF4AJABAJgBjgKgAY4CqgEDMi0xuAEDyAEA-AEBmAICoAKUAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QW64FLV1szsDZIHBTEuMC4xoAeoBbIHAzItMbgHkALCBwUwLjEuMcgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNG15NUGIjCNpYtraOJsSKTqBZlyuodDkll24H9hC40zLGFyep-BvT6VdEqIPhftA4--O9mnMa4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=django+migration+guide&sca_esv=3e3a42b854afc954&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8703,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 502.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515919327"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8968,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 621.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515919327"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9813e90ae88a6b81",
+   "source": "google",
+   "goal": "First search Google for angular open source alternatives, then search Google for kotlin performance optimization.",
+   "fingerprint": 22528,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14745,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dangular%2bopen%2bsource%2balternatives%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dangular%2Bopen%2Bsource%2Balternatives%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntfIEm4UtHrrMpSMmRguwddW0M4LA%253A1790515985381%26source%3Dhp%26ei%3DERu5aoKFFp7GkPIPsZqQmAo%26iflsig%3DABILxe8AAAAAarkpIRrmDev8Yg490b6JMPURPx2ogBDK%26ved%3D0ahUKEwjC0Zbq746XAxUeI0QIHTENBKMQ4dUDCDI%26uact%3D5%26oq%3Dangular%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiBhbmd1bGFyIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVIqghQD1gPcAF4AJABAJgBowKgAaMCqgEDMi0xuAEDyAEA-AEBmAICoAKqAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QV-XMcQo-Ada5IHBTEuMC4xoAf-CrIHAzItMbgHpgLCBwMwLjLIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJS25NUGIjDkxKdS7WBD_aHEQQlOJyjIkZC0nyeRa33G_8x40YD4mGlPJYzze5MPzB_cWtMBbvgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=angular+open+source+alternatives&sca_esv=3e3a42b"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9069,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "angular open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 513.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515986059"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9082,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 683.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790515986059"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-0341c2c953d830ab",
+   "source": "google",
+   "goal": "First search Google for pytorch interview questions, then search Google for django interview questions.",
+   "fingerprint": 22528,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14801,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpytorch%2binterview%2bquestions%26sca_es",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpytorch%2Binterview%2Bquestions%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuhcMdXt0Sc-C_C8FnRcuBrr-Lu4g%253A1790516052380%26source%3Dhp%26ei%3DVBu5apPHFPbDkPIPucjw4Aw%26iflsig%3DABILxe8AAAAAarkpZKHDHeaLSDeUM6L0FTuvTrQQwCy-%26ved%3D0ahUKEwiTwY6K8I6XAxX2IUQIHTkkHMwQ4dUDCDI%26uact%3D5%26oq%3Dpytorch%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhtweXRvcmNoIGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkj0B1AQWBBwAXgAkAEAmAGNAqABjQKqAQMyLTG4AQPIAQD4AQGYAgKgApICqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBXkxpuWMotT4kgcFMS4wLjGgB4kGsgcDMi0xuAePAsIHAzAuMsgHA4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNe25NUGIjD2J5uT3f3a_O2SffqHuDRKHL6_LxGlAojVIVFVOfnjb_I4VVUD5t5UWTUvPzwCTewyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=pytorch+interview+questions&sca_esv=3e3a42b854af"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9017,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "pytorch interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 495.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516052758"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.871,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 626.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516052758"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9018022b4061d29c",
+   "source": "google",
+   "goal": "First search Google for concurrency tutorial, then search Google for how to debug elasticsearch.",
+   "fingerprint": 22528,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14633,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2belasticsearch%26sca_e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Belasticsearch%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuILh26uqP6dPstO1zL4T4OGrwPqQ%253A1790516119326%26source%3Dhp%26ei%3Dlxu5ap_xEtq5kPIPyaiumAw%26iflsig%3DABILxe8AAAAAarkpp2Hy6ktpBcUVQFLzmqCWspD6gvUT%26ved%3D0ahUKEwjfmIaq8I6XAxXaHEQIHUmUC8MQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Belasticsearch%26gs_lp%3DEgdnd3Mtd2l6Ihpob3cgdG8gZGVidWcgZWxhc3RpY3NlYXJjaDIGEAAYFhgeMgUQABjvBTIIEAAYiQUYogQyBRAAGO8FMggQABiJBRiiBEikB1AOWA5wAXgAkAEAmAGiAqABogKqAQMyLTG4AQPIAQD4AQGYAgKgAqkCqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gKYAwTxBV4EPXiPjKhjkgcFMS4wLjGgB-4CsgcDMi0xuAekAsIHBTAuMS4xyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJm35NUGIjBIEYWkuA5Oe8xAAZp4wn82gsWcG78gFE1hkAa8Br6nMHoTPz8ZkHyepo0r8FZJ6aoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+elasticsearch&sca_esv=3e3a42b854afc"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8606,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug elasticsearch",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 500.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516119611"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8766,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 547.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516119611"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-406bb5aab2ecea72",
+   "source": "google",
+   "goal": "First search Google for elixir migration guide, then search Google for next.js tutorial.",
+   "fingerprint": 22528,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14793,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3delixir%2bmigration%2bguide%26sca_esv%3d3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Delixir%2Bmigration%2Bguide%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntjpPnvKHJ5l13fPEJamhGcdzN3xg%253A1790516186137%26source%3Dhp%26ei%3D2hu5aq2QB__DkPIPtZ7UkQ4%26iflsig%3DABILxe8AAAAAarkp6umUlsbNQ-og2CPP2HG13dfz5Gai%26ved%3D0ahUKEwit5fPJ8I6XAxX_IUQIHTUPNeIQ4dUDCDI%26uact%3D5%26oq%3Delixir%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhZlbGl4aXIgbWlncmF0aW9uIGd1aWRlMgYQABgWGB4yCBAAGIkFGKIEMgUQABjvBTIFEAAY7wUyBRAAGO8FSLYHUA5YDnABeACQAQCYAaMCoAGjAqoBAzItMbgBA8gBAPgBAZgCAqACqAKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFVnFTf1BZfWCSBwUxLjAuMaAH3AKyBwMyLTG4B6UCwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNy35NUGIjCzbOeO7_8SnmxqtvWNrBb2T_9kJ6qFk8CrphqKeWEnsHWf5yyBW3UlbQtihrMkoagyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=elixir+migration+guide&sca_esv=3e3a42b854afc954&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8954,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elixir migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 533.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516186434"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9094,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 567.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516186434"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-fe8042a328876924",
+   "source": "google",
+   "goal": "Search Google for vllm best practices and open the results.",
+   "fingerprint": 22528,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14876,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvllm%2bbest%2bpractices%26sca_esv%3d3e3a",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvllm%2Bbest%2Bpractices%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnubmEIsqxrMrpyhY4UkO2ZupruWyw%253A1790516253103%26source%3Dhp%26ei%3DHRy5av6ABbjJkPIP1c7t0A0%26iflsig%3DABILxe8AAAAAarkqLU_-HttR23h4WP5KgZ67ndRu2cO0%26ved%3D0ahUKEwi-g-vp8I6XAxW4JEQIHVVnG9oQ4dUDCDI%26uact%3D5%26oq%3Dvllm%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhN2bGxtIGJlc3QgcHJhY3RpY2VzMgUQABiABDILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyBRAAGO8FSP0HUA1YDXABeACQAQCYAfMBoAHzAaoBAzItMbgBA8gBAPgBAZgCAqAC-AGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDA_EFHR55B_ogSaaSBwUxLjAuMaAH9wKyBwMyLTG4B_QBwgcDMS4xyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJ-45NUGIjCMTQ3EYWSlt7yKq0nEF6b7wtNOki2zVdRk1WPvP6EqDtjL3bYPCwM29AXPbvBOj14yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vllm+best+practices&sca_esv=3e3a42b854afc954&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8236,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vllm best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 496.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516253442"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.911,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 646.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516253442"
+    }
+   ]
+  }
+ ]
+}

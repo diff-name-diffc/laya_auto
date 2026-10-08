@@ -1,0 +1,462 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 51494,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:46:56+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 1.9,
+  "mean_duration_ms": 13013,
+  "decision_latency_ms": {
+   "p50": 565.7,
+   "p95": 633.4
+  },
+  "step_outcomes": {
+   "executed": 14,
+   "stale": 1
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 1.9
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-4969cbe5764eee46",
+   "source": "google",
+   "goal": "First search Google for laravel migration guide, then search Google for svelte release notes.",
+   "fingerprint": 51494,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 15691,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlaravel%2bmigration%2bguide%26sca_esv%3d",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlaravel%2Bmigration%2Bguide%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt-bvy97JLBbVoUr6XYyo3qjPL_vg%253A1790516346826%26source%3Dhp%26ei%3Dehy5avWSMZ39kPIPiom2oQk%26iflsig%3DABILxe8AAAAAarkqivWb7sjUiTvxzKGZBAC3qZMs4b30%26oq%3Dlaravel%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhdsYXJhdmVsIG1pZ3JhdGlvbiBndWlkZSoFCAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOcMUCFYIXABeACQAQCYAd8BoAHfAaoBAzItMbgBAcgBAPgBAZgCAqAC5wGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBfEF9vrMU1uOCjySBwUxLjAuMaAHkgeyBwMyLTG4B-IBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz%26sei%3Dfhy5aqKbHOfNkPIPiJHEqA8&hl=en&q=EgQm0XtnGP645NUGIjDTtw9MEz3ig6qPRuLIUukQQam3Rz2ZzINi19d3kz9O71jf_uLGlaEvOXz43YdsT0syAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=laravel+migration+guide&sca_esv=3e3a42b854afc954"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7793,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "laravel migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 458.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8858,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "stale: URL changed since the decision",
+     "page_changed": true,
+     "latency_ms": 575.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8642,
+     "target": "12",
+     "target_label": "laravel migration guide",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 609.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516348975"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-2cd6515948cae24c",
+   "source": "google",
+   "goal": "First search Google for how to debug zig, then search Google for c++ best practices.",
+   "fingerprint": 51494,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14692,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bzig%26sca_esv%3df9132",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bzig%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuIHprWFYUFxVKAFlfOTm-pV58ZaQ%253A1790516415008%26source%3Dhp%26ei%3Dvhy5aqqUPNHEkPIPnsyl4As%26iflsig%3DABILxe8AAAAAarkqzyMrbpWyWoh0DYA-Ja9hhgUcEOXN%26ved%3D0ahUKEwiq64S38Y6XAxVRIkQIHR5mCbwQ4dUDCDM%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bzig%26gs_lp%3DEgdnd3Mtd2l6IhBob3cgdG8gZGVidWcgemlnMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIIEAAYiQUYogQyBRAAGO8FSMEHUBRYFHABeACQAQCYAfQBoAH0AaoBAzItMbgBA8gBAPgBAZgCAqAC_AGoAgrCAgoQABgDGI8BGOoCmAMF8QUq5nnwuo8VBpIHBTEuMC4xoAfeA7IHAzItMbgH9wHCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMG55NUGIjAFsmziXO8PU688dWIGxuCApE43XKc9CJIB9zQSSe2dFVdvHgHHKtI2fqWanTckXgUyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+zig&sca_esv=f9132ac85e259377&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8747,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug zig",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 490.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8374,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 565.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516416815"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8b438a959956f8c2",
+   "source": "google",
+   "goal": "First search Google for how to debug golang, then search Google for model quantization tutorial.",
+   "fingerprint": 51494,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14936,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bgolang%26sca_esv%3d3e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bgolang%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntZo6OdM8R8biWAsEGMnbDMkfHf7w%253A1790516482162%26source%3Dhp%26ei%3DAh25asq1CJPFkPIPr4m4iQk%26iflsig%3DABILxe8AAAAAarkrEtHaxuHuXqXOdHsO4HGtv1FLsaTe%26oq%3Dhow%2Bto%2Bdebug%2Bgolang%26gs_lp%3DEgdnd3Mtd2l6IhNob3cgdG8gZGVidWcgZ29sYW5nKgUIARiABDIIEAAYgAQYtAcyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjNCFAOWA5wAXgAkAEAmAH6AaAB-gGqAQMyLTG4AQHIAQD4AQGYAgKgAoACqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBYeGvFyruRIekgcFMS4wLjGgB7cFsgcDMi0xuAf9AcIHAzAuMsgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIW65NUGIjBE-R4soaX2CdN620INqlcQvUzCIR497Qu5LUbHkluKDq6dA4AF1bWalg4VfAhiMLwyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+golang&sca_esv=3e3a42b854afc954&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8697,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug golang",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 484.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516482619"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.8207,
+     "target": "13",
+     "target_label": "how to debug golang",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 663.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516482619"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-2a5e60f9874618ca",
+   "source": "google",
+   "goal": "First search Google for elixir tutorial, then search Google for golang release notes.",
+   "fingerprint": 51494,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14806,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3delixir%2btutorial%26sca_esv%3d3e3a42b854",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Delixir%2Btutorial%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsdUkB9bafeGu483W5RG9F6dFJ-wg%253A1790516549348%26source%3Dhp%26ei%3DRR25apDiE-6uur8PsPahwAo%26iflsig%3DABILxe8AAAAAarkrVfmJl3ceF1p3HQqenREGFB7fBcU0%26ved%3D0ahUKEwjQmIz38Y6XAxVul-4BHTB7CKgQ4dUDCDM%26uact%3D5%26oq%3Delixir%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig9lbGl4aXIgdHV0b3JpYWwyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IvwdQDFgMcAF4AJABAJgBiQKgAYkCqgEDMi0xuAEDyAEA-AEBmAICoAKQAqgCCsICChAAGAMYjwEY6gKYAwLxBeQAwkb7_r5ekgcFMS4wLjGgB44FsgcDMi0xuAeNAsIHAzAuMsgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMi65NUGIjCb2UGikvehMaaTWPv08RBYvWLoEwzUtN_VXQEvVZGpeCFLMwmDVKPB9z3PrWLYqCUyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=elixir+tutorial&sca_esv=3e3a42b854afc954&hl=en&g"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8796,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elixir tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 495.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516549782"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.891,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 576.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516549782"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-b9adb70a9a79b9eb",
+   "source": "google",
+   "goal": "First search Google for java security vulnerabilities, then search Google for how to debug profiling.",
+   "fingerprint": 51494,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14628,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bprofiling%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bprofiling%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt41t_a9eG-RMYu0_Ht4PG5PdqeJQ%253A1790516616309%26source%3Dhp%26ei%3DiB25avDNEca8kPIPmeSOmQk%26iflsig%3DABILxe8AAAAAarkrmAPNes06qpCiIFS7WwfvoDRSHXTa%26ved%3D0ahUKEwjwsYOX8o6XAxVGHkQIHRmyI5MQ4dUDCDM%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bprofiling%26gs_lp%3DEgdnd3Mtd2l6IhZob3cgdG8gZGVidWcgcHJvZmlsaW5nMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMgUQABjvBTIIEAAYiQUYogQyBRAAGO8FSL8HUAxYDHABeACQAQCYAakCoAGpAqoBAzItMbgBA8gBAPgBAZgCAqACsQKoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwPxBZiUCtgyRS4ikgcFMS4zLTGgB6AEsgcDMy0xuAeuAsIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIq75NUGIjCIEiGgsoS4fTOI59yDKBCPCP6SaIlLaADqdszYKZx6kcEAwDlA_V37Cm52EIPFNZcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+profiling&sca_esv=3e3a42b854afc954&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7797,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug profiling",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 480.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516616878"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.3775,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 574.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516616878"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c41ace503cf5b23c",
+   "source": "google",
+   "goal": "Search Google for vue performance optimization and open the results.",
+   "fingerprint": 51494,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14825,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvue%2bperformance%2boptimization%26sca_e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvue%2Bperformance%2Boptimization%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsKrRsj_uGmyqtDogXzWmR9fLCvxg%253A1790516683130%26source%3Dhp%26ei%3Dyx25aprfBtXGkPIPgZ-guAc%26iflsig%3DABILxe8AAAAAarkr23fAWl677iFjrPJuBOKpzywEN2Ei%26ved%3D0ahUKEwja8PG28o6XAxVVI0QIHYEPCHcQ4dUDCDM%26uact%3D5%26oq%3Dvue%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Ihx2dWUgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgUQABiABDIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyBRAAGO8FMgUQABjvBUj7B1AOWA5wAXgAkAEAmAGmAqABpgKqAQMyLTG4AQPIAQD4AQGYAgKgAq4CqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwPxBXh8XmJ0JVZ4kgcFMS4wLjGgB4oEsgcDMi0xuAerAsIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGM275NUGIjCIRwi4a_swLuvp3tJm8ZGzQeRZ_az2BRyhXAUYbmXcccyUYFlMr0froGNzzNpMFA4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vue+performance+optimization&sca_esv=3e3a42b854a"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.6256,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 487.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516683466"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9054,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 633.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516683466"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a785dc2554ca4661",
+   "source": "google",
+   "goal": "First search Google for elasticsearch best practices, then search Google for spring boot performance optimization.",
+   "fingerprint": 51494,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14530,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3delasticsearch%2bbest%2bpractices%26sca_e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Delasticsearch%2Bbest%2Bpractices%26sca_esv%3D3e3a42b854afc954%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuHogX2QGjr0nL6rbO2eJRV6osjPw%253A1790516750170%26source%3Dhp%26ei%3DDh65avGXCe_UkPIPw8X7-AI%26iflsig%3DABILxe8AAAAAarksHuM9_ncyrpBRebNwjShL-1-rKsmm%26ved%3D0ahUKEwjx1u3W8o6XAxVvKkQIHcPiHi8Q4dUDCDM%26uact%3D5%26oq%3Delasticsearch%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhxlbGFzdGljc2VhcmNoIGJlc3QgcHJhY3RpY2VzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjOB1APWA9wAXgAkAEAmAGMAqABjAKqAQMyLTG4AQPIAQD4AQGYAgKgApECqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwPxBQPaG66dz2gMkgcFMS4wLjGgB6AGsgcDMi0xuAeOAsIHAzAuMsgHA4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJC85NUGIjAuBQtF2pGjD3tkwllIBIT8macUPyp4rZMDHDwkZ8_yi1JTyemFRl6NXUfOfIocfIYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=elasticsearch+best+practices&sca_esv=3e3a42b854a"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8986,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elasticsearch best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 498.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516750422"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9069,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 593.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790516750422"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-e24dc46944dffcc5",
+   "source": "google",
+   "goal": "Search Google for react release notes and open the results.",
+   "fingerprint": 51494,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "total_ms": 0,
+   "error": "TargetClosedError: Page.goto: Target page, context or browser has been closed",
+   "verification": {
+    "passed": false,
+    "reason": "harness error",
+    "checks": {}
+   },
+   "trajectory": []
+  }
+ ]
+}

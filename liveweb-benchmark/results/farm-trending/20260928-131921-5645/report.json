@@ -1,0 +1,906 @@
+{
+ "meta": {
+  "base_url": "http://127.0.0.1:8812",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 47896,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 8.0,
+  "backend": {
+   "ok": true,
+   "variant": "out/laya-browser-v18d-run2",
+   "calls": 152,
+   "tau": 0.0,
+   "escalated": 0,
+   "recent": [
+    {
+     "ms": 227.5,
+     "questions": 3,
+     "options": 35,
+     "tokens": 3072,
+     "passes": 1
+    },
+    {
+     "ms": 226.7,
+     "questions": 3,
+     "options": 35,
+     "tokens": 3072,
+     "passes": 1
+    },
+    {
+     "ms": 246.7,
+     "questions": 3,
+     "options": 28,
+     "tokens": 3072,
+     "passes": 1
+    },
+    {
+     "ms": 209.6,
+     "questions": 3,
+     "options": 29,
+     "tokens": 1681,
+     "passes": 1
+    },
+    {
+     "ms": 189.7,
+     "questions": 3,
+     "options": 28,
+     "tokens": 1866,
+     "passes": 1
+    }
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-28T13:26:21+0800",
+  "n_tasks": 6,
+  "success": 1,
+  "success_rate": 0.167,
+  "verified": 2,
+  "verified_rate": 0.333,
+  "found_but_not_stopped": 1,
+  "mean_steps": 7.3,
+  "mean_duration_ms": 61093,
+  "decision_latency_ms": {
+   "p50": 194.8,
+   "p95": 428.1
+  },
+  "step_outcomes": {
+   "executed": 21,
+   "done-rejected": 1,
+   "refused-empty-enter": 15,
+   "page changed since the decision (url or marker mismatch)": 2,
+   "stale": 2,
+   "done": 2,
+   "no-text-model": 1
+  },
+  "low_confidence_steps": 9,
+  "vlm_rescues": 12,
+  "by_source": {
+   "github": {
+    "n": 6,
+    "success": 1,
+    "success_rate": 0.167,
+    "verified": 2,
+    "verified_rate": 0.333,
+    "mean_steps": 7.3
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-2361e781774f0097",
+   "source": "github",
+   "goal": "From GitHub's trending go feed, open the top repository and read its README.",
+   "fingerprint": 47896,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 12,
+   "vlm_rescues": 3,
+   "total_ms": 19163,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/paperclipai/paperclip?tab=readme-ov-file#paperclip-is-right-for-you-if",
+     "bot_challenge": false,
+     "group0": [
+      "star"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/paperclipai/paperclip?tab=readme-ov-file#paperclip-is-right-for-you-if",
+    "final_title": "GitHub - paperclipai/paperclip: The open-source app everyone uses to manage agen"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9432,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 194.8,
+     "low_confidence": false,
+     "url": "https://github.com/trending/go"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.9271,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing The top repository's README page is not open — the page still shows the GitHub Trending list, not a repository README",
+     "page_changed": null,
+     "latency_ms": 192.5,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:23",
+     "target_label": "paperclipai / paperclip",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8745,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 264.0,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:42",
+     "target_label": "Readme",
+     "kind": "click",
+     "text": null,
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8321,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 407.3,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:42",
+     "target_label": "Readme",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8844,
+     "target": "1",
+     "target_label": "ROADMAP.md, (File)",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 194.2,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip?tab=readme-ov-file"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.9194,
+     "target": "7",
+     "target_label": "GitHub",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 146.3,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip?tab=readme-ov-file"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.9245,
+     "target": "1",
+     "target_label": "Outline",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 139.3,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip?tab=readme-ov-file"
+    },
+    {
+     "step": 10,
+     "operation": "CLICK",
+     "confidence": 0.245,
+     "target": "3",
+     "target_label": "Paperclip is right for you if",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 237.3,
+     "low_confidence": true,
+     "url": "https://github.com/paperclipai/paperclip?tab=readme-ov-file"
+    },
+    {
+     "step": 11,
+     "operation": "DONE",
+     "confidence": 0.8464,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 233.5,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip?tab=readme-ov-file#paperclip-is-right-for-you-if"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-83d70b016b0732c7",
+   "source": "github",
+   "goal": "Browse GitHub trending and open one repository about design patterns.",
+   "fingerprint": 47896,
+   "status": "incomplete",
+   "verified": true,
+   "success": false,
+   "steps": 10,
+   "vlm_rescues": 1,
+   "total_ms": 151083,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://github.com/paperclipai/paperclip",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": [
+      "fork",
+      "forks"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://github.com/paperclipai/paperclip",
+    "final_title": "GitHub - paperclipai/paperclip: The open-source app everyone uses to manage agen"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9468,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 190.6,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.9417,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 166.8,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.9431,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 166.1,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:23",
+     "target_label": "paperclipai / paperclip",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 4,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.3042,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 403.6,
+     "low_confidence": true,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.3042,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 366.3,
+     "low_confidence": true,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 6,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.3042,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 365.6,
+     "low_confidence": true,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 7,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.3042,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 430.3,
+     "low_confidence": true,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 8,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.3042,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 443.0,
+     "low_confidence": true,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 9,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.3042,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 425.4,
+     "low_confidence": true,
+     "url": "https://github.com/paperclipai/paperclip"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3bcbd6961962ddde",
+   "source": "github",
+   "goal": "From GitHub trending, open a repository related to fastapi and view its README.",
+   "fingerprint": 47896,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2022,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-9a47f8403a50c294",
+   "source": "github",
+   "goal": "Browse GitHub trending and open one repository about model quantization.",
+   "fingerprint": 47896,
+   "status": "incomplete",
+   "verified": false,
+   "success": false,
+   "steps": 0,
+   "vlm_rescues": 0,
+   "total_ms": 2022,
+   "error": "model error: network error persisted: <urlopen error [Errno 61] Connection refused>",
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": []
+  },
+  {
+   "task_id": "gen-092bc763362762f6",
+   "source": "github",
+   "goal": "From GitHub trending, open the very first repository shown and view its page.",
+   "fingerprint": 47896,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 13,
+   "vlm_rescues": 3,
+   "total_ms": 152491,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://github.com/paperclipai/paperclip",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": [
+      "fork",
+      "forks"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://github.com/paperclipai/paperclip",
+    "final_title": "GitHub - paperclipai/paperclip: The open-source app everyone uses to manage agen"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9402,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 264.4,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.9319,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 183.6,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.9353,
+     "target": "18",
+     "target_label": "Repositories",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 178.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:23",
+     "target_label": "paperclipai / paperclip",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 4,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.871,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 428.1,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.871,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 365.8,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:13",
+     "target_label": "paperclip",
+     "kind": "click",
+     "text": null,
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 7,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8625,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 402.7,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 8,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8625,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 362.9,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 9,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8625,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 364.1,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 10,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:13",
+     "target_label": "paperclip",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 11,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2543,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 421.2,
+     "low_confidence": true,
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "step": 12,
+     "operation": "DONE",
+     "confidence": 0.8656,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 366.4,
+     "low_confidence": false,
+     "url": "https://github.com/paperclipai/paperclip"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8976d62a098412a2",
+   "source": "github",
+   "goal": "From today's GitHub trending list, open a laravel project and view its details.",
+   "fingerprint": 47896,
+   "status": "blocked",
+   "verified": false,
+   "success": false,
+   "steps": 9,
+   "vlm_rescues": 5,
+   "total_ms": 39776,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['fork', 'forks']]",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "star",
+      "stars"
+     ],
+     "group1": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.9412,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 194.3,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8368,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 209.1,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "scroll_down",
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.2354,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 260.9,
+     "low_confidence": true,
+     "url": "https://github.com/trending"
+    },
+    {
+     "step": 9,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.3601,
+     "target": "1",
+     "target_label": "Search or jump to",
+     "kind": "fill",
+     "text": null,
+     "outcome": "no-text-model",
+     "page_changed": null,
+     "latency_ms": 233.3,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    }
+   ]
+  }
+ ]
+}

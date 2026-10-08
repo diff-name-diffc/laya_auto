@@ -1,0 +1,765 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 48587,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T19:50:32+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 4.5,
+  "mean_duration_ms": 21350,
+  "decision_latency_ms": {
+   "p50": 560.9,
+   "p95": 655.9
+  },
+  "step_outcomes": {
+   "stale": 3,
+   "refused-empty-enter": 3,
+   "executed": 26,
+   "done-rejected": 3,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 2,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 4.5
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-b4f18f75de7f8e30",
+   "source": "google",
+   "goal": "First search Google for terraform cheat sheet, then search Google for pytorch best practices.",
+   "fingerprint": 48587,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 18145,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dterraform%2bcheat%2bsheet%26sca_esv%3d18",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dterraform%2Bcheat%2Bsheet%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnulb1qihgYP6pYsfE8EEEBmGcoLzg%253A1790509294450%26source%3Dhp%26ei%3D7gC5asKGGu_UkPIPw8X7-AI%26iflsig%3DABILxe8AAAAAarkO_hJuKCnpj3sn-fuIqUUhsr-NUI8W%26oq%3Dterraform%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhV0ZXJyYWZvcm0gY2hlYXQgc2hlZXQqBQgAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkicGFDtB1jtB3ADeACQAQCYAbsBoAG7AaoBAzAuMbABALgBAcgBAPgBAZgCBKACxgGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFpjQXh0-lIx6SBwMzLjGgB-0FsgcDMC4xuAe-AcIHBTAuMy4xyAcHgAgB%26sclient%3Dgws-wiz%26sei%3D9AC5atW4Ha_YkPIPodSHwQU&hl=en&q=EgQm0XtnGPSB5NUGIjA-dgpLdrdrqi-E9adzDcoiKoSj2tYqduiqCmG2wmKn3st9l0xDVcG2zu88fSHgTKYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=terraform+cheat+sheet&sca_esv=18a60b01d202c9ee&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.905,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "terraform cheat sheet",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 499.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8926,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 493.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509295847"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.2874,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 508.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509295847"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8781,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "terraform cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 581.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509295847"
+    },
+    {
+     "step": 5,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8283,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "terraform cheat sheet",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 655.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509295847"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.815,
+     "target": "12",
+     "target_label": "terraform cheat sheet",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 612.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509295847"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a9a8fa2ea3a4030c",
+   "source": "google",
+   "goal": "First search Google for vue release notes, then search Google for pytorch cheat sheet.",
+   "fingerprint": 48587,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 18512,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvue%2brelease%2bnotes%26sca_esv%3d18a60b",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvue%2Brelease%2Bnotes%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuo67YOGT0I6ywaZFNYmTJ11HEwMw%253A1790509364962%26source%3Dhp%26ei%3DNAG5aqmzOZmgkPIPgYr5uA4%26iflsig%3DABILxe8AAAAAarkPRJuLQSDeSFT5gWmtTykfROQ5OHff%26ved%3D0ahUKEwipnaiV146XAxUZEEQIHQFFHucQ4dUDCDI%26uact%3D5%26oq%3Dvue%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhF2dWUgcmVsZWFzZSBub3RlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5Irh1QDlgOcAJ4AJABAJgBxQGgAcUBqgEDMC4xsAEAuAEDyAEA-AEBmAIDoALMAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QVnlBnPTlNaS5IHAzIuMaAH-ASyBwMwLjG4B8cBwgcDMC4zyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLuC5NUGIjAqR9xt4IPBLfoiJuhhc5UEB3MyFyYLfx5HIaTTVC1qKggvu2FA-1JN11s6RNZuU40yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vue+release+notes&sca_esv=18a60b01d202c9ee&hl=en"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.904,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue release notes",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 497.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8824,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 484.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509366432"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8977,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 504.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509366432"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9024,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue release notes",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 860.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509366432"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509366432"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-336fa782f80235d5",
+   "source": "google",
+   "goal": "First search Google for how to debug llm fine-tuning, then search Google for express interview questions.",
+   "fingerprint": 48587,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 46887,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dexpress%2binterview%2bquestions%26sca_es",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dexpress%2Binterview%2Bquestions%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntJARuwXOCVVwoWnJ8d-yvFxS3Tlg%253A1790509435867%26source%3Dhp%26ei%3DewG5asOvM7HwkPIPq7HPsAo%26iflsig%3DABILxe8AAAAAarkPi15wDtYEeaisXSU93ajEo6vam4dJ%26ved%3D0ahUKEwiD2Y-3146XAxUxOEQIHavYE6YQ4dUDCDI%26oq%3Dexpress%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IhtleHByZXNzIGludGVydmlldyBxdWVzdGlvbnMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5ItYMCUMTdAVjE3QFwAngAkAEAmAHcAaAB3AGqAQMyLTGwAQC4AQzIAQD4AQGYAgOgAucBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QVuDJHp9jlVpJIHBTIuMC4xoAeMBrIHAzItMbgH4QHCBwUwLjEuMsgHCIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJ6D5NUGIjAiln8F7wvU5py-Que3Yj05jZi3MQg_eFVmwKYxOL1s-gqiQR-F7FfF7mkUe1oE83cyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=express+interview+questions&sca_esv=18a60b01d202"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "CLICK",
+     "confidence": 0.5695,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 507.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509436208"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8312,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 560.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509436208"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.3126,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for \"express interview questions\"",
+     "page_changed": null,
+     "latency_ms": 568.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509436208"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "express interview questions",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509436208"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.5384,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results listing for express interview questions",
+     "page_changed": null,
+     "latency_ms": 622.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509436208"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:32",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509436208"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-bb5ce583b02f4d66",
+   "source": "google",
+   "goal": "First search Google for spring boot release notes, then search Google for kotlin interview questions.",
+   "fingerprint": 48587,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14788,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dspring%2bboot%2brelease%2bnotes%26sca_es",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dspring%2Bboot%2Brelease%2Bnotes%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntcYihI2jcZzIIvNtJfKuXIzIyqqA%253A1790509534965%26source%3Dhp%26ei%3D3gG5aovJOe6K8L0P6b-KKA%26iflsig%3DABILxe8AAAAAarkP7s5cfXaBWqKGa5uaJWESxqp-ul5h%26ved%3D0ahUKEwiLsLDm146XAxVuBbwBHemfAgUQ4dUDCDI%26uact%3D5%26oq%3Dspring%2Bboot%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhlzcHJpbmcgYm9vdCByZWxlYXNlIG5vdGVzMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSNMHUA9YD3ABeACQAQCYAeABoAHgAaoBAzItMbABALgBA8gBAPgBAZgCAqAC6gGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QW-KlRUJZYVLJIHBTEuMC4xoAffBbIHAzItMbgH5QHCBwMyLTLIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOGD5NUGIjCt1rGyj4YfK3lbGLbB5ossqDOeSn54MrSI_Zi3-Xg-v-NU8p4Hhvt-4ywnjLbyCmUyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=spring+boot+release+notes&sca_esv=18a60b01d202c9"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8971,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "spring boot release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 519.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509535252"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9059,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 585.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509535252"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-6956ea2aaa338697",
+   "source": "google",
+   "goal": "Search Google for how to debug postgresql and open the results.",
+   "fingerprint": 48587,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 17660,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bpostgresql%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bpostgresql%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntbutEGSCtTb-Fb0L_GSrC4YzckTw%253A1790509601910%26source%3Dhp%26ei%3DIQK5as6xNv2L8L0P48XwqAQ%26iflsig%3DABILxe8AAAAAarkQMTOYHIe4LuvuklTUcZ12mbZockny%26ved%3D0ahUKEwiOxqaG2I6XAxX9BbwBHeMiHEUQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bpostgresql%26gs_lp%3DEgdnd3Mtd2l6Ihdob3cgdG8gZGVidWcgcG9zdGdyZXNxbDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IlB9QD1gPcAF4AJABAJgBzwGgAc8BqgEDMi0xsAEAuAEDyAEA-AEBmAICoALZAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QXDsefEjn6aZpIHBTEuMC4xoAf9BbIHAzItMbgH1AHCBwMyLTLIBweACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKeE5NUGIjBcmuZ2iUPGGpOaLy2kgKS9Q1f71cY45sidRInPHAHdIvD4vYhVeF-t0JIjp8J128IyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+postgresql&sca_esv=18a60b01d202c9ee"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9023,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug postgresql",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 579.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509602087"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.9018,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for 'how to debug postgresql' is not displayed; only the search box with autocomplete suggestions is visible",
+     "page_changed": null,
+     "latency_ms": 596.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509602087"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509602087"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d91f832de1fefb0d",
+   "source": "google",
+   "goal": "Search Google for svelte security vulnerabilities and open the results.",
+   "fingerprint": 48587,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14797,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dsvelte%2bsecurity%2bvulnerabilities%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsvelte%2Bsecurity%2Bvulnerabilities%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsw_PnUKubyZ4jzh5ZyfTeN3_W-Bg%253A1790509671736%26source%3Dhp%26ei%3DZwK5apjSK_mSur8P28TSkAo%26iflsig%3DABILxe8AAAAAarkQd3USwwbkfUdXsxzb_LqcEd1h7-rN%26ved%3D0ahUKEwjYocyn2I6XAxV5ie4BHVuiFKIQ4dUDCDI%26uact%3D5%26oq%3Dsvelte%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6Ih9zdmVsdGUgc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgYQABgWGB4yCBAAGIAEGKIEMggQABiABBiiBDIIEAAYiQUYogQyBRAAGO8FSLAHUBFYEXABeACQAQCYAeMBoAHjAaoBAzItMbABALgBA8gBAPgBAZgCAqAC7AGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFwH5QmdYvSGuSBwUxLjAuMaAH0gKyBwMyLTG4B-cBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOqE5NUGIjCYU_OOEzn-LmWfFYmysvnkyAhh4RbwrOh9bolFdBO9OMyn72ZWx0ZHoIGA5kNpKAwyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=svelte+security+vulnerabilities&sca_esv=18a60b01"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8822,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "svelte security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 527.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509671912"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9014,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 550.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509671912"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ae5a75a1be51772f",
+   "source": "google",
+   "goal": "First search Google for llm fine-tuning security vulnerabilities, then search Google for code review security vulnerabilities.",
+   "fingerprint": 48587,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14701,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dllm%2bfine-tuning%2bsecurity%2bvulnerabi",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dllm%2Bfine-tuning%2Bsecurity%2Bvulnerabilities%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns1Acb4N2Id9RdrbtzwtIC1_E-acg%253A1790509738895%26source%3Dhp%26ei%3DqgK5ar6uNcbAkPIPwI6AoAc%26iflsig%3DABILxe8AAAAAarkQuuPXV23D4ObawraePk_RmZLkhgUn%26ved%3D0ahUKEwi-q8_H2I6XAxVGIEQIHUAHAHQQ4dUDCDI%26uact%3D5%26oq%3Dllm%2Bfine-tuning%2Bsecurity%2Bvulnerabilities%26gs_lp%3DEgdnd3Mtd2l6IihsbG0gZmluZS10dW5pbmcgc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzMgUQIRigATIFECEYoAEyBRAhGKABSMEHUBFYEXABeACQAQCYAeABoAHgAaoBAzItMbABALgBA8gBAPgBAZgCAqAC7AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBeIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYvEFxWXfjPWMlfmSBwUxLjAuMaAH7QOyBwMyLTG4B-cBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGK2F5NUGIjDv7DXnhqRW5t33dGJWQ3r6nYu1jZYanGRlhn2TGPgv46-0YVINxISv_X6xN7jTGxMyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=llm+fine-tuning+security+vulnerabilities&sca_esv"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8864,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llm fine-tuning security vulnerabilities",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 524.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509739083"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9083,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 565.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509739083"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-de8d20170ddd23b7",
+   "source": "google",
+   "goal": "First search Google for langchain open source alternatives, then search Google for python best practices.",
+   "fingerprint": 48587,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 10,
+   "total_ms": 25310,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpython%2bbest%2bpractices%26sca_esv%3d18",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpython%2Bbest%2Bpractices%26sca_esv%3D18a60b01d202c9ee%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnscESOkN8SYwUBD_PI8nzsOGzbe-g%253A1790509808436%26ei%3D8AK5apSoGu3NkPIPz-nPwQ8%26biw%3D1120%26bih%3D780%26oq%3Dpython%2Bbest%2Bpractices%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiFXB5dGhvbiBiZXN0IHByYWN0aWNlcyoFCAAYgAQyBRAAGIAEMgUQABiABDIIEAAYgAQYtAcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESLwIUA1YDXABeAGQAQCYAdIBoAHSAaoBAzItMbABALgBAcgBAPgBAZgCAqAC3gHCAgoQABhHGNYEGLADmAMA4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBiiAYBkAYIkgcFMS4wLjGgB68FsgcDMi0xuAfbAcIHBTAuMS4xyAcIgAgB%26sclient%3Dgws-wiz-serp&hl=en&q=EgQm0XtnGPqF5NUGIjBQX7AOJ3pMl-xJ-rBLwNVScDK8Jbk7ctO_-12rCdR3j10wf_r7ZtekSHoCZKhGhccyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=python+best+practices&sca_esv=18a60b01d202c9ee&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9105,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 510.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509805939"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8904,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 563.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790509805939"
+    },
+    {
+     "step": 3,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8303,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 573.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=langchain+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnudv5bDiwD9YYf3tdA_TDRNgI5shw%3A1790509805760&source=hp&ei=7QK5at6PLdjakPIP1_y6gAI&iflsig=ABILxe8AAAAAarkQ_YpEfPRSNpn0B89Xmp3SRaO0VwW5&ved=0ahUKEwieusDn2I6XAxVYLUQIHVe-DiAQ4dUDCDI&uact=5&oq=langchain+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiJsYW5nY2hhaW4gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogRIwAdQEFgQcAF4AJABAJgB3QGgAd0BqgEDMi0xsAEAuAEDyAEA-AEBmAICoALmAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWe72CKYvB6zJIHBTEuMC4xoAenBLIHAzItMbgH4gHCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8181,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 598.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=langchain+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnudv5bDiwD9YYf3tdA_TDRNgI5shw%3A1790509805760&source=hp&ei=7QK5at6PLdjakPIP1_y6gAI&iflsig=ABILxe8AAAAAarkQ_YpEfPRSNpn0B89Xmp3SRaO0VwW5&ved=0ahUKEwieusDn2I6XAxVYLUQIHVe-DiAQ4dUDCDI&uact=5&oq=langchain+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiJsYW5nY2hhaW4gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogRIwAdQEFgQcAF4AJABAJgB3QGgAd0BqgEDMi0xsAEAuAEDyAEA-AEBmAICoALmAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWe72CKYvB6zJIHBTEuMC4xoAenBLIHAzItMbgH4gHCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "python best practices",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=langchain+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnudv5bDiwD9YYf3tdA_TDRNgI5shw%3A1790509805760&source=hp&ei=7QK5at6PLdjakPIP1_y6gAI&iflsig=ABILxe8AAAAAarkQ_YpEfPRSNpn0B89Xmp3SRaO0VwW5&ved=0ahUKEwieusDn2I6XAxVYLUQIHVe-DiAQ4dUDCDI&uact=5&oq=langchain+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiJsYW5nY2hhaW4gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogRIwAdQEFgQcAF4AJABAJgB3QGgAd0BqgEDMi0xsAEAuAEDyAEA-AEBmAICoALmAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWe72CKYvB6zJIHBTEuMC4xoAenBLIHAzItMbgH4gHCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.7836,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 625.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=langchain+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnudv5bDiwD9YYf3tdA_TDRNgI5shw%3A1790509805760&source=hp&ei=7QK5at6PLdjakPIP1_y6gAI&iflsig=ABILxe8AAAAAarkQ_YpEfPRSNpn0B89Xmp3SRaO0VwW5&ved=0ahUKEwieusDn2I6XAxVYLUQIHVe-DiAQ4dUDCDI&uact=5&oq=langchain+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiJsYW5nY2hhaW4gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogRIwAdQEFgQcAF4AJABAJgB3QGgAd0BqgEDMi0xsAEAuAEDyAEA-AEBmAICoALmAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWe72CKYvB6zJIHBTEuMC4xoAenBLIHAzItMbgH4gHCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8248,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 577.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=langchain+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnudv5bDiwD9YYf3tdA_TDRNgI5shw%3A1790509805760&source=hp&ei=7QK5at6PLdjakPIP1_y6gAI&iflsig=ABILxe8AAAAAarkQ_YpEfPRSNpn0B89Xmp3SRaO0VwW5&ved=0ahUKEwieusDn2I6XAxVYLUQIHVe-DiAQ4dUDCDI&uact=5&oq=langchain+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiJsYW5nY2hhaW4gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogRIwAdQEFgQcAF4AJABAJgB3QGgAd0BqgEDMi0xsAEAuAEDyAEA-AEBmAICoALmAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWe72CKYvB6zJIHBTEuMC4xoAenBLIHAzItMbgH4gHCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8248,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 717.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=langchain+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnudv5bDiwD9YYf3tdA_TDRNgI5shw%3A1790509805760&source=hp&ei=7QK5at6PLdjakPIP1_y6gAI&iflsig=ABILxe8AAAAAarkQ_YpEfPRSNpn0B89Xmp3SRaO0VwW5&ved=0ahUKEwieusDn2I6XAxVYLUQIHVe-DiAQ4dUDCDI&uact=5&oq=langchain+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiJsYW5nY2hhaW4gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogRIwAdQEFgQcAF4AJABAJgB3QGgAd0BqgEDMi0xsAEAuAEDyAEA-AEBmAICoALmAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWe72CKYvB6zJIHBTEuMC4xoAenBLIHAzItMbgH4gHCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "python best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=langchain+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnudv5bDiwD9YYf3tdA_TDRNgI5shw%3A1790509805760&source=hp&ei=7QK5at6PLdjakPIP1_y6gAI&iflsig=ABILxe8AAAAAarkQ_YpEfPRSNpn0B89Xmp3SRaO0VwW5&ved=0ahUKEwieusDn2I6XAxVYLUQIHVe-DiAQ4dUDCDI&uact=5&oq=langchain+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiJsYW5nY2hhaW4gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogRIwAdQEFgQcAF4AJABAJgB3QGgAd0BqgEDMi0xsAEAuAEDyAEA-AEBmAICoALmAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWe72CKYvB6zJIHBTEuMC4xoAenBLIHAzItMbgH4gHCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "CLICK",
+     "confidence": 0.8586,
+     "target": "6",
+     "target_label": "python best practices",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 636.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=langchain+open+source+alternatives&sca_esv=18a60b01d202c9ee&hl=en&gl=us&sxsrf=APpeQnudv5bDiwD9YYf3tdA_TDRNgI5shw%3A1790509805760&source=hp&ei=7QK5at6PLdjakPIP1_y6gAI&iflsig=ABILxe8AAAAAarkQ_YpEfPRSNpn0B89Xmp3SRaO0VwW5&ved=0ahUKEwieusDn2I6XAxVYLUQIHVe-DiAQ4dUDCDI&uact=5&oq=langchain+open+source+alternatives&gs_lp=Egdnd3Mtd2l6IiJsYW5nY2hhaW4gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogRIwAdQEFgQcAF4AJABAJgB3QGgAd0BqgEDMi0xsAEAuAEDyAEA-AEBmAICoALmAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBi8QWe72CKYvB6zJIHBTEuMC4xoAenBLIHAzItMbgH4gHCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz"
+    }
+   ]
+  }
+ ]
+}

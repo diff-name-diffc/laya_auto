@@ -1,0 +1,552 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 22045,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T23:03:21+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.6,
+  "mean_duration_ms": 15848,
+  "decision_latency_ms": {
+   "p50": 506.6,
+   "p95": 704.7
+  },
+  "step_outcomes": {
+   "executed": 19,
+   "stale": 2
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.6
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-b50569612c21c658",
+   "source": "google",
+   "goal": "First search Google for llama.cpp open source alternatives, then search Google for vllm tutorial.",
+   "fingerprint": 22045,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 15617,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dllama.cpp%2bopen%2bsource%2balternatives",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dllama.cpp%2Bopen%2Bsource%2Balternatives%2B2024%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntxpZQl94NkwRfd-4V5k4Ym8NmdpA%253A1790520907571%26source%3Dhp%26ei%3DSy65asLlIZLekPIPuvaN0Aw%26iflsig%3DABILxe8AAAAAark8W1is5P5k086mxK9gpKes5MlQebCS%26oq%3Dllama.cpp%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiJsbGFtYS5jcHAgb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzKgUIAxigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFIswtQHFgccAF4AJABAJgBnAKgAZwCqgEDMi0xuAEByAEA-AEBmAICoAKqAqgCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMH8QWHIndn6U78KpIHBTEuMC4xoAe9BLIHAzItMbgHowLCBwUwLjEuMcgHCIAIAQ%26sclient%3Dgws-wiz%26sei%3DTy65ap_AAsXMkPIP0p-PWQ&hl=en&q=EgQm0XtnGM_c5NUGIjC9JPibEzQDeGtZwy2xNmzbkHK05vY5len3K-ollCGcD2HDdW1qVbpYSIieCZO-uFYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=llama.cpp+open+source+alternatives+2024&sca_esv="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9038,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "llama.cpp open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 502.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.8911,
+     "target": "15",
+     "target_label": "llama.cpp open source alternatives 2024",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 491.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.2939,
+     "target": "15",
+     "target_label": "llama.cpp open source alternatives 2024",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 520.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790520910119"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-529c57fa4640c8f0",
+   "source": "google",
+   "goal": "First search Google for how to debug docker, then search Google for grafana cheat sheet.",
+   "fingerprint": 22045,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 22627,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bdocker%26sca_esv%3df9",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bdocker%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntpJyEKpwNcH-Mb2zQGxK8Dnnt20Q%253A1790520975660%26source%3Dhp%26ei%3Djy65at7wJsfLkPIPuub68A4%26iflsig%3DABILxe8AAAAAark8n4DTcYXBWrIICA8GtoXB_L3oSHui%26ved%3D0ahUKEwie9Ny1go-XAxXHJUQIHTqzHu4Q4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bdocker%26gs_lp%3DEgdnd3Mtd2l6IhNob3cgdG8gZGVidWcgZG9ja2VyMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I2EVQFVgVcAR4AJABAJgB9wGgAfcBqgEDMi0xuAEDyAEA-AEBmAIFoAKHAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMF8QXON0636Xo3aJIHBTQuMC4xoAfWBbIHAzItMbgH_AHCBwUwLjQuMcgHCoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJrd5NUGIjDXksUcQlVupIV6gYpdBDezUt3h55wQetMNSvz_jt2p_kU5gby5QyY5XL7EekaU_EAyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+docker&sca_esv=f9132ac85e259377&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8742,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug docker",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 506.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9001,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "stale: URL changed since the decision",
+     "page_changed": true,
+     "latency_ms": 589.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8579,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug docker",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 577.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790520978065"
+    },
+    {
+     "step": 4,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8774,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug docker",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 600.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790520978065"
+    },
+    {
+     "step": 5,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.89,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug docker",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 601.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790520978065"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790520978065"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-76ef1dc48424e16a",
+   "source": "google",
+   "goal": "First search Google for vector embeddings performance optimization, then search Google for tensorflow security vulnerabilities.",
+   "fingerprint": 22045,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14591,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvector%2bembeddings%2bperformance%2bopti",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvector%2Bembeddings%2Bperformance%2Boptimization%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntyt2L_jw35B6PfOT-GnP3CaB46tA%253A1790521050785%26source%3Dhp%26ei%3D2i65asD9LaLpkPIPr9nm6Ac%26iflsig%3DABILxe8AAAAAark86lOAJkbZUvm-_iLJUMkAFDiuxPob%26ved%3D0ahUKEwjA0sXZgo-XAxWiNEQIHa-sGX0Q4dUDCDI%26uact%3D5%26oq%3Dvector%2Bembeddings%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Iip2ZWN0b3IgZW1iZWRkaW5ncyBwZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24yBRAhGKABMgUQIRigATIFECEYnwVI8wZQDVgNcAF4AJABAJgBywKgAcsCqgEDMy0xuAEDyAEA-AEBmAICoALVAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QX3_gW9jXh4AZIHBTEuMy0xoAe_A7IHAzMtMbgH0gLCBwMwLjLIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGN3d5NUGIjAXNqbIPsTjLRzG_ANZOMb7KbBvF9Y7pKBJZ8yL4gjE6ZrLxTDgXRF97x9AGRsOC50yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vector+embeddings+performance+optimization&sca_e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8828,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vector embeddings performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 520.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521051196"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8938,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 496.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521051196"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-fd97b115f94b758c",
+   "source": "google",
+   "goal": "Search Google for model quantization release notes and open the results.",
+   "fingerprint": 22045,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14665,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmodel%2bquantization%2brelease%2bnotes%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmodel%2Bquantization%2Brelease%2Bnotes%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsnu-4s-GaDDd4hfNDDakvPSgnRgw%253A1790521117652%26source%3Dhp%26ei%3DHS-5aoGmJqzAkPIPour2yAk%26iflsig%3DABILxe8AAAAAark9LassPTg913J0IIaV4CYGUBCouWmC%26ved%3D0ahUKEwjBqLf5go-XAxUsIEQIHSK1HZkQ4dUDCDI%26uact%3D5%26oq%3Dmodel%2Bquantization%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IiBtb2RlbCBxdWFudGl6YXRpb24gcmVsZWFzZSBub3RlczIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKsCSO8GUA5YDnABeACQAQCYAbkCoAG5AqoBAzMtMbgBA8gBAPgBAZgCAqACxAKoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDA_EFS-ty7jLQaG2SBwUxLjMtMaAHgAWyBwMzLTG4B8ECwgcDMC4yyAcEgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKDe5NUGIjAaKeLUBqQ-gPMEgmyviZdIvEfcYJsY964Fgv0RNuRvGdx87jqhmm-a1lh4Y_VMy-MyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=model+quantization+release+notes&sca_esv=7c86799"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8835,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 498.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521117940"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9013,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 490.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521117940"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-e2739e819e7b725b",
+   "source": "google",
+   "goal": "Search Google for postgresql open source alternatives and open the results.",
+   "fingerprint": 22045,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14931,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpostgresql%2bopen%2bsource%2balternative",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpostgresql%2Bopen%2Bsource%2Balternatives%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsnun2oJsQfAvrx6K-0jt4jhzs09A%253A1790521184464%26source%3Dhp%26ei%3DYC-5au-YG9vPkPIPkrDq-QY%26iflsig%3DABILxe8AAAAAark9cHNetTDj8KZQsZMcB4ppq_xwf04-%26ved%3D0ahUKEwjvyKWZg4-XAxXbJ0QIHRKYOm8Q4dUDCDI%26uact%3D5%26oq%3Dpostgresql%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiNwb3N0Z3Jlc3FsIG9wZW4gc291cmNlIGFsdGVybmF0aXZlczIGEAAYFhgeMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMggQABiABBiiBDIFEAAY7wVIwghQDFgMcAF4AJABAJgBsQKgAbECqgEDMy0xuAEDyAEA-AEBmAICoAK2AqgCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMC8QU2rlaenURRjJIHBTEuMy0xoAeIBLIHAzMtMbgHswLCBwMwLjLIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOPe5NUGIjDa1JH4eL1Du5wP0fWN8jZ_b900cqH5qT_pvsQp7-GdprSdpA-lKCviuCQ_eR_HC1IyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=postgresql+open+source+alternatives&sca_esv=7c86"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9018,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "postgresql open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 482.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521184737"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8743,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 704.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521184737"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-2870f6cea63912d4",
+   "source": "google",
+   "goal": "First search Google for vue tutorial, then search Google for mongodb open source alternatives.",
+   "fingerprint": 22045,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14611,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvue%2btutorial%26sca_esv%3d7c8679995c553",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvue%2Btutorial%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvDHrknyyDu9LTa4QIZFEXK-riNHg%253A1790521251578%26source%3Dhp%26ei%3Doy-5aqWVIpinkPIPzuDLQQ%26iflsig%3DABILxe8AAAAAark9swZ2-9UpqykzONEjyBQce5qMPTcz%26ved%3D0ahUKEwjl8qW5g4-XAxWYE0QIHU7wMggQ4dUDCDI%26uact%3D5%26oq%3Dvue%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Igx2dWUgdHV0b3JpYWwyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkidB1AMWAxwAXgAkAEAmAGTAqABkwKqAQMyLTG4AQPIAQD4AQGYAgKgApcCqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwLxBYCFP_USeDGrkgcFMS4wLjGgB_IEsgcDMi0xuAeVAsIHAzAuMsgHA4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKbf5NUGIjCxQ1EGiPtzWAsTJMFdQwMvQTXlmm_0YT17NY2zmbYdDFUHirqTuUqizzIfZEY_3cEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vue+tutorial&sca_esv=7c8679995c553972&hl=en&gl=u"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8809,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 488.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521251809"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8871,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 546.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521251809"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-e7655dfe06bdd1ef",
+   "source": "google",
+   "goal": "First search Google for elasticsearch tutorial, then search Google for how to debug docker.",
+   "fingerprint": 22045,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14934,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bdocker%26sca_esv%3d7c",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bdocker%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsm28BJcdrH9pUs3YIaiFj9IGvjWA%253A1790521318352%26source%3Dhp%26ei%3D5i-5aoPCFJjJkPIP1siA6Aw%26iflsig%3DABILxe8AAAAAark99l2IvToOR4Td05nXISgIlOPiRZr_%26ved%3D0ahUKEwiDzZHZg4-XAxWYJEQIHVYkAM0Q4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bdocker%26gs_lp%3DEgdnd3Mtd2l6IhNob3cgdG8gZGVidWcgZG9ja2VyMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IzwhQDVgNcAF4AJABAJgBkwKgAZMCqgEDMi0xuAEDyAEA-AEBmAICoAKYAqgCCsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtALCAhMQABiABBiKBRhDGOcGGOoCGLQCmAMC8QXytJlvhQicgpIHBTEuMC4xoAfWBbIHAzItMbgHlQLCBwMwLjLIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOnf5NUGIjBE3OiculdGXp2VT1p8l7CSBMDABxTwgMKEnNkCDhVfrmRWAXwrI8UTv3OxJsY4oDgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+docker&sca_esv=7c8679995c553972&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8813,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug docker",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 494.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521318569"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8236,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 724.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521318569"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-19ca4c417b1fe65a",
+   "source": "google",
+   "goal": "First search Google for unit testing interview questions, then search Google for vllm interview questions.",
+   "fingerprint": 22045,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14805,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dunit%2btesting%2binterview%2bquestions%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dunit%2Btesting%2Binterview%2Bquestions%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvjQF4ihZ-15fBpJrDylze4MlV5Sw%253A1790521385468%26source%3Dhp%26ei%3DKTC5asOyG8nfkPIP8_TryAg%26iflsig%3DABILxe8AAAAAark-ORNu91dIYqyBKf8DYoo_mUwaeneS%26ved%3D0ahUKEwiD65H5g4-XAxXJL0QIHXP6GokQ4dUDCDI%26uact%3D5%26oq%3Dunit%2Btesting%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IiB1bml0IHRlc3RpbmcgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjLB1AOWA5wAXgAkAEAmAGcAqABnAKqAQMyLTG4AQPIAQD4AQGYAgKgAqQCqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwPxBeNj9sSy-JE2kgcFMS4wLjGgB4kHsgcDMi0xuAehAsIHBTAuMS4xyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKzg5NUGIjA3hLHOTyekWlQQmTKJ71zOYvOVNlDxxcintZnVyCWG4iSyurdwYDK55fILxqXE6i4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=unit+testing+interview+questions&sca_esv=7c86799"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8988,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "unit testing interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 493.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521385730"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.6262,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 582.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521385730"
+    }
+   ]
+  }
+ ]
+}

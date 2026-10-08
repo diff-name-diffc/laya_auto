@@ -1,0 +1,892 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 85548,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T23:22:05+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 5.6,
+  "mean_duration_ms": 20126,
+  "decision_latency_ms": {
+   "p50": 590.5,
+   "p95": 668.2
+  },
+  "step_outcomes": {
+   "stale": 12,
+   "refused-empty-enter": 1,
+   "done-rejected": 3,
+   "executed": 28,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 11,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 5.6
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-cefe5ac80bbd20f1",
+   "source": "google",
+   "goal": "First search Google for concurrency interview questions, then search Google for how to debug docker.",
+   "fingerprint": 85548,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 19161,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bdocker%26sca_esv%3d7c",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bdocker%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnstqShlqEPCJ7EIVO5BLNu2ypvhZw%253A1790521997507%26source%3Dhp%26ei%3DjTK5aqvUHenVkPIPwrPS8AE%26iflsig%3DABILxe8AAAAAarlAnQINiAzBKZSYOdGsVy-EZxYu_L9i%26oq%3Dhow%2Bto%2Bdebug%2Bdocker%26gs_lp%3DEgdnd3Mtd2l6IhNob3cgdG8gZGVidWcgZG9ja2VyKgYIAxgWGB4yBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjDCFAcWBxwAXgAkAEAmAH2AaAB9gGqAQMyLTG4AQHIAQD4AQGYAgKgAoACqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBe8rA5ORNuWPkgcFMS4wLjGgB9YFsgcDMi0xuAf8AcIHAzItMsgHB4AIAQ%26sclient%3Dgws-wiz%26sei%3DlDK5auXlDejBkPIP2L_XkQo&hl=en&q=EgQm0XtnGJTl5NUGIjCseCu9JemWBpGjhflOyoTmHhNzNDQcIkFZi_GYJykzteKXPCpsy93vH22wixDOGkUyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+docker&sca_esv=7c8679995c553972&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8855,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug docker",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 514.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.3041,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 467.2,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521999089"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8411,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results page for 'how to debug docker' (page shows only the Google homepage search box, no results)",
+     "page_changed": null,
+     "latency_ms": 504.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521999089"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug docker",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521999089"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.8038,
+     "target": "14",
+     "target_label": "how to debug docker",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 641.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790521999089"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-4a1684c43e601b5c",
+   "source": "google",
+   "goal": "Search Google for vector embeddings tutorial and open the results.",
+   "fingerprint": 85548,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14646,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvector%2bembeddings%2btutorial%26sca_esv",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvector%2Bembeddings%2Btutorial%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsN1pYJEjX1T_57Q86PBGO2Eq2NTw%253A1790522069111%26source%3Dhp%26ei%3D1TK5asKpBcqiur8Pr-eq4Qs%26iflsig%3DABILxe8AAAAAarlA5dLceDLLu7XWaw_oFKq1-IVuS2hk%26ved%3D0ahUKEwiC6I-_ho-XAxVKke4BHa-zKrwQ4dUDCCE%26uact%3D5%26oq%3Dvector%2Bembeddings%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ihp2ZWN0b3IgZW1iZWRkaW5ncyB0dXRvcmlhbDIFEAAYgAQyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wUyBRAAGO8FSNQHUBNYE3ABeACQAQCYAYACoAGAAqoBAzItMbgBA8gBAPgBAZgCAqACiQKoAgrCAgoQABgDGI8BGOoCmAMF8QXhyiO8GgfHy5IHBTEuMC4xoAewBLIHAzItMbgHgwLCBwUwLjEuMcgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNjl5NUGIjDk_Yz_hUYWpoT4azDcMwqGQMvgkH_rrM4BI9xib0Oka4kw-QZrqe8mGMMPZcOcRuIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vector+embeddings+tutorial&sca_esv=7c8679995c553"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8964,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vector embeddings tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 513.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8955,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 590.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522071038"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3127af88988e05e8",
+   "source": "google",
+   "goal": "Search Google for next.js tutorial and open the results.",
+   "fingerprint": 85548,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 18849,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dnext.js%2btutorial%26sca_esv%3d7c8679995",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dnext.js%2Btutorial%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntfZRv8bYTi0VqM4-yVLwqpa0z7Nw%253A1790522136300%26source%3Dhp%26ei%3DGDO5apXhEM6gkPIPrsyDoQg%26iflsig%3DABILxe8AAAAAarlBKOz-s-faFD0-xZsV3bTT0fFwIdDU%26ved%3D0ahUKEwiVzZTfho-XAxVOEEQIHS7mIIQQ4dUDCCE%26uact%3D5%26oq%3Dnext.js%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhBuZXh0LmpzIHR1dG9yaWFsMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSLknUA1YDXABeACQAQCYAZACoAGQAqoBAzItMbgBA8gBAPgBAZgCAqACmQKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EFJe2pl1IlvniSBwUxLjAuMaAHpgayBwMyLTG4B5YCwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJ_m5NUGIjDAQBYNjZ65x4N39uv00Fg_pyha3bwJj4B0JjfP5rBDGTKEosyoSjjJmPoBageOJSUyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=next.js+tutorial&sca_esv=7c8679995c553972&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2923,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "next.js tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 481.4,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522136860"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8963,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Search results for 'next.js tutorial' are not visible; the page shows the Google homepage search box with autocomplete suggestions, not a results list",
+     "page_changed": null,
+     "latency_ms": 594.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522136860"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522136860"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-528090e26cb0121c",
+   "source": "google",
+   "goal": "Search Google for golang interview questions and open the results.",
+   "fingerprint": 85548,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 20980,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dgolang%2binterview%2bquestions%26sca_esv",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgolang%2Binterview%2Bquestions%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnt6GYBHbm23-M2GcocnmCNB9UVYMw%253A1790522207379%26source%3Dhp%26ei%3DXzO5ate2FfjBkPIPj_-M0Qs%26iflsig%3DABILxe8AAAAAarlBb2tGR6Po_Ibp-y887Lg17od_TnEn%26ved%3D0ahUKEwiX4oaBh4-XAxX4IEQIHY8_I7oQ4dUDCCE%26oq%3Dgolang%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Ihpnb2xhbmcgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyCBAAGIAEGLQHMgUQABiABDIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMggQABiABBi0BzIFEAAYgARI6zdQDlgOcAF4AJABAJgBkAKgAZACqgEDMi0xuAEMyAEA-AEBmAICoAKZAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QU6DvvJujLZcpIHBTEuMC4xoAfSBrIHAzItMbgHlQLCBwMwLjLIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOjm5NUGIjCOxf1S4oBRXDLCQ_wkJPQETnEq-WKOZU6v3p4KZ5MFvzC_h86ZynL9hXwKzghOS1gyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=golang+interview+questions&sca_esv=7c8679995c553"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9014,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "golang interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 477.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522207675"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8857,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results page listing results for 'golang interview questions'",
+     "page_changed": null,
+     "latency_ms": 598.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522207675"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:32",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522207675"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-8120b92e6d110ffe",
+   "source": "google",
+   "goal": "First search Google for pytorch cheat sheet, then search Google for unit testing interview questions.",
+   "fingerprint": 85548,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14556,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpytorch%2bcheat%2bsheet%26sca_esv%3d7c86",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpytorch%2Bcheat%2Bsheet%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntZ-OfEM3xZkhtgrFfabzNKmbeLVA%253A1790522280542%26source%3Dhp%26ei%3DqDO5atnsH_XRkPIPso2IoAs%26iflsig%3DABILxe8AAAAAarlBuMMqLhTp5O1wdu00bViQrWZd3Jr5%26ved%3D0ahUKEwjZ4Pijh4-XAxX1KEQIHbIGArQQ4dUDCCE%26uact%3D5%26oq%3Dpytorch%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhNweXRvcmNoIGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSJcHUAxYDHABeACQAQCYAZ8CoAGfAqoBAzItMbgBA8gBAPgBAZgCAqACqAKoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIZEC4YgAQYigUYQxjnBhjHARjRAxjqAhi0ApgDAvEFIWzXE_cA8jOSBwUxLjAuMaAHrwWyBwMyLTG4B6UCwgcFMC4xLjHIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKvn5NUGIjD-Uxyh5y4sbTo5h6l1VrH0-enlNjKIY1f_VpMBTTyhtmL05pOtmE__L2YaT8FcjaoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=pytorch+cheat+sheet&sca_esv=7c8679995c553972&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8858,
+     "target": "7",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "pytorch cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 490.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522280744"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8837,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 539.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522280744"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-73527b940fe5eca6",
+   "source": "google",
+   "goal": "First search Google for how to debug profiling, then search Google for docker interview questions.",
+   "fingerprint": 85548,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14828,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bprofiling%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bprofiling%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntoiwV3dtVV-esYfmXcZlvs9ET9GA%253A1790522347277%26source%3Dhp%26ei%3D6zO5at_ID6L9kPIP39D1mQc%26iflsig%3DABILxe8AAAAAarlB-4feXq0u3UJo5NGBQz99YYVFCUpD%26ved%3D0ahUKEwif6uHDh4-XAxWiPkQIHV9oPXMQ4dUDCCE%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bprofiling%26gs_lp%3DEgdnd3Mtd2l6IhZob3cgdG8gZGVidWcgcHJvZmlsaW5nMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wVIlQhQC1gLcAF4AJABAJgBugKgAboCqgEDMy0xuAEDyAEA-AEBmAICoALCAqgCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAhkQLhiABBiKBRhDGOcGGMcBGNEDGOoCGLQCmAMC8QXdt-UPl8Ec_ZIHBTEuMy0xoAfXA7IHAzMtMbgHvwLCBwMwLjLIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGO7n5NUGIjA29ObtgDEpFGoqQuDb8zbrROBlI1Y1rCWXG0Lpb2n_HVZZKUiMZJlhueUTeEHffnsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+profiling&sca_esv=7c8679995c553972&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8501,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug profiling",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 685.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522347487"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9094,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 668.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522347487"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d62deb11add2a753",
+   "source": "google",
+   "goal": "Search Google for c++ release notes and open the results.",
+   "fingerprint": 85548,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14621,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dc%252b%252b%2brelease%2bnotes%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dc%252B%252B%2Brelease%2Bnotes%26sca_esv%3D7c8679995c553972%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvdgC_9nwrW9KLR3PvjxxZcaKxwcw%253A1790522414292%26source%3Dhp%26ei%3DLjS5aty6EN_bkPIPp4K26Aw%26iflsig%3DABILxe8AAAAAarlCPoBCJuc3u384mhHe-JpxBUCGc-Q-%26ved%3D0ahUKEwjcidzjh4-XAxXfLUQIHSeBDc0Q4dUDCCE%26uact%3D5%26oq%3Dc%252B%252B%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhFjKysgcmVsZWFzZSBub3RlczIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSMgHUA1YDXABeACQAQCYAa0CoAGtAqoBAzMtMbgBA8gBAPgBAZgCAqACtQKoAgrCAgoQABgDGI8BGOoCmAMD8QVPb7fj3GFDwpIHBTEuMy0xoAeeBbIHAzMtMbgHsgLCBwMyLTLIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLDo5NUGIjBVtAgXR_mZLIqOmD_CiFNwwbnEbVSBPza0EVE7gIWtOIcqz7JdgNvfCIEmMbg_hjgyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=c%2B%2B+release+notes&sca_esv=7c8679995c553972&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8786,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "c++ release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 484.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522414514"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8788,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 581.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522414514"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-d9b9bfd6a7ad4ce2",
+   "source": "google",
+   "goal": "First search Google for kotlin open source alternatives, then search Google for swift tutorial.",
+   "fingerprint": 85548,
+   "status": "max-steps",
+   "verified": false,
+   "success": false,
+   "steps": 26,
+   "total_ms": 43369,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['swift']]",
+    "checks": {
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&biw=1120&bih=780&sx",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnvtWTJq6YORu5ix9YtKFxpk2hylfg%3A1790522510570&ei=jjS5as-OIvzFkPIPx6Gc4AI&ved=2ahUKEwjPjdGRiI-XAxX8IkQIHccQBywQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp",
+    "final_title": "kotlin open source alternatives - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8984,
+     "target": "9",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kotlin open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 476.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522481306"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8962,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 514.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790522481306"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.415,
+     "target": "17",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 628.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&sxsrf=APpeQnuZulVSeh6vfiHCpGvfy1I7R2o12A%3A1790522481114&source=hp&ei=cTS5aqjpBY-ikPIPxvXSGA&iflsig=ABILxe8AAAAAarlCgcotoLzWZjxwtcPGjYZeJamAfJOE&ved=0ahUKEwjo5cqDiI-XAxUPEUQIHca6FAMQ4dUDCCE&uact=5&oq=kotlin+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih9rb3RsaW4gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABSIUHUA5YDnABeACQAQCYAaYCoAGmAqoBAzItMbgBA8gBAPgBAZgCAqACsAKoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDA_EFCqVf6fd83YaSBwUxLjMtMaAHrAOyBwMzLTG4B60CwgcDMC4yyAcEgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.2359,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 588.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&sxsrf=APpeQnuZulVSeh6vfiHCpGvfy1I7R2o12A%3A1790522481114&source=hp&ei=cTS5aqjpBY-ikPIPxvXSGA&iflsig=ABILxe8AAAAAarlCgcotoLzWZjxwtcPGjYZeJamAfJOE&ved=0ahUKEwjo5cqDiI-XAxUPEUQIHca6FAMQ4dUDCCE&uact=5&oq=kotlin+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih9rb3RsaW4gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABSIUHUA5YDnABeACQAQCYAaYCoAGmAqoBAzItMbgBA8gBAPgBAZgCAqACsAKoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDA_EFCqVf6fd83YaSBwUxLjMtMaAHrAOyBwMzLTG4B60CwgcDMC4yyAcEgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.805,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 588.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&sxsrf=APpeQnuZulVSeh6vfiHCpGvfy1I7R2o12A%3A1790522481114&source=hp&ei=cTS5aqjpBY-ikPIPxvXSGA&iflsig=ABILxe8AAAAAarlCgcotoLzWZjxwtcPGjYZeJamAfJOE&ved=0ahUKEwjo5cqDiI-XAxUPEUQIHca6FAMQ4dUDCCE&uact=5&oq=kotlin+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih9rb3RsaW4gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABSIUHUA5YDnABeACQAQCYAaYCoAGmAqoBAzItMbgBA8gBAPgBAZgCAqACsAKoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDA_EFCqVf6fd83YaSBwUxLjMtMaAHrAOyBwMzLTG4B60CwgcDMC4yyAcEgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.7821,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 594.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&sxsrf=APpeQnuZulVSeh6vfiHCpGvfy1I7R2o12A%3A1790522481114&source=hp&ei=cTS5aqjpBY-ikPIPxvXSGA&iflsig=ABILxe8AAAAAarlCgcotoLzWZjxwtcPGjYZeJamAfJOE&ved=0ahUKEwjo5cqDiI-XAxUPEUQIHca6FAMQ4dUDCCE&uact=5&oq=kotlin+open+source+alternatives&gs_lp=Egdnd3Mtd2l6Ih9rb3RsaW4gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABSIUHUA5YDnABeACQAQCYAaYCoAGmAqoBAzItMbgBA8gBAPgBAZgCAqACsAKoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDA_EFCqVf6fd83YaSBwUxLjMtMaAHrAOyBwMzLTG4B60CwgcDMC4yyAcEgAgB&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8202,
+     "target": "17",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 637.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&sxsrf=APpeQnt8BswQRvE1i_x9HVdWow1wWmUThQ%3A1790522494830&ei=fjS5asSsMpPKkPIPrfKj2QE&biw=1120&bih=780&ved=2ahUKEwjE45CKiI-XAxUTJUQIHS35KBsQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 8,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.4351,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 566.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&sxsrf=APpeQnt8BswQRvE1i_x9HVdWow1wWmUThQ%3A1790522494830&ei=fjS5asSsMpPKkPIPrfKj2QE&biw=1120&bih=780&ved=2ahUKEwjE45CKiI-XAxUTJUQIHS35KBsQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.8325,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 591.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&sxsrf=APpeQnt8BswQRvE1i_x9HVdWow1wWmUThQ%3A1790522494830&ei=fjS5asSsMpPKkPIPrfKj2QE&biw=1120&bih=780&ved=2ahUKEwjE45CKiI-XAxUTJUQIHS35KBsQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 10,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.5161,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 589.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&sxsrf=APpeQnt8BswQRvE1i_x9HVdWow1wWmUThQ%3A1790522494830&ei=fjS5asSsMpPKkPIPrfKj2QE&biw=1120&bih=780&ved=2ahUKEwjE45CKiI-XAxUTJUQIHS35KBsQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 11,
+     "operation": "CLICK",
+     "confidence": 0.8287,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 591.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&sxsrf=APpeQnt8BswQRvE1i_x9HVdWow1wWmUThQ%3A1790522494830&ei=fjS5asSsMpPKkPIPrfKj2QE&biw=1120&bih=780&ved=2ahUKEwjE45CKiI-XAxUTJUQIHS35KBsQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 12,
+     "operation": "CLICK",
+     "confidence": 0.2998,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 590.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&sxsrf=APpeQnt8BswQRvE1i_x9HVdWow1wWmUThQ%3A1790522494830&ei=fjS5asSsMpPKkPIPrfKj2QE&biw=1120&bih=780&ved=2ahUKEwjE45CKiI-XAxUTJUQIHS35KBsQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 13,
+     "operation": "CLICK",
+     "confidence": 0.2436,
+     "target": "17",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 643.6,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnss8pH76TUrQjgJu4WZ_32oZiNTwg%3A1790522499537&ei=gzS5arqvIJnNkPIPkri5oQk&ved=2ahUKEwj6_K-MiI-XAxWZJkQIHRJcLpQQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 14,
+     "operation": "CLICK",
+     "confidence": 0.8075,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 595.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnss8pH76TUrQjgJu4WZ_32oZiNTwg%3A1790522499537&ei=gzS5arqvIJnNkPIPkri5oQk&ved=2ahUKEwj6_K-MiI-XAxWZJkQIHRJcLpQQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 15,
+     "operation": "CLICK",
+     "confidence": 0.2785,
+     "target": "17",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 607.0,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnsOMzBNCko0IfnpAySWNrAKHHxuDQ%3A1790522504792&ei=iDS5ar-DMIXEkPIPl8nOqQM&ved=2ahUKEwi_5_COiI-XAxUFIkQIHZekMzUQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 16,
+     "operation": "CLICK",
+     "confidence": 0.588,
+     "target": "17",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 603.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnsOMzBNCko0IfnpAySWNrAKHHxuDQ%3A1790522504792&ei=iDS5ar-DMIXEkPIPl8nOqQM&ved=2ahUKEwi_5_COiI-XAxUFIkQIHZekMzUQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 17,
+     "operation": "CLICK",
+     "confidence": 0.3266,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 590.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnsOMzBNCko0IfnpAySWNrAKHHxuDQ%3A1790522504792&ei=iDS5ar-DMIXEkPIPl8nOqQM&ved=2ahUKEwi_5_COiI-XAxUFIkQIHZekMzUQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 18,
+     "operation": "CLICK",
+     "confidence": 0.7602,
+     "target": "17",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 643.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnuufIHI_89EfRTn__6XYvphiAnosw%3A1790522507402&ei=izS5avGaGNHIkPIPgd-xOA&ved=2ahUKEwixjJCQiI-XAxVRJEQIHYFvDAcQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 19,
+     "operation": "CLICK",
+     "confidence": 0.7852,
+     "target": "17",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 565.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnuufIHI_89EfRTn__6XYvphiAnosw%3A1790522507402&ei=izS5avGaGNHIkPIPgd-xOA&ved=2ahUKEwixjJCQiI-XAxVRJEQIHYFvDAcQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 20,
+     "operation": "CLICK",
+     "confidence": 0.7743,
+     "target": "17",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 592.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnuufIHI_89EfRTn__6XYvphiAnosw%3A1790522507402&ei=izS5avGaGNHIkPIPgd-xOA&ved=2ahUKEwixjJCQiI-XAxVRJEQIHYFvDAcQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 20,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "swift tutorial",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnuufIHI_89EfRTn__6XYvphiAnosw%3A1790522507402&ei=izS5avGaGNHIkPIPgd-xOA&ved=2ahUKEwixjJCQiI-XAxVRJEQIHYFvDAcQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 21,
+     "operation": "CLICK",
+     "confidence": 0.2896,
+     "target": "17",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 671.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnuufIHI_89EfRTn__6XYvphiAnosw%3A1790522507402&ei=izS5avGaGNHIkPIPgd-xOA&ved=2ahUKEwixjJCQiI-XAxVRJEQIHYFvDAcQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 22,
+     "operation": "CLICK",
+     "confidence": 0.2532,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 593.9,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnuufIHI_89EfRTn__6XYvphiAnosw%3A1790522507402&ei=izS5avGaGNHIkPIPgd-xOA&ved=2ahUKEwixjJCQiI-XAxVRJEQIHYFvDAcQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 23,
+     "operation": "CLICK",
+     "confidence": 0.2591,
+     "target": "17",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 612.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnvtWTJq6YORu5ix9YtKFxpk2hylfg%3A1790522510570&ei=jjS5as-OIvzFkPIPx6Gc4AI&ved=2ahUKEwjPjdGRiI-XAxX8IkQIHccQBywQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 24,
+     "operation": "SCROLL_DOWN",
+     "confidence": 0.2534,
+     "target": null,
+     "target_label": "Scroll down",
+     "kind": "scroll",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 591.0,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnvtWTJq6YORu5ix9YtKFxpk2hylfg%3A1790522510570&ei=jjS5as-OIvzFkPIPx6Gc4AI&ved=2ahUKEwjPjdGRiI-XAxX8IkQIHccQBywQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    },
+    {
+     "step": 25,
+     "operation": "CLICK",
+     "confidence": 0.7983,
+     "target": "6",
+     "target_label": "Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 595.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+open+source+alternatives&sca_esv=7c8679995c553972&hl=en&gl=us&biw=1120&bih=780&sxsrf=APpeQnvtWTJq6YORu5ix9YtKFxpk2hylfg%3A1790522510570&ei=jjS5as-OIvzFkPIPx6Gc4AI&ved=2ahUKEwjPjdGRiI-XAxX8IkQIHccQBywQ4dUDegQIBhAN&oq=kotlin+open+source+alternatives&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2tvdGxpbiBvcGVuIHNvdXJjZSBhbHRlcm5hdGl2ZXNIAFAAWABwAHgBkAEAmAEAoAEAqgEAuAEMyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
+    }
+   ]
+  }
+ ]
+}

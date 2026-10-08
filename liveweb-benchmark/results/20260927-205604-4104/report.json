@@ -1,0 +1,666 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 18753,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:04:46+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 3.6,
+  "mean_duration_ms": 19085,
+  "decision_latency_ms": {
+   "p50": 523.3,
+   "p95": 721.5
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "done-rejected": 4,
+   "executed": 20,
+   "refused-empty-enter": 3
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 3.6
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-033a9ff29af0b5f6",
+   "source": "google",
+   "goal": "First search Google for mysql security vulnerabilities, then search Google for how to debug logging best practices.",
+   "fingerprint": 18753,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 31884,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2blogging%2bbest%2bprac",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Blogging%2Bbest%2Bpractices%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnum2CfDvTkSdgMrPo4i5F7SE6QLzw%253A1790513767621%26source%3Dhp%26ei%3DZxK5avO2JNzPkPIP5beF8Ak%26iflsig%3DABILxe8AAAAAarkgd83DjJBZlSzDOjnIyfIxbFwPMupm%26ved%3D0ahUKEwizhtXI546XAxXcJ0QIHeVbAZ4Q4dUDCDI%26oq%3Dhow%2Bto%2Bdebug%2Blogging%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IiNob3cgdG8gZGVidWcgbG9nZ2luZyBiZXN0IHByYWN0aWNlczIGEAAYFhgeMgsQABiABBiKBRiGAzIIEAAYgAQYogRI7GNQFVgVcAF4AJABAJgB2AGgAdgBqgEDMi0xuAEMyAEA-AEBmAICoALiAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QUTy58tQ4LWVpIHBTEuMC4xoAeJArIHAzItMbgH3gHCBwMyLTLIBwaACAE%26sclient%3Dgws-wiz%26sei%3DexK5auX3DP7BkPIPy4XemAM&hl=en&q=EgQm0XtnGPuk5NUGIjASzvGrJRzI6hOK2omRrh0Y1jXYoqNtyQpR0PklIojtq3IlTVDBGP7JjD7z6PF2R44yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+logging+best+practices&sca_esv=75b8"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8977,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug logging best practices",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 498.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.6756,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'how to debug logging best practices' are not shown; page is only the empty Google homepage search box",
+     "page_changed": null,
+     "latency_ms": 711.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513769105"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug logging best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513769105"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8945,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'how to debug logging best practices'",
+     "page_changed": null,
+     "latency_ms": 729.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513769105"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:26",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513769105"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-182be69e394815a0",
+   "source": "google",
+   "goal": "First search Google for prometheus release notes, then search Google for ci/cd pipelines best practices.",
+   "fingerprint": 18753,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 9,
+   "total_ms": 21470,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dprometheus%2brelease%2bnotes%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dprometheus%2Brelease%2Bnotes%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnubxvLlQaXpU58-8oqaG0sj-RQwbA%253A1790513851882%26source%3Dhp%26ei%3DuxK5asanNPqhkPIPs8PTyA8%26iflsig%3DABILxe8AAAAAarkgyxqYstxZrFLl4wxZOP380rlBTFO-%26ved%3D0ahUKEwiG8evw546XAxX6EEQIHbPhFPkQ4dUDCDI%26uact%3D5%26oq%3Dprometheus%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6Ihhwcm9tZXRoZXVzIHJlbGVhc2Ugbm90ZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIIEAAYFhgeGAoyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wVI9S9QyxFYyxFwBXgAkAEAmAHWAaAB1gGqAQMyLTG4AQPIAQD4AQGYAgagAusBqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwTxBbBYrgUMf_XakgcFNS4wLjGgB_UFsgcDMi0xuAfeAcIHBTAuNC4yyAcOgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMWl5NUGIjAFsUb8CRDZDpi_ylKgsfXSdrCWUtM-34nqAkA9T4A4dNK2jN1g_OXzEaOWVx9VzeEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=prometheus+release+notes&sca_esv=75b852f910b8e50"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.902,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "prometheus release notes",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 499.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8949,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 493.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513853343"
+    },
+    {
+     "step": 3,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2594,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 556.8,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513853343"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.842,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 615.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513853343"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8561,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 676.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513853343"
+    },
+    {
+     "step": 6,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8746,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "prometheus release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 700.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513853343"
+    },
+    {
+     "step": 7,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8906,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "prometheus release notes",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 581.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513853343"
+    },
+    {
+     "step": 8,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8715,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "prometheus release notes",
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 721.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513853343"
+    },
+    {
+     "step": 8,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513853343"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-276aebf96efafdba",
+   "source": "google",
+   "goal": "Search Google for how to debug pytorch and open the results.",
+   "fingerprint": 18753,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 18349,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bpytorch%26sca_esv%3d7",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bpytorch%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvcKvtepnHp0I5pUfkZtVmjFeBbuw%253A1790513925757%26source%3Dhp%26ei%3DBRO5arH0LNLKvMcPzO_K-Q8%26iflsig%3DABILxe8AAAAAarkhFUcCjwnNU6u7XtHpZPhYLm7S5oge%26ved%3D0ahUKEwjxiomU6I6XAxVSJe8CHcy3Mv8Q4dUDCDI%26oq%3Dhow%2Bto%2Bdebug%2Bpytorch%26gs_lp%3DEgdnd3Mtd2l6IhRob3cgdG8gZGVidWcgcHl0b3JjaDIGEAAYFhgeMgYQABgWGB4yBRAAGO8FSIsjUA9YD3ABeACQAQCYAekBoAHpAaoBAzItMbgBDMgBAPgBAZgCAqAC9AGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBeSsO1Duq8wOkgcFMS4wLjGgB80BsgcDMi0xuAfwAcIHAzItMsgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIym5NUGIjBQ9bE8btVhB5PB3u_JDLU9zkgLiT3z2PzvMYP1hbNJZgbixvUrk3NWn4oWFfwDsJwyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+pytorch&sca_esv=75b852f910b8e50f&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8929,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug pytorch",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 491.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513926161"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8919,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results listing for 'how to debug pytorch' (page shows only the search box with autocomplete suggestions, no results opened)",
+     "page_changed": null,
+     "latency_ms": 523.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513926161"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:26",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513926161"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-97c448fee6fcd5d1",
+   "source": "google",
+   "goal": "Search Google for django cheat sheet and open the results.",
+   "fingerprint": 18753,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14600,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddjango%2bcheat%2bsheet%26sca_esv%3d75b85",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddjango%2Bcheat%2Bsheet%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns95itih7f-GrhZN35g825xYP7vyQ%253A1790513996317%26source%3Dhp%26ei%3DTBO5aoSlEoWckPIPuaeiyAs%26iflsig%3DABILxe8AAAAAarkhXCbYJKIMMi3tw4U91pm5T3v3UUcb%26ved%3D0ahUKEwiE-9u16I6XAxUFDkQIHbmTCLkQ4dUDCDI%26uact%3D5%26oq%3Ddjango%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhJkamFuZ28gY2hlYXQgc2hlZXQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSKkHUA1YDXABeACQAQCYAeYBoAHmAaoBAzItMbgBA8gBAPgBAZgCAqAC8gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFOrBZeymoy06SBwUxLjAuMaAHswWyBwMyLTG4B-0BwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGM6m5NUGIjCBNbRx2jgjaEu_cNZVCpIGsG6VSTKwHVsj837A4yUhUzvuNMngwOKo17Y7sZbZTlkyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=django+cheat+sheet&sca_esv=75b852f910b8e50f&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8664,
+     "target": "8",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "django cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 474.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513996635"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8796,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 545.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513996635"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-29c74d4baeb55b2a",
+   "source": "google",
+   "goal": "Search Google for async programming release notes and open the results.",
+   "fingerprint": 18753,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14611,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dasync%2bprogramming%2brelease%2bnotes%26",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dasync%2Bprogramming%2Brelease%2Bnotes%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsdaxwHs0yZ-dPa_4JA4x9qYVdkpQ%253A1790514063073%26source%3Dhp%26ei%3DjxO5asGtA6ixur8P99qIkAw%26iflsig%3DABILxe8AAAAAarkhn57EUR009bdkB3uBHzf-A-V8xgGV%26ved%3D0ahUKEwiBscbV6I6XAxWomO4BHXctAsIQ4dUDCDI%26uact%3D5%26oq%3Dasync%2Bprogramming%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6Ih9hc3luYyBwcm9ncmFtbWluZyByZWxlYXNlIG5vdGVzMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwJI_QZQDlgOcAF4AJABAJgB4AGgAeABqgEDMi0xuAEDyAEA-AEBmAICoALvAagCCsICGRAuGIAEGIoFGEMY5wYYxwEY0QMY6gIYtALCAhMQABiABBiKBRhDGOcGGOoCGLQCwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBQtD3-zk11oYkgcFMS4wLjGgB9gEsgcDMi0xuAfqAcIHAzItMsgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJGn5NUGIjD5_XO1FJf2s8jozRl8NAaZZNEW7CqOibwQ55gd8Jh8aK4xD7pxG-8zmCGzU9USJDoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=async+programming+release+notes&sca_esv=75b852f9"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.894,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "async programming release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 498.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514063312"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8982,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 497.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514063312"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-14f7b7fb2865ffd3",
+   "source": "google",
+   "goal": "Search Google for vector embeddings cheat sheet and open the results.",
+   "fingerprint": 18753,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14516,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvector%2bembeddings%2bcheat%2bsheet%26sc",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvector%2Bembeddings%2Bcheat%2Bsheet%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntql05JAe5zGy9GGurLLgF1MvpkQA%253A1790514129838%26source%3Dhp%26ei%3D0RO5avr4MNTvkPIP95eSqAE%26iflsig%3DABILxe8AAAAAarkh4cpqBFZ9wQJ9r7UW9bVz36hzMsP_%26ved%3D0ahUKEwi6pbD16I6XAxXUN0QIHfeLBBUQ4dUDCDI%26uact%3D5%26oq%3Dvector%2Bembeddings%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6Ih12ZWN0b3IgZW1iZWRkaW5ncyBjaGVhdCBzaGVldDIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRirAjIFECEYqwJItQdQEFgQcAF4AJABAJgB6wGgAesBqgEDMi0xuAEDyAEA-AEBmAICoALyAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QUsIR2b5VKN8JIHBTEuMC4xoAe_BrIHAzItMbgH7gHCBwMwLjLIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNSn5NUGIjAJXKt9qFM6AdCMA56QpmBAIRiSPrY6D3w9QADia12jpQ9M3Inijp6UhOjy4YFF-BEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vector+embeddings+cheat+sheet&sca_esv=75b852f910"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9003,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vector embeddings cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 543.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514130096"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8973,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 570.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514130096"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-1edf60d4c0e979f3",
+   "source": "google",
+   "goal": "Search Google for unit testing best practices and open the results.",
+   "fingerprint": 18753,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14815,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dunit%2btesting%2bbest%2bpractices%26sca_",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dunit%2Btesting%2Bbest%2Bpractices%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvvgQeJRVgSI5Am5rEaITtnEetmxw%253A1790514196512%26source%3Dhp%26ei%3DFBS5aqSmHqrZkPIPoL6-yAM%26iflsig%3DABILxe8AAAAAarkiJISjX-_qmwCfQUFK7hNXwKAMkTsT%26ved%3D0ahUKEwikgJeV6Y6XAxWqLEQIHSCfDzkQ4dUDCDI%26uact%3D5%26oq%3Dunit%2Btesting%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6Iht1bml0IHRlc3RpbmcgYmVzdCBwcmFjdGljZXMyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I1wdQEFgQcAF4AJABAJgB0wGgAdMBqgEDMi0xuAEDyAEA-AEBmAICoALbAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QXY77nu708up5IHBTEuMC4xoAeiBrIHAzItMbgH1wHCBwUwLjEuMcgHBYAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJeo5NUGIjDec2XxdoOrvUtcELNmal9BzpBPYB4wY2HDSxYdwKN_XTtbRPIeaaxBSeGrB7WHUNQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=unit+testing+best+practices&sca_esv=75b852f910b8"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8848,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "unit testing best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 489.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514196779"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9021,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 595.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514196779"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-4dce85659bb0248c",
+   "source": "google",
+   "goal": "First search Google for memory leak debugging interview questions, then search Google for how to debug zig.",
+   "fingerprint": 18753,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 4,
+   "total_ms": 22433,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bzig%26sca_esv%3d75b85",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bzig%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnufcsbpcFg4-XY-1KAhkmGArNioIg%253A1790514263483%26source%3Dhp%26ei%3DVxS5arrtG8nIkPIPzsTB8Qk%26iflsig%3DABILxe8AAAAAarkiZ7-JSYfrkvNW5wLehL-eP7gxiVGo%26ved%3D0ahUKEwj69I216Y6XAxVJJEQIHU5iMJ4Q4dUDCDI%26oq%3Dhow%2Bto%2Bdebug%2Bzig%26gs_lp%3DEgdnd3Mtd2l6IhBob3cgdG8gZGVidWcgemlnMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIIEAAYiQUYogQyBRAAGO8FSKI_UBFYEXABeACQAQCYAe8BoAHvAaoBAzItMbgBDMgBAPgBAZgCAqAC9gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDA_EF8qBHcRdnDSqSBwUxLjAuMaAH2QOyBwMyLTG4B_MBwgcFMC4xLjHIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOGo5NUGIjAeLphG6vtQZd5Sgq78YoTIBLGI9OyPsG58gRoyONVXYeK_DelJezO2DTwV0TFUm60yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+zig&sca_esv=75b852f910b8e50f&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.4696,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 532.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514263733"
+    },
+    {
+     "step": 2,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.7911,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug zig",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 510.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514263733"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8981,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'how to debug zig'",
+     "page_changed": null,
+     "latency_ms": 659.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514263733"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:30",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514263733"
+    }
+   ]
+  }
+ ]
+}

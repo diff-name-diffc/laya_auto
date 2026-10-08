@@ -1,0 +1,525 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 99039,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T22:30:08+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 2.4,
+  "mean_duration_ms": 16345,
+  "decision_latency_ms": {
+   "p50": 535.8,
+   "p95": 601.2
+  },
+  "step_outcomes": {
+   "executed": 16,
+   "stale": 1,
+   "done-rejected": 2
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.4
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-d7aaef674b83f000",
+   "source": "google",
+   "goal": "Search Google for python best practices and open the results.",
+   "fingerprint": 99039,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15246,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dpython%2bbest%2bpractices%26sca_esv%3df9",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dpython%2Bbest%2Bpractices%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsj5doqGZD9Swfd6COTHdx2w1bzyw%253A1790518910661%26source%3Dhp%26ei%3Dfia5aoOnJ-TKvMcPwP_XoAc%26iflsig%3DABILxe8AAAAAark0jncVRoTgmqN2f5_hcQ1_ciJUuRw2%26ved%3D0ahUKEwiD3ofd-o6XAxVkJe8CHcD_FXQQ4dUDCDI%26uact%3D5%26oq%3Dpython%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhVweXRob24gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESNsHUBJYEnABeACQAQCYAegBoAHoAaoBAzItMbgBA8gBAPgBAZgCAqAC8QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBvEFgAlC2Hgu4x-SBwUxLjAuMaAHqwWyBwMyLTG4B-oBwgcFMC4xLjHIBweACAE%26sclient%3Dgws-wiz%26sei%3DgSa5arrFL6PukPIP6ZKV4QQ&hl=en&q=EgQm0XtnGILN5NUGIjDHgcQAG7rA13skOHrI6Td1ly_qtGn31GXi73N3HjMCqPLliiNd1Pi3GwZ9zuDsub0yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=python+best+practices&sca_esv=f9132ac85e259377&h"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9098,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "python best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 598.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8927,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 593.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518912560"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-5612687ceaaa575b",
+   "source": "google",
+   "goal": "First search Google for model quantization performance optimization, then search Google for next.js tutorial.",
+   "fingerprint": 99039,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 4,
+   "total_ms": 22993,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmodel%2bquantization%2bperformance%2bopt",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmodel%2Bquantization%2Bperformance%2Boptimization%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv9it5-TfwUbfYYg7BNGsuDfPU7VQ%253A1790518978388%26source%3Dhp%26ei%3Dwia5avSjFoXEkPIPl8nOqQM%26iflsig%3DABILxe8AAAAAark00hH3rafYQ_6Qx0BcsgWkfJ3AYfMI%26ved%3D0ahUKEwj0jK39-o6XAxUFIkQIHZekMzUQ4dUDCDI%26uact%3D5%26oq%3Dmodel%2Bquantization%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Iittb2RlbCBxdWFudGl6YXRpb24gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgUQIRigATIFECEYoAEyBRAhGJ8FSPdIUBFYEXABeACQAQCYAc0CoAHNAqoBAzMtMbgBA8gBAPgBAZgCAqAC1gKoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEF4_h51HCHGc6SBwUxLjMtMaAHxAOyBwMzLTG4B9ICwgcFMC4xLjHIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGM3N5NUGIjCj0KNf-KXs68Qobd0Vk-D3bl6OvscjvCrQoTIV7Qmj4aqAOs0cfaSHcecCzMYIh0syAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=model+quantization+performance+optimization&sca_"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9073,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 470.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.903,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "stale: URL changed since the decision",
+     "page_changed": true,
+     "latency_ms": 483.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.7481,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing next.js tutorial search results",
+     "page_changed": null,
+     "latency_ms": 874.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518980733"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "press_enter",
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790518980733"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-299cd3030d4369f4",
+   "source": "google",
+   "goal": "Search Google for how to debug java and open the results.",
+   "fingerprint": 99039,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 3,
+   "total_ms": 18624,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bjava%26sca_esv%3df913",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bjava%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsWmdEp0mINES4L-l-tAdr-ASMwUQ%253A1790519053905%26source%3Dhp%26ei%3DDSe5aqf1NfKxur8P7Lii-QY%26iflsig%3DABILxe8AAAAAark1HckAG86CknwTStOnIlEB0M5pU6tv%26ved%3D0ahUKEwjnr66h-46XAxXymO4BHWycKG8Q4dUDCDI%26oq%3Dhow%2Bto%2Bdebug%2Bjava%26gs_lp%3DEgdnd3Mtd2l6IhFob3cgdG8gZGVidWcgamF2YTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIvCNQDlgOcAF4AJABAJgBnQKgAZ0CqgEDMi0xuAEMyAEA-AEBmAICoAKmAqgCCsICChAuGAMYjwEY6gLCAgoQABgDGI8BGOoCmAMD8QU2H11fXFK9pZIHBTEuMC4xoAemBbIHAzItMbgHowLCBwUwLjEuMcgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJTO5NUGIjAIpmoBEUUOWH0EGVfJ7LK4ELtAFP2MI8WOSZx2aK82Qn4e_sBO657ZNTB9LvIGQqEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+java&sca_esv=f9132ac85e259377&hl=en"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8617,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug java",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 535.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519054361"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.8949,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"how to debug java\" (only autocomplete suggestions are shown; search not yet executed); no result listings/links visible on the pag",
+     "page_changed": null,
+     "latency_ms": 601.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519054361"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:35",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519054361"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-21d423aee9ccf6ae",
+   "source": "google",
+   "goal": "First search Google for ruby migration guide, then search Google for laravel best practices.",
+   "fingerprint": 99039,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14636,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3druby%2bmigration%2bguide%26sca_esv%3df91",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Druby%2Bmigration%2Bguide%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsu2lr4CZFNShKpzxzPAbLshUEOXA%253A1790519124793%26source%3Dhp%26ei%3DVCe5aqrjLpHTkPIPvN_xyQw%26iflsig%3DABILxe8AAAAAark1ZCdd1jfwMdNWdtKDwmpgBYkk7EIO%26ved%3D0ahUKEwiq3ZTD-46XAxWRKUQIHbxvPMkQ4dUDCDI%26uact%3D5%26oq%3Druby%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IhRydWJ5IG1pZ3JhdGlvbiBndWlkZTIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIIEAAYgAQYogQyBRAAGO8FSKkHUAtYC3ABeACQAQCYAbACoAGwAqoBAzMtMbgBA8gBAPgBAZgCAqACtAKoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDAvEFBtV8qal0KLCSBwUxLjMtMaAHqgKyBwMzLTG4B7ICwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNfO5NUGIjC7Ncl9DgiJTiTKnqX9-TkaDHs7wZIBBe9Q_VWEEoCTrCUJjs1_MCS58wnY-P00VxcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=ruby+migration+guide&sca_esv=f9132ac85e259377&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9052,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ruby migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 492.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519125166"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8879,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 560.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519125166"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-eae9d3eec6ea61ab",
+   "source": "google",
+   "goal": "First search Google for laravel tutorial, then search Google for unit testing release notes.",
+   "fingerprint": 99039,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14575,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlaravel%2btutorial%26sca_esv%3df9132ac85",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlaravel%2Btutorial%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntTO_6PGRP9rTWPBJ9s7lJTPJoKuQ%253A1790519191603%26source%3Dhp%26ei%3Dlye5asjPI73xkPIP5uDCSQ%26iflsig%3DABILxe8AAAAAark1pzTNUIjGeJJHiBheWgd0yBH9eCE8%26ved%3D0ahUKEwiI94Lj-46XAxW9OEQIHWawMAkQ4dUDCDI%26uact%3D5%26oq%3Dlaravel%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhBsYXJhdmVsIHR1dG9yaWFsMgUQABiABDILEC4Y-gYY8gYYjwcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjKB1APWA9wAXgAkAEAmAGSAqABkgKqAQMyLTG4AQPIAQD4AQGYAgKgApsCqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwPxBcIsLmLwIXM5kgcFMS4wLjGgB8AGsgcDMi0xuAeXAsIHAzItMsgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJrP5NUGIjAe-pzInEU3jtNcEGATC2KoYbJH6Bje_nrQesy824Hu67bABDFrwrvDNX8Pw5rnvrcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=laravel+tutorial&sca_esv=f9132ac85e259377&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9036,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "laravel tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 511.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519191923"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8977,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 585.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519191923"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ce7e4872470ccd76",
+   "source": "google",
+   "goal": "First search Google for async programming migration guide, then search Google for refactoring best practices.",
+   "fingerprint": 99039,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14673,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dasync%2bprogramming%2bmigration%2bguide%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dasync%2Bprogramming%2Bmigration%2Bguide%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntXwR_Z1BW_xZbd8roHHLkIxIN6aA%253A1790519258396%26source%3Dhp%26ei%3D2ie5apOiFp3IkPIP6MaH6Ac%26iflsig%3DABILxe8AAAAAark16vd0PtXlQsen681VLwkrdkRQNvC3%26ved%3D0ahUKEwiT9-6C_I6XAxUdJEQIHWjjAX0Q4dUDCDI%26uact%3D5%26oq%3Dasync%2Bprogramming%2Bmigration%2Bguide%26gs_lp%3DEgdnd3Mtd2l6IiFhc3luYyBwcm9ncmFtbWluZyBtaWdyYXRpb24gZ3VpZGUyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUiLB1ANWA1wAXgAkAEAmAGqAqABqgKqAQMyLTG4AQPIAQD4AQGYAgKgArQCqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0ApgDA_EFadYz5zLz8OiSBwUxLjMtMaAHqAWyBwMzLTG4B7ACwgcFMC4xLjHIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGN3P5NUGIjAccWaemeFBg3oLkUqga9P2Uy7rPYMfHbyNzat0wxiQh0M1UepjCNPl1V67nhNrbokyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=async+programming+migration+guide&sca_esv=f9132a"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.899,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "async programming migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 537.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519258745"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9021,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 522.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519258745"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-6fca555bf81c0041",
+   "source": "google",
+   "goal": "First search Google for langchain best practices, then search Google for kafka best practices.",
+   "fingerprint": 99039,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15050,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlangchain%2bbest%2bpractices%26sca_esv%3",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlangchain%2Bbest%2Bpractices%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv3uO5-EJJfwxBJZUfJzxcJsHYbcg%253A1790519325297%26source%3Dhp%26ei%3DHSi5apawEJPFkPIPr4m4iQk%26iflsig%3DABILxe8AAAAAark2Lf48puYZDYHgNiKzYEb9AHjIdhNA%26oq%3Dlangchain%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6IhhsYW5nY2hhaW4gYmVzdCBwcmFjdGljZXMqBQgAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgNI8gdQDVgNcAF4AJABAJgBnwKgAZ8CqgEDMi0xuAEByAEA-AEBmAICoAKoAqgCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QVD1ZtlsAkzEZIHBTEuMC4xoAfhBbIHAzItMbgHpALCBwUwLjEuMcgHBoAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGKDQ5NUGIjBW8T7OlZC4AR_5NFGgB_IKQfttdk10YbibwOYmf_As5EdFUPl7zFbppKitEe-ExOQyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=langchain+best+practices&sca_esv=f9132ac85e25937"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9116,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "langchain best practices",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 526.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519325537"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.5813,
+     "target": "12",
+     "target_label": "langchain best practices",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 578.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519325537"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-70aa520d442c552d",
+   "source": "google",
+   "goal": "Search Google for typescript performance optimization and open the results.",
+   "fingerprint": 99039,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14960,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dtypescript%2bperformance%2boptimization%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtypescript%2Bperformance%2Boptimization%26sca_esv%3Df9132ac85e259377%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntdCqAPQgMg21Po3qYMEbtp2x6DIQ%253A1790519392506%26source%3Dhp%26ei%3DYCi5aoXTHYLDkPIPi5aC2AY%26iflsig%3DABILxe8AAAAAark2cLTHJczxexA_nEbzItxNQPyCZh2v%26ved%3D0ahUKEwiFg-nC_I6XAxWCIUQIHQuLAGsQ4dUDCDI%26uact%3D5%26oq%3Dtypescript%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiN0eXBlc2NyaXB0IHBlcmZvcm1hbmNlIG9wdGltaXphdGlvbjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMggQABiJBRiiBDIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBUihB1AOWA5wAXgAkAEAmAGrAqABqwKqAQMyLTG4AQPIAQD4AQGYAgKgArICqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwPxBfCBjdgxLdDakgcFMS4zLTGgB5sEsgcDMy0xuAeuAsIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGOPQ5NUGIjAHxYdhwtoFObVZkFQ1A0r1QsTzKigP5CKAEOJe0Abazv-6ZlgbfBx3NIAD4ix29jsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=typescript+performance+optimization&sca_esv=f913"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9043,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "typescript performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 530.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519392838"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9028,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 542.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790519392838"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "humanize": true,
+  "headless": true,
+  "fingerprint": "per-task-stable",
+  "max_steps": 25,
+  "delay": 0.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "router",
+   "pool_size": 1,
+   "models": [
+    "english",
+    "multilingual",
+    "typed-decisions"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T02:29:43+0800",
+  "n_tasks": 1,
+  "success": 1,
+  "success_rate": 1.0,
+  "verified": 1,
+  "verified_rate": 1.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 1.0,
+  "mean_duration_ms": 527,
+  "decision_latency_ms": {
+   "p50": 509.9,
+   "p95": 509.9
+  },
+  "step_outcomes": {
+   "done": 1
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "github": {
+    "n": 1,
+    "success": 1,
+    "success_rate": 1.0,
+    "verified": 1,
+    "verified_rate": 1.0,
+    "mean_steps": 1.0
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "github-trending-view",
+   "source": "github",
+   "goal": "Open GitHub's trending page and review today's trending repositories.",
+   "fingerprint": 84023,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 1,
+   "total_ms": 527,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://github.com/trending",
+     "bot_challenge": false,
+     "group0": [
+      "trending",
+      "stars today",
+      "built by"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://github.com/trending",
+    "final_title": "Trending repositories on GitHub today · GitHub"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "DONE",
+     "confidence": 0.3652,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 509.9,
+     "low_confidence": false,
+     "url": "https://github.com/trending"
+    }
+   ]
+  }
+ ]
+}

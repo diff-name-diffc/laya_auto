@@ -1,0 +1,638 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 38654,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T20:45:25+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 3.4,
+  "mean_duration_ms": 18375,
+  "decision_latency_ms": {
+   "p50": 519.6,
+   "p95": 612.3
+  },
+  "step_outcomes": {
+   "stale": 2,
+   "refused-empty-enter": 3,
+   "done-rejected": 6,
+   "executed": 16
+  },
+  "low_confidence_steps": 0,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 3.4
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-a3ba345542797f86",
+   "source": "google",
+   "goal": "Search Google for swift tutorial and open the results.",
+   "fingerprint": 38654,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 23260,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dswift%2btutorial%26sca_esv%3d75b852f910b",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dswift%2Btutorial%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvtGx6n3xVcx0sg5XKTh2tlnIhJCQ%253A1790512611950%26source%3Dhp%26ei%3D4w25auHQOOPMkPIPoe-eoQo%26iflsig%3DABILxe8AAAAAarkb8ym8Otmj9W-XW5TDsV3rJaT3jNgn%26ved%3D0ahUKEwihzsyh446XAxVjJkQIHaG3J6QQ4dUDCDI%26oq%3Dswift%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Ig5zd2lmdCB0dXRvcmlhbDIFEAAYgAQyCxAuGPoGGPIGGI8HMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDILEAAYgAQYigUYhgNI9yBQFVgVcAF4AJABAJgBzAGgAcwBqgEDMi0xuAEMyAEA-AEBmAICoALXAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QXJFYdcGSGI3ZIHBTEuMC4xoAejBrIHAzItMbgH0wHCBwMyLTLIBweACAE%26sclient%3Dgws-wiz%26sei%3D7w25atDDAePxkPIPx6aXyAw&hl=en&q=EgQm0XtnGO-b5NUGIjBVhqMn829um3nHl0AXQq8gp9eOrGZ_uG-7yr8YzSU1wvm6_KoXnVWKt60hTvqLI5cyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=swift+tutorial&sca_esv=75b852f910b8e50f&hl=en&gl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.5355,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "swift tutorial",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 506.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.5327,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 494.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512613377"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9162,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'swift tutorial'",
+     "page_changed": null,
+     "latency_ms": 530.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512613377"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "swift tutorial",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512613377"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9167,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for \"swift tutorial\" (only autocomplete suggestions are shown; the search has not been executed)",
+     "page_changed": null,
+     "latency_ms": 597.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512613377"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:35",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512613377"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-0b267d3dac16fbbd",
+   "source": "google",
+   "goal": "Search Google for concurrency best practices and open the results.",
+   "fingerprint": 38654,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 6,
+   "total_ms": 22805,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dconcurrency%2bbest%2bpractices%26sca_esv",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dconcurrency%2Bbest%2Bpractices%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntaWtigtEonwr1OdaaHBVOipculWg%253A1790512687604%26source%3Dhp%26ei%3DLw65atnBI5DQkPIP3c2U6AM%26iflsig%3DABILxe8AAAAAarkcP7MK4dzpp7wQyk2BRXfjED5UOFOH%26ved%3D0ahUKEwiZldbF446XAxUQKEQIHd0mBT0Q4dUDCDI%26oq%3Dconcurrency%2Bbest%2Bpractices%26gs_lp%3DEgdnd3Mtd2l6Ihpjb25jdXJyZW5jeSBiZXN0IHByYWN0aWNlczIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIFEAAY7wUyBRAAGO8FSKsgUA9YD3ABeACQAQCYAdUBoAHVAaoBAzItMbgBDMgBAPgBAZgCAqAC4QGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFIRGha52kw5-SBwUxLjAuMaAH_AWyBwMyLTG4B9wBwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLqc5NUGIjAInQIm0DIe8igFDjKqIhQIetKOw1nGEfVOWh02_j4op1vIvVEkwi7rRgB_eihuDjEyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=concurrency+best+practices&sca_esv=75b852f910b8e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.902,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "concurrency best practices",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 502.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.902,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 491.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512689021"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8941,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for concurrency best practices",
+     "page_changed": null,
+     "latency_ms": 530.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512689021"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "concurrency best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512689021"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.9005,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing actual search results for 'concurrency best practices' (page only shows the search box with autocomplete suggestions, no results)",
+     "page_changed": null,
+     "latency_ms": 600.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512689021"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:35",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512689021"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-1f739b11f443cf33",
+   "source": "google",
+   "goal": "First search Google for ci/cd pipelines tutorial, then search Google for kafka tutorial.",
+   "fingerprint": 38654,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14968,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dci%252fcd%2bpipelines%2btutorial%26sca_e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dci%252Fcd%2Bpipelines%2Btutorial%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQns0kcnAOgjzcNfv3id5XAzkd8UaRQ%253A1790512762809%26source%3Dhp%26ei%3Deg65aouVMO6rur8P25G_yQ8%26iflsig%3DABILxe8AAAAAarkcipCuJMVipwfT9PywTg54GmFVrBim%26ved%3D0ahUKEwiLusTp446XAxXule4BHdvIL_kQ4dUDCDI%26uact%3D5%26oq%3Dci%252Fcd%2Bpipelines%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6IhhjaS9jZCBwaXBlbGluZXMgdHV0b3JpYWwyCBAAGBYYHhgKMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSOQHUA5YDnABeACQAQCYAeABoAHgAaoBAzItMbgBA8gBAPgBAZgCAqAC7AGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFSodKSisN83CSBwUxLjAuMaAHnAiyBwMyLTG4B-gBwgcDMi0yyAcHgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGP2c5NUGIjCnarFG8Fm6b76FoErz4cVILk_z2N3NnxOUyPOKGsiykhc7CFZQNzYCVTmaDbbYNFsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=ci%2Fcd+pipelines+tutorial&sca_esv=75b852f910b8e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9036,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "ci/cd pipelines tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 533.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512763151"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7995,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 604.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512763151"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-3fda6ca1cfc74506",
+   "source": "google",
+   "goal": "First search Google for how to debug flask, then search Google for ci/cd pipelines tutorial.",
+   "fingerprint": 38654,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14900,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2bflask%26sca_esv%3d75b",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Bflask%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvFufzdXK-19fEo0QDYyIk-iRINMw%253A1790512829998%26source%3Dhp%26ei%3DvQ65avbCO4nRkPIPyLLCgA8%26iflsig%3DABILxe8AAAAAarkczWUZ8f84CYWWVi8UTHyZdYH0ujds%26ved%3D0ahUKEwi2lcmJ5I6XAxWJKEQIHUiZEPAQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Bflask%26gs_lp%3DEgdnd3Mtd2l6IhJob3cgdG8gZGVidWcgZmxhc2syBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSLYIUA5YDnABeACQAQCYAeoBoAHqAaoBAzItMbgBA8gBAPgBAZgCAqAC9gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFLYwImtUgXZqSBwUxLjAuMaAHmgayBwMyLTG4B_IBwgcDMi0yyAcIgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMCd5NUGIjC_ODS0Si1GU4c7OwnWKyHkZePPvy82DWJvKu3uTe79dghkp2Fo_jucx3O_G4q6OPIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+flask&sca_esv=75b852f910b8e50f&hl=e"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8729,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug flask",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 568.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512830310"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8776,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 681.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512830310"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-a174d87421f04357",
+   "source": "google",
+   "goal": "First search Google for how to debug typescript, then search Google for vllm best practices.",
+   "fingerprint": 38654,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14622,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2btypescript%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Btypescript%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnv1m1tf09MgbmJRyvkeRDWwG6mQQw%253A1790512897075%26source%3Dhp%26ei%3DAQ-5aqukA_uwkPIPlpqjwQ4%26iflsig%3DABILxe8AAAAAarkdER76MH9-Pd3Www2YGxih2aF2SgvB%26ved%3D0ahUKEwjrqMep5I6XAxV7GEQIHRbNKOgQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Btypescript%26gs_lp%3DEgdnd3Mtd2l6Ihdob3cgdG8gZGVidWcgdHlwZXNjcmlwdDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjPB1AOWA5wAXgAkAEAmAHvAaAB7wGqAQMyLTG4AQPIAQD4AQGYAgKgAvcBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBTK-oytNDhFhkgcFMS4wLjGgB5AGsgcDMi0xuAfzAcIHBTAuMS4xyAcGgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIOe5NUGIjAr7x48hBircdm8rFX9Be6GoeeZdgA874ahKQEqr7t3Qe1h9ADWEuVx-Qe-eqzP-pwyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+typescript&sca_esv=75b852f910b8e50f"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8663,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug typescript",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 519.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512897291"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.876,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 579.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512897291"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f3b9162f9ae0f2cd",
+   "source": "google",
+   "goal": "First search Google for huggingface transformers performance optimization, then search Google for golang security vulnerabilities.",
+   "fingerprint": 38654,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14702,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhuggingface%2btransformers%2bperformance",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhuggingface%2Btransformers%2Bperformance%2Boptimization%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvvlwAXGBLSqwk2lSomuI9cD1bBHg%253A1790512963873%26source%3Dhp%26ei%3DQw-5avXwM8nUkPIPhIzg-Qk%26iflsig%3DABILxe8AAAAAarkdU1tOIP2xwlNxJ8H6koT6520PGeoK%26ved%3D0ahUKEwi1nrTJ5I6XAxVJKkQIHQQGOJ8Q4dUDCDI%26uact%3D5%26oq%3Dhuggingface%2Btransformers%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IjFodWdnaW5nZmFjZSB0cmFuc2Zvcm1lcnMgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FSOQHUA9YD3ABeACQAQCYAecBoAHnAaoBAzItMbgBA8gBAPgBAZgCAqAC9QGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFVtyHNP-MkveSBwUxLjAuMaAHigeyBwMyLTG4B_ABwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMae5NUGIjBXZCL08A616bwLaUR8lcley5jY3G08y6FZTrKTdqur5IyTkXsa5agT28Dzx1nK5-kyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=huggingface+transformers+performance+optimizatio"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9026,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "huggingface transformers performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 530.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512964099"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9059,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 598.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790512964099"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-2c8f7dc3aa869632",
+   "source": "google",
+   "goal": "First search Google for java release notes, then search Google for how to debug elixir.",
+   "fingerprint": 38654,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14737,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dhow%2bto%2bdebug%2belixir%26sca_esv%3d75",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dhow%2Bto%2Bdebug%2Belixir%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvzNDIYu3ZncM9wbMp9YzbQyjQofA%253A1790513030760%26source%3Dhp%26ei%3Dhg-5apzJLPjIkPIP_tvG2Ao%26iflsig%3DABILxe8AAAAAarkdlh6KricD6ujnwKLsp6MOCjz8hWp-%26ved%3D0ahUKEwicpKbp5I6XAxV4JEQIHf6tEasQ4dUDCDI%26uact%3D5%26oq%3Dhow%2Bto%2Bdebug%2Belixir%26gs_lp%3DEgdnd3Mtd2l6IhNob3cgdG8gZGVidWcgZWxpeGlyMgYQABgWGB4yBRAAGO8FMgUQABjvBTIFEAAY7wVIiwdQDlgOcAF4AJABAJgB6QGgAekBqgEDMi0xuAEDyAEA-AEBmAICoALzAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QUHuIPc5yrImJIHBTEuMC4xoAf3AbIHAzItMbgH7wHCBwMyLTLIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGImf5NUGIjAC1GcQMg2BtNp9Ec3RpjxhGVReA8-pUOq7NKtPN-7IYVbPqiTu1i0MQ130k5c4nLoyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=how+to+debug+elixir&sca_esv=75b852f910b8e50f&hl="
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8942,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "how to debug elixir",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 542.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513030999"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8826,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 512.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513030999"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-c92fe9c7bd3dee8a",
+   "source": "google",
+   "goal": "Search Google for profiling performance optimization and open the results.",
+   "fingerprint": 38654,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 27010,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dprofiling%2bperformance%2boptimization%2",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dprofiling%2Bperformance%2Boptimization%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnu8FjwZB3181Frjd-HMcDQeB629kw%253A1790513097745%26source%3Dhp%26ei%3DyQ-5aq6tJ_Squr8PwYeP2Qc%26iflsig%3DABILxe8AAAAAarkd2eXEW3r2nhh7IQ8ZbTzAxHOcSKMN%26ved%3D0ahUKEwjutZqJ5Y6XAxV0le4BHcHDI3sQ4dUDCDI%26oq%3Dprofiling%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6IiJwcm9maWxpbmcgcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIFEAAY7wVI2UBQDlgOcAF4AJABAJgB3gGgAd4BqgEDMi0xuAEMyAEA-AEBmAICoALoAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QXH5ix-Do9lFJIHBTEuMC4xoAfkA7IHAzItMbgH5AHCBwMyLTLIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNif5NUGIjDRCvXSg_6rzdL1vJIEjkexdgTK0GtTB1_nutMPqo4FOk6YCOE9Vs6AvJWvVCdhnw0yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=profiling+performance+optimization&sca_esv=75b85"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.4017,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 511.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513097973"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.7878,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for 'profiling performance optimization' are not visible",
+     "page_changed": null,
+     "latency_ms": 495.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513097973"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "profiling performance optimization",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513097973"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.9006,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results page for 'profiling performance optimization'",
+     "page_changed": null,
+     "latency_ms": 612.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513097973"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:31",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513097973"
+    }
+   ]
+  }
+ ]
+}

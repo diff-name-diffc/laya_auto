@@ -1,0 +1,942 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 53226,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T18:50:07+0800",
+  "n_tasks": 8,
+  "success": 2,
+  "success_rate": 0.25,
+  "verified": 2,
+  "verified_rate": 0.25,
+  "found_but_not_stopped": 0,
+  "mean_steps": 6.0,
+  "mean_duration_ms": 17584,
+  "decision_latency_ms": {
+   "p50": 593.6,
+   "p95": 884.5
+  },
+  "step_outcomes": {
+   "stale": 4,
+   "refused-empty-enter": 2,
+   "executed": 35,
+   "done-rejected": 4,
+   "done": 2,
+   "page changed since the decision (url or marker mismatch)": 1
+  },
+  "low_confidence_steps": 7,
+  "by_source": {
+   "google": {
+    "n": 8,
+    "success": 2,
+    "success_rate": 0.25,
+    "verified": 2,
+    "verified_rate": 0.25,
+    "mean_steps": 6.0
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-9dda530012c9ce17",
+   "source": "google",
+   "goal": "Search Google for design patterns cheat sheet and open the results.",
+   "fingerprint": 53226,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 7,
+   "total_ms": 21220,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddesign%2bpatterns%2bcheat%2bsheet%26sca_",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddesign%2Bpatterns%2Bcheat%2Bsheet%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvAZsiDQhCmVbNAiiS684Kj7jDmbw%253A1790505790017%26source%3Dhp%26ei%3DPfO4avDuPOauur8Pz7WvyQ8%26iflsig%3DABILxe8AAAAAarkBTsgzqKqZ2Yn0574z0i8B63E9USum%26oq%3Ddesign%2Bpatterns%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhtkZXNpZ24gcGF0dGVybnMgY2hlYXQgc2hlZXQqBQgAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSP8vUNUnWNUncAR4AJABAJgBxwGgAccBqgEDMC4xuAEByAEA-AEBmAIFoALVAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAMD8QUMy4JZhPToGZIHBTQuMC4xoAeFBrIHAzItMbgHzAHCBwMwLjXIBwmACAE%26sclient%3Dgws-wiz%26sei%3DR_O4aoTdAveT8L0P5NrzkAo&hl=en&q=EgQm0XtnGMfm49UGIjAoiK1cUbVh5Aze_JzX9UCk4lbhV86vXyf5E2VGtdQN5fRL2LkdQeG05I0zxlSiEBIyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=design+patterns+cheat+sheet&sca_esv=54dc793dbd09"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9025,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "design patterns cheat sheet",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 487.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9026,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 474.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505791324"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.82,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 496.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505791324"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.844,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 593.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505791324"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8841,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 576.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505791324"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "design patterns cheat sheet",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505791324"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8278,
+     "target": "12",
+     "target_label": "design patterns cheat sheet",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 637.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505791324"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-1a2cbb1eebdeb7b7",
+   "source": "google",
+   "goal": "Search Google for kotlin best practices and open the results.",
+   "fingerprint": 53226,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 8,
+   "total_ms": 12395,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=kotlin+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnsrq2vuuodq6vooar5",
+     "bot_challenge": false,
+     "group0": [
+      "kotlin"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=kotlin+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsRQ2vuUodQ6vooaR5Rndfm84Rpnw%3A1790505863613&source=hp&ei=h_O4auiHJMXJkPIPmoOryAg&iflsig=ABILxe8AAAAAarkBl_3-waWoRkuMT_skm8E9YK8oMJo0&ved=0ahUKEwio596Pyo6XAxXFJEQIHZrBCokQ4dUDCDI&oq=kotlin+best+practices&gs_lp=Egdnd3Mtd2l6IhVrb3RsaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSK9GUPgjWPgjcAJ4AJABAJgBzwGgAc8BqgEDMi0xuAEMyAEA-AEBmAIDoALXAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QUGVuFHOQ85mpIHBTIuMC4xoAfzBbIHAzItMbgH0AHCBwUwLjIuMcgHBYAIAQ&sclient=gws-wiz",
+    "final_title": "kotlin best practices - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8959,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kotlin best practices",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 465.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9051,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 680.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505864928"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8755,
+     "target": "10",
+     "target_label": "Open Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 488.4,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505864928"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.888,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search query for 'kotlin best practices' in the search box; search-results page listing results for 'kotlin best practices'",
+     "page_changed": null,
+     "latency_ms": 588.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505864928"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "kotlin best practices",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505864928"
+    },
+    {
+     "step": 5,
+     "operation": "DONE",
+     "confidence": 0.9206,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for 'kotlin best practices' (only autocomplete suggestions shown on the Google homepage; search has not been submitted)",
+     "page_changed": null,
+     "latency_ms": 890.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505864928"
+    },
+    {
+     "step": 5,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:32",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505864928"
+    },
+    {
+     "step": 6,
+     "operation": "DONE",
+     "confidence": 0.8872,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 661.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=kotlin+best+practices&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsRQ2vuUodQ6vooaR5Rndfm84Rpnw%3A1790505863613&source=hp&ei=h_O4auiHJMXJkPIPmoOryAg&iflsig=ABILxe8AAAAAarkBl_3-waWoRkuMT_skm8E9YK8oMJo0&ved=0ahUKEwio596Pyo6XAxXFJEQIHZrBCokQ4dUDCDI&oq=kotlin+best+practices&gs_lp=Egdnd3Mtd2l6IhVrb3RsaW4gYmVzdCBwcmFjdGljZXMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSK9GUPgjWPgjcAJ4AJABAJgBzwGgAc8BqgEDMi0xuAEMyAEA-AEBmAIDoALXAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QUGVuFHOQ85mpIHBTIuMC4xoAfzBbIHAzItMbgH0AHCBwUwLjIuMcgHBYAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-2476ac09865336ca",
+   "source": "google",
+   "goal": "First search Google for terraform migration guide, then search Google for elixir cheat sheet.",
+   "fingerprint": 53226,
+   "status": "done",
+   "verified": true,
+   "success": true,
+   "steps": 9,
+   "total_ms": 12329,
+   "error": null,
+   "verification": {
+    "passed": true,
+    "reason": "ok",
+    "checks": {
+     "url": "https://www.google.com/search?q=elixir+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=appeqnsrgrss7qdof1hqfz5mvt",
+     "bot_challenge": false,
+     "group0": [
+      "elixir"
+     ],
+     "forbidden_found": []
+    },
+    "final_url": "https://www.google.com/search?q=elixir+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsRgRsS7qdOF1hQfZ5MVtgpkej2LQ%3A1790505886179&ei=nvO4apfFCvuwkPIPlpqjwQ4&biw=1120&bih=780&oq=elixir+cheat+sheet&gs_lp=Egxnd3Mtd2l6LXNlcnAiEmVsaXhpciBjaGVhdCBzaGVldCoFCAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIIEAAYFhgeGAoyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IoQhQC1gLcAF4AZABAJgB1wGgAdcBqgEDMi0xuAEByAEA-AEBmAICoALdAcICChAAGEcY1gQYsAOYAwCIBgGQBgSSBwUxLjAuMaAH1gayBwMyLTG4B9sBwgcDMC4yyAcDgAgB&sclient=gws-wiz-serp",
+    "final_title": "elixir cheat sheet - Google Search"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9018,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "terraform migration guide",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 521.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505883685"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9036,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 564.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505883685"
+    },
+    {
+     "step": 3,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.2887,
+     "target": "2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "terraform migration guide",
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 602.7,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=terraform+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvgyOnlesBwH2PlmJLUC_VldqNJHg%3A1790505883408&source=hp&ei=m_O4au_YF5vMkPIPmovTgQk&iflsig=ABILxe8AAAAAarkBq4cnev1mew8jhe2p7WsVOMg9Geu8&ved=0ahUKEwivkpeZyo6XAxUbJkQIHZrFNJAQ4dUDCDI&uact=5&oq=terraform+migration+guide&gs_lp=Egdnd3Mtd2l6Ihl0ZXJyYWZvcm0gbWlncmF0aW9uIGd1aWRlMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUivB1ALWAtwAXgAkAEAmAHaAaAB2gGqAQMyLTG4AQPIAQD4AQGYAgKgAt4BqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBdy2EgrrqTXckgcFMS4wLjGgB_UDsgcDMi0xuAfcAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8646,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 799.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=terraform+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvgyOnlesBwH2PlmJLUC_VldqNJHg%3A1790505883408&source=hp&ei=m_O4au_YF5vMkPIPmovTgQk&iflsig=ABILxe8AAAAAarkBq4cnev1mew8jhe2p7WsVOMg9Geu8&ved=0ahUKEwivkpeZyo6XAxUbJkQIHZrFNJAQ4dUDCDI&uact=5&oq=terraform+migration+guide&gs_lp=Egdnd3Mtd2l6Ihl0ZXJyYWZvcm0gbWlncmF0aW9uIGd1aWRlMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUivB1ALWAtwAXgAkAEAmAHaAaAB2gGqAQMyLTG4AQPIAQD4AQGYAgKgAt4BqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBdy2EgrrqTXckgcFMS4wLjGgB_UDsgcDMi0xuAfcAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8664,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 592.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=terraform+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvgyOnlesBwH2PlmJLUC_VldqNJHg%3A1790505883408&source=hp&ei=m_O4au_YF5vMkPIPmovTgQk&iflsig=ABILxe8AAAAAarkBq4cnev1mew8jhe2p7WsVOMg9Geu8&ved=0ahUKEwivkpeZyo6XAxUbJkQIHZrFNJAQ4dUDCDI&uact=5&oq=terraform+migration+guide&gs_lp=Egdnd3Mtd2l6Ihl0ZXJyYWZvcm0gbWlncmF0aW9uIGd1aWRlMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUivB1ALWAtwAXgAkAEAmAHaAaAB2gGqAQMyLTG4AQPIAQD4AQGYAgKgAt4BqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBdy2EgrrqTXckgcFMS4wLjGgB_UDsgcDMi0xuAfcAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8664,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 604.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=terraform+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvgyOnlesBwH2PlmJLUC_VldqNJHg%3A1790505883408&source=hp&ei=m_O4au_YF5vMkPIPmovTgQk&iflsig=ABILxe8AAAAAarkBq4cnev1mew8jhe2p7WsVOMg9Geu8&ved=0ahUKEwivkpeZyo6XAxUbJkQIHZrFNJAQ4dUDCDI&uact=5&oq=terraform+migration+guide&gs_lp=Egdnd3Mtd2l6Ihl0ZXJyYWZvcm0gbWlncmF0aW9uIGd1aWRlMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUivB1ALWAtwAXgAkAEAmAHaAaAB2gGqAQMyLTG4AQPIAQD4AQGYAgKgAt4BqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBdy2EgrrqTXckgcFMS4wLjGgB_UDsgcDMi0xuAfcAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "elixir cheat sheet",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=terraform+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvgyOnlesBwH2PlmJLUC_VldqNJHg%3A1790505883408&source=hp&ei=m_O4au_YF5vMkPIPmovTgQk&iflsig=ABILxe8AAAAAarkBq4cnev1mew8jhe2p7WsVOMg9Geu8&ved=0ahUKEwivkpeZyo6XAxUbJkQIHZrFNJAQ4dUDCDI&uact=5&oq=terraform+migration+guide&gs_lp=Egdnd3Mtd2l6Ihl0ZXJyYWZvcm0gbWlncmF0aW9uIGd1aWRlMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUivB1ALWAtwAXgAkAEAmAHaAaAB2gGqAQMyLTG4AQPIAQD4AQGYAgKgAt4BqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBdy2EgrrqTXckgcFMS4wLjGgB_UDsgcDMi0xuAfcAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.8282,
+     "target": "6",
+     "target_label": "elixir cheat sheet",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 628.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=terraform+migration+guide&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnvgyOnlesBwH2PlmJLUC_VldqNJHg%3A1790505883408&source=hp&ei=m_O4au_YF5vMkPIPmovTgQk&iflsig=ABILxe8AAAAAarkBq4cnev1mew8jhe2p7WsVOMg9Geu8&ved=0ahUKEwivkpeZyo6XAxUbJkQIHZrFNJAQ4dUDCDI&uact=5&oq=terraform+migration+guide&gs_lp=Egdnd3Mtd2l6Ihl0ZXJyYWZvcm0gbWlncmF0aW9uIGd1aWRlMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBUivB1ALWAtwAXgAkAEAmAHaAaAB2gGqAQMyLTG4AQPIAQD4AQGYAgKgAt4BqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwLxBdy2EgrrqTXckgcFMS4wLjGgB_UDsgcDMi0xuAfcAcIHAzAuMsgHA4AIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.8922,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 618.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=elixir+cheat+sheet&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnsRgRsS7qdOF1hQfZ5MVtgpkej2LQ%3A1790505886179&ei=nvO4apfFCvuwkPIPlpqjwQ4&biw=1120&bih=780&oq=elixir+cheat+sheet&gs_lp=Egxnd3Mtd2l6LXNlcnAiEmVsaXhpciBjaGVhdCBzaGVldCoFCAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIIEAAYFhgeGAoyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IoQhQC1gLcAF4AZABAJgB1wGgAdcBqgEDMi0xuAEByAEA-AEBmAICoALdAcICChAAGEcY1gQYsAOYAwCIBgGQBgSSBwUxLjAuMaAH1gayBwMyLTG4B9sBwgcDMC4yyAcDgAgB&sclient=gws-wiz-serp"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-6c05da664d17519c",
+   "source": "google",
+   "goal": "First search Google for svelte interview questions, then search Google for code review interview questions.",
+   "fingerprint": 53226,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 16,
+   "total_ms": 35323,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dcode%2breview%2binterview%2bquestions%26",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dcode%2Breview%2Binterview%2Bquestions%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntX_f80qo-ECCwpzepQzTrT4K_PRQ%253A1790505905768%26ei%3DsfO4auu7LqrCkPIPxoTt0Qs%26biw%3D1120%26bih%3D780%26oq%3Dcode%2Breview%2Binterview%2Bquestions%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiH2NvZGUgcmV2aWV3IGludGVydmlldyBxdWVzdGlvbnMqBQgAGIAEMgUQABiABDIFEAAYgAQyCxAAGIAEGIoFGJECMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IkghQDFgMcAF4AZABAJgB0QGgAdEBqgEDMi0xuAEByAEA-AEBmAICoALbAcICChAAGEcY1gQYsAOYAwCIBgGQBgiSBwUxLjAuMaAHpwayBwMyLTG4B9gBwgcFMC4xLjHIBwaACAE%26sclient%3Dgws-wiz-serp&hl=en&q=EgQm0XtnGMbn49UGIjDVrpR7NQYSbwpS4_LfMgR2GBTVE_NF4ylBqHtdfipgwY_YNbr5ow0rGoYLNTwMZ3EyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=code+review+interview+questions&sca_esv=54dc793d"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.9013,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "svelte interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 501.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505903151"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8979,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 611.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505903151"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.791,
+     "target": "3",
+     "target_label": "Clear",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 566.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=svelte+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnulgjJuBz2OUFb5J_-7m3VFoky1-A%3A1790505903019&source=hp&ei=rvO4aoT4POL2kPIPiaGa8QI&iflsig=ABILxe8AAAAAarkBv8ylPxmPgb-92l3VvN2colw7ZMgt&ved=0ahUKEwiEh8Siyo6XAxViO0QIHYmQJi4Q4dUDCDI&uact=5&oq=svelte+interview+questions&gs_lp=Egdnd3Mtd2l6IhpzdmVsdGUgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIEMgUQABjvBUjpB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBcsn8q5k2gZfkgcFMS4wLjGgB_oDsgcDMi0xuAfhAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "DONE",
+     "confidence": 0.2028,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for code review interview questions",
+     "page_changed": null,
+     "latency_ms": 953.7,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=svelte+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnulgjJuBz2OUFb5J_-7m3VFoky1-A%3A1790505903019&source=hp&ei=rvO4aoT4POL2kPIPiaGa8QI&iflsig=ABILxe8AAAAAarkBv8ylPxmPgb-92l3VvN2colw7ZMgt&ved=0ahUKEwiEh8Siyo6XAxViO0QIHYmQJi4Q4dUDCDI&uact=5&oq=svelte+interview+questions&gs_lp=Egdnd3Mtd2l6IhpzdmVsdGUgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIEMgUQABjvBUjpB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBcsn8q5k2gZfkgcFMS4wLjGgB_oDsgcDMi0xuAfhAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 4,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "code review interview questions",
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=svelte+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnulgjJuBz2OUFb5J_-7m3VFoky1-A%3A1790505903019&source=hp&ei=rvO4aoT4POL2kPIPiaGa8QI&iflsig=ABILxe8AAAAAarkBv8ylPxmPgb-92l3VvN2colw7ZMgt&ved=0ahUKEwiEh8Siyo6XAxViO0QIHYmQJi4Q4dUDCDI&uact=5&oq=svelte+interview+questions&gs_lp=Egdnd3Mtd2l6IhpzdmVsdGUgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIEMgUQABjvBUjpB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBcsn8q5k2gZfkgcFMS4wLjGgB_oDsgcDMi0xuAfhAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.2157,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 640.0,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=svelte+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnulgjJuBz2OUFb5J_-7m3VFoky1-A%3A1790505903019&source=hp&ei=rvO4aoT4POL2kPIPiaGa8QI&iflsig=ABILxe8AAAAAarkBv8ylPxmPgb-92l3VvN2colw7ZMgt&ved=0ahUKEwiEh8Siyo6XAxViO0QIHYmQJi4Q4dUDCDI&uact=5&oq=svelte+interview+questions&gs_lp=Egdnd3Mtd2l6IhpzdmVsdGUgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIEMgUQABjvBUjpB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBcsn8q5k2gZfkgcFMS4wLjGgB_oDsgcDMi0xuAfhAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 6,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7493,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 599.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=svelte+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnulgjJuBz2OUFb5J_-7m3VFoky1-A%3A1790505903019&source=hp&ei=rvO4aoT4POL2kPIPiaGa8QI&iflsig=ABILxe8AAAAAarkBv8ylPxmPgb-92l3VvN2colw7ZMgt&ved=0ahUKEwiEh8Siyo6XAxViO0QIHYmQJi4Q4dUDCDI&uact=5&oq=svelte+interview+questions&gs_lp=Egdnd3Mtd2l6IhpzdmVsdGUgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIEMgUQABjvBUjpB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBcsn8q5k2gZfkgcFMS4wLjGgB_oDsgcDMi0xuAfhAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 7,
+     "operation": "CLICK",
+     "confidence": 0.2157,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 604.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=svelte+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnulgjJuBz2OUFb5J_-7m3VFoky1-A%3A1790505903019&source=hp&ei=rvO4aoT4POL2kPIPiaGa8QI&iflsig=ABILxe8AAAAAarkBv8ylPxmPgb-92l3VvN2colw7ZMgt&ved=0ahUKEwiEh8Siyo6XAxViO0QIHYmQJi4Q4dUDCDI&uact=5&oq=svelte+interview+questions&gs_lp=Egdnd3Mtd2l6IhpzdmVsdGUgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIEMgUQABjvBUjpB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBcsn8q5k2gZfkgcFMS4wLjGgB_oDsgcDMi0xuAfhAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 8,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7493,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 569.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=svelte+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnulgjJuBz2OUFb5J_-7m3VFoky1-A%3A1790505903019&source=hp&ei=rvO4aoT4POL2kPIPiaGa8QI&iflsig=ABILxe8AAAAAarkBv8ylPxmPgb-92l3VvN2colw7ZMgt&ved=0ahUKEwiEh8Siyo6XAxViO0QIHYmQJi4Q4dUDCDI&uact=5&oq=svelte+interview+questions&gs_lp=Egdnd3Mtd2l6IhpzdmVsdGUgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIEMgUQABjvBUjpB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBcsn8q5k2gZfkgcFMS4wLjGgB_oDsgcDMi0xuAfhAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 9,
+     "operation": "CLICK",
+     "confidence": 0.2157,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 595.3,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=svelte+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnulgjJuBz2OUFb5J_-7m3VFoky1-A%3A1790505903019&source=hp&ei=rvO4aoT4POL2kPIPiaGa8QI&iflsig=ABILxe8AAAAAarkBv8ylPxmPgb-92l3VvN2colw7ZMgt&ved=0ahUKEwiEh8Siyo6XAxViO0QIHYmQJi4Q4dUDCDI&uact=5&oq=svelte+interview+questions&gs_lp=Egdnd3Mtd2l6IhpzdmVsdGUgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIEMgUQABjvBUjpB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBcsn8q5k2gZfkgcFMS4wLjGgB_oDsgcDMi0xuAfhAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 10,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.7493,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 598.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=svelte+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnulgjJuBz2OUFb5J_-7m3VFoky1-A%3A1790505903019&source=hp&ei=rvO4aoT4POL2kPIPiaGa8QI&iflsig=ABILxe8AAAAAarkBv8ylPxmPgb-92l3VvN2colw7ZMgt&ved=0ahUKEwiEh8Siyo6XAxViO0QIHYmQJi4Q4dUDCDI&uact=5&oq=svelte+interview+questions&gs_lp=Egdnd3Mtd2l6IhpzdmVsdGUgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIEMgUQABjvBUjpB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBcsn8q5k2gZfkgcFMS4wLjGgB_oDsgcDMi0xuAfhAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 11,
+     "operation": "CLICK",
+     "confidence": 0.825,
+     "target": "16",
+     "target_label": "More filters",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 766.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=svelte+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnulgjJuBz2OUFb5J_-7m3VFoky1-A%3A1790505903019&source=hp&ei=rvO4aoT4POL2kPIPiaGa8QI&iflsig=ABILxe8AAAAAarkBv8ylPxmPgb-92l3VvN2colw7ZMgt&ved=0ahUKEwiEh8Siyo6XAxViO0QIHYmQJi4Q4dUDCDI&uact=5&oq=svelte+interview+questions&gs_lp=Egdnd3Mtd2l6IhpzdmVsdGUgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIEMgUQABjvBUjpB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBcsn8q5k2gZfkgcFMS4wLjGgB_oDsgcDMi0xuAfhAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 12,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.2316,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 884.5,
+     "low_confidence": true,
+     "url": "https://www.google.com/search?q=svelte+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnulgjJuBz2OUFb5J_-7m3VFoky1-A%3A1790505903019&source=hp&ei=rvO4aoT4POL2kPIPiaGa8QI&iflsig=ABILxe8AAAAAarkBv8ylPxmPgb-92l3VvN2colw7ZMgt&ved=0ahUKEwiEh8Siyo6XAxViO0QIHYmQJi4Q4dUDCDI&uact=5&oq=svelte+interview+questions&gs_lp=Egdnd3Mtd2l6IhpzdmVsdGUgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIEMgUQABjvBUjpB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBcsn8q5k2gZfkgcFMS4wLjGgB_oDsgcDMi0xuAfhAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 13,
+     "operation": "DONE",
+     "confidence": 0.8775,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing second Google search for code review interview questions and its results",
+     "page_changed": null,
+     "latency_ms": 591.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=svelte+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnulgjJuBz2OUFb5J_-7m3VFoky1-A%3A1790505903019&source=hp&ei=rvO4aoT4POL2kPIPiaGa8QI&iflsig=ABILxe8AAAAAarkBv8ylPxmPgb-92l3VvN2colw7ZMgt&ved=0ahUKEwiEh8Siyo6XAxViO0QIHYmQJi4Q4dUDCDI&uact=5&oq=svelte+interview+questions&gs_lp=Egdnd3Mtd2l6IhpzdmVsdGUgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIEMgUQABjvBUjpB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBcsn8q5k2gZfkgcFMS4wLjGgB_oDsgcDMi0xuAfhAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 13,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:2",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "code review interview questions",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=svelte+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnulgjJuBz2OUFb5J_-7m3VFoky1-A%3A1790505903019&source=hp&ei=rvO4aoT4POL2kPIPiaGa8QI&iflsig=ABILxe8AAAAAarkBv8ylPxmPgb-92l3VvN2colw7ZMgt&ved=0ahUKEwiEh8Siyo6XAxViO0QIHYmQJi4Q4dUDCDI&uact=5&oq=svelte+interview+questions&gs_lp=Egdnd3Mtd2l6IhpzdmVsdGUgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIEMgUQABjvBUjpB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBcsn8q5k2gZfkgcFMS4wLjGgB_oDsgcDMi0xuAfhAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    },
+    {
+     "step": 14,
+     "operation": "CLICK",
+     "confidence": 0.3576,
+     "target": "6",
+     "target_label": "code review interview questions",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 602.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/search?q=svelte+interview+questions&sca_esv=54dc793dbd0950c5&hl=en&gl=us&sxsrf=APpeQnulgjJuBz2OUFb5J_-7m3VFoky1-A%3A1790505903019&source=hp&ei=rvO4aoT4POL2kPIPiaGa8QI&iflsig=ABILxe8AAAAAarkBv8ylPxmPgb-92l3VvN2colw7ZMgt&ved=0ahUKEwiEh8Siyo6XAxViO0QIHYmQJi4Q4dUDCDI&uact=5&oq=svelte+interview+questions&gs_lp=Egdnd3Mtd2l6IhpzdmVsdGUgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQABjvBTIIEAAYgAQYogQyCBAAGIkFGKIEMgUQABjvBUjpB1AQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuYBqAIKwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBcsn8q5k2gZfkgcFMS4wLjGgB_oDsgcDMi0xuAfhAcIHAzItMsgHBoAIAQ&sclient=gws-wiz"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-801dafaec544e962",
+   "source": "google",
+   "goal": "First search Google for laravel open source alternatives, then search Google for scala best practices.",
+   "fingerprint": 53226,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14889,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dlaravel%2bopen%2bsource%2bapps%26sca_esv",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlaravel%2Bopen%2Bsource%2Bapps%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsXjEnL6nZ-CrwAbR4k8hyxQN924w%253A1790505990558%26source%3Dhp%26ei%3DBvS4aoW8INufkPIPp57R4As%26iflsig%3DABILxe8AAAAAarkCFmdrklgp5onlu8Pa5EUzti3-vx_H%26oq%3Dlaravel%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6IiBsYXJhdmVsIG9wZW4gc291cmNlIGFsdGVybmF0aXZlcyoFCAgY7wUyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FSLMJUA9YD3ABeACQAQCYAeQBoAHkAaoBAzItMbgBAcgBAPgBAZgCAqAC6wGoAgrCAgoQLhgDGI8BGOoCwgIKEAAYAxiPARjqApgDBPEFdjOhhC5KyL6SBwUxLjAuMaAH9AayBwMyLTG4B-cBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIno49UGIjASuD116ikFU98YvchTXCLFk37rqtk55POgJIk83Zdm1hqUGgmd0IRlDNwkpRd10zYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=laravel+open+source+apps&sca_esv=54dc793dbd0950c"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.91,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "laravel open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 489.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505990680"
+    },
+    {
+     "step": 2,
+     "operation": "CLICK",
+     "confidence": 0.3454,
+     "target": "20",
+     "target_label": "laravel open source apps",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 783.2,
+     "low_confidence": true,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790505990680"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-13efa7db953c8401",
+   "source": "google",
+   "goal": "Search Google for model quantization performance optimization and open the results.",
+   "fingerprint": 53226,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 15143,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmodel%2bquantization%2bperformance%2bopt",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmodel%2Bquantization%2Bperformance%2Boptimization%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsvj7zBWALMFIb7zjxiGAZegE8YxQ%253A1790506057655%26source%3Dhp%26ei%3DSfS4avPcJu3NkPIP5JbT4Q8%26iflsig%3DABILxe8AAAAAarkCWVPwzJ6s_SPl3h_p36C1J-LOb8ZS%26ved%3D0ahUKEwizpaLsyo6XAxXtJkQIHWTLNPwQ4dUDCDI%26uact%3D5%26oq%3Dmodel%2Bquantization%2Bperformance%2Boptimization%26gs_lp%3DEgdnd3Mtd2l6Iittb2RlbCBxdWFudGl6YXRpb24gcGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uMgUQIRigATIFECEYoAEyBRAhGJ8FSN0HUA9YD3ABeACQAQCYAeMBoAHjAaoBAzItMbgBA8gBAPgBAZgCAqAC6gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDBPEFVQ2uFA6sNuKSBwUxLjAuMaAH0wOyBwMyLTG4B-YBwgcFMS4wLjHIBwOACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMzo49UGIjBCdP8poJ_xivmhqx3W6jNP5abJ6hseBiVYZuwKW0m5bfR8vy6rLqFF5D7F7oiyjigyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=model+quantization+performance+optimization&sca_"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8969,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization performance optimization",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 853.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506057784"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.894,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 614.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506057784"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-769c1425662b63ce",
+   "source": "google",
+   "goal": "Search Google for swift interview questions and open the results.",
+   "fingerprint": 53226,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14645,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dswift%2binterview%2bquestions%26sca_esv%",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dswift%2Binterview%2Bquestions%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntUxERrmZbePu-H3pdWS8NIJmYYVw%253A1790506125011%26source%3Dhp%26ei%3DjPS4atPOPLPAkPIP49ajiQ0%26iflsig%3DABILxe8AAAAAarkCnZhL9Y_AbvJuSdPka_3PgnRj9TGo%26ved%3D0ahUKEwjTxLGMy46XAxUzIEQIHWPrKNEQ4dUDCDI%26uact%3D5%26oq%3Dswift%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6Ihlzd2lmdCBpbnRlcnZpZXcgcXVlc3Rpb25zMgUQABiABDIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjdB1ARWBFwAXgAkAEAmAHUAaAB1AGqAQMyLTG4AQPIAQD4AQGYAgKgAt8BqAIKwgIKEC4YAxiPARjqAsICChAAGAMYjwEY6gKYAwXxBUXDwgSWyc4skgcFMS4wLjGgB7kGsgcDMi0xuAfaAcIHAzItMsgHB4AIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGI_p49UGIjChx3pxPpeZ7zlD2CT-QpSOPQ0qGX2Oiw_KlZjVe4IZuq_vHz9dxA4ZzkIiQplc26QyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=swift+interview+questions&sca_esv=54dc793dbd0950"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.4938,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "swift interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 495.6,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506125231"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8656,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 592.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506125231"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-ed8024948cec2b6a",
+   "source": "google",
+   "goal": "First search Google for zig release notes, then search Google for tensorflow migration guide.",
+   "fingerprint": 53226,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14727,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dzig%2brelease%2bnotes%26sca_esv%3d54dc79",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dzig%2Brelease%2Bnotes%26sca_esv%3D54dc793dbd0950c5%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQntoP7vpP3HzJMcgwvnDBQ-JlLhQ2g%253A1790506191835%26source%3Dhp%26ei%3Dz_S4av3MMaLFkPIP2tPHqQQ%26iflsig%3DABILxe8AAAAAarkC37KxcuI5-AIpNtv1FAbSHW_zUwXw%26ved%3D0ahUKEwi98J-sy46XAxWiIkQIHdrpMUUQ4dUDCDI%26uact%3D5%26oq%3Dzig%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhF6aWcgcmVsZWFzZSBub3RlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I9AdQD1gPcAF4AJABAJgB0AGgAdABqgEDMi0xuAEDyAEA-AEBmAICoALcAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAhYQABiABBiKBRhDGLQHGOcGGOoCGLQCwgIKEAAYAxiPARjqAsICChAuGAMYjwEY6gKYAwTxBRTlG5JxqkRhkgcFMS4wLjGgB_sEsgcDMi0xuAfXAcIHAzItMsgHCIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNLp49UGIjCcvrql_oKF3fuFBHVWlRlaSS-nkah7OFk-4OxGmQqBFHXl0jmU93tZFdpE-lWyCg8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=zig+release+notes&sca_esv=54dc793dbd0950c5&hl=en"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8733,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "zig release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 581.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506191964"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8913,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 617.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790506191964"
+    }
+   ]
+  }
+ ]
+}

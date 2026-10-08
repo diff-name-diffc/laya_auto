@@ -1,0 +1,92 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "humanize": true,
+  "headless": true,
+  "fingerprint": "per-task-stable",
+  "max_steps": 25,
+  "delay": 0.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "router",
+   "pool_size": 1,
+   "models": [
+    "english",
+    "multilingual",
+    "typed-decisions"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T02:29:15+0800",
+  "n_tasks": 1,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 1.0,
+  "mean_duration_ms": 540,
+  "decision_latency_ms": {
+   "p50": 530.4,
+   "p95": 530.4
+  },
+  "step_outcomes": {
+   "done": 1
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "google": {
+    "n": 1,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 1.0
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "google-ai-openai",
+   "source": "google",
+   "goal": "Search Google for the latest OpenAI news and open the results.",
+   "fingerprint": 66185,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 1,
+   "total_ms": 540,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['openai']]",
+    "checks": {
+     "url": "https://www.google.com/",
+     "bot_challenge": false,
+     "group0": []
+    }
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "DONE",
+     "confidence": 0.2635,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 530.4,
+     "low_confidence": true,
+     "url": "https://www.google.com/"
+    }
+   ]
+  }
+ ]
+}

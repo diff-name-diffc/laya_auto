@@ -1,0 +1,663 @@
+{
+ "meta": {
+  "base_url": "http://10.144.144.2:8000",
+  "browser_version": "145.0.7632.109.2",
+  "session": "warm-session",
+  "fingerprint": 87248,
+  "humanize": true,
+  "human_preset": "careful",
+  "geoip": true,
+  "headless": false,
+  "challenge_wait_s": 6.0,
+  "observe_filters": {
+   "filter_occluded": true,
+   "filter_chrome": false
+  },
+  "done_gate": {
+   "model": "o-deepseek-v4-flash",
+   "base_url": "http://10.144.144.2:8317/v1"
+  },
+  "max_steps": 25,
+  "delay": 6.0,
+  "backend": {
+   "status": "ok",
+   "loaded": true,
+   "backend": "laya",
+   "device": "mps",
+   "mode": "agent",
+   "pool_size": 1,
+   "models": [
+    "cklxx/laya-browser/v17s"
+   ]
+  }
+ },
+ "summary": {
+  "generated_at": "2026-09-27T21:03:29+0800",
+  "n_tasks": 8,
+  "success": 0,
+  "success_rate": 0.0,
+  "verified": 0,
+  "verified_rate": 0.0,
+  "found_but_not_stopped": 0,
+  "mean_steps": 3.5,
+  "mean_duration_ms": 16743,
+  "decision_latency_ms": {
+   "p50": 497.8,
+   "p95": 607.0
+  },
+  "step_outcomes": {
+   "executed": 20,
+   "stale": 1,
+   "done-rejected": 4,
+   "page changed since the decision (url or marker mismatch)": 1,
+   "done": 1,
+   "refused-empty-enter": 1
+  },
+  "low_confidence_steps": 1,
+  "by_source": {
+   "github": {
+    "n": 1,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 11.0
+   },
+   "google": {
+    "n": 7,
+    "success": 0,
+    "success_rate": 0.0,
+    "verified": 0,
+    "verified_rate": 0.0,
+    "mean_steps": 2.4
+   }
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "gen-95603a51670a9dfb",
+   "source": "github",
+   "goal": "Search GitHub for 'pytorch' repositories and open the search results.",
+   "fingerprint": 87248,
+   "status": "done",
+   "verified": false,
+   "success": false,
+   "steps": 11,
+   "total_ms": 19389,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "missing evidence: [['pytorch']]",
+    "checks": {
+     "url": "https://docs.github.com/en",
+     "bot_challenge": false,
+     "group0": []
+    },
+    "final_url": "https://docs.github.com/en",
+    "final_title": "GitHub Docs"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8639,
+     "target": "11",
+     "target_label": "Enter your email",
+     "kind": "fill",
+     "text": "pytorch",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 533.6,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8992,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 415.6,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 3,
+     "operation": "CLICK",
+     "confidence": 0.8517,
+     "target": "8",
+     "target_label": "Search or jump to, type / to search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 578.8,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 4,
+     "operation": "CLICK",
+     "confidence": 0.2848,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "stale: page changed since the decision (url or marker mismatch)",
+     "page_changed": true,
+     "latency_ms": 458.3,
+     "low_confidence": true,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 5,
+     "operation": "CLICK",
+     "confidence": 0.8673,
+     "target": "1",
+     "target_label": "Open Search or jump to",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": false,
+     "latency_ms": 467.3,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 6,
+     "operation": "CLICK",
+     "confidence": 0.8934,
+     "target": "6",
+     "target_label": "Search syntax tips",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 492.2,
+     "low_confidence": false,
+     "url": "https://github.com/"
+    },
+    {
+     "step": 7,
+     "operation": "DONE",
+     "confidence": 0.892,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub repository search results for 'pytorch'",
+     "page_changed": null,
+     "latency_ms": 488.2,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 7,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:3",
+     "target_label": "Github Home",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 8,
+     "operation": "DONE",
+     "confidence": 0.9432,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing GitHub search results page listing 'pytorch' repositories (page shown is GitHub Docs code search syntax article, no results visible)",
+     "page_changed": null,
+     "latency_ms": 436.6,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 8,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:3",
+     "target_label": "Github Home",
+     "kind": "click",
+     "text": null,
+     "outcome": "page changed since the decision (url or marker mismatch)",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+    },
+    {
+     "step": 9,
+     "operation": "DONE",
+     "confidence": 0.9413,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done",
+     "page_changed": null,
+     "latency_ms": 461.1,
+     "low_confidence": false,
+     "url": "https://docs.github.com/en"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9f94f409f1da9c4b",
+   "source": "google",
+   "goal": "First search Google for vector embeddings interview questions, then search Google for spring boot open source alternatives.",
+   "fingerprint": 87248,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14880,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvector%2bembeddings%2binterview%2bquesti",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvector%2Bembeddings%2Binterview%2Bquestions%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnvLRl-WN5qa78UWKsp3RWfu5x3T4Q%253A1790513779994%26source%3Dhp%26ei%3DcxK5av21O6WT8L0Pu4OasQQ%26iflsig%3DABILxe8AAAAAarkgg_YY-sa1V2f-5JFDGCx9Rc6kC8uV%26ved%3D0ahUKEwi9u8jO546XAxWlCbwBHbuBJkYQ4dUDCDI%26uact%3D5%26oq%3Dvector%2Bembeddings%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IiV2ZWN0b3IgZW1iZWRkaW5ncyBpbnRlcnZpZXcgcXVlc3Rpb25zMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogRI3QdQGFgYcAF4AJABAJgB2QGgAdkBqgEDMi0xuAEDyAEA-AEBmAICoALhAagCCsICChAAGAMYjwEY6gKYAwTxBUtTjiqjFjYmkgcFMS4wLjGgB8oEsgcDMi0xuAfcAcIHBTAuMS4xyAcFgAgB%26sclient%3Dgws-wiz%26sei%3DdhK5auveOd3VkPIP7JqWmAE&hl=en&q=EgQm0XtnGPek5NUGIjB-5HfYBh0I83cFObK-3u_1xHlsWwl1Ek-4bKlwxWhqdkUOpyAH-_c1aFFnq7Jhco8yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vector+embeddings+interview+questions&sca_esv=75"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8805,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vector embeddings interview questions",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 525.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9072,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 588.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513781796"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-f169906c3c833aa8",
+   "source": "google",
+   "goal": "First search Google for docker release notes, then search Google for kotlin interview questions.",
+   "fingerprint": 87248,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14833,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddocker%2brelease%2bnotes%26sca_esv%3d75b",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddocker%2Brelease%2Bnotes%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuDANlWSZLgdHijqs4FNTFcIT1swA%253A1790513847278%26source%3Dhp%26ei%3DtxK5auXPD8e-kPIPqNGQ2Q4%26iflsig%3DABILxe8AAAAAarkgxyOt-KK_nXDcw1wV0chFIQ95AinQ%26ved%3D0ahUKEwilh9Pu546XAxVHH0QIHagoJOsQ4dUDCDI%26uact%3D5%26oq%3Ddocker%2Brelease%2Bnotes%26gs_lp%3DEgdnd3Mtd2l6IhRkb2NrZXIgcmVsZWFzZSBub3RlczIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I4wdQElgScAF4AJABAJgBwwGgAcMBqgEDMC4xuAEDyAEA-AEBmAICoALLAagCCsICChAAGAMYjwEY6gLCAgoQLhgDGI8BGOoCmAME8QUbJPQv3PH8d5IHAzEuMaAHpAWyBwMwLjG4B8YBwgcFMC4xLjHIBwaACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGLql5NUGIjBUg7wt7GXWoVt0tqaL-e3K69Ee8XNMAmEyN4Nn23GnrNgrugHQl9nClM16DZn20s4yAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=docker+release+notes&sca_esv=75b852f910b8e50f&hl"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8835,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "docker release notes",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 481.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8979,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 600.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513849021"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-737778dd443a7240",
+   "source": "google",
+   "goal": "First search Google for how to debug retrieval augmented generation, then search Google for design patterns interview questions.",
+   "fingerprint": 87248,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 5,
+   "total_ms": 25972,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3ddesign%2bpatterns%2binterview%2bquestion",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddesign%2Bpatterns%2Binterview%2Bquestions%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnth6u8gBZA8oZU_S7D7zVtJyabPwA%253A1790513914524%26source%3Dhp%26ei%3D-hK5apfTHsXGkPIPyvWPgQw%26iflsig%3DABILxe8AAAAAarkhCm6D12hqH4VoNOPdcmnEiMAjkqG4%26ved%3D0ahUKEwiXuNuO6I6XAxVFI0QIHcr6I8AQ4dUDCDI%26oq%3Ddesign%2Bpatterns%2Binterview%2Bquestions%26gs_lp%3DEgdnd3Mtd2l6IiNkZXNpZ24gcGF0dGVybnMgaW50ZXJ2aWV3IHF1ZXN0aW9uczIFEAAYgAQyCBAAGIAEGLQHMggQABiABBi0BzIIEAAYgAQYtAcyCBAAGIAEGLQHMgUQABiABDIIEAAYgAQYtAcyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I9T9QC1gLcAF4AJABAJgB2QGgAdkBqgEDMi0xuAEMyAEA-AEBmAICoALkAagCCsICExAAGIAEGIoFGEMY5wYY6gIYtALCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDAvEFZjIUIyCaK--SBwUxLjAuMaAHtAeyBwMyLTG4B-EBwgcFMC4xLjHIBweACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGIim5NUGIjDR__DBeB9Ma5PQyD4l2P5mmRL7l0KqDplSUmHN5RYsvqpZNC52FuE4BU6UvUXch1oyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=design+patterns+interview+questions&sca_esv=75b8"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.555,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "refused-empty-enter",
+     "page_changed": null,
+     "latency_ms": 506.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513914935"
+    },
+    {
+     "step": 2,
+     "operation": "DONE",
+     "confidence": 0.6788,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing Google search results for design patterns interview questions",
+     "page_changed": null,
+     "latency_ms": 484.2,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513914935"
+    },
+    {
+     "step": 2,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "fill:10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "design patterns interview questions",
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513914935"
+    },
+    {
+     "step": 3,
+     "operation": "DONE",
+     "confidence": 0.8843,
+     "target": null,
+     "target_label": null,
+     "kind": null,
+     "text": null,
+     "outcome": "done-rejected: missing search results for design patterns interview questions",
+     "page_changed": null,
+     "latency_ms": 607.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513914935"
+    },
+    {
+     "step": 3,
+     "operation": "VLM_RESCUE",
+     "confidence": 1.0,
+     "target": "click:33",
+     "target_label": "Google Search",
+     "kind": "click",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": null,
+     "latency_ms": 0.0,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513914935"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9ded7f96e6721616",
+   "source": "google",
+   "goal": "First search Google for model quantization open source alternatives, then search Google for next.js release notes.",
+   "fingerprint": 87248,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14486,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmodel%2bquantization%2bopen%2bsource%2ba",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmodel%2Bquantization%2Bopen%2Bsource%2Balternatives%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnup8v50FyU2enpEkRLshLPeGZBUFg%253A1790513992708%26source%3Dhp%26ei%3DSBO5apiOKsuekPIPucm92Ak%26iflsig%3DABILxe8AAAAAarkhWJC5zIhv1RORjMmvmO7rGVMMCdf1%26ved%3D0ahUKEwiY0v-z6I6XAxVLD0QIHblkD5sQ4dUDCDI%26uact%3D5%26oq%3Dmodel%2Bquantization%2Bopen%2Bsource%2Balternatives%26gs_lp%3DEgdnd3Mtd2l6Iittb2RlbCBxdWFudGl6YXRpb24gb3BlbiBzb3VyY2UgYWx0ZXJuYXRpdmVzMgUQIRigATIFECEYoAEyBRAhGKABSOwGUApYCnABeACQAQCYAecBoAHnAaoBAzItMbgBA8gBAPgBAZgCAqAC8gGoAgrCAhMQABiABBiKBRhDGOcGGOoCGLQCmAMC8QV6dnTTuRqBfpIHBTEuMC4xoAfyA7IHAzItMbgH7wHCBwMwLjLIBwSACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGMum5NUGIjCTCked3Ev1SMsbHEFAl9MYPpwnQY4eiSpE0T3yD_ixdUXImnIhkkW-Z7MSDJzmKKAyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=model+quantization+open+source+alternatives&sca_"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.878,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization open source alternatives",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 497.8,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513993055"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8967,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 483.7,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790513993055"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-6e22f5cd9ebcbcf9",
+   "source": "google",
+   "goal": "First search Google for model quantization cheat sheet, then search Google for golang interview questions.",
+   "fingerprint": 87248,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14707,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dmodel%2bquantization%2bcheat%2bsheet%26s",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmodel%2Bquantization%2Bcheat%2Bsheet%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnu1TzaaQ7BJq8kQZ5kwD2TRYXrPHw%253A1790514059366%26source%3Dhp%26ei%3DixO5atmLFZTJkPIPqIvD-Ao%26iflsig%3DABILxe8AAAAAarkhm9Te6XcA7b-0fPBwFnF4DWd-Ghyy%26ved%3D0ahUKEwiZ_ePT6I6XAxWUJEQIHajFEK8Q4dUDCDI%26uact%3D5%26oq%3Dmodel%2Bquantization%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6Ih5tb2RlbCBxdWFudGl6YXRpb24gY2hlYXQgc2hlZXQyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYqwIyBRAhGKsCSJkHUAxYDHABeACQAQCYAeMBoAHjAaoBAzItMbgBA8gBAPgBAZgCAqAC7gGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDAvEF8TiSRt6prHuSBwUxLjAuMaAH4QayBwMyLTG4B-sBwgcFMC4xLjHIBwWACAE%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGI6n5NUGIjAkRmWDDJJ0Ae17TKp8jdlBJqAYDC43uhXBhlUDk9oXj4OYNIXll9We0NiW0WdBJkYyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=model+quantization+cheat+sheet&sca_esv=75b852f91"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8914,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "model quantization cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 505.5,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514059617"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.9048,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 526.9,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514059617"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-67bbc7523c31c512",
+   "source": "google",
+   "goal": "First search Google for rust cheat sheet, then search Google for express migration guide.",
+   "fingerprint": 87248,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14723,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3drust%2bcheat%2bsheet%26sca_esv%3d75b852f",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Drust%2Bcheat%2Bsheet%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnuacJMu5ZwMXyc_Ev6CKGxqPLWhzg%253A1790514126230%26source%3Dhp%26ei%3DzhO5aprYDPHpkPIP14mamQQ%26iflsig%3DABILxe8AAAAAarkh3sIBkrVfmiTvn1PcPY5XpjStIywZ%26ved%3D0ahUKEwia99Tz6I6XAxXxNEQIHdeEJkMQ4dUDCDI%26uact%3D5%26oq%3Drust%2Bcheat%2Bsheet%26gs_lp%3DEgdnd3Mtd2l6IhBydXN0IGNoZWF0IHNoZWV0MgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSKQHUBBYEHABeACQAQCYAegBoAHoAaoBAzItMbgBA8gBAPgBAZgCAqAC7QGoAgrCAgoQABgDGI8BGOoCwgIKEC4YAxiPARjqApgDAvEFrM3mXh5qJE2SBwUxLjAuMaAHhwWyBwMyLTG4B-oBwgcDMC4yyAcDgAgB%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGNCn5NUGIjBxUzkzGIcbxakQ68LgP3rDuhhgygCR4NN-JocnKhcJUiYVoZEEMFQcgB9fZykoJHcyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=rust+cheat+sheet&sca_esv=75b852f910b8e50f&hl=en&"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8986,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "rust cheat sheet",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 500.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514126511"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8777,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 556.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514126511"
+    }
+   ]
+  },
+  {
+   "task_id": "gen-9a078659f5d92679",
+   "source": "google",
+   "goal": "First search Google for vue tutorial, then search Google for rabbitmq cheat sheet.",
+   "fingerprint": 87248,
+   "status": "bot-challenge",
+   "verified": false,
+   "success": false,
+   "steps": 2,
+   "total_ms": 14954,
+   "error": null,
+   "verification": {
+    "passed": false,
+    "reason": "bot_challenge",
+    "checks": {
+     "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3fq%3dvue%2btutorial%26sca_esv%3d75b852f910b8e",
+     "bot_challenge": true
+    },
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dvue%2Btutorial%26sca_esv%3D75b852f910b8e50f%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsperGp7ub33gVGclL0MIwANTHR2g%253A1790514193105%26source%3Dhp%26ei%3DERS5auujBYmuur8P48qkoAU%26iflsig%3DABILxe8AAAAAarkiIZcZkyrCOWWpRwv03tphsvXw1PBW%26ved%3D0ahUKEwir8MaT6Y6XAxUJl-4BHWMlCVQQ4dUDCDI%26uact%3D5%26oq%3Dvue%2Btutorial%26gs_lp%3DEgdnd3Mtd2l6Igx2dWUgdHV0b3JpYWwyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkicCFAQWBBwAXgAkAEAmAHcAaAB3AGqAQMyLTG4AQPIAQD4AQGYAgKgAuIBqAIKwgITEAAYgAQYigUYQxjnBhjqAhi0AsICChAAGAMYjwEY6gKYAwLxBUqOJAP0PJ1MkgcFMS4wLjGgB_IEsgcDMi0xuAffAcIHAzAuMsgHBIAIAQ%26sclient%3Dgws-wiz&hl=en&q=EgQm0XtnGJOo5NUGIjAUFmsz6lhOEZ50u761a_w1KEo1zLqynUJxvV0EvJeEeK8jDz4eTdTNSFhckVPRGrsyAnJSWgFD",
+    "final_title": "https://www.google.com/search?q=vue+tutorial&sca_esv=75b852f910b8e50f&hl=en&gl=u"
+   },
+   "trajectory": [
+    {
+     "step": 1,
+     "operation": "TYPE_TEXT",
+     "confidence": 0.8978,
+     "target": "10",
+     "target_label": "Search",
+     "kind": "fill",
+     "text": "vue tutorial",
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 527.1,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514193378"
+    },
+    {
+     "step": 2,
+     "operation": "PRESS_ENTER",
+     "confidence": 0.8978,
+     "target": null,
+     "target_label": "Press Enter to submit the current field",
+     "kind": "enter",
+     "text": null,
+     "outcome": "executed",
+     "page_changed": true,
+     "latency_ms": 675.3,
+     "low_confidence": false,
+     "url": "https://www.google.com/?hl=en&gl=us&zx=1790514193378"
+    }
+   ]
+  }
+ ]
+}
